@@ -11,5 +11,7 @@ All notes are source/history inspections from 2026-09-17. No new project builds,
 - [Intent archaeology](intent.md): exact cv session/message references; ordinary user prose versus adopted goal/stop-hook text is labeled.
 - [Clutch and the nexus](clutch.md): active versus published lineage, Direct's browser/SDK/program path, Realm collateral/funding bindings, and the September 9 runtime handoff. Pyth's Hermes price service is distinct from the requested Hermes agent integration.
 - [Solana utility paths](solana.md): holder admission, lock/escrow, and resource-payment candidates; the configured Token-2022 mint versus the older legacy-token-only lock path. Proposals are separated from source and deployment reports.
+- [Nexus contract review](nexus-contract.md): Astra's five proposed shared contracts, grounded in typed effects, heterogeneous cells and Hyperdocument semantics; a public-document tool is an illustrative workload.
+- [Participant-node interfaces](node-interfaces.md): Sol's bounded transport/identity/state inventory. The parent checked the signed-turn ingress and readback; the broader hosting contract remains a question.
 
 The main orientation and graph incorporate those qualifications. Do not lift an earlier broad sentence out of a note while omitting its corrective follow-up.

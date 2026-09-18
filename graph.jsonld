@@ -1045,7 +1045,9 @@
         "urn:dregg:assortia:W-PROVIDER-PATH",
         "urn:dregg:assortia:E-CLUTCH",
         "urn:dregg:assortia:E-SOLANA",
-        "urn:dregg:assortia:C-NEXUS-INTERFACE"
+        "urn:dregg:assortia:C-NEXUS-INTERFACE",
+        "urn:dregg:assortia:C-HYPERDOC-TOOL-SCOPE",
+        "urn:dregg:assortia:Q-PARTICIPANT-HOSTING"
       ],
       "closure": "Accepted nexus operations and consequential design decisions; selected semantic and receiving-runtime paths; an explicit owned-node participation path and selected Solana/resource outcome; linked implementation obligations and evidence. Selecting a contract does not close implementation or deployment."
     },
@@ -1415,6 +1417,132 @@
         "urn:dregg:assortia:C-CLUTCH-DIRECT"
       ],
       "closure": "A selected user-visible economic function with exact mint/program/cluster, custody and release policy where applicable, external evidence acceptance and resource-result binding; required source/consumer changes and acceptance checks identified, then exercised at an explicitly authorized deployment scope."
+    },
+    {
+      "@id": "urn:dregg:assortia:S-EFFECT-FAMILY",
+      "@type": "Source",
+      "label": "Typed semantic family and common accepted-effect join",
+      "repository": "urn:dregg:assortia:R-minidregg",
+      "path": "Theory/AcceptedCellEffect.lean",
+      "lineStart": 47,
+      "lineEnd": 113,
+      "sha256": "5f192d265e9444ae7246b7c9ee845cfadd7e6e8ebe354fb2978f85c86b58b305",
+      "recordedDate": "2026-09-17",
+      "gitHead": "6937394e1dc2c2aaff986c7d4b3a258aca5d16fd",
+      "gitBlobAtHead": "d1db4883e7c735b2e92721fb2794be03ad9fad96",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-HYPERDOC-ACTIONS",
+      "@type": "Source",
+      "label": "Closed Hyperdocument action vocabulary",
+      "repository": "urn:dregg:assortia:R-minidregg",
+      "path": "Theory/HyperdocumentOperations.lean",
+      "lineStart": 79,
+      "lineEnd": 106,
+      "sha256": "df3cb6182bdd74a7e0f9525ac82c1368ec3e7430b084d66ce98d269bd4f3f6a9",
+      "recordedDate": "2026-09-17",
+      "gitHead": "6937394e1dc2c2aaff986c7d4b3a258aca5d16fd",
+      "gitBlobAtHead": "e2557f7f0477db8018319a97a829fa63a14ab75a",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-HETEROGENEOUS-COMMIT",
+      "@type": "Source",
+      "label": "Heterogeneous cell families, complete admission and explicit handler boundary",
+      "repository": "urn:dregg:assortia:R-minidregg",
+      "path": "Kernel/MultiCellHyperedge.lean",
+      "lineStart": 39,
+      "lineEnd": 235,
+      "sha256": "c499314826271a595692c80ee2b2bc1cca881339bf952418ec16020f28fc53a3",
+      "recordedDate": "2026-09-17",
+      "gitHead": "6937394e1dc2c2aaff986c7d4b3a258aca5d16fd",
+      "gitBlobAtHead": "91b1cbe7fcb7d8ced1dd8c8d34db5c7efe3dbba9",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-NODE-SIGNED-INGRESS",
+      "@type": "Source",
+      "label": "Signed-turn decoding, shared staging and consensus dispatch",
+      "repository": "urn:dregg:assortia:R-breadstuffs",
+      "path": "node/src/api.rs",
+      "lineStart": 5565,
+      "lineEnd": 5745,
+      "sha256": "293777933a6ce4ba0f8b386966fa37c476dc76cfb89dcb538db5810c76f95aa1",
+      "recordedDate": "2026-09-17",
+      "gitHead": "3e51def6a5a95424e54fbe7432539b06088de5c3",
+      "gitBlobAtHead": "235259d832340c4651965f657d0ca55bfcdf0493",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-NODE-CELL-READBACK",
+      "@type": "Source",
+      "label": "Cell detail reads ledger state and persistent receipt-chain head",
+      "repository": "urn:dregg:assortia:R-breadstuffs",
+      "path": "node/src/api.rs",
+      "lineStart": 6346,
+      "lineEnd": 6387,
+      "sha256": "293777933a6ce4ba0f8b386966fa37c476dc76cfb89dcb538db5810c76f95aa1",
+      "recordedDate": "2026-09-17",
+      "gitHead": "3e51def6a5a95424e54fbe7432539b06088de5c3",
+      "gitBlobAtHead": "235259d832340c4651965f657d0ca55bfcdf0493",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-NEXUS-REVIEW",
+      "@type": "Source",
+      "label": "Astra contract review, source constraints and parent qualification",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "research/nexus-contract.md",
+      "lineStart": 1,
+      "lineEnd": 55,
+      "sha256": "da4d9c656e05ff263b3c8f9484a52cb2f83705d22ffc921f7f6bdaf544bd0042",
+      "recordedDate": "2026-09-17"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-NODE-INTERFACES",
+      "@type": "Source",
+      "label": "Sol interface inventory with parent-checked ingress/readback and scoped limitations",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "research/node-interfaces.md",
+      "lineStart": 1,
+      "lineEnd": 20,
+      "sha256": "d05c4900d411587af93e23d276edac31a2c73a23c2a5b9e38ab346afcb64884e",
+      "recordedDate": "2026-09-17"
+    },
+    {
+      "@id": "urn:dregg:assortia:C-HYPERDOC-TOOL-SCOPE",
+      "@type": "Claim",
+      "label": "Hyperdocument content actions do not themselves define arbitrary tool execution",
+      "description": "The inspected action grammar is create, editAtom, link, transclude, mark and annotate. SemanticEffectFamily separately supplies typed declaration/outcome, evidence and a unique patch. A public-document transform needs a selected computation family and receiving evaluator; a program label or content link alone does not provide those semantics.",
+      "subject": "urn:dregg:assortia:E-WORLD",
+      "sources": [
+        "urn:dregg:assortia:S-HYPERDOC-ACTIONS",
+        "urn:dregg:assortia:S-EFFECT-FAMILY"
+      ],
+      "evidenceKind": "source-inspection",
+      "status": "observed-in-source",
+      "scope": "Selected Hyperdocument action grammar and accepted-effect family definitions",
+      "limitations": "Not a global absence claim about computation families elsewhere. No proof replay, runtime selection or transform implementation."
+    },
+    {
+      "@id": "urn:dregg:assortia:Q-PARTICIPANT-HOSTING",
+      "@type": "Question",
+      "label": "What establishes that a participant node may host and serve a particular resource?",
+      "description": "The located client path decodes a SignedTurn, calls shared admission staging and dispatches toward consensus; cell readback exposes ledger state and a persistent receipt-chain head. Investigate placement, custody, discovery and availability obligations independently of client submission and validator membership.",
+      "subject": "urn:dregg:assortia:E-WORLD",
+      "sources": [
+        "urn:dregg:assortia:S-NODE-SIGNED-INGRESS",
+        "urn:dregg:assortia:S-NODE-CELL-READBACK",
+        "urn:dregg:assortia:S-NODE-INTERFACES"
+      ],
+      "status": "open",
+      "limitations": "No node run or complete finalization/admission audit. This question is not a claim that no hosting mechanism exists elsewhere."
     }
   ]
 }
