@@ -1,0 +1,31 @@
+{
+  "checked_at_utc": "2026-09-18T05:49:55.169836+00:00",
+  "scope": "Scratch-only source proof against the ACTUAL current Artifact.requestWords and SignatureAdmission.requestBytes; no shared or olean edits.",
+  "source": "/tmp/TypedAuthorizationRequestCompatibilityDraft.lean",
+  "source_sha256": "fa8298ba948b33d2fc5432dcb045dbfa7811dfbe9f9f021b0e8b13e60d6c7289",
+  "command": "LEAN_NUM_THREADS=2 lake env lean /tmp/TypedAuthorizationRequestCompatibilityDraft.lean",
+  "exit_code": 0,
+  "log": "/tmp/dregg-request-compatibility-draft.log",
+  "log_sha256": "ec789e20af530f95660d75b90ac94fd8b8e56a0b1331287185dc455bbe748302",
+  "audited_laws": 11,
+  "observed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "checked_compatibility_sources": [
+    {
+      "path": "/Users/ember/dev/minidregg/Compiler/DeclaredHyperedgeArtifact.lean",
+      "sha256": "d082259427f4d49b2c4baed39ae3a22d4e2b4f54d67cb33e751d316cd2b98bfd"
+    },
+    {
+      "path": "/Users/ember/dev/minidregg/Compiler/CredentialSignatureAdmission.lean",
+      "sha256": "bcdbcdce9b0a5db9a199ddd513ee9e6d932027df78717b69ff4088764e98ddf9"
+    }
+  ],
+  "integrated_scratch_low_source": {
+    "path": "/tmp/dregg-authorized-delegation-draft/Compiler/TypedAuthorizationRequestCodec.lean",
+    "sha256": "e036d9eb78bbd0ac675d1ac6ecfd106fee7d72dd5a1bf518da6832e6cc7b818d",
+    "status": "Copied checked low extension + checked Theory inverse only; not yet emitted under isolated canonical module path."
+  }
+}

@@ -1,0 +1,931 @@
+--- a/Theory/CredentialAuthorityFamily.lean
++++ b/Theory/CredentialAuthorityFamily.lean
+@@ -17,10 +17,10 @@
+ deployment hash remains a cryptographic portal premise and is not manufactured as
+ a theorem about `Nat`.
+ 
+-Strict delegation strengthens the base capability attenuation relation with the
+-missing holder-order law.  A bearer child cannot descend from a subject-bound
+-parent.  Proof-relevant lineage then witnesses every attenuation edge instead of
+-trusting inert parent identifiers.
++Strict attenuation includes holder narrowing. Explicit subject delegation uses
++a distinct edge carrying its complete producing request and payload bounds;
++the mutation family additionally requires actual parent authorization. Both
++forms reject a bearer child from a subject parent and retain checked lineage.
+ -/
+ import Theory.AuthorizationDeclaration
+ 
+@@ -28,6 +28,61 @@
+ 
+ open TypedAuthorization
+ open AuthorizationDeclaration
++
++/-! Delegation is an explicitly authorized production step. Its retained
++first-order origin is historical data, not a cryptographic certificate. -/
++
++def delegateVerb : (kind : ResourceKind) → Verb kind
++  | .object => .delegateObject
++  | .account => .delegateAccount
++  | .program => .delegateProgram
++
++inductive LineageOrigin (kind : ResourceKind) where
++  | strict
++  | delegated (request : Request kind)
++  deriving DecidableEq
++
++structure ParentLink (kind : ResourceKind) where
++  parent : Capability kind
++  origin : LineageOrigin kind
++  deriving DecidableEq
++
++/-- The static shape of a recorded subject delegation. Creation additionally
++requires actual exact-parent capability authorization in the effect mode.
++Historical grantor keys are deliberately not reauthorized at descendant use. -/
++structure DelegationShape {kind : ResourceKind} (request : Request kind)
++    (child parent : Capability kind) : Prop where
++  payload : child.Attenuates parent
++  grantor : parent.holder = .subject request.subject
++  recipient : child.holder ≠ .bearer
++  delegate : request.verb = delegateVerb kind
++  target : child.scope.targets = {request.target}
++  parentScope : parent.scope.Covers request
++  validFrom : parent.notBefore ≤ request.height
++  validUntil : request.height ≤ parent.notAfter
++  policyId : parent.policyId = request.policyId
++  policyEpoch : parent.policyEpoch = request.policyEpoch
++
++theorem DelegationShape.recipient_is_subject {kind : ResourceKind}
++    {request : Request kind} {child parent : Capability kind}
++    (shape : DelegationShape request child parent) :
++    ∃ subject, child.holder = .subject subject := by
++  cases holder : child.holder with
++  | bearer => exact False.elim (shape.recipient holder)
++  | subject subject => exact ⟨subject, rfl⟩
++
++theorem DelegationShape.requires_delegate_verb {kind : ResourceKind}
++    {request : Request kind} {child parent : Capability kind}
++    (shape : DelegationShape request child parent) :
++    delegateVerb kind ∈ parent.scope.verbs := by
++  simpa only [shape.delegate] using shape.parentScope.verb
++
++theorem DelegationShape.no_other_target {kind : ResourceKind}
++    {request : Request kind} {child parent : Capability kind}
++    (shape : DelegationShape request child parent)
++    (target : ResourceId kind) (member : target ∈ child.scope.targets) :
++    target = request.target := by
++  simpa only [shape.target, Finset.mem_singleton] using member
+ 
+ /-! ## 1. An exact canonical request word underneath every deployment digest -/
+ 
+@@ -158,9 +213,64 @@
+   Capability.attenuation_admits_subset edge.payload admitted
+     (edge.holder request.subject admitted.holder)
+ 
++/-- The transitive payload bounds of a lineage, forgetting only the immediate
++parent marker and holder. This is a theorem projection, not another admission
++or executable authority relation. -/
++structure LineageBounds {kind : ResourceKind} (child ancestor : Capability kind) : Prop where
++  root : child.root = ancestor.root
++  issuer : child.issuer = ancestor.issuer
++  scope : child.scope.Narrows ancestor.scope
++  notBefore : ancestor.notBefore ≤ child.notBefore
++  notAfter : child.notAfter ≤ ancestor.notAfter
++  issuerEpoch : child.issuerEpoch = ancestor.issuerEpoch
++  policyId : child.policyId = ancestor.policyId
++  policyEpoch : child.policyEpoch = ancestor.policyEpoch
++  ancestors : ancestor.ancestors ⊆ child.ancestors
++  channels : ancestor.channels ⊆ child.channels
++
++theorem LineageBounds.refl {kind : ResourceKind} (capability : Capability kind) :
++    LineageBounds capability capability :=
++  ⟨rfl, rfl, ⟨fun _ member => member, fun _ member => member, le_rfl⟩,
++    le_rfl, le_rfl, rfl, rfl, rfl, fun _ member => member, fun _ member => member⟩
++
++theorem LineageBounds.trans {kind : ResourceKind}
++    {young middle old : Capability kind}
++    (first : LineageBounds young middle) (second : LineageBounds middle old) :
++    LineageBounds young old where
++  root := first.root.trans second.root
++  issuer := first.issuer.trans second.issuer
++  scope :=
++    ⟨fun _ member => second.scope.targets (first.scope.targets member),
++      fun _ member => second.scope.verbs (first.scope.verbs member),
++      le_trans first.scope.maxCost second.scope.maxCost⟩
++  notBefore := le_trans second.notBefore first.notBefore
++  notAfter := le_trans first.notAfter second.notAfter
++  issuerEpoch := first.issuerEpoch.trans second.issuerEpoch
++  policyId := first.policyId.trans second.policyId
++  policyEpoch := first.policyEpoch.trans second.policyEpoch
++  ancestors := fun _ member => first.ancestors (second.ancestors member)
++  channels := fun _ member => first.channels (second.channels member)
++
++theorem Attenuates.lineageBounds {kind : ResourceKind}
++    {child parent : Capability kind} (edge : child.Attenuates parent) :
++    LineageBounds child parent where
++  root := edge.root
++  issuer := edge.issuer
++  scope := edge.scopeNarrows
++  notBefore := edge.notBefore
++  notAfter := edge.notAfter
++  issuerEpoch := edge.issuerEpoch
++  policyId := edge.policyId
++  policyEpoch := edge.policyEpoch
++  ancestors := by
++    intro ancestor member
++    rw [edge.ancestors]
++    exact Finset.mem_insert_of_mem member
++  channels := edge.channels
++
+ /-- A capability's parent/root identifiers become meaningful only with this
+-proof-relevant derivation.  Each non-root constructor carries the actual parent
+-capability and the full strict attenuation theorem. -/
++proof-relevant derivation. Each edge retains its actual parent and either strict
++holder narrowing or the static shape of an explicit subject delegation. -/
+ inductive Lineage {kind : ResourceKind} : Capability kind → Type
+   | root (cap : Capability kind)
+       (parentNone : cap.parent = none)
+@@ -169,23 +279,43 @@
+   | attenuate (child parent : Capability kind)
+       (parentLineage : parent.Lineage)
+       (edge : child.StrictAttenuates parent) : child.Lineage
++  | delegate (child parent : Capability kind) (request : Request kind)
++      (parentLineage : parent.Lineage)
++      (shape : CredentialAuthorityFamily.DelegationShape request child parent) : child.Lineage
+ 
+ def Lineage.rootCapability {kind : ResourceKind}
+     {cap : Capability kind} : cap.Lineage → Capability kind
+   | .root rootCap _ _ _ => rootCap
+   | .attenuate _ _ parentLineage _ => parentLineage.rootCapability
+-
+-/-- Every request admitted by a descendant was admitted by the witnessed root.
+-This closes the old "parent id as historical ballast" shape: the derivation, not
+-the identifier, is what proves non-amplification. -/
+-theorem Lineage.root_admissible {kind : ResourceKind}
++  | .delegate _ _ _ parentLineage _ => parentLineage.rootCapability
++
++def Lineage.IsStrict {kind : ResourceKind} {cap : Capability kind} : cap.Lineage → Prop
++  | .root .. => True
++  | .attenuate _ _ parentLineage _ => parentLineage.IsStrict
++  | .delegate .. => False
++
++theorem Lineage.root_bounds {kind : ResourceKind} {cap : Capability kind}
++    (lineage : cap.Lineage) : LineageBounds cap lineage.rootCapability := by
++  induction lineage with
++  | root rootCap _ _ _ => exact LineageBounds.refl rootCap
++  | attenuate child parent parentLineage edge induction =>
++      exact edge.payload.lineageBounds.trans induction
++  | delegate child parent request parentLineage shape induction =>
++      exact shape.payload.lineageBounds.trans induction
++
++/-- Same-request root admission remains true for strict-only lineages.
++Subject transfer deliberately changes who may use the child, so mixed lineage
++has `root_bounds` instead of a false same-holder monotonicity claim. -/
++theorem Lineage.root_admissible_of_strict {kind : ResourceKind}
+     {cap : Capability kind} {state : AuthState} {request : Request kind}
+-    (lineage : cap.Lineage) (admitted : cap.Admissible state request) :
++    (lineage : cap.Lineage) (strict : lineage.IsStrict)
++    (admitted : cap.Admissible state request) :
+     lineage.rootCapability.Admissible state request := by
+   induction lineage with
+   | root => simpa [Lineage.rootCapability] using admitted
+   | attenuate child parent parentLineage edge ih =>
+-      exact ih (strict_attenuation_admits_subset edge admitted)
++      exact ih strict (strict_attenuation_admits_subset edge admitted)
++  | delegate child parent request parentLineage shape ih => exact False.elim strict
+ 
+ end Capability
+ end Minidregg.Theory.TypedAuthorization
+@@ -450,8 +580,8 @@
+ #guard_msgs (whitespace := lax) in #print axioms retarget_changes_wire
+ /-- info: 'Minidregg.Theory.TypedAuthorization.Capability.strict_attenuation_admits_subset' depends on axioms: [propext, Quot.sound] -/
+ #guard_msgs (whitespace := lax) in #print axioms Capability.strict_attenuation_admits_subset
+-/-- info: 'Minidregg.Theory.TypedAuthorization.Capability.Lineage.root_admissible' depends on axioms: [propext, Quot.sound] -/
+-#guard_msgs (whitespace := lax) in #print axioms Capability.Lineage.root_admissible
++/-- info: 'Minidregg.Theory.TypedAuthorization.Capability.Lineage.root_admissible_of_strict' depends on axioms: [propext, Quot.sound] -/
++#guard_msgs (whitespace := lax) in #print axioms Capability.Lineage.root_admissible_of_strict
+ /-- info: 'Minidregg.Theory.CredentialAuthorityFamily.AcceptedCredential.token_has_no_bypass' depends on axioms: [propext, Quot.sound] -/
+ #guard_msgs (whitespace := lax) in #print axioms AcceptedCredential.token_has_no_bypass
+ /-- info: 'Minidregg.Theory.CredentialAuthorityFamily.AcceptedCredential.reject_over_budget' depends on axioms: [propext, Quot.sound] -/
+--- a/Theory/CredentialAuthorityState.lean
++++ b/Theory/CredentialAuthorityState.lean
+@@ -8,9 +8,11 @@
+ required by `TypedAuthorization.AuthState`; both authenticated-set roots are
+ the root of the same canonical materialization.
+ 
+-Capability lineage is retained as first-order capability data.  Its Lean
+-validity predicate checks every adjacent strict-attenuation edge, including
+-holder narrowing, rather than trusting parent identifiers.
++Capability lineage is retained as first-order capability and edge-origin data.
++Its validity predicate checks every adjacent strict attenuation or explicit
++subject delegation against its own relation, including the terminal root.
++The accepted mutation family establishes authority to create a delegated edge;
++the stored origin alone is not a cryptographic certificate.
+ 
+ `CellState.LogicalState` stores a finite dependent map.  Absent epoch and
+ membership entries are read through explicit zero/false defaults below;
+@@ -50,7 +52,15 @@
+ grandparent, and so on.  Validity is a separate Lean proposition below. -/
+ structure StoredCapability (kind : ResourceKind) where
+   head : Capability kind
+-  ancestry : List (Capability kind)
++  ancestry : List (ParentLink kind)
++  deriving DecidableEq
++
++def strictAncestry {kind : ResourceKind} : List (ParentLink kind) → Prop
++  | [] => True
++  | link :: tail => link.origin = .strict ∧ strictAncestry tail
++
++def StoredCapability.IsStrict {kind : ResourceKind} (stored : StoredCapability kind) : Prop :=
++  strictAncestry stored.ancestry
+ 
+ /-- Dependent values prevent a capability for one resource kind from being
+ written into another kind's slot. -/
+@@ -152,8 +162,9 @@
+ 
+ /-! ## Proof-relevant validity of stored lineage -/
+ 
+-/-- Every stored parent is the actual next capability and every edge is strict
+-attenuation.  The terminal record is a genuine root. -/
++/-- Every stored edge retains its explicit origin and its matching static
++relation. The terminal record is a root; historical operation authorization
++is supplied by the accepted state transition, not by the serialized marker. -/
+ inductive LineageValid {kind : ResourceKind} : StoredCapability kind → Prop
+   | root (cap : Capability kind)
+       (parentNone : cap.parent = none)
+@@ -161,14 +172,20 @@
+       (ancestorsEmpty : cap.ancestors = ∅) :
+       LineageValid ⟨cap, []⟩
+   | attenuate (child parent : Capability kind)
+-      (tail : List (Capability kind))
++      (tail : List (ParentLink kind))
+       (parentValid : LineageValid ⟨parent, tail⟩)
+       (edge : child.StrictAttenuates parent) :
+-      LineageValid ⟨child, parent :: tail⟩
+-
+-theorem LineageValid.root_admissible {kind : ResourceKind}
++      LineageValid ⟨child, ⟨parent, .strict⟩ :: tail⟩
++  | delegate (child parent : Capability kind)
++      (tail : List (ParentLink kind)) (request : Request kind)
++      (parentValid : LineageValid ⟨parent, tail⟩)
++      (shape : DelegationShape request child parent) :
++      LineageValid ⟨child, ⟨parent, .delegated request⟩ :: tail⟩
++
++theorem LineageValid.root_admissible_of_strict {kind : ResourceKind}
+     {stored : StoredCapability kind} {state : AuthState}
+     {request : Request kind} (valid : LineageValid stored)
++    (strict : stored.IsStrict)
+     (admitted : stored.head.Admissible state request) :
+     ∃ root : Capability kind,
+       root.parent = none ∧ root.root = root.id ∧
+@@ -177,7 +194,36 @@
+   | root cap parentNone rootSelf ancestorsEmpty =>
+       exact ⟨cap, parentNone, rootSelf, admitted⟩
+   | attenuate child parent tail parentValid edge ih =>
+-      exact ih (Capability.strict_attenuation_admits_subset edge admitted)
++      exact ih strict.2 (Capability.strict_attenuation_admits_subset edge admitted)
++  | delegate child parent tail request parentValid shape ih =>
++      cases strict.1
++
++theorem LineageValid.root_bounds {kind : ResourceKind}
++    {stored : StoredCapability kind} (valid : LineageValid stored) :
++    ∃ root : Capability kind, root.parent = none ∧ root.root = root.id ∧
++      Capability.LineageBounds stored.head root := by
++  induction valid with
++  | root cap parentNone rootSelf ancestorsEmpty =>
++      exact ⟨cap, parentNone, rootSelf, Capability.LineageBounds.refl cap⟩
++  | attenuate child parent tail parentValid edge ih =>
++      obtain ⟨root, parentNone, rootSelf, bound⟩ := ih
++      exact ⟨root, parentNone, rootSelf, edge.payload.lineageBounds.trans bound⟩
++  | delegate child parent tail request parentValid shape ih =>
++      obtain ⟨root, parentNone, rootSelf, bound⟩ := ih
++      exact ⟨root, parentNone, rootSelf, shape.payload.lineageBounds.trans bound⟩
++
++theorem LineageValid.nonempty_lineage {kind : ResourceKind}
++    {stored : StoredCapability kind} (valid : LineageValid stored) :
++    Nonempty stored.head.Lineage := by
++  induction valid with
++  | root cap parentNone rootSelf ancestorsEmpty =>
++      exact ⟨.root cap parentNone rootSelf ancestorsEmpty⟩
++  | attenuate child parent tail parentValid edge ih =>
++      obtain ⟨lineage⟩ := ih
++      exact ⟨.attenuate child parent lineage edge⟩
++  | delegate child parent tail request parentValid shape ih =>
++      obtain ⟨lineage⟩ := ih
++      exact ⟨.delegate child parent request lineage shape⟩
+ 
+ /-! ## Exact projection into the common authorization judgment -/
+ 
+@@ -291,8 +337,8 @@
+     key ∉ (authState domain pre).revoked := by
+   simpa [mem_authState_revoked_iff, outside]
+ 
+-/-- info: 'Minidregg.Theory.CredentialAuthorityState.LineageValid.root_admissible' depends on axioms: [propext, Quot.sound] -/
+-#guard_msgs (whitespace := lax) in #print axioms LineageValid.root_admissible
++/-- info: 'Minidregg.Theory.CredentialAuthorityState.LineageValid.root_admissible_of_strict' depends on axioms: [propext, Quot.sound] -/
++#guard_msgs (whitespace := lax) in #print axioms LineageValid.root_admissible_of_strict
+ /-- info: 'Minidregg.Theory.CredentialAuthorityState.mem_authState_revoked_iff' depends on axioms: [propext, Quot.sound] -/
+ #guard_msgs (whitespace := lax) in #print axioms mem_authState_revoked_iff
+ 
+--- a/Theory/CredentialAuthorityEffects.lean
++++ b/Theory/CredentialAuthorityEffects.lean
+@@ -1,7 +1,8 @@
+ /-
+ # Theory.CredentialAuthorityEffects -- canonical authority mutations
+ 
+-Issuance, strict attenuation, revocation, and epoch rotation are ordinary
++Issuance, strict attenuation, authorized subject delegation, revocation,
++and epoch rotation are ordinary
+ `AcceptedCellEffect` families over `CredentialAuthorityState.schema`.  Each
+ family writes one exact authority cell together with one exact single-use
+ nullifier cell in the same validated patch.  No receipt-side authority cache
+@@ -13,6 +14,7 @@
+ all consult the same canonical pre-cell.
+ -/
+ import Theory.CredentialAuthorityState
++import Theory.CredentialLineageAdmission
+ 
+ namespace Minidregg.Theory.CredentialAuthorityEffects
+ 
+@@ -20,6 +22,7 @@
+ open TypedAuthorization
+ open CredentialAuthorityState
+ open CredentialAuthorityFamily
++open CredentialLineageAdmission
+ 
+ /-! ## Common sealed family plumbing -/
+ 
+@@ -108,7 +111,7 @@
+     (pre : Cell M) {kind : ResourceKind}
+     (declaration : IssueDeclaration kind) : Type where
+   preRootExact : declaration.expectedPreRoot = pre.root
+-  slotFresh : readCapability pre kind declaration.capability.id = none
++  slotFresh : CapabilityIdFresh pre declaration.capability.id
+   nullifierFresh : isNullified pre declaration.operationNullifier = false
+   rootParent : declaration.capability.parent = none
+   rootSelf : declaration.capability.root = declaration.capability.id
+@@ -124,6 +127,16 @@
+   selfLive : isRevoked pre (.capability declaration.capability.id) = false
+   channelsLive : ∀ channel ∈ declaration.capability.channels,
+     isRevoked pre (.channel channel) = false
++
++theorem IssueEvidence.reject_existing_id {M : Materializer}
++    {domain : ProjectionUniverse} {pre : Cell M} {kind : ResourceKind}
++    {declaration : IssueDeclaration kind}
++    (mode : IssueEvidence domain pre declaration)
++    (otherKind : ResourceKind) (existing : StoredCapability otherKind)
++    (present : readCapability pre otherKind declaration.capability.id = some existing) :
++    False := by
++  rw [mode.slotFresh otherKind] at present
++  cases present
+ 
+ def issueFamily {M : Materializer} (domain : ProjectionUniverse) (pre : Cell M)
+     {kind : ResourceKind} (codec : LawfulCodec (IssueDeclaration kind))
+@@ -186,7 +199,7 @@
+ 
+ def descendedCapability {kind : ResourceKind} (child : Capability kind)
+     (parent : StoredCapability kind) : StoredCapability kind :=
+-  ⟨child, parent.head :: parent.ancestry⟩
++  ⟨child, ⟨parent.head, .strict⟩ :: parent.ancestry⟩
+ 
+ def AttenuateDeclaration.patch {kind : ResourceKind}
+     (declaration : AttenuateDeclaration kind)
+@@ -215,34 +228,105 @@
+       (declaration.patch parent).resourceFootprint := by
+   simp [AttenuateDeclaration.patch, CellState.Patch.namedResources]
+ 
+-/-- The parent snapshot is not trusted: it must be exactly the record in the
+-canonical pre-cell.  Its lineage is revalidated and the child edge is strict. -/
++/-- Shared pre-state requirements for strict narrowing and explicit
++subject delegation. Both use the same canonical lookup, anchored lineage,
++across-kind identity freshness and current revocation/epoch planes. -/
++structure DescentEvidence {M : Materializer} (domain : ProjectionUniverse)
++    (pre : Cell M) {kind : ResourceKind} (expectedPreRoot : Digest)
++    (parentId : CapabilityId) (child : Capability kind)
++    (operationNullifier : OperationNullifier) (parent : StoredCapability kind) : Type where
++  preRootExact : expectedPreRoot = pre.root
++  parentExact : readCapability pre kind parentId = some parent
++  parentIdExact : parent.head.id = parentId
++  parentLineageValid : LineageValid parent
++  parentLineageAnchored : LineageAnchored pre parent
++  childSlotFresh : CapabilityIdFresh pre child.id
++  nullifierFresh : isNullified pre operationNullifier = false
++  issuerCurrent : child.issuerEpoch = issuerEpochAt pre child.issuer
++  policyCurrent : child.policyEpoch = policyEpochAt pre child.policyId
++  selfRegistered : RevocationKey.capability child.id ∈ domain.revocationKeys
++  ancestorsRegistered : ∀ ancestor ∈ child.ancestors,
++    RevocationKey.capability ancestor ∈ domain.revocationKeys
++  channelsRegistered : ∀ channel ∈ child.channels,
++    RevocationKey.channel channel ∈ domain.revocationKeys
++  selfLive : isRevoked pre (.capability child.id) = false
++  ancestorsLive : ∀ ancestor ∈ child.ancestors,
++    isRevoked pre (.capability ancestor) = false
++  channelsLive : ∀ channel ∈ child.channels,
++    isRevoked pre (.channel channel) = false
++
++theorem DescentEvidence.reject_existing_child {M : Materializer}
++    {domain : ProjectionUniverse} {pre : Cell M} {kind : ResourceKind}
++    {expectedPreRoot : Digest} {parentId : CapabilityId} {child : Capability kind}
++    {operationNullifier : OperationNullifier} {parent : StoredCapability kind}
++    (mode : DescentEvidence domain pre expectedPreRoot parentId child operationNullifier parent)
++    (otherKind : ResourceKind) (existing : StoredCapability otherKind)
++    (present : readCapability pre otherKind child.id = some existing) : False := by
++  rw [mode.childSlotFresh otherKind] at present
++  cases present
++
++theorem DescentEvidence.reject_spent_nullifier {M : Materializer}
++    {domain : ProjectionUniverse} {pre : Cell M} {kind : ResourceKind}
++    {expectedPreRoot : Digest} {parentId : CapabilityId} {child : Capability kind}
++    {operationNullifier : OperationNullifier} {parent : StoredCapability kind}
++    (mode : DescentEvidence domain pre expectedPreRoot parentId child operationNullifier parent)
++    (spent : isNullified pre operationNullifier = true) : False := by
++  rw [mode.nullifierFresh] at spent
++  cases spent
++
++/-- Fresh capability production preserves every already-present capability,
++even when storage kinds differ. This is the shared frame fact needed to keep
++canonical ancestry anchored after appending a child. -/
++theorem capabilityProduction_preserves_present {M : Materializer}
++    {pre : Cell M} {patch : CellState.Patch schema Digest}
++    {kind : ResourceKind} {identifier : CapabilityId} {nullifier : Nat}
++    (validated : CellState.ValidatedPatch M pre patch)
++    (footprint : patch.fieldFootprint = { .capability kind identifier, .nullifier nullifier })
++    (fresh : CapabilityIdFresh pre identifier)
++    (otherKind : ResourceKind) (otherId : CapabilityId)
++    (stored : StoredCapability otherKind)
++    (present : readCapability pre otherKind otherId = some stored) :
++    readCapability validated.apply otherKind otherId = some stored := by
++  have different : AuthorityField.capability otherKind otherId ≠ .capability kind identifier := by
++    intro same
++    have sameId : otherId = identifier := by injection same
++    subst otherId
++    rw [fresh otherKind] at present
++    cases present
++  calc
++    readCapability validated.apply otherKind otherId =
++        readCapability pre otherKind otherId :=
++      validated.field_frame (.capability otherKind otherId) (by
++        intro member
++        rw [footprint] at member
++        rcases Finset.mem_insert.mp member with same | singleton
++        · exact different same
++        · have impossible := Finset.mem_singleton.mp singleton
++          cases impossible)
++    _ = some stored := present
++
++/-- The strict operation retains its original holder-narrowing relation. -/
+ structure AttenuateEvidence {M : Materializer} (domain : ProjectionUniverse)
+     (pre : Cell M) {kind : ResourceKind}
+-    (declaration : AttenuateDeclaration kind)
+-    (parent : StoredCapability kind) : Type where
+-  preRootExact : declaration.expectedPreRoot = pre.root
+-  parentExact : readCapability pre kind declaration.parentId = some parent
+-  parentIdExact : parent.head.id = declaration.parentId
+-  parentLineageValid : LineageValid parent
++    (declaration : AttenuateDeclaration kind) (parent : StoredCapability kind)
++    extends DescentEvidence domain pre declaration.expectedPreRoot declaration.parentId
++      declaration.child declaration.operationNullifier parent where
+   strict : declaration.child.StrictAttenuates parent.head
+-  childSlotFresh : readCapability pre kind declaration.child.id = none
+-  nullifierFresh : isNullified pre declaration.operationNullifier = false
+-  issuerCurrent : declaration.child.issuerEpoch =
+-    issuerEpochAt pre declaration.child.issuer
+-  policyCurrent : declaration.child.policyEpoch =
+-    policyEpochAt pre declaration.child.policyId
+-  selfRegistered : RevocationKey.capability declaration.child.id ∈
+-    domain.revocationKeys
+-  ancestorsRegistered : ∀ ancestor ∈ declaration.child.ancestors,
+-    RevocationKey.capability ancestor ∈ domain.revocationKeys
+-  channelsRegistered : ∀ channel ∈ declaration.child.channels,
+-    RevocationKey.channel channel ∈ domain.revocationKeys
+-  selfLive : isRevoked pre (.capability declaration.child.id) = false
+-  ancestorsLive : ∀ ancestor ∈ declaration.child.ancestors,
+-    isRevoked pre (.capability ancestor) = false
+-  channelsLive : ∀ channel ∈ declaration.child.channels,
+-    isRevoked pre (.channel channel) = false
++
++theorem AttenuateEvidence.childLineageAnchored {M : Materializer}
++    {domain : ProjectionUniverse} {pre : Cell M} {kind : ResourceKind}
++    {declaration : AttenuateDeclaration kind} {parent : StoredCapability kind}
++    (evidence : AttenuateEvidence domain pre declaration parent)
++    (validated : CellState.ValidatedPatch M pre (declaration.patch parent)) :
++    LineageAnchored validated.apply (descendedCapability declaration.child parent) := by
++  have preserved := capabilityProduction_preserves_present validated rfl evidence.childSlotFresh
++  have parentPresent : readCapability pre kind parent.head.id = some parent := by
++    rw [evidence.parentIdExact]
++    exact evidence.parentExact
++  change readCapability validated.apply kind parent.head.id = some parent ∧
++    LineageAnchored validated.apply parent
++  exact ⟨preserved kind parent.head.id parent parentPresent,
++    evidence.parentLineageAnchored.of_present_reads_preserved preserved⟩
+ 
+ def attenuateFamily {M : Materializer} (domain : ProjectionUniverse) (pre : Cell M)
+     {kind : ResourceKind} (codec : LawfulCodec (AttenuateDeclaration kind))
+@@ -259,7 +343,9 @@
+   ModeEvidence := fun declaration parent =>
+     AttenuateEvidence domain pre declaration parent
+   Postcondition := fun declaration parent post =>
+-    (declaration.patch parent).ResultAt pre.logical post
++    (declaration.patch parent).ResultAt pre.logical post ∧
++    LineageAnchored (CellState.materialize M post)
++      (descendedCapability declaration.child parent)
+   effectDigest := effectDigest
+   patch := fun declaration parent => declaration.patch parent
+   nullifier := fun declaration _ => some declaration.operationNullifier
+@@ -285,19 +371,21 @@
+     (modeEvidence : AttenuateEvidence domain pre declaration parent) :
+     AcceptedCellEffect (portal := portal) (authState := authState domain pre)
+       (attenuateFamily domain pre codec parentCodec effectDigest context)
+-      request pre declaration parent where
+-  authorization := authorization
+-  preStateBound := rfl
+-  requestBound := requestBound
+-  effectsDigestBound := requestDigestExact
+-  preRootBound := requestPreExact
+-  modeEvidence := modeEvidence
+-  validated := Classical.choice <| validated_of_exact (declaration.patch parent)
++      request pre declaration parent := by
++  let validated := Classical.choice <| validated_of_exact (declaration.patch parent)
+     modeEvidence.preRootExact (declaration.patch_namedFields parent).symm
+       (declaration.patch_namedResources parent).symm
+-  postcondition := ⟨fun _ _ => rfl, fun _ _ => rfl⟩
+-  disclosure := .sealed
+-  disclosureAllowed := trivial
++  exact
++    { authorization := authorization
++      preStateBound := rfl
++      requestBound := requestBound
++      effectsDigestBound := requestDigestExact
++      preRootBound := requestPreExact
++      modeEvidence := modeEvidence
++      validated := validated
++      postcondition := ⟨validated.resultAt, modeEvidence.childLineageAnchored validated⟩
++      disclosure := .sealed
++      disclosureAllowed := trivial }
+ 
+ theorem AttenuateEvidence.childLineageValid {M : Materializer}
+     {domain : ProjectionUniverse} {pre : Cell M} {kind : ResourceKind}
+@@ -307,6 +395,319 @@
+     LineageValid (descendedCapability declaration.child parent) :=
+   .attenuate declaration.child parent.head parent.ancestry
+     evidence.parentLineageValid evidence.strict
++
++/-! ## Explicit authorized subject delegation -/
++
++structure DelegateDeclaration (kind : ResourceKind) where
++  child : Capability kind
++  parentId : CapabilityId
++  target : ResourceId kind
++  expectedPreRoot : Digest
++  operationNullifier : OperationNullifier
++
++/-- Ambient values are fixed by the receiving source before a complete request
++is built. Target, verb, nonce, policy, arguments, effects and root are derived
++from the typed declaration and actual pre-state, not a request callback. -/
++structure DelegationContext where
++  domain : Digest
++  semantics : Digest
++  federation : FederationId
++  subject : SubjectId
++  subjectKeyEpoch : Epoch
++  height : Height
++  cost : Nat
++  argsDigestBytes : List UInt8 → Digest
++
++def DelegationContext.request (context : DelegationContext) {kind : ResourceKind}
++    (codec : LawfulCodec (DelegateDeclaration kind))
++    (effectDigest : DelegateDeclaration kind → Digest) (preRoot : Digest)
++    (declaration : DelegateDeclaration kind) : Request kind where
++  domain := context.domain
++  semantics := context.semantics
++  federation := context.federation
++  subject := context.subject
++  subjectKeyEpoch := context.subjectKeyEpoch
++  target := declaration.target
++  verb := delegateVerb kind
++  argsDigest := context.argsDigestBytes (codec.encode declaration)
++  effectsDigest := effectDigest declaration
++  nonce := declaration.operationNullifier
++  height := context.height
++  preStateRoot := preRoot
++  policyId := declaration.child.policyId
++  policyEpoch := declaration.child.policyEpoch
++  cost := context.cost
++
++def delegatedCapability {kind : ResourceKind} (child : Capability kind)
++    (parent : StoredCapability kind) (request : Request kind) : StoredCapability kind :=
++  ⟨child, ⟨parent.head, .delegated request⟩ :: parent.ancestry⟩
++
++def DelegateDeclaration.patch {kind : ResourceKind}
++    (declaration : DelegateDeclaration kind) (parent : StoredCapability kind)
++    (request : Request kind) : CellState.Patch schema Digest where
++  expectedPreRoot := declaration.expectedPreRoot
++  fieldFootprint :=
++    { .capability kind declaration.child.id, .nullifier declaration.operationNullifier }
++  resourceFootprint := ∅
++  fieldWrites :=
++    [ { field := .capability kind declaration.child.id
++        value := some (delegatedCapability declaration.child parent request) },
++      { field := .nullifier declaration.operationNullifier
++        value := some true } ]
++  resourceWrites := []
++
++@[simp] theorem DelegateDeclaration.patch_namedFields {kind : ResourceKind}
++    (declaration : DelegateDeclaration kind) (parent : StoredCapability kind)
++    (request : Request kind) :
++    (declaration.patch parent request).namedFields =
++      (declaration.patch parent request).fieldFootprint := by
++  simp [DelegateDeclaration.patch, CellState.Patch.namedFields]
++
++@[simp] theorem DelegateDeclaration.patch_namedResources {kind : ResourceKind}
++    (declaration : DelegateDeclaration kind) (parent : StoredCapability kind)
++    (request : Request kind) :
++    (declaration.patch parent request).namedResources =
++      (declaration.patch parent request).resourceFootprint := by
++  simp [DelegateDeclaration.patch, CellState.Patch.namedResources]
++
++/-- The parent invocation is mandatory inside family mode evidence, not only
++inside a convenience constructor. Its commitment is the one verified by the
++same source portal's exact stored-capability check; an unrelated signature,
++proof token or another capability cannot discharge `parentNamed`. -/
++structure DelegationEvidence {M : Materializer} (domain : ProjectionUniverse)
++    (pre : Cell M) (portal : Portal) (context : DelegationContext)
++    {kind : ResourceKind} (codec : LawfulCodec (DelegateDeclaration kind))
++    (effectDigest : DelegateDeclaration kind → Digest)
++    (declaration : DelegateDeclaration kind) (parent : StoredCapability kind)
++    extends DescentEvidence domain pre declaration.expectedPreRoot declaration.parentId
++      declaration.child declaration.operationNullifier parent where
++  parentCommitment : Digest
++  parentAuthorization : Authorized portal (authState domain pre)
++    (context.request codec effectDigest pre.root declaration)
++  parentNamed : parentAuthorization.evidence.capabilityValue =
++    some (parent.head, parentCommitment)
++  shape : DelegationShape (context.request codec effectDigest pre.root declaration)
++    declaration.child parent.head
++
++theorem DelegationEvidence.childLineageValid {M : Materializer}
++    {domain : ProjectionUniverse} {pre : Cell M} {portal : Portal}
++    {context : DelegationContext} {kind : ResourceKind}
++    {codec : LawfulCodec (DelegateDeclaration kind)}
++    {effectDigest : DelegateDeclaration kind → Digest}
++    {declaration : DelegateDeclaration kind} {parent : StoredCapability kind}
++    (evidence : DelegationEvidence domain pre portal context codec effectDigest declaration parent) :
++    LineageValid (delegatedCapability declaration.child parent
++      (context.request codec effectDigest pre.root declaration)) :=
++  .delegate declaration.child parent.head parent.ancestry
++    (context.request codec effectDigest pre.root declaration)
++    evidence.parentLineageValid evidence.shape
++
++theorem DelegationEvidence.childLineageAnchored {M : Materializer}
++    {domain : ProjectionUniverse} {pre : Cell M} {portal : Portal}
++    {context : DelegationContext} {kind : ResourceKind}
++    {codec : LawfulCodec (DelegateDeclaration kind)}
++    {effectDigest : DelegateDeclaration kind → Digest}
++    {declaration : DelegateDeclaration kind} {parent : StoredCapability kind}
++    (evidence : DelegationEvidence domain pre portal context codec effectDigest declaration parent)
++    (validated : CellState.ValidatedPatch M pre
++      (declaration.patch parent (context.request codec effectDigest pre.root declaration))) :
++    LineageAnchored validated.apply (delegatedCapability declaration.child parent
++      (context.request codec effectDigest pre.root declaration)) := by
++  have preserved := capabilityProduction_preserves_present validated rfl evidence.childSlotFresh
++  have parentPresent : readCapability pre kind parent.head.id = some parent := by
++    rw [evidence.parentIdExact]
++    exact evidence.parentExact
++  change readCapability validated.apply kind parent.head.id = some parent ∧
++    LineageAnchored validated.apply parent
++  exact ⟨preserved kind parent.head.id parent parentPresent,
++    evidence.parentLineageAnchored.of_present_reads_preserved preserved⟩
++
++def delegateFamily {M : Materializer} (domain : ProjectionUniverse) (pre : Cell M)
++    (portal : Portal) (context : DelegationContext) {kind : ResourceKind}
++    (codec : LawfulCodec (DelegateDeclaration kind))
++    (parentCodec : LawfulCodec (StoredCapability kind))
++    (effectDigest : DelegateDeclaration kind → Digest) :
++    SemanticEffectFamily schema M OperationNullifier where
++  Declaration := DelegateDeclaration kind
++  declarationCodec := codec
++  pre := pre
++  request := fun declaration =>
++    ⟨kind, context.request codec effectDigest pre.root declaration⟩
++  Outcome := fun _ => StoredCapability kind
++  outcomeCodec := fun _ => parentCodec
++  ModeEvidence := fun declaration parent =>
++    DelegationEvidence domain pre portal context codec effectDigest declaration parent
++  Postcondition := fun declaration parent post =>
++    (declaration.patch parent (context.request codec effectDigest pre.root declaration)).ResultAt
++      pre.logical post ∧
++    LineageAnchored (CellState.materialize M post) (delegatedCapability declaration.child parent
++      (context.request codec effectDigest pre.root declaration))
++  effectDigest := effectDigest
++  patch := fun declaration parent =>
++    declaration.patch parent (context.request codec effectDigest pre.root declaration)
++  nullifier := fun declaration _ => some declaration.operationNullifier
++  Release := fun _ _ => Unit
++  DeclassificationAuthority := fun _ _ => Unit
++  ReleaseAuthorization := fun _ _ _ => Unit
++  DisclosureAllowed := fun _ _ => sealedOnly
++
++/-- This constructor uses the exact parent grant already retained inside mode.
++It accepts neither a caller-selected request nor replacement authorization. -/
++noncomputable def acceptDelegation {M : Materializer}
++    (domain : ProjectionUniverse) (pre : Cell M) (portal : Portal)
++    (context : DelegationContext) {kind : ResourceKind}
++    (codec : LawfulCodec (DelegateDeclaration kind))
++    (parentCodec : LawfulCodec (StoredCapability kind))
++    (effectDigest : DelegateDeclaration kind → Digest)
++    (declaration : DelegateDeclaration kind) (parent : StoredCapability kind)
++    (mode : DelegationEvidence domain pre portal context codec effectDigest declaration parent) :
++    AcceptedCellEffect (portal := portal) (authState := authState domain pre)
++      (delegateFamily domain pre portal context codec parentCodec effectDigest)
++      (context.request codec effectDigest pre.root declaration) pre declaration parent := by
++  let request := context.request codec effectDigest pre.root declaration
++  let validated := Classical.choice <| validated_of_exact (declaration.patch parent request)
++    mode.preRootExact (declaration.patch_namedFields parent request).symm
++      (declaration.patch_namedResources parent request).symm
++  exact
++    { authorization := mode.parentAuthorization
++      preStateBound := rfl
++      requestBound := rfl
++      effectsDigestBound := rfl
++      preRootBound := rfl
++      modeEvidence := mode
++      validated := validated
++      postcondition := ⟨validated.resultAt, mode.childLineageAnchored validated⟩
++      disclosure := .sealed
++      disclosureAllowed := trivial }
++
++theorem DelegationEvidence.parent_use_verified {M : Materializer}
++    {domain : ProjectionUniverse} {pre : Cell M} {portal : Portal}
++    {context : DelegationContext} {kind : ResourceKind}
++    {codec : LawfulCodec (DelegateDeclaration kind)}
++    {effectDigest : DelegateDeclaration kind → Digest}
++    {declaration : DelegateDeclaration kind} {parent : StoredCapability kind}
++    (mode : DelegationEvidence domain pre portal context codec effectDigest declaration parent) :
++    ∃ witness, portal.verifyCapabilityUse
++      (context.request codec effectDigest pre.root declaration) parent.head
++      mode.parentCommitment witness = true :=
++  capability_evidence_requires_use mode.parentAuthorization.evidence
++    parent.head mode.parentCommitment mode.parentNamed
++
++theorem DelegationEvidence.reject_missing_delegate {M : Materializer}
++    {domain : ProjectionUniverse} {pre : Cell M} {portal : Portal}
++    {context : DelegationContext} {kind : ResourceKind}
++    {codec : LawfulCodec (DelegateDeclaration kind)}
++    {effectDigest : DelegateDeclaration kind → Digest}
++    {declaration : DelegateDeclaration kind} {parent : StoredCapability kind}
++    (mode : DelegationEvidence domain pre portal context codec effectDigest declaration parent)
++    (missing : delegateVerb kind ∉ parent.head.scope.verbs) : False :=
++  missing mode.shape.requires_delegate_verb
++
++theorem DelegationEvidence.reject_non_capability_mode {M : Materializer}
++    {domain : ProjectionUniverse} {pre : Cell M} {portal : Portal}
++    {context : DelegationContext} {kind : ResourceKind}
++    {codec : LawfulCodec (DelegateDeclaration kind)}
++    {effectDigest : DelegateDeclaration kind → Digest}
++    {declaration : DelegateDeclaration kind} {parent : StoredCapability kind}
++    (mode : DelegationEvidence domain pre portal context codec effectDigest declaration parent)
++    (notCapability : mode.parentAuthorization.evidence.capabilityValue = none) : False := by
++  have named := mode.parentNamed
++  rw [notCapability] at named
++  cases named
++
++section DelegationObligations
++
++variable {M : Materializer} {domain : ProjectionUniverse} {pre : Cell M}
++  {portal : Portal} {context : DelegationContext} {kind : ResourceKind}
++  {codec : LawfulCodec (DelegateDeclaration kind)}
++  {effectDigest : DelegateDeclaration kind → Digest}
++  {declaration : DelegateDeclaration kind} {parent : StoredCapability kind}
++
++/-- The mandatory mode opens and authorizes the same exact parent, whose full
++retained suffix is checked against the same canonical pre-state. -/
++theorem DelegationEvidence.parent_exact
++    (mode : DelegationEvidence domain pre portal context codec effectDigest declaration parent) :
++    readCapability pre kind declaration.parentId = some parent ∧
++      mode.parentAuthorization.evidence.capabilityValue =
++        some (parent.head, mode.parentCommitment) ∧
++      LineageValid parent ∧ LineageAnchored pre parent :=
++  ⟨mode.parentExact, mode.parentNamed, mode.parentLineageValid, mode.parentLineageAnchored⟩
++
++theorem DelegationEvidence.reject_wrong_parent
++    (mode : DelegationEvidence domain pre portal context codec effectDigest declaration parent)
++    (actual : StoredCapability kind)
++    (present : readCapability pre kind declaration.parentId = some actual)
++    (different : actual ≠ parent) : False := by
++  exact different (Option.some.inj (present.symm.trans mode.parentExact))
++
++theorem DelegationEvidence.reject_wrong_grantor
++    (mode : DelegationEvidence domain pre portal context codec effectDigest declaration parent)
++    (different : parent.head.holder ≠ .subject context.subject) : False :=
++  different mode.shape.grantor
++
++theorem DelegationEvidence.reject_bearer_child
++    (mode : DelegationEvidence domain pre portal context codec effectDigest declaration parent)
++    (bearer : declaration.child.holder = .bearer) : False :=
++  mode.shape.recipient bearer
++
++theorem DelegationEvidence.child_bounds
++    (mode : DelegationEvidence domain pre portal context codec effectDigest declaration parent) :
++    Capability.LineageBounds declaration.child parent.head :=
++  mode.shape.payload.lineageBounds
++
++end DelegationObligations
++
++@[simp] theorem delegation_post_capability_exact {M : Materializer}
++    {domain : ProjectionUniverse} {pre : Cell M} {portal : Portal}
++    {context : DelegationContext} {kind : ResourceKind}
++    {codec : LawfulCodec (DelegateDeclaration kind)}
++    {parentCodec : LawfulCodec (StoredCapability kind)}
++    {effectDigest : DelegateDeclaration kind → Digest}
++    {declaration : DelegateDeclaration kind} {parent : StoredCapability kind}
++    (accepted : AcceptedCellEffect (portal := portal) (authState := authState domain pre)
++      (delegateFamily domain pre portal context codec parentCodec effectDigest)
++      (context.request codec effectDigest pre.root declaration) pre declaration parent) :
++    readCapability accepted.prepared.post kind declaration.child.id =
++      some (delegatedCapability declaration.child parent
++        (context.request codec effectDigest pre.root declaration)) := by
++  simp [readCapability, AcceptedCellEffect.prepared,
++    CanonicalTransition.PreparedTurn.ofValidatedPatch,
++    CanonicalTransition.CellDelta.ofValidatedPatch, CellState.ValidatedPatch.apply,
++    CellState.materialize, CellState.applyFieldWrites, CellState.FieldStore.assign,
++    delegateFamily, DelegateDeclaration.patch]
++  rfl
++
++@[simp] theorem delegation_post_nullifier_exact {M : Materializer}
++    {domain : ProjectionUniverse} {pre : Cell M} {portal : Portal}
++    {context : DelegationContext} {kind : ResourceKind}
++    {codec : LawfulCodec (DelegateDeclaration kind)}
++    {parentCodec : LawfulCodec (StoredCapability kind)}
++    {effectDigest : DelegateDeclaration kind → Digest}
++    {declaration : DelegateDeclaration kind} {parent : StoredCapability kind}
++    (accepted : AcceptedCellEffect (portal := portal) (authState := authState domain pre)
++      (delegateFamily domain pre portal context codec parentCodec effectDigest)
++      (context.request codec effectDigest pre.root declaration) pre declaration parent) :
++    isNullified accepted.prepared.post declaration.operationNullifier = true := by
++  simp [isNullified, AcceptedCellEffect.prepared,
++    CanonicalTransition.PreparedTurn.ofValidatedPatch,
++    CanonicalTransition.CellDelta.ofValidatedPatch, CellState.ValidatedPatch.apply,
++    CellState.materialize, CellState.applyFieldWrites, CellState.FieldStore.assign,
++    delegateFamily, DelegateDeclaration.patch]
++
++theorem delegation_post_lineage_valid {M : Materializer}
++    {domain : ProjectionUniverse} {pre : Cell M} {portal : Portal}
++    {context : DelegationContext} {kind : ResourceKind}
++    {codec : LawfulCodec (DelegateDeclaration kind)}
++    {parentCodec : LawfulCodec (StoredCapability kind)}
++    {effectDigest : DelegateDeclaration kind → Digest}
++    {declaration : DelegateDeclaration kind} {parent : StoredCapability kind}
++    (accepted : AcceptedCellEffect (portal := portal) (authState := authState domain pre)
++      (delegateFamily domain pre portal context codec parentCodec effectDigest)
++      (context.request codec effectDigest pre.root declaration) pre declaration parent) :
++    ∃ stored, readCapability accepted.prepared.post kind declaration.child.id = some stored ∧
++      LineageValid stored ∧ LineageAnchored accepted.prepared.post stored := by
++  exact ⟨_, delegation_post_capability_exact accepted,
++    accepted.modeEvidence.childLineageValid, accepted.postcondition.2⟩
+ 
+ /-! ## Revocation -/
+ 
+@@ -564,6 +965,21 @@
+     issueFamily,
+     IssueDeclaration.patch]
+ 
++theorem issue_post_lineage_valid
++    {M : Materializer} {domain : ProjectionUniverse} {pre : Cell M}
++    {portal : Portal} {kind : ResourceKind} {request : Request kind}
++    {codec : LawfulCodec (IssueDeclaration kind)}
++    {effectDigest : IssueDeclaration kind → Digest}
++    {declaration : IssueDeclaration kind}
++    (accepted : AcceptedCellEffect (portal := portal)
++      (authState := authState domain pre)
++      (issueFamily domain pre codec effectDigest context) request pre declaration ()) :
++    ∃ stored, readCapability accepted.prepared.post kind declaration.capability.id = some stored ∧
++      LineageValid stored ∧ LineageAnchored accepted.prepared.post stored := by
++  refine ⟨⟨declaration.capability, []⟩, issue_post_capability_exact accepted, ?_, trivial⟩
++  exact .root declaration.capability accepted.modeEvidence.rootParent
++    accepted.modeEvidence.rootSelf accepted.modeEvidence.rootAncestors
++
+ @[simp] theorem attenuation_post_capability_exact
+     {M : Materializer} {domain : ProjectionUniverse} {pre : Cell M}
+     {portal : Portal} {kind : ResourceKind} {request : Request kind}
+@@ -605,6 +1021,22 @@
+     attenuation_post_capability_exact accepted,
+     accepted.modeEvidence.childLineageValid⟩
+ 
++/-- Strict descent also preserves the exact retained canonical parent chain
++in the actual post-cell, including when the parent already has mixed lineage. -/
++theorem attenuation_post_lineage_anchored
++    {M : Materializer} {domain : ProjectionUniverse} {pre : Cell M}
++    {portal : Portal} {kind : ResourceKind} {request : Request kind}
++    {codec : LawfulCodec (AttenuateDeclaration kind)}
++    {parentCodec : LawfulCodec (StoredCapability kind)}
++    {effectDigest : AttenuateDeclaration kind → Digest}
++    {declaration : AttenuateDeclaration kind} {parent : StoredCapability kind}
++    (accepted : AcceptedCellEffect (portal := portal)
++      (authState := authState domain pre)
++      (attenuateFamily domain pre codec parentCodec effectDigest context)
++      request pre declaration parent) :
++    LineageAnchored accepted.prepared.post (descendedCapability declaration.child parent) :=
++  accepted.postcondition.2
++
+ @[simp] theorem revocation_post_exact
+     {M : Materializer} {domain : ProjectionUniverse} {pre : Cell M}
+     {portal : Portal} {kind : ResourceKind} {request : Request kind}

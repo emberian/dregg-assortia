@@ -1,0 +1,45 @@
+import Theory.CredentialAuthorityEffects
+
+namespace Minidregg.Theory.CredentialAuthorityFamily
+#print axioms DelegationShape.recipient_is_subject
+#print axioms DelegationShape.requires_delegate_verb
+#print axioms DelegationShape.no_other_target
+end Minidregg.Theory.CredentialAuthorityFamily
+
+namespace Minidregg.Theory.TypedAuthorization.Capability
+#print axioms LineageBounds.refl
+#print axioms LineageBounds.trans
+#print axioms Attenuates.lineageBounds
+#print axioms Lineage.root_bounds
+#print axioms Lineage.root_admissible_of_strict
+end Minidregg.Theory.TypedAuthorization.Capability
+
+namespace Minidregg.Theory.CredentialAuthorityState
+#print axioms LineageValid.root_bounds
+#print axioms LineageValid.nonempty_lineage
+#print axioms LineageValid.root_admissible_of_strict
+end Minidregg.Theory.CredentialAuthorityState
+
+namespace Minidregg.Theory.CredentialAuthorityEffects
+#print axioms IssueEvidence.reject_existing_id
+#print axioms DescentEvidence.reject_existing_child
+#print axioms DescentEvidence.reject_spent_nullifier
+#print axioms capabilityProduction_preserves_present
+#print axioms AttenuateEvidence.childLineageAnchored
+#print axioms DelegationEvidence.childLineageValid
+#print axioms DelegationEvidence.childLineageAnchored
+#print axioms acceptDelegation
+#print axioms DelegationEvidence.parent_use_verified
+#print axioms DelegationEvidence.parent_exact
+#print axioms DelegationEvidence.child_bounds
+#print axioms DelegationEvidence.reject_missing_delegate
+#print axioms DelegationEvidence.reject_non_capability_mode
+#print axioms DelegationEvidence.reject_wrong_parent
+#print axioms DelegationEvidence.reject_wrong_grantor
+#print axioms DelegationEvidence.reject_bearer_child
+#print axioms delegation_post_capability_exact
+#print axioms delegation_post_nullifier_exact
+#print axioms delegation_post_lineage_valid
+#print axioms issue_post_lineage_valid
+#print axioms attenuation_post_lineage_anchored
+end Minidregg.Theory.CredentialAuthorityEffects

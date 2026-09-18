@@ -1,0 +1,35 @@
+{
+  "captured_at": "2026-09-18T05:37:48.279352+00:00",
+  "status": "FROZEN SCRATCH ONLY: Family/State definitions green then comments changed; Effects exact current source green; 32-declaration axiom audit green; no live representation cutover",
+  "files": [
+    {
+      "source": "/Users/ember/dev/minidregg/Theory/CredentialAuthorityFamily.lean",
+      "scratch": "/tmp/dregg-authorized-delegation-draft/Theory/CredentialAuthorityFamily.lean",
+      "baseline": "/tmp/dregg-authorized-delegation-draft/baseline/Theory/CredentialAuthorityFamily.lean",
+      "baseline_sha256": "7faa5cc66e58c19085e76ecb87c2d65f3923096eb465d3573a9ffa056e43b614",
+      "scratch_sha256": "acd374f926d8ccda6465d0f60c84d05f2502cac4432b0c13e39947f72cabed3e",
+      "live_matches_baseline": true
+    },
+    {
+      "source": "/Users/ember/dev/minidregg/Theory/CredentialAuthorityState.lean",
+      "scratch": "/tmp/dregg-authorized-delegation-draft/Theory/CredentialAuthorityState.lean",
+      "baseline": "/tmp/dregg-authorized-delegation-draft/baseline/Theory/CredentialAuthorityState.lean",
+      "baseline_sha256": "a712de2e8f5624103e34cb90326a1a5bb2eaf30cdc7af1370f60b37232f2d733",
+      "scratch_sha256": "5b115b11cf5cd67c408fc0619f168fd7bec9b539fc374b3e1acc178a9af20e25",
+      "live_matches_baseline": true
+    },
+    {
+      "source": "/Users/ember/dev/minidregg/Theory/CredentialAuthorityEffects.lean",
+      "scratch": "/tmp/dregg-authorized-delegation-draft/Theory/CredentialAuthorityEffects.lean",
+      "baseline": "/tmp/dregg-authorized-delegation-draft/baseline/Theory/CredentialAuthorityEffects.lean",
+      "baseline_sha256": "b3da04198b1e14bdad2b062ea537266ddccc49e7dcd924f957642aee0c7fb58f",
+      "scratch_sha256": "fc5676a9e39733a20856d00e163cda8acf98248c608e4ffcc59b1b089103a152",
+      "live_matches_baseline": true
+    }
+  ],
+  "updated_at": "2026-09-18T06:04:22.468886+00:00",
+  "foundation_checks": "/tmp/dregg-delegation-foundation-checks.json",
+  "patch": "/tmp/dregg-authorized-delegation.patch",
+  "checks_manifest": "/tmp/dregg-authorized-delegation-checks.json",
+  "next_decision": "Ember chose keep existing grants and check new policy rules; generation/revision split is decided for next combined wave and is NOT implemented in this scratch patch."
+}

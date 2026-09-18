@@ -1,0 +1,54 @@
+'Minidregg.Compiler.CredentialAuthorityReplay.birthIdentityBytes_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Kernel.ResourceBirthController.Concrete.PreparedBirth.transaction_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Kernel.ResourceBirthController.Concrete.PreparedBirth.authority_marker_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Kernel.ResourceBirthController.Concrete.no_prepared_of_wrong_transaction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Kernel.ResourceBirthController.Concrete.no_prepared_of_wrong_marker' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Kernel.ResourceBirthReceiver.tuple_source_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minidregg.Kernel.ResourceBirthReceiver.accepted_post_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minidregg.Kernel.ResourceBirthReceiver.accepted_authority_post' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Kernel.ResourceBirthReceiver.accepted_allocation_bytes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Kernel.ResourceBirthReceiver.accepted_book_conserves' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Kernel.ResourceBirthReceiver.readGuards_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minidregg.Kernel.ResourceBirthReceiver.readGuards_readonly' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minidregg.Kernel.ResourceBirthReceiver.source_reads_covered' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minidregg.Kernel.ResourceBirthReceiver.intent_exact_source' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minidregg.Kernel.ResourceBirthReceiver.intent_derived_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Kernel.ResourceBirthReceiver.installed_write_bytes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Kernel.ResourceBirthReceiver.installed_initial_policy_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Kernel.ResourceBirthReceiver.unchanged_authority_shard_unwritten' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Kernel.ResourceBirthReceiver.installed_authority_pages' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Kernel.ResourceBirthReceiver.installed_authority_catalogue' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Kernel.ResourceBirthReceiver.refusal_no_mutation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minidregg.Kernel.ResourceBirthReceiver.no_partial_commit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minidregg.Kernel.ResourceBirthReceiver.replay_only_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minidregg.Kernel.ResourceBirthReceiver.replay_wrong_event_refused' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

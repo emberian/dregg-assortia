@@ -1,6 +1,8 @@
 # Proposed ownership: persistent DREGG resource hosting
 
-Draft for ember and Wisper, September 18. **Not assigned; runtime/export decisions below are still open.** This is a substantial platform design and implementation package. Android embedding was the first example; cloud hosting is the current recommendation because it directly serves the intended community shellserver and participant-operated hosting.
+Draft for ember and Wisper, September 18. **Ember selected this contribution area; it is not assigned, and runtime/export decisions below remain open.** This is a substantial platform design and implementation package serving the intended community shellserver and participant-operated hosting. Android embedding remains a separate possible future feature.
+
+The [native-host export investigation](../sprints/2026-09-18/account-handoff/design/dregg-native-host-export-proposal.md) names concrete Mini calls and missing exports. Its BabyBear/29 execution profile is a reviewed candidate, not an accepted or implemented deployment profile. The [account handoff](../sprints/2026-09-18/account-handoff.md) records current source and integration status.
 
 The user-visible result: a friend obtains a programmable DREGG resource host, operates a resource through the real kernel, disconnects, and returns to the same identity, committed state and history. Its operator can restart, stop and wake the host without silently duplicating machines, losing state, double charging, or treating an uncertain command as a failed command safe to repeat.
 

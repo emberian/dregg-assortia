@@ -1,0 +1,26 @@
+{
+  "status": "scratch source only; no repository edits or scratch olean emission by this step",
+  "based_on": [
+    {
+      "path": "/Users/ember/dev/minidregg/Compiler/TypedAuthorizationRequestCodec.lean",
+      "sha256": "8c30b973e0c5b8e96fe63942767e3654cdd256036305d1ad1bf3e04be4a6276e"
+    },
+    {
+      "path": "/Users/ember/dev/minidregg/Compiler/CredentialAuthorityEntryCodec.lean",
+      "sha256": "ea32363ce1917207ac4320efd5c0fc749532455b57f7c7b6bb505a19be9408ca"
+    }
+  ],
+  "sources": [
+    {
+      "path": "/tmp/dregg-authorized-delegation-draft/Compiler/TypedAuthorizationRequestCodec.lean",
+      "sha256": "e036d9eb78bbd0ac675d1ac6ecfd106fee7d72dd5a1bf518da6832e6cc7b818d"
+    },
+    {
+      "path": "/tmp/dregg-authorized-delegation-draft/Compiler/CredentialAuthorityEntryCodec.lean",
+      "sha256": "758272f19c71952ce348c43dcad295a50859a3ab43c265de6bd017417abc85fa"
+    }
+  ],
+  "checked_component": "/tmp/dregg-full-request-codec-draft-check.json",
+  "pending": "ParentLink actual codec composition requires coherent isolated Family/State artifacts from their owner; do not check against live old State.",
+  "compatibility_check": "/tmp/dregg-request-compatibility-draft-check.json"
+}

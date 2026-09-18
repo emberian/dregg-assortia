@@ -1,0 +1,9 @@
+{
+  "sha256": {
+    "/Users/ember/dev/breadstuffs/dregg-lean-ffi/src/bridge_lc_ffi.rs": "fc086f788b11ea03e4191f7b70b0f0e4d65b99ae082b20dcf032ebd18acb21e8"
+  },
+  "source_check": "rustfmt --check --edition 2021 --config skip_children=true PASS; exact two-hunk diff reviewed",
+  "contract": "PicklesWrapShapeGate.lean real_block_wrap_shape_accepts: NCHAL=16, BRANCH_DOMAIN_LOG2=16, PREV_EVAL_PAIRS=43, PREV_EVAL_MAXLEN=1",
+  "validation": "Attempt2 failed before tests with three stale 11-argument calls. Source repair saved; no post-repair build or tests run.",
+  "frozen_lifecycle_files_changed": []
+}

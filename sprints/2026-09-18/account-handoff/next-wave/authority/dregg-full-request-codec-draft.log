@@ -1,0 +1,20 @@
+'Minidregg.Compiler.TypedAuthorizationRequestCodec.requestWireOfWords_exact' depends on axioms: [propext]
+'Minidregg.Compiler.TypedAuthorizationRequestCodec.requestWords_injective' depends on axioms: [propext]
+'Minidregg.Compiler.TypedAuthorizationRequestCodec.requestWireCodec_canonical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Compiler.TypedAuthorizationRequestCodec.someRequestCodec_canonical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Compiler.TypedAuthorizationRequestCodec.requestCodecFor_canonical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Compiler.TypedAuthorizationRequestCodec.requestStreamFor_wrong_kind' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Compiler.TypedAuthorizationRequestCodec.signedRequestBytes_existing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Compiler.TypedAuthorizationRequestCodec.signedRequestBytes_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

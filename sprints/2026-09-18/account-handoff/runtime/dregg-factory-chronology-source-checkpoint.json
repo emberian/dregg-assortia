@@ -1,0 +1,34 @@
+{
+  "checkpoint_base": "73136dd30",
+  "purpose": "factory chronology retry after actual E0596 compiler diagnosis; tests pending",
+  "files": {
+    "turn/src/reversible.rs": "abd9deab5148de5c202ad8240e9782e826388a10d023cf91d7154fad33a0f5f2",
+    "starbridge-v2/src/world/genesis.rs": "2fa8754323840f8cb0b41b2dcc1cf9d86dc4062125d9b7a4c7aeedb97e166842",
+    "starbridge-v2/src/world/mod.rs": "d8198d9b3d8173c7d63f4725e16624219d17f832c41f68ab4d41c8afe19c0b61",
+    "starbridge-v2/src/replay.rs": "dabd3b132b0524e1f2b6a226ed002449a5ad41a4d410719df74a24b36407bf35",
+    "starbridge-v2/src/persistence.rs": "06ed211c833ddd954ad704a8eedf02514aacba4fe4f0f8ceaed28a8daf630cbf",
+    "starbridge-v2/src/time_travel.rs": "871c47f03ac3323af8a1e874a784aaa423d909506636956b7dc661e4bcb93f50",
+    "starbridge-v2/src/deos_desktop/provenance_walker.rs": "4dd8f70349f2094cb91a98b3712bd5fed6040514d20b027c275f52f5eda97722"
+  },
+  "test_filter": "test(/factory_chronology_/)",
+  "package": "starbridge-v2",
+  "target": "--lib",
+  "features": [
+    "--no-default-features",
+    "--features",
+    "embedded-executor"
+  ],
+  "test_ids": [
+    "world::tests::factory_chronology_durable_constructor_mutation_reopen_and_historical_forks",
+    "world::tests::factory_chronology_redeploy_identity_is_idempotent_and_conflicts_refuse",
+    "world::tests::factory_chronology_storage_failures_latch_without_publishing_ram",
+    "persistence::tests::factory_chronology_corrupt_or_duplicate_deployment_refuses_without_tail_repair",
+    "persistence::tests::factory_chronology_v1_requires_explicit_migration_without_reset"
+  ],
+  "previous_check": {
+    "log": "/tmp/dregg-ffi-factory-fast-20260918.log",
+    "verdict": "FAIL 101 before tests",
+    "diagnostic": "E0596 ledger.root requires mutable Ledger in history factory recorder",
+    "repair": "Both history recorder signatures and their World/time_travel callers now use &mut Ledger; persistent ledger read remains immutable."
+  }
+}

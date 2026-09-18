@@ -1,0 +1,10 @@
+[
+  {
+    "path": "Theory/CredentialLineageAdmission.lean",
+    "live_sha256": "d9eeab7f064d0101fa2027782cdb38c64daf1de18b4ad91bff31754b80fd9fd5"
+  },
+  {
+    "path": "Compiler/CredentialAuthorityPolicyRegistry.lean",
+    "live_sha256": "d05d098099208893502e23cd316eff8457132e531cc8a7cb0c8ab58108431975"
+  }
+]

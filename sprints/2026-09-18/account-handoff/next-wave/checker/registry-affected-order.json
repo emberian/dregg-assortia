@@ -1,0 +1,18 @@
+[
+  "Theory.CredentialAuthorityFamily",
+  "Theory.CredentialAuthorityState",
+  "Compiler.CredentialAuthorityEntryCodec",
+  "Compiler.CredentialAuthorityPageMaterializer",
+  "Compiler.CredentialAuthorityStateCodec",
+  "Compiler.CredentialAuthorityDomain",
+  "Kernel.CanonicalPolicyRegistry",
+  "Kernel.CredentialSignedEnvelopeController",
+  "Compiler.CredentialSignatureIO",
+  "Theory.Hyperdocument",
+  "Theory.CellSlot",
+  "Theory.ResourceBirth",
+  "Compiler.ResourceBirthCodec",
+  "Compiler.CredentialSignatureAdmission",
+  "Theory.CredentialLineageAdmission",
+  "Compiler.CredentialAuthorityPolicyRegistry"
+]

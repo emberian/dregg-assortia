@@ -1,0 +1,9 @@
+{
+  "sha256": {
+    "/Users/ember/dev/breadstuffs/dregg-lean-ffi/src/lean_init_st.cpp": "6b47afa70d5ecce66d75a20884a81d2fbb8bad3d191678ee0ec9e6c5d6b2fc22"
+  },
+  "source_check": "clang++ -std=c++17 -fsyntax-only against pinned Lean v4.30.0 headers PASS; exact diff reviewed; all 21 ST initializer calls unchanged",
+  "change": "Optional module profiler uses clock_gettime(CLOCK_MONOTONIC) instead of std::chrono; either clock failure prints elapsed_ms=unavailable while preserving actual initializer result",
+  "validation": "Attempt3 failed during link before tests. This timer-only source repair has not been linked or executed. No build run.",
+  "other_lifecycle_files_unchanged": true
+}

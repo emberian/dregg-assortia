@@ -1,0 +1,14 @@
+{
+  "source": "/Users/ember/dev/minidregg/.lake/build/lib/lean",
+  "target": "/tmp/dregg-delegation-core-effect/olean",
+  "overrides": [
+    "Compiler/CredentialAuthorityEntryCodec",
+    "Compiler/CredentialAuthorityPolicyRegistry",
+    "Compiler/TypedAuthorizationRequestCodec",
+    "Theory/CredentialAuthorityFamily",
+    "Theory/CredentialAuthorityState",
+    "Theory/CredentialLineageAdmission",
+    "Theory/CredentialAuthorityEffects"
+  ],
+  "newSymlinks": 3010
+}

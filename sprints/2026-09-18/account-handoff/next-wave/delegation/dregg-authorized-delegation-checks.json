@@ -1,0 +1,81 @@
+{
+  "generated_at": "2026-09-18T06:04:22.468886+00:00",
+  "scope": "isolated scratch only; no live source/artifact edits",
+  "foundation": [
+    {
+      "module": "Theory/CredentialAuthorityFamily",
+      "exit": 0,
+      "seconds": 3.22,
+      "source": "/tmp/dregg-authorized-delegation-draft/Theory/CredentialAuthorityFamily.lean",
+      "sha256": "789bb19a8a4fd37635725a88971d2654afbbd7ab45139139e3b8b1fdf504a24c",
+      "output": "/tmp/dregg-delegation-core-effect/olean/Theory/CredentialAuthorityFamily.olean",
+      "log": "/tmp/dregg-delegation-CredentialAuthorityFamily-scratch.log"
+    },
+    {
+      "module": "Theory/CredentialAuthorityState",
+      "exit": 0,
+      "seconds": 3.25,
+      "source": "/tmp/dregg-authorized-delegation-draft/Theory/CredentialAuthorityState.lean",
+      "sha256": "b1999ef3771878fcd0827c5d1977b97e5d8fe4e0dfde722f8165fa0fa44839d7",
+      "output": "/tmp/dregg-delegation-core-effect/olean/Theory/CredentialAuthorityState.olean",
+      "log": "/tmp/dregg-delegation-CredentialAuthorityState-scratch.log"
+    }
+  ],
+  "foundation_source_delta_after_green": "comments only, explicitly recorded; current exact bytes were not re-emitted",
+  "latest_checks": [
+    {
+      "source": "/private/tmp/dregg-authorized-delegation-draft/Theory/CredentialAuthorityEffects.lean",
+      "module": "Theory/CredentialAuthorityEffects",
+      "sha256": "fc5676a9e39733a20856d00e163cda8acf98248c608e4ffcc59b1b089103a152",
+      "cwd": "/private/tmp/dregg-authorized-delegation-draft",
+      "command": [
+        "/Users/ember/.elan/toolchains/leanprover--lean4---v4.30.0/bin/lean",
+        "-o",
+        "/tmp/dregg-delegation-core-effect/olean/Theory/CredentialAuthorityEffects.olean",
+        "Theory/CredentialAuthorityEffects.lean"
+      ],
+      "exit": 0,
+      "seconds": 3.346,
+      "log": "/tmp/dregg-delegation-core-effect/Theory-CredentialAuthorityEffects.log",
+      "output": "/tmp/dregg-delegation-core-effect/olean/Theory/CredentialAuthorityEffects.olean"
+    },
+    {
+      "source": "/private/tmp/dregg-authorized-delegation-draft/Theory/CredentialDelegationAxiomAudit.lean",
+      "module": "Theory/CredentialDelegationAxiomAudit",
+      "sha256": "76ed5b3d48fb264635a9348fc9d2d73b5970ea04c14b489543f90239a3d1d181",
+      "cwd": "/private/tmp/dregg-authorized-delegation-draft",
+      "command": [
+        "/Users/ember/.elan/toolchains/leanprover--lean4---v4.30.0/bin/lean",
+        "-o",
+        "/tmp/dregg-delegation-core-effect/olean/Theory/CredentialDelegationAxiomAudit.olean",
+        "Theory/CredentialDelegationAxiomAudit.lean"
+      ],
+      "exit": 0,
+      "seconds": 2.728,
+      "log": "/tmp/dregg-delegation-core-effect/Theory-CredentialDelegationAxiomAudit.log",
+      "output": "/tmp/dregg-delegation-core-effect/olean/Theory/CredentialDelegationAxiomAudit.olean"
+    }
+  ],
+  "effects_exact_source_green": true,
+  "axiom_audit": {
+    "declarations": 32,
+    "allowed_actual_axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+    ],
+    "log": "/tmp/dregg-delegation-core-effect/Theory-CredentialDelegationAxiomAudit.log",
+    "in_source_new_pins": "not installed after budget freeze; checked standalone audit retained"
+  },
+  "other_owners_checks": [
+    "/tmp/dregg-parentlink-codec-isolated-checks.json",
+    "/tmp/dregg-delegation-core-effect/checks.jsonl"
+  ],
+  "remaining": [
+    "Apply coordinated representation migration only after root release",
+    "Generation/revision keep-grants/new-rules semantics and wire update",
+    "Consumer/codec version closure and root full integration",
+    "Actual native parent authorization -> commit/reopen -> Bob invoke positive and negative probes"
+  ],
+  "unverified_proof_terms_in_owned_scratch": "none after final Effects pass; final Family/State source differs from its green source by comments only; new permanent in-source axiom pins remain to be placed"
+}

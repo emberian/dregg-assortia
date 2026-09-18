@@ -1,0 +1,146 @@
+--- a/Compiler/CredentialAuthorityPageMaterializer.lean
++++ b/Compiler/CredentialAuthorityPageMaterializer.lean
+@@ -831,16 +831,17 @@
+   StreamCodec.xmap (StreamCodec.option pageStream) pageAt stateOfOption
+     (by intro state; exact (state_ext state).symm)
+ 
+-/-- Stable marker: `LOOM/AUTH/POLICYPAGE`, wire version 3, capacity 4.
+-Version 3 adds committed signing keys, atomically paired with their current
+-subject epoch. Prior wire versions are not silently reinterpreted. -/
++/-- Stable marker: `LOOM/AUTH/POLICYPAGE`, wire version 4, capacity 4.
++Version 4 records explicit strict or delegated lineage origins, including
++the complete typed request for delegated steps. Committed signing keys remain
++atomically paired with their current subject epoch. Prior wire versions are not silently reinterpreted. -/
+ def wireFrame : List UInt8 :=
+   [76, 79, 79, 77, 47, 65, 85, 84, 72, 47, 80, 79, 76, 73, 67, 89, 80, 65,
+-    71, 69, 3, 4]
++    71, 69, 4, 4]
+ 
+ def decodeStateRaw : List UInt8 -> Option (LogicalState schema)
+   | 76 :: 79 :: 79 :: 77 :: 47 :: 65 :: 85 :: 84 :: 72 :: 47 :: 80 :: 79 ::
+-      76 :: 73 :: 67 :: 89 :: 80 :: 65 :: 71 :: 69 :: 3 :: 4 :: payload =>
++      76 :: 73 :: 67 :: 89 :: 80 :: 65 :: 71 :: 69 :: 4 :: 4 :: payload =>
+       stateStream.toLawful.decode payload
+   | _ => none
+ 
+@@ -860,6 +861,10 @@
+   if encodeState state = bytes then some state else none
+ 
+ /-- Earlier frames never reinterpret the expanded current entry vocabulary. -/
++theorem decodeState_rejects_v3 (payload : List UInt8) :
++    decodeState ([76, 79, 79, 77, 47, 65, 85, 84, 72, 47, 80, 79, 76, 73,
++      67, 89, 80, 65, 71, 69, 3, 4] ++ payload) = none := rfl
++
+ theorem decodeState_rejects_v2 (payload : List UInt8) :
+     decodeState ([76, 79, 79, 77, 47, 65, 85, 84, 72, 47, 80, 79, 76, 73,
+       67, 89, 80, 65, 71, 69, 2, 4] ++ payload) = none := rfl
+@@ -906,7 +911,7 @@
+ 
+ def rootCustomization : List UInt8 :=
+   [76, 79, 79, 77, 46, 65, 85, 84, 72, 46, 80, 79, 76, 73, 67, 89, 80, 65,
+-    71, 69, 46, 82, 79, 79, 84, 47, 118, 51]
++    71, 69, 46, 82, 79, 79, 84, 47, 118, 52]
+ 
+ theorem wire_and_root_domains_distinct : wireFrame ≠ rootCustomization := by
+   decide
+--- a/Compiler/CredentialAuthorityStateCodec.lean
++++ b/Compiler/CredentialAuthorityStateCodec.lean
+@@ -125,7 +125,7 @@
+ def stateStream : StreamCodec (LogicalState CredentialAuthorityState.schema.{0, 0}) :=
+   StreamCodec.xmap fieldsStream LogicalState.fields stateOfFields stateOfFields_fields
+ 
+-def wireFrame : List UInt8 := "LOOM/AUTH/STATE".toUTF8.toList ++ [2]
++def wireFrame : List UInt8 := "LOOM/AUTH/STATE".toUTF8.toList ++ [3]
+ 
+ def encode (state : LogicalState CredentialAuthorityState.schema.{0, 0}) : List UInt8 :=
+   wireFrame ++ stateStream.encode state
+@@ -145,6 +145,16 @@
+ def decode (bytes : List UInt8) : Option (LogicalState CredentialAuthorityState.schema.{0, 0}) := do
+   let state ← decodeRaw bytes
+   if encode state = bytes then some state else none
++
++theorem decode_rejects_v2 (payload : List UInt8) :
++    decode ("LOOM/AUTH/STATE".toUTF8.toList ++ 2 :: payload) = none := by
++  let oldFrame : List UInt8 := "LOOM/AUTH/STATE".toUTF8.toList ++ [2]
++  have lengthExact : wireFrame.length = oldFrame.length := by simp [wireFrame, oldFrame]
++  have frameDifferent : oldFrame ≠ wireFrame := by simp [wireFrame, oldFrame]
++  have raw : decodeRaw (oldFrame ++ payload) = none := by
++    simp [decodeRaw, lengthExact, frameDifferent]
++  have rejected : decode (oldFrame ++ payload) = none := by simp [decode, raw]
++  simpa only [oldFrame, List.append_assoc, List.singleton_append] using rejected
+ 
+ theorem decode_rejects_v1 (payload : List UInt8) :
+     decode ("LOOM/AUTH/STATE".toUTF8.toList ++ 1 :: payload) = none := by
+@@ -176,7 +186,7 @@
+   decode := decode
+   decode_encode := decode_encode
+ 
+-def rootCustomization : List UInt8 := "LOOM.AUTH.STATE.ROOT/v2".toUTF8.toList
++def rootCustomization : List UInt8 := "LOOM.AUTH.STATE.ROOT/v3".toUTF8.toList
+ 
+ def rootBytes (bytes : List UInt8) : Digest :=
+   (Sp800185Cshake256.hash rootCustomization bytes).digest
+--- a/Compiler/BoundedPageExtensionCatalog.lean
++++ b/Compiler/BoundedPageExtensionCatalog.lean
+@@ -119,7 +119,7 @@
+   pageCodecId := ⟨92003⟩
+   controllerId := ⟨94003⟩
+   rootAlgorithmId := ⟨93001⟩
+-  wireVersion := 3
++  wireVersion := 4
+   capacity := 4
+   wireFrame :=
+     Minidregg.Compiler.CredentialAuthorityPageMaterializer.wireFrame
+--- a/Compiler/CanonicalCellRegistry.lean
++++ b/Compiler/CanonicalCellRegistry.lean
+@@ -85,7 +85,7 @@
+ def schemaRef : Kind → SchemaRef
+   | .content => ⟨⟨91001⟩, 1⟩
+   | .eventHistory => ⟨⟨91002⟩, 1⟩
+-  | .authorityShard => ⟨⟨91003⟩, 3⟩
++  | .authorityShard => ⟨⟨91003⟩, 4⟩
+   | .declaredObject => ⟨⟨91004⟩, 1⟩
+   | .resourceBook => ⟨⟨91005⟩, 2⟩
+   | .authorityCatalogue => ⟨⟨91006⟩, 1⟩
+--- a/Compiler/BoundedPageSchemaUpgrade.lean
++++ b/Compiler/BoundedPageSchemaUpgrade.lean
+@@ -5,7 +5,7 @@
+ independent wire versions in one dependent extension catalogue. This module
+ constructs the next catalogue generation over those CURRENT typed carriers.
+ Each page wire version advances from its own pinned version; in this source
+-that is content 1→2, events 1→2, and authority 3→4. It does not reconstruct a
++that is content 1→2, events 1→2, and authority 4→5. It does not reconstruct a
+ historical parser using today's expanded authority vocabulary.
+ 
+ The next generation preserves the finite sparse logical carriers and their
+@@ -44,7 +44,7 @@
+ /-! ## Exact next-generation codecs over the current typed state carriers -/
+ 
+ /-- Page wire versions advance from their own deployed pins, independently of
+-catalog generations. In this catalogue: content 1→2, events 1→2, authority 3→4. -/
++catalog generations. In this catalogue: content 1→2, events 1→2, authority 4→5. -/
+ def nextWireVersion (kind : PageKind) : Nat := (controller kind).wireVersion + 1
+ 
+ theorem nextWireVersion_fits (kind : PageKind) : nextWireVersion kind < 256 := by
+--- a/Assurance/BoundedPageSchemaUpgradeCutover.lean
++++ b/Assurance/BoundedPageSchemaUpgradeCutover.lean
+@@ -7,7 +7,7 @@
+ existing replicated-settlement safety theorem.
+ 
+ The `v1`/`v2` recovery labels below name catalogue generations. Individual
+-page wire versions advance independently: authority 3→4, content/events 1→2.
++page wire versions advance independently: authority 4→5, content/events 1→2.
+ 
+ Recovery has one explicit linearization bit.  A prepared record (including a
+ fully written V2 catalog) still recovers V1; a committed record recovers V2
+--- a/Compiler/CredentialAuthorityPageProbe.lean
++++ b/Compiler/CredentialAuthorityPageProbe.lean
+@@ -165,7 +165,7 @@
+   let exact := match stateCodec.decode bytes with
+     | some state => decide (pageAt state = some ownerPage)
+     | none => false
+-  IO.println s!"authority-page-v3 bytes={bytes.length} exact-roundtrip={exact}"
++  IO.println s!"authority-page-v4 bytes={bytes.length} exact-roundtrip={exact}"
+   IO.println s!"owner-capability={decide (ownerPage.readCapability .object demoCapability.id = some ownerStored)}"
+   IO.println s!"issuer-epoch={ownerPage.issuerEpochAt demoCapability.issuer} subject-key-epoch={ownerPage.subjectKeyEpochAt demoRequest.subject}"
+   IO.println s!"issue-marker={issuedPage.isNullified 81} duplicate-grant-refused={decide (preIssuePage.admitInsertMany [ownerEntry, ownerEntry] = .error .addressConflict)}"

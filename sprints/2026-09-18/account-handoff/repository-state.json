@@ -1,0 +1,100 @@
+{
+  "captured": "2026-09-18T06:15:33.470427+00:00",
+  "note": "Before Assortia handoff commit; existing foreign changes are preserved, not a delete/repair list.",
+  "repositories": {
+    "breadstuffs": {
+      "head": "bf953115da6ff82b980fd32a42385d7b1313ac2c",
+      "branch": "main",
+      "working_tree": [
+        "MM circuit-prove/tests/leaf_vs_recursion_sweep.rs",
+        "MM fhegg-fhe/src/bin/ntt_four_step_bench.rs",
+        "MM fhegg-fhe/tests/kpz_encoding_depth.rs",
+        "MM turn/src/reversible.rs",
+        "?? armor_audit.md",
+        "?? before-full.png",
+        "?? dp-paper-b64.txt",
+        "?? eprint2152.json",
+        "?? friday_preregister.md",
+        "?? gloss-full.png",
+        "?? iac_listen_guide.md",
+        "?? iac_notes_aug20.md",
+        "?? metatheory/wip/Measure19d.lean",
+        "?? output/imagegen/",
+        "?? rack-after-unblock.yml"
+      ]
+    },
+    "minidregg": {
+      "head": "a21633ca72731ed622854678620e160283a1ca43",
+      "branch": "main",
+      "working_tree": [
+        " M Compiler.lean",
+        " M README.md",
+        " M native/hyperdocument-link-sqlite-store/Cargo.toml",
+        " M native/hyperdocument-link-store/Cargo.toml",
+        " M prover/Cargo.toml",
+        " M prover/src/lib.rs",
+        "?? Compiler/UwueavePreoProjectionV2.lean",
+        "?? LICENSE",
+        "?? LICENSING.md",
+        "?? NOTICE",
+        "?? docs/FORMAL_STATUS_AND_NEXT_PROOFS.md",
+        "?? prover/generated/uwueave_preo_projection_v2.rs",
+        "?? prover/tests/uwueave_preo_projection_v2.rs",
+        "?? scripts/probe-authority-domain.lean"
+      ]
+    },
+    "dregg-assortia": {
+      "head": "35ddd022c40f2a2f802565176861bcdc2c5ac825",
+      "branch": "main",
+      "working_tree": [
+        " M AGENTS.md",
+        " M CURRENT.md",
+        " M MAP.md",
+        " M README.md",
+        " M contributing/README.md",
+        " M contributing/resource-host-lifecycle.md",
+        " M graph.jsonld",
+        " M intent.md",
+        " M work/records.md",
+        "?? sprints/2026-09-18/account-handoff.md",
+        "?? sprints/2026-09-18/account-handoff/"
+      ]
+    },
+    "DreggNet": {
+      "head": "7f5159126c09cdb829347a56ef9d52fa29b3db30",
+      "branch": "dregg-native-rebuild",
+      "working_tree": [
+        " M Cargo.lock",
+        " M bridge/Cargo.toml",
+        " M bridge/src/node_client.rs",
+        " M control/src/node_api.rs",
+        "?? .lake/",
+        "?? docs/engine/review/CONFORMANCE-EXT.md",
+        "?? docs/engine/review/CONFORMANCE-PROBE.md",
+        "?? dreggnet-settle.jsonl",
+        "?? lake-manifest.json",
+        "?? planning/ADR-federation-stewardship.md",
+        "?? planning/ARCHITECTURE-converged-2026-07-11.md",
+        "?? planning/DESIGN-B-federation-wide-settlement.md",
+        "?? planning/ENDGAME-STATE-2026-07-13.md",
+        "?? planning/ESSAY-verify-the-cage.md",
+        "?? planning/FINDING-A-quorum-requires-determinism.md",
+        "?? planning/INVENTORY-queues-store-and-forward.md",
+        "?? planning/ORB-CUT-REVIEW-claims.md",
+        "?? planning/ORB-CUT-REVIEW-hygiene.md",
+        "?? planning/SPEC-envelope-cap.md",
+        "?? planning/STARKSOUND-ENDGAME-STATE.md",
+        "?? planning/STATUS-problem-A-2026-07-10.md",
+        "?? planning/SWARM-CAMPAIGN-2026-07-11.md",
+        "?? planning/codex-federation-memo.md",
+        "?? planning/envelope-cap-swarm/",
+        "?? planning/essays/",
+        "?? planning/lane1_patches.json",
+        "?? planning/lane2_patches.json",
+        "?? planning/lane3_opendesign.txt",
+        "?? scripts/make-orbcompiler-cut.sh",
+        "?? turn/"
+      ]
+    }
+  }
+}

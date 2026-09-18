@@ -2,7 +2,7 @@
 
 > Generated from `graph.jsonld` by `python3 hub.py render`. Edit the graph, not this file.
 
-Latest work-record update: **2026-09-18T01:45:00-04:00**. This is recorded project state, not a live process monitor.
+Latest work-record update: **2026-09-18T02:12:02-04:00**. This is recorded project state, not a live process monitor.
 
 [New contributor](contributing/README.md) · [Project map](MAP.md) · [Detailed work records](work/records.md)
 
@@ -12,19 +12,18 @@ Latest work-record update: **2026-09-18T01:45:00-04:00**. This is recorded proje
 
 | Work | Owner / reviewer | Next action |
 |---|---|---|
-| [Define substantial cloud/native-host or Android product ownership](contributing/resource-host-lifecycle.md) | Astra: root; contributor/runtime selection with ember | Review the published resource-host lifecycle proposal with ember; select the first runtime/export and consumer, then freeze its owned upstream delivery and acceptance harness. |
+| [Define resource-host lifecycle ownership and its kernel contract](contributing/resource-host-lifecycle.md) | Astra: root with ember; contributor assignment pending | Agree the first runtime/export and executable shell consumer with ember and Wisper, then freeze owned core delivery and crash/restart acceptance. |
 | [Bind native use to committed keys and complete authority](work/records.md#w-authority-native) | Astra: authority_pages + durable_receiver + effect_admission | Preserve native acceptance/refusals through the next delegation/request migration and refresh all affected consumers. |
-| [Give a friend a narrower usable right](work/records.md#w-authorized-delegation) | Astra: durable_callers + effect_admission | Complete the source-owned delegation/lineage contract, then implement its receiver and real two-subject probe. |
-| [Invoke a declared resource through the real kernel](work/records.md#w-declared-invoke) | Astra: localfirst | Create through the accepted birth receiver, reopen, then invoke using the born owner grant; exercise response-loss retry and refusal. |
+| [Give a friend a narrower usable right](work/records.md#w-authorized-delegation) | Astra: durable_callers + effect_admission | Integrate one shared 17-field request/revision/delegation wave from the archived drafts; complete parent-evidence extraction, receiver and real Alice-to-Bob invocation. |
 | [Establish the chosen document storage/turn contract](work/records.md#w-doc-persist) | Astra: root + kernel_carrier + localfirst | Complete ordered factory/history repair and connect document edits to accepted kernel operations instead of setup writes. |
 | [Make full request and actual-pre binding mandatory for generic effects](work/records.md#w-effect-admission) | Astra: core_effect_admission | Finish native registry capability-use/lineage integration after the fresh authority closure. |
-| [Retain factory deployment at its actual history boundary](work/records.md#w-factory-history) | Astra: kernel_carrier | Implement one ordered durable deployment event across World, replay, reversible history and forks; verify exact duplicate/conflicting descriptors, storage refusal and reopen. |
-| [Make actual Hermes/SDK startup avoid unused Lean initialization](work/records.md#w-hermes-startup) | Astra: resource_history + root | Repair first-use archive initialization at the actual Lean gate without changing its semantics. |
+| [Retain factory deployment at its actual history boundary](work/records.md#w-factory-history) | Astra: kernel_carrier | Complete the five targeted factory chronology tests, then affected history regressions and native consumer checks against the exact new snapshot. |
+| [Keep grants valid across policy source revisions](work/records.md#w-grant-revision) | Astra: root + authority_pages + program_install | Coordinate one request/profile/schema migration with explicit delegation; implement revision-exact authorization and separate generation rotation, then exercise both physical receivers. |
+| [Make actual Hermes/SDK startup avoid unused Lean initialization](work/records.md#w-hermes-startup) | Astra: resource_history + root | Finish targeted coordinator tests, fresh-process full/ST/PQ checks and actual Hermes first-use module profiling without weakening native admission. |
 | [Check composition against the actual joint post-state](work/records.md#w-joint-post) | Astra: kernel_carrier + program_install | Exercise concrete factory/invocation policies against the same actual final tuple. |
 | [Define the September 26 programmable nexus and its shared contracts](work/records.md#w-m26-design) | ember + Astra | Review the running create/install/invoke/share/reopen journey; decide the public economic operation and release promises. |
-| [Store initial policies and use one runtime profile](work/records.md#w-policy-source) | Astra: resource_pages + shell_hermes + program_install | Complete physical birth and policy replacement under the shared profile and exact same-directory source guards. |
-| [Implement and exercise the canonical authored-program-to-resource path](work/records.md#w-programmable-path) | Astra: program_install + localfirst | Join birth, distinct policy-control installation and declared invocation under the same source runtime profile. |
-| [Implement one accepted resource birth with owner authority and charge](work/records.md#w-resource-birth) | Astra: proof_integrity + program_install | Finish native upper/physical checks, derive both operation identity fields from the authenticated creator coordinate, then run accepted birth/reopen/invoke. |
+| [Store initial policies and use one runtime profile](work/records.md#w-policy-source) | Astra: resource_pages + shell_hermes + program_install | Split source revision from grant generation across the shared signed request and physical consumers, then run repeated install and retained-grant invocation/reopen. |
+| [Implement and exercise the canonical authored-program-to-resource path](work/records.md#w-programmable-path) | Astra: program_install + localfirst | Complete create → repeated rule replacement preserving grants → delegated recipient invocation → reopen/retry through the same native path, then consume it from the programmable shell. |
 
 ## Backlog
 
@@ -41,8 +40,10 @@ Latest work-record update: **2026-09-18T01:45:00-04:00**. This is recorded proje
 | [Follow graph relationships in both directions](internal/tooling-candidates-2026-09-18.md) | Astra: core_durable_receiver / Astra | Use and maintain the tested hub tools during project handoffs; contributor/runtime selection continues in W-ANDROID-CONTRACT. |
 | [Make assortia usable for ongoing work and new contributors](work/records.md#w-hub-live) | Astra: root | Use and maintain the tested hub tools during project handoffs; contributor/runtime selection continues in W-ANDROID-CONTRACT. |
 | [Trace one canonical typed event through its real compiler and consumer](work/records.md#w-canonical-consumer) | Astra: kernel_carrier | Use the captured receiving evidence as a regression boundary while completing the linked resource journey. |
+| [Invoke a declared resource through the real kernel](work/records.md#w-declared-invoke) | Astra: localfirst | Retain the actual native born-owner journey as a regression boundary during generation/revision and delegation migration. |
 | [Keep embedded candidates atomic through durable publication](work/records.md#w-embedded-candidate) | Astra: root + resource_history | Use the captured receiving evidence as a regression boundary while completing the linked resource journey. |
 | [Connect canonical DataIntent execution to a real durable receiver](work/records.md#w-native-data-receiver) | Astra: core_durable_receiver + proof_integrity | Use the captured receiving evidence as a regression boundary while completing the linked resource journey. |
+| [Implement one accepted resource birth with owner authority and charge](work/records.md#w-resource-birth) | Astra: proof_integrity + program_install | Retain the actual native born-owner journey as a regression boundary during generation/revision and delegation migration. |
 | [Make source freshness portable and actionable](work/records.md#w-source-impact) | Astra: core_resource_pages | Use and maintain the tested hub tools during project handoffs; contributor/runtime selection continues in W-ANDROID-CONTRACT. |
 
 Sources and prerequisites live in the detailed records. Dated orientations and test captures are evidence at their stated revision; they are not silently promoted to today's result.

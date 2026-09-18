@@ -116,4 +116,12 @@ Historical context and exact cv session/message references are in [the intent ar
 
 Assortia is intended as a living knowledge index and project-management hub that makes substantial product work legible to outside contributors. Wisper is waiting for a specific opportunity. Ember rejected graph-tooling maintenance as that contribution, giving Android scaffolding with an embedded DREGG node and specified system/UI responsibilities as the scale of work intended. Ember subsequently suggested DreggNet/cloud as another possible fit for an experienced backend/platform engineer trusted with broad systems work.
 
-Neither Android nor cloud is assigned or fixed release scope yet. The next action is to inspect actual implementations and establish a coherent ownership/interface boundary. The contributor can own design and implementation; this is not limited to consuming a finished API or building a UI wrapper. Internal hub tooling remains the agents' responsibility.
+Ember subsequently selected **cloud/resource-host lifecycle** as the area to offer Wisper. The exact kernel/host contract and first receiving runtime are still to be worked out together. This selects the contribution area; Wisper has not been contacted or assigned by the agents. The contributor can own design and implementation; this is not limited to consuming a finished API or building a UI wrapper. Internal hub tooling remains the agents' responsibility.
+
+## Policy replacement and existing grants (September 18 decision)
+
+Asked whether an owner changing resource rules should preserve existing grants under the new rules, with revocation separate, ember selected:
+
+> Keep grants; check the new rules (Recommended)
+
+The intended behavior is now settled. Source revision and grant-revocation generation must be distinct. Existing grants remain subject to their own scope, current signatures, expiry and the newly installed rules; this decision does not bypass those checks or promise that every old operation remains allowed. Current installation still conflates revision and generation and invalidates grants. The coordinated schema and consumer migration remains implementation work.

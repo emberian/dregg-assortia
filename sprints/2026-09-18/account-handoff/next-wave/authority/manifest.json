@@ -1,0 +1,142 @@
+{
+  "captured_at_utc": "2026-09-18T06:05:56.878774+00:00",
+  "owner": "/root/core_authority_pages",
+  "status": "Frozen scratch handoff; no further source edits or builds. No representation cutover in this account window.",
+  "live_checkpoint": {
+    "current_wave_manifest": "/tmp/dregg-mini-native-wave-checkpoint.json",
+    "current_wave_commit_reported_by_root": "278ed6a",
+    "later_identity_birth_manifest": "/tmp/dregg-resource-birth-receiver-checks.json",
+    "joined_native_final_log": "/tmp/dregg-born-resource-invocation-native-final.log",
+    "joined_source_owner_manifest": "/tmp/dregg-declared-resource-receiver-wip.md",
+    "note": "Root owns later commits/pushes; no Git invoked by this lane."
+  },
+  "product_decision": {
+    "source": "Root relayed explicit user choice, 2026-09-18",
+    "choice": "KEEP existing grants; evaluate invocations against NEW policy rules.",
+    "implementation_status": "Generation/revision split is designed but not implemented. Current live install still increments the conflated policy epoch; do not claim grants persist across policy replacement yet."
+  },
+  "checked_scratch": [
+    {
+      "scope": "Single full RequestWire/SomeRequest codec in existing low module; canonical exact byte/prefix laws, kind mismatch refusal, injectivity. Existing object ABI unchanged.",
+      "manifest": "/tmp/dregg-full-request-codec-draft-check.json"
+    },
+    {
+      "scope": "Universal byte equality against ACTUAL current DeclaredHyperedgeArtifact and CredentialSignatureAdmission producers, plus existing Theory request decode/re-encode inverse.",
+      "manifest": "/tmp/dregg-request-compatibility-draft-check.json"
+    },
+    {
+      "scope": "Actual integrated low codec and ParentLink Entry codec against new isolated Family/State artifacts; stored roundtrip/injectivity, explicit strict/delegated origin and wrong-kind request refusal.",
+      "manifest": "/tmp/dregg-parentlink-codec-isolated-checks.json"
+    }
+  ],
+  "wire_pin_patch": {
+    "path": "/tmp/dregg-authority-parentlink-wire-pins.patch",
+    "status": "Unapplied and uncompiled; contains exact page3\u21924/fullstate2\u21923/root/schema pins, old-frame refusal laws and next-catalogue/example labels. Adapt coherently if combined with newly approved policyRevision field."
+  },
+  "required_next_steps": [
+    "Keep current live Request/Family/State unchanged until root releases the next representation wave.",
+    "Preserve exported Admission.requestFrame/requestBytes aliases when forwarding to low codec; RuntimeProfile now commits those actual signature constants.",
+    "Coordinate one full request layout: current checked draft is 16 fields; approved policyRevision addition requires 17, explicit request frame/version update, source declaration/emission/projection changes, no absent-revision default.",
+    "Port policy state to separate generation and source revision; preserve existing grant-generation equality checks while selecting exact new source revision. New signatures and new predicates remain mandatory.",
+    "Consume actual Family.LineageOrigin/ParentLink shape and shared reflected checker; no historical request data alone becomes authorization.",
+    "Wire shared global CapabilityIdFresh into every creation path including DomainReceiver GrantReady/prepareGrantBatch; current within-batch uniqueness does not replace this pre-state check.",
+    "Remove duplicate StoredCapability DecidableEq derivation in Theory/CanonicalAuthorityProjection during release; Entry scratch already removes its own duplicate.",
+    "Migrate Theory/DeployedMaterializerWitness Countable Request/LineageOrigin/ParentLink only for existing explicit existence witnesses; production uses the concrete codec.",
+    "Refresh coherent affected closure for Domain/registry/native callers before checking them against new ancestry; do not mix old imported oleans with new State.",
+    "After version-pin/source changes, check universal old-frame refusal laws and full physical reopen/authorized delegation/invocation witnesses; current byte-preserving scratch checks do not establish that new end-to-end wave."
+  ],
+  "scratch_artifact_isolation": {
+    "overlay": "/tmp/dregg-delegation-core-effect/olean",
+    "source_root": "/tmp/dregg-authorized-delegation-draft",
+    "rule": "Prepend complete safe mirror to normal lake LEAN_PATH; assert every planned output and sidecar is not a symlink before emission. Use --root with canonical scratch source root or module-relative scratch cwd. Never write a scratch artifact to live .lake.",
+    "all_this_lane_output_paths_were_checked_non_symlink": true
+  },
+  "dependency_boundary_note": "Moving full request serialization removes the Artifact dependency for that encoding. Native Admission still independently imports ResourceBirthCodec for its strict envelope wrapper unless that generic wrapper is deliberately factored; do not claim the whole dependency vanished.",
+  "files_to_preserve": [
+    {
+      "path": "/tmp/dregg-full-request-codec-proposal.md",
+      "sha256": "3b8b43c8a7f4b187a4d21738e7317564c3c28ea07629bed2c7d9affd223b66e2",
+      "bytes": 12122
+    },
+    {
+      "path": "/tmp/TypedAuthorizationFullRequestCodecDraft.lean",
+      "sha256": "676b2f37a2dc1e606b9186fd64c924cdb1ffb1d04ba1db209b8d47cd8906daf9",
+      "bytes": 9788
+    },
+    {
+      "path": "/tmp/dregg-full-request-codec-draft-check.json",
+      "sha256": "2d24d6b0e9a0e096b75d5668e6f01949a6d0029637f66c61346b35e1a8c9d995",
+      "bytes": 1536
+    },
+    {
+      "path": "/tmp/dregg-full-request-codec-draft.log",
+      "sha256": "f1954bb6b17b0c38b2d7c3d09bac55b0bf5462cbf2e2a3a66bf4558b48082daf",
+      "bytes": 1053
+    },
+    {
+      "path": "/tmp/TypedAuthorizationRequestCompatibilityDraft.lean",
+      "sha256": "fa8298ba948b33d2fc5432dcb045dbfa7811dfbe9f9f021b0e8b13e60d6c7289",
+      "bytes": 11874
+    },
+    {
+      "path": "/tmp/dregg-request-compatibility-draft-check.json",
+      "sha256": "b1934b0d0a69b3e0f259c76be82aa0ecc05fd6fb8f9caeaf04df42ed97ee1d5a",
+      "bytes": 1490
+    },
+    {
+      "path": "/tmp/dregg-request-compatibility-draft.log",
+      "sha256": "ec789e20af530f95660d75b90ac94fd8b8e56a0b1331287185dc455bbe748302",
+      "bytes": 1442
+    },
+    {
+      "path": "/tmp/dregg-authorized-delegation-draft/Compiler/TypedAuthorizationRequestCodec.lean",
+      "sha256": "e036d9eb78bbd0ac675d1ac6ecfd106fee7d72dd5a1bf518da6832e6cc7b818d",
+      "bytes": 19149
+    },
+    {
+      "path": "/tmp/dregg-authorized-delegation-draft/Compiler/CredentialAuthorityEntryCodec.lean",
+      "sha256": "758272f19c71952ce348c43dcad295a50859a3ab43c265de6bd017417abc85fa",
+      "bytes": 11462
+    },
+    {
+      "path": "/tmp/dregg-parentlink-codec-scratch.json",
+      "sha256": "4f6394411b25e86a52c710e91f5383b2432d80a15fe93a47c30398b60ffc068d",
+      "bytes": 1207
+    },
+    {
+      "path": "/tmp/dregg-parentlink-codec-isolated-checks.json",
+      "sha256": "835a126f46d22e463d4af2cc1ed9395b9b33318f85dde96310cdc6f4788fe4fd",
+      "bytes": 2080
+    },
+    {
+      "path": "/tmp/dregg-isolated-TypedAuthorizationRequestCodec.log",
+      "sha256": "6918681762e9ccaa52e254200ca9e43d944f42fda134e52b2cb841a81d5ebd2c",
+      "bytes": 1178
+    },
+    {
+      "path": "/tmp/dregg-isolated-CredentialAuthorityEntryCodec.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/tmp/dregg-authority-parentlink-wire-pins.patch",
+      "sha256": "c0ae8c46f7e640151f1c511a3adda8ba60379c41914945013f2628630ebb21a2",
+      "bytes": 7476
+    },
+    {
+      "path": "/tmp/dregg-authority-parentlink-wire-pins.json",
+      "sha256": "f8754f6c47e690fdd0e364f08d9eb249191f55b11199422600deb50e9f4670cf",
+      "bytes": 2955
+    }
+  ],
+  "coordinator_handoff": {
+    "seat1": "Explicitly released by installer after final physical PolicyInstallReceiver source check GREEN, empty log exit0. Native install probe is SOURCE ONLY, uncompiled/unrun.",
+    "seat2": "Explicitly released: isolated Effects and effect helper/witness bounded checks/audits complete; all owners idling.",
+    "no_compiler_owned_here": true,
+    "installer_manifest": "/tmp/dregg-policy-install-receiver-checkpoint.json",
+    "installer_handoff": "/tmp/dregg-policy-install-receiver-handoff.md",
+    "installer_receiver_sha256": "55b386ac06479c7133af7ae561f282ad2fbb05c0e74c22c3a5014b71eb3edfc7",
+    "installer_unrun_probe_sha256": "751215a341b63cc9bb160d34d5490db5d50a9b705d0936750695a2a31b9d1c67",
+    "coordinator_status": "Finished bounded convergence; idling, no new checks or representation changes."
+  }
+}

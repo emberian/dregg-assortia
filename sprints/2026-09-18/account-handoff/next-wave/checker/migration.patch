@@ -1,0 +1,561 @@
+--- a/Theory/CredentialLineageAdmission.lean
++++ b/Theory/CredentialLineageAdmission.lean
+@@ -11,6 +11,7 @@
+ 
+ open TypedAuthorization
+ open CredentialAuthorityState
++open CredentialAuthorityFamily
+ 
+ set_option autoImplicit false
+ 
+@@ -150,46 +151,163 @@
+     strictAttenuatesCheck child parent = true ↔ child.StrictAttenuates parent := by
+   simp [strictAttenuatesCheck]
+ 
++/-- Reuse the existing request-scope decision, rather than inventing a
++second delegation-specific notion of which operations a parent permits. -/
++instance scopeCoversDecidable {kind : ResourceKind} (scope : Scope kind)
++    (request : Request kind) : Decidable (scope.Covers request) :=
++  decidable_of_iff (AuthorizationDeclaration.scopeCoversCheck scope request = true)
++    (AuthorizationDeclaration.scopeCoversCheck_eq_true_iff scope request)
++
++theorem delegationShape_iff_components {kind : ResourceKind}
++    (request : Request kind) (child parent : Capability kind) :
++    DelegationShape request child parent ↔
++      child.Attenuates parent ∧ parent.holder = .subject request.subject ∧
++      child.holder ≠ .bearer ∧ request.verb = delegateVerb kind ∧
++      child.scope.targets = {request.target} ∧ parent.scope.Covers request ∧
++      parent.notBefore ≤ request.height ∧ request.height ≤ parent.notAfter ∧
++      parent.policyId = request.policyId ∧ parent.policyEpoch = request.policyEpoch := by
++  constructor
++  · intro shape
++    exact ⟨shape.payload, shape.grantor, shape.recipient, shape.delegate,
++      shape.target, shape.parentScope, shape.validFrom, shape.validUntil,
++      shape.policyId, shape.policyEpoch⟩
++  · rintro ⟨payload, grantor, recipient, delegate, target, scope,
++      validFrom, validUntil, policyId, policyEpoch⟩
++    exact ⟨payload, grantor, recipient, delegate, target, scope,
++      validFrom, validUntil, policyId, policyEpoch⟩
++
++instance delegationShapeDecidable {kind : ResourceKind}
++    (request : Request kind) (child parent : Capability kind) :
++    Decidable (DelegationShape request child parent) :=
++  decidable_of_iff _ (delegationShape_iff_components request child parent).symm
++
++def delegationShapeCheck {kind : ResourceKind}
++    (request : Request kind) (child parent : Capability kind) : Bool :=
++  decide (DelegationShape request child parent)
++
++theorem delegationShapeCheck_iff {kind : ResourceKind}
++    (request : Request kind) (child parent : Capability kind) :
++    delegationShapeCheck request child parent = true ↔ DelegationShape request child parent := by
++  simp [delegationShapeCheck]
++
++/-- A delegated edge never interprets ordinary mutation permission as the
++right to give authority to another subject. -/
++theorem delegationShapeCheck_refuses_missing_delegate {kind : ResourceKind}
++    (request : Request kind) (child parent : Capability kind)
++    (missing : delegateVerb kind ∉ parent.scope.verbs) :
++    delegationShapeCheck request child parent = false := by
++  cases checked : delegationShapeCheck request child parent with
++  | false => rfl
++  | true =>
++      have shape := (delegationShapeCheck_iff request child parent).mp checked
++      exact False.elim (missing (shape.delegate ▸ shape.parentScope.verb))
++
++theorem delegationShapeCheck_refuses_bearer {kind : ResourceKind}
++    (request : Request kind) (child parent : Capability kind)
++    (bearer : child.holder = .bearer) :
++    delegationShapeCheck request child parent = false := by
++  cases checked : delegationShapeCheck request child parent with
++  | false => rfl
++  | true =>
++      exact False.elim (((delegationShapeCheck_iff request child parent).mp checked).recipient bearer)
++
++def parentLinkCheck {kind : ResourceKind}
++    (child : Capability kind) (link : ParentLink kind) : Bool :=
++  match link.origin with
++  | .strict => strictAttenuatesCheck child link.parent
++  | .delegated request => delegationShapeCheck request child link.parent
++
+ /-- Every stored parent is opened from the same canonical pre-state, with
+-exactly the remaining suffix. A well-shaped invented parent is insufficient. -/
++exactly the remaining suffix, including all explicit origin records. -/
+ def lineageAnchoredAux {M : Materializer} (pre : Cell M) {kind : ResourceKind} :
+-    List (Capability kind) → Prop
++    List (ParentLink kind) → Prop
+   | [] => True
+-  | parent :: tail =>
+-      readCapability pre kind parent.id = some ⟨parent, tail⟩ ∧ lineageAnchoredAux pre tail
++  | link :: tail =>
++      readCapability pre kind link.parent.id = some ⟨link.parent, tail⟩ ∧
++        lineageAnchoredAux pre tail
+ 
+ def LineageAnchored {M : Materializer} (pre : Cell M) {kind : ResourceKind}
+     (stored : StoredCapability kind) : Prop := lineageAnchoredAux pre stored.ancestry
+ 
+-/-- Current strict lineage is reflected completely, including terminal root
+-markers and every holder-aware attenuation edge. Mixed subject delegation
+-requires the separate explicit origin representation; it is not guessed here. -/
+-def strictLineageCheckAux {kind : ResourceKind} :
+-    List (Capability kind) → Capability kind → Bool
++/-- Extending a stored ancestry must open the exact parent record, including
++its full remaining suffix. The origin marker does not weaken this obligation. -/
++theorem LineageAnchored.cons {M : Materializer} {pre : Cell M}
++    {kind : ResourceKind} (child parent : Capability kind)
++    (tail : List (ParentLink kind)) (origin : LineageOrigin kind)
++    (present : readCapability pre kind parent.id = some ⟨parent, tail⟩)
++    (anchored : LineageAnchored pre ⟨parent, tail⟩) :
++    LineageAnchored pre ⟨child, ⟨parent, origin⟩ :: tail⟩ :=
++  ⟨present, anchored⟩
++
++theorem LineageAnchored.parent_exact {M : Materializer} {pre : Cell M}
++    {kind : ResourceKind} {child parent : Capability kind}
++    {tail : List (ParentLink kind)} {origin : LineageOrigin kind}
++    (anchored : LineageAnchored pre ⟨child, ⟨parent, origin⟩ :: tail⟩) :
++    readCapability pre kind parent.id = some ⟨parent, tail⟩ := anchored.1
++
++/-- Inserting a fresh capability may change an absent slot. It preserves a
++stored lineage when every previously present capability remains exact. This
++is the premise a concrete source patch must prove, rather than a blanket
++whole-state equality requirement. -/
++theorem LineageAnchored.of_present_reads_preserved {M N : Materializer}
++    {pre : Cell M} {post : Cell N} {kind : ResourceKind}
++    {stored : StoredCapability kind} (anchored : LineageAnchored pre stored)
++    (preserved : ∀ (readKind : ResourceKind) (identifier : CapabilityId)
++      (record : StoredCapability readKind),
++      readCapability pre readKind identifier = some record →
++      readCapability post readKind identifier = some record) :
++    LineageAnchored post stored := by
++  rcases stored with ⟨head, ancestry⟩
++  change lineageAnchoredAux pre ancestry at anchored
++  change lineageAnchoredAux post ancestry
++  induction ancestry with
++  | nil => trivial
++  | cons link tail induction =>
++      exact ⟨preserved kind link.parent.id ⟨link.parent, tail⟩ anchored.1,
++        induction anchored.2⟩
++
++/-- The stored origin selects the exact semantic edge relation. No heuristic
++infers a delegated edge from a changed holder, and no historical signature is
++rechecked against today's grantor key. Creation authorization is retained by
++the accepted source transition; this pure check validates its stored shape. -/
++def lineageCheckAux {kind : ResourceKind} :
++    List (ParentLink kind) → Capability kind → Bool
+   | [], head => decide (head.parent = none ∧ head.root = head.id ∧ head.ancestors = ∅)
+-  | parent :: tail, head =>
+-      strictAttenuatesCheck head parent && strictLineageCheckAux tail parent
+-
+-theorem strictLineageCheckAux_iff {kind : ResourceKind}
+-    (ancestry : List (Capability kind)) (head : Capability kind) :
+-    strictLineageCheckAux ancestry head = true ↔ LineageValid ⟨head, ancestry⟩ := by
++  | link :: tail, head => parentLinkCheck head link && lineageCheckAux tail link.parent
++
++theorem lineageCheckAux_iff {kind : ResourceKind}
++    (ancestry : List (ParentLink kind)) (head : Capability kind) :
++    lineageCheckAux ancestry head = true ↔ LineageValid ⟨head, ancestry⟩ := by
+   induction ancestry generalizing head with
+   | nil =>
+-      simp only [strictLineageCheckAux, decide_eq_true_eq]
++      simp only [lineageCheckAux, decide_eq_true_eq]
+       constructor
+       · rintro ⟨parent, root, ancestors⟩
+         exact .root head parent root ancestors
+       · intro valid
+         cases valid with
+         | root _ parent root ancestors => exact ⟨parent, root, ancestors⟩
+-  | cons parent tail induction =>
+-      rw [strictLineageCheckAux, Bool.and_eq_true, strictAttenuatesCheck_iff, induction]
+-      constructor
+-      · rintro ⟨edge, valid⟩
+-        exact .attenuate head parent tail valid edge
+-      · intro valid
+-        cases valid with
+-        | attenuate _ _ _ parentValid edge => exact ⟨edge, parentValid⟩
++  | cons link tail induction =>
++      rcases link with ⟨parent, origin⟩
++      cases origin with
++      | strict =>
++          rw [lineageCheckAux, parentLinkCheck, Bool.and_eq_true,
++            strictAttenuatesCheck_iff, induction]
++          constructor
++          · rintro ⟨edge, valid⟩
++            exact .attenuate head parent tail valid edge
++          · intro valid
++            cases valid with
++            | attenuate _ _ _ parentValid edge => exact ⟨edge, parentValid⟩
++      | delegated request =>
++          rw [lineageCheckAux, parentLinkCheck, Bool.and_eq_true,
++            delegationShapeCheck_iff, induction]
++          constructor
++          · rintro ⟨shape, valid⟩
++            exact .delegate head parent tail request valid shape
++          · intro valid
++            cases valid with
++            | delegate _ _ _ _ parentValid shape => exact ⟨shape, parentValid⟩
+ 
+ def storedEqualCheck {kind : ResourceKind}
+     (left right : StoredCapability kind) : Bool :=
+@@ -203,36 +321,36 @@
+   simp [storedEqualCheck]
+ 
+ def lineageAnchoredCheck {M : Materializer} (pre : Cell M) {kind : ResourceKind} :
+-    List (Capability kind) → Bool
++    List (ParentLink kind) → Bool
+   | [] => true
+-  | parent :: tail =>
+-      match readCapability pre kind parent.id with
++  | link :: tail =>
++      match readCapability pre kind link.parent.id with
+       | none => false
+-      | some stored => storedEqualCheck stored ⟨parent, tail⟩ && lineageAnchoredCheck pre tail
++      | some stored => storedEqualCheck stored ⟨link.parent, tail⟩ && lineageAnchoredCheck pre tail
+ 
+ theorem lineageAnchoredCheck_iff {M : Materializer} (pre : Cell M)
+-    {kind : ResourceKind} (ancestry : List (Capability kind)) :
++    {kind : ResourceKind} (ancestry : List (ParentLink kind)) :
+     lineageAnchoredCheck pre ancestry = true ↔ lineageAnchoredAux pre ancestry := by
+   induction ancestry with
+   | nil => simp [lineageAnchoredCheck, lineageAnchoredAux]
+-  | cons parent tail induction =>
+-      cases selected : readCapability pre kind parent.id with
++  | cons link tail induction =>
++      cases selected : readCapability pre kind link.parent.id with
+       | none => simp [lineageAnchoredCheck, lineageAnchoredAux, selected]
+       | some stored =>
+           simp [lineageAnchoredCheck, lineageAnchoredAux, selected,
+             storedEqualCheck_iff, induction]
+ 
+-/-- The single source lineage gate used at both creation and invocation. -/
++/-- The same mandatory source gate now handles explicit strict and delegated
++origins. Invocation cannot replace it with a head-only check. -/
+ def storedLineageCheck {M : Materializer} (pre : Cell M) {kind : ResourceKind}
+     (stored : StoredCapability kind) : Bool :=
+-  strictLineageCheckAux stored.ancestry stored.head &&
+-    lineageAnchoredCheck pre stored.ancestry
++  lineageCheckAux stored.ancestry stored.head && lineageAnchoredCheck pre stored.ancestry
+ 
+ theorem storedLineageCheck_iff {M : Materializer} (pre : Cell M)
+     {kind : ResourceKind} (stored : StoredCapability kind) :
+     storedLineageCheck pre stored = true ↔ LineageValid stored ∧ LineageAnchored pre stored := by
+   cases stored
+-  simp only [storedLineageCheck, Bool.and_eq_true, strictLineageCheckAux_iff,
++  simp only [storedLineageCheck, Bool.and_eq_true, lineageCheckAux_iff,
+     lineageAnchoredCheck_iff, LineageAnchored]
+ 
+ theorem storedLineageCheck_refuses_invalid {M : Materializer} (pre : Cell M)
+@@ -249,4 +367,38 @@
+   | false => rfl
+   | true => exact False.elim (missing ((storedLineageCheck_iff pre stored).mp checked).2)
+ 
++/-- A well-shaped copy of a parent is insufficient when either the parent
++payload or its remaining origin suffix disagrees with canonical storage. -/
++theorem storedLineageCheck_refuses_parent_substitution {M : Materializer}
++    (pre : Cell M) {kind : ResourceKind} (child parent : Capability kind)
++    (tail : List (ParentLink kind)) (origin : LineageOrigin kind)
++    (different : readCapability pre kind parent.id ≠ some ⟨parent, tail⟩) :
++    storedLineageCheck pre ⟨child, ⟨parent, origin⟩ :: tail⟩ = false :=
++  storedLineageCheck_refuses_unanchored pre _
++    (fun anchored => different anchored.parent_exact)
++
++/-- Historical lineage reads only canonical capability records. Current
++subject keys and key epochs belong to invocation authentication, not to
++reauthentication of every old grantor at descendant use time. -/
++theorem lineageAnchoredCheck_congr {M N : Materializer}
++    (left : Cell M) (right : Cell N)
++    (same : ∀ kind identifier, readCapability left kind identifier =
++      readCapability right kind identifier)
++    {kind : ResourceKind} (ancestry : List (ParentLink kind)) :
++    lineageAnchoredCheck left ancestry = lineageAnchoredCheck right ancestry := by
++  induction ancestry with
++  | nil => rfl
++  | cons link tail induction =>
++      simp only [lineageAnchoredCheck]
++      rw [same kind link.parent.id]
++      cases readCapability right kind link.parent.id <;> simp [induction]
++
++theorem storedLineageCheck_congr {M N : Materializer}
++    (left : Cell M) (right : Cell N)
++    (same : ∀ kind identifier, readCapability left kind identifier =
++      readCapability right kind identifier)
++    {kind : ResourceKind} (stored : StoredCapability kind) :
++    storedLineageCheck left stored = storedLineageCheck right stored := by
++  simp only [storedLineageCheck, lineageAnchoredCheck_congr left right same]
++
+ end Minidregg.Theory.CredentialLineageAdmission
+--- /dev/null
++++ b/Assurance/CredentialDelegationLineageWitness.lean
+@@ -0,0 +1,196 @@
++/-
++# Mixed stored lineage: constructive shape and anchoring witnesses
++
++These statements exercise the shared semantic checker. They do not claim an
++IO signature or an authorized historical issuance from a serialized origin.
++Actual issuance is the mandatory accepted delegation mode's obligation.
++-/
++import Theory.CredentialLineageAdmission
++
++namespace Minidregg.Assurance.CredentialDelegationLineageWitness
++
++open Minidregg.Theory
++open CellState TypedAuthorization CredentialAuthorityFamily
++open CredentialAuthorityState CredentialLineageAdmission
++
++set_option autoImplicit false
++
++def alice : SubjectId := ⟨1⟩
++def bob : SubjectId := ⟨2⟩
++
++def parent : Capability .object where
++  id := ⟨100⟩
++  root := ⟨100⟩
++  parent := none
++  issuer := ⟨70⟩
++  holder := .subject alice
++  scope := ⟨{⟨200⟩, ⟨201⟩}, {.observeObject, .mutateObject, .delegateObject}, 100⟩
++  notBefore := 0
++  notAfter := 100
++  issuerEpoch := 0
++  policyId := ⟨8⟩
++  policyEpoch := 0
++  ancestors := ∅
++  channels := ∅
++
++def child : Capability .object :=
++  { parent with
++    id := ⟨101⟩
++    parent := some parent.id
++    holder := .subject bob
++    scope := ⟨{⟨200⟩}, {.observeObject, .mutateObject}, 20⟩
++    notBefore := 1
++    notAfter := 80
++    ancestors := {parent.id} }
++
++def request : Request .object where
++  domain := ⟨1⟩
++  semantics := ⟨2⟩
++  federation := ⟨3⟩
++  subject := alice
++  subjectKeyEpoch := 0
++  target := ⟨200⟩
++  verb := .delegateObject
++  argsDigest := ⟨4⟩
++  effectsDigest := ⟨5⟩
++  nonce := 44
++  height := 10
++  preStateRoot := ⟨6⟩
++  policyId := parent.policyId
++  policyEpoch := 0
++  cost := 3
++
++def parentStored : StoredCapability .object := ⟨parent, []⟩
++def delegatedStored : StoredCapability .object :=
++  ⟨child, [⟨parent, .delegated request⟩]⟩
++def unmarkedStored : StoredCapability .object :=
++  ⟨child, [⟨parent, .strict⟩]⟩
++def strictStored : StoredCapability .object :=
++  ⟨{child with holder := .subject alice}, [⟨parent, .strict⟩]⟩
++
++def logical : LogicalState schema where
++  fields := ((0 : FieldStore schema).write (.capability .object parent.id) parentStored).write
++    (.capability .object child.id) delegatedStored
++  resources := fun resource => nomatch resource
++
++def pre (M : Materializer) : Cell M := materialize M logical
++
++theorem parent_present (M : Materializer) :
++    readCapability (pre M) .object parent.id = some parentStored := by
++  change (((0 : FieldStore schema).write (.capability .object parent.id) parentStored).write
++    (.capability .object child.id) delegatedStored) (.capability .object parent.id) =
++      some parentStored
++  rw [FieldStore.write_other _
++    (show AuthorityField.capability .object child.id ≠ .capability .object parent.id by decide)]
++  exact FieldStore.write_self _ _ _
++
++theorem explicit_transfer_shape : DelegationShape request child parent := by decide
++
++theorem explicit_transfer_valid : LineageValid delegatedStored :=
++  .delegate child parent [] request (.root parent rfl rfl rfl) explicit_transfer_shape
++
++theorem explicit_transfer_anchored (M : Materializer) :
++    LineageAnchored (pre M) delegatedStored :=
++  LineageAnchored.cons child parent [] (.delegated request) (parent_present M) trivial
++
++theorem explicit_transfer_accepted (M : Materializer) :
++    storedLineageCheck (pre M) delegatedStored = true :=
++  (storedLineageCheck_iff (pre M) delegatedStored).mpr
++    ⟨explicit_transfer_valid, explicit_transfer_anchored M⟩
++
++def rotatedPre (M : Materializer) : Cell M :=
++  materialize M {logical with fields := logical.fields.write (.subjectKeyEpoch alice) (show Epoch from 1)}
++
++theorem grantor_rotation_preserves_capability_reads (M : Materializer)
++    (kind : ResourceKind) (identifier : CapabilityId) :
++    readCapability (pre M) kind identifier =
++      readCapability (rotatedPre M) kind identifier := by
++  simp [pre, rotatedPre, readCapability, materialize]
++
++theorem grantor_rotation_keeps_historical_lineage (M : Materializer) :
++    storedLineageCheck (rotatedPre M) delegatedStored = true := by
++  rw [← storedLineageCheck_congr (pre M) (rotatedPre M)
++    (grantor_rotation_preserves_capability_reads M)]
++  exact explicit_transfer_accepted M
++
++theorem strict_same_holder_accepted (M : Materializer) :
++    storedLineageCheck (pre M) strictStored = true := by
++  apply (storedLineageCheck_iff (pre M) strictStored).mpr
++  refine ⟨?_, ?_⟩
++  · exact .attenuate _ parent [] (.root parent rfl rfl rfl) (by decide)
++  · exact LineageAnchored.cons _ parent [] .strict (parent_present M) trivial
++
++theorem unmarked_transfer_refused (M : Materializer) :
++    storedLineageCheck (pre M) unmarkedStored = false := by
++  change (false && _) = false
++  rfl
++
++def noDelegateParent : Capability .object :=
++  {parent with scope := {parent.scope with verbs := {.observeObject, .mutateObject}}}
++
++theorem absent_delegation_permission_refused :
++    delegationShapeCheck request child noDelegateParent = false :=
++  delegationShapeCheck_refuses_missing_delegate request child noDelegateParent (by decide)
++
++theorem bearer_transfer_refused :
++    delegationShapeCheck request {child with holder := .bearer} parent = false :=
++  delegationShapeCheck_refuses_bearer request _ parent rfl
++
++def substitutedParent : Capability .object := {parent with notAfter := 99}
++def substitutedStored : StoredCapability .object :=
++  ⟨child, [⟨substitutedParent, .delegated request⟩]⟩
++
++theorem substituted_parent_still_well_shaped : LineageValid substitutedStored :=
++  .delegate child substitutedParent [] request (.root substitutedParent rfl rfl rfl) (by decide)
++
++theorem substituted_parent_refused (M : Materializer) :
++    storedLineageCheck (pre M) substitutedStored = false := by
++  apply storedLineageCheck_refuses_unanchored
++  intro anchored
++  have exactParent := anchored.parent_exact
++  change readCapability (pre M) .object parent.id = some ⟨substitutedParent, []⟩ at exactParent
++  rw [parent_present M] at exactParent
++  have equal := congrArg (fun stored : StoredCapability .object => stored.head.notAfter)
++    (Option.some.inj exactParent)
++  change 100 = 99 at equal
++  contradiction
++
++def emptyPre (M : Materializer) : Cell M :=
++  materialize M ⟨0, fun resource => nomatch resource⟩
++
++theorem orphaned_transfer_refused (M : Materializer) :
++    storedLineageCheck (emptyPre M) delegatedStored = false := by
++  apply storedLineageCheck_refuses_unanchored
++  intro anchored
++  have exactParent := anchored.parent_exact
++  change none = some parentStored at exactParent
++  contradiction
++
++def recipientRequest : Request .object :=
++  {request with subject := bob, verb := .mutateObject}
++
++def state : AuthState where
++  capabilityRoot := ⟨10⟩
++  revocationRoot := ⟨10⟩
++  policyRoot := ⟨10⟩
++  policyAddress := fun _ _ => ⟨11⟩
++  revoked := ∅
++  issuerEpoch := fun _ => 0
++  policyEpoch := fun _ => 0
++  subjectKeyEpoch := fun _ => 0
++
++theorem recipient_semantically_admitted : child.Admissible state recipientRequest :=
++  (AuthorizationDeclaration.capabilityAdmissibleCheck_eq_true_iff _ _ _).mp (by decide)
++
++/-- The old unconditional root-admission claim is false after an authorized
++subject transfer. The strict-only theorem remains the correct statement. -/
++theorem mixed_lineage_does_not_imply_root_admission :
++    LineageValid delegatedStored ∧ child.Admissible state recipientRequest ∧
++      ¬parent.Admissible state recipientRequest := by
++  refine ⟨explicit_transfer_valid, recipient_semantically_admitted, ?_⟩
++  intro admitted
++  have holder := admitted.holder
++  change alice = bob at holder
++  cases holder
++
++end Minidregg.Assurance.CredentialDelegationLineageWitness
+--- a/Compiler/CredentialAuthorityPolicyRegistry.lean
++++ b/Compiler/CredentialAuthorityPolicyRegistry.lean
+@@ -160,11 +160,20 @@
+ in one source-owned commitment. This is not a possession proof. -/
+ def storedCapabilityDigest (snapshot : Snapshot) {kind : ResourceKind}
+     (stored : StoredCapability kind) : Digest :=
+-  (Sp800185Cshake256.hash "DREGG.AUTHORITY.CAPABILITY/v1".toUTF8.toList
++  (Sp800185Cshake256.hash "DREGG.AUTHORITY.CAPABILITY/v2".toUTF8.toList
+     (capabilityKindTag kind ::
+       (StreamCodec.product digestStream
+         (CredentialAuthorityEntryCodec.storedCapabilityStream kind)).encode
+           (snapshot.domain, stored))).digest
++
++/-- Capability commitments include the historical origin data, but not the
++current signing-key plane. A fresh invocation still authenticates against
++the new snapshot root and the current recipient key. -/
++theorem storedCapabilityDigest_eq_of_domain_eq (left right : Snapshot)
++    (domain : left.domain = right.domain) {kind : ResourceKind}
++    (stored : StoredCapability kind) :
++    storedCapabilityDigest left stored = storedCapabilityDigest right stored := by
++  simp only [storedCapabilityDigest, domain]
+ 
+ /-- Statement first: checking a capability commitment must recover the exact
+ stored head at its typed identifier, including the full stored lineage digest.
+@@ -190,6 +199,24 @@
+   unfold capabilityCheck CapabilityBound
+   cases selected : readCapability snapshot.cell kind capability.id <;>
+     simp [storedLineageCheck_iff, and_assoc]
++
++/-- Historical grantor-key rotation does not erase the recorded ancestry.
++This is a data-check invariance statement; it does not reuse an old signature
++receipt at a different authority root. -/
++theorem capabilityCheck_eq_of_capability_reads_eq (left right : Snapshot)
++    (domain : left.domain = right.domain)
++    (same : ∀ readKind identifier, readCapability left.cell readKind identifier =
++      readCapability right.cell readKind identifier)
++    {kind : ResourceKind} (capability : Capability kind) (commitment : Digest) :
++    capabilityCheck left capability commitment =
++      capabilityCheck right capability commitment := by
++  unfold capabilityCheck
++  rw [same kind capability.id]
++  cases readCapability right.cell kind capability.id with
++  | none => rfl
++  | some stored =>
++      rw [storedCapabilityDigest_eq_of_domain_eq left right domain stored,
++        storedLineageCheck_congr left.cell right.cell same stored]
+ 
+ /-- Policy and capability claims are checked against their own exact source
+ coordinates. Policy membership alone never proves capability lookup. -/
+@@ -379,6 +406,27 @@
+       have signature := (Bool.and_eq_true_iff.mp use).2
+       exact CredentialSignatureAdmission.verified_request_exact
+         snapshot expectedNullifier request receipt signature
++
++/-- A mixed lineage does not authenticate the current user as the historical
++grantor. The capability's actual recipient and that recipient's current key
++epoch are mandatory on the same exact invocation request. -/
++theorem native_use_holder_current (snapshot : Snapshot) (expectedNullifier : Nat)
++    {kind : ResourceKind} (request : Request kind) (capability : Capability kind)
++    (commitment : Digest) (receipt : CredentialSignatureAdmission.CheckedSignature snapshot)
++    (accepted : (sourcePortal snapshot expectedNullifier).verifyCapabilityUse
++      request capability commitment receipt = true) :
++    capability.holder = .subject request.subject ∧
++      request.subjectKeyEpoch = snapshot.authState.subjectKeyEpoch request.subject := by
++  change capabilityUseCheck snapshot expectedNullifier request capability commitment receipt = true at accepted
++  unfold capabilityUseCheck at accepted
++  have checks := Bool.and_eq_true_iff.mp accepted
++  cases holder : capability.holder with
++  | bearer => simp [holder] at accepted
++  | subject subject =>
++      have use := checks.2
++      rw [holder] at use
++      have current := of_decide_eq_true (Bool.and_eq_true_iff.mp use).1
++      exact ⟨congrArg Holder.subject current.1, current.2⟩
+ 
+ theorem native_bearer_use_refused (snapshot : Snapshot) (expectedNullifier : Nat)
+     {kind : ResourceKind} (request : Request kind) (capability : Capability kind)

@@ -1,0 +1,53 @@
+{
+  "status": "Unapplied scratch proposal only; no repository or artifact changes; not checked against ParentLink closure yet.",
+  "patch": "/tmp/dregg-authority-parentlink-wire-pins.patch",
+  "patch_sha256": "c0ae8c46f7e640151f1c511a3adda8ba60379c41914945013f2628630ebb21a2",
+  "scope": "Explicit authority page3\u21924, full sparse state2\u21923, actual shard schema ref3\u21924 and matching roots/catalogue/example labels. Domain physical catalogue format remains unchanged.",
+  "files": [
+    {
+      "path": "Compiler/CredentialAuthorityPageMaterializer.lean",
+      "base_sha256": "9c91b17f1e64d7a42adc9707ee4a9b9f326c43be363c05037f22491f3ba49d45",
+      "proposed_sha256": "a0636cc1906a933ca483225c0c1d803b413e72807d8cc335f089d0f7dbbffe89"
+    },
+    {
+      "path": "Compiler/CredentialAuthorityStateCodec.lean",
+      "base_sha256": "bb5aafd7af17673b20401f64b2b4c0beb14317eab666aedb0ad500d38355eae5",
+      "proposed_sha256": "cf79432d0b2e50f3e77969eb96850aa7a1631bcbc0ef314aea561608cf908d35"
+    },
+    {
+      "path": "Compiler/BoundedPageExtensionCatalog.lean",
+      "base_sha256": "22bb9bbbde9c1d8d4d10c7a8075830808d78d4360ebd019bde0f2f3901f43208",
+      "proposed_sha256": "5d74e57121061c1b4949f36d35d5abd5f9b8ab575673b537e2b5f88f992049c4"
+    },
+    {
+      "path": "Compiler/CanonicalCellRegistry.lean",
+      "base_sha256": "6b54d5bd8c1ebc701cb41b692da55962c8c9f53067cc2b78a853ca3b7f00ea97",
+      "proposed_sha256": "8dd619de41480ae51a3407460c995f17482e713f4d47c59079fab1b570c244f5"
+    },
+    {
+      "path": "Compiler/BoundedPageSchemaUpgrade.lean",
+      "base_sha256": "91df296e08d1ff361c3bea3f31201d3bc00d79bae96e2a1fe1daff4c4b7fcf86",
+      "proposed_sha256": "bc4dd453c8ebe3d40eea217fdde395e4db2d278cc352c79e391706ee22047461"
+    },
+    {
+      "path": "Assurance/BoundedPageSchemaUpgradeCutover.lean",
+      "base_sha256": "80aa9ff1f6ab036dd788b48625103cc2ea49c9b3128d4176452df62c8c6cb200",
+      "proposed_sha256": "3e5e8ad8b1f151d194efdc68f7be80bf93f24e444ec357ac5b0ed98c229e6caa"
+    },
+    {
+      "path": "Compiler/CredentialAuthorityPageProbe.lean",
+      "base_sha256": "bbcd0164ef8fd43a9aa6b2c192f115e478186a453ba9dde42df42ba36ee147cd",
+      "proposed_sha256": "48ffb500a38918d8619b52d62652d91919ac371824bdfab17761a3beb35ac0a6"
+    }
+  ],
+  "dependencies": [
+    "Actual State ParentLink shape and single Entry codec from their owners.",
+    "Existing next-catalogue representation successor proof remains generic over pinned current version.",
+    "Production capability commitment customization v2 owned by core-effect; runtime profile derives changed actual codec identities.",
+    "No Request.policyRevision, key, authority coordinate, route, or logical policy-generation behavior change in this patch."
+  ],
+  "pending": [
+    "Emit source copies only after root release/coherent isolated foundations.",
+    "Check new universal old-frame refusal laws and standard axiom pins; run actual typed codec probe."
+  ]
+}

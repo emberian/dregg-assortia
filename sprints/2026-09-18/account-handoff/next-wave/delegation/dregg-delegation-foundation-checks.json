@@ -1,0 +1,20 @@
+[
+  {
+    "module": "Theory/CredentialAuthorityFamily",
+    "exit": 0,
+    "seconds": 3.22,
+    "source": "/tmp/dregg-authorized-delegation-draft/Theory/CredentialAuthorityFamily.lean",
+    "sha256": "789bb19a8a4fd37635725a88971d2654afbbd7ab45139139e3b8b1fdf504a24c",
+    "output": "/tmp/dregg-delegation-core-effect/olean/Theory/CredentialAuthorityFamily.olean",
+    "log": "/tmp/dregg-delegation-CredentialAuthorityFamily-scratch.log"
+  },
+  {
+    "module": "Theory/CredentialAuthorityState",
+    "exit": 0,
+    "seconds": 3.25,
+    "source": "/tmp/dregg-authorized-delegation-draft/Theory/CredentialAuthorityState.lean",
+    "sha256": "b1999ef3771878fcd0827c5d1977b97e5d8fe4e0dfde722f8165fa0fa44839d7",
+    "output": "/tmp/dregg-delegation-core-effect/olean/Theory/CredentialAuthorityState.olean",
+    "log": "/tmp/dregg-delegation-CredentialAuthorityState-scratch.log"
+  }
+]

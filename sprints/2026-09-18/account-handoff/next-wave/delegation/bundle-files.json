@@ -1,0 +1,70 @@
+[
+  {
+    "path": "Theory/CredentialAuthorityEffects.lean",
+    "sha256": "fc5676a9e39733a20856d00e163cda8acf98248c608e4ffcc59b1b089103a152"
+  },
+  {
+    "path": "Theory/CredentialAuthorityFamily.lean",
+    "sha256": "acd374f926d8ccda6465d0f60c84d05f2502cac4432b0c13e39947f72cabed3e"
+  },
+  {
+    "path": "Theory/CredentialAuthorityState.lean",
+    "sha256": "5b115b11cf5cd67c408fc0619f168fd7bec9b539fc374b3e1acc178a9af20e25"
+  },
+  {
+    "path": "Theory/CredentialDelegationAxiomAudit.lean",
+    "sha256": "76ed5b3d48fb264635a9348fc9d2d73b5970ea04c14b489543f90239a3d1d181"
+  },
+  {
+    "path": "baseline/Theory/CredentialAuthorityEffects.lean",
+    "sha256": "b3da04198b1e14bdad2b062ea537266ddccc49e7dcd924f957642aee0c7fb58f"
+  },
+  {
+    "path": "baseline/Theory/CredentialAuthorityFamily.lean",
+    "sha256": "7faa5cc66e58c19085e76ecb87c2d65f3923096eb465d3573a9ffa056e43b614"
+  },
+  {
+    "path": "baseline/Theory/CredentialAuthorityState.lean",
+    "sha256": "a712de2e8f5624103e34cb90326a1a5bb2eaf30cdc7af1370f60b37232f2d733"
+  },
+  {
+    "path": "dregg-authorized-delegation-checks.json",
+    "sha256": "6fbf72a14f5a25a9a7c8040e2dc0b29f765d8dbfbf22839c0e897f21dc6c5b01"
+  },
+  {
+    "path": "dregg-authorized-delegation-design.md",
+    "sha256": "647dd938ee3cf4204b5017eea20110e16533f10139aed248b24d6d70ed22259c"
+  },
+  {
+    "path": "dregg-authorized-delegation-handoff.md",
+    "sha256": "c3e35e58d9cdc8f5d53f178b5273b1e7ae72a1c9915c9ec881707f9131570ace"
+  },
+  {
+    "path": "dregg-authorized-delegation.patch",
+    "sha256": "93c5fc5b017b6e153313aa68baafad504c24b6763c91aeb2d63f7c57ebaffeba"
+  },
+  {
+    "path": "dregg-delegation-foundation-checks.json",
+    "sha256": "43289a173910c432bd7f449062216a1f217ffe3f4dd4f7fec785e22c9ac2ca24"
+  },
+  {
+    "path": "logs/Theory-CredentialAuthorityEffects.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "logs/Theory-CredentialDelegationAxiomAudit.log",
+    "sha256": "64c3632a3de6e9c0c9231079915ad0163c167bc02f93c207b93c790197d9a7ea"
+  },
+  {
+    "path": "logs/dregg-delegation-CredentialAuthorityFamily-scratch.log",
+    "sha256": "d40c6000205dfc14fc5ac26b05f6fcbbd0c46c7671236db2f5dd64ecb553818e"
+  },
+  {
+    "path": "logs/dregg-delegation-CredentialAuthorityState-scratch.log",
+    "sha256": "24139375b403c16f83cc287bdd33b774d33f6e6bcc01aa8be03650bd2a6d7ad0"
+  },
+  {
+    "path": "manifest.json",
+    "sha256": "f1d981c4e84594b7e39de561e8d7e79e628ed9695b2d4cd6619a2928df908e9c"
+  }
+]

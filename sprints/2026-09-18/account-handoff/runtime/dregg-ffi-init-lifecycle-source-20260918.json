@@ -1,0 +1,14 @@
+{
+  "source_only_checks": "rustfmt parse; C/C++ syntax; unchanged 42/21 module order; TOML parse. Cargo pending.",
+  "sha256": {
+    "/Users/ember/dev/breadstuffs/dregg-lean-ffi/src/lib.rs": "f5f3f6d99ef108f00d0c6cfef4d6971bb185571f29d1d8ede412071dc58956be",
+    "/Users/ember/dev/breadstuffs/dregg-lean-ffi/src/lean_init.c": "96ec48cb08d33fbb1690aaceaa347fcb6ff81391929965f099ab63e2d3643738",
+    "/Users/ember/dev/breadstuffs/dregg-lean-ffi/src/lean_init_st.cpp": "d95b2a074e0a25ba8f29814d92f9e2873a1206d48e6e7e87e589fb9f97addae8",
+    "/Users/ember/dev/breadstuffs/dregg-lean-ffi/src/lean_init_internal.h": "349abea428bc523233607df1afb75a06aac0d5512992b2422e5d37ce79f6ec2a",
+    "/Users/ember/dev/breadstuffs/dregg-lean-ffi/build.rs": "6b1277adec2ba4b24f8d7bc3d42d2b44981d719e2c5678608acfb611c96d7fb5",
+    "/Users/ember/dev/breadstuffs/dregg-lean-ffi/tests/lean_init_lifecycle.rs": "afe3f7c6ee2b157a083219962c8adbd4023d499d8c8c1574f32da5742c15d7d6",
+    "/Users/ember/dev/breadstuffs/dregg-lean-ffi/tests/native_init_thread.cpp": "c7fc80a8e0488d0a69ae2bcfa667f2efcf247ff30cbb4c4914af28fd0d594c06",
+    "/Users/ember/dev/breadstuffs/.config/nextest.toml": "92d83423ac8fba5609d6bf8ca07332335eb915980218331241b07dbfe3cd5689"
+  },
+  "source_audit": "Independent Astra review: no source-level blocker. Linked/native execution pending."
+}

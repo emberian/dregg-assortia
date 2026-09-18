@@ -6,7 +6,7 @@ The living knowledge index and project hub for DREGG: what we are building, how 
 
 The current effort is the September 26 programmable nexus: friends and agents author, govern, share and run DREGG-native resources through a programmable shell and related interfaces. The core and its real receiving applications are being developed together. The exact public release offering and economic operation remain under design. [Ember's intentions](intent.md) distinguish accepted direction from proposals.
 
-An outside contributor should be able to own a substantial product feature from this hub. The current [resource-host lifecycle proposal](contributing/resource-host-lifecycle.md) offers platform ownership across provider reconciliation, recovery, supervision and owner-facing APIs, with exact existing/proposed interfaces and upstream obligations. Cloud hosting and Android embedding are being compared; neither is assigned or fixed release scope.
+An outside contributor should be able to own a substantial product feature from this hub. Ember selected [resource-host lifecycle](contributing/resource-host-lifecycle.md) as the area to offer Wisper: platform ownership across provider reconciliation, recovery, supervision and owner-facing APIs. The first runtime/export contract remains to be agreed; no assignment or contributor contact has been made by the agents.
 
 ## Where information lives
 
@@ -16,7 +16,7 @@ An outside contributor should be able to own a substantial product feature from 
 | How do repositories and capabilities relate? | [Project map](MAP.md), then [source investigations](research/README.md) |
 | What can I build, against which interface? | [Contributor entry](contributing/README.md), linked feature briefs and contracts |
 | What does done mean? | [Work records](work/records.md): closure, dependencies, owner and evidence |
-| What was actually checked? | [Latest checkpoint](sprints/2026-09-18/checkpoint-0045.md) and dated test/source artifacts |
+| What was actually checked? | [Latest checkpoint and account handoff](sprints/2026-09-18/account-handoff.md) and dated test/source artifacts |
 | Why are we doing this? | [Intent](intent.md) and [September 26 design discussion](milestones/2026-09-26.md) |
 | What did the first investigation find? | [September 17 orientation](orientation/2026-09-17.md), a historical snapshot |
 

@@ -1,0 +1,230 @@
+{
+  "scope": "scratch-only mixed lineage checker and witness; no live source or artifact writes",
+  "files": [
+    {
+      "path": "Theory/CredentialLineageAdmission.lean",
+      "scratch": "/tmp/dregg-delegation-core-effect/Theory/CredentialLineageAdmission.lean",
+      "sha256": "da0a6cdd306a4fef71960475816fb0612824c15c8254bc1d6931e996a34f14cb",
+      "live_sha256": "d9eeab7f064d0101fa2027782cdb38c64daf1de18b4ad91bff31754b80fd9fd5",
+      "live_unchanged": true,
+      "status": "checked",
+      "check": {
+        "source": "/private/tmp/dregg-delegation-core-effect/Theory/CredentialLineageAdmission.lean",
+        "module": "Theory/CredentialLineageAdmission",
+        "sha256": "da0a6cdd306a4fef71960475816fb0612824c15c8254bc1d6931e996a34f14cb",
+        "cwd": "/private/tmp/dregg-delegation-core-effect",
+        "command": [
+          "/Users/ember/.elan/toolchains/leanprover--lean4---v4.30.0/bin/lean",
+          "-o",
+          "/tmp/dregg-delegation-core-effect/olean/Theory/CredentialLineageAdmission.olean",
+          "Theory/CredentialLineageAdmission.lean"
+        ],
+        "exit": 0,
+        "seconds": 3.053,
+        "log": "/tmp/dregg-delegation-core-effect/Theory-CredentialLineageAdmission.log",
+        "output": "/tmp/dregg-delegation-core-effect/olean/Theory/CredentialLineageAdmission.olean"
+      }
+    },
+    {
+      "path": "Assurance/CredentialDelegationLineageWitness.lean",
+      "scratch": "/tmp/dregg-delegation-core-effect/Assurance/CredentialDelegationLineageWitness.lean",
+      "sha256": "0f1f93be1729bb3f522f3de273af245520a6197d8e9bc81f0f0e7fe503c3d970",
+      "live_sha256": null,
+      "live_unchanged": true,
+      "status": "checked",
+      "check": {
+        "source": "/private/tmp/dregg-delegation-core-effect/Assurance/CredentialDelegationLineageWitness.lean",
+        "module": "Assurance/CredentialDelegationLineageWitness",
+        "sha256": "0f1f93be1729bb3f522f3de273af245520a6197d8e9bc81f0f0e7fe503c3d970",
+        "cwd": "/private/tmp/dregg-delegation-core-effect",
+        "command": [
+          "/Users/ember/.elan/toolchains/leanprover--lean4---v4.30.0/bin/lean",
+          "-o",
+          "/tmp/dregg-delegation-core-effect/olean/Assurance/CredentialDelegationLineageWitness.olean",
+          "Assurance/CredentialDelegationLineageWitness.lean"
+        ],
+        "exit": 0,
+        "seconds": 2.833,
+        "log": "/tmp/dregg-delegation-core-effect/Assurance-CredentialDelegationLineageWitness.log",
+        "output": "/tmp/dregg-delegation-core-effect/olean/Assurance/CredentialDelegationLineageWitness.olean"
+      }
+    },
+    {
+      "path": "Compiler/CredentialAuthorityPolicyRegistry.lean",
+      "scratch": "/tmp/dregg-delegation-core-effect/Compiler/CredentialAuthorityPolicyRegistry.lean",
+      "sha256": "86b42ea32276a27534c6f8dfe9f6a37729f2dd19717dbc942f3c66bf87edc54c",
+      "live_sha256": "d05d098099208893502e23cd316eff8457132e531cc8a7cb0c8ab58108431975",
+      "live_unchanged": true,
+      "status": "source-only-unchecked",
+      "check": null
+    }
+  ],
+  "axiom_audit": {
+    "source": "/private/tmp/dregg-delegation-core-effect/DelegationLineageAxiomAudit.lean",
+    "module": "DelegationLineageAxiomAudit",
+    "sha256": "a73d09addfc842f47c149752253f73cf0b16b82dd724a86d0aed1f605501a273",
+    "cwd": "/private/tmp/dregg-delegation-core-effect",
+    "command": [
+      "/Users/ember/.elan/toolchains/leanprover--lean4---v4.30.0/bin/lean",
+      "-o",
+      "/tmp/dregg-delegation-core-effect/olean/DelegationLineageAxiomAudit.olean",
+      "DelegationLineageAxiomAudit.lean"
+    ],
+    "exit": 0,
+    "seconds": 2.557,
+    "log": "/tmp/dregg-delegation-core-effect/DelegationLineageAxiomAudit.log",
+    "output": "/tmp/dregg-delegation-core-effect/olean/DelegationLineageAxiomAudit.olean"
+  },
+  "axiom_scope": {
+    "declarations": 21,
+    "allowed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "extra_axioms": false
+  },
+  "prior_attempts": [
+    {
+      "source": "/private/tmp/dregg-delegation-core-effect/Theory/CredentialLineageAdmission.lean",
+      "module": "Theory/CredentialLineageAdmission",
+      "sha256": "da0a6cdd306a4fef71960475816fb0612824c15c8254bc1d6931e996a34f14cb",
+      "cwd": "/private/tmp/dregg-delegation-core-effect",
+      "command": [
+        "/Users/ember/.elan/toolchains/leanprover--lean4---v4.30.0/bin/lean",
+        "-o",
+        "/tmp/dregg-delegation-core-effect/olean/Theory/CredentialLineageAdmission.olean",
+        "Theory/CredentialLineageAdmission.lean"
+      ],
+      "exit": 0,
+      "seconds": 3.053,
+      "log": "/tmp/dregg-delegation-core-effect/Theory-CredentialLineageAdmission.log",
+      "output": "/tmp/dregg-delegation-core-effect/olean/Theory/CredentialLineageAdmission.olean"
+    },
+    {
+      "source": "/private/tmp/dregg-delegation-core-effect/Assurance/CredentialDelegationLineageWitness.lean",
+      "module": "Assurance/CredentialDelegationLineageWitness",
+      "sha256": "31b5df545ad1ac9541f11f5050c1309179ec22fc3f28a8e0c1b9d430de092eef",
+      "cwd": "/private/tmp/dregg-delegation-core-effect",
+      "command": [
+        "/Users/ember/.elan/toolchains/leanprover--lean4---v4.30.0/bin/lean",
+        "-o",
+        "/tmp/dregg-delegation-core-effect/olean/Assurance/CredentialDelegationLineageWitness.olean",
+        "Assurance/CredentialDelegationLineageWitness.lean"
+      ],
+      "exit": 1,
+      "seconds": 2.787,
+      "log": "/tmp/dregg-delegation-core-effect/Assurance-CredentialDelegationLineageWitness.log",
+      "output": "/tmp/dregg-delegation-core-effect/olean/Assurance/CredentialDelegationLineageWitness.olean"
+    },
+    {
+      "source": "/private/tmp/dregg-delegation-core-effect/Assurance/CredentialDelegationLineageWitness.lean",
+      "module": "Assurance/CredentialDelegationLineageWitness",
+      "sha256": "cbfff007e28e38fd83d3648199804f7c515d60da5a80f8b19132fd2b33a37a14",
+      "cwd": "/private/tmp/dregg-delegation-core-effect",
+      "command": [
+        "/Users/ember/.elan/toolchains/leanprover--lean4---v4.30.0/bin/lean",
+        "-o",
+        "/tmp/dregg-delegation-core-effect/olean/Assurance/CredentialDelegationLineageWitness.olean",
+        "Assurance/CredentialDelegationLineageWitness.lean"
+      ],
+      "exit": 1,
+      "seconds": 2.858,
+      "log": "/tmp/dregg-delegation-core-effect/Assurance-CredentialDelegationLineageWitness.log",
+      "output": "/tmp/dregg-delegation-core-effect/olean/Assurance/CredentialDelegationLineageWitness.olean"
+    },
+    {
+      "source": "/private/tmp/dregg-delegation-core-effect/Assurance/CredentialDelegationLineageWitness.lean",
+      "module": "Assurance/CredentialDelegationLineageWitness",
+      "sha256": "0f1f93be1729bb3f522f3de273af245520a6197d8e9bc81f0f0e7fe503c3d970",
+      "cwd": "/private/tmp/dregg-delegation-core-effect",
+      "command": [
+        "/Users/ember/.elan/toolchains/leanprover--lean4---v4.30.0/bin/lean",
+        "-o",
+        "/tmp/dregg-delegation-core-effect/olean/Assurance/CredentialDelegationLineageWitness.olean",
+        "Assurance/CredentialDelegationLineageWitness.lean"
+      ],
+      "exit": 0,
+      "seconds": 2.833,
+      "log": "/tmp/dregg-delegation-core-effect/Assurance-CredentialDelegationLineageWitness.log",
+      "output": "/tmp/dregg-delegation-core-effect/olean/Assurance/CredentialDelegationLineageWitness.olean"
+    },
+    {
+      "source": "/private/tmp/dregg-authorized-delegation-draft/Theory/CredentialAuthorityEffects.lean",
+      "module": "Theory/CredentialAuthorityEffects",
+      "sha256": "ca7284f2cc2abb0e977eab8ac6df79aa61eb0cd5e83a5974688178fdfc0d18bd",
+      "cwd": "/private/tmp/dregg-authorized-delegation-draft",
+      "command": [
+        "/Users/ember/.elan/toolchains/leanprover--lean4---v4.30.0/bin/lean",
+        "-o",
+        "/tmp/dregg-delegation-core-effect/olean/Theory/CredentialAuthorityEffects.olean",
+        "Theory/CredentialAuthorityEffects.lean"
+      ],
+      "exit": 1,
+      "seconds": 3.155,
+      "log": "/tmp/dregg-delegation-core-effect/Theory-CredentialAuthorityEffects.log",
+      "output": "/tmp/dregg-delegation-core-effect/olean/Theory/CredentialAuthorityEffects.olean"
+    },
+    {
+      "source": "/private/tmp/dregg-authorized-delegation-draft/Theory/CredentialAuthorityEffects.lean",
+      "module": "Theory/CredentialAuthorityEffects",
+      "sha256": "fc5676a9e39733a20856d00e163cda8acf98248c608e4ffcc59b1b089103a152",
+      "cwd": "/private/tmp/dregg-authorized-delegation-draft",
+      "command": [
+        "/Users/ember/.elan/toolchains/leanprover--lean4---v4.30.0/bin/lean",
+        "-o",
+        "/tmp/dregg-delegation-core-effect/olean/Theory/CredentialAuthorityEffects.olean",
+        "Theory/CredentialAuthorityEffects.lean"
+      ],
+      "exit": 0,
+      "seconds": 3.346,
+      "log": "/tmp/dregg-delegation-core-effect/Theory-CredentialAuthorityEffects.log",
+      "output": "/tmp/dregg-delegation-core-effect/olean/Theory/CredentialAuthorityEffects.olean"
+    },
+    {
+      "source": "/private/tmp/dregg-authorized-delegation-draft/Theory/CredentialDelegationAxiomAudit.lean",
+      "module": "Theory/CredentialDelegationAxiomAudit",
+      "sha256": "76ed5b3d48fb264635a9348fc9d2d73b5970ea04c14b489543f90239a3d1d181",
+      "cwd": "/private/tmp/dregg-authorized-delegation-draft",
+      "command": [
+        "/Users/ember/.elan/toolchains/leanprover--lean4---v4.30.0/bin/lean",
+        "-o",
+        "/tmp/dregg-delegation-core-effect/olean/Theory/CredentialDelegationAxiomAudit.olean",
+        "Theory/CredentialDelegationAxiomAudit.lean"
+      ],
+      "exit": 0,
+      "seconds": 2.728,
+      "log": "/tmp/dregg-delegation-core-effect/Theory-CredentialDelegationAxiomAudit.log",
+      "output": "/tmp/dregg-delegation-core-effect/olean/Theory/CredentialDelegationAxiomAudit.olean"
+    },
+    {
+      "source": "/private/tmp/dregg-delegation-core-effect/DelegationLineageAxiomAudit.lean",
+      "module": "DelegationLineageAxiomAudit",
+      "sha256": "a73d09addfc842f47c149752253f73cf0b16b82dd724a86d0aed1f605501a273",
+      "cwd": "/private/tmp/dregg-delegation-core-effect",
+      "command": [
+        "/Users/ember/.elan/toolchains/leanprover--lean4---v4.30.0/bin/lean",
+        "-o",
+        "/tmp/dregg-delegation-core-effect/olean/DelegationLineageAxiomAudit.olean",
+        "DelegationLineageAxiomAudit.lean"
+      ],
+      "exit": 0,
+      "seconds": 2.557,
+      "log": "/tmp/dregg-delegation-core-effect/DelegationLineageAxiomAudit.log",
+      "output": "/tmp/dregg-delegation-core-effect/olean/DelegationLineageAxiomAudit.olean"
+    }
+  ],
+  "external_manifests": [
+    "/tmp/dregg-delegation-foundation-checks.json",
+    "/tmp/dregg-parentlink-codec-isolated-checks.json"
+  ],
+  "registry_affected_order": "/tmp/dregg-delegation-core-effect/registry-affected-order.json",
+  "pending": [
+    "Registry draft has not been compiled against mixed State/Domain/native closure.",
+    "Source capability helper success -> exact input-identifier parent naming theorem not implemented.",
+    "CanonicalPolicyAdmission.admit_preserves_evidence not implemented; shell owner reserved.",
+    "No native accepted delegation receiver or actual issued delegated grant witness yet.",
+    "Grant-preserving policy revision/generation separation chosen by user; not implemented in16-field drafts.",
+    "No live representation cutover; root explicitly deferred."
+  ]
+}

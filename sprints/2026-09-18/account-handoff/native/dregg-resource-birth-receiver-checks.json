@@ -1,0 +1,128 @@
+{
+  "recorded_at_utc": "2026-09-18T06:04:19.902136+00:00",
+  "scope": "Six proof-integrity-owned modules are green: atomic source preparation, creator-scoped identity, actual native AcceptedBirth-only durable receiving endpoint, complete authority/source/post refinements. A 24-theorem axiom audit passes with standard Lean axioms. The actual native signed birth to born-owner invocation to SQLite reopen/replay fixture also passes, including historical replay after credential expiry.",
+  "checks": [
+    {
+      "source": "/Users/ember/dev/minidregg/Theory/ResourceBirth.lean",
+      "source_sha256": "e76dd0d528c1d7cfa53c67c2f4a136b0074247ccf72aa47674b5ef17336a21ca",
+      "olean": "/Users/ember/dev/minidregg/.lake/build/lib/lean/Theory/ResourceBirth.olean",
+      "olean_sha256": "58c3ec6003a631ac75cf67fb42b651f79256c7a7d555b7e819170827eb71d043",
+      "command": "LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Theory/ResourceBirth.olean Theory/ResourceBirth.lean",
+      "log": "/tmp/dregg-resource-birth-v2-check.log",
+      "exit_code": 0,
+      "verdict": "PASS"
+    },
+    {
+      "source": "/Users/ember/dev/minidregg/Theory/ResourceBirthAuthority.lean",
+      "source_sha256": "3ecb73599765599ed29e2bd1910c6829b4321ac5bdd08616dbda04c55a4d1b06",
+      "olean": "/Users/ember/dev/minidregg/.lake/build/lib/lean/Theory/ResourceBirthAuthority.olean",
+      "olean_sha256": "d3ae64372da6921e690186a87b158bd12f014792101a2f963645a3600eb98663",
+      "command": "LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Theory/ResourceBirthAuthority.olean Theory/ResourceBirthAuthority.lean",
+      "log": "/tmp/dregg-resource-birth-authority-v2-check.log",
+      "exit_code": 0,
+      "verdict": "PASS"
+    },
+    {
+      "source": "/Users/ember/dev/minidregg/Compiler/ResourceBirthCodec.lean",
+      "source_sha256": "7156a7c81aa0f5674d9183aaf48abb6d93c8c13b6862b28aafe3215c0e9415fd",
+      "olean": "/Users/ember/dev/minidregg/.lake/build/lib/lean/Compiler/ResourceBirthCodec.olean",
+      "olean_sha256": "479db920f0555e942e1a36a27be311d1a88dd86185b5ed4ba53ef0def11982fd",
+      "command": "LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Compiler/ResourceBirthCodec.olean Compiler/ResourceBirthCodec.lean",
+      "log": "/tmp/dregg-resource-birth-codec-v2-check.log",
+      "exit_code": 0,
+      "verdict": "PASS"
+    },
+    {
+      "source": "/Users/ember/dev/minidregg/Compiler/CredentialAuthorityReplay.lean",
+      "source_sha256": "f92396a748c66c4cb30e76f9de51f18fe02dad67b749583dc23f4da5a4664ecb",
+      "olean": "/Users/ember/dev/minidregg/.lake/build/lib/lean/Compiler/CredentialAuthorityReplay.olean",
+      "olean_sha256": "5e699d0e241711e90f95f28dbefb4ea331786a6e4d2eb775ad560d9a7af3b408",
+      "command": "LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Compiler/CredentialAuthorityReplay.olean Compiler/CredentialAuthorityReplay.lean",
+      "log": "/tmp/dregg-authority-replay-identity.log",
+      "exit_code": 0,
+      "verdict": "PASS"
+    },
+    {
+      "source": "/Users/ember/dev/minidregg/Kernel/ResourceBirthController.lean",
+      "source_sha256": "ae96c1984fc369ba811785a677b9a228c59c70460712a1328d754a566fc57522",
+      "olean": "/Users/ember/dev/minidregg/.lake/build/lib/lean/Kernel/ResourceBirthController.olean",
+      "olean_sha256": "38cf5d050c16ba3408ca62b81f0a7ba52e3ec86d9b2ce7a025d196cd4fcaa949",
+      "command": "LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Kernel/ResourceBirthController.olean Kernel/ResourceBirthController.lean",
+      "log": "/tmp/dregg-resource-birth-controller-identity.log",
+      "exit_code": 0,
+      "verdict": "PASS"
+    },
+    {
+      "source": "/Users/ember/dev/minidregg/Kernel/ResourceBirthReceiver.lean",
+      "source_sha256": "b18ad4714034c863ee9a7308fab5e0128d9fa6a92044811bb8b1cba23b1676d6",
+      "olean": "/Users/ember/dev/minidregg/.lake/build/lib/lean/Kernel/ResourceBirthReceiver.olean",
+      "olean_sha256": "875bf34890eedf7c1b425b4120bb5b6ec6f0673a18aaeda7cbc96ce3b1f6ce66",
+      "command": "LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Kernel/ResourceBirthReceiver.olean Kernel/ResourceBirthReceiver.lean",
+      "log": "/tmp/dregg-resource-birth-receiver.log",
+      "exit_code": 0,
+      "verdict": "PASS"
+    }
+  ],
+  "dependencies": [
+    {
+      "source": "/Users/ember/dev/minidregg/Kernel/ResourceBirthPolicyController.lean",
+      "source_sha256": "a6966919e33eb329f43f5c12e9c442dc4308c4cffbaf49b436cde9bd07d1c356",
+      "log": "/tmp/dregg-birth-native-upper.log",
+      "verdict": "PASS",
+      "ownership": "external lane"
+    },
+    {
+      "source": "/Users/ember/dev/minidregg/Compiler/CanonicalRuntimeProfile.lean",
+      "source_sha256": "849ba66a3f3e70fe8dbee18e54a7b4c61e44a5af27824d3114272a791fc9bcb7",
+      "log": "/tmp/dregg-runtime-profile-identity-pins.log",
+      "verdict": "PASS",
+      "ownership": "external lane"
+    }
+  ],
+  "prior_checkpoint": "278ed6a",
+  "independent_review": "sprint_kernel_carrier source-only reviewed unchanged-shard/full-write preservation: no semantic objection; no runtime claim",
+  "pending": [],
+  "axiom_audit": {
+    "script": "/tmp/dregg-resource-birth-receiver-axioms.lean",
+    "log": "/tmp/dregg-resource-birth-receiver-axioms.log",
+    "theorems": 24,
+    "exit_code": 0,
+    "verdict": "PASS",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "notes": "No sorry/native evaluation axioms; actual accepted/installed/replay/source identity statements audited."
+  },
+  "native_joined_lifecycle": {
+    "source": "/Users/ember/dev/minidregg/scripts/probe-born-resource-invocation.lean",
+    "source_sha256": "bd4c812c7cd2d3997adf378fbf4c2fceefd5b1d45a1a4453a95c0fd40abcd6ab",
+    "log": "/tmp/dregg-born-resource-invocation-native-final.log",
+    "log_sha256": "2478d8688d281a44fa164c98fb3d381c125e4a36e3a62247afb0987e4991e58d",
+    "first_pass_log": "/tmp/dregg-born-resource-invocation-native-first.log",
+    "exit_code": 0,
+    "session": 73791,
+    "verdict": "PASS",
+    "execution_owner": "sprint_localfirst; owner confirmed actual session exit0, proof-integrity read the PASS log and verified source hash",
+    "coverage": [
+      "real native signed source-derived birth",
+      "conserved actual Book fee and same admission fee lane",
+      "immutable initial policy source plus distinct native-owner and installPolicy grants",
+      "SQLite persisted reopen",
+      "newly issued owner capability invokes actual born object",
+      "unrelated signer and noncanonical ingress refuse without mutation",
+      "enrolled foreign creator cannot copy another creator identity",
+      "changed payload at same source identity conflicts",
+      "birth and invoke exact retries preserve entire physical image",
+      "original birth replay at trusted height 20000 after key and owner expiry returns original receipt without new execution"
+    ],
+    "non_claims": [
+      "explicit cross-subject delegation",
+      "next policy revision preserves existing grants",
+      "main breadstuffs product cutover",
+      "deployed network or succinct/zero-knowledge verifier closure"
+    ]
+  },
+  "frozen_sources_verified_at_utc": "2026-09-18T06:04:19.902136+00:00"
+}

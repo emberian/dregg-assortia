@@ -1,0 +1,30 @@
+{
+  "checked_at_utc": "2026-09-18T05:39:01.187696+00:00",
+  "scope": "Scratch-only extension of existing low request codec; no repository source or olean writes. Current shared request representation unchanged.",
+  "source": "/tmp/TypedAuthorizationFullRequestCodecDraft.lean",
+  "source_sha256": "676b2f37a2dc1e606b9186fd64c924cdb1ffb1d04ba1db209b8d47cd8906daf9",
+  "command": "LEAN_NUM_THREADS=2 lake env lean /tmp/TypedAuthorizationFullRequestCodecDraft.lean",
+  "exit_code": 0,
+  "log": "/tmp/dregg-full-request-codec-draft.log",
+  "log_sha256": "f1954bb6b17b0c38b2d7c3d09bac55b0bf5462cbf2e2a3a66bf4558b48082daf",
+  "audited_laws": 8,
+  "audit": "Only propext, Classical.choice, Quot.sound; no sorryAx.",
+  "shared_source_inputs": [
+    {
+      "path": "/Users/ember/dev/minidregg/Compiler/TypedAuthorizationRequestCodec.lean",
+      "sha256": "8c30b973e0c5b8e96fe63942767e3654cdd256036305d1ad1bf3e04be4a6276e"
+    },
+    {
+      "path": "/Users/ember/dev/minidregg/Theory/AuthorizationDeclaration.lean",
+      "sha256": "dfd887d10604cf642ae71bac4973a79b5cbc12403a09350c7002672ad3e9c0b9"
+    },
+    {
+      "path": "/Users/ember/dev/minidregg/Theory/TypedAuthorization.lean",
+      "sha256": "276537e3ecf0a115a7ad05e29a00a19b3deb374dc3e0afe8945bbf4e44c61538"
+    }
+  ],
+  "pending": [
+    "Consumer forwarding and exact current artifact/native compatibility theorem against the existing consumer definitions.",
+    "ParentLink stored codec composition and explicit carrier version migration, scratch only until root release."
+  ]
+}

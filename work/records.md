@@ -4,17 +4,17 @@
 
 ## W-ANDROID-CONTRACT
 
-**Define substantial cloud/native-host or Android product ownership**
+**Define resource-host lifecycle ownership and its kernel contract**
 
-Status: **active** · Owner: Astra: root; contributor/runtime selection with ember · Updated: 2026-09-18T01:45:00-04:00
+Status: **active** · Owner: Astra: root with ember; contributor assignment pending · Updated: 2026-09-18T02:12:02-04:00
 
-Compare actual DreggNet lifecycle machinery and native runtime export/embedding boundaries. Wisper can own platform design and implementation. Android was the initial example; this stable work ID is retained while cloud ownership is evaluated.
+Cloud/resource-host lifecycle is the selected area to offer Wisper. This stable work ID retains the original Android example; exact runtime/export contract is still open.
 
-**Next:** Review the published resource-host lifecycle proposal with ember; select the first runtime/export and consumer, then freeze its owned upstream delivery and acceptance harness.
+**Next:** Agree the first runtime/export and executable shell consumer with ember and Wisper, then freeze owned core delivery and crash/restart acceptance.
 
 **Done when:** A contributor can scaffold a real product surface from a concrete brief and agreed contracts, with executable receiving interfaces or explicitly owned upstream delivery, test scenarios and no need to infer core architecture from chat.
 
-**Evidence so far:** Source-backed cloud and mobile inventories plus concrete feature/contract proposal published. Cloud supervisor is the recommendation; no assignment or release commitment. Wisper can own platform design and implementation, including native host extraction by agreement.
+**Evidence so far:** Ember selected cloud/resource-host lifecycle. Source-backed brief and concrete native-host export proposal are preserved; exact first runtime/profile and owned upstream exports remain open. No contributor contact or assignment.
 
 [Task brief](../contributing/resource-host-lifecycle.md)
 
@@ -30,6 +30,7 @@ Compare actual DreggNet lifecycle machinery and native runtime export/embedding 
 - [S-CLOUD-HOST-REVIEW — Bounded cloud lifecycle source review, September 18](../research/cloud-host-2026-09-18.md)
 - [S-MOBILE-REVIEW — Bounded Android/mobile source inventory, September 18](../research/mobile-2026-09-18.md)
 - [S-HOST-CONTRIBUTOR-PROPOSAL — Proposed resource-host lifecycle ownership and receiving contract](../contributing/resource-host-lifecycle.md)
+- [S-ACCOUNT-HANDOFF-0918 — September18 account handoff: native born-owner journey and next integration wave](../sprints/2026-09-18/account-handoff.md)
 
 **Write scope:** DreggNet/control provider/server/supervisor and gateway lifecycle; Selected native host extraction/export, jointly reserved with core; Selected packaging and integration harness
 
@@ -124,13 +125,15 @@ Persist exact signing keys/epochs; accept actual configured native verification 
 
 **Give a friend a narrower usable right**
 
-Status: **active** · Owner: Astra: durable_callers + effect_admission · Updated: 2026-09-18T00:45:00-04:00
+Status: **active** · Owner: Astra: durable_callers + effect_admission · Updated: 2026-09-18T02:12:02-04:00
 
 Add an explicit authorized subject-to-subject delegation edge without weakening strict holder-narrowing or inventing bearer custody.
 
-**Next:** Complete the source-owned delegation/lineage contract, then implement its receiver and real two-subject probe.
+**Next:** Integrate one shared 17-field request/revision/delegation wave from the archived drafts; complete parent-evidence extraction, receiver and real Alice-to-Bob invocation.
 
 **Done when:** Owner delegates a bounded right; friend can use that right, cannot exceed it or replace policy, and revocation/current epochs remain enforced.
+
+**Evidence so far:** Checked isolated Family/State/Effects, mixed lineage checker/witness and ParentLink codecs are archived with actual hashes and audits. No live representation cutover or native recipient delegation occurred.
 
 **Enables:**
 
@@ -140,6 +143,7 @@ Add an explicit authorized subject-to-subject delegation edge without weakening 
 **Evidence / provenance:**
 
 - [S-IMPLEMENTATION-0045 — September 18 implementation and contributor checkpoint](../sprints/2026-09-18/checkpoint-0045.md)
+- [S-ACCOUNT-HANDOFF-0918 — September18 account handoff: native born-owner journey and next integration wave](../sprints/2026-09-18/account-handoff.md)
 
 ## W-CANONICAL-CONSUMER
 
@@ -199,29 +203,26 @@ Compare breadstuffs History/World forks, minidregg hyperdocuments and lean-uwuea
 
 **Invoke a declared resource through the real kernel**
 
-Status: **active** · Owner: Astra: localfirst · Updated: 2026-09-18T01:30:00-04:00
+Status: **done** · Owner: Astra: localfirst · Updated: 2026-09-18T02:12:02-04:00
 
 Compact commands use actual page execution, complete old authority, stored policy and accepted final-state evidence.
 
-**Next:** Create through the accepted birth receiver, reopen, then invoke using the born owner grant; exercise response-loss retry and refusal.
+**Next:** Retain the actual native born-owner journey as a regression boundary during generation/revision and delegation migration.
 
 **Done when:** An owner can invoke an authored operation, invalid requests refuse unchanged, and accepted data/receipt survive reopen.
 
-**Evidence so far:** Actual native stored-capability invocation, publication, reopen and exact retry pass at278ed6a from explicit bootstrap authority. Joined accepted-birth ownership is now the next witness.
+**Evidence so far:** Mini 8056f9b actual native signed paid birth, initial source/owner/control creation, SQLite reopen and issued-owner invocation pass. Historical retry after expiry returns original receipt unchanged; forged signer/identity, changed payload and noncanonical bytes refuse. Fixture parameters; no deployment or delegation claim.
 
 **Enables:**
 
 - E-KERNEL — Canonical typed semantic kernel
 - E-WORLD — Programmable social resource world
 
-**Waiting for:**
-
-- W-RESOURCE-BIRTH — Implement one accepted resource birth with owner authority and charge
-
 **Evidence / provenance:**
 
 - [S-IMPLEMENTATION-0045 — September 18 implementation and contributor checkpoint](../sprints/2026-09-18/checkpoint-0045.md)
 - [S-IMPLEMENTATION-0130 — Durable native invocation and repaired runtime history, September 18 01:30](../sprints/2026-09-18/checkpoint-0130.md)
+- [S-ACCOUNT-HANDOFF-0918 — September18 account handoff: native born-owner journey and next integration wave](../sprints/2026-09-18/account-handoff.md)
 
 ## W-DOC-PERSIST
 
@@ -289,7 +290,7 @@ SDK/World align with the current node rejection policy: no retained fee, nonce, 
 
 **Done when:** Paid late refusal leaves exact prior state; storage refusal restores executor side-state; pending/unwound candidates cannot reenter; observer runs once only after acceptance; next success replays and reopens correctly.
 
-**Evidence so far:** SDK4/4 candidate/publication tests pass after lazy registration; World/cell/history24/24 pass at breadstuffs73136dd30 including paid refusal, storage failure, subsequent acceptance and reopen.
+**Evidence so far:** SDK 4/4 candidate/publication tests pass after lazy registration; World/cell/history24/24 pass at breadstuffs73136dd30 including paid refusal, storage failure, subsequent acceptance and reopen.
 
 **Enables:**
 
@@ -306,13 +307,15 @@ SDK/World align with the current node rejection policy: no retained fee, nonce, 
 
 **Retain factory deployment at its actual history boundary**
 
-Status: **active** · Owner: Astra: kernel_carrier · Updated: 2026-09-18T01:30:00-04:00
+Status: **active** · Owner: Astra: kernel_carrier · Updated: 2026-09-18T02:12:02-04:00
 
 World deployment currently mutates volatile registries; historical paths either omit factories or preload the present registry into the past. Persist ordered descriptor/VK evidence and replay the actual executor deployment at that boundary.
 
-**Next:** Implement one ordered durable deployment event across World, replay, reversible history and forks; verify exact duplicate/conflicting descriptors, storage refusal and reopen.
+**Next:** Complete the five targeted factory chronology tests, then affected history regressions and native consumer checks against the exact new snapshot.
 
 **Done when:** Actual factory deployment, birth/mutation and recovery use the same ordered descriptor/VK evidence; no historical prefix sees a later factory; conflicting deployment and persistence failures leave committed state unchanged; unsupported old images refuse without changing evidence.
+
+**Evidence so far:** Ordered deployment, exact descriptors, historical forks and failure/refusal tests implemented. First combined build mutability failure fixed; second exposed stale Mina test callers, now repaired. Targeted runtime retry is recorded in the account handoff. Bread bf953115d checkpoints the changes. Latest combined attempt failed at profiler-clock linking before tests; timer source repaired and syntax-checked, post-repair link/runtime unrun.
 
 **Enables:**
 
@@ -322,20 +325,44 @@ World deployment currently mutates volatile registries; historical paths either 
 **Evidence / provenance:**
 
 - [S-IMPLEMENTATION-0130 — Durable native invocation and repaired runtime history, September 18 01:30](../sprints/2026-09-18/checkpoint-0130.md)
+- [S-ACCOUNT-HANDOFF-0918 — September18 account handoff: native born-owner journey and next integration wave](../sprints/2026-09-18/account-handoff.md)
+
+## W-GRANT-REVISION
+
+**Keep grants valid across policy source revisions**
+
+Status: **active** · Owner: Astra: root + authority_pages + program_install · Updated: 2026-09-18T02:12:02-04:00
+
+Separate immutable policy-source revision from grant revocation generation across the exact signed request, authority representation, compiled/source policies and every receiving consumer.
+
+**Next:** Coordinate one request/profile/schema migration with explicit delegation; implement revision-exact authorization and separate generation rotation, then exercise both physical receivers.
+
+**Done when:** After two admitted rule replacements, previously issued owner/control and delegated grants remain usable exactly when their scope and new rules authorize the new request; stale revisions refuse, explicit generation revocation invalidates prior grants, and restart/retry preserves exact state and receipts.
+
+**Evidence so far:** User decision accepted. Design and independent source review archived; implementation remains pending. Current 16-field drafts still use conflated epoch semantics.
+
+**Enables:**
+
+- E-KERNEL — Canonical typed semantic kernel
+- E-WORLD — Programmable social resource world
+
+**Evidence / provenance:**
+
+- [S-ACCOUNT-HANDOFF-0918 — September18 account handoff: native born-owner journey and next integration wave](../sprints/2026-09-18/account-handoff.md)
 
 ## W-HERMES-STARTUP
 
 **Make actual Hermes/SDK startup avoid unused Lean initialization**
 
-Status: **active** · Owner: Astra: resource_history + root · Updated: 2026-09-18T00:45:00-04:00
+Status: **active** · Owner: Astra: resource_history + root · Updated: 2026-09-18T02:12:02-04:00
 
 SDK route discovery is lazy while actual cryptographic calls retain real Lean initialization.
 
-**Next:** Repair first-use archive initialization at the actual Lean gate without changing its semantics.
+**Next:** Finish targeted coordinator tests, fresh-process full/ST/PQ checks and actual Hermes first-use module profiling without weakening native admission.
 
 **Done when:** The same operations and refusal/publication checks pass through actual receiving code without eager unused-core initialization; real PQ first-use remains checked.
 
-**Evidence so far:** SDK4/4 passed in0.026–0.047s; exact js-agent Hermes1/1 passed in191.097s. Construction is<10ms; first verified admission still initializes the archive.
+**Evidence so far:** Earlier SDK 4 and exact js-agent 191.097s native pass retained. New FFI lifecycle/narrow actual DelegAdmit implementation is in targeted runtime validation; no measured startup improvement claimed yet. Bread bf953115d checkpoints the changes. Latest combined attempt failed at profiler-clock linking before tests; timer source repaired and syntax-checked, post-repair link/runtime unrun.
 
 **Enables:**
 
@@ -344,6 +371,7 @@ SDK route discovery is lazy while actual cryptographic calls retain real Lean in
 **Evidence / provenance:**
 
 - [S-IMPLEMENTATION-0045 — September 18 implementation and contributor checkpoint](../sprints/2026-09-18/checkpoint-0045.md)
+- [S-ACCOUNT-HANDOFF-0918 — September18 account handoff: native born-owner journey and next integration wave](../sprints/2026-09-18/account-handoff.md)
 
 ## W-JOINT-POST
 
@@ -419,15 +447,15 @@ The existing Lean executor now crosses exact-byte SQLite CAS with crash/retry/co
 
 **Store initial policies and use one runtime profile**
 
-Status: **active** · Owner: Astra: resource_pages + shell_hermes + program_install · Updated: 2026-09-18T01:30:00-04:00
+Status: **active** · Owner: Astra: resource_pages + shell_hermes + program_install · Updated: 2026-09-18T02:12:02-04:00
 
 Immutable internal policy-source cells and a common field/compiler/request profile make resource creation, invocation and policy replacement agree.
 
-**Next:** Complete physical birth and policy replacement under the shared profile and exact same-directory source guards.
+**Next:** Split source revision from grant generation across the shared signed request and physical consumers, then run repeated install and retained-grant invocation/reopen.
 
 **Done when:** Policy source is created atomically and selected from the same durable directory; kind/domain/address mismatches refuse, and all consuming verbs share compatible source semantics.
 
-**Evidence so far:** Canonical source-cell/registry33 checks, common profile and actual invocation consumer pass. Initial birth and replacement source creation remain integrated receiving work.
+**Evidence so far:** Actual native birth and invocation select initial source from the same durable directory. Physical policy installer compiles at a21633c; its native probe is uncompiled/unrun, and its conflated epoch behavior remains pending migration.
 
 **Enables:**
 
@@ -438,18 +466,21 @@ Immutable internal policy-source cells and a common field/compiler/request profi
 
 - [S-IMPLEMENTATION-0045 — September 18 implementation and contributor checkpoint](../sprints/2026-09-18/checkpoint-0045.md)
 - [S-IMPLEMENTATION-0130 — Durable native invocation and repaired runtime history, September 18 01:30](../sprints/2026-09-18/checkpoint-0130.md)
+- [S-ACCOUNT-HANDOFF-0918 — September18 account handoff: native born-owner journey and next integration wave](../sprints/2026-09-18/account-handoff.md)
 
 ## W-PROGRAMMABLE-PATH
 
 **Implement and exercise the canonical authored-program-to-resource path**
 
-Status: **active** · Owner: Astra: program_install + localfirst · Updated: 2026-09-18T00:45:00-04:00
+Status: **active** · Owner: Astra: program_install + localfirst · Updated: 2026-09-18T02:12:02-04:00
 
 Select the canonical rule/program representation and actual authority projection, then implement needed compiler/native/proof/durable support and shell/Hermes consumers. Existing guards are retired only by replacing their missing guarantees. Active source investigation is recorded in sprints/2026-09-17.md.
 
-**Next:** Join birth, distinct policy-control installation and declared invocation under the same source runtime profile.
+**Next:** Complete create → repeated rule replacement preserving grants → delegated recipient invocation → reopen/retry through the same native path, then consume it from the programmable shell.
 
 **Done when:** Author and install a rule under actual resource authority, invoke a permitted operation through the chosen shell/agent path, refuse a violating operation with correct state/outcome evidence, and recover accepted behavior/history through the chosen durable runtime. Complete all necessary core obligations, not merely a private demo.
+
+**Evidence so far:** Actual paid birth → source/owner/control creation → reopen → issued-owner invocation → reopen passes. Rule replacement receiver compiles; preserving grants and recipient delegation remain the next coherent integration.
 
 **Enables:**
 
@@ -460,6 +491,7 @@ Select the canonical rule/program representation and actual authority projection
 
 - [S-PROGRAMMING-REVIEW — Parent-reviewed programming and shell investigation](../research/programming.md)
 - [S-IMPLEMENTATION-0045 — September 18 implementation and contributor checkpoint](../sprints/2026-09-18/checkpoint-0045.md)
+- [S-ACCOUNT-HANDOFF-0918 — September18 account handoff: native born-owner journey and next integration wave](../sprints/2026-09-18/account-handoff.md)
 
 ## W-PROVIDER-PATH
 
@@ -487,15 +519,15 @@ Trace eligible jobs, registration/stake, result commitments, challenges, adjudic
 
 **Implement one accepted resource birth with owner authority and charge**
 
-Status: **active** · Owner: Astra: proof_integrity + program_install · Updated: 2026-09-18T01:30:00-04:00
+Status: **done** · Owner: Astra: proof_integrity + program_install · Updated: 2026-09-18T02:12:02-04:00
 
 Reuse canonical CellRegistry, authority pages, ordered resource Book batches, MultiCellHyperedge and DataIntent; one final write per physical cell.
 
-**Next:** Finish native upper/physical checks, derive both operation identity fields from the authenticated creator coordinate, then run accepted birth/reopen/invoke.
+**Next:** Retain the actual native born-owner journey as a regression boundary during generation/revision and delegation migration.
 
 **Done when:** Actual source-authorized birth commits identity, initial content, owner grant and selected fee together; refusals and crash/retry cannot expose a partial accepted result.
 
-**Evidence so far:** Lower resource birth controller and initial source/allocation laws pass. Upper native admission and physical receiver are active; caller-isolated transaction/marker identity repair is joining before the native birth witness.
+**Evidence so far:** Mini 8056f9b actual native signed paid birth, initial source/owner/control creation, SQLite reopen and issued-owner invocation pass. Historical retry after expiry returns original receipt unchanged; forged signer/identity, changed payload and noncanonical bytes refuse. Fixture parameters; no deployment or delegation claim.
 
 **Enables:**
 
@@ -508,6 +540,7 @@ Reuse canonical CellRegistry, authority pages, ordered resource Book batches, Mu
 - [S-IMPLEMENTATION-2330 — Executable receiving/admission checkpoint and rejected-turn correction](../sprints/2026-09-17/checkpoint-2330.md)
 - [S-IMPLEMENTATION-0045 — September 18 implementation and contributor checkpoint](../sprints/2026-09-18/checkpoint-0045.md)
 - [S-IMPLEMENTATION-0130 — Durable native invocation and repaired runtime history, September 18 01:30](../sprints/2026-09-18/checkpoint-0130.md)
+- [S-ACCOUNT-HANDOFF-0918 — September18 account handoff: native born-owner journey and next integration wave](../sprints/2026-09-18/account-handoff.md)
 
 ## W-SOLANA-UTILITY
 

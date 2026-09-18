@@ -1,0 +1,39 @@
+{
+  "scope": "Isolated scratch ParentLink codec checks; no live outputs",
+  "lean": "/Users/ember/.elan/toolchains/leanprover--lean4---v4.30.0/bin/lean",
+  "overlay": "/private/tmp/dregg-delegation-core-effect/olean",
+  "checks": [
+    {
+      "source": "/private/tmp/dregg-authorized-delegation-draft/Compiler/TypedAuthorizationRequestCodec.lean",
+      "source_sha256": "e036d9eb78bbd0ac675d1ac6ecfd106fee7d72dd5a1bf518da6832e6cc7b818d",
+      "output": "/private/tmp/dregg-delegation-core-effect/olean/Compiler/TypedAuthorizationRequestCodec.olean",
+      "command": [
+        "/Users/ember/.elan/toolchains/leanprover--lean4---v4.30.0/bin/lean",
+        "--root=/private/tmp/dregg-authorized-delegation-draft",
+        "-o",
+        "/private/tmp/dregg-delegation-core-effect/olean/Compiler/TypedAuthorizationRequestCodec.olean",
+        "/private/tmp/dregg-authorized-delegation-draft/Compiler/TypedAuthorizationRequestCodec.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 5.191,
+      "log": "/tmp/dregg-isolated-TypedAuthorizationRequestCodec.log",
+      "log_sha256": "6918681762e9ccaa52e254200ca9e43d944f42fda134e52b2cb841a81d5ebd2c"
+    },
+    {
+      "source": "/private/tmp/dregg-authorized-delegation-draft/Compiler/CredentialAuthorityEntryCodec.lean",
+      "source_sha256": "758272f19c71952ce348c43dcad295a50859a3ab43c265de6bd017417abc85fa",
+      "output": "/private/tmp/dregg-delegation-core-effect/olean/Compiler/CredentialAuthorityEntryCodec.olean",
+      "command": [
+        "/Users/ember/.elan/toolchains/leanprover--lean4---v4.30.0/bin/lean",
+        "--root=/private/tmp/dregg-authorized-delegation-draft",
+        "-o",
+        "/private/tmp/dregg-delegation-core-effect/olean/Compiler/CredentialAuthorityEntryCodec.olean",
+        "/private/tmp/dregg-authorized-delegation-draft/Compiler/CredentialAuthorityEntryCodec.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.911,
+      "log": "/tmp/dregg-isolated-CredentialAuthorityEntryCodec.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

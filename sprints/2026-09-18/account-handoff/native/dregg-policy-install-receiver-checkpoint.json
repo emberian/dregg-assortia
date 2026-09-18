@@ -1,0 +1,71 @@
+{
+  "recordedAt": "2026-09-18T06:04:17.039601+00:00",
+  "repository": "/Users/ember/dev/minidregg",
+  "owner": "/root/sprint_program_install",
+  "frozen": true,
+  "gitOperations": false,
+  "files": [
+    {
+      "path": "Kernel/PolicyInstallController.lean",
+      "sha256": "6e2062ae0a32672426d61165d289230443cf6cb01c4df6d86d8031ab5660a7af",
+      "lines": 582,
+      "verdict": "GREEN: refreshed against the current shared runtime profile; no source changes in this final physical-receiver pass"
+    },
+    {
+      "path": "Kernel/ResourceBirthPolicyController.lean",
+      "sha256": "a6966919e33eb329f43f5c12e9c442dc4308c4cffbaf49b436cde9bd07d1c356",
+      "lines": 1274,
+      "verdict": "GREEN: actual joined upper; independently consumed by the passing birth-to-invocation native probe"
+    },
+    {
+      "path": "Kernel/PolicyInstallReceiver.lean",
+      "sha256": "55b386ac06479c7133af7ae561f282ad2fbb05c0e74c22c3a5014b71eb3edfc7",
+      "lines": 660,
+      "verdict": "GREEN: focused Lean compilation and all source proofs; durable/native probe remains unrun"
+    },
+    {
+      "path": "scripts/probe-policy-install-receiver.lean",
+      "sha256": "751215a341b63cc9bb160d34d5490db5d50a9b705d0936750695a2a31b9d1c67",
+      "lines": 298,
+      "verdict": "SOURCE ONLY: not compiled or run; preserved for the next account window"
+    }
+  ],
+  "checks": [
+    {
+      "log": "/tmp/dregg-policy-install-controller-refresh.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "command": "env LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Kernel/PolicyInstallController.olean Kernel/PolicyInstallController.lean",
+      "exitCode": 0,
+      "verdict": "PASS"
+    },
+    {
+      "log": "/tmp/dregg-policy-install-receiver-check.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "command": "env LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Kernel/PolicyInstallReceiver.olean Kernel/PolicyInstallReceiver.lean",
+      "exitCode": 0,
+      "verdict": "PASS"
+    },
+    {
+      "log": "/tmp/dregg-birth-native-upper.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "command": "env LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Kernel/ResourceBirthPolicyController.olean Kernel/ResourceBirthPolicyController.lean",
+      "exitCode": 0,
+      "verdict": "PASS"
+    }
+  ],
+  "knownLimit": "Current schema couples source revision and capability epoch; one replacement invalidates prior-epoch grants. User selected KEEP grants/check new rules with separate revocation; schema cutover is deliberately deferred, not implemented.",
+  "nextChecks": [
+    "Compile scripts/probe-policy-install-receiver.lean and fix only real errors.",
+    "Run the preserved actual native/SQLite receiving probe with existing binaries.",
+    "Audit new general theorem axiom sets and add enforced gates.",
+    "Run root-owned integration closure; add umbrella imports deliberately."
+  ],
+  "nativeBinaries": {
+    "verifier": "/tmp/minidregg-credential-signature-verifier-target/release/minidregg-credential-signature-verifier",
+    "publicTestSigner": "/tmp/minidregg-credential-signature-verifier-target/release/examples/sign-probe",
+    "sqliteStore": "/Users/ember/dev/minidregg/native/hyperdocument-link-sqlite-store/target/release/minidregg-link-sqlite-store"
+  }
+}

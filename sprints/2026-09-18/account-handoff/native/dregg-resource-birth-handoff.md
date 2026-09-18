@@ -1,0 +1,51 @@
+# Resource birth receiver handoff — 2026-09-18
+
+Current verdict: the six proof-integrity modules, their actual upper native admission dependency, and the complete signed birth → newly issued owner invocation → SQLite reopen/replay witness are GREEN. Source is frozen. Root alone checkpoints; do not run Git or rebuild the world to recover this work.
+
+The authoritative exact source/olean hashes, commands, logs and audit scope are in `/tmp/dregg-resource-birth-receiver-checks.json`. All six source hashes and both upper/profile dependency hashes were independently rechecked against that manifest after the native run. The earlier checkpoint is `278ed6a`; root is checkpointing the identity/receiver/native wave now. Do not infer the newer work is in the earlier hash.
+
+## Exact verified evidence
+
+- Owned sources: `Theory/ResourceBirth.lean`, `Theory/ResourceBirthAuthority.lean`, `Compiler/ResourceBirthCodec.lean`, `Compiler/CredentialAuthorityReplay.lean`, `Kernel/ResourceBirthController.lean`, `Kernel/ResourceBirthReceiver.lean` in `/Users/ember/dev/minidregg`.
+- Actual upper dependency: `Kernel/ResourceBirthPolicyController.lean`, owner sprint_program_install; final check `/tmp/dregg-birth-native-upper.log` exit0.
+- Runtime pins: `Compiler/CanonicalRuntimeProfile.lean`, owner sprint_shell_hermes; final check `/tmp/dregg-runtime-profile-identity-pins.log` exit0.
+- Named 24-theorem import-only audit: `/tmp/dregg-resource-birth-receiver-axioms.lean` and `.log`, exit0. Only propext, Classical.choice, Quot.sound; no sorry or native-evaluation axioms. This does not turn the native I/O implementation into a theorem.
+- Native executable witness, owned by sprint_localfirst: `scripts/probe-born-resource-invocation.lean`, SHA256 `bd4c812c7cd2d3997adf378fbf4c2fceefd5b1d45a1a4453a95c0fd40abcd6ab`. Final execution session73791 exit0, `/tmp/dregg-born-resource-invocation-native-final.log` contains PASS. Prior first pass preserved separately at `/tmp/dregg-born-resource-invocation-native-first.log`.
+
+The witness uses actual native test-key Ed25519 verification and the actual SQLite transport. It bootstraps the factory/Book/deployment, verifies the newborn/capabilities/policy do not yet exist, sends the source-derived signed birth to the production receiver, reopens storage, checks exact initial policy source and distinct ordinary-owner/policy-control grants, then invokes the born object using that newly issued capability. The actual Book fee is payer 100→93, collector 0→7 with conserved total; the admission fee lane debits the same seven. A second reopen observes the actual object mutation and unchanged Book fee.
+
+Negative and retry cases include noncanonical ingress, a valid enrolled Bob signer copying Alice's birth coordinate (specifically refused at the identity gate), Bob attempting Alice's issued capability, changed payload under the same creator/nonce identity, exact birth and invocation retries, and replaying the original birth at trusted height 20000 after key and owner expiry. Exact entire storage bytes remain unchanged on refusals/retries; expired replay returns the original receipt. Delegation is explicitly not claimed.
+
+## One actual semantic and physical path
+
+`Concrete.prepareDraft` derives source auxiliary creates and calls `prepareBirth`. The private PreparedBirth retains the complete actual durable Directory (including retired IDs), fixed registry/deployment identities, actual factory and Book cells, complete old authority catalogue and shards, strict initial policy source decoding, exact derived auxiliary cells, successful existing allocator, actual ordered AcceptedBatch Book post, unique full writes and permanent final cell laws. No second allocator, Directory, Book, authority interpreter or executor was introduced.
+
+The full first-order Descriptor frame2 includes all user creates, source-derived auxiliary creates, grants, initial policy canonical bytes, funding, fee and replay metadata. Auxiliary lists are recomputed from complete old state and exact-checked. Initial policy sources are immutable internal cells created in the same transaction as their heads and owner/control grants; there is no ghost source staging receipt. All source debit authorities use the same old authority snapshot and trusted height. New grants do not authorize their own issuance.
+
+The late raw joint tuple avoids the policy/post circularity: source-derived portal-free pre/patch/post is fixed first, actual selected old-policy/native capability checks happen against that exact joint view, and every source family mandatory Postcondition survives the same accepted joint post. The upper private AcceptedBirth retains actual exact native envelopes and all branch authorizations. The receiver accepts that token only; it does not expose a caller-selected portal, predicate, charge, writes list or raw DataIntent endpoint.
+
+Physical storage uses lifecycle bytes: fresh is `[]`, retired has a distinct tag, live wraps exactly one actual native payload. Native page roots and outer physical roots remain distinct. The full semantic authority cell is virtual: actual physical writes are the corresponding catalogue and bounded shard pages. The receiver proves every complete final authority page and catalogue byte is installed across the full composed write set, not merely within the authority lane's partial writes. Its unchanged-shard proof uses actual fresh-vs-live byte contradictions, lawful decoded kind separation, and the actual authority write exclusion. It never assumes hash injectivity or treats a filtered read guard as a global frame proof.
+
+One source-defined charge vector is both preflight-checked and consumed by the existing executor. It includes the actual declared Book fee; structural proof-work units are admission accounting, not measured CPU/GPU work. The native durable receiver reuses existing execute plus exact-byte SQLite CAS/readback/reopen.
+
+## Replay identity and disclosure
+
+`CredentialAuthorityReplay.birthIdentity` hashes canonical (birth operation family, domain, exact runtime semantics, pinned factory, signed creator, nonce). Transaction ID is that digest; authority marker is its value. Roots and payload are deliberately excluded, so changed contents at one logical coordinate conflict. `Concrete.IdentityBound` is mandatory before physical preparation/admission. Both the former caller-selected global txid and the former caller-selected global marker were repaired together. There is no digest-injectivity theorem.
+
+Every operation uses the common domain+semantic-marker StableNullifier envelope. Per-allocation requests additionally bind the actual cell ID, avoiding ambiguous identical fresh-slot request branches.
+
+The public `ResourceBirthReceiver.receive profile deployment pins native transport height bytes attempts` strictly decodes full signed ingress, loads the actual store, and checks exact historical journal identity/event/envelopes/marker before fresh key/root/nullifier/time admission. Exact match returns only the original transaction/event receipt; it does not execute or disclose new private state. Different event at the occupied identity conflicts. A retry is not admitted by a caller-supplied replay boolean.
+
+Useful source anchors: Receiver accepted_post_exact:76, accepted_book_conserves:133, intent:272, intent_derived_identity:293, installed_initial_policy_source:331, unchanged_authority_shard_unwritten:391, installed_authority_pages:457, installed_authority_catalogue:469, refusal_no_mutation:486, replay:528, replay_only_exact:542, receive:577.
+
+## Next coordinated wave — not silently repaired here
+
+The user selected KEEP grants and check the newly installed rules. Current source conflates policy authority generation with source revision, so a policy replacement can invalidate the existing owner/control caps. Root already accepted the representation split in `/tmp/dregg-policy-revision-separation.md`, independently reviewed in `/tmp/dregg-policy-revision-review.md`. Next account must keep exact capability generation checks, add separately signed/current-checked policyRevision, update all request/source/page codecs and runtime semantics coherently, preserve generation on ordinary policy update, and add new-revision liveness/negative tests. Do not reissue capabilities, weaken equality or bypass policy admission as a workaround. Birth must initialize generation0+revision0+address0 atomically and retain the expanded final-state invariant. Management recoverability is a separate contract.
+
+Explicit parent-authorized cross-subject delegation is likewise the next shared foundation wave. Existing strict attenuation holder narrowing intentionally cannot turn Alice into Bob. Preserve the strict theorem; add an explicit authorized delegation lineage edge and current-parent anchoring. Shared all-kind capability-ID freshness is already defined in Theory.CredentialLineageAdmission but still needs the coordinated mandatory IssueEvidence/attenuation/birth constructor migration; kind-indexed storage shares untyped revocation IDs. Do not claim current native witness closes that whole cutover.
+
+Root selected cloud lifecycle/Wisper as the next product area. This receiver/native witness does not establish main breadstuffs product cutover, a deployed public network, portable IR2/STARK statement soundness, succinctness or zero knowledge. Source/deployment/benchmark evidence remain separate.
+
+A bounded source check found no canonical join obstruction to a new explicit native BabyBear=ZMod2013265921 profile with k29, actual CharP and NoWrap proofs, and a new exact source-pinned profile/semantic identity. D-0004 allows heterogeneous field dialects; EmitSerialize already defines this prime field. Do not reuse the ZMod65537 test identity as deployment or infer deployed proof correctness from a descriptor exhibit. Shell owns that source-only proposal; no new profile implementation/build is authorized in this closing wave.
+
+No compiler process remains in this lane. No source edits are pending from this lane; optional durable axiom-pin additions were deliberately held to preserve the exact checkpoint. Future build seats must be explicitly handed off by the coordinator, never inferred from an empty pgrep.

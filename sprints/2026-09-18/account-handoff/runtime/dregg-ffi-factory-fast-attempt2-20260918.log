@@ -1,0 +1,845 @@
+pbuild: host is Darwin-arm64, hbox is Linux-x86_64 — NOT shipping
+        dregg-lean-ffi/libdregg_lean.a (it is arch-specific; a cross-shipped archive links as
+        'neither ET_REL nor LLVM bitcode'). The lane gets a platform-native one from
+        the release instead — see ARCHIVE PROVISIONING below.
+cannot delete non-empty directory: drive59-baseline
+pbuild:   archive present, vouched by its provenance record (skipping the ~8s export rescan).
+pbuild: lean archive kept in lane 'hcargo' (release, 0s)
+        Dregg2 provenance: tree fc2be11509bb — NOT any of the last 40 commits of this history
+pbuild: forwarding LEAN_NUM_THREADS SWARM_MEM_MAX DREGG_REQUIRE_LEAN DREGG_LEANC_JOBS to hbox
+warning: ignoring --test-threads because --no-capture is specified
+warning: the feature `avx512_target_feature` has been stable since 1.89.0 and no longer requires an attribute to enable
+  --> vendor/curve25519-dalek-dregg/src/lib.rs:23:13
+   |
+23 |     feature(avx512_target_feature)
+   |             ^^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: `#[warn(stable_features)]` on by default
+
+warning: the feature `stdarch_x86_avx512` has been stable since 1.89.0 and no longer requires an attribute to enable
+  --> vendor/curve25519-dalek-dregg/src/lib.rs:19:13
+   |
+19 |     feature(stdarch_x86_avx512)
+   |             ^^^^^^^^^^^^^^^^^^
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:51:17
+    |
+ 51 |                   unsafe {
+    |                   ^^^^^^ unnecessary `unsafe` block
+...
+213 | / impl_shared!(
+214 | |     u64x4,
+215 | |     u64,
+216 | |     _mm256_add_epi64,
+...   |
+220 | |     _mm256_extract_epi64
+221 | | );
+    | |_- in this macro invocation
+    |
+    = note: `#[warn(unused_unsafe)]` (part of `#[warn(unused)]`) on by default
+    = note: this warning originates in the macro `impl_shared` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:86:17
+    |
+ 86 |                   unsafe { core::arch::x86_64::$add_intrinsic(self.0, rhs.0).into() }
+    |                   ^^^^^^ unnecessary `unsafe` block
+...
+213 | / impl_shared!(
+214 | |     u64x4,
+215 | |     u64,
+216 | |     _mm256_add_epi64,
+...   |
+220 | |     _mm256_extract_epi64
+221 | | );
+    | |_- in this macro invocation
+    |
+    = note: this warning originates in the macro `impl_shared` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:105:17
+    |
+105 |                   unsafe { core::arch::x86_64::$sub_intrinsic(self.0, rhs.0).into() }
+    |                   ^^^^^^ unnecessary `unsafe` block
+...
+213 | / impl_shared!(
+214 | |     u64x4,
+215 | |     u64,
+216 | |     _mm256_add_epi64,
+...   |
+220 | |     _mm256_extract_epi64
+221 | | );
+    | |_- in this macro invocation
+    |
+    = note: this warning originates in the macro `impl_shared` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:115:17
+    |
+115 |                   unsafe { core::arch::x86_64::_mm256_and_si256(self.0, rhs.0).into() }
+    |                   ^^^^^^ unnecessary `unsafe` block
+...
+213 | / impl_shared!(
+214 | |     u64x4,
+215 | |     u64,
+216 | |     _mm256_add_epi64,
+...   |
+220 | |     _mm256_extract_epi64
+221 | | );
+    | |_- in this macro invocation
+    |
+    = note: this warning originates in the macro `impl_shared` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:125:17
+    |
+125 |                   unsafe { core::arch::x86_64::_mm256_xor_si256(self.0, rhs.0).into() }
+    |                   ^^^^^^ unnecessary `unsafe` block
+...
+213 | / impl_shared!(
+214 | |     u64x4,
+215 | |     u64,
+216 | |     _mm256_add_epi64,
+...   |
+220 | |     _mm256_extract_epi64
+221 | | );
+    | |_- in this macro invocation
+    |
+    = note: this warning originates in the macro `impl_shared` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:152:17
+    |
+152 |                   unsafe { core::arch::x86_64::$shl_intrinsic(self.0, N).into() }
+    |                   ^^^^^^ unnecessary `unsafe` block
+...
+213 | / impl_shared!(
+214 | |     u64x4,
+215 | |     u64,
+216 | |     _mm256_add_epi64,
+...   |
+220 | |     _mm256_extract_epi64
+221 | | );
+    | |_- in this macro invocation
+    |
+    = note: this warning originates in the macro `impl_shared` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:157:17
+    |
+157 |                   unsafe { core::arch::x86_64::$shr_intrinsic(self.0, N).into() }
+    |                   ^^^^^^ unnecessary `unsafe` block
+...
+213 | / impl_shared!(
+214 | |     u64x4,
+215 | |     u64,
+216 | |     _mm256_add_epi64,
+...   |
+220 | |     _mm256_extract_epi64
+221 | | );
+    | |_- in this macro invocation
+    |
+    = note: this warning originates in the macro `impl_shared` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:162:17
+    |
+162 |                   unsafe { core::arch::x86_64::$extract_intrinsic(self.0, N) as $lane_ty }
+    |                   ^^^^^^ unnecessary `unsafe` block
+...
+213 | / impl_shared!(
+214 | |     u64x4,
+215 | |     u64,
+216 | |     _mm256_add_epi64,
+...   |
+220 | |     _mm256_extract_epi64
+221 | | );
+    | |_- in this macro invocation
+    |
+    = note: this warning originates in the macro `impl_shared` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:51:17
+    |
+ 51 |                   unsafe {
+    |                   ^^^^^^ unnecessary `unsafe` block
+...
+222 | / impl_shared!(
+223 | |     u32x8,
+224 | |     u32,
+225 | |     _mm256_add_epi32,
+...   |
+229 | |     _mm256_extract_epi32
+230 | | );
+    | |_- in this macro invocation
+    |
+    = note: this warning originates in the macro `impl_shared` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:86:17
+    |
+ 86 |                   unsafe { core::arch::x86_64::$add_intrinsic(self.0, rhs.0).into() }
+    |                   ^^^^^^ unnecessary `unsafe` block
+...
+222 | / impl_shared!(
+223 | |     u32x8,
+224 | |     u32,
+225 | |     _mm256_add_epi32,
+...   |
+229 | |     _mm256_extract_epi32
+230 | | );
+    | |_- in this macro invocation
+    |
+    = note: this warning originates in the macro `impl_shared` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:105:17
+    |
+105 |                   unsafe { core::arch::x86_64::$sub_intrinsic(self.0, rhs.0).into() }
+    |                   ^^^^^^ unnecessary `unsafe` block
+...
+222 | / impl_shared!(
+223 | |     u32x8,
+224 | |     u32,
+225 | |     _mm256_add_epi32,
+...   |
+229 | |     _mm256_extract_epi32
+230 | | );
+    | |_- in this macro invocation
+    |
+    = note: this warning originates in the macro `impl_shared` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:115:17
+    |
+115 |                   unsafe { core::arch::x86_64::_mm256_and_si256(self.0, rhs.0).into() }
+    |                   ^^^^^^ unnecessary `unsafe` block
+...
+222 | / impl_shared!(
+223 | |     u32x8,
+224 | |     u32,
+225 | |     _mm256_add_epi32,
+...   |
+229 | |     _mm256_extract_epi32
+230 | | );
+    | |_- in this macro invocation
+    |
+    = note: this warning originates in the macro `impl_shared` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:125:17
+    |
+125 |                   unsafe { core::arch::x86_64::_mm256_xor_si256(self.0, rhs.0).into() }
+    |                   ^^^^^^ unnecessary `unsafe` block
+...
+222 | / impl_shared!(
+223 | |     u32x8,
+224 | |     u32,
+225 | |     _mm256_add_epi32,
+...   |
+229 | |     _mm256_extract_epi32
+230 | | );
+    | |_- in this macro invocation
+    |
+    = note: this warning originates in the macro `impl_shared` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:152:17
+    |
+152 |                   unsafe { core::arch::x86_64::$shl_intrinsic(self.0, N).into() }
+    |                   ^^^^^^ unnecessary `unsafe` block
+...
+222 | / impl_shared!(
+223 | |     u32x8,
+224 | |     u32,
+225 | |     _mm256_add_epi32,
+...   |
+229 | |     _mm256_extract_epi32
+230 | | );
+    | |_- in this macro invocation
+    |
+    = note: this warning originates in the macro `impl_shared` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:157:17
+    |
+157 |                   unsafe { core::arch::x86_64::$shr_intrinsic(self.0, N).into() }
+    |                   ^^^^^^ unnecessary `unsafe` block
+...
+222 | / impl_shared!(
+223 | |     u32x8,
+224 | |     u32,
+225 | |     _mm256_add_epi32,
+...   |
+229 | |     _mm256_extract_epi32
+230 | | );
+    | |_- in this macro invocation
+    |
+    = note: this warning originates in the macro `impl_shared` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:162:17
+    |
+162 |                   unsafe { core::arch::x86_64::$extract_intrinsic(self.0, N) as $lane_ty }
+    |                   ^^^^^^ unnecessary `unsafe` block
+...
+222 | / impl_shared!(
+223 | |     u32x8,
+224 | |     u32,
+225 | |     _mm256_add_epi32,
+...   |
+229 | |     _mm256_extract_epi32
+230 | | );
+    | |_- in this macro invocation
+    |
+    = note: this warning originates in the macro `impl_shared` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:258:9
+    |
+258 |         unsafe {
+    |         ^^^^^^ unnecessary `unsafe` block
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:270:9
+    |
+270 |         unsafe { u64x4(core::arch::x86_64::_mm256_set1_epi64x(x as i64)) }
+    |         ^^^^^^ unnecessary `unsafe` block
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:309:9
+    |
+309 |         unsafe {
+    |         ^^^^^^ unnecessary `unsafe` block
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:322:9
+    |
+322 |         unsafe { u32x8(core::arch::x86_64::_mm256_set1_epi32(x as i32)) }
+    |         ^^^^^^ unnecessary `unsafe` block
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:335:9
+    |
+335 |         unsafe { core::arch::x86_64::_mm256_mul_epu32(self.0, rhs.0).into() }
+    |         ^^^^^^ unnecessary `unsafe` block
+
+warning: unnecessary `unsafe` block
+  --> vendor/curve25519-dalek-dregg/src/backend/vector/avx2/field.rs:68:5
+   |
+68 |     unsafe {
+   |     ^^^^^^ unnecessary `unsafe` block
+
+warning: unnecessary `unsafe` block
+  --> vendor/curve25519-dalek-dregg/src/backend/vector/avx2/field.rs:89:5
+   |
+89 |     unsafe {
+   |     ^^^^^^ unnecessary `unsafe` block
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/avx2/field.rs:432:13
+    |
+432 |             unsafe {
+    |             ^^^^^^ unnecessary `unsafe` block
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/avx2/field.rs:456:13
+    |
+456 |             unsafe {
+    |             ^^^^^^ unnecessary `unsafe` block
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/avx2/field.rs:479:28
+    |
+479 |         let c9_19: u32x8 = unsafe {
+    |                            ^^^^^^ unnecessary `unsafe` block
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/avx2/field.rs:663:13
+    |
+663 |             unsafe {
+    |             ^^^^^^ unnecessary `unsafe` block
+
+warning: unnecessary `unsafe` block
+  --> vendor/curve25519-dalek-dregg/src/backend/vector/ifma/field.rs:63:5
+   |
+63 |     unsafe {
+   |     ^^^^^^ unnecessary `unsafe` block
+
+warning: unnecessary `unsafe` block
+  --> vendor/curve25519-dalek-dregg/src/backend/vector/ifma/field.rs:95:5
+   |
+95 |     unsafe {
+   |     ^^^^^^ unnecessary `unsafe` block
+
+warning: `curve25519-dalek` (lib) generated 31 warnings
+warning: unused import: `crate::dsl::descriptors::merkle_poseidon2_circuit`
+  --> circuit/src/body_membership.rs:24:5
+   |
+24 | use crate::dsl::descriptors::merkle_poseidon2_circuit;
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `AccumulatorNonMembershipWitness`
+  --> circuit/src/dsl/accumulator.rs:25:24
+   |
+25 |     ACCUMULATOR_WIDTH, AccumulatorNonMembershipWitness, AccumulatorNonRevocationWitness, ExtElem,
+   |                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused imports: `BoundaryDef`, `BoundaryRow`, `CircuitDescriptor`, `ColumnDef`, `ColumnKind`, `ConstraintExpr`, and `DslCircuit`
+  --> circuit/src/dsl/fold.rs:30:5
+   |
+30 |     BoundaryDef, BoundaryRow, CircuitDescriptor, ColumnDef, ColumnKind, ConstraintExpr, DslCircuit,
+   |     ^^^^^^^^^^^  ^^^^^^^^^^^  ^^^^^^^^^^^^^^^^^  ^^^^^^^^^  ^^^^^^^^^^  ^^^^^^^^^^^^^^  ^^^^^^^^^^
+
+warning: unused import: `hash_4_to_1`
+ --> circuit/src/effect_vm/trace.rs:8:37
+  |
+8 | use crate::poseidon2::{hash_2_to_1, hash_4_to_1};
+  |                                     ^^^^^^^^^^^
+
+warning: private item shadows public glob re-export
+  --> circuit/src/effect_vm/trace_rotated.rs:47:13
+   |
+47 | use super::{EFFECT_VM_WIDTH, EffectVmContext, generate_effect_vm_trace_ext};
+   |             ^^^^^^^^^^^^^^^
+   |
+note: the name `EFFECT_VM_WIDTH` in the value namespace is supposed to be publicly re-exported here
+  --> circuit/src/effect_vm/trace_rotated.rs:52:9
+   |
+52 | pub use crate::effect_vm::layout_generated::*;
+   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+note: but the private item here shadows it
+  --> circuit/src/effect_vm/trace_rotated.rs:47:13
+   |
+47 | use super::{EFFECT_VM_WIDTH, EffectVmContext, generate_effect_vm_trace_ext};
+   |             ^^^^^^^^^^^^^^^
+   = note: `#[warn(hidden_glob_reexports)]` on by default
+
+warning: unused import: `EFFECT_VM_WIDTH`
+  --> circuit/src/effect_vm/transfer_fee_avail_weld.rs:37:5
+   |
+37 |     EFFECT_VM_WIDTH, PARAM_BASE, STATE_AFTER_BASE, STATE_BEFORE_BASE, param, state,
+   |     ^^^^^^^^^^^^^^^
+
+warning: unused imports: `prove` and `verify`
+  --> circuit/src/plonky3_prover.rs:40:40
+   |
+40 | use p3_uni_stark::{Proof, StarkConfig, prove, verify};
+   |                                        ^^^^^  ^^^^^^
+
+warning: unused doc comment
+   --> circuit/src/refusal.rs:485:1
+    |
+485 | / /// Set while this thread is inside [`catch_quietly`]. The hook installed below reads it, so
+486 | | /// silencing is scoped to the thread that asked for it.
+    | |_-------------------------------------------------------^
+    |   |
+    |   rustdoc does not generate documentation for macro invocations
+    |
+    = help: to document an item produced by a macro, the macro must produce the documentation as part of its expansion
+    = note: `#[warn(unused_doc_comments)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `crate::dsl::predicates::*`
+   --> circuit/src/lib.rs:700:13
+    |
+700 |     pub use crate::dsl::predicates::*;
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `crate::dsl::predicates::*`
+   --> circuit/src/lib.rs:701:13
+    |
+701 |     pub use crate::dsl::predicates::*;
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `WindowAccess`
+  --> circuit/src/plonky3_prover.rs:29:40
+   |
+29 | use p3_air::{Air, AirBuilder, BaseAir, WindowAccess};
+   |                                        ^^^^^^^^^^^^
+
+warning: unused import: `BaseAir`
+  --> circuit/src/plonky3_prover.rs:29:31
+   |
+29 | use p3_air::{Air, AirBuilder, BaseAir, WindowAccess};
+   |                               ^^^^^^^
+
+warning: unused import: `Air`
+  --> circuit/src/plonky3_prover.rs:29:14
+   |
+29 | use p3_air::{Air, AirBuilder, BaseAir, WindowAccess};
+   |              ^^^
+
+warning: variable does not need to be mutable
+    --> circuit/src/descriptor_ir2.rs:5712:9
+     |
+5712 |     let mut fact_hist: BTreeMap<(u32, u32, u32), u64> = BTreeMap::new();
+     |         ----^^^^^^^^^
+     |         |
+     |         help: remove this `mut`
+     |
+     = note: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+warning: variable does not need to be mutable
+   --> circuit/src/table_air.rs:404:13
+    |
+404 |         let mut share_out_of_range = |e: &TableExpr, what: &str| -> Result<(), String> {
+    |             ----^^^^^^^^^^^^^^^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> circuit/src/table_air.rs:428:13
+    |
+428 |         let mut prep_out_of_range = |e: &TableExpr, what: &str| -> Result<(), String> {
+    |             ----^^^^^^^^^^^^^^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: type `CompiledMain` is more private than the item `Ir2Air::Main::compiled`
+    --> circuit/src/descriptor_ir2.rs:3672:9
+     |
+3672 |         compiled: Arc<crate::flat_eval::CompiledMain>,
+     |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ field `Ir2Air::Main::compiled` is reachable at visibility `pub`
+     |
+note: but type `CompiledMain` is only usable at visibility `pub(crate)`
+    --> circuit/src/flat_eval.rs:368:1
+     |
+ 368 | pub(crate) struct CompiledMain {
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+     = note: `#[warn(private_interfaces)]` on by default
+
+warning: type `CompiledTable` is more private than the item `Ir2Air::LeanTable::compiled`
+    --> circuit/src/descriptor_ir2.rs:3760:9
+     |
+3760 |         compiled: Arc<crate::flat_eval::CompiledTable>,
+     |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ field `Ir2Air::LeanTable::compiled` is reachable at visibility `pub`
+     |
+note: but type `CompiledTable` is only usable at visibility `pub(crate)`
+    --> circuit/src/flat_eval.rs:418:1
+     |
+ 418 | pub(crate) struct CompiledTable {
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: method `resolve_row` is never used
+   --> circuit/src/dsl/circuit.rs:636:8
+    |
+635 | impl BoundaryDef {
+    | ---------------- method in this implementation
+636 |     fn resolve_row(&self, trace_len: usize) -> usize {
+    |        ^^^^^^^^^^^
+    |
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: field `lookup_index` is never read
+   --> circuit/src/dsl/circuit.rs:673:5
+    |
+668 | pub struct DslCircuit {
+    |            ---------- field in this struct
+...
+673 |     lookup_index: LookupIndex,
+    |     ^^^^^^^^^^^^
+
+warning: field `set_elements` is never read
+   --> circuit/src/non_membership.rs:140:5
+    |
+138 | pub struct NonMembershipProver {
+    |            ------------------- field in this struct
+139 |     /// The set's elements (needed for witness generation).
+140 |     set_elements: Vec<BabyBear>,
+    |     ^^^^^^^^^^^^
+    |
+    = note: `NonMembershipProver` has derived impls for the traits `Debug` and `Clone`, but these are intentionally ignored during dead code analysis
+
+warning: constant `ROUND_STATES_OFFSET` is never used
+   --> circuit/src/plonky3_prover.rs:289:7
+    |
+289 | const ROUND_STATES_OFFSET: usize = 5;
+    |       ^^^^^^^^^^^^^^^^^^^
+
+warning: constant `PARENT_COL` is never used
+   --> circuit/src/plonky3_prover.rs:292:7
+    |
+292 | const PARENT_COL: usize = P3_TRACE_WIDTH - 1; // 245
+    |       ^^^^^^^^^^
+
+warning: function `vm_site_digest_concrete` is never used
+    --> circuit/src/lean_descriptor_air.rs:1633:15
+     |
+1633 | pub(crate) fn vm_site_digest_concrete(
+     |               ^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: constant `CHIP_MULT_STATE16` is never used
+    --> circuit/src/descriptor_ir2.rs:3505:7
+     |
+3505 | const CHIP_MULT_STATE16: usize = CHIP_MULT_NARROW;
+     |       ^^^^^^^^^^^^^^^^^
+
+warning: function `hash2_state_c` is never used
+    --> circuit/src/descriptor_ir2.rs:5248:4
+     |
+5248 | fn hash2_state_c(a: BabyBear, b: BabyBear) -> [BabyBear; POSEIDON2_WIDTH] {
+     |    ^^^^^^^^^^^^^
+
+warning: `dregg-circuit` (lib) generated 26 warnings (run `cargo fix --lib -p dregg-circuit` to apply 11 suggestions)
+   Compiling dregg-lean-ffi v0.1.0 (/tank/dregg-build/hcargo/dregg-lean-ffi)
+warning: method `true_outcome` is never used
+   --> captp/src/fraud_proof.rs:112:8
+    |
+ 90 | impl OwnerAnchoredFact {
+    | ---------------------- method in this implementation
+...
+112 |     fn true_outcome(&self, receipt: &CustodyReceipt) -> CustodyOutcome {
+    |        ^^^^^^^^^^^^
+    |
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: `dregg-captp` (lib) generated 1 warning
+warning: unused import: `Verifier`
+ --> cell-crypto/src/peer_exchange.rs:9:29
+  |
+9 | use ed25519_dalek::{Signer, Verifier};
+  |                             ^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: `dregg-cell-crypto` (lib) generated 1 warning
+   Compiling dregg-turn v0.1.0 (/tank/dregg-build/hcargo/turn)
+warning: associated function `enforce_custom_proof_entry_binding` is never used
+   --> turn/src/executor/proof_verify.rs:717:19
+    |
+177 | impl TurnExecutor {
+    | ----------------- associated function in this implementation
+...
+717 |     pub(super) fn enforce_custom_proof_entry_binding(
+    |                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+   Compiling dregg-federation v0.1.0 (/tank/dregg-build/hcargo/federation)
+   Compiling dregg-firmament v0.1.0 (/tank/dregg-build/hcargo/sel4/dregg-firmament)
+warning: field `next_id` is never read
+   --> sel4/dregg-firmament/src/host_pd.rs:218:5
+    |
+214 | pub struct HostPdBacking {
+    |            ------------- field in this struct
+...
+218 |     next_id: u64,
+    |     ^^^^^^^
+    |
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: `dregg-firmament` (lib) generated 1 warning
+   Compiling dregg-coord v0.1.0 (/tank/dregg-build/hcargo/coord)
+   Compiling starbridge-web-surface v0.1.0 (/tank/dregg-build/hcargo/starbridge-web-surface)
+warning: unused imports: `AuthRequired` and `Credential`
+  --> starbridge-web-surface/src/affordance.rs:62:18
+   |
+62 | use dregg_cell::{AuthRequired, Credential, Requirement};
+   |                  ^^^^^^^^^^^^  ^^^^^^^^^^
+   |
+   = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: variable does not need to be mutable
+   --> starbridge-web-surface/src/indexer.rs:216:9
+    |
+216 |     let mut push = |c: &String, seen: &mut BTreeSet<String>, out: &mut Vec<String>| {
+    |         ----^^^^
+    |         |
+    |         help: remove this `mut`
+    |
+    = note: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+warning: `starbridge-web-surface` (lib) generated 2 warnings (run `cargo fix --lib -p starbridge-web-surface` to apply 2 suggestions)
+   Compiling dregg-payable v0.1.0 (/tank/dregg-build/hcargo/dregg-payable)
+   Compiling deos-reflect v0.1.0 (/tank/dregg-build/hcargo/deos-reflect)
+   Compiling dregg-doc v0.1.0 (/tank/dregg-build/hcargo/dregg-doc)
+warning: unused import: `Pin`
+  --> dregg-doc/src/substrate.rs:40:93
+   |
+40 | use crate::composition::{AtomContent as EmbedAtomContent, ChildRef, EmbedRole, LayoutGraph, Pin};
+   |                                                                                             ^^^
+   |
+   = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+   Compiling deos-web-cells v0.1.0 (/tank/dregg-build/hcargo/deos-web-cells)
+warning: `dregg-doc` (lib) generated 1 warning (run `cargo fix --lib -p dregg-doc` to apply 1 suggestion)
+warning: `dregg-turn` (lib) generated 1 warning
+   Compiling dregg-userspace-verify v0.1.0 (/tank/dregg-build/hcargo/dregg-userspace-verify)
+warning: dregg-lean-ffi@0.1.0: dregg-lean-ffi: splicing the Dregg2.FFI boundary closure — 347 of 706 emitted Dregg2 C facets (359 off-closure proof modules not shipped in the runtime archive).
+error[E0061]: this function takes 15 arguments but 11 arguments were supplied
+    --> dregg-lean-ffi/src/bridge_lc_ffi.rs:3123:13
+     |
+3123 |               verified_mina_wrap_shape_ok(
+     |  _____________^^^^^^^^^^^^^^^^^^^^^^^^^^^-
+3124 | |                 v[0], v[1], v[2], v[3], v[4], v[5], v[6], v[7], v[8], v[9], v[10],
+3125 | |             )
+     | |_____________- multiple arguments are missing
+     |
+note: function defined here
+    --> dregg-lean-ffi/src/bridge_lc_ffi.rs:1241:8
+     |
+1241 | pub fn verified_mina_wrap_shape_ok(
+     |        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+...
+1253 |     bulletproof_challenge_count: usize,
+     |     ----------------------------------
+1254 |     branch_domain_log2: usize,
+     |     -------------------------
+1255 |     prev_eval_pairs: usize,
+     |     ----------------------
+1256 |     prev_eval_max_len: usize,
+     |     ------------------------
+help: provide the arguments
+     |
+3123 -             verified_mina_wrap_shape_ok(
+3124 -                 v[0], v[1], v[2], v[3], v[4], v[5], v[6], v[7], v[8], v[9], v[10],
+3125 -             )
+3123 +             verified_mina_wrap_shape_ok(v[0], v[1], v[2], v[3], v[4], v[5], v[6], v[7], v[8], v[9], v[10], /* usize */, /* usize */, /* usize */, /* usize */)
+     |
+
+error[E0061]: this function takes 15 arguments but 11 arguments were supplied
+    --> dregg-lean-ffi/src/bridge_lc_ffi.rs:3166:40
+     |
+3166 |             shadow_mina_wrap_shape_ok(&mina_wrap_shape_wire(2, 2, 2, 40, 15, 6, 15, 7, 1, 15, 15));
+     |                                        ^^^^^^^^^^^^^^^^^^^^-------------------------------------- multiple arguments are missing
+     |
+note: function defined here
+    --> dregg-lean-ffi/src/bridge_lc_ffi.rs:1204:8
+     |
+1204 | pub fn mina_wrap_shape_wire(
+     |        ^^^^^^^^^^^^^^^^^^^^
+...
+1216 |     bulletproof_challenge_count: usize,
+     |     ----------------------------------
+1217 |     branch_domain_log2: usize,
+     |     -------------------------
+1218 |     prev_eval_pairs: usize,
+     |     ----------------------
+1219 |     prev_eval_max_len: usize,
+     |     ------------------------
+help: provide the arguments
+     |
+3166 |             shadow_mina_wrap_shape_ok(&mina_wrap_shape_wire(2, 2, 2, 40, 15, 6, 15, 7, 1, 15, 15, /* usize */, /* usize */, /* usize */, /* usize */));
+     |                                                                                                 ++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+error[E0061]: this function takes 15 arguments but 11 arguments were supplied
+    --> dregg-lean-ffi/src/bridge_lc_ffi.rs:3168:40
+     |
+3168 |             shadow_mina_wrap_shape_ok(&mina_wrap_shape_wire(2, 2, 2, 40, 15, 6, 15, 7, 1, 15, 14));
+     |                                        ^^^^^^^^^^^^^^^^^^^^-------------------------------------- multiple arguments are missing
+     |
+note: function defined here
+    --> dregg-lean-ffi/src/bridge_lc_ffi.rs:1204:8
+     |
+1204 | pub fn mina_wrap_shape_wire(
+     |        ^^^^^^^^^^^^^^^^^^^^
+...
+1216 |     bulletproof_challenge_count: usize,
+     |     ----------------------------------
+1217 |     branch_domain_log2: usize,
+     |     -------------------------
+1218 |     prev_eval_pairs: usize,
+     |     ----------------------
+1219 |     prev_eval_max_len: usize,
+     |     ------------------------
+help: provide the arguments
+     |
+3168 |             shadow_mina_wrap_shape_ok(&mina_wrap_shape_wire(2, 2, 2, 40, 15, 6, 15, 7, 1, 15, 14, /* usize */, /* usize */, /* usize */, /* usize */));
+     |                                                                                                 ++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+warning: struct `AuthenticatedJournalRecord` is never constructed
+   --> dregg-lean-ffi/src/poa_bazaar_restart_portal.rs:186:19
+    |
+186 | pub(crate) struct AuthenticatedJournalRecord {
+    |                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: associated function `open_bound` is never used
+   --> dregg-lean-ffi/src/poa_bazaar_restart_portal.rs:377:19
+    |
+346 | impl DurableBazaarHeadStore {
+    | --------------------------- associated function in this implementation
+...
+377 |     pub(crate) fn open_bound(
+    |                   ^^^^^^^^^^
+
+warning: method `load_authenticated_journal_records` is never used
+    --> dregg-lean-ffi/src/poa_bazaar_restart_portal.rs:1096:19
+     |
+1095 | impl DurableBazaarHeadStore {
+     | --------------------------- method in this implementation
+1096 |     pub(crate) fn load_authenticated_journal_records(
+     |                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: function `lean_storage_content_root` is never used
+    --> dregg-lean-ffi/src/lib.rs:2509:12
+     |
+2509 |     pub fn lean_storage_content_root(wire: &str) -> Result<String, String> {
+     |            ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: function `dregg_storage_content_root_str` is never used
+    --> dregg-lean-ffi/src/lib.rs:1855:12
+     |
+1855 |         fn dregg_storage_content_root_str(
+     |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+   Compiling dregg-circuit-prove v0.1.0 (/tank/dregg-build/hcargo/circuit-prove)
+   Compiling dregg-deploy v0.1.0 (/tank/dregg-build/hcargo/dregg-deploy)
+For more information about this error, try `rustc --explain E0061`.
+warning: dregg-lean-ffi@0.1.0: dregg-lean-ffi: splicing the Dregg2.FFI boundary closure — 347 of 706 emitted Dregg2 C facets (359 off-closure proof modules not shipped in the runtime archive).
+error: could not compile `dregg-lean-ffi` (lib test) due to 3 previous errors
+warning: build failed, waiting for other jobs to finish...
+warning: `dregg-lean-ffi` (lib) generated 5 warnings
+warning: unused import: `ProgramRegistry`
+  --> circuit-prove/src/custom_proof_bind.rs:78:48
+   |
+78 | use dregg_circuit::dsl::circuit::{CellProgram, ProgramRegistry};
+   |                                                ^^^^^^^^^^^^^^^
+   |
+   = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `CLAIM_VPRIME`
+   --> circuit-prove/src/mina_kimchi_verifier_gadget.rs:218:38
+    |
+218 | use crate::mina_wrap_finalize_fold::{CLAIM_VPRIME, FINALIZE_CLAIM_LEN, SK, endo_lift_descriptor};
+    |                                      ^^^^^^^^^^^^
+
+warning: unused import: `nums`
+  --> circuit-prove/src/mina_pasta_fixture_suite.rs:61:70
+   |
+61 |     EF, F, FixtureHashSuite, FixtureTranscript, arr, ef_json, f_u32, nums,
+   |                                                                      ^^^^
+
+warning: unused import: `CanSample`
+  --> circuit-prove/src/mina_pasta_fixture_suite.rs:64:36
+   |
+64 |     CanFinalizeDigest, CanObserve, CanSample, CanSampleBits, FieldChallenger, GrindingChallenger,
+   |                                    ^^^^^^^^^
+
+warning: unused import: `dregg_circuit::exact_nullifier_aafi::Digest8`
+  --> circuit-prove/src/shielded/wide_value_binding.rs:71:5
+   |
+71 | use dregg_circuit::exact_nullifier_aafi::Digest8;
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: function `prove_zk` is never used
+   --> circuit-prove/src/private_book_bfv_terminal.rs:327:4
+    |
+327 | fn prove_zk(
+    |    ^^^^^^^^
+    |
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: function `verify_zk` is never used
+   --> circuit-prove/src/private_book_bfv_terminal.rs:347:4
+    |
+347 | fn verify_zk(
+    |    ^^^^^^^^^
+
+warning: `dregg-circuit-prove` (lib) generated 7 warnings (run `cargo fix --lib -p dregg-circuit-prove` to apply 5 suggestions)
+error: command `/home/hbox/.rustup/toolchains/nightly-2026-06-21-x86_64-unknown-linux-gnu/bin/cargo test --no-run --message-format json-render-diagnostics --package dregg-lean-ffi --package starbridge-v2 --lib --test lean_init_lifecycle --features dregg-lean-ffi/lean-lib,starbridge-v2/agent-js --jobs 4` exited with code 101
+pbuild: VERDICT outcome=FAIL status=101 lane=hcargo host=hbox cmd=env DREGG_LEAN_INIT_PROFILE=1 timeout --signal=TERM --kill-after=15s 1800s cargo nextest run --profile full --build-jobs 4 --test-threads=1 --no-fail-fast --no-tests fail --no-capture -p dregg-lean-ffi -p starbridge-v2 --features dregg-lean-ffi/lean-lib,starbridge-v2/agent-js --lib --test lean_init_lifecycle -E test(~init_lifecycle_failed_module) or test(~init_lifecycle_unwind) or test(~init_lifecycle_mode_refusal) or test(~delegated_admission_initializes_only_its_real_lean_module) or test(/factory_chronology_/)
