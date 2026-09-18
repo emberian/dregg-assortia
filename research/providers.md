@@ -3,7 +3,7 @@
 ## Finding
 
 No connected public homelab-provider market with resource
-advertisement, $DREGG staking, reputation, challenge intake, and live slashing.
+advertisement, $DREGG staking, reputation, challenge intake, and live slashing was located in this bounded inspection.
 The closest existing pieces are useful and should be modeled as separate seams:
 the DreggNet managed-provider runtime, the breadstuffs compute escrow offering,
 the DreggCloud bounded service-cell path, and the node relay-custody referee.
@@ -31,19 +31,27 @@ stake consequence unless a verifier and executable settlement path say so.
    These establish capacity authorization and accounting for a known lease;
    they are not a provider-discovery or provider-stake protocol.
 
-3. **Compute Exchange has enforced job-cell budget accounting, but not a token
-   escrow or verifiable remote compute.**
-   `breadstuffs/dreggnet-compute/src/lib.rs` wraps
-   `starbridge-apps/compute-exchange`: post records a budget, one worker claims
-   under a provider capability at a price no higher than budget, and requester
-   settlement enforces `PAID + REFUNDED == BUDGET` in committed fields. Its
-   honest-scope section is explicit that this is **not** an `Effect::Transfer` /
-   `dregg-payable` wallet-to-wallet token balance move. Execution is also stubbed:
-   the result is non-empty text, `SPEC_HASH` does not bind it to a correct output,
-   and the proposed full path (confined worker plus verifiable-compute proof) is
-   absent. It has neither timeout/challenge/slash nor provider reputation. Thus
-   field-accounting and lifecycle refusal are enforced; monetary settlement and
-   result correctness are not.
+3. **Compute Exchange constructs real payment effects, but lacks a policy binding
+   between the payment, job record and correct output.** The opening orientation
+   wrongly trusted the wrapper's stale scope note at
+   `breadstuffs/dreggnet-compute/src/lib.rs:781`. A later Astra trace and parent
+   source review followed the actual consumer: `do_settle` at `:435` calls the
+   imported `starbridge_compute_exchange::fire_settle`; that function reads live
+   BID/BUDGET and calls `settlement_effects`, which includes `payment_effects` /
+   `pay_effects` in the same action as the record update. The offering therefore
+   does reach conserving `Effect::Transfer` construction. See
+   [the wrapper](/Users/ember/dev/breadstuffs/dreggnet-compute/src/lib.rs:422),
+   [settlement](/Users/ember/dev/breadstuffs/starbridge-apps/compute-exchange/src/lib.rs:1194),
+   and [the combined effects](/Users/ember/dev/breadstuffs/starbridge-apps/compute-exchange/src/lib.rs:1141).
+
+   The remaining obligations are stronger than adding a transfer. The
+   [policy-boundary note](/Users/ember/dev/breadstuffs/starbridge-apps/compute-exchange/src/lib.rs:699)
+   identifies that the kernel constraints do not bind the transfer destination to
+   PROVIDER_HASH or its amount to PAID. POST's budget is an unfunded promise, not
+   an escrow deposit. The result gate accepts nonempty text without checking it
+   against SPEC_HASH. Provider stake, actual Solana backing, a checked remote
+   result and a dispute/reputation path are not established by this helper.
+   These are source observations; no settlement was executed in this inspection.
 
 4. **DreggCloud service cells bind an expected digest and make timeout a refund,
    not a fault verdict.** `DreggCloud/service-cells/src/lib.rs` has a signed
@@ -107,5 +115,5 @@ The shortest honest next model is not one “provider” node. Keep distinct:
 - a receipt/settlement record versus proof of execution or a trust guarantee.
 
 The inspected paths currently supply useful formal/evaluable pieces for the
-lease meter and relay custody verdict, plus real job-cell accounting transitions.
+lease meter and relay custody verdict, plus job-cell transitions with payment-effect construction.
 The joins between them are the missing product/protocol work.

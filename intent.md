@@ -32,7 +32,13 @@ The next clarification identifies the desired shape of the offering:
 
 > they can of course run their /own/ dregg nodes and host cells and whatnot!!
 
-The first application remains open. The design direction is an extensible DREGG-native resource world that includes the Clutch work in its planning, offers meaningful Solana participation/token utility, and admits participant-operated nodes and cell hosting. The exact economic mechanism, chain/cluster, resource interfaces, and September 26 scope have not been chosen. The fieldbook in the earlier assistant draft is an example, not an accepted product target.
+The initial set of activities remains open. The design direction is an extensible DREGG-native resource world that includes the Clutch work in its planning, offers meaningful Solana participation/token utility, and admits participant-operated nodes and cell hosting. The exact economic mechanism, chain/cluster, resource interfaces, and September 26 scope have not been chosen. The fieldbook in the earlier assistant draft is an example, not an accepted product target.
+
+Ember then clarified that selecting one application genre is unnecessary:
+
+> the "first application" can honestly be a mix of things, as long as its programmable at the dregg kernel level / integrated with a programmable shell at *some* level
+
+Record the mixed offering as explicitly acceptable and kernel-level programmability / programmable-shell integration as central to it. The exact programming language, shell surface and depth of integration remain open. Neither a new shell language nor an entirely graphical authoring environment is specified by this instruction. The assistant's new-tool exercise is a proposed acceptance test for this direction, not a replacement for it.
 
 ## How the project becomes resumable
 
@@ -48,11 +54,25 @@ Git remains primary. Fossil is a candidate for collaboration and project trackin
 
 ## Method and authority
 
-Ember invited recursive Terra assistance and a few turns of discussion about how to organize the work, then explicitly empowered deeper orientation and questions. This pass uses bounded read-only investigations and creates reversible orientation artifacts. No implementation cutover, deployment, public posting, or tracking-system choice has been made.
+Ember invited recursive Terra assistance and a few turns of discussion about how to organize the work, then explicitly empowered deeper orientation and questions. The initial orientation used bounded read-only investigations and created reversible orientation artifacts. No implementation cutover, deployment, public posting, or tracking-system choice was made by that pass.
 
 Ember subsequently updated the delegation preference: **mostly Astra**, with **Sol used selectively for bounded work**. The current nexus review follows that preference; the earlier Terra reports remain attributed evidence from the orientation.
 
 The existing build/proof disciplines remain relevant. A working product slice should use the intended semantic substrate and expose its real remaining obligations; a separate throwaway semantics is not assumed acceptable.
+
+Ember subsequently made the intended scale and method explicit:
+
+> comprehensively rip & tear to address any gaps (implementing as far up and down every part of the whole stack at all times), instead of accepting limitations and working around them
+
+> this is supposed to be a LONG sprint, and at least 20-60% of it is probably just work on the core system to get it up to snuff for our present purposes.
+
+> remember to be swarming wide at all times !
+
+Treat missing core/compiler/proof/runtime support as work to implement for the intended experience. Do not turn the current implementation boundary into an accepted product limitation or route around a refusing guard. The percentage is ember's planning expectation, not a measured allocation or ceiling. Use a broad, coordinated swarm with concrete ownership and frequent integration through the same resource journey.
+
+Ember then deputized autonomous work, made the laptop, `ssh persvati` and `ssh hbox` available for the night, and noted that hbox primarily uses `/tank` because its root disk is usually full. Existing lease, memory and build disciplines still apply. Ember remains available for check-ins and consequential questions, and explicitly authorized reaching them through the old Telegram bot supporting `/chreatures`, to be located using `cv`. That authorization is a communication route, not evidence that a particular bot destination has been verified. No credentials or chat identifiers belong in assortia.
+
+Ember also explicitly requests regular commits and pushes in every involved repository, including work-in-progress checkpoints that may not yet compile. Root owns those Git operations, commits named task files and preserves unrelated staged/unstaged work. Checkpoint publication does not establish test or integration success; the convergence record must retain that distinction.
 
 ## Current investigation and contributed hosting
 

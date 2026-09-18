@@ -505,16 +505,19 @@
     {
       "@id": "urn:dregg:assortia:C-COMPUTE-SCOPE",
       "@type": "Claim",
-      "label": "Compute offering accounting does not establish token payment or correct job execution",
-      "description": "The selected offering path conserves budget across committed job fields. Its own scope states that this is not wallet/token transfer; result settlement checks nonempty text without a spec-to-result proof.",
+      "label": "Compute constructs actual transfers but lacks payment-to-record and result binding",
+      "description": "The offering calls fire_settle, which consumes settlement_effects including payment_effects/pay_effects and a conserving Transfer. The job policy does not bind the payee to PROVIDER_HASH or amount to PAID, POST budget is not funded escrow, and result admission checks nonempty text rather than a checked result against SPEC_HASH.",
       "subject": "urn:dregg:assortia:E-PROVIDERS",
       "sources": [
-        "urn:dregg:assortia:S-COMPUTE"
+        "urn:dregg:assortia:S-COMPUTE",
+        "urn:dregg:assortia:S-COMPUTE-PAYMENT",
+        "urn:dregg:assortia:S-COMPUTE-POLICY-GAP"
       ],
       "evidenceKind": "source-and-contract-inspection",
-      "scope": "dreggnet-compute offering path",
-      "limitations": "Separate action helpers may construct payment effects; their existence does not change this path's result contract.",
-      "status": "observed-in-source"
+      "scope": "dreggnet-compute do_settle through starbridge_compute_exchange::fire_settle",
+      "limitations": "No settlement execution or real Solana custody observed. The helper creates a payment path; that does not prove its job/economic statement sufficient.",
+      "status": "observed-in-source",
+      "correction": "2026-09-17: replaced earlier field-only interpretation after tracing the real wrapper-to-helper consumer; the wrapper scope comment at line 781 is stale. Source bytes were unchanged, demonstrating that freshness alone does not validate an interpretation."
     },
     {
       "@id": "urn:dregg:assortia:C-SLASH-SCOPE",
@@ -909,11 +912,11 @@
     {
       "@id": "urn:dregg:assortia:S-COMPUTE",
       "@type": "Source",
-      "label": "Offering field accounting and result correctness limits",
+      "label": "Offering result gate and real settlement consumer",
       "repository": "urn:dregg:assortia:R-breadstuffs",
       "path": "dreggnet-compute/src/lib.rs",
-      "lineStart": 765,
-      "lineEnd": 800,
+      "lineStart": 403,
+      "lineEnd": 445,
       "sha256": "af26e25a292b264cde0e2cb476e1ab9480f87fc7d9a02294bcfb49a785e9b13e",
       "recordedDate": "2026-09-17",
       "gitHead": "3e51def6a5a95424e54fbe7432539b06088de5c3",
@@ -984,12 +987,12 @@
     {
       "@id": "urn:dregg:assortia:S-PROVIDERS-REVIEW",
       "@type": "Source",
-      "label": "Bounded provider inspection; negative findings are search-scoped",
+      "label": "Provider inspection corrected after actual compute transfer-consumer trace",
       "repository": "urn:dregg:assortia:R-assortia",
       "path": "research/providers.md",
       "lineStart": 1,
-      "lineEnd": 111,
-      "sha256": "dbc1d4b404f62b8743a7d10a4f60e946379e533e6fe369f85e0af4e86441476a",
+      "lineEnd": 119,
+      "sha256": "5a7ce02245f640b22761c80241b751fe73eb880558300aabb07afc96fc2f9581",
       "recordedDate": "2026-09-17"
     },
     {
@@ -1026,8 +1029,8 @@
       "@id": "urn:dregg:assortia:W-M26-DESIGN",
       "@type": "WorkItem",
       "label": "Define the September 26 programmable nexus and its shared contracts",
-      "description": "Discussion proposal in milestones/2026-09-26.md: establish common resource/authority/history and external-operation contracts, participant-operated cell hosting, and a meaningful Solana economic connection. A first workroom, game or computation activity remains open; Clutch is explicitly included in the comparison.",
-      "status": "proposed-for-discussion",
+      "description": "Active design and implementation planning for the September 26 mixed programmable nexus: canonical resource/authority/history, user-authored rules and shell/Hermes invocation, participant hosting and meaningful economic operations. Close required core/compiler/proof/runtime gaps instead of routing around them.",
+      "status": "active-design-and-implementation-planning",
       "evidenceKind": "assistant-proposal",
       "localPath": "/Users/ember/dev/dregg-assortia/milestones/2026-09-26.md",
       "motivatedBy": [
@@ -1036,7 +1039,11 @@
         "urn:dregg:assortia:I-DESIGN-COHERENCE",
         "urn:dregg:assortia:I-NEXUS",
         "urn:dregg:assortia:I-SELFHOST",
-        "urn:dregg:assortia:I-SOLANA"
+        "urn:dregg:assortia:I-SOLANA",
+        "urn:dregg:assortia:I-MIXED-PROGRAMMING",
+        "urn:dregg:assortia:I-CORE-SPRINT",
+        "urn:dregg:assortia:I-AUTONOMOUS-NIGHT",
+        "urn:dregg:assortia:I-REGULAR-CHECKPOINTS"
       ],
       "related": [
         "urn:dregg:assortia:W-DOC-PERSIST",
@@ -1047,7 +1054,8 @@
         "urn:dregg:assortia:E-SOLANA",
         "urn:dregg:assortia:C-NEXUS-INTERFACE",
         "urn:dregg:assortia:C-HYPERDOC-TOOL-SCOPE",
-        "urn:dregg:assortia:Q-PARTICIPANT-HOSTING"
+        "urn:dregg:assortia:Q-PARTICIPANT-HOSTING",
+        "urn:dregg:assortia:W-PROGRAMMABLE-PATH"
       ],
       "closure": "Accepted nexus operations and consequential design decisions; selected semantic and receiving-runtime paths; an explicit owned-node participation path and selected Solana/resource outcome; linked implementation obligations and evidence. Selecting a contract does not close implementation or deployment."
     },
@@ -1282,7 +1290,7 @@
       "@id": "urn:dregg:assortia:I-NEXUS",
       "@type": "Intent",
       "label": "An extensible DREGG-native programmable nexus",
-      "description": "Ember has not selected a first workroom/game/computation activity. The desired offering is a programmable nexus that grows to encompass the suite, explicitly including Clutch in the planning.",
+      "description": "The desired offering is a DREGG-native programmable nexus that grows to encompass the suite, explicitly including Clutch. Ember accepts a mix of activities centered on kernel/shell programmability; a single first application need not be selected.",
       "subject": "urn:dregg:assortia:E-WORLD",
       "sources": [
         "urn:dregg:assortia:S-CONVERSATION"
@@ -1543,6 +1551,225 @@
       ],
       "status": "open",
       "limitations": "No node run or complete finalization/admission audit. This question is not a claim that no hosting mechanism exists elsewhere."
+    },
+    {
+      "@id": "urn:dregg:assortia:I-MIXED-PROGRAMMING",
+      "@type": "Intent",
+      "label": "A mixed offering with kernel and shell programmability",
+      "description": "Ember explicitly permits a mix of first-application activities, provided the environment is programmable at the DREGG kernel level / integrated with a programmable shell at some level. Selecting one application genre is not a prerequisite; language, surface and exact integration remain open.",
+      "sources": [
+        "urn:dregg:assortia:S-CONVERSATION"
+      ]
+    },
+    {
+      "@id": "urn:dregg:assortia:I-CORE-SPRINT",
+      "@type": "Intent",
+      "label": "Close the necessary gaps throughout the core and consuming stack",
+      "description": "Ember calls for a long comprehensive sprint, implementing as far up and down the stack as needed instead of accepting limitations and working around them. The expectation that roughly 20–60% may be core work is planning context, not a measured estimate or ceiling. Use a wide coordinated swarm.",
+      "sources": [
+        "urn:dregg:assortia:S-CONVERSATION"
+      ]
+    },
+    {
+      "@id": "urn:dregg:assortia:I-AUTONOMOUS-NIGHT",
+      "@type": "Intent",
+      "label": "Autonomous work with three-machine build capacity and owner contact",
+      "description": "Ember deputizes autonomous work and makes the laptop, persvati and hbox available for the night; hbox bulk work uses /tank. Existing lease/build discipline applies. Owner-only Telegram contact is explicitly authorized through the identified /chreatures bot; credentials and chat identifiers are not part of this graph.",
+      "sources": [
+        "urn:dregg:assortia:S-CONVERSATION"
+      ]
+    },
+    {
+      "@id": "urn:dregg:assortia:I-REGULAR-CHECKPOINTS",
+      "@type": "Intent",
+      "label": "Commit and push regular work-in-progress checkpoints",
+      "description": "Ember explicitly requests regular commits and pushes to all involved repositories; individual checkpoints need not compile or be perfect. Root commits named owned files and preserves unrelated work, while evidence distinguishes work in progress from integrated checks.",
+      "sources": [
+        "urn:dregg:assortia:S-CONVERSATION"
+      ]
+    },
+    {
+      "@id": "urn:dregg:assortia:S-CELL-PROGRAM-DATA",
+      "@type": "Source",
+      "label": "Serializable transition predicates and cases",
+      "repository": "urn:dregg:assortia:R-breadstuffs",
+      "path": "cell/src/program/types.rs",
+      "lineStart": 6,
+      "lineEnd": 110,
+      "sha256": "8148299465de35f9efb61d0c67a239c15ee3251f6af32f7f03c8de6bdc35be3f",
+      "recordedDate": "2026-09-17",
+      "gitHead": "3e51def6a5a95424e54fbe7432539b06088de5c3",
+      "gitBlobAtHead": "12979026b292f52713c71258f469049e21fcb96b",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-PROGRAM-INSTALL",
+      "@type": "Source",
+      "label": "Ordinary executor program installation",
+      "repository": "urn:dregg:assortia:R-breadstuffs",
+      "path": "turn/src/executor/apply.rs",
+      "lineStart": 1398,
+      "lineEnd": 1465,
+      "sha256": "b69e68dcbbee75370f863efcf7454335f900571b6cc197b9e460efe51e26d6a8",
+      "recordedDate": "2026-09-17",
+      "gitHead": "3e51def6a5a95424e54fbe7432539b06088de5c3",
+      "gitBlobAtHead": "815fdc7de9302a861acbfa0a81c12e5be670af4b",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-PROGRAM-NATIVE-COVERAGE",
+      "@type": "Source",
+      "label": "Actual native producer mappability match",
+      "repository": "urn:dregg:assortia:R-breadstuffs",
+      "path": "exec-lean/src/lean_shadow.rs",
+      "lineStart": 1057,
+      "lineEnd": 1162,
+      "sha256": "da98755fbb7cc0cc7263d0b88ca9e1fd612eb3723e65725ac56d64bba455cae8",
+      "recordedDate": "2026-09-17",
+      "gitHead": "3e51def6a5a95424e54fbe7432539b06088de5c3",
+      "gitBlobAtHead": "1f6e38d94df06655075022806797b71e4b483057",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-PROGRAM-WELD",
+      "@type": "Source",
+      "label": "Program writes classified as unprojected after-cell movement",
+      "repository": "urn:dregg:assortia:R-breadstuffs",
+      "path": "turn/src/rotation_witness.rs",
+      "lineStart": 1208,
+      "lineEnd": 1220,
+      "sha256": "b180e86e449be5c6f0c33cbdf4fde07aef16801202b06a85798417482bda6eee",
+      "recordedDate": "2026-09-17",
+      "gitHead": "3e51def6a5a95424e54fbe7432539b06088de5c3",
+      "gitBlobAtHead": "f495b12ef7c430c2006d4f3524f1b34de76ca488",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-PROGRAM-PROOF-REFUSAL",
+      "@type": "Source",
+      "label": "Sovereign producer refuses missing after-state projection",
+      "repository": "urn:dregg:assortia:R-breadstuffs",
+      "path": "sdk/src/cipherclerk.rs",
+      "lineStart": 5537,
+      "lineEnd": 5554,
+      "sha256": "281ce493906622b1baa65b213168b87f7b57d84936fe4d89443716a01d497e9e",
+      "recordedDate": "2026-09-17",
+      "gitHead": "3e51def6a5a95424e54fbe7432539b06088de5c3",
+      "gitBlobAtHead": "7fffd8ef1b51db4b440da7b681f2119bd1902634",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-MCP-TERMINAL-PROBE",
+      "@type": "Source",
+      "label": "Unix terminal implementation ignores supplied command and runs probes",
+      "repository": "urn:dregg:assortia:R-breadstuffs",
+      "path": "deos-hermes/src/mcp_server.rs",
+      "lineStart": 635,
+      "lineEnd": 674,
+      "sha256": "e335d71a3a11dd9d572e4123c7b1dc7a3c10f6a412cffbb3b24c0452cc88792f",
+      "recordedDate": "2026-09-17",
+      "gitHead": "3e51def6a5a95424e54fbe7432539b06088de5c3",
+      "gitBlobAtHead": "fd6de001df05a43416d9f7212a2f3c56f4a58b44",
+      "matchesHead": false,
+      "workspaceState": "working-tree-differs-from-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-PROGRAMMING-REVIEW",
+      "@type": "Source",
+      "label": "Parent-reviewed programming and shell investigation",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "research/programming.md",
+      "lineStart": 1,
+      "lineEnd": 52,
+      "sha256": "78b90299024de0e380d51d12d649d5b5aaf0d2f96a589e207907d902484827d7",
+      "recordedDate": "2026-09-17"
+    },
+    {
+      "@id": "urn:dregg:assortia:C-CELL-PROGRAM-DATA",
+      "@type": "Claim",
+      "label": "Serializable cell rules exist; native/proof installation needs coordinated implementation",
+      "description": "Breadstuffs Predicate/Cases are authored transition-rule data consumed by the ordinary executor. SetProgram has an ordinary installation arm, but is absent from native producer mappability and classified as an UnprojectedMover consumed by sovereign proof refusal. Full selected install/invoke/finalize/recover closure is implementation work.",
+      "subject": "urn:dregg:assortia:R-breadstuffs",
+      "sources": [
+        "urn:dregg:assortia:S-CELL-PROGRAM-DATA",
+        "urn:dregg:assortia:S-PROGRAM-INSTALL",
+        "urn:dregg:assortia:S-PROGRAM-NATIVE-COVERAGE",
+        "urn:dregg:assortia:S-PROGRAM-WELD",
+        "urn:dregg:assortia:S-PROGRAM-PROOF-REFUSAL"
+      ],
+      "evidenceKind": "source-inspection",
+      "status": "observed-in-source",
+      "limitations": "No fresh installation or proving run; transition-rule vocabulary is not arbitrary imperative computation. Does not establish the safety of every ordinary/native evaluator combination."
+    },
+    {
+      "@id": "urn:dregg:assortia:C-MCP-TERMINAL-PROBE",
+      "@type": "Claim",
+      "label": "The inspected Unix MCP terminal does not execute its supplied command",
+      "description": "run_command_in_confined_pd ignores _command and runs fixed confinement probes plus an Endpoint acknowledgment. The surrounding terminal response nevertheless says the supplied command ran. This is distinct from the real cockpit PTY and from attached JavaScript effects.",
+      "subject": "urn:dregg:assortia:E-HERMES",
+      "sources": [
+        "urn:dregg:assortia:S-MCP-TERMINAL-PROBE",
+        "urn:dregg:assortia:S-PROGRAMMING-REVIEW"
+      ],
+      "evidenceKind": "source-inspection",
+      "status": "observed-in-source",
+      "limitations": "Unix implementation body only; no tool invocation was executed in this investigation."
+    },
+    {
+      "@id": "urn:dregg:assortia:W-PROGRAMMABLE-PATH",
+      "@type": "WorkItem",
+      "label": "Implement and exercise the canonical authored-program-to-resource path",
+      "description": "Select the canonical rule/program representation and actual authority projection, then implement needed compiler/native/proof/durable support and shell/Hermes consumers. Existing guards are retired only by replacing their missing guarantees. Active source investigation is recorded in sprints/2026-09-17.md.",
+      "status": "active-design-and-implementation",
+      "motivatedBy": [
+        "urn:dregg:assortia:I-NEXUS",
+        "urn:dregg:assortia:I-MIXED-PROGRAMMING",
+        "urn:dregg:assortia:I-CORE-SPRINT"
+      ],
+      "related": [
+        "urn:dregg:assortia:C-CELL-PROGRAM-DATA",
+        "urn:dregg:assortia:C-MCP-TERMINAL-PROBE",
+        "urn:dregg:assortia:W-CANONICAL-CONSUMER"
+      ],
+      "sources": [
+        "urn:dregg:assortia:S-PROGRAMMING-REVIEW"
+      ],
+      "closure": "Author and install a rule under actual resource authority, invoke a permitted operation through the chosen shell/agent path, refuse a violating operation with correct state/outcome evidence, and recover accepted behavior/history through the chosen durable runtime. Complete all necessary core obligations, not merely a private demo."
+    },
+    {
+      "@id": "urn:dregg:assortia:S-COMPUTE-PAYMENT",
+      "@type": "Source",
+      "label": "Combined transfer/record settlement effects and their consumer",
+      "repository": "urn:dregg:assortia:R-breadstuffs",
+      "path": "starbridge-apps/compute-exchange/src/lib.rs",
+      "lineStart": 1079,
+      "lineEnd": 1213,
+      "sha256": "304799469e34644d89a44dcdeb7bac84fb32a192855d9d6e06828fd45be54685",
+      "recordedDate": "2026-09-17",
+      "gitHead": "3e51def6a5a95424e54fbe7432539b06088de5c3",
+      "gitBlobAtHead": "6c81bb88affe431efaa2e848297fd2c601a19d85",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-COMPUTE-POLICY-GAP",
+      "@type": "Source",
+      "label": "Kernel does not bind payment destination/amount to recorded job fields",
+      "repository": "urn:dregg:assortia:R-breadstuffs",
+      "path": "starbridge-apps/compute-exchange/src/lib.rs",
+      "lineStart": 693,
+      "lineEnd": 703,
+      "sha256": "304799469e34644d89a44dcdeb7bac84fb32a192855d9d6e06828fd45be54685",
+      "recordedDate": "2026-09-17",
+      "gitHead": "3e51def6a5a95424e54fbe7432539b06088de5c3",
+      "gitBlobAtHead": "6c81bb88affe431efaa2e848297fd2c601a19d85",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
     }
   ]
 }

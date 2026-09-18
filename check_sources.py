@@ -48,4 +48,7 @@ for ident in sorted(head_moved):
 print(f"{checked} file sources checked; {len(changed)} missing/changed; "
       f"{len(errors)} broken graph references; {len(head_moved)} moved repository heads.")
 print("This checks source freshness, not correctness, test success, or deployment.")
-raise SystemExit(1 if errors or changed or head_moved else 0)
+# A repository can advance without changing any inspected file. Preserve the
+# recorded HEAD as provenance and report movement for context; content hashes
+# decide whether this source snapshot needs reinspection.
+raise SystemExit(1 if errors or changed else 0)

@@ -69,8 +69,8 @@ Consequently, a source-level default MCP `tools/call run_js` is either unavailab
 without `js-agent`, or runs `RunJsTool::run_on`, which mints the agent's own private
 embedded `Applet` ([mcp_server.rs:309-384](</Users/ember/dev/breadstuffs/deos-hermes/src/mcp_server.rs:309>), [run_js.rs:231-285](</Users/ember/dev/breadstuffs/deos-hermes/src/run_js.rs:231>)). It has a real embedded receipt, but no shared cockpit resource effect.
 
-An MCP `tools/call terminal` has a distinct concrete effect path: after a gateway
-admission it calls `run_command_in_confined_pd` ([mcp_server.rs:489-555](</Users/ember/dev/breadstuffs/deos-hermes/src/mcp_server.rs:489>)). That is the external-tool code path intended to execute a command in the PD; no external Hermes/MCP session was run in this review.
+An MCP `tools/call terminal` has a distinct concrete path: after gateway
+admission it calls `run_command_in_confined_pd` ([mcp_server.rs:489](</Users/ember/dev/breadstuffs/deos-hermes/src/mcp_server.rs:489>)). **The shell follow-up read the function body:** on Unix its `_command` parameter is unused; it runs fixed sandbox probes and an Endpoint acknowledgment, not the submitted shell command ([mcp_server.rs:603](</Users/ember/dev/breadstuffs/deos-hermes/src/mcp_server.rs:603>)). The returned text nevertheless says the command ran. Its receipt/probe verdict therefore must not be treated as evidence of requested command execution. The cockpit PTY is a separate path. No external Hermes/MCP session was run in this review.
 
 ## 5. The live-World MCP bridge is implemented but must be explicitly composed
 
