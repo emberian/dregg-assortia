@@ -1025,23 +1025,396 @@
     {
       "@id": "urn:dregg:assortia:W-M26-DESIGN",
       "@type": "WorkItem",
-      "label": "Define the September 26 experience and its shared design contracts",
-      "description": "Discussion proposal in milestones/2026-09-26.md: begin with a two-person programmable resource journey, decide identity/authority/history/sharing/execution meanings, and trace its required receiving implementations and evidence. The fieldbook example and provider inclusion are open product choices.",
+      "label": "Define the September 26 programmable nexus and its shared contracts",
+      "description": "Discussion proposal in milestones/2026-09-26.md: establish common resource/authority/history and external-operation contracts, participant-operated cell hosting, and a meaningful Solana economic connection. A first workroom, game or computation activity remains open; Clutch is explicitly included in the comparison.",
       "status": "proposed-for-discussion",
       "evidenceKind": "assistant-proposal",
       "localPath": "/Users/ember/dev/dregg-assortia/milestones/2026-09-26.md",
       "motivatedBy": [
         "urn:dregg:assortia:I-WORLD",
         "urn:dregg:assortia:I-CADENCE",
-        "urn:dregg:assortia:I-DESIGN-COHERENCE"
+        "urn:dregg:assortia:I-DESIGN-COHERENCE",
+        "urn:dregg:assortia:I-NEXUS",
+        "urn:dregg:assortia:I-SELFHOST",
+        "urn:dregg:assortia:I-SOLANA"
       ],
       "related": [
         "urn:dregg:assortia:W-DOC-PERSIST",
         "urn:dregg:assortia:W-CANONICAL-CONSUMER",
         "urn:dregg:assortia:W-COORD-CONTRACT",
-        "urn:dregg:assortia:W-PROVIDER-PATH"
+        "urn:dregg:assortia:W-PROVIDER-PATH",
+        "urn:dregg:assortia:E-CLUTCH",
+        "urn:dregg:assortia:E-SOLANA",
+        "urn:dregg:assortia:C-NEXUS-INTERFACE"
       ],
-      "closure": "An accepted user journey; explicit consequential design decisions; selected semantic and receiving runtime paths; linked implementation obligations with observable acceptance conditions and scoped assurance claims. Agreement on the design does not close its implementation or deployment."
+      "closure": "Accepted nexus operations and consequential design decisions; selected semantic and receiving-runtime paths; an explicit owned-node participation path and selected Solana/resource outcome; linked implementation obligations and evidence. Selecting a contract does not close implementation or deployment."
+    },
+    {
+      "@id": "urn:dregg:assortia:S-NEXUS-INTERFACE",
+      "@type": "Source",
+      "label": "Hyperdocument interface negotiation retains request authority without creating an accepted effect",
+      "repository": "urn:dregg:assortia:R-minidregg",
+      "path": "Theory/HyperdocumentInterface.lean",
+      "lineStart": 263,
+      "lineEnd": 362,
+      "sha256": "e7f1886fbbfdc6d9802c141936a9fffe2bd1613b06c0c4aa0ec9bb1cc9677b8a",
+      "recordedDate": "2026-09-17",
+      "gitHead": "6937394e1dc2c2aaff986c7d4b3a258aca5d16fd",
+      "gitBlobAtHead": "b37afd84b70b603dab1be63105683eb2e63d769f",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-POA-HOLDING-POLICY",
+      "@type": "Source",
+      "label": "Mainnet mint and Token-2022 policy pinned by holder-gate source",
+      "repository": "urn:dregg:assortia:R-breadstuffs",
+      "path": "poa-solana-gate/src/lib.rs",
+      "lineStart": 27,
+      "lineEnd": 96,
+      "sha256": "c2c2b0b3905583122a99124b06be27ad0841f2c61c1a865da65c447e169cebf8",
+      "recordedDate": "2026-09-17",
+      "gitHead": "3e51def6a5a95424e54fbe7432539b06088de5c3",
+      "gitBlobAtHead": "3df2ad73334a8b34c9e8eb9688f3a687a37f0099",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-POA-HOLDING-ADMIT",
+      "@type": "Source",
+      "label": "HTTP admission consumes an RPC observation and issues a beta holding capability",
+      "repository": "urn:dregg:assortia:R-breadstuffs",
+      "path": "node/src/poa_holding_api.rs",
+      "lineStart": 520,
+      "lineEnd": 537,
+      "sha256": "831884e9bb140b15d7aaa9b51956c59baa79348e1b11606a807bd1020bfafe2e",
+      "recordedDate": "2026-09-17",
+      "gitHead": "3e51def6a5a95424e54fbe7432539b06088de5c3",
+      "gitBlobAtHead": "8a7b8abf200b7cac7fb45b7326c7c472f137bea1",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-SOLANA-LOCK-TOKEN",
+      "@type": "Source",
+      "label": "Legacy SPL Token checks and lock/escrow transfers in processor source",
+      "repository": "urn:dregg:assortia:R-breadstuffs",
+      "path": "solana-lock/src/processor.rs",
+      "lineStart": 139,
+      "lineEnd": 873,
+      "sha256": "4a1956eed757cf50e2b3941b4ebaa9735c8cb5ac07f6b94913714cb1e84faba6",
+      "recordedDate": "2026-09-17",
+      "gitHead": "3e51def6a5a95424e54fbe7432539b06088de5c3",
+      "gitBlobAtHead": "ad9458541f4a0c612b94e54064fe04950eacc1ef",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-SOLANA-DEVNET-REPORT",
+      "@type": "Source",
+      "label": "Dated June 28 stand-in-token bridge run report, not newly replayed evidence",
+      "repository": "urn:dregg:assortia:R-breadstuffs",
+      "path": "docs/deos/SOLANA-DEVNET.md",
+      "lineStart": 10,
+      "lineEnd": 47,
+      "sha256": "30517da4c959961b199e6d374fabf5e6fa5cb1b534de7cf5ba7f0245a671d7c2",
+      "recordedDate": "2026-09-17",
+      "gitHead": "3e51def6a5a95424e54fbe7432539b06088de5c3",
+      "gitBlobAtHead": "f87e4ca618f875ac2d1f4246d12a0d3c6507230e",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-CLUTCH-REALM",
+      "@type": "Source",
+      "label": "Realm pins token program, mint, adapter and issuer-authority policies",
+      "repository": "urn:dregg:assortia:R-dclutch",
+      "path": "crates/dclutch-market/src/realm/mod.rs",
+      "lineStart": 139,
+      "lineEnd": 260,
+      "sha256": "9ef331bfaada89b248936dfa67b19191f492f52ae80043d139f2bbc2f733f659",
+      "recordedDate": "2026-09-17",
+      "gitHead": "6967e79cb480d56b3bc4d3d9509337a264d21e44",
+      "gitBlobAtHead": "49c47874b07d3d5546b4b870a0d104e1d6cde775",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-CLUTCH-FUNDING",
+      "@type": "Source",
+      "label": "Funding binding retains exact Realm, release, token program, mint and refund beneficiary",
+      "repository": "urn:dregg:assortia:R-dclutch",
+      "path": "crates/dclutch-market/src/capability_manifest/funding.rs",
+      "lineStart": 647,
+      "lineEnd": 740,
+      "sha256": "6eab7b3d22220a2f67a4a1e3487b342f2294ce3288828bdb06b9ff3f9816233e",
+      "recordedDate": "2026-09-17",
+      "gitHead": "6967e79cb480d56b3bc4d3d9509337a264d21e44",
+      "gitBlobAtHead": "d576a7d74153c623d49cdeadcca40c3352eef415",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-CLUTCH-DIRECT-SDK",
+      "@type": "Source",
+      "label": "Direct SDK reader checks finalized market, manifest, selected program/configuration and readiness",
+      "repository": "urn:dregg:assortia:R-dclutch",
+      "path": "packages/dclutch-sdk/lib/directTradeSpine.ts",
+      "lineStart": 157,
+      "lineEnd": 292,
+      "sha256": "7233d03b371e400bd2c326a7b98d20014b2c2a065599327828f43d817fee509f",
+      "recordedDate": "2026-09-17",
+      "gitHead": "6967e79cb480d56b3bc4d3d9509337a264d21e44",
+      "gitBlobAtHead": "deab5c7574e16db5c4e15ebe0cc042cf9230e597",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-CLUTCH-DIRECT-FLOW",
+      "@type": "Source",
+      "label": "Browser wallet preparation rechecks chain, route, participants and replay nonces",
+      "repository": "urn:dregg:assortia:R-dclutch",
+      "path": "apps/dclutch-web/lib/tradeFlowMachine.ts",
+      "lineStart": 443,
+      "lineEnd": 483,
+      "sha256": "85bb6608b417aee4ea9e5b4cc54b810a805aa2608de4390bec15e95565e6921f",
+      "recordedDate": "2026-09-17",
+      "gitHead": "6967e79cb480d56b3bc4d3d9509337a264d21e44",
+      "gitBlobAtHead": "1599d65abeb03ce402f03f06c133bfa73a2233fc",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-CLUTCH-HOT-ENTRY",
+      "@type": "Source",
+      "label": "Trading Hot entry authenticates invocation and expected market/root state",
+      "repository": "urn:dregg:assortia:R-dclutch",
+      "path": "programs/dclutch-trading-sbf/src/hot_v3.rs",
+      "lineStart": 1136,
+      "lineEnd": 1185,
+      "sha256": "9021c42fcf601779985225cd5719e2c357c72db561a8e49622b1d5173aeecef5",
+      "recordedDate": "2026-09-17",
+      "gitHead": "6967e79cb480d56b3bc4d3d9509337a264d21e44",
+      "gitBlobAtHead": "ed65212bbaaa82bf0972ff4eb5c30561a6f63261",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-CLUTCH-HOT-COMMIT",
+      "@type": "Source",
+      "label": "Direct crosscheck is invoked before prepared Hot commit",
+      "repository": "urn:dregg:assortia:R-dclutch",
+      "path": "programs/dclutch-trading-sbf/src/hot_v3/execute.rs",
+      "lineStart": 1517,
+      "lineEnd": 1565,
+      "sha256": "7768d84f1a328aa33eddde2218ac1dc36501eeac2374a43e7324ee4a97956d49",
+      "recordedDate": "2026-09-17",
+      "gitHead": "6967e79cb480d56b3bc4d3d9509337a264d21e44",
+      "gitBlobAtHead": "3da8dcc68be2a326ea43b04444cd2e1000446b19",
+      "matchesHead": false,
+      "workspaceState": "working-tree-differs-from-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-CLUTCH-HANDOFF",
+      "@type": "Source",
+      "label": "September 9 cohort and runtime-evidence handoff; dated record, not a fresh build",
+      "repository": "urn:dregg:assortia:R-dclutch",
+      "path": "docs/HANDOFF_2026_09_09_USAGE_PAUSE.md",
+      "lineStart": 50,
+      "lineEnd": 124,
+      "sha256": "e219b288e7d14a84f5bfc156cc0da688563f856f418fbbf30229cb120c9ec537",
+      "recordedDate": "2026-09-17",
+      "gitHead": "6967e79cb480d56b3bc4d3d9509337a264d21e44",
+      "gitBlobAtHead": "6b3e0bc911f187053273f17fd02cdb03b6f916a9",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-CLUTCH-PYTH",
+      "@type": "Source",
+      "label": "Pyth price-service Hermes endpoints and on-chain sponsored source boundary",
+      "repository": "urn:dregg:assortia:R-dclutch",
+      "path": "docs/evidence/PYTH_CREDENTIAL_FREE_DEVNET_2026_08_29.md",
+      "lineStart": 55,
+      "lineEnd": 95,
+      "sha256": "2aab1b677386b3a83308185d79644835ff57f4dc81eb8022c726787741699205",
+      "recordedDate": "2026-09-17",
+      "gitHead": "6967e79cb480d56b3bc4d3d9509337a264d21e44",
+      "gitBlobAtHead": "331b0883d8bec63129b33adaba11ca3c9c36c2c2",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-CLUTCH-REVIEW",
+      "@type": "Source",
+      "label": "Bounded Clutch investigation with parent source review and naming correction",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "research/clutch.md",
+      "lineStart": 1,
+      "lineEnd": 181,
+      "sha256": "35fd8975934bd63a9b4a988f43b06ceeb8b67542d7ee189d907c3d010f545f5d",
+      "recordedDate": "2026-09-17"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-SOLANA-REVIEW",
+      "@type": "Source",
+      "label": "Bounded Solana utility investigation with proposals and evidence boundaries",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "research/solana.md",
+      "lineStart": 1,
+      "lineEnd": 221,
+      "sha256": "7d29967c204ac6b56c90d1963f709a037eea31e80318b50db3a2c242ed1613a3",
+      "recordedDate": "2026-09-17"
+    },
+    {
+      "@id": "urn:dregg:assortia:E-CLUTCH",
+      "@type": "Capability",
+      "label": "Clutch claim, market and settlement resources"
+    },
+    {
+      "@id": "urn:dregg:assortia:E-SOLANA",
+      "@type": "Capability",
+      "label": "Solana-facing asset and resource participation"
+    },
+    {
+      "@id": "urn:dregg:assortia:I-NEXUS",
+      "@type": "Intent",
+      "label": "An extensible DREGG-native programmable nexus",
+      "description": "Ember has not selected a first workroom/game/computation activity. The desired offering is a programmable nexus that grows to encompass the suite, explicitly including Clutch in the planning.",
+      "subject": "urn:dregg:assortia:E-WORLD",
+      "sources": [
+        "urn:dregg:assortia:S-CONVERSATION"
+      ]
+    },
+    {
+      "@id": "urn:dregg:assortia:I-SELFHOST",
+      "@type": "Intent",
+      "label": "Participants can run their own DREGG nodes and host cells",
+      "description": "Participant-operated nodes and cell hosting are part of the intended world; the exact transport, authority and hosting contract remain design work.",
+      "subject": "urn:dregg:assortia:E-WORLD",
+      "sources": [
+        "urn:dregg:assortia:S-CONVERSATION"
+      ]
+    },
+    {
+      "@id": "urn:dregg:assortia:I-SOLANA",
+      "@type": "Intent",
+      "label": "Meaningful on-chain Solana participation and token utility",
+      "description": "Ember ideally wants the first offering to include some on-chain Solana function with real token utility. The economic operation, asset/cluster and release scope remain unselected.",
+      "subject": "urn:dregg:assortia:E-SOLANA",
+      "sources": [
+        "urn:dregg:assortia:S-CONVERSATION"
+      ]
+    },
+    {
+      "@id": "urn:dregg:assortia:C-NEXUS-INTERFACE",
+      "@type": "Claim",
+      "label": "First-order Hyperdocument interface negotiation already has a semantic carrier",
+      "description": "QuerySuccess and ActionSuccess retain exact request-indexed authorization, capability scope and pre-root. Action negotiation retains a declaration; constructing an accepted effect remains a later obligation.",
+      "subject": "urn:dregg:assortia:E-WORLD",
+      "sources": [
+        "urn:dregg:assortia:S-NEXUS-INTERFACE"
+      ],
+      "evidenceKind": "source-inspection",
+      "scope": "Selected minidregg Theory interface definitions",
+      "limitations": "No Lean replay, deployed network API, durable handler or nexus consumer was established by this read.",
+      "status": "observed-in-source"
+    },
+    {
+      "@id": "urn:dregg:assortia:C-SOLANA-HOLDING",
+      "@type": "Claim",
+      "label": "The configured holder path is Token-2022 mainnet admission through beta RPC evidence",
+      "description": "GateConfig pins the public DREGG mint, mainnet cluster and Token-2022 program. The HTTP path validates an RPC snapshot and calls admit_beta to issue a capability.",
+      "subject": "urn:dregg:assortia:E-SOLANA",
+      "sources": [
+        "urn:dregg:assortia:S-POA-HOLDING-POLICY",
+        "urn:dregg:assortia:S-POA-HOLDING-ADMIT"
+      ],
+      "evidenceKind": "source-inspection",
+      "scope": "PoA source configuration and selected HTTP admission path",
+      "limitations": "No current chain query or issued capability was observed. Admission is not token locking, transfer, provider registration or verified job execution.",
+      "status": "observed-in-source"
+    },
+    {
+      "@id": "urn:dregg:assortia:C-SOLANA-LOCK-TOKEN",
+      "@type": "Claim",
+      "label": "Existing lock processor is incompatible with the holder policy token-program choice",
+      "description": "The holder policy pins Token-2022 while solana-lock initialization, lock and escrow paths explicitly require legacy spl_token::id() and construct legacy-token instructions. This path requires compatibility work before reusing it for the configured asset.",
+      "subject": "urn:dregg:assortia:E-SOLANA",
+      "sources": [
+        "urn:dregg:assortia:S-POA-HOLDING-POLICY",
+        "urn:dregg:assortia:S-SOLANA-LOCK-TOKEN"
+      ],
+      "evidenceKind": "source-inspection",
+      "scope": "Inspected policy and solana-lock processor bytes",
+      "limitations": "No deployment/current mint inspection or custody audit. Token-2022 support alone would not establish provider binding, release rules or bond safety.",
+      "status": "observed-in-source"
+    },
+    {
+      "@id": "urn:dregg:assortia:C-CLUTCH-ASSET",
+      "@type": "Claim",
+      "label": "Clutch has explicit Realm collateral and funding bindings",
+      "description": "RealmV1 binds a token program, collateral mint, adapter release and issuer-authority policies. RealmCollateralBindingV1 adds a named refund beneficiary. These are concrete attachment points for a selected asset; the bounded inspection established no real DREGG deployment.",
+      "subject": "urn:dregg:assortia:E-CLUTCH",
+      "sources": [
+        "urn:dregg:assortia:S-CLUTCH-REALM",
+        "urn:dregg:assortia:S-CLUTCH-FUNDING",
+        "urn:dregg:assortia:S-CLUTCH-REVIEW"
+      ],
+      "evidenceKind": "source-inspection",
+      "scope": "Active dclutch source at recorded file bytes; token-role absence limited to inspected paths",
+      "limitations": "A configured Realm is not a nexus resource adapter, provider stake contract or live token-utility claim.",
+      "status": "observed-in-source"
+    },
+    {
+      "@id": "urn:dregg:assortia:C-CLUTCH-DIRECT",
+      "@type": "Claim",
+      "label": "Clutch Direct has a browser/SDK/Solana consuming path to evaluate",
+      "description": "The inspected flow reads finalized market and selected route records, prepares wallet-bound participation and replay nonces, and reaches Trading Hot admission with a Direct crosscheck before prepared commit.",
+      "subject": "urn:dregg:assortia:E-CLUTCH",
+      "sources": [
+        "urn:dregg:assortia:S-CLUTCH-DIRECT-SDK",
+        "urn:dregg:assortia:S-CLUTCH-DIRECT-FLOW",
+        "urn:dregg:assortia:S-CLUTCH-HOT-ENTRY",
+        "urn:dregg:assortia:S-CLUTCH-HOT-COMMIT"
+      ],
+      "evidenceKind": "source-inspection",
+      "scope": "Selected Direct path in the active dclutch working tree; source records distinguish any HEAD differences",
+      "limitations": "No build or execution was performed. Does not establish every Direct action, current cohort deployment, DREGG-cell integration or the external Hermes agent.",
+      "status": "observed-in-source"
+    },
+    {
+      "@id": "urn:dregg:assortia:C-CLUTCH-EVIDENCE",
+      "@type": "Claim",
+      "label": "September 9 handoff distinguishes old devnet cohort and partial local runtime evidence",
+      "description": "The handoff records cohort 17 as the previous public devnet deployment, no fresh current-source all-program cohort, and local Direct fills limited to founder-as-seller. It records remaining runtime checks for the reciprocal seller repair.",
+      "subject": "urn:dregg:assortia:E-CLUTCH",
+      "sources": [
+        "urn:dregg:assortia:S-CLUTCH-HANDOFF"
+      ],
+      "evidenceKind": "dated-handoff-report",
+      "scope": "Dated September 9 handoff, read September 17",
+      "limitations": "No current live probe or build result. Later working-tree changes cannot borrow the recorded deployment evidence.",
+      "status": "recorded-not-replayed"
+    },
+    {
+      "@id": "urn:dregg:assortia:W-SOLANA-UTILITY",
+      "@type": "WorkItem",
+      "label": "Choose and close one economic operation consumed by a nexus resource",
+      "description": "Compare provider bonds, resource payments and Clutch claim/settlement operations. Holder admission is useful existing material but does not alone perform an on-chain mutation. Specify the real asset/cluster and the DREGG receiver of the external result.",
+      "status": "candidate-design",
+      "motivatedBy": [
+        "urn:dregg:assortia:I-SOLANA",
+        "urn:dregg:assortia:I-PROVIDERS",
+        "urn:dregg:assortia:I-NEXUS"
+      ],
+      "related": [
+        "urn:dregg:assortia:C-SOLANA-HOLDING",
+        "urn:dregg:assortia:C-SOLANA-LOCK-TOKEN",
+        "urn:dregg:assortia:C-CLUTCH-ASSET",
+        "urn:dregg:assortia:C-CLUTCH-DIRECT"
+      ],
+      "closure": "A selected user-visible economic function with exact mint/program/cluster, custody and release policy where applicable, external evidence acceptance and resource-result binding; required source/consumer changes and acceptance checks identified, then exercised at an explicitly authorized deployment scope."
     }
   ]
 }

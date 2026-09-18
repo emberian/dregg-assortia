@@ -14,6 +14,26 @@ Recorded 2026-09-17. These are ember's instructions and preferences, not claims 
 
 The resource world is the lasting object. Hermes is a desired interface and participant in that world. An ordinary hosted chatbot does not by itself fulfill this request.
 
+## Programmable nexus, Solana, and participant-operated nodes
+
+Asked to choose a research workroom, social/game space, or public-computation workshop as the first activity, ember did not select one:
+
+> I'm not... sure yet, honestly.
+
+The next clarification identifies the desired shape of the offering:
+
+> ideally would be dreggic/dregg-native, offer *some* kind of on-chain Solana something
+
+> genuinely get the token going into 'utility.'
+
+> remember that we have ~/dev/dclutch / ~/dev/dragons-clutch as well
+
+> basically a "programmable nexus" that will **grow outwards to encompass all we offer and can doo**
+
+> they can of course run their /own/ dregg nodes and host cells and whatnot!!
+
+The first application remains open. The design direction is an extensible DREGG-native resource world that includes the Clutch work in its planning, offers meaningful Solana participation/token utility, and admits participant-operated nodes and cell hosting. The exact economic mechanism, chain/cluster, resource interfaces, and September 26 scope have not been chosen. The fieldbook in the earlier assistant draft is an example, not an accepted product target.
+
 ## How the project becomes resumable
 
 > I think we need to treat this as a semantic web / knowledge graph problem and do a lot of work *scaffolding how we will even think about this project, what it is doing, what it has ongoing, etc etc... we could make a new ~/dev/dregg-assortia for this...
@@ -29,6 +49,8 @@ Git remains primary. Fossil is a candidate for collaboration and project trackin
 ## Method and authority
 
 Ember invited recursive Terra assistance and a few turns of discussion about how to organize the work, then explicitly empowered deeper orientation and questions. This pass uses bounded read-only investigations and creates reversible orientation artifacts. No implementation cutover, deployment, public posting, or tracking-system choice has been made.
+
+Ember subsequently updated the delegation preference: **mostly Astra**, with **Sol used selectively for bounded work**. The current nexus review follows that preference; the earlier Terra reports remain attributed evidence from the orientation.
 
 The existing build/proof disciplines remain relevant. A working product slice should use the intended semantic substrate and expose its real remaining obligations; a separate throwaway semantics is not assumed acceptable.
 

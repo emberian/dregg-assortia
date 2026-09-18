@@ -6,7 +6,7 @@ A working place to recover the DREGG suite's intentions, evidence, decisions, an
 
 Start with [the orientation](orientation/2026-09-17.md), then [ember's stated intentions](intent.md). The [graph specimen](graph.jsonld) carries a few concrete findings, candidate work items, and their sources. [Repository revisions](repositories.json) distinguish committed heads from worktrees. The [research index](research/README.md) links the bounded investigations and their corrective follow-ups.
 
-The next discussion is [the September 26 experience and design contract](milestones/2026-09-26.md). The release cadence is accepted intent; the proposed experience and work organization are open for discussion.
+The next discussion is [the September 26 programmable nexus](milestones/2026-09-26.md). The release cadence, DREGG-native direction, desired Solana utility and participant-operated hosting are recorded intent. The first application, concrete contracts and release scope remain open. The [Clutch](research/clutch.md) and [Solana](research/solana.md) follow-ups add current source boundaries and dated execution records.
 
 The practical questions this should eventually answer:
 
