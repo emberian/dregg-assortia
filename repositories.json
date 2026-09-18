@@ -1,0 +1,82 @@
+[
+  {
+    "repo": "breadstuffs",
+    "path": "/Users/ember/dev/breadstuffs",
+    "head": "3e51def6a5a95424e54fbe7432539b06088de5c3",
+    "branch": "main",
+    "last_commit": "2026-08-19 Record x86 TFHE energy reproduction",
+    "working_tree_entries": 14
+  },
+  {
+    "repo": "minidregg",
+    "path": "/Users/ember/dev/minidregg",
+    "head": "6937394e1dc2c2aaff986c7d4b3a258aca5d16fd",
+    "branch": "main",
+    "last_commit": "2026-09-06 assurance: the release gate that leaks by routing, the gate that binds, and the Stage-0 receipt as bound evidence",
+    "working_tree_entries": 13
+  },
+  {
+    "repo": "degg-research",
+    "path": "/Users/ember/dev/degg-research",
+    "head": "03d1ee6676a2e9f8a9b88c83c6f5d32442be7cb9",
+    "branch": "main",
+    "last_commit": "2026-08-27 Crib: 1717 filed 2026-08-27",
+    "working_tree_entries": 0
+  },
+  {
+    "repo": "zkml-research",
+    "path": "/Users/ember/dev/zkml-research",
+    "head": "aef543eec0aef17bf442e3ec07b70942154e6b65",
+    "branch": "dev",
+    "last_commit": "2026-09-09 Record the published plain-language website update [skip ci]",
+    "working_tree_entries": 11
+  },
+  {
+    "repo": "DreggCloud",
+    "path": "/Users/ember/dev/DreggCloud",
+    "head": "e9ff17a9a955af68afc0bbd7a537184a3656f6fb",
+    "branch": "main",
+    "last_commit": "2026-07-12 Mount prepaid service custody as House schema 16",
+    "working_tree_entries": 1
+  },
+  {
+    "repo": "DreggNet",
+    "path": "/Users/ember/dev/DreggNet",
+    "head": "7f5159126c09cdb829347a56ef9d52fa29b3db30",
+    "branch": "dregg-native-rebuild",
+    "last_commit": "2026-07-27 ORB-CUT-PLAN: record the regeneration recipe \u2014 manual by decision, not by omission",
+    "working_tree_entries": 30
+  },
+  {
+    "repo": "dregg-infra",
+    "path": "/Users/ember/dev/dregg-infra",
+    "head": "140b2b41fc2324340b6248eb814948f3ac40186c",
+    "branch": "main",
+    "last_commit": "2026-09-03 portal: ship desk/text.py with the anchor half \u2014 the desk's stdlib-only text vocabulary",
+    "working_tree_entries": 6
+  },
+  {
+    "repo": "dclutch",
+    "path": "/Users/ember/dev/dclutch",
+    "head": "6967e79cb480d56b3bc4d3d9509337a264d21e44",
+    "branch": "main",
+    "last_commit": "2026-09-09 handoff: consolidate current blockers and restart path",
+    "working_tree_entries": 189
+  },
+  {
+    "repo": "dragons-clutch",
+    "path": "/Users/ember/dev/dragons-clutch",
+    "head": "8a3e72341f50f2ab2026a95a6334de23032b61d4",
+    "branch": "agent/market-theory-support4",
+    "last_commit": "2026-09-01 ci: the journey check stops promising only that it compiles",
+    "working_tree_entries": 0
+  },
+  {
+    "repo": "leanuweave",
+    "path": "/Users/ember/dev/leanuweave",
+    "head": "f1450667cc87a48706c61f6d5ead71f73ab43fb1",
+    "branch": "dev",
+    "last_commit": "2026-08-14 sweep-up commit from usage wall",
+    "working_tree_entries": 0
+  }
+]

@@ -1,0 +1,1004 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@vocab": "urn:dregg:assortia:vocab:",
+    "subject": {
+      "@type": "@id"
+    },
+    "object": {
+      "@type": "@id"
+    },
+    "sources": {
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "dependsOn": {
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "motivatedBy": {
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "related": {
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "repository": {
+      "@type": "@id"
+    }
+  },
+  "@id": "urn:dregg:assortia:snapshot:2026-09-17",
+  "label": "Bounded current-state orientation; vocabulary specimen",
+  "recordedDate": "2026-09-17",
+  "@graph": [
+    {
+      "@id": "urn:dregg:assortia:R-breadstuffs",
+      "@type": "Repository",
+      "label": "breadstuffs",
+      "localPath": "/Users/ember/dev/breadstuffs",
+      "gitHead": "3e51def6a5a95424e54fbe7432539b06088de5c3",
+      "branch": "main",
+      "lastCommit": "2026-08-19 Record x86 TFHE energy reproduction",
+      "workingTreeEntries": 14
+    },
+    {
+      "@id": "urn:dregg:assortia:R-minidregg",
+      "@type": "Repository",
+      "label": "minidregg",
+      "localPath": "/Users/ember/dev/minidregg",
+      "gitHead": "6937394e1dc2c2aaff986c7d4b3a258aca5d16fd",
+      "branch": "main",
+      "lastCommit": "2026-09-06 assurance: the release gate that leaks by routing, the gate that binds, and the Stage-0 receipt as bound evidence",
+      "workingTreeEntries": 13
+    },
+    {
+      "@id": "urn:dregg:assortia:R-degg-research",
+      "@type": "Repository",
+      "label": "degg-research",
+      "localPath": "/Users/ember/dev/degg-research",
+      "gitHead": "03d1ee6676a2e9f8a9b88c83c6f5d32442be7cb9",
+      "branch": "main",
+      "lastCommit": "2026-08-27 Crib: 1717 filed 2026-08-27",
+      "workingTreeEntries": 0
+    },
+    {
+      "@id": "urn:dregg:assortia:R-zkml-research",
+      "@type": "Repository",
+      "label": "zkml-research",
+      "localPath": "/Users/ember/dev/zkml-research",
+      "gitHead": "aef543eec0aef17bf442e3ec07b70942154e6b65",
+      "branch": "dev",
+      "lastCommit": "2026-09-09 Record the published plain-language website update [skip ci]",
+      "workingTreeEntries": 11
+    },
+    {
+      "@id": "urn:dregg:assortia:R-DreggCloud",
+      "@type": "Repository",
+      "label": "DreggCloud",
+      "localPath": "/Users/ember/dev/DreggCloud",
+      "gitHead": "e9ff17a9a955af68afc0bbd7a537184a3656f6fb",
+      "branch": "main",
+      "lastCommit": "2026-07-12 Mount prepaid service custody as House schema 16",
+      "workingTreeEntries": 1
+    },
+    {
+      "@id": "urn:dregg:assortia:R-DreggNet",
+      "@type": "Repository",
+      "label": "DreggNet",
+      "localPath": "/Users/ember/dev/DreggNet",
+      "gitHead": "7f5159126c09cdb829347a56ef9d52fa29b3db30",
+      "branch": "dregg-native-rebuild",
+      "lastCommit": "2026-07-27 ORB-CUT-PLAN: record the regeneration recipe — manual by decision, not by omission",
+      "workingTreeEntries": 30
+    },
+    {
+      "@id": "urn:dregg:assortia:R-dregg-infra",
+      "@type": "Repository",
+      "label": "dregg-infra",
+      "localPath": "/Users/ember/dev/dregg-infra",
+      "gitHead": "140b2b41fc2324340b6248eb814948f3ac40186c",
+      "branch": "main",
+      "lastCommit": "2026-09-03 portal: ship desk/text.py with the anchor half — the desk's stdlib-only text vocabulary",
+      "workingTreeEntries": 6
+    },
+    {
+      "@id": "urn:dregg:assortia:R-dclutch",
+      "@type": "Repository",
+      "label": "dclutch",
+      "localPath": "/Users/ember/dev/dclutch",
+      "gitHead": "6967e79cb480d56b3bc4d3d9509337a264d21e44",
+      "branch": "main",
+      "lastCommit": "2026-09-09 handoff: consolidate current blockers and restart path",
+      "workingTreeEntries": 189
+    },
+    {
+      "@id": "urn:dregg:assortia:R-dragons-clutch",
+      "@type": "Repository",
+      "label": "dragons-clutch",
+      "localPath": "/Users/ember/dev/dragons-clutch",
+      "gitHead": "8a3e72341f50f2ab2026a95a6334de23032b61d4",
+      "branch": "agent/market-theory-support4",
+      "lastCommit": "2026-09-01 ci: the journey check stops promising only that it compiles",
+      "workingTreeEntries": 0
+    },
+    {
+      "@id": "urn:dregg:assortia:R-leanuweave",
+      "@type": "Repository",
+      "label": "leanuweave",
+      "localPath": "/Users/ember/dev/leanuweave",
+      "gitHead": "f1450667cc87a48706c61f6d5ead71f73ab43fb1",
+      "branch": "dev",
+      "lastCommit": "2026-08-14 sweep-up commit from usage wall",
+      "workingTreeEntries": 0
+    },
+    {
+      "@id": "urn:dregg:assortia:R-assortia",
+      "@type": "Repository",
+      "label": "dregg-assortia",
+      "localPath": "/Users/ember/dev/dregg-assortia"
+    },
+    {
+      "@id": "urn:dregg:assortia:E-WORLD",
+      "@type": "Capability",
+      "label": "Programmable social resource world"
+    },
+    {
+      "@id": "urn:dregg:assortia:E-DOC",
+      "@type": "Capability",
+      "label": "Desktop document authoring"
+    },
+    {
+      "@id": "urn:dregg:assortia:E-HERMES",
+      "@type": "Capability",
+      "label": "External Hermes integration"
+    },
+    {
+      "@id": "urn:dregg:assortia:E-KERNEL",
+      "@type": "Capability",
+      "label": "Canonical typed semantic kernel"
+    },
+    {
+      "@id": "urn:dregg:assortia:E-COMPILER",
+      "@type": "Capability",
+      "label": "Compiler's joint-turn artifact projection"
+    },
+    {
+      "@id": "urn:dregg:assortia:E-IR2",
+      "@type": "Capability",
+      "label": "IR2 proof/verifier bridge"
+    },
+    {
+      "@id": "urn:dregg:assortia:E-COORD",
+      "@type": "Capability",
+      "label": "Coordination and replicated computation"
+    },
+    {
+      "@id": "urn:dregg:assortia:E-HOUSE",
+      "@type": "Capability",
+      "label": "Operated House and member custody"
+    },
+    {
+      "@id": "urn:dregg:assortia:E-GRAINS",
+      "@type": "Capability",
+      "label": "Hosted agent grains"
+    },
+    {
+      "@id": "urn:dregg:assortia:E-PROVIDERS",
+      "@type": "Capability",
+      "label": "Contributed hosting and optimistic provider accountability"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-CONVERSATION",
+      "@type": "Source",
+      "label": "Ember's current conversation, 2026-09-17; exact intent excerpts in intent.md",
+      "evidenceKind": "current-user-instruction"
+    },
+    {
+      "@id": "urn:dregg:assortia:I-WORLD",
+      "@type": "Intent",
+      "label": "Friends metaprogram social, Xanadu, distributed, local-first resources",
+      "description": "The community inhabits and changes a DREGG resource world; full Hermes integration is desired within it.",
+      "sources": [
+        "urn:dregg:assortia:S-CONVERSATION"
+      ],
+      "subject": "urn:dregg:assortia:E-WORLD"
+    },
+    {
+      "@id": "urn:dregg:assortia:I-GIT",
+      "@type": "Intent",
+      "label": "Git remains primary; Fossil considered for non-VCS collaboration",
+      "description": "Evaluate issues, discussion and project-memory capabilities without a suite-wide VCS migration.",
+      "sources": [
+        "urn:dregg:assortia:S-CONVERSATION"
+      ]
+    },
+    {
+      "@id": "urn:dregg:assortia:I-CURRENT",
+      "@type": "Intent",
+      "label": "Investigate current holdings; no past demo is the chosen target",
+      "description": "Ember answered that none of the old demos felt close to the desired world. Present investigation should not nominate one by assumption.",
+      "sources": [
+        "urn:dregg:assortia:S-CONVERSATION"
+      ]
+    },
+    {
+      "@id": "urn:dregg:assortia:I-PROVIDERS",
+      "@type": "Intent",
+      "label": "Contributed heterogeneous hosting with real $DREGG stake and devnet shadow penalties",
+      "description": "Allow contributors to run eligible publicly executable jobs; use optimistic adjudication and provider reputation. Devnet penalties should be real recorded outcomes without charging their monetary amount. Stake custody remains undecided.",
+      "subject": "urn:dregg:assortia:E-PROVIDERS",
+      "sources": [
+        "urn:dregg:assortia:S-CONVERSATION"
+      ]
+    },
+    {
+      "@id": "urn:dregg:assortia:C-DOC-DURABLE",
+      "@type": "Claim",
+      "label": "Current desktop heap persistence refuses after a durable cell has participated in a turn",
+      "description": "edit_doc uses set_cell_heap before the revision SetField. The heap setter rejects a durable cell already touched by a committed turn; && suppresses the revision turn on rejection, while the sidecar has been saved.",
+      "subject": "urn:dregg:assortia:E-DOC",
+      "sources": [
+        "urn:dregg:assortia:S-DOC-EDIT",
+        "urn:dregg:assortia:S-DOC-HEAP",
+        "urn:dregg:assortia:S-DOC-GUARD"
+      ],
+      "evidenceKind": "source-inspection",
+      "scope": "Specific starbridge-v2 desktop document path at the recorded bytes",
+      "limitations": "No fresh test run. This is not a claim that every dregg-doc storage path has this limitation.",
+      "status": "observed-in-source"
+    },
+    {
+      "@id": "urn:dregg:assortia:C-DOC-SCENARIO",
+      "@type": "Claim",
+      "label": "Author/fork/conflict/resolve behavior is represented in an ephemeral desktop test",
+      "description": "The test creates a demo World, retains a contested stitch as state, resolves it, and checks the revision/heap result.",
+      "subject": "urn:dregg:assortia:E-DOC",
+      "sources": [
+        "urn:dregg:assortia:S-DOC-TEST"
+      ],
+      "evidenceKind": "test-source-inspection",
+      "scope": "Same-process ephemeral test scenario",
+      "limitations": "Does not establish a current pass, durable reopen, transport or multi-device operation.",
+      "status": "scenario-present"
+    },
+    {
+      "@id": "urn:dregg:assortia:C-SYNC-SCENARIO",
+      "@type": "Claim",
+      "label": "Two-device document synchronization exists as a local replica test model",
+      "description": "History branches represent offline edits and later reconciliation with authority at settlement.",
+      "subject": "urn:dregg:assortia:E-COORD",
+      "sources": [
+        "urn:dregg:assortia:S-SYNC-TEST"
+      ],
+      "evidenceKind": "test-source-inspection",
+      "scope": "Document history model",
+      "limitations": "No network/discovery/deployment claim.",
+      "status": "scenario-present"
+    },
+    {
+      "@id": "urn:dregg:assortia:C-HERMES-PATHS",
+      "@type": "Claim",
+      "label": "External Hermes and the internal compiled brain are distinct execution paths",
+      "description": "AcpTransport launches hermes-acp; DreggHost's generic confined loop instantiates a Rust LlmBrain. Evidence about one does not establish full application integration or confinement of the other.",
+      "subject": "urn:dregg:assortia:E-HERMES",
+      "sources": [
+        "urn:dregg:assortia:S-HERMES-ACP",
+        "urn:dregg:assortia:S-HERMES-BRAIN"
+      ],
+      "evidenceKind": "source-inspection",
+      "scope": "Transport and host entry points",
+      "limitations": "No current live model/provider run was attempted.",
+      "status": "observed-in-source"
+    },
+    {
+      "@id": "urn:dregg:assortia:C-KERNEL-COMPILER",
+      "@type": "Claim",
+      "label": "The joint-turn artifact projection still consumes DeclaredHyperedge",
+      "description": "D-0002 selects a canonical typed semantic kernel. DeclaredHyperedgeArtifact imports the legacy schema carrier; TypedCellHyperedge defines the more general accepted-effect carrier separately.",
+      "subject": "urn:dregg:assortia:E-COMPILER",
+      "object": "urn:dregg:assortia:E-KERNEL",
+      "sources": [
+        "urn:dregg:assortia:S-KERNEL-DECISION",
+        "urn:dregg:assortia:S-KERNEL-COMPILER",
+        "urn:dregg:assortia:S-KERNEL-TYPED",
+        "urn:dregg:assortia:S-CONSUMERS-REVIEW"
+      ],
+      "evidenceKind": "source-inspection",
+      "scope": "The inspected joint-turn artifact projection, not every compiler module",
+      "limitations": "Compiler does consume typed Theory authorization/effects/materializer data, and typed joint carriers have real Hyperdocument/Assurance consumers. The missing direct connection is specifically the joint-turn artifact route. No build was run.",
+      "status": "observed-in-source"
+    },
+    {
+      "@id": "urn:dregg:assortia:C-IR2-PACKAGE",
+      "@type": "Claim",
+      "label": "IR2 has a retained integration package and captured checks",
+      "description": "The research directory retains an additive patch with source hashes and isolated changed-module check records targeting a particular minidregg revision.",
+      "subject": "urn:dregg:assortia:E-IR2",
+      "sources": [
+        "urn:dregg:assortia:S-IR2-PACKAGE",
+        "urn:dregg:assortia:S-IR2-CHECKS"
+      ],
+      "evidenceKind": "artifact-and-captured-record-inspection",
+      "scope": "Retained research integration package",
+      "limitations": "Checks were not rerun here; package availability is not a landed dependency.",
+      "status": "candidate-artifact-available"
+    },
+    {
+      "@id": "urn:dregg:assortia:C-IR2-BOUNDARIES",
+      "@type": "Claim",
+      "label": "The IR2 theorem's native-row bound retains separate security and implementation boundaries",
+      "description": "The package names packed commitment extraction, PCS false-claim-to-farness, Fiat-Shamir challenge transport, and runtime refinement separately.",
+      "subject": "urn:dregg:assortia:E-IR2",
+      "sources": [
+        "urn:dregg:assortia:S-IR2-PACKAGE"
+      ],
+      "evidenceKind": "theorem-scope-and-handoff-inspection",
+      "scope": "Actual-profile fresh-randomness FRI experiment",
+      "limitations": "No end-to-end cryptographic strength or deployed verifier guarantee follows from this record.",
+      "status": "explicit-open-boundaries"
+    },
+    {
+      "@id": "urn:dregg:assortia:C-HOUSE-WORKROOM",
+      "@type": "Claim",
+      "label": "The semantic House workroom is explicitly proposed, not House-routed",
+      "description": "The workroom document names resource/work/review/landing composition and says its route, schema, landing repository and presentation do not yet exist.",
+      "subject": "urn:dregg:assortia:E-HOUSE",
+      "sources": [
+        "urn:dregg:assortia:S-HOUSE-WORKROOM"
+      ],
+      "evidenceKind": "repository-design-record",
+      "scope": "This proposed House workroom integration",
+      "limitations": "Existing semantic-workflows library pieces are not ruled out by this statement.",
+      "status": "proposal"
+    },
+    {
+      "@id": "urn:dregg:assortia:C-HOUSE-EXPEDITION",
+      "@type": "Claim",
+      "label": "A July House record reports a signed-member Expedition journey and restart replay",
+      "description": "The integration record describes create/join/propose/vote/resolve/restart/replay and explicit member-custody and finality limits.",
+      "subject": "urn:dregg:assortia:E-HOUSE",
+      "sources": [
+        "urn:dregg:assortia:S-HOUSE-EXPEDITION"
+      ],
+      "evidenceKind": "historical-deployment-record",
+      "scope": "Recorded July 2026 hbox run",
+      "limitations": "Not a current service probe or a general semantic workroom; does not make browser member signatures native in-circuit authority.",
+      "status": "historical-observation"
+    },
+    {
+      "@id": "urn:dregg:assortia:C-UWUEAVE",
+      "@type": "Claim",
+      "label": "lean-uwueave is a separate relevant coordination library",
+      "description": "Current files describe coordination judgement, sequence/history, ERA and checked language/runtime artifacts. Its native manifest has no path dependency on the DREGG repositories.",
+      "subject": "urn:dregg:assortia:E-COORD",
+      "sources": [
+        "urn:dregg:assortia:S-UWUEAVE",
+        "urn:dregg:assortia:S-UWUEAVE-MANIFEST"
+      ],
+      "evidenceKind": "source-and-manifest-inspection",
+      "scope": "Library identity and stated interfaces",
+      "limitations": "Neither semantic compatibility nor a receiving DREGG integration has been established.",
+      "status": "candidate-foundation"
+    },
+    {
+      "@id": "urn:dregg:assortia:C-GRAIN-R3",
+      "@type": "Claim",
+      "label": "Grain's stronger verifier path is distinct from the normal served platform journey",
+      "description": "The platform's R2 contract retains executor-host trust; the finalizer separately documents per-effect versus per-turn nonce semantics.",
+      "subject": "urn:dregg:assortia:E-GRAINS",
+      "sources": [
+        "urn:dregg:assortia:S-GRAIN-BOUNDARY",
+        "urn:dregg:assortia:S-GRAIN-NONCE"
+      ],
+      "evidenceKind": "source-inspection",
+      "scope": "Selected AgentPlatform and grain-turn contracts",
+      "limitations": "Does not say R3 is unimplemented, secure without assumptions, or currently exposed by the product.",
+      "status": "integration-boundary"
+    },
+    {
+      "@id": "urn:dregg:assortia:W-DOC-PERSIST",
+      "@type": "WorkItem",
+      "label": "Establish the chosen document storage/turn contract",
+      "description": "Determine how document body changes enter canonical ordered state; preserve existing useful document semantics while resolving the durable writer boundary.",
+      "status": "candidate-investigation",
+      "dependsOn": [
+        "urn:dregg:assortia:C-DOC-DURABLE"
+      ],
+      "motivatedBy": [
+        "urn:dregg:assortia:I-WORLD"
+      ],
+      "closure": "A selected implementation path and evidence for repeated authorized saves, rejection without committed mutation, crash/reopen and matching body/receipt history. No specific fix or migration selected."
+    },
+    {
+      "@id": "urn:dregg:assortia:W-CANONICAL-CONSUMER",
+      "@type": "WorkItem",
+      "label": "Trace one canonical typed event through its real compiler and consumer",
+      "description": "Compare the selected typed kernel carrier with the actual artifact projection and receiving runtime; name exactly what requires adaptation.",
+      "status": "candidate-investigation",
+      "dependsOn": [
+        "urn:dregg:assortia:C-KERNEL-COMPILER"
+      ],
+      "motivatedBy": [
+        "urn:dregg:assortia:I-WORLD"
+      ],
+      "closure": "One explicit event/schema/codec/acceptance/storage path, with each existing join or missing obligation sourced. No broad rewrite before the path is understood."
+    },
+    {
+      "@id": "urn:dregg:assortia:W-COORD-CONTRACT",
+      "@type": "WorkItem",
+      "label": "Compare the three existing local-first contracts",
+      "description": "Compare breadstuffs History/World forks, minidregg hyperdocuments and lean-uwueave at identity, authority, offline operation, conflict, settlement and persistence boundaries.",
+      "status": "candidate-investigation",
+      "dependsOn": [
+        "urn:dregg:assortia:C-SYNC-SCENARIO",
+        "urn:dregg:assortia:C-UWUEAVE"
+      ],
+      "motivatedBy": [
+        "urn:dregg:assortia:I-WORLD"
+      ],
+      "closure": "A compatibility map identifying shared meaning, incompatible assumptions, and absent adapters. No inferred equivalence from similar names."
+    },
+    {
+      "@id": "urn:dregg:assortia:W-PROVIDER-PATH",
+      "@type": "WorkItem",
+      "label": "Inventory existing provider job and penalty machinery",
+      "description": "Trace eligible jobs, registration/stake, result commitments, challenges, adjudication and penalty effects, including the difference between wrong results and availability failures.",
+      "status": "inventory-complete-decision-open",
+      "motivatedBy": [
+        "urn:dregg:assortia:I-PROVIDERS"
+      ],
+      "closure": "Current source/evidence inventory; explicit job class, custody and verdict-to-effect boundaries. No transfers, stake locking or deployment."
+    },
+    {
+      "@id": "urn:dregg:assortia:Q-STAKE",
+      "@type": "Question",
+      "label": "What does real stake mean during devnet?",
+      "description": "Real tokens locked with shadow penalties, or verified holdings with simulated stake? User clarification requested; no custody choice assumed.",
+      "status": "awaiting-user",
+      "related": [
+        "urn:dregg:assortia:I-PROVIDERS"
+      ]
+    },
+    {
+      "@id": "urn:dregg:assortia:Q-SHARE",
+      "@type": "Question",
+      "label": "Which sharing modes should each resource support?",
+      "description": "Live attenuated view, independently durable replica, pinned citation/content, or explicit modes; local rights and later settlement/revocation need precise contracts.",
+      "status": "open-design-question",
+      "related": [
+        "urn:dregg:assortia:W-COORD-CONTRACT"
+      ]
+    },
+    {
+      "@id": "urn:dregg:assortia:C-CARD-IDENTITY",
+      "@type": "Claim",
+      "label": "Visible card editing and live card actions currently use different applets",
+      "description": "ModeCardSurface mounts an AttachedApplet over the cockpit World for buttons/binds and a separately minted portable applet for CardEditor. edit_view repaints the pane without persisting the amended manifest into the focused World cell.",
+      "subject": "urn:dregg:assortia:E-WORLD",
+      "sources": [
+        "urn:dregg:assortia:S-CARD-MOUNT",
+        "urn:dregg:assortia:S-CARD-EDIT"
+      ],
+      "evidenceKind": "source-inspection",
+      "scope": "Current ModeCardSurface native authoring route",
+      "limitations": "Other applet APIs may support explicit export/remint; no test or UI run was performed here.",
+      "status": "observed-in-source"
+    },
+    {
+      "@id": "urn:dregg:assortia:C-MCP-WORLD",
+      "@type": "Claim",
+      "label": "Default MCP startup does not attach run_js to the cockpit World bridge",
+      "description": "The MCP binary conditionally configures with_run_js under js-agent, but not with_world_bridge. Thus bridge library capability and ordinary server startup are separate.",
+      "subject": "urn:dregg:assortia:E-HERMES",
+      "sources": [
+        "urn:dregg:assortia:S-MCP-START"
+      ],
+      "evidenceKind": "source-inspection",
+      "scope": "deos-hermes mcp-server startup",
+      "limitations": "Does not claim the socket bridge is absent; it is available for explicit composition.",
+      "status": "observed-in-source"
+    },
+    {
+      "@id": "urn:dregg:assortia:C-COMPUTE-SCOPE",
+      "@type": "Claim",
+      "label": "Compute offering accounting does not establish token payment or correct job execution",
+      "description": "The selected offering path conserves budget across committed job fields. Its own scope states that this is not wallet/token transfer; result settlement checks nonempty text without a spec-to-result proof.",
+      "subject": "urn:dregg:assortia:E-PROVIDERS",
+      "sources": [
+        "urn:dregg:assortia:S-COMPUTE"
+      ],
+      "evidenceKind": "source-and-contract-inspection",
+      "scope": "dreggnet-compute offering path",
+      "limitations": "Separate action helpers may construct payment effects; their existence does not change this path's result contract.",
+      "status": "observed-in-source"
+    },
+    {
+      "@id": "urn:dregg:assortia:C-SLASH-SCOPE",
+      "@type": "Claim",
+      "label": "Relay custody has a slash construction with distinct live-submission and evidence gaps",
+      "description": "A signed cell-intake construction and transfer composition coexist with a legacy mirror-only HTTP route. The route also lacks a per-message refund witness. This is a custody-fault protocol, not a general incorrect-computation judge.",
+      "subject": "urn:dregg:assortia:E-PROVIDERS",
+      "sources": [
+        "urn:dregg:assortia:S-RELAY-DISPUTE"
+      ],
+      "evidenceKind": "source-and-contract-inspection",
+      "scope": "Inspected relay custody dispute path",
+      "limitations": "No deployed bond seizure, public provider stake registry, or generalized compute challenge loop was observed.",
+      "status": "integration-boundaries"
+    },
+    {
+      "@id": "urn:dregg:assortia:C-PROVIDER-MARKET",
+      "@type": "Claim",
+      "label": "A complete public provider/stake/challenge/reputation path was not located in this inspection",
+      "description": "Configured runtime providers, leases/meters, job-cell accounting, bounded service custody, and relay fault adjudication exist in separate paths. No devnet shadow-penalty leaderboard or funded public provider registry was located.",
+      "subject": "urn:dregg:assortia:E-PROVIDERS",
+      "sources": [
+        "urn:dregg:assortia:S-PROVIDERS-REVIEW"
+      ],
+      "evidenceKind": "bounded-source-search",
+      "scope": "Paths named in research/providers.md",
+      "limitations": "Not a global absence proof, live infrastructure inventory, or declaration that no other experiment exists.",
+      "status": "not-established-by-inspection"
+    },
+    {
+      "@id": "urn:dregg:assortia:C-PROJECTION-V2",
+      "@type": "Claim",
+      "label": "An uncommitted Uwueave projection crossing already exists as neutral data",
+      "description": "The dirty minidregg lane projects upstream Uwueave data into generated Rust; its live uses are an umbrella import, Rust include and static-data tests. The receiving contract explicitly withholds admission, verifier, dispatch or permit authority.",
+      "subject": "urn:dregg:assortia:E-COORD",
+      "object": "urn:dregg:assortia:E-KERNEL",
+      "sources": [
+        "urn:dregg:assortia:S-PROJECTION-CONTRACT",
+        "urn:dregg:assortia:S-PROJECTION-V2",
+        "urn:dregg:assortia:S-CONSUMERS-REVIEW"
+      ],
+      "evidenceKind": "source-and-worktree-inspection",
+      "scope": "Uncommitted Projection V2 experiment",
+      "limitations": "Not a landed dependency or semantic consumer cutover; V2 versus richer/narrower alternatives remains an explicit receiver choice.",
+      "status": "uncommitted-data-crossing"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-CHARTER",
+      "@type": "Source",
+      "label": "Design charter, not evidence of implementation completion",
+      "repository": "urn:dregg:assortia:R-breadstuffs",
+      "path": "docs/deos/HYPERDREGGMEDIA.md",
+      "lineStart": 13,
+      "lineEnd": 43,
+      "sha256": "0e2c4dc91ddad6c38af6460f624e54a23036fdb9251f7e730977c83c6b9baae5",
+      "recordedDate": "2026-09-17",
+      "gitHead": "3e51def6a5a95424e54fbe7432539b06088de5c3",
+      "gitBlobAtHead": "c24b392238450af6b1779082e353397f578527db",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-DOC-EDIT",
+      "@type": "Source",
+      "label": "Current editor mutation path",
+      "repository": "urn:dregg:assortia:R-breadstuffs",
+      "path": "starbridge-v2/src/deos_desktop/mod.rs",
+      "lineStart": 2983,
+      "lineEnd": 3015,
+      "sha256": "340f1275588a31cd1871d24766bf58e6e3f3cc6fa4aee3121c29d4c396443822",
+      "recordedDate": "2026-09-17",
+      "gitHead": "3e51def6a5a95424e54fbe7432539b06088de5c3",
+      "gitBlobAtHead": "dd3105a3c27e7c1e9db52b58ff148104518955bf",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-DOC-HEAP",
+      "@type": "Source",
+      "label": "Direct heap mutation and durable refusal guard",
+      "repository": "urn:dregg:assortia:R-breadstuffs",
+      "path": "starbridge-v2/src/world/genesis.rs",
+      "lineStart": 207,
+      "lineEnd": 283,
+      "sha256": "ecc4bdd4bae7135541c8a2ace26bc3a4027957add5b4c48a7a12d0b6403c189f",
+      "recordedDate": "2026-09-17",
+      "gitHead": "3e51def6a5a95424e54fbe7432539b06088de5c3",
+      "gitBlobAtHead": "b38ad4391757201f34a343ebbf6ffe6f54c597f8",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-DOC-GUARD",
+      "@type": "Source",
+      "label": "Current body of durable mutation refusal predicate",
+      "repository": "urn:dregg:assortia:R-breadstuffs",
+      "path": "starbridge-v2/src/world/mod.rs",
+      "lineStart": 986,
+      "lineEnd": 1003,
+      "sha256": "5e171d274211b9372b06dce5fa5af39753f9338d9c7cf4c75e406243167da8ee",
+      "recordedDate": "2026-09-17",
+      "gitHead": "3e51def6a5a95424e54fbe7432539b06088de5c3",
+      "gitBlobAtHead": "d39315530906ae6b97d384540263af00daa981e4",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-DOC-TEST",
+      "@type": "Source",
+      "label": "Ephemeral author/fork/resolve test source; not run",
+      "repository": "urn:dregg:assortia:R-breadstuffs",
+      "path": "starbridge-v2/tests/deos_desktop_conflict_is_a_state.rs",
+      "lineStart": 51,
+      "lineEnd": 158,
+      "sha256": "97d4f2bb33e3053575db2d92099426ac416119feee9a5e6826c0ac0639fe41a0",
+      "recordedDate": "2026-09-17",
+      "gitHead": "3e51def6a5a95424e54fbe7432539b06088de5c3",
+      "gitBlobAtHead": "d50dc5b092377c8722f67876f1c944deeb915568",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-SYNC-TEST",
+      "@type": "Source",
+      "label": "Offline-replica scenario in test source; not transport deployment evidence",
+      "repository": "urn:dregg:assortia:R-breadstuffs",
+      "path": "dregg-doc/tests/two_device_sync.rs",
+      "lineStart": 1,
+      "lineEnd": 45,
+      "sha256": "9928514a1557aabe96c47a827341f7bd42d397ccf6cbe028cb7e8904846c0097",
+      "recordedDate": "2026-09-17",
+      "gitHead": "3e51def6a5a95424e54fbe7432539b06088de5c3",
+      "gitBlobAtHead": "c359766d39b3defaf6a184c52851b384256ec223",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-HERMES-ACP",
+      "@type": "Source",
+      "label": "External Hermes subprocess transport",
+      "repository": "urn:dregg:assortia:R-breadstuffs",
+      "path": "deos-hermes/src/acp_client.rs",
+      "lineStart": 179,
+      "lineEnd": 204,
+      "sha256": "eb6e00f17500b041a427a9924267694c60eb28fa8769c6f49962936d7269ffbc",
+      "recordedDate": "2026-09-17",
+      "gitHead": "3e51def6a5a95424e54fbe7432539b06088de5c3",
+      "gitBlobAtHead": "712a8f236e80127d9174f12db9d462f6c380fc8d",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-HERMES-BRAIN",
+      "@type": "Source",
+      "label": "Internal generic compiled brain host path",
+      "repository": "urn:dregg:assortia:R-breadstuffs",
+      "path": "deos-hermes/src/host.rs",
+      "lineStart": 428,
+      "lineEnd": 468,
+      "sha256": "ec067c4118c7b29f7586f64bf7ae043cdd97b77485865f513b6fafd7063afd3b",
+      "recordedDate": "2026-09-17",
+      "gitHead": "3e51def6a5a95424e54fbe7432539b06088de5c3",
+      "gitBlobAtHead": "4ebff306b213f2cb45e71efacd73874f93db1532",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-HOUSE-WORKROOM",
+      "@type": "Source",
+      "label": "Proposal and explicit integration status",
+      "repository": "urn:dregg:assortia:R-DreggCloud",
+      "path": "docs/SEMANTIC-HOUSE-WORKROOM.md",
+      "lineStart": 1,
+      "lineEnd": 36,
+      "sha256": "40dd094ed3f8ff760a6271bf0f3b7022fbe9cbb23d8bff84dfbb04d1c918c0df",
+      "recordedDate": "2026-09-17",
+      "gitHead": "e9ff17a9a955af68afc0bbd7a537184a3656f6fb",
+      "gitBlobAtHead": "0d82eee8a1d4ed139c0554b1b866cb98d3849259",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-HOUSE-EXPEDITION",
+      "@type": "Source",
+      "label": "Historical deployment summary and limits",
+      "repository": "urn:dregg:assortia:R-DreggCloud",
+      "path": "docs/EXPEDITION-HOUSE-INTEGRATION.md",
+      "lineStart": 332,
+      "lineEnd": 372,
+      "sha256": "8a6e854e05013dff7328fef7ce5802425bf414dfdd109a58228fe6c9779260a4",
+      "recordedDate": "2026-09-17",
+      "gitHead": "e9ff17a9a955af68afc0bbd7a537184a3656f6fb",
+      "gitBlobAtHead": "69b6315bda9df2ce54aea445dc2545f4a1c45086",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-HOUSE-SUBSTRATE",
+      "@type": "Source",
+      "label": "Host-checked state and substrate anchoring boundary",
+      "repository": "urn:dregg:assortia:R-DreggCloud",
+      "path": "README.md",
+      "lineStart": 48,
+      "lineEnd": 77,
+      "sha256": "d038764fd1fde6ff9f1799c4a2f200fc3e407d16eab917d1565dcfbe9106276e",
+      "recordedDate": "2026-09-17",
+      "gitHead": "e9ff17a9a955af68afc0bbd7a537184a3656f6fb",
+      "gitBlobAtHead": "8c49ee3f376fa91847a42e75dacf6db9309121ee",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-KERNEL-DECISION",
+      "@type": "Source",
+      "label": "Accepted repository design decision; implementation must be checked separately",
+      "repository": "urn:dregg:assortia:R-minidregg",
+      "path": "docs/decisions/D-0002-canonical-hyperedge-kernel.md",
+      "lineStart": 1,
+      "lineEnd": 43,
+      "sha256": "d381a2ab217eae13bd0a057cc256e4725c8d91e189e4b2991c234f0bc50171de",
+      "recordedDate": "2026-09-17",
+      "gitHead": "6937394e1dc2c2aaff986c7d4b3a258aca5d16fd",
+      "gitBlobAtHead": "204cc46fee5bf5b77e337741c776bce907131e26",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-KERNEL-COMPILER",
+      "@type": "Source",
+      "label": "Compiler's actual imported hyperedge carrier",
+      "repository": "urn:dregg:assortia:R-minidregg",
+      "path": "Compiler/DeclaredHyperedgeArtifact.lean",
+      "lineStart": 1,
+      "lineEnd": 26,
+      "sha256": "d082259427f4d49b2c4baed39ae3a22d4e2b4f54d67cb33e751d316cd2b98bfd",
+      "recordedDate": "2026-09-17",
+      "gitHead": "6937394e1dc2c2aaff986c7d4b3a258aca5d16fd",
+      "gitBlobAtHead": "e6fe579687e7f28628fd042bfea28db2924710b8",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-KERNEL-TYPED",
+      "@type": "Source",
+      "label": "Typed carrier definition and legacy-carrier relation",
+      "repository": "urn:dregg:assortia:R-minidregg",
+      "path": "Kernel/TypedCellHyperedge.lean",
+      "lineStart": 1,
+      "lineEnd": 27,
+      "sha256": "efecd68ecbc60cb6921d5937b2130dd9c35fa8608d24e6f1fcbf79de7513eac9",
+      "recordedDate": "2026-09-17",
+      "gitHead": "6937394e1dc2c2aaff986c7d4b3a258aca5d16fd",
+      "gitBlobAtHead": "f1f5ec7acc63deca1eb16568f4d96a3aabfdcfa9",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-IR2-PACKAGE",
+      "@type": "Source",
+      "label": "Retained package theorem scope, handoff and open obligations",
+      "repository": "urn:dregg:assortia:R-zkml-research",
+      "path": "research/proof_frontier/2026-09-08/ir2_verifier_bridge/README.md",
+      "lineStart": 1,
+      "lineEnd": 45,
+      "sha256": "3bf324b5ffe831f3480026cfd464f0cb5f5d5da6b731f4f52d8d0a94de2b205c",
+      "recordedDate": "2026-09-17",
+      "gitHead": "aef543eec0aef17bf442e3ec07b70942154e6b65",
+      "gitBlobAtHead": "5675694269db3977c0c32fd0caf332792b61c5d6",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-IR2-CHECKS",
+      "@type": "Source",
+      "label": "Captured checks, not re-executed in this orientation",
+      "repository": "urn:dregg:assortia:R-zkml-research",
+      "path": "research/proof_frontier/2026-09-08/ir2_verifier_bridge/CHECKS.json",
+      "lineStart": 1,
+      "lineEnd": 70,
+      "sha256": "6ac1312f63febc97704bc859029e5bad9294af40f1b0ea2707eaf2bfa7bca144",
+      "recordedDate": "2026-09-17",
+      "gitHead": "aef543eec0aef17bf442e3ec07b70942154e6b65",
+      "gitBlobAtHead": "7f376243339041d481bc0083cdda6429c25cba43",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-UWUEAVE",
+      "@type": "Source",
+      "label": "Current library description, runtime boundaries and artifact paths",
+      "repository": "urn:dregg:assortia:R-leanuweave",
+      "path": "README.md",
+      "lineStart": 175,
+      "lineEnd": 229,
+      "sha256": "7631dda5340f6aa0324eda1cac0ab321c3d2dd38e0191706a9b1992ce4bdee22",
+      "recordedDate": "2026-09-17",
+      "gitHead": "f1450667cc87a48706c61f6d5ead71f73ab43fb1",
+      "gitBlobAtHead": "d83b1be65d9550584f1b08a2752f58976301812c",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-UWUEAVE-MANIFEST",
+      "@type": "Source",
+      "label": "Standalone native library dependency manifest",
+      "repository": "urn:dregg:assortia:R-leanuweave",
+      "path": "rust/Cargo.toml",
+      "lineStart": 1,
+      "lineEnd": 28,
+      "sha256": "99a8694b99686d4a44d5c359f44b9ce004f81bdb14b2aebf13f2b395144f3f09",
+      "recordedDate": "2026-09-17",
+      "gitHead": "f1450667cc87a48706c61f6d5ead71f73ab43fb1",
+      "gitBlobAtHead": "de73c871ed44b2054bea5bff5ea52be70b0aa858",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-GRAIN-BOUNDARY",
+      "@type": "Source",
+      "label": "Grain verification contract and host-trust boundary",
+      "repository": "urn:dregg:assortia:R-breadstuffs",
+      "path": "agent-platform/src/lib.rs",
+      "lineStart": 1096,
+      "lineEnd": 1129,
+      "sha256": "f1012732acf5f2309aedbb5c8b48a2fa060f41bcf62758743fe9cd91cde66d1a",
+      "recordedDate": "2026-09-17",
+      "gitHead": "3e51def6a5a95424e54fbe7432539b06088de5c3",
+      "gitBlobAtHead": "500519cd0c21b39d5d27d237355a4ab148e3389f",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-GRAIN-NONCE",
+      "@type": "Source",
+      "label": "Finalizer's documented per-effect/per-turn nonce distinction",
+      "repository": "urn:dregg:assortia:R-breadstuffs",
+      "path": "grain-turn/src/finalize.rs",
+      "lineStart": 1,
+      "lineEnd": 55,
+      "sha256": "a13cb4a9f2401fa47685a46b4c8f30e17b256bb719b54f6b42500894d63b08d7",
+      "recordedDate": "2026-09-17",
+      "gitHead": "3e51def6a5a95424e54fbe7432539b06088de5c3",
+      "gitBlobAtHead": "7c6425dcbff192e241d0bf21ea12b48c866e7094",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-CARD-MOUNT",
+      "@type": "Source",
+      "label": "Separate live attached applet and portable CardEditor",
+      "repository": "urn:dregg:assortia:R-breadstuffs",
+      "path": "starbridge-v2/src/dock/card_surface.rs",
+      "lineStart": 1693,
+      "lineEnd": 1740,
+      "sha256": "9f255095a96ff2073fcbb5f49ef8348a8d4a93480be96bfe3fd9dd4a89852287",
+      "recordedDate": "2026-09-17",
+      "gitHead": "3e51def6a5a95424e54fbe7432539b06088de5c3",
+      "gitBlobAtHead": "7bb6c89f922d321fed6bc3c6a79ac82abc37b51c",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-CARD-EDIT",
+      "@type": "Source",
+      "label": "View edit and repaint path",
+      "repository": "urn:dregg:assortia:R-breadstuffs",
+      "path": "starbridge-v2/src/dock/card_surface.rs",
+      "lineStart": 1947,
+      "lineEnd": 1986,
+      "sha256": "9f255095a96ff2073fcbb5f49ef8348a8d4a93480be96bfe3fd9dd4a89852287",
+      "recordedDate": "2026-09-17",
+      "gitHead": "3e51def6a5a95424e54fbe7432539b06088de5c3",
+      "gitBlobAtHead": "7bb6c89f922d321fed6bc3c6a79ac82abc37b51c",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-MCP-START",
+      "@type": "Source",
+      "label": "MCP host startup and feature-gated private run_js",
+      "repository": "urn:dregg:assortia:R-breadstuffs",
+      "path": "deos-hermes/src/main.rs",
+      "lineStart": 458,
+      "lineEnd": 529,
+      "sha256": "299d8b825606e44fc9e08bfb6fad918774b1d142467651d9168239d29976a610",
+      "recordedDate": "2026-09-17",
+      "gitHead": "3e51def6a5a95424e54fbe7432539b06088de5c3",
+      "gitBlobAtHead": "b76011fc3609b2d9bc754f65570079f2e5f57abc",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-COMPUTE",
+      "@type": "Source",
+      "label": "Offering field accounting and result correctness limits",
+      "repository": "urn:dregg:assortia:R-breadstuffs",
+      "path": "dreggnet-compute/src/lib.rs",
+      "lineStart": 765,
+      "lineEnd": 800,
+      "sha256": "af26e25a292b264cde0e2cb476e1ab9480f87fc7d9a02294bcfb49a785e9b13e",
+      "recordedDate": "2026-09-17",
+      "gitHead": "3e51def6a5a95424e54fbe7432539b06088de5c3",
+      "gitBlobAtHead": "802fd74c47af4b4e2eaf213dfe5ae86b70f1373c",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-RELAY-DISPUTE",
+      "@type": "Source",
+      "label": "Mirror route, cell intake, live submission and refund witness boundary",
+      "repository": "urn:dregg:assortia:R-breadstuffs",
+      "path": "node/src/relay_dispute.rs",
+      "lineStart": 38,
+      "lineEnd": 83,
+      "sha256": "b08c280121c74faf0c25ded1e00f602dfe32ad659a35cb6d65af961698056838",
+      "recordedDate": "2026-09-17",
+      "gitHead": "3e51def6a5a95424e54fbe7432539b06088de5c3",
+      "gitBlobAtHead": "d60edd13c4f6e990231154b09c7082be1782985a",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-SERVICE-CELLS",
+      "@type": "Source",
+      "label": "Expected output commitment and service admission",
+      "repository": "urn:dregg:assortia:R-DreggCloud",
+      "path": "service-cells/src/lib.rs",
+      "lineStart": 550,
+      "lineEnd": 601,
+      "sha256": "00ecb2dc55517337648de896ed2d379430a4649773dbb522ecd8b297d1c9527e",
+      "recordedDate": "2026-09-17",
+      "gitHead": "e9ff17a9a955af68afc0bbd7a537184a3656f6fb",
+      "gitBlobAtHead": "e472b45f5abf660fd4fd768a035f9673c116912c",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-PROJECTION-CONTRACT",
+      "@type": "Source",
+      "label": "Neutral artifact crossings and independently owned receiving semantics",
+      "repository": "urn:dregg:assortia:R-minidregg",
+      "path": "CROSS_REPO_CONTRACTS.md",
+      "lineStart": 1,
+      "lineEnd": 105,
+      "sha256": "41e1578dd9794f27d93814ded6dd148a1a61581fe0bd3dd91de4b23f599fb546",
+      "recordedDate": "2026-09-17",
+      "gitHead": "6937394e1dc2c2aaff986c7d4b3a258aca5d16fd",
+      "gitBlobAtHead": "ac6fe0114fc8f903e4282cad08bda54c9ca93064",
+      "matchesHead": true,
+      "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-PROJECTION-V2",
+      "@type": "Source",
+      "label": "Uncommitted projection experiment",
+      "repository": "urn:dregg:assortia:R-minidregg",
+      "path": "Compiler/UwueavePreoProjectionV2.lean",
+      "lineStart": 1,
+      "lineEnd": 52,
+      "sha256": "f43c0944c985495e656bd6477460edc022f8f6810c8bbec46e0ac4a4cb551c38",
+      "recordedDate": "2026-09-17",
+      "gitHead": "6937394e1dc2c2aaff986c7d4b3a258aca5d16fd",
+      "gitBlobAtHead": null,
+      "matchesHead": false,
+      "workspaceState": "worktree-only-or-modified"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-PROVIDERS-REVIEW",
+      "@type": "Source",
+      "label": "Bounded provider inspection; negative findings are search-scoped",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "research/providers.md",
+      "lineStart": 1,
+      "lineEnd": 111,
+      "sha256": "dbc1d4b404f62b8743a7d10a4f60e946379e533e6fe369f85e0af4e86441476a",
+      "recordedDate": "2026-09-17"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-CONSUMERS-REVIEW",
+      "@type": "Source",
+      "label": "Corrective current consumer inspection",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "research/current-consumers.md",
+      "lineStart": 1,
+      "lineEnd": 116,
+      "sha256": "2008807876e71a0eaa9b73ee183312cf1fceee52edfaf7909168a83576eac3cf",
+      "recordedDate": "2026-09-17"
+    }
+  ]
+}
