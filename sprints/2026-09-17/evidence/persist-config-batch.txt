@@ -1,0 +1,8 @@
+Captured hbox/hcargo run; 32G cap, four build jobs, one test thread.
+WIP snapshot; not a whole-commit validation.
+
+ Nextest run ID 592b5d01-e7c4-467a-9c30-5d2226d7f609 with nextest profile: default
+    Starting 1 test across 1 binary (306 tests skipped)
+        PASS [   0.015s] (1/1) dregg-persist tests::config_batch_rollback_and_reopen_keep_related_keys_atomic
+     Summary [   0.018s] 1 test run: 1 passed, 306 skipped
+pbuild: VERDICT outcome=PASS status=0 lane=hcargo host=hbox cmd=cargo nextest run --build-jobs 4 --test-threads=1 --no-tests fail -p dregg-persist --lib -E test(~config_batch_rollback_and_reopen_keep_related_keys_atomic)

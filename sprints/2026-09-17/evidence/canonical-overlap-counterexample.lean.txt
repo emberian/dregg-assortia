@@ -1,0 +1,110 @@
+import Kernel.DeclaredActionExecution
+
+namespace Minidregg.CanonicalOverlapCounterexample
+
+open Minidregg.Theory
+open Minidregg.Theory.CellState
+open Minidregg.Theory.DeclaredActionLowering
+open Minidregg.Theory.TypedAuthorization
+open Minidregg.Theory.DeployedMaterializerWitness
+open Minidregg.Theory.TypedAuthorizationWitness
+open Minidregg.Kernel.TypedCellHyperedge
+open Minidregg.Kernel.DeclaredActionExecution
+open Minidregg.Kernel.DeclaredActionExecution.Witness
+open Minidregg.Kernel.DeclaredHyperedgeWitness (source destination asset amount)
+
+noncomputable section
+
+def third : ResourceId .account := ⟨102⟩
+
+def second : Declaration source where
+  schemaVersion := 1
+  expectedPreRoot := preCell.root
+  nonce := 404
+  actions := [.move source third asset (some 14) none amount]
+
+theorem secondValid : ValidAt preCell second where
+  rootExact := rfl
+  guardsAndPost := rfl
+
+def secondAuthorization : Authorized permissivePortal authState
+    (context.request second) where
+  evidence := .proof () rfl
+  policyWitness := ()
+  policyMembershipWitness := ()
+  policyEpochExact := rfl
+  policyAddressExact := rfl
+  policyMembershipVerified := rfl
+  policyVerified := rfl
+
+def secondAccepted : Accepted permissivePortal authState context preCell second :=
+  accept secondAuthorization secondValid
+
+def overwrittenPost : Materialized effectMaterializer :=
+  materialize effectMaterializer
+    { fields := applyFieldWrites (declaration.fieldWrites ++ second.fieldWrites)
+        preCell.logical.fields
+      resources := preCell.logical.resources }
+
+def overlapping :
+    Minidregg.Kernel.TypedCellHyperedge.Declaration DeclaredTurn.effectSchema.{0, 0}
+      effectMaterializer permissivePortal (projection authState) Bool where
+  pre := preCell
+  apex := overwrittenPost.root
+  legs := fun
+    | false => leg accepted
+    | true => leg secondAccepted
+  composition := { fieldMode := .canonical, order := [false, true] }
+
+theorem shape : overlapping.ShapeValid where
+  orderComplete := by
+    constructor
+    · decide
+    · intro incidence
+      cases incidence <;> decide
+  resourcesDisjoint := by
+    intro left right _different
+    cases left <;> cases right <;> decide
+  fieldsValid := trivial
+
+theorem validated_exists :
+    Nonempty (ValidatedPatch effectMaterializer preCell overlapping.jointPatch) := by
+  have witness : ∃ validated :
+      ValidatedPatch effectMaterializer preCell overlapping.jointPatch,
+      validate effectMaterializer preCell overlapping.jointPatch =
+        ValidationOutcome.accepted validated := by
+    unfold validate
+    rw [dif_pos (show overlapping.jointPatch.expectedPreRoot = preCell.root from rfl)]
+    rw [dif_pos (show overlapping.jointPatch.fieldFootprint =
+      overlapping.jointPatch.namedFields from rfl)]
+    rw [dif_pos (show overlapping.jointPatch.resourceFootprint =
+      overlapping.jointPatch.namedResources from rfl)]
+    exact ⟨_, rfl⟩
+  exact ⟨witness.choose⟩
+
+def committed : Commit (resourceLaw accepted) overlapping where
+  shape := shape
+  validated := Classical.choice validated_exists
+  apexExact := rfl
+  aggregateBalanced := by
+    funext resource
+    have firstBalanced : (resourceLaw accepted).delta (leg accepted) resource = 0 := by
+      simpa [resourceLaw, leg, Leg.patch, Leg.post, family] using
+        accepted.conserves resource
+    have secondBalanced : (resourceLaw accepted).delta (leg secondAccepted) resource = 0 := by
+      simpa [resourceLaw, leg, Leg.patch, Leg.post, family] using
+        secondAccepted.conserves resource
+    simpa [Minidregg.Kernel.TypedCellHyperedge.Declaration.aggregateDelta,
+      overlapping, Fintype.sum_bool] using
+        congrArg₂ (· + ·) secondBalanced firstBalanced
+
+theorem accepted_canonical_joint_creates_seven :
+    (balance committed.prepared.post.logical.fields source asset +
+      balance committed.prepared.post.logical.fields destination asset +
+      balance committed.prepared.post.logical.fields third asset) -
+    (balance preCell.logical.fields source asset +
+      balance preCell.logical.fields destination asset +
+      balance preCell.logical.fields third asset) = 7 := rfl
+
+end
+end Minidregg.CanonicalOverlapCounterexample

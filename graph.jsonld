@@ -400,15 +400,18 @@
       "@id": "urn:dregg:assortia:W-DOC-PERSIST",
       "@type": "WorkItem",
       "label": "Establish the chosen document storage/turn contract",
-      "description": "Determine how document body changes enter canonical ordered state; preserve existing useful document semantics while resolving the durable writer boundary.",
-      "status": "candidate-investigation",
+      "description": "Implement durable refusal propagation and exact ordered physical history in breadstuffs, while joining resource birth, owner authority and charge in the canonical shared core. Repeated body updates still require the selected accepted operation and receiving cutover.",
+      "status": "active-design-and-implementation",
       "dependsOn": [
         "urn:dregg:assortia:C-DOC-DURABLE"
       ],
       "motivatedBy": [
         "urn:dregg:assortia:I-WORLD"
       ],
-      "closure": "A selected implementation path and evidence for repeated authorized saves, rejection without committed mutation, crash/reopen and matching body/receipt history. No specific fix or migration selected."
+      "closure": "Repeated authorized saves, rejection without committed mutation, crash/reopen at each ordered boundary, and matching body/receipt history through the actual selected consumer. Physical setup journaling alone does not close kernel authorization.",
+      "sources": [
+        "urn:dregg:assortia:S-IMPLEMENTATION-2300"
+      ]
     },
     {
       "@id": "urn:dregg:assortia:W-CANONICAL-CONSUMER",
@@ -1770,6 +1773,91 @@
       "gitBlobAtHead": "6c81bb88affe431efaa2e848297fd2c601a19d85",
       "matchesHead": true,
       "workspaceState": "matches-recorded-head"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-IMPLEMENTATION-2300",
+      "@type": "Source",
+      "label": "Late-evening source checkpoints, captured run, and shared-core assignments",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-17/checkpoint-2300.md",
+      "lineStart": 1,
+      "lineEnd": 43,
+      "sha256": "f31a4c89854c674b3373c1e36dd15c7bdf4cab72f2acbdd40d3816c61e84c072",
+      "recordedDate": "2026-09-17"
+    },
+    {
+      "@id": "urn:dregg:assortia:W-RESOURCE-BIRTH",
+      "@type": "WorkItem",
+      "label": "Implement one accepted resource birth with owner authority and charge",
+      "description": "Reuse canonical CellRegistry, authority pages, ordered resource Book batches, MultiCellHyperedge and DataIntent; one final write per physical cell.",
+      "status": "active-design-and-implementation",
+      "sources": [
+        "urn:dregg:assortia:S-IMPLEMENTATION-2300"
+      ],
+      "motivatedBy": [
+        "urn:dregg:assortia:I-CORE-SPRINT",
+        "urn:dregg:assortia:I-MIXED-PROGRAMMING"
+      ],
+      "related": [
+        "urn:dregg:assortia:W-PROGRAMMABLE-PATH"
+      ],
+      "closure": "Actual source-authorized birth commits identity, initial content, owner grant and selected fee together; refusals and crash/retry cannot expose a partial accepted result."
+    },
+    {
+      "@id": "urn:dregg:assortia:W-EFFECT-ADMISSION",
+      "@type": "WorkItem",
+      "label": "Make full request and actual-pre binding mandatory for generic effects",
+      "description": "Replace optional binding adapters with a source-derived family request and exact pre requirement in AcceptedCellEffect, migrating concrete families and consumers.",
+      "status": "active-design-and-implementation",
+      "sources": [
+        "urn:dregg:assortia:S-IMPLEMENTATION-2300"
+      ],
+      "motivatedBy": [
+        "urn:dregg:assortia:I-CORE-SPRINT",
+        "urn:dregg:assortia:I-MIXED-PROGRAMMING"
+      ],
+      "related": [
+        "urn:dregg:assortia:W-RESOURCE-BIRTH"
+      ],
+      "closure": "All receiving constructors use the strengthened base token; target/verb/args/nonce/pre relabeling refuses, honest effects remain inhabited, and the integrated tree checks."
+    },
+    {
+      "@id": "urn:dregg:assortia:W-JOINT-POST",
+      "@type": "WorkItem",
+      "label": "Check composition against the actual joint post-state",
+      "description": "A checked same-pre overlap example creates seven units despite individually balanced transfers; whole-Book overlap can also drop an earlier fee.",
+      "status": "active-design-and-implementation",
+      "sources": [
+        "urn:dregg:assortia:S-IMPLEMENTATION-2300"
+      ],
+      "motivatedBy": [
+        "urn:dregg:assortia:I-CORE-SPRINT",
+        "urn:dregg:assortia:I-MIXED-PROGRAMMING"
+      ],
+      "related": [
+        "urn:dregg:assortia:W-RESOURCE-BIRTH"
+      ],
+      "closure": "Generic accepted composition preserves required incidence outcomes and enforces its resource law on the actual joint post; the old counterexample refuses and legitimate composition passes."
+    },
+    {
+      "@id": "urn:dregg:assortia:W-NATIVE-DATA-RECEIVER",
+      "@type": "WorkItem",
+      "label": "Connect canonical DataIntent execution to a real durable receiver",
+      "description": "Build a computable finite representation and exact-byte SQLite CAS transport consuming existing Lean DataIntent execution; migrate the existing one-shot byte transport through the shared storage mechanism.",
+      "status": "active-design-and-implementation",
+      "sources": [
+        "urn:dregg:assortia:S-IMPLEMENTATION-2300"
+      ],
+      "motivatedBy": [
+        "urn:dregg:assortia:I-CORE-SPRINT",
+        "urn:dregg:assortia:I-MIXED-PROGRAMMING"
+      ],
+      "related": [
+        "urn:dregg:assortia:W-RESOURCE-BIRTH",
+        "urn:dregg:assortia:W-EFFECT-ADMISSION",
+        "urn:dregg:assortia:W-JOINT-POST"
+      ],
+      "closure": "A controller-bound multi-cell operation crosses real Lean decoding/admission/execute and physical CAS; stale/conflicting/malformed requests refuse, exact retry replays, and reopen preserves exact bytes and history."
     }
   ]
 }
