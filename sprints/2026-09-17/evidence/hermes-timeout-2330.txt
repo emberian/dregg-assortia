@@ -1,0 +1,26 @@
+Captured from /tmp/dregg-sprint-hermes-world-bridge-attempt2.log; source snapshot manifest /tmp/dregg-hermes-attempt2-source.json.
+
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 3m 05s
+warning: the following packages contain code that will be rejected by a future version of Rust: proc-macro-error2 v2.0.1
+note: to see what the problems were, use the option `--future-incompat-report`, or run `cargo report future-incompatibilities --id 1`
+────────────
+ Nextest run ID 5e0b56b2-21a0-4182-b834-fbaf757f3844 with nextest profile: default
+    Starting 1 test across 1 binary (2 tests skipped)
+        SLOW [> 45.000s] (───) deos-hermes::world_bridge_e2e js_agent_weld::run_js_over_the_world_bridge_lands_on_the_served_world
+        SLOW [> 90.000s] (───) deos-hermes::world_bridge_e2e js_agent_weld::run_js_over_the_world_bridge_lands_on_the_served_world
+        SLOW [>135.000s] (───) deos-hermes::world_bridge_e2e js_agent_weld::run_js_over_the_world_bridge_lands_on_the_served_world
+ TERMINATING [>180.000s] (───) deos-hermes::world_bridge_e2e js_agent_weld::run_js_over_the_world_bridge_lands_on_the_served_world
+     TIMEOUT [ 180.014s] (1/1) deos-hermes::world_bridge_e2e js_agent_weld::run_js_over_the_world_bridge_lands_on_the_served_world
+  stdout ───
+
+    running 1 test
+    test js_agent_weld::run_js_over_the_world_bridge_lands_on_the_served_world has been running for over 60 seconds
+
+    (test timed out)
+
+  Cancelling due to test failure: 
+────────────
+     Summary [ 180.024s] 1 test run: 0 passed, 1 timed out, 2 skipped
+     TIMEOUT [ 180.014s] (1/1) deos-hermes::world_bridge_e2e js_agent_weld::run_js_over_the_world_bridge_lands_on_the_served_world
+error: test run failed
+pbuild: VERDICT outcome=FAIL status=100 lane=hcargo host=hbox cmd=cargo nextest run --build-jobs 4 --test-threads=1 --no-tests fail -p deos-hermes --features js-agent --test world_bridge_e2e -E test(~run_js_over_the_world_bridge_lands_on_the_served_world)

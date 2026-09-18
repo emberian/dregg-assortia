@@ -1,0 +1,31 @@
+Captured from /tmp/dregg-durable-receiver-joined.log; targeted wrapper run in the current worktree.
+
+running 1 test
+test tests::old_bounded_table_upgrades_without_rewriting_its_blob ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running unittests src/main.rs (native/hyperdocument-link-sqlite-store/target/release/deps/minidregg_link_sqlite_store-0056ccd148b9c2ab)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/lifecycle.rs (native/hyperdocument-link-sqlite-store/target/release/deps/lifecycle-06e77bfb0b016423)
+
+running 9 tests
+test lean_fixture_is_exact_and_bounded ... ok
+test oversize_fails_before_transaction ... ok
+test repeated_cas_preserves_exact_expected_bytes_and_absence ... ok
+test corrupt_header_and_torn_database_fail_opaquely ... ok
+test concurrent_cas_writers_cannot_both_replace_the_same_preimage ... ok
+test crash_after_commit_reopens_exact_and_retry_is_idempotent ... ok
+test crash_after_begin_or_insert_recovers_absent ... ok
+test update_crash_before_commit_preserves_old_image_after_commit_preserves_new ... ok
+Installed
+sqlite-store error: current bytes differ from expected and proposed bytes
+test concurrent_conflicting_transaction_waits_then_fails_without_overwrite ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.47s
+
+PASS durable receiver: Lean codec/executor + SQLite CAS, two-cell repeated commit, replay/conflict/read/write/nullifier/budget refusal, process-exit rollback, lost-response reopen, concurrent guard move, corruption; final valid image 1080 bytes / 5 commits

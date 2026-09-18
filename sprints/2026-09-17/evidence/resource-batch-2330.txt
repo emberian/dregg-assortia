@@ -1,0 +1,1 @@
+RESOURCE_BATCH_PROBE PASS preBytes=45 postBytes=53; payer=2 collector=4 newborn=2 total=0; compact roundtrip, cSHAKE root change, overdraw and duplicate refusal
