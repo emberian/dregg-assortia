@@ -4,15 +4,19 @@
 
 ## W-ANDROID-CONTRACT
 
-**Define a substantial Android product work package**
+**Define substantial cloud/native-host or Android product ownership**
 
-Status: **active** · Owner: Astra: root + mobile inventory + runtime review · Updated: 2026-09-18T00:51:00-04:00
+Status: **active** · Owner: Astra: root; contributor/runtime selection with ember · Updated: 2026-09-18T01:45:00-04:00
 
-Trace existing mobile work and actual node/receiver APIs, then specify app responsibilities, embedded runtime contract, system/UI integrations and acceptance scenarios for an outside contributor. Android is the concrete example supplied by ember, not yet a settled release commitment. Ember also suggested DreggNet/cloud for the experienced platform contributor; compare the shared native-host boundary rather than presuming Android is selected.
+Compare actual DreggNet lifecycle machinery and native runtime export/embedding boundaries. Wisper can own platform design and implementation. Android was the initial example; this stable work ID is retained while cloud ownership is evaluated.
 
-**Next:** Compare Android embedding and cloud lifecycle ownership against the actual node/receiver source; publish a substantial feature proposal.
+**Next:** Review the published resource-host lifecycle proposal with ember; select the first runtime/export and consumer, then freeze its owned upstream delivery and acceptance harness.
 
 **Done when:** A contributor can scaffold a real product surface from a concrete brief and agreed contracts, with executable receiving interfaces or explicitly owned upstream delivery, test scenarios and no need to infer core architecture from chat.
+
+**Evidence so far:** Source-backed cloud and mobile inventories plus concrete feature/contract proposal published. Cloud supervisor is the recommendation; no assignment or release commitment. Wisper can own platform design and implementation, including native host extraction by agreement.
+
+[Task brief](../contributing/resource-host-lifecycle.md)
 
 **Enables:**
 
@@ -22,18 +26,32 @@ Trace existing mobile work and actual node/receiver APIs, then specify app respo
 **Evidence / provenance:**
 
 - [S-IMPLEMENTATION-0045 — September 18 implementation and contributor checkpoint](../sprints/2026-09-18/checkpoint-0045.md)
+- [S-IMPLEMENTATION-0130 — Durable native invocation and repaired runtime history, September 18 01:30](../sprints/2026-09-18/checkpoint-0130.md)
+- [S-CLOUD-HOST-REVIEW — Bounded cloud lifecycle source review, September 18](../research/cloud-host-2026-09-18.md)
+- [S-MOBILE-REVIEW — Bounded Android/mobile source inventory, September 18](../research/mobile-2026-09-18.md)
+- [S-HOST-CONTRIBUTOR-PROPOSAL — Proposed resource-host lifecycle ownership and receiving contract](../contributing/resource-host-lifecycle.md)
+
+**Write scope:** DreggNet/control provider/server/supervisor and gateway lifecycle; Selected native host extraction/export, jointly reserved with core; Selected packaging and integration harness
+
+**Acceptance:**
+
+- Fault-injected provision/settlement/publication crash intervals reconcile one backend and one charge.
+- Actual native authorized operation and exact retained state/result survive restart and response-loss retry.
+- Owner isolation, stop/wake, incompatible/corrupt storage refusal and acknowledged event resume are exercised.
 
 ## W-GRAPH-NAVIGATION
 
 **Follow graph relationships in both directions**
 
-Status: **backlog** · Owner: Unassigned · Updated: 2026-09-18T00:51:00-04:00
+Status: **done** · Owner: Astra: core_durable_receiver · Updated: 2026-09-18T01:45:00-04:00
 
 Extend the existing graph browser so readers can move from work to purpose, dependencies and evidence, and discover what points back.
 
-**Next:** Astra handles this internal tooling work; it is not an external contributor assignment.
+**Next:** Use and maintain the tested hub tools during project handoffs; contributor/runtime selection continues in W-ANDROID-CONTRACT.
 
 **Done when:** Existing graph relationships are traversable deterministically and safely in both directions; broken links and cycles are handled explicitly; default short output remains usable.
+
+**Evidence so far:** 12 focused tests pass, including real graph traversal and a standalone script-plus-graph checkout.
 
 [Task brief](../internal/tooling-candidates-2026-09-18.md)
 
@@ -44,6 +62,8 @@ Extend the existing graph browser so readers can move from work to purpose, depe
 **Evidence / provenance:**
 
 - [S-IMPLEMENTATION-0045 — September 18 implementation and contributor checkpoint](../sprints/2026-09-18/checkpoint-0045.md)
+- [S-IMPLEMENTATION-0130 — Durable native invocation and repaired runtime history, September 18 01:30](../sprints/2026-09-18/checkpoint-0130.md)
+- [S-HUB-TOOLS-0145 — Graph navigation/source-impact tooling and captured tests](../sprints/2026-09-18/hub-tools-0145.md)
 
 **Write scope:** dregg-assortia/browse_graph.py; dregg-assortia/tests/test_browse_graph.py
 
@@ -57,13 +77,15 @@ Extend the existing graph browser so readers can move from work to purpose, depe
 
 **Make assortia usable for ongoing work and new contributors**
 
-Status: **active** · Owner: Astra: root · Updated: 2026-09-18T00:45:00-04:00
+Status: **done** · Owner: Astra: root · Updated: 2026-09-18T01:45:00-04:00
 
 Graph-backed work ownership, concrete briefs, generated current views and an explicit update routine replace an orientation-only entry point.
 
-**Next:** Publish the current graph-backed board and substantive contributor feature investigation.
+**Next:** Use and maintain the tested hub tools during project handoffs; contributor/runtime selection continues in W-ANDROID-CONTRACT.
 
 **Done when:** A clean assortia clone exposes current work, ownership and a concrete feature-handoff investigation without sibling repositories; graph/status checks and generated-view checks pass.
+
+**Evidence so far:** Graph-backed ownership/board, portable tools and substantial source-backed contributor proposal are present. Runtime/feature selection remains explicitly active.
 
 **Enables:**
 
@@ -72,18 +94,22 @@ Graph-backed work ownership, concrete briefs, generated current views and an exp
 **Evidence / provenance:**
 
 - [S-IMPLEMENTATION-0045 — September 18 implementation and contributor checkpoint](../sprints/2026-09-18/checkpoint-0045.md)
+- [S-IMPLEMENTATION-0130 — Durable native invocation and repaired runtime history, September 18 01:30](../sprints/2026-09-18/checkpoint-0130.md)
+- [S-HUB-TOOLS-0145 — Graph navigation/source-impact tooling and captured tests](../sprints/2026-09-18/hub-tools-0145.md)
 
 ## W-AUTHORITY-NATIVE
 
 **Bind native use to committed keys and complete authority**
 
-Status: **active** · Owner: Astra: authority_pages + durable_receiver + effect_admission · Updated: 2026-09-18T00:45:00-04:00
+Status: **active** · Owner: Astra: authority_pages + durable_receiver + effect_admission · Updated: 2026-09-18T01:30:00-04:00
 
 Persist exact signing keys/epochs; accept actual configured native verification of the exact request and capability against the complete same-snapshot authority.
 
-**Next:** Refresh affected authority consumers, then exercise real signed acceptance and wrong-key/request/epoch refusals.
+**Next:** Preserve native acceptance/refusals through the next delegation/request migration and refresh all affected consumers.
 
 **Done when:** Actual installed verification plus complete committed authority checks feed accepted source operations; stale/altered/revoked credentials cannot authorize them.
+
+**Evidence so far:** Real configured Ed25519, full committed key snapshot, mandatory exact-request capability use and strict canonical lineage pass actual native probes. Explicit delegated lineage and forthcoming request/profile migrations still require consumer closure.
 
 **Enables:**
 
@@ -92,6 +118,7 @@ Persist exact signing keys/epochs; accept actual configured native verification 
 **Evidence / provenance:**
 
 - [S-IMPLEMENTATION-0045 — September 18 implementation and contributor checkpoint](../sprints/2026-09-18/checkpoint-0045.md)
+- [S-IMPLEMENTATION-0130 — Durable native invocation and repaired runtime history, September 18 01:30](../sprints/2026-09-18/checkpoint-0130.md)
 
 ## W-AUTHORIZED-DELEGATION
 
@@ -118,15 +145,15 @@ Add an explicit authorized subject-to-subject delegation edge without weakening 
 
 **Trace one canonical typed event through its real compiler and consumer**
 
-Status: **active** · Owner: Astra: kernel_carrier · Updated: 2026-09-18T00:45:00-04:00
+Status: **done** · Owner: Astra: kernel_carrier · Updated: 2026-09-18T01:30:00-04:00
 
 Connect the canonical source request and accepted joint state to actual artifact and native consumers. Keep mandatory request/capability-use and policy-change verb tags consistent.
 
-**Next:** Finish regenerated authorization artifacts, then prove actual page-write reflection used by invocation.
+**Next:** Use the captured receiving evidence as a regression boundary while completing the linked resource journey.
 
 **Done when:** One explicit event/schema/codec/acceptance/storage path, with each existing join or missing obligation sourced. No broad rewrite before the path is understood.
 
-**Evidence so far:** Authorization base3/3 and artifact closure27/27 passed; regenerated outputs byte-compared and pushed in c41d77e. Page reflection and actual native consumers continue.
+**Evidence so far:** Regenerated authorization artifacts, actual page execution reflection, and one source-authorized native invocation/physical publication path are captured at minidregg278ed6a. This bounded trace does not close every compiler or proof consumer.
 
 **Enables:**
 
@@ -140,6 +167,7 @@ Connect the canonical source request and accepted joint state to actual artifact
 **Evidence / provenance:**
 
 - [S-IMPLEMENTATION-0045 — September 18 implementation and contributor checkpoint](../sprints/2026-09-18/checkpoint-0045.md)
+- [S-IMPLEMENTATION-0130 — Durable native invocation and repaired runtime history, September 18 01:30](../sprints/2026-09-18/checkpoint-0130.md)
 
 ## W-COORD-CONTRACT
 
@@ -171,13 +199,15 @@ Compare breadstuffs History/World forks, minidregg hyperdocuments and lean-uwuea
 
 **Invoke a declared resource through the real kernel**
 
-Status: **active** · Owner: Astra: localfirst · Updated: 2026-09-18T00:45:00-04:00
+Status: **active** · Owner: Astra: localfirst · Updated: 2026-09-18T01:30:00-04:00
 
 Compact commands use actual page execution, complete old authority, stored policy and accepted final-state evidence.
 
-**Next:** Finish page-write reflection, native per-incidence admission and durable acknowledgment.
+**Next:** Create through the accepted birth receiver, reopen, then invoke using the born owner grant; exercise response-loss retry and refusal.
 
 **Done when:** An owner can invoke an authored operation, invalid requests refuse unchanged, and accepted data/receipt survive reopen.
+
+**Evidence so far:** Actual native stored-capability invocation, publication, reopen and exact retry pass at278ed6a from explicit bootstrap authority. Joined accepted-birth ownership is now the next witness.
 
 **Enables:**
 
@@ -186,26 +216,26 @@ Compact commands use actual page execution, complete old authority, stored polic
 
 **Waiting for:**
 
-- W-POLICY-SOURCE — Store initial policies and use one runtime profile
-- W-AUTHORITY-NATIVE — Bind native use to committed keys and complete authority
+- W-RESOURCE-BIRTH — Implement one accepted resource birth with owner authority and charge
 
 **Evidence / provenance:**
 
 - [S-IMPLEMENTATION-0045 — September 18 implementation and contributor checkpoint](../sprints/2026-09-18/checkpoint-0045.md)
+- [S-IMPLEMENTATION-0130 — Durable native invocation and repaired runtime history, September 18 01:30](../sprints/2026-09-18/checkpoint-0130.md)
 
 ## W-DOC-PERSIST
 
 **Establish the chosen document storage/turn contract**
 
-Status: **active** · Owner: Astra: resource_history · Updated: 2026-09-18T00:45:00-04:00
+Status: **active** · Owner: Astra: root + kernel_carrier + localfirst · Updated: 2026-09-18T01:30:00-04:00
 
 Implement durable refusal propagation and exact ordered physical history in breadstuffs, while joining resource birth, owner authority and charge in the canonical shared core. Repeated body updates still require the selected accepted operation and receiving cutover.
 
-**Next:** Repair intermediate-root disagreement across reopen, then rerun the exact failed World/history checks.
+**Next:** Complete ordered factory/history repair and connect document edits to accepted kernel operations instead of setup writes.
 
 **Done when:** Repeated authorized saves, rejection without committed mutation, crash/reopen at each ordered boundary, and matching body/receipt history through the actual selected consumer. Physical setup journaling alone does not close kernel authorization.
 
-**Evidence so far:** World/history attempt2:14 passed,2 failed,2 not run. Final-state equality does not close every-boundary recovery.
+**Evidence so far:** The earlier intermediate-root failures are fixed: cell/turn/World24/24 pass. Kernel-authorized document saves remain a distinct receiving task.
 
 **Enables:**
 
@@ -221,6 +251,7 @@ Implement durable refusal propagation and exact ordered physical history in brea
 - [S-IMPLEMENTATION-2300 — Late-evening source checkpoints, captured run, and shared-core assignments](../sprints/2026-09-17/checkpoint-2300.md)
 - [S-IMPLEMENTATION-2330 — Executable receiving/admission checkpoint and rejected-turn correction](../sprints/2026-09-17/checkpoint-2330.md)
 - [S-IMPLEMENTATION-0045 — September 18 implementation and contributor checkpoint](../sprints/2026-09-18/checkpoint-0045.md)
+- [S-IMPLEMENTATION-0130 — Durable native invocation and repaired runtime history, September 18 01:30](../sprints/2026-09-18/checkpoint-0130.md)
 
 ## W-EFFECT-ADMISSION
 
@@ -250,15 +281,15 @@ Replace optional binding adapters with a source-derived family request and exact
 
 **Keep embedded candidates atomic through durable publication**
 
-Status: **active** · Owner: Astra: root + resource_history · Updated: 2026-09-18T00:45:00-04:00
+Status: **done** · Owner: Astra: root + resource_history · Updated: 2026-09-18T01:30:00-04:00
 
 SDK/World align with the current node rejection policy: no retained fee, nonce, executor side-state or observer notification from a refused candidate. A possibly committed storage failure still requires authoritative reopen.
 
-**Next:** Finish current World batch validation and remeasure the SDK/Hermes path after lazy initialization.
+**Next:** Use the captured receiving evidence as a regression boundary while completing the linked resource journey.
 
 **Done when:** Paid late refusal leaves exact prior state; storage refusal restores executor side-state; pending/unwound candidates cannot reenter; observer runs once only after acceptance; next success replays and reopens correctly.
 
-**Evidence so far:** Four actual SDK candidate rollback/publication tests passed; World intermediate-history failures remain separate.
+**Evidence so far:** SDK4/4 candidate/publication tests pass after lazy registration; World/cell/history24/24 pass at breadstuffs73136dd30 including paid refusal, storage failure, subsequent acceptance and reopen.
 
 **Enables:**
 
@@ -269,6 +300,28 @@ SDK/World align with the current node rejection policy: no retained fee, nonce, 
 
 - [S-IMPLEMENTATION-2330 — Executable receiving/admission checkpoint and rejected-turn correction](../sprints/2026-09-17/checkpoint-2330.md)
 - [S-IMPLEMENTATION-0045 — September 18 implementation and contributor checkpoint](../sprints/2026-09-18/checkpoint-0045.md)
+- [S-IMPLEMENTATION-0130 — Durable native invocation and repaired runtime history, September 18 01:30](../sprints/2026-09-18/checkpoint-0130.md)
+
+## W-FACTORY-HISTORY
+
+**Retain factory deployment at its actual history boundary**
+
+Status: **active** · Owner: Astra: kernel_carrier · Updated: 2026-09-18T01:30:00-04:00
+
+World deployment currently mutates volatile registries; historical paths either omit factories or preload the present registry into the past. Persist ordered descriptor/VK evidence and replay the actual executor deployment at that boundary.
+
+**Next:** Implement one ordered durable deployment event across World, replay, reversible history and forks; verify exact duplicate/conflicting descriptors, storage refusal and reopen.
+
+**Done when:** Actual factory deployment, birth/mutation and recovery use the same ordered descriptor/VK evidence; no historical prefix sees a later factory; conflicting deployment and persistence failures leave committed state unchanged; unsupported old images refuse without changing evidence.
+
+**Enables:**
+
+- E-DOC — Desktop document authoring
+- E-KERNEL — Canonical typed semantic kernel
+
+**Evidence / provenance:**
+
+- [S-IMPLEMENTATION-0130 — Durable native invocation and repaired runtime history, September 18 01:30](../sprints/2026-09-18/checkpoint-0130.md)
 
 ## W-HERMES-STARTUP
 
@@ -340,15 +393,15 @@ Active design and implementation planning for the September 26 mixed programmabl
 
 **Connect canonical DataIntent execution to a real durable receiver**
 
-Status: **active** · Owner: Astra: core_durable_receiver + proof_integrity · Updated: 2026-09-18T00:45:00-04:00
+Status: **done** · Owner: Astra: core_durable_receiver + proof_integrity · Updated: 2026-09-18T01:30:00-04:00
 
 The existing Lean executor now crosses exact-byte SQLite CAS with crash/retry/concurrency checks; full source-authorized resource birth and product receiving joins remain active.
 
-**Next:** Join source-authorized operations and reconcile exact signed retries from retained journal entries.
+**Next:** Use the captured receiving evidence as a regression boundary while completing the linked resource journey.
 
 **Done when:** A controller-bound multi-cell operation crosses real Lean decoding/admission/execute and physical CAS; stale/conflicting/malformed requests refuse, exact retry replays, and reopen preserves exact bytes and history.
 
-**Evidence so far:** SQLite CAS/reopen/concurrency component checks passed; strict native Ed25519 helper exercised. Complete signed journey remains active.
+**Evidence so far:** Actual controller-bound page and authority-marker writes pass native admission, SQLite publication, reopen, exact-ingress replay and conflicting/hostile input refusal. Probe authority is explicitly bootstrapped; accepted birth/delegation have their own active work.
 
 **Enables:**
 
@@ -360,18 +413,21 @@ The existing Lean executor now crosses exact-byte SQLite CAS with crash/retry/co
 - [S-IMPLEMENTATION-2300 — Late-evening source checkpoints, captured run, and shared-core assignments](../sprints/2026-09-17/checkpoint-2300.md)
 - [S-IMPLEMENTATION-2330 — Executable receiving/admission checkpoint and rejected-turn correction](../sprints/2026-09-17/checkpoint-2330.md)
 - [S-IMPLEMENTATION-0045 — September 18 implementation and contributor checkpoint](../sprints/2026-09-18/checkpoint-0045.md)
+- [S-IMPLEMENTATION-0130 — Durable native invocation and repaired runtime history, September 18 01:30](../sprints/2026-09-18/checkpoint-0130.md)
 
 ## W-POLICY-SOURCE
 
 **Store initial policies and use one runtime profile**
 
-Status: **active** · Owner: Astra: resource_pages + shell_hermes + program_install · Updated: 2026-09-18T00:45:00-04:00
+Status: **active** · Owner: Astra: resource_pages + shell_hermes + program_install · Updated: 2026-09-18T01:30:00-04:00
 
 Immutable internal policy-source cells and a common field/compiler/request profile make resource creation, invocation and policy replacement agree.
 
-**Next:** Finish source-cell/profile closure and install/birth/invoke consumers.
+**Next:** Complete physical birth and policy replacement under the shared profile and exact same-directory source guards.
 
 **Done when:** Policy source is created atomically and selected from the same durable directory; kind/domain/address mismatches refuse, and all consuming verbs share compatible source semantics.
+
+**Evidence so far:** Canonical source-cell/registry33 checks, common profile and actual invocation consumer pass. Initial birth and replacement source creation remain integrated receiving work.
 
 **Enables:**
 
@@ -381,6 +437,7 @@ Immutable internal policy-source cells and a common field/compiler/request profi
 **Evidence / provenance:**
 
 - [S-IMPLEMENTATION-0045 — September 18 implementation and contributor checkpoint](../sprints/2026-09-18/checkpoint-0045.md)
+- [S-IMPLEMENTATION-0130 — Durable native invocation and repaired runtime history, September 18 01:30](../sprints/2026-09-18/checkpoint-0130.md)
 
 ## W-PROGRAMMABLE-PATH
 
@@ -430,31 +487,27 @@ Trace eligible jobs, registration/stake, result commitments, challenges, adjudic
 
 **Implement one accepted resource birth with owner authority and charge**
 
-Status: **active** · Owner: Astra: proof_integrity + program_install · Updated: 2026-09-18T00:45:00-04:00
+Status: **active** · Owner: Astra: proof_integrity + program_install · Updated: 2026-09-18T01:30:00-04:00
 
 Reuse canonical CellRegistry, authority pages, ordered resource Book batches, MultiCellHyperedge and DataIntent; one final write per physical cell.
 
-**Next:** Commit initial policy/source bytes, owner and policy-control grants, funding and fees through accepted native receiving.
+**Next:** Finish native upper/physical checks, derive both operation identity fields from the authenticated creator coordinate, then run accepted birth/reopen/invoke.
 
 **Done when:** Actual source-authorized birth commits identity, initial content, owner grant and selected fee together; refusals and crash/retry cannot expose a partial accepted result.
 
-**Evidence so far:** Complete authority and funded birth preparation exercised; real source authorization, initial policy and native publication are still joining.
+**Evidence so far:** Lower resource birth controller and initial source/allocation laws pass. Upper native admission and physical receiver are active; caller-isolated transaction/marker identity repair is joining before the native birth witness.
 
 **Enables:**
 
 - E-KERNEL — Canonical typed semantic kernel
 - E-WORLD — Programmable social resource world
 
-**Waiting for:**
-
-- W-AUTHORITY-NATIVE — Bind native use to committed keys and complete authority
-- W-POLICY-SOURCE — Store initial policies and use one runtime profile
-
 **Evidence / provenance:**
 
 - [S-IMPLEMENTATION-2300 — Late-evening source checkpoints, captured run, and shared-core assignments](../sprints/2026-09-17/checkpoint-2300.md)
 - [S-IMPLEMENTATION-2330 — Executable receiving/admission checkpoint and rejected-turn correction](../sprints/2026-09-17/checkpoint-2330.md)
 - [S-IMPLEMENTATION-0045 — September 18 implementation and contributor checkpoint](../sprints/2026-09-18/checkpoint-0045.md)
+- [S-IMPLEMENTATION-0130 — Durable native invocation and repaired runtime history, September 18 01:30](../sprints/2026-09-18/checkpoint-0130.md)
 
 ## W-SOLANA-UTILITY
 
@@ -484,13 +537,15 @@ Compare provider bonds, resource payments and Clutch claim/settlement operations
 
 **Make source freshness portable and actionable**
 
-Status: **backlog** · Owner: Unassigned · Updated: 2026-09-18T00:45:00-04:00
+Status: **done** · Owner: Astra: core_resource_pages · Updated: 2026-09-18T01:45:00-04:00
 
 Report which claims/work items need reinspection when source bytes change, with repository paths configurable on a contributor machine.
 
-**Next:** Agree the portable path override and structured impact report contract before assignment.
+**Next:** Use and maintain the tested hub tools during project handoffs; contributor/runtime selection continues in W-ANDROID-CONTRACT.
 
 **Done when:** The checker identifies unavailable repositories separately from changed files, explains affected records without rewriting their historical hashes, and runs against temporary fixture repositories.
+
+**Evidence so far:** 23 focused tests,41 total hub tests and actual CLI fixtures pass; unavailable evidence is unknown, old hashes remain unchanged, and contextual reference paths are explicit.
 
 **Enables:**
 
@@ -499,3 +554,5 @@ Report which claims/work items need reinspection when source bytes change, with 
 **Evidence / provenance:**
 
 - [S-IMPLEMENTATION-0045 — September 18 implementation and contributor checkpoint](../sprints/2026-09-18/checkpoint-0045.md)
+- [S-IMPLEMENTATION-0130 — Durable native invocation and repaired runtime history, September 18 01:30](../sprints/2026-09-18/checkpoint-0130.md)
+- [S-HUB-TOOLS-0145 — Graph navigation/source-impact tooling and captured tests](../sprints/2026-09-18/hub-tools-0145.md)

@@ -1,0 +1,44 @@
+{
+  "recordedAt": "2026-09-18",
+  "repository": "DreggNet",
+  "gitHead": "7f5159126c09cdb829347a56ef9d52fa29b3db30",
+  "scope": "Contributor lifecycle source review; no execution/deployment. The six table anchors use HEAD-matching source. node_api.rs separately contains pre-existing WIP recorded here, not changed or committed by this pass.",
+  "files": [
+    {
+      "path": "control/src/provider.rs",
+      "sha256": "fa0f1ece3e4001dd2e723ad097ea914186c28535975e6676f4db3944259422b5",
+      "headSha256": "fa0f1ece3e4001dd2e723ad097ea914186c28535975e6676f4db3944259422b5",
+      "matchesHead": true
+    },
+    {
+      "path": "control/src/server.rs",
+      "sha256": "c9a600b91765bb63672b83134fc1222d30b7e804e9648755952555d26ca299b1",
+      "headSha256": "c9a600b91765bb63672b83134fc1222d30b7e804e9648755952555d26ca299b1",
+      "matchesHead": true
+    },
+    {
+      "path": "control/src/ec2.rs",
+      "sha256": "2d51ddd356cb1b968c95c460b1ce2af50b83a22fb424457ad71b22ceb077c1b6",
+      "headSha256": "2d51ddd356cb1b968c95c460b1ce2af50b83a22fb424457ad71b22ceb077c1b6",
+      "matchesHead": true
+    },
+    {
+      "path": "control/src/node_api.rs",
+      "sha256": "7e66f742323746ab4c9a82ea226d4a14591c78d548ff32b1e35dd9d40fdb5c52",
+      "headSha256": "a32979c14e7603c4fd513a027a406fd58e6c3822fca751fbe09680c044eed7f6",
+      "matchesHead": false
+    },
+    {
+      "path": "gateway/src/vats.rs",
+      "sha256": "c828973f07af41d190e7077cfc7811e749b67cb599623ee32d00040c6393f48e",
+      "headSha256": "c828973f07af41d190e7077cfc7811e749b67cb599623ee32d00040c6393f48e",
+      "matchesHead": true
+    },
+    {
+      "path": "gateway/src/main.rs",
+      "sha256": "5dc384d42c6b83bd7e68f59fbf043822fd1aa1d37d4aed0b9cbb86593ab85b17",
+      "headSha256": "5dc384d42c6b83bd7e68f59fbf043822fd1aa1d37d4aed0b9cbb86593ab85b17",
+      "matchesHead": true
+    }
+  ]
+}

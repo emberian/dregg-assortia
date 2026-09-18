@@ -1,0 +1,30 @@
+'Minidregg.Theory.TypedAuthorization.capability_evidence_requires_use' depends on axioms: [propext, Quot.sound]
+'Minidregg.Theory.TypedAuthorization.no_capability_evidence_of_use_refused' depends on axioms: [propext, Quot.sound]
+'Minidregg.Theory.TypedAuthorization.program_edit_capability_cannot_install_policy' depends on axioms: [propext,
+ Quot.sound]
+'Minidregg.Theory.CredentialLineageAdmission.capabilityIdFreshCheck_iff' depends on axioms: [propext, Quot.sound]
+'Minidregg.Theory.CredentialLineageAdmission.existing_capability_not_fresh' depends on axioms: [propext, Quot.sound]
+'Minidregg.Theory.CredentialLineageAdmission.storedLineageCheck_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Theory.CredentialLineageAdmission.storedLineageCheck_refuses_invalid' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Theory.CredentialLineageAdmission.storedLineageCheck_refuses_unanchored' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Compiler.CredentialAuthorityPolicyRegistry.capabilityCheck_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Compiler.CredentialAuthorityPolicyRegistry.domain_capability_requires_stored' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Compiler.CredentialAuthorityPolicyRegistry.native_use_request_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Compiler.CredentialAuthorityPolicyRegistry.source_capability_only_mode' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Compiler.CredentialAuthorityPolicyRegistry.source_capability_only_requires_native_request' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,4 @@
+PASS: public seed 0, exact 32/64-byte outputs, strict verification, deterministic repeat
+PASS: public seed 41, exact 32/64-byte outputs, strict verification, deterministic repeat
+PASS: public seed 255, exact 32/64-byte outputs, strict verification, deterministic repeat
+PASS: invalid seed inputs refused without creating outputs

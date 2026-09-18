@@ -1,0 +1,3 @@
+Assurance/BoundedPageSchemaUpgradeCutover.lean:315:40: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`

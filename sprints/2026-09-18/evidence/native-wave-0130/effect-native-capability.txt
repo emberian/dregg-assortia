@@ -1,0 +1,1 @@
+PASS capability use: canonical persisted authority + native Ed25519 + exact source policy-install AcceptedCellEffect; explicit policy control succeeds, code-only/altered/wrong-kind/copied/revoked/stale/invalid-lineage authority refuses; no durable commit claimed

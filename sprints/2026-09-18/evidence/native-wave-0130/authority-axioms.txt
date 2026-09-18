@@ -1,0 +1,40 @@
+'Minidregg.Theory.CredentialAuthorityState.currentSigningKey_exact' depends on axioms: [propext, Quot.sound]
+'Minidregg.Theory.CredentialAuthorityState.currentSigningKey_no_epoch' depends on axioms: [propext, Quot.sound]
+'Minidregg.Theory.CredentialAuthorityState.currentSigningKey_no_record' depends on axioms: [propext, Quot.sound]
+'Minidregg.Theory.CredentialAuthorityState.currentSigningKey_rejects_mismatch' depends on axioms: [propext, Quot.sound]
+'Minidregg.Compiler.CredentialAuthorityDomain.Snapshot.signingKey_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Compiler.CredentialAuthorityDomain.preparedSigningKey_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Compiler.CredentialAuthorityDomain.PreparedPolicyAndNullifier.head_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Compiler.CredentialAuthorityDomain.PreparedPolicyAndNullifier.nullifier_consumed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Compiler.CredentialAuthorityDomain.PreparedPolicyAndNullifier.retired_address_absent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Compiler.CredentialAuthorityDomain.preparePolicyAndNullifier_used_refused' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Compiler.CredentialAuthorityPageMaterializer.decodeState_rejects_v2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Compiler.CredentialAuthorityStateCodec.decode_rejects_v1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Compiler.BoundedPageSchemaUpgrade.nextWireVersionByte_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Compiler.BoundedPageSchemaUpgrade.decodeNext_canonical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Compiler.BoundedPageSchemaUpgrade.new_decoder_rejects_old' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Compiler.BoundedPageSchemaUpgrade.old_decoder_rejects_new' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

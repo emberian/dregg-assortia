@@ -6,17 +6,19 @@ DREGG is a programmable resource world. People and agents create and operate res
 
 ## The next product work package
 
-Ember gave **an Android app embedding a DREGG node, with specified system and user-interface integration**, as the kind of feature Wisper could own. We are tracing existing Android work and the actual runtime interfaces before writing that handoff. Android is the current planning example; its exact feature scope and release timing are not yet settled.
+The concrete proposal is **[persistent DREGG resource hosting](resource-host-lifecycle.md)**: a substantial platform subsystem covering provider reconciliation, native-host recovery, supervision, custody, owner commands, operation status and resumable events. Wisper can own its design and implementation. The brief names current source interfaces, missing exports, upstream owners and crash/restart acceptance scenarios.
+
+Ember gave an Android app with an embedded node and system/UI integration as an example, then suggested DreggNet/cloud as another fit for Wisper's broad platform experience. Cloud hosting is the current assistant recommendation, not an assignment. Its receiving runtime and exact contract still need to be frozen together. The [cloud review](../research/cloud-host-2026-09-18.md) and [mobile inventory](../research/mobile-2026-09-18.md) explain the inspected starting points.
 
 The handoff must contain:
 
 - The user journey and visible behavior the contributor owns.
 - Exact interfaces for node lifecycle, identity/authority, commands, state/events, persistence and errors; which exist and which have named upstream owners.
-- Concrete Android system/UI integration responsibilities, with permission and lifecycle behavior specified.
+- Concrete cloud or Android system/UI responsibilities, with identity, permission and lifecycle behavior specified.
 - Repository/file ownership, build artifacts, a runnable integration harness and compatibility/version rules.
 - Acceptance scenarios covering useful operation, refusal, disconnection, restart/retry and interaction with another participant.
 
-The runtime and product owners must agree on that boundary. A contributor should not have to reconstruct it from swarm chat or guess which similarly named kernel path is intended. Follow [W-ANDROID-CONTRACT](../work/records.md#w-android-contract) for its current owner and next step.
+The runtime and product owners must agree on that boundary. A contributor should not have to reconstruct it from swarm chat or guess which similarly named kernel path is intended. Follow [W-ANDROID-CONTRACT](../work/records.md#w-android-contract) for its current owner and next step; the stable ID retains the original example while the feature comparison now includes cloud hosting.
 
 Graph browsing and project-index maintenance are internal agent work. They are not the feature being offered to Wisper.
 

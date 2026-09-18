@@ -1,0 +1,1708 @@
+{
+  "schema_version": 1,
+  "captured_at_utc": "2026-09-18T05:26:50.449201+00:00",
+  "repository": "/Users/ember/dev/minidregg",
+  "collector": "/root/core_authority_pages",
+  "scope": "Frozen current canonical signing-key, initial-policy, native capability, source profile and lower receiving wave before ParentLink/request-revision migration.",
+  "validation": {
+    "method": "Compared only owner-named frozen current source bytes to captured SHA256; read owner check records and named logs. No Git, compile, native execution, source mutation, or whole-tree check was performed by collector.",
+    "source_count": 53,
+    "all_source_hashes_match": true,
+    "hash_mismatches": [],
+    "duplicate_paths": [],
+    "category_counts": {
+      "checked": 47,
+      "documentary_caveat": 2,
+      "source_only_wip": 4
+    },
+    "owner_counts": {
+      "authority": 11,
+      "proof": 5,
+      "resource": 3,
+      "native": 15,
+      "effect": 7,
+      "shell": 7,
+      "installer": 2,
+      "localfirst": 2,
+      "carrier": 1
+    },
+    "named_log_missing_or_lean_errors": [],
+    "current_olean_or_binary_hashes_revalidated": false,
+    "empty_log_meaning": "An empty log is recorded evidence only; exit 0 comes from the owner manifest or explicit owner handoff, not inference from emptiness."
+  },
+  "files": [
+    {
+      "path": "Theory/CredentialAuthorityState.lean",
+      "owner": "authority",
+      "frozen": true,
+      "expected_sha256": "a712de2e8f5624103e34cb90326a1a5bb2eaf30cdc7af1370f60b37232f2d733",
+      "observed_sha256": "a712de2e8f5624103e34cb90326a1a5bb2eaf30cdc7af1370f60b37232f2d733",
+      "hash_matches": true,
+      "category": "checked",
+      "check_ids": [
+        "authority-1"
+      ]
+    },
+    {
+      "path": "Theory/CredentialAuthorityFamily.lean",
+      "owner": "authority",
+      "frozen": true,
+      "expected_sha256": "7faa5cc66e58c19085e76ecb87c2d65f3923096eb465d3573a9ffa056e43b614",
+      "observed_sha256": "7faa5cc66e58c19085e76ecb87c2d65f3923096eb465d3573a9ffa056e43b614",
+      "hash_matches": true,
+      "category": "checked",
+      "check_ids": [
+        "authority-2"
+      ]
+    },
+    {
+      "path": "Compiler/CredentialAuthorityEntryCodec.lean",
+      "owner": "authority",
+      "frozen": true,
+      "expected_sha256": "ea32363ce1917207ac4320efd5c0fc749532455b57f7c7b6bb505a19be9408ca",
+      "observed_sha256": "ea32363ce1917207ac4320efd5c0fc749532455b57f7c7b6bb505a19be9408ca",
+      "hash_matches": true,
+      "category": "checked",
+      "check_ids": [
+        "authority-3"
+      ]
+    },
+    {
+      "path": "Compiler/CredentialAuthorityPageMaterializer.lean",
+      "owner": "authority",
+      "frozen": true,
+      "expected_sha256": "9c91b17f1e64d7a42adc9707ee4a9b9f326c43be363c05037f22491f3ba49d45",
+      "observed_sha256": "9c91b17f1e64d7a42adc9707ee4a9b9f326c43be363c05037f22491f3ba49d45",
+      "hash_matches": true,
+      "category": "checked",
+      "check_ids": [
+        "authority-4"
+      ]
+    },
+    {
+      "path": "Compiler/CredentialAuthorityStateCodec.lean",
+      "owner": "authority",
+      "frozen": true,
+      "expected_sha256": "bb5aafd7af17673b20401f64b2b4c0beb14317eab666aedb0ad500d38355eae5",
+      "observed_sha256": "bb5aafd7af17673b20401f64b2b4c0beb14317eab666aedb0ad500d38355eae5",
+      "hash_matches": true,
+      "category": "checked",
+      "check_ids": [
+        "authority-5"
+      ]
+    },
+    {
+      "path": "Compiler/CredentialAuthorityDomain.lean",
+      "owner": "authority",
+      "frozen": true,
+      "expected_sha256": "bbe13dbd42d186423658448e6c5b6bda522e4086869eb6f784a928bca251317f",
+      "observed_sha256": "bbe13dbd42d186423658448e6c5b6bda522e4086869eb6f784a928bca251317f",
+      "hash_matches": true,
+      "category": "checked",
+      "check_ids": [
+        "authority-6"
+      ]
+    },
+    {
+      "path": "Compiler/CredentialAuthorityDomainReceiver.lean",
+      "owner": "authority",
+      "frozen": true,
+      "expected_sha256": "8c0ae486c461ae31facee11ae1c42a8bf94a1a9fa6f95f7dc7316f9710784441",
+      "observed_sha256": "8c0ae486c461ae31facee11ae1c42a8bf94a1a9fa6f95f7dc7316f9710784441",
+      "hash_matches": true,
+      "category": "checked",
+      "check_ids": [
+        "authority-7"
+      ]
+    },
+    {
+      "path": "Compiler/BoundedPageExtensionCatalog.lean",
+      "owner": "authority",
+      "frozen": true,
+      "expected_sha256": "22bb9bbbde9c1d8d4d10c7a8075830808d78d4360ebd019bde0f2f3901f43208",
+      "observed_sha256": "22bb9bbbde9c1d8d4d10c7a8075830808d78d4360ebd019bde0f2f3901f43208",
+      "hash_matches": true,
+      "category": "checked",
+      "check_ids": [
+        "authority-8"
+      ]
+    },
+    {
+      "path": "Compiler/BoundedPageSchemaUpgrade.lean",
+      "owner": "authority",
+      "frozen": true,
+      "expected_sha256": "91df296e08d1ff361c3bea3f31201d3bc00d79bae96e2a1fe1daff4c4b7fcf86",
+      "observed_sha256": "91df296e08d1ff361c3bea3f31201d3bc00d79bae96e2a1fe1daff4c4b7fcf86",
+      "hash_matches": true,
+      "category": "checked",
+      "check_ids": [
+        "authority-9"
+      ]
+    },
+    {
+      "path": "Assurance/BoundedPageSchemaUpgradeCutover.lean",
+      "owner": "authority",
+      "frozen": true,
+      "expected_sha256": "80aa9ff1f6ab036dd788b48625103cc2ea49c9b3128d4176452df62c8c6cb200",
+      "observed_sha256": "80aa9ff1f6ab036dd788b48625103cc2ea49c9b3128d4176452df62c8c6cb200",
+      "hash_matches": true,
+      "category": "documentary_caveat",
+      "check_ids": [
+        "authority-10"
+      ],
+      "note": "Catalogue-generation clarification in header was added after successful proof-body check; proof/executable source unchanged."
+    },
+    {
+      "path": "Compiler/CredentialAuthorityPageProbe.lean",
+      "owner": "authority",
+      "frozen": true,
+      "expected_sha256": "bbcd0164ef8fd43a9aa6b2c192f115e478186a453ba9dde42df42ba36ee147cd",
+      "observed_sha256": "bbcd0164ef8fd43a9aa6b2c192f115e478186a453ba9dde42df42ba36ee147cd",
+      "hash_matches": true,
+      "category": "source_only_wip",
+      "check_ids": [],
+      "note": "output label only changed v2\u2192v3; standalone probe not rerun in this key wave"
+    },
+    {
+      "path": "Theory/ResourceBirth.lean",
+      "owner": "proof",
+      "frozen": true,
+      "expected_sha256": "e76dd0d528c1d7cfa53c67c2f4a136b0074247ccf72aa47674b5ef17336a21ca",
+      "observed_sha256": "e76dd0d528c1d7cfa53c67c2f4a136b0074247ccf72aa47674b5ef17336a21ca",
+      "hash_matches": true,
+      "category": "checked",
+      "check_ids": [
+        "proof-1"
+      ]
+    },
+    {
+      "path": "Theory/ResourceBirthAuthority.lean",
+      "owner": "proof",
+      "frozen": true,
+      "expected_sha256": "3ecb73599765599ed29e2bd1910c6829b4321ac5bdd08616dbda04c55a4d1b06",
+      "observed_sha256": "3ecb73599765599ed29e2bd1910c6829b4321ac5bdd08616dbda04c55a4d1b06",
+      "hash_matches": true,
+      "category": "checked",
+      "check_ids": [
+        "proof-2"
+      ]
+    },
+    {
+      "path": "Compiler/ResourceBirthCodec.lean",
+      "owner": "proof",
+      "frozen": true,
+      "expected_sha256": "7156a7c81aa0f5674d9183aaf48abb6d93c8c13b6862b28aafe3215c0e9415fd",
+      "observed_sha256": "7156a7c81aa0f5674d9183aaf48abb6d93c8c13b6862b28aafe3215c0e9415fd",
+      "hash_matches": true,
+      "category": "checked",
+      "check_ids": [
+        "proof-3"
+      ]
+    },
+    {
+      "path": "Kernel/ResourceBirthController.lean",
+      "owner": "proof",
+      "frozen": true,
+      "expected_sha256": "43e534a31bc0d0e3597dbe0b7b9b09524224523ada0b915c06e543525c7d00df",
+      "observed_sha256": "43e534a31bc0d0e3597dbe0b7b9b09524224523ada0b915c06e543525c7d00df",
+      "hash_matches": true,
+      "category": "checked",
+      "check_ids": [
+        "proof-4"
+      ]
+    },
+    {
+      "path": "Compiler/CredentialAuthorityReplay.lean",
+      "owner": "proof",
+      "frozen": true,
+      "expected_sha256": "8b947760fd81512f79e6a3f0034d3c40650e1c5a1e3ae3f7ee68929bacc169b5",
+      "observed_sha256": "8b947760fd81512f79e6a3f0034d3c40650e1c5a1e3ae3f7ee68929bacc169b5",
+      "hash_matches": true,
+      "category": "checked",
+      "check_ids": [
+        "proof-5"
+      ]
+    },
+    {
+      "path": "Compiler/PolicySourceCell.lean",
+      "owner": "resource",
+      "frozen": true,
+      "expected_sha256": "a8f3ffadc373c1516ff6b8c536016ac0671d4dac1cdeeb65cad392f87ebd2513",
+      "observed_sha256": "a8f3ffadc373c1516ff6b8c536016ac0671d4dac1cdeeb65cad392f87ebd2513",
+      "hash_matches": true,
+      "category": "checked",
+      "check_ids": [
+        "resource-1"
+      ]
+    },
+    {
+      "path": "Compiler/CanonicalCellRegistry.lean",
+      "owner": "resource",
+      "frozen": true,
+      "expected_sha256": "6b54d5bd8c1ebc701cb41b692da55962c8c9f53067cc2b78a853ca3b7f00ea97",
+      "observed_sha256": "6b54d5bd8c1ebc701cb41b692da55962c8c9f53067cc2b78a853ca3b7f00ea97",
+      "hash_matches": true,
+      "category": "checked",
+      "check_ids": [
+        "resource-2"
+      ]
+    },
+    {
+      "path": "scripts/probe-policy-source-cell.lean",
+      "owner": "resource",
+      "frozen": true,
+      "expected_sha256": "65b413427d645c2f6d3cf72b33c6579af1d498fa7124ae4029649d322517c3b2",
+      "observed_sha256": "65b413427d645c2f6d3cf72b33c6579af1d498fa7124ae4029649d322517c3b2",
+      "hash_matches": true,
+      "category": "checked",
+      "check_ids": [
+        "resource-3"
+      ]
+    },
+    {
+      "path": "Theory/CredentialSigningKey.lean",
+      "owner": "native",
+      "frozen": true,
+      "expected_sha256": "b043b8a27ca1258075ec9024c3fd4fd7512ce3aa50ee3111584e95d3ded613e9",
+      "observed_sha256": "b043b8a27ca1258075ec9024c3fd4fd7512ce3aa50ee3111584e95d3ded613e9",
+      "hash_matches": true,
+      "category": "checked",
+      "check_ids": [
+        "native-key"
+      ]
+    },
+    {
+      "path": "Compiler/CredentialSigningKeyCodec.lean",
+      "owner": "native",
+      "frozen": true,
+      "expected_sha256": "2402177bc3cb2fdcbc885ad4d57452225e37910d839aaeb58cd11d2eef7b6105",
+      "observed_sha256": "2402177bc3cb2fdcbc885ad4d57452225e37910d839aaeb58cd11d2eef7b6105",
+      "hash_matches": true,
+      "category": "checked",
+      "check_ids": [
+        "native-key"
+      ]
+    },
+    {
+      "path": "Kernel/CredentialSignedEnvelopeController.lean",
+      "owner": "native",
+      "frozen": true,
+      "expected_sha256": "312eb7dcf216d9626c6058d17753c83a2c20744ea8ce4373a83989c96e267cad",
+      "observed_sha256": "312eb7dcf216d9626c6058d17753c83a2c20744ea8ce4373a83989c96e267cad",
+      "hash_matches": true,
+      "category": "checked",
+      "check_ids": [
+        "native-envelope",
+        "native-signature-probe"
+      ]
+    },
+    {
+      "path": "Compiler/CredentialSignatureIO.lean",
+      "owner": "native",
+      "frozen": true,
+      "expected_sha256": "77bdcae55d4c339104c3ed339a136f23270feb5a27fb240fd0d27ba0290c0dfc",
+      "observed_sha256": "77bdcae55d4c339104c3ed339a136f23270feb5a27fb240fd0d27ba0290c0dfc",
+      "hash_matches": true,
+      "category": "checked",
+      "check_ids": [
+        "native-io",
+        "native-signature-probe"
+      ]
+    },
+    {
+      "path": "Compiler/CredentialSignatureAdmission.lean",
+      "owner": "native",
+      "frozen": true,
+      "expected_sha256": "bcdbcdce9b0a5db9a199ddd513ee9e6d932027df78717b69ff4088764e98ddf9",
+      "observed_sha256": "bcdbcdce9b0a5db9a199ddd513ee9e6d932027df78717b69ff4088764e98ddf9",
+      "hash_matches": true,
+      "category": "checked",
+      "check_ids": [
+        "native-admission",
+        "native-signature-probe"
+      ]
+    },
+    {
+      "path": "Assurance/CredentialSignedEnvelopeEndpoint.lean",
+      "owner": "native",
+      "frozen": true,
+      "expected_sha256": "2da87910621c1e00f0fcf1fc4aa34c03b64ff15e9b7e32d331581d6b34d841c5",
+      "observed_sha256": "2da87910621c1e00f0fcf1fc4aa34c03b64ff15e9b7e32d331581d6b34d841c5",
+      "hash_matches": true,
+      "category": "source_only_wip",
+      "check_ids": [],
+      "note": "Frozen mandatory PEmpty capability-use fixture migration; legacy Assurance dependency closure not rechecked."
+    },
+    {
+      "path": "scripts/probe-credential-signature.lean",
+      "owner": "native",
+      "frozen": true,
+      "expected_sha256": "84a3e5f551b0a14bc52d39c5820556e6acc6a055cf2e31bf02a1b14ac7285999",
+      "observed_sha256": "84a3e5f551b0a14bc52d39c5820556e6acc6a055cf2e31bf02a1b14ac7285999",
+      "hash_matches": true,
+      "category": "checked",
+      "check_ids": [
+        "native-signature-probe"
+      ]
+    },
+    {
+      "path": "native/credential-signature-verifier/Cargo.toml",
+      "owner": "native",
+      "frozen": true,
+      "expected_sha256": "5eb455a099a8397142647fd6f87246e2bd40102b79dceed9806e6d56b3be12d6",
+      "observed_sha256": "5eb455a099a8397142647fd6f87246e2bd40102b79dceed9806e6d56b3be12d6",
+      "hash_matches": true,
+      "category": "checked",
+      "check_ids": [
+        "native-release-build",
+        "native-nextest"
+      ]
+    },
+    {
+      "path": "native/credential-signature-verifier/Cargo.lock",
+      "owner": "native",
+      "frozen": true,
+      "expected_sha256": "8ce42ad1b76f2b0ea1a0d852035fa9e406a3060c28da912558893d75ed3c1582",
+      "observed_sha256": "8ce42ad1b76f2b0ea1a0d852035fa9e406a3060c28da912558893d75ed3c1582",
+      "hash_matches": true,
+      "category": "checked",
+      "check_ids": [
+        "native-release-build",
+        "native-nextest"
+      ]
+    },
+    {
+      "path": "native/credential-signature-verifier/README.md",
+      "owner": "native",
+      "frozen": true,
+      "expected_sha256": "789113b02af2d0c468a4e1acb9cd7ed3f2d8aa0036a53b219e0de540f5eec214",
+      "observed_sha256": "789113b02af2d0c468a4e1acb9cd7ed3f2d8aa0036a53b219e0de540f5eec214",
+      "hash_matches": true,
+      "category": "documentary_caveat",
+      "check_ids": [],
+      "note": "Frozen documentation for checked native helper; prose is not itself a compile or native execution result."
+    },
+    {
+      "path": "native/credential-signature-verifier/src/main.rs",
+      "owner": "native",
+      "frozen": true,
+      "expected_sha256": "7df0c7c7b2f2c57a488a8d1ea85b9c6cf53dc090b3ed6eb02deb2a404237bc3e",
+      "observed_sha256": "7df0c7c7b2f2c57a488a8d1ea85b9c6cf53dc090b3ed6eb02deb2a404237bc3e",
+      "hash_matches": true,
+      "category": "checked",
+      "check_ids": [
+        "native-release-build",
+        "native-nextest"
+      ]
+    },
+    {
+      "path": "native/credential-signature-verifier/tests/protocol.rs",
+      "owner": "native",
+      "frozen": true,
+      "expected_sha256": "9b0420a67775d436d186da37f317a87e847bff8918f29d1b2566ed5f12601a70",
+      "observed_sha256": "9b0420a67775d436d186da37f317a87e847bff8918f29d1b2566ed5f12601a70",
+      "hash_matches": true,
+      "category": "checked",
+      "check_ids": [
+        "native-nextest"
+      ]
+    },
+    {
+      "path": "native/credential-signature-verifier/examples/sign-probe.rs",
+      "owner": "native",
+      "frozen": true,
+      "expected_sha256": "a596ecddb54ea9d7009ac5a1f6e8150adb8ec33488a3079f2225ef2136e0a80d",
+      "observed_sha256": "a596ecddb54ea9d7009ac5a1f6e8150adb8ec33488a3079f2225ef2136e0a80d",
+      "hash_matches": true,
+      "category": "checked",
+      "check_ids": [
+        "native-test-signer"
+      ]
+    },
+    {
+      "path": "Kernel/DurableReceiver.lean",
+      "owner": "native",
+      "frozen": true,
+      "expected_sha256": "f4eade83c8792c0c4b631174485ead84451d680c91cf22aa6415ce3bfe1ebee7",
+      "observed_sha256": "f4eade83c8792c0c4b631174485ead84451d680c91cf22aa6415ce3bfe1ebee7",
+      "hash_matches": true,
+      "category": "checked",
+      "check_ids": [
+        "native-durable-bytes"
+      ]
+    },
+    {
+      "path": "scripts/probe-canonical-cell-registry.lean",
+      "owner": "native",
+      "frozen": true,
+      "expected_sha256": "57d3ebd78628757b142233e8317133dec6bbd305c9b3bffeb894a1c5e69b8a6b",
+      "observed_sha256": "57d3ebd78628757b142233e8317133dec6bbd305c9b3bffeb894a1c5e69b8a6b",
+      "hash_matches": true,
+      "category": "source_only_wip",
+      "check_ids": [],
+      "note": "Frozen output-label-only edits, not rerun after labels; old eight-kind probe coverage is not promoted to new policySource-kind coverage."
+    },
+    {
+      "path": "Theory/TypedAuthorization.lean",
+      "owner": "effect",
+      "frozen": true,
+      "expected_sha256": "276537e3ecf0a115a7ad05e29a00a19b3deb374dc3e0afe8945bbf4e44c61538",
+      "observed_sha256": "276537e3ecf0a115a7ad05e29a00a19b3deb374dc3e0afe8945bbf4e44c61538",
+      "hash_matches": true,
+      "category": "checked",
+      "check_ids": [
+        "effect-1"
+      ]
+    },
+    {
+      "path": "Theory/TypedAuthorizationWitness.lean",
+      "owner": "effect",
+      "frozen": true,
+      "expected_sha256": "5706117a4c244ed4b87f4f8c0199cd5aafc58ef5645b0afacf999e47f62614ce",
+      "observed_sha256": "5706117a4c244ed4b87f4f8c0199cd5aafc58ef5645b0afacf999e47f62614ce",
+      "hash_matches": true,
+      "category": "checked",
+      "check_ids": [
+        "effect-2"
+      ]
+    },
+    {
+      "path": "Theory/AuthorizationDeclaration.lean",
+      "owner": "effect",
+      "frozen": true,
+      "expected_sha256": "dfd887d10604cf642ae71bac4973a79b5cbc12403a09350c7002672ad3e9c0b9",
+      "observed_sha256": "dfd887d10604cf642ae71bac4973a79b5cbc12403a09350c7002672ad3e9c0b9",
+      "hash_matches": true,
+      "category": "checked",
+      "check_ids": [
+        "effect-3"
+      ]
+    },
+    {
+      "path": "Theory/CredentialLineageAdmission.lean",
+      "owner": "effect",
+      "frozen": true,
+      "expected_sha256": "d9eeab7f064d0101fa2027782cdb38c64daf1de18b4ad91bff31754b80fd9fd5",
+      "observed_sha256": "d9eeab7f064d0101fa2027782cdb38c64daf1de18b4ad91bff31754b80fd9fd5",
+      "hash_matches": true,
+      "category": "checked",
+      "check_ids": [
+        "effect-4"
+      ]
+    },
+    {
+      "path": "Compiler/CredentialAuthorityPolicyRegistry.lean",
+      "owner": "effect",
+      "frozen": true,
+      "expected_sha256": "d05d098099208893502e23cd316eff8457132e531cc8a7cb0c8ab58108431975",
+      "observed_sha256": "d05d098099208893502e23cd316eff8457132e531cc8a7cb0c8ab58108431975",
+      "hash_matches": true,
+      "category": "checked",
+      "check_ids": [
+        "effect-5"
+      ]
+    },
+    {
+      "path": "scripts/probe-credential-capability-use.lean",
+      "owner": "effect",
+      "frozen": true,
+      "expected_sha256": "5955258a8fb67d3820f23802a501a7690c49dd2969f132f0d6c4f56a1ba5853b",
+      "observed_sha256": "5955258a8fb67d3820f23802a501a7690c49dd2969f132f0d6c4f56a1ba5853b",
+      "hash_matches": true,
+      "category": "checked",
+      "check_ids": [
+        "effect-native-capability"
+      ]
+    },
+    {
+      "path": "Assurance/DeployedCredentialLifecycle.lean",
+      "owner": "effect",
+      "frozen": true,
+      "expected_sha256": "c7cb5f1cbf9649a641de531fb05e3b27a2205c6f73f402da27731748718668b3",
+      "observed_sha256": "c7cb5f1cbf9649a641de531fb05e3b27a2205c6f73f402da27731748718668b3",
+      "hash_matches": true,
+      "category": "source_only_wip",
+      "check_ids": [],
+      "note": "Only explicit permissive fixture Portal fields and one positional capability constructor migrated. Not rechecked by this lane; shared Effects/lineage wave and central affected closure remain."
+    },
+    {
+      "path": "Compiler/PredOrderGadget.lean",
+      "owner": "shell",
+      "frozen": true,
+      "expected_sha256": "8ec15b1791ff97f09a46c8f6fd134c45b33e84d3ae659ee491830328043f57fc",
+      "observed_sha256": "8ec15b1791ff97f09a46c8f6fd134c45b33e84d3ae659ee491830328043f57fc",
+      "hash_matches": true,
+      "category": "checked",
+      "check_ids": [
+        "shell-1"
+      ]
+    },
+    {
+      "path": "Compiler/PredOrderGadgetWitness.lean",
+      "owner": "shell",
+      "frozen": true,
+      "expected_sha256": "9e6f4ba5f812f96819f72d3279ab8a3678e0d5dcdc5055d2ba636054696cd890",
+      "observed_sha256": "9e6f4ba5f812f96819f72d3279ab8a3678e0d5dcdc5055d2ba636054696cd890",
+      "hash_matches": true,
+      "category": "checked",
+      "check_ids": [
+        "shell-2"
+      ]
+    },
+    {
+      "path": "Compiler/PredCompile.lean",
+      "owner": "shell",
+      "frozen": true,
+      "expected_sha256": "e4ec961f57ae91f28d60ca5ef1ba5849d67d88292d80e150cde47a096f78cfde",
+      "observed_sha256": "e4ec961f57ae91f28d60ca5ef1ba5849d67d88292d80e150cde47a096f78cfde",
+      "hash_matches": true,
+      "category": "checked",
+      "check_ids": [
+        "shell-3"
+      ]
+    },
+    {
+      "path": "Compiler/PredCompileOrderWitness.lean",
+      "owner": "shell",
+      "frozen": true,
+      "expected_sha256": "5210e69501ea07a5b72c6fe4c88eb7e135a0089edbaa167d99c3261bf7f0ca68",
+      "observed_sha256": "5210e69501ea07a5b72c6fe4c88eb7e135a0089edbaa167d99c3261bf7f0ca68",
+      "hash_matches": true,
+      "category": "checked",
+      "check_ids": [
+        "shell-4"
+      ]
+    },
+    {
+      "path": "Compiler/CanonicalPolicyAdmission.lean",
+      "owner": "shell",
+      "frozen": true,
+      "expected_sha256": "3766066d7bc68720ad3ac607adec7142975f34391c7fd15afe46a931f0f9c8f0",
+      "observed_sha256": "3766066d7bc68720ad3ac607adec7142975f34391c7fd15afe46a931f0f9c8f0",
+      "hash_matches": true,
+      "category": "checked",
+      "check_ids": [
+        "shell-5"
+      ]
+    },
+    {
+      "path": "Compiler/BoundedQuantifiedPolicyAdmission.lean",
+      "owner": "shell",
+      "frozen": true,
+      "expected_sha256": "39c9b57842ac6bcde717d25e25d8b4f6312fc670c877a82df8311194e5bf1210",
+      "observed_sha256": "39c9b57842ac6bcde717d25e25d8b4f6312fc670c877a82df8311194e5bf1210",
+      "hash_matches": true,
+      "category": "checked",
+      "check_ids": [
+        "shell-6"
+      ]
+    },
+    {
+      "path": "Compiler/CanonicalRuntimeProfile.lean",
+      "owner": "shell",
+      "frozen": true,
+      "expected_sha256": "6546753b76debcd605eae6b0958008c5c57441c1f47f213d293927583156f967",
+      "observed_sha256": "6546753b76debcd605eae6b0958008c5c57441c1f47f213d293927583156f967",
+      "hash_matches": true,
+      "category": "checked",
+      "check_ids": [
+        "shell-7"
+      ]
+    },
+    {
+      "path": "Kernel/PolicyInstallController.lean",
+      "owner": "installer",
+      "frozen": true,
+      "expected_sha256": "6e2062ae0a32672426d61165d289230443cf6cb01c4df6d86d8031ab5660a7af",
+      "observed_sha256": "6e2062ae0a32672426d61165d289230443cf6cb01c4df6d86d8031ab5660a7af",
+      "hash_matches": true,
+      "category": "checked",
+      "check_ids": [
+        "installer-controller",
+        "effect-native-capability"
+      ]
+    },
+    {
+      "path": "scripts/probe-policy-source-v2.lean",
+      "owner": "installer",
+      "frozen": true,
+      "expected_sha256": "d90b6434f7371d9dcdd69a317857a047ce145c438dfc114a6ffba860baaa2878",
+      "observed_sha256": "d90b6434f7371d9dcdd69a317857a047ce145c438dfc114a6ffba860baaa2878",
+      "hash_matches": true,
+      "category": "checked",
+      "check_ids": [
+        "installer-preparation-probe"
+      ]
+    },
+    {
+      "path": "Kernel/DeclaredResourceController.lean",
+      "owner": "localfirst",
+      "frozen": true,
+      "expected_sha256": "38d062e33f55295179ebdd1b208ba42c06decc343f1cf4aaff2c989f372cffeb",
+      "observed_sha256": "38d062e33f55295179ebdd1b208ba42c06decc343f1cf4aaff2c989f372cffeb",
+      "hash_matches": true,
+      "category": "checked",
+      "check_ids": [
+        "localfirst-controller",
+        "localfirst-native-invocation"
+      ]
+    },
+    {
+      "path": "scripts/probe-declared-resource.lean",
+      "owner": "localfirst",
+      "frozen": true,
+      "expected_sha256": "ebea6582fe071180cd7d448fb2345eefcedc51d5f5028364b16c6fb7eaffb7a5",
+      "observed_sha256": "ebea6582fe071180cd7d448fb2345eefcedc51d5f5028364b16c6fb7eaffb7a5",
+      "hash_matches": true,
+      "category": "checked",
+      "check_ids": [
+        "localfirst-probe-source",
+        "localfirst-native-invocation"
+      ]
+    },
+    {
+      "path": "Compiler/DeclaredEffectPageMaterializer.lean",
+      "owner": "carrier",
+      "frozen": true,
+      "expected_sha256": "e6c3c3c7b938e3f07d9023f2c537c97a51a14094cd2dde21224b080be83fe6b1",
+      "observed_sha256": "e6c3c3c7b938e3f07d9023f2c537c97a51a14094cd2dde21224b080be83fe6b1",
+      "hash_matches": true,
+      "category": "checked",
+      "check_ids": [
+        "carrier-page-reflection"
+      ],
+      "note": "Explicit frozen receiving dependency supplied by root; general exact page execution reflection, existing AcceptedDelta migrated."
+    }
+  ],
+  "checkpoint_paths": {
+    "checked": [
+      "Theory/CredentialAuthorityState.lean",
+      "Theory/CredentialAuthorityFamily.lean",
+      "Compiler/CredentialAuthorityEntryCodec.lean",
+      "Compiler/CredentialAuthorityPageMaterializer.lean",
+      "Compiler/CredentialAuthorityStateCodec.lean",
+      "Compiler/CredentialAuthorityDomain.lean",
+      "Compiler/CredentialAuthorityDomainReceiver.lean",
+      "Compiler/BoundedPageExtensionCatalog.lean",
+      "Compiler/BoundedPageSchemaUpgrade.lean",
+      "Theory/ResourceBirth.lean",
+      "Theory/ResourceBirthAuthority.lean",
+      "Compiler/ResourceBirthCodec.lean",
+      "Kernel/ResourceBirthController.lean",
+      "Compiler/CredentialAuthorityReplay.lean",
+      "Compiler/PolicySourceCell.lean",
+      "Compiler/CanonicalCellRegistry.lean",
+      "scripts/probe-policy-source-cell.lean",
+      "Theory/CredentialSigningKey.lean",
+      "Compiler/CredentialSigningKeyCodec.lean",
+      "Kernel/CredentialSignedEnvelopeController.lean",
+      "Compiler/CredentialSignatureIO.lean",
+      "Compiler/CredentialSignatureAdmission.lean",
+      "scripts/probe-credential-signature.lean",
+      "native/credential-signature-verifier/Cargo.toml",
+      "native/credential-signature-verifier/Cargo.lock",
+      "native/credential-signature-verifier/src/main.rs",
+      "native/credential-signature-verifier/tests/protocol.rs",
+      "native/credential-signature-verifier/examples/sign-probe.rs",
+      "Kernel/DurableReceiver.lean",
+      "Theory/TypedAuthorization.lean",
+      "Theory/TypedAuthorizationWitness.lean",
+      "Theory/AuthorizationDeclaration.lean",
+      "Theory/CredentialLineageAdmission.lean",
+      "Compiler/CredentialAuthorityPolicyRegistry.lean",
+      "scripts/probe-credential-capability-use.lean",
+      "Compiler/PredOrderGadget.lean",
+      "Compiler/PredOrderGadgetWitness.lean",
+      "Compiler/PredCompile.lean",
+      "Compiler/PredCompileOrderWitness.lean",
+      "Compiler/CanonicalPolicyAdmission.lean",
+      "Compiler/BoundedQuantifiedPolicyAdmission.lean",
+      "Compiler/CanonicalRuntimeProfile.lean",
+      "Kernel/PolicyInstallController.lean",
+      "scripts/probe-policy-source-v2.lean",
+      "Kernel/DeclaredResourceController.lean",
+      "scripts/probe-declared-resource.lean",
+      "Compiler/DeclaredEffectPageMaterializer.lean"
+    ],
+    "documentary_caveat": [
+      "Assurance/BoundedPageSchemaUpgradeCutover.lean",
+      "native/credential-signature-verifier/README.md"
+    ],
+    "source_only_wip": [
+      "Compiler/CredentialAuthorityPageProbe.lean",
+      "Assurance/CredentialSignedEnvelopeEndpoint.lean",
+      "scripts/probe-canonical-cell-registry.lean",
+      "Assurance/DeployedCredentialLifecycle.lean"
+    ]
+  },
+  "checks": [
+    {
+      "id": "authority-1",
+      "owner": "authority",
+      "kind": "lean_source_check",
+      "scope": "targeted Lean exit0, olean emitted",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+      "log": {
+        "path": "/tmp/dregg-key-CredentialAuthorityState.log",
+        "exists": true,
+        "sha256": "50d9941397e6b39aa9a50b68d69201e5264e075899fa9a94393cc990209ed337",
+        "bytes": 166,
+        "pass_line_count": 0,
+        "lean_error_lines": []
+      },
+      "source_current_exact_except_documented_delta": true
+    },
+    {
+      "id": "authority-2",
+      "owner": "authority",
+      "kind": "lean_source_check",
+      "scope": "targeted Lean exit0, olean emitted",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+      "log": {
+        "path": "/tmp/dregg-key-CredentialAuthorityFamily.log",
+        "exists": true,
+        "sha256": "bd80bfa36924ea5b9e9d185a06a7ed56645d0fc57e62a0e4b792d04057faab61",
+        "bytes": 169,
+        "pass_line_count": 0,
+        "lean_error_lines": []
+      },
+      "source_current_exact_except_documented_delta": true
+    },
+    {
+      "id": "authority-3",
+      "owner": "authority",
+      "kind": "lean_source_check",
+      "scope": "targeted Lean exit0, olean emitted",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+      "log": {
+        "path": "/tmp/dregg-foundation-Compiler-CredentialAuthorityEntryCodec.log",
+        "exists": true,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0,
+        "pass_line_count": 0,
+        "lean_error_lines": []
+      },
+      "source_current_exact_except_documented_delta": true
+    },
+    {
+      "id": "authority-4",
+      "owner": "authority",
+      "kind": "lean_source_check",
+      "scope": "targeted Lean exit0, olean emitted",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+      "log": {
+        "path": "/tmp/dregg-foundation-Compiler-CredentialAuthorityPageMaterializer.log",
+        "exists": true,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0,
+        "pass_line_count": 0,
+        "lean_error_lines": []
+      },
+      "source_current_exact_except_documented_delta": true
+    },
+    {
+      "id": "authority-5",
+      "owner": "authority",
+      "kind": "lean_source_check",
+      "scope": "targeted Lean exit0, olean emitted",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+      "log": {
+        "path": "/tmp/dregg-foundation-Compiler-CredentialAuthorityStateCodec.log",
+        "exists": true,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0,
+        "pass_line_count": 0,
+        "lean_error_lines": []
+      },
+      "source_current_exact_except_documented_delta": true
+    },
+    {
+      "id": "authority-6",
+      "owner": "authority",
+      "kind": "lean_source_check",
+      "scope": "targeted Lean exit0, olean emitted",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+      "log": {
+        "path": "/tmp/dregg-foundation-Compiler-CredentialAuthorityDomain.log",
+        "exists": true,
+        "sha256": "aab4cfb2ba78e00e67346c3305b3410fa6df1adcb52bd576fb2fdb796690a189",
+        "bytes": 333,
+        "pass_line_count": 0,
+        "lean_error_lines": []
+      },
+      "source_current_exact_except_documented_delta": true
+    },
+    {
+      "id": "authority-7",
+      "owner": "authority",
+      "kind": "lean_source_check",
+      "scope": "targeted Lean exit0, olean emitted",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+      "log": {
+        "path": "/tmp/dregg-authority-initial-policies-receiver.log",
+        "exists": true,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0,
+        "pass_line_count": 0,
+        "lean_error_lines": []
+      },
+      "source_current_exact_except_documented_delta": true
+    },
+    {
+      "id": "authority-8",
+      "owner": "authority",
+      "kind": "lean_source_check",
+      "scope": "targeted Lean exit0, olean emitted",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+      "log": {
+        "path": "/tmp/dregg-foundation-Compiler-BoundedPageExtensionCatalog.log",
+        "exists": true,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0,
+        "pass_line_count": 0,
+        "lean_error_lines": []
+      },
+      "source_current_exact_except_documented_delta": true
+    },
+    {
+      "id": "authority-9",
+      "owner": "authority",
+      "kind": "lean_source_check",
+      "scope": "targeted Lean exit0, olean emitted",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+      "log": {
+        "path": "/tmp/dregg-foundation-Compiler-BoundedPageSchemaUpgrade.log",
+        "exists": true,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0,
+        "pass_line_count": 0,
+        "lean_error_lines": []
+      },
+      "source_current_exact_except_documented_delta": true
+    },
+    {
+      "id": "authority-10",
+      "owner": "authority",
+      "kind": "lean_source_check",
+      "scope": "targeted Lean exit0, olean emitted",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+      "log": {
+        "path": "/tmp/dregg-foundation-Assurance-BoundedPageSchemaUpgradeCutover.log",
+        "exists": true,
+        "sha256": "2764894267c668f240522a781a118dd3a9f61959fd1249871ad17c9eeef9c94f",
+        "bytes": 177,
+        "pass_line_count": 0,
+        "lean_error_lines": []
+      },
+      "source_current_exact_except_documented_delta": false
+    },
+    {
+      "id": "authority-axioms",
+      "owner": "authority",
+      "kind": "axiom_audit",
+      "scope": "16 checked keystones, only propext/Classical.choice/Quot.sound; four State selector laws use propext/Quot.sound only",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+      "log": {
+        "path": "/tmp/dregg-key-authority-axioms.log",
+        "exists": true,
+        "sha256": "c8712430a2ad537692ffb4ae7effa925d780410947b55b91fa774552142691e1",
+        "bytes": 2120,
+        "pass_line_count": 0,
+        "lean_error_lines": [],
+        "audited_theorem_count": 16,
+        "observed_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "only_standard_axioms": true
+      }
+    },
+    {
+      "id": "proof-1",
+      "owner": "proof",
+      "kind": "lean_source_check",
+      "scope": "Lower source only; upper native birth and physical accepted receiver remain outside this check.",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+      "log": {
+        "path": "/tmp/dregg-resource-birth-v2-check.log",
+        "exists": true,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0,
+        "pass_line_count": 0,
+        "lean_error_lines": []
+      },
+      "command": "LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Theory/ResourceBirth.olean Theory/ResourceBirth.lean"
+    },
+    {
+      "id": "proof-2",
+      "owner": "proof",
+      "kind": "lean_source_check",
+      "scope": "Lower source only; upper native birth and physical accepted receiver remain outside this check.",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+      "log": {
+        "path": "/tmp/dregg-resource-birth-authority-v2-check.log",
+        "exists": true,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0,
+        "pass_line_count": 0,
+        "lean_error_lines": []
+      },
+      "command": "LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Theory/ResourceBirthAuthority.olean Theory/ResourceBirthAuthority.lean"
+    },
+    {
+      "id": "proof-3",
+      "owner": "proof",
+      "kind": "lean_source_check",
+      "scope": "Lower source only; upper native birth and physical accepted receiver remain outside this check.",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+      "log": {
+        "path": "/tmp/dregg-resource-birth-codec-v2-check.log",
+        "exists": true,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0,
+        "pass_line_count": 0,
+        "lean_error_lines": []
+      },
+      "command": "LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Compiler/ResourceBirthCodec.olean Compiler/ResourceBirthCodec.lean"
+    },
+    {
+      "id": "proof-4",
+      "owner": "proof",
+      "kind": "lean_source_check",
+      "scope": "Lower source only; upper native birth and physical accepted receiver remain outside this check.",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+      "log": {
+        "path": "/tmp/dregg-resource-birth-controller-v2-check.log",
+        "exists": true,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0,
+        "pass_line_count": 0,
+        "lean_error_lines": []
+      },
+      "command": "LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Kernel/ResourceBirthController.olean Kernel/ResourceBirthController.lean"
+    },
+    {
+      "id": "proof-5",
+      "owner": "proof",
+      "kind": "lean_source_check",
+      "scope": "Lower source only; upper native birth and physical accepted receiver remain outside this check.",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+      "log": {
+        "path": "/tmp/dregg-authority-replay-helper.log",
+        "exists": true,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0,
+        "pass_line_count": 0,
+        "lean_error_lines": []
+      },
+      "command": "LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Compiler/CredentialAuthorityReplay.olean Compiler/CredentialAuthorityReplay.lean"
+    },
+    {
+      "id": "resource-1",
+      "owner": "resource",
+      "kind": "lean_source_check",
+      "scope": "Canonical immutable policy source representation and production registry.",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+      "log": {
+        "path": "/tmp/dregg-policy-source-cell-check.log",
+        "exists": true,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0,
+        "pass_line_count": 0,
+        "lean_error_lines": []
+      },
+      "field_fixture": null
+    },
+    {
+      "id": "resource-2",
+      "owner": "resource",
+      "kind": "lean_source_check",
+      "scope": "Canonical immutable policy source representation and production registry.",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+      "log": {
+        "path": "/tmp/dregg-policy-source-registry-check.log",
+        "exists": true,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0,
+        "pass_line_count": 0,
+        "lean_error_lines": []
+      },
+      "field_fixture": null
+    },
+    {
+      "id": "resource-3",
+      "owner": "resource",
+      "kind": "native_runtime_probe",
+      "scope": "Exact policy source storage and canonical registry; actual SQLite reopen probe has 33 PASS assertions, not complete birth/install authorization.",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+      "log": {
+        "path": "/tmp/dregg-policy-source-cell-probe.log",
+        "exists": true,
+        "sha256": "b999789659b906cc6f0df0d513002747dd616bc6fde64dab8a12181196a49725",
+        "bytes": 2679,
+        "pass_line_count": 33,
+        "lean_error_lines": []
+      },
+      "field_fixture": {
+        "prime": 65537,
+        "order_width": 8,
+        "deployment_choice": false
+      }
+    },
+    {
+      "id": "resource-axioms",
+      "owner": "resource",
+      "kind": "axiom_audit",
+      "scope": "25 universal source/storage/immutability laws; standard axioms only.",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+      "log": {
+        "path": "/tmp/dregg-policy-source-cell-axioms.log",
+        "exists": true,
+        "sha256": "0e488badbfec80aefb3818196f9f447117039bd8c62a7433f7e1202afe385408",
+        "bytes": 3232,
+        "pass_line_count": 0,
+        "lean_error_lines": [],
+        "audited_theorem_count": 25,
+        "observed_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "only_standard_axioms": true
+      }
+    },
+    {
+      "id": "native-key",
+      "owner": "native",
+      "kind": "lean_source_check",
+      "scope": "Shared exact existing KeyRecord and canonical stream.",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+      "log": {
+        "path": "/tmp/dregg-credential-signing-key-check.log",
+        "exists": true,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0,
+        "pass_line_count": 0,
+        "lean_error_lines": []
+      }
+    },
+    {
+      "id": "native-envelope",
+      "owner": "native",
+      "kind": "lean_source_check",
+      "scope": "Existing SignedEnvelope alias/strict checks passed before shared authorization refresh. Later signature probe uses the receiving controller; no new direct post-refresh source check is claimed here.",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+      "log": null
+    },
+    {
+      "id": "native-io",
+      "owner": "native",
+      "kind": "lean_source_check",
+      "scope": "Exact external verifier response protocol.",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+      "log": {
+        "path": "/tmp/dregg-signature-io-check.log",
+        "exists": true,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0,
+        "pass_line_count": 0,
+        "lean_error_lines": []
+      }
+    },
+    {
+      "id": "native-admission",
+      "owner": "native",
+      "kind": "lean_source_check",
+      "scope": "Exact source-selected key/frame/request and private checked receipt; native execution/crypto assumptions remain explicit.",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+      "log": {
+        "path": "/tmp/dregg-signature-admission-check.log",
+        "exists": true,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0,
+        "pass_line_count": 0,
+        "lean_error_lines": []
+      }
+    },
+    {
+      "id": "native-signature-probe",
+      "owner": "native",
+      "kind": "native_runtime_probe",
+      "scope": "Actual Ed25519 authentication using committed key after native SQLite/full authority reopen; no independent signature-state commit or policy authorization claim.",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+      "log": {
+        "path": "/tmp/dregg-credential-signature-probe.log",
+        "exists": true,
+        "sha256": "e1453a94451d574e0ce1ade915324fad30726812253f8f0623e47d04119b7ce8",
+        "bytes": 274,
+        "pass_line_count": 1,
+        "lean_error_lines": []
+      }
+    },
+    {
+      "id": "native-release-build",
+      "owner": "native",
+      "kind": "cargo_release_build",
+      "scope": "Pinned production verification CLI compiled in release.",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+      "log": {
+        "path": "/tmp/minidregg-credential-signature-verifier-build.log",
+        "exists": true,
+        "sha256": "480d63a05a7103e98decf23791117e5c41c61c5941f0d7c3e59682a62c1dcf42",
+        "bytes": 741,
+        "pass_line_count": 0,
+        "lean_error_lines": []
+      }
+    },
+    {
+      "id": "native-nextest",
+      "owner": "native",
+      "kind": "native_cli_tests",
+      "scope": "Ten actual verification CLI tests, including strict weak-key refusal and RFC8032 vectors.",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+      "log": {
+        "path": "/tmp/minidregg-credential-signature-verifier-nextest.log",
+        "exists": true,
+        "sha256": "52541b4b507ecd7816921a0f9e654fe940547476033c5c0fb8b26aa1921adb4a",
+        "bytes": 1596,
+        "pass_line_count": 10,
+        "lean_error_lines": [],
+        "nextest_summary": "10 tests run: 10 passed, 0 skipped"
+      }
+    },
+    {
+      "id": "native-test-signer",
+      "owner": "native",
+      "kind": "native_test_helper_probe",
+      "scope": "Public deterministic test signer seeds 0, 41, 255 roundtrip; invalid seeds refuse.",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+      "log": {
+        "path": "/tmp/minidregg-credential-signature-verifier-sign-probe.log",
+        "exists": true,
+        "sha256": "5b3979835c2a75b77b11755bb88575102f108d89a457bb3be935ff7c33a709a7",
+        "bytes": 329,
+        "pass_line_count": 4,
+        "lean_error_lines": []
+      }
+    },
+    {
+      "id": "native-durable-bytes",
+      "owner": "native",
+      "kind": "lean_source_check",
+      "scope": "Generic actual installer member-byte law under unique write IDs.",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+      "log": {
+        "path": "/tmp/dregg-durable-post-member-check.log",
+        "exists": true,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0,
+        "pass_line_count": 0,
+        "lean_error_lines": []
+      }
+    },
+    {
+      "id": "native-axioms",
+      "owner": "native",
+      "kind": "axiom_audit",
+      "scope": "Seven selected source laws; crypto and observed native IO remain explicit premises.",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+      "log": {
+        "path": "/tmp/dregg-signature-axioms.log",
+        "exists": true,
+        "sha256": "91b98635d6f80f23d429822211620b112568982d704cdc867c6f1fd9ae1beb83",
+        "bytes": 915,
+        "pass_line_count": 0,
+        "lean_error_lines": [],
+        "audited_theorem_count": 7,
+        "observed_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "only_standard_axioms": true
+      }
+    },
+    {
+      "id": "effect-1",
+      "owner": "effect",
+      "kind": "lean_source_check",
+      "scope": "Mandatory source capability use and current strict stored-lineage receiver contract.",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+      "log": {
+        "path": "/tmp/dregg-capability-use-base.log",
+        "exists": true,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0,
+        "pass_line_count": 0,
+        "lean_error_lines": []
+      },
+      "command": "env LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Theory/TypedAuthorization.olean Theory/TypedAuthorization.lean"
+    },
+    {
+      "id": "effect-2",
+      "owner": "effect",
+      "kind": "lean_source_check",
+      "scope": "Mandatory source capability use and current strict stored-lineage receiver contract.",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+      "log": {
+        "path": "/tmp/dregg-capability-use-witness.log",
+        "exists": true,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0,
+        "pass_line_count": 0,
+        "lean_error_lines": []
+      },
+      "command": "env LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Theory/TypedAuthorizationWitness.olean Theory/TypedAuthorizationWitness.lean"
+    },
+    {
+      "id": "effect-3",
+      "owner": "effect",
+      "kind": "lean_source_check",
+      "scope": "Mandatory source capability use and current strict stored-lineage receiver contract.",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+      "log": {
+        "path": "/tmp/dregg-capability-use-declaration.log",
+        "exists": true,
+        "sha256": "433533f860b1a3977319cb23a789f75dc2ac3ad45f039f64d7b79c10fc0cd75b",
+        "bytes": 256,
+        "pass_line_count": 0,
+        "lean_error_lines": []
+      },
+      "command": "env LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Theory/AuthorizationDeclaration.olean Theory/AuthorizationDeclaration.lean"
+    },
+    {
+      "id": "effect-4",
+      "owner": "effect",
+      "kind": "lean_source_check",
+      "scope": "Mandatory source capability use and current strict stored-lineage receiver contract.",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+      "log": {
+        "path": "/tmp/dregg-lineage-admission-check.log",
+        "exists": true,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0,
+        "pass_line_count": 0,
+        "lean_error_lines": []
+      },
+      "command": "env LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Theory/CredentialLineageAdmission.olean Theory/CredentialLineageAdmission.lean"
+    },
+    {
+      "id": "effect-5",
+      "owner": "effect",
+      "kind": "lean_source_check",
+      "scope": "Mandatory source capability use and current strict stored-lineage receiver contract.",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+      "log": {
+        "path": "/tmp/dregg-capability-registry-check.log",
+        "exists": true,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0,
+        "pass_line_count": 0,
+        "lean_error_lines": []
+      },
+      "command": "env LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Compiler/CredentialAuthorityPolicyRegistry.olean Compiler/CredentialAuthorityPolicyRegistry.lean"
+    },
+    {
+      "id": "effect-native-capability",
+      "owner": "effect",
+      "kind": "native_runtime_probe",
+      "scope": "Existing actual capability-only PolicyInstall AcceptedCellEffect from persisted full canonical authority and native Ed25519. No durable policy-install commit or root issuance provenance from the bootstrap fixture is claimed.",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+      "log": {
+        "path": "/tmp/dregg-native-capability-use-probe.log",
+        "exists": true,
+        "sha256": "b0b61af0e1101ebde96db9f9f9adf08a6ec51815cc2fa2c7bde2d74d9c7fb448",
+        "bytes": 263,
+        "pass_line_count": 1,
+        "lean_error_lines": []
+      },
+      "command": "env LEAN_NUM_THREADS=2 lake env lean --run scripts/probe-credential-capability-use.lean /tmp/minidregg-credential-signature-verifier-target/release/minidregg-credential-signature-verifier /tmp/minidregg-credential-signature-verifier-target/release/examples/sign-probe native/hyperdocument-link-sqlite-store/target/release/minidregg-link-sqlite-store",
+      "field_fixture": {
+        "prime": 65537,
+        "order_width": 15,
+        "deployment_choice": false
+      },
+      "owner_captured_binary_hashes": [
+        {
+          "path": "/tmp/minidregg-credential-signature-verifier-target/release/minidregg-credential-signature-verifier",
+          "sha256": "3cac3584c9bcf46bf54d19d298cadd568b24df57e19fecd9dfca19dbaee700ad"
+        },
+        {
+          "path": "/tmp/minidregg-credential-signature-verifier-target/release/examples/sign-probe",
+          "sha256": "3a2ee794ed7abd35a75baf2394bb84b1bb8382a86348a0a14bc4ae66204f17c1"
+        },
+        {
+          "path": "/Users/ember/dev/minidregg/native/hyperdocument-link-sqlite-store/target/release/minidregg-link-sqlite-store",
+          "sha256": "6c716da59969563cb9ddbe71a25370bbe9db8de13670fabaac5abe8a2ed42a03"
+        }
+      ]
+    },
+    {
+      "id": "effect-axioms",
+      "owner": "effect",
+      "kind": "axiom_audit",
+      "scope": "13 source/checker/native-mode laws.",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+      "log": {
+        "path": "/tmp/dregg-capability-axiom-audit.log",
+        "exists": true,
+        "sha256": "c65b06402e83d2520a0a9f552ca250b97fb7dff1c1aa4ffbffca6d9df2834075",
+        "bytes": 1737,
+        "pass_line_count": 0,
+        "lean_error_lines": [],
+        "audited_theorem_count": 13,
+        "observed_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "only_standard_axioms": true
+      }
+    },
+    {
+      "id": "shell-1",
+      "owner": "shell",
+      "kind": "lean_source_check",
+      "scope": "One compiler order fold and explicit common source runtime profile; no deployment field or full controller integration selected by these source checks.",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+      "log": null,
+      "command": "lake env lean -o .lake/build/lib/lean/Compiler/PredOrderGadget.olean Compiler/PredOrderGadget.lean",
+      "recorded_seconds": 3.59
+    },
+    {
+      "id": "shell-2",
+      "owner": "shell",
+      "kind": "lean_source_check",
+      "scope": "One compiler order fold and explicit common source runtime profile; no deployment field or full controller integration selected by these source checks.",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+      "log": null,
+      "command": "lake env lean Compiler/PredOrderGadgetWitness.lean",
+      "recorded_seconds": 3.59
+    },
+    {
+      "id": "shell-3",
+      "owner": "shell",
+      "kind": "lean_source_check",
+      "scope": "One compiler order fold and explicit common source runtime profile; no deployment field or full controller integration selected by these source checks.",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+      "log": null,
+      "command": "lake env lean -o .lake/build/lib/lean/Compiler/PredCompile.olean Compiler/PredCompile.lean",
+      "recorded_seconds": 5.77
+    },
+    {
+      "id": "shell-4",
+      "owner": "shell",
+      "kind": "lean_source_check",
+      "scope": "One compiler order fold and explicit common source runtime profile; no deployment field or full controller integration selected by these source checks.",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+      "log": null,
+      "command": "lake env lean Compiler/PredCompileOrderWitness.lean",
+      "recorded_seconds": 3.47
+    },
+    {
+      "id": "shell-5",
+      "owner": "shell",
+      "kind": "lean_source_check",
+      "scope": "One compiler order fold and explicit common source runtime profile; no deployment field or full controller integration selected by these source checks.",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+      "log": null,
+      "command": "lake env lean -o .lake/build/lib/lean/Compiler/CanonicalPolicyAdmission.olean Compiler/CanonicalPolicyAdmission.lean",
+      "recorded_seconds": 4.26
+    },
+    {
+      "id": "shell-6",
+      "owner": "shell",
+      "kind": "lean_source_check",
+      "scope": "One compiler order fold and explicit common source runtime profile; no deployment field or full controller integration selected by these source checks.",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+      "log": null,
+      "command": "lake env lean -o .lake/build/lib/lean/Compiler/BoundedQuantifiedPolicyAdmission.olean Compiler/BoundedQuantifiedPolicyAdmission.lean",
+      "recorded_seconds": 4.1
+    },
+    {
+      "id": "shell-7",
+      "owner": "shell",
+      "kind": "lean_source_check",
+      "scope": "One compiler order fold and explicit common source runtime profile; no deployment field or full controller integration selected by these source checks.",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+      "log": {
+        "path": "/tmp/dregg-runtime-profile-final.log",
+        "exists": true,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0,
+        "pass_line_count": 0,
+        "lean_error_lines": []
+      },
+      "command": "lake env lean -o .lake/build/lib/lean/Compiler/CanonicalRuntimeProfile.olean Compiler/CanonicalRuntimeProfile.lean",
+      "recorded_seconds": 4.329
+    },
+    {
+      "id": "installer-controller",
+      "owner": "installer",
+      "kind": "lean_source_check",
+      "scope": "Actual capability-only semantic policy installer; physical durable installation is not claimed.",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+      "log": {
+        "path": "/tmp/dregg-policy-native-controller.log",
+        "exists": true,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0,
+        "pass_line_count": 0,
+        "lean_error_lines": []
+      }
+    },
+    {
+      "id": "installer-preparation-probe",
+      "owner": "installer",
+      "kind": "lean_source_runtime_probe",
+      "scope": "Policy source codec and complete multishard preparation/old-source weakening checks; no native signature token or durable install in this probe.",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+      "log": {
+        "path": "/tmp/dregg-policy-native-preparation-probe.log",
+        "exists": true,
+        "sha256": "818ddfd4997d6fbd5c9a67d061e9d3ce0fb229edad325dfc0f5047ea4bb5fa2c",
+        "bytes": 445,
+        "pass_line_count": 2,
+        "lean_error_lines": []
+      }
+    },
+    {
+      "id": "localfirst-controller",
+      "owner": "localfirst",
+      "kind": "lean_source_check",
+      "scope": "Declared-resource controller source compiles; separate native invocation evidence is captured under localfirst-native-invocation.",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+      "log": {
+        "path": "/tmp/dregg-declared-resource-controller.log",
+        "exists": true,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0,
+        "pass_line_count": 0,
+        "lean_error_lines": []
+      }
+    },
+    {
+      "id": "localfirst-probe-source",
+      "owner": "localfirst",
+      "kind": "lean_source_check",
+      "scope": "Probe source compilation, distinct from the later actual native invocation run.",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+      "log": {
+        "path": "/tmp/dregg-declared-resource-probe-check.log",
+        "exists": true,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0,
+        "pass_line_count": 0,
+        "lean_error_lines": []
+      }
+    },
+    {
+      "id": "localfirst-axioms",
+      "owner": "localfirst",
+      "kind": "axiom_audit",
+      "scope": "13 controller codec/request/tuple/physical laws, standard axioms only.",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+      "log": {
+        "path": "/tmp/dregg-declared-resource-axioms.log",
+        "exists": true,
+        "sha256": "c77877d01ae949f10676be20df884da9b3a42316f48229066c8cbb0542596f1a",
+        "bytes": 1739,
+        "pass_line_count": 0,
+        "lean_error_lines": [],
+        "audited_theorem_count": 13,
+        "observed_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "only_standard_axioms": true
+      }
+    },
+    {
+      "id": "localfirst-native-invocation",
+      "owner": "localfirst",
+      "kind": "native_runtime_probe",
+      "scope": "Actual native signatures, stored capability, selected physical policy source, exact page/authority tuple, durable publication/reopen/replay. Tamper, unrelated signer, stale root, overbroad edit and object-to-program edit refuse. Explicit bootstrap fixture only; no joined accepted birth/delegation admission claimed.",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Explicit owner and root handoff; exact log read by collector, no rerun.",
+      "log": {
+        "path": "/tmp/dregg-declared-resource-probe-native.log",
+        "exists": true,
+        "sha256": "943afd6a6ad9c6b44a9f3ad3f34537f9622a84cd6ebc83573c4424fb73ff76e1",
+        "bytes": 318,
+        "pass_line_count": 1,
+        "lean_error_lines": []
+      }
+    },
+    {
+      "id": "carrier-page-reflection",
+      "owner": "carrier",
+      "kind": "lean_source_check",
+      "scope": "single module; shared ancestors refreshed by authority owner; no full build",
+      "owner_reported_exit_code": 0,
+      "exit_evidence": "Carrier frozen check manifest and explicit root handoff; not rerun by collector.",
+      "command": "LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Compiler/DeclaredEffectPageMaterializer.olean Compiler/DeclaredEffectPageMaterializer.lean",
+      "log": {
+        "path": "/tmp/dregg-page-execution-reflection.log",
+        "exists": true,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0,
+        "pass_line_count": 0,
+        "lean_error_lines": []
+      },
+      "in_source_axiom_pins": {
+        "count": 13,
+        "owner_reported_result": "all standard propext, Classical.choice, Quot.sound; no added axioms"
+      }
+    }
+  ],
+  "owner_manifest_references": [
+    {
+      "path": "/tmp/dregg-authority-key-initial-policy-freeze.json",
+      "sha256": "49658918c2100e6bd343d77092d24a3b9e391c52ede28cb43072988c35ce794b"
+    },
+    {
+      "path": "/tmp/dregg-resource-birth-v2-checks.json",
+      "sha256": "27e0b8917139bf47cf83b08170ed4b404f367fa41058da34bdc94da33281fa34"
+    },
+    {
+      "path": "/tmp/dregg-policy-source-cell-manifest.json",
+      "sha256": "328c3b89b65efa522cef42f2073a15609c74b82e533ecd97e9d5c60acfe08fca"
+    },
+    {
+      "path": "/tmp/dregg-native-current-wave.files",
+      "sha256": "8d295a27ccd1c51ab5949d9b94a8ca14637c616ed63a43043f1496c03bdda024"
+    },
+    {
+      "path": "/tmp/dregg-native-current-wave.sha256",
+      "sha256": "8754bceb542711c455f2c383f956b876b34e63e3844404c8293574c45b9970cc"
+    },
+    {
+      "path": "/tmp/dregg-native-credential-signature.md",
+      "sha256": "48c32d04f013202dc5ac46909becef7a378ddce2577635de1fb24e89223b03b6"
+    },
+    {
+      "path": "/tmp/dregg-capability-use-checks.json",
+      "sha256": "f30bcf2165ce01bb479321db45208ab67db0cf49499027426d376b40d03cce57"
+    },
+    {
+      "path": "/tmp/dregg-order-profile-checks.json",
+      "sha256": "057c7a62b1d8fa65147c30708d66887edfc4b5edbf572098bb29ec71985c2421"
+    },
+    {
+      "path": "/tmp/dregg-runtime-profile-final-check.json",
+      "sha256": "153adf95d9d326ac78a4fe5d666fc97caf36deff2596d876dc9cea294c2a615a"
+    },
+    {
+      "path": "/tmp/dregg-pred-order-gadget.md",
+      "sha256": "9628fef65143ebb372fbcac580b5e7a6118bc33180aee9b7ad6de2cea9788d73"
+    },
+    {
+      "path": "/tmp/dregg-page-execution-reflection-checks.json",
+      "sha256": "1ab2c0065815771a04808a3d5e38adc2253560f86cab15ecd0f147cc20dcc47f"
+    }
+  ],
+  "excluded_active": [
+    {
+      "path": "Kernel/ResourceBirthPolicyController.lean",
+      "owner": "sprint_program_install",
+      "reason": "Active first native upper elaboration fixes; no frozen hash/checkpoint inclusion."
+    },
+    {
+      "path": "Kernel/ResourceBirthReceiver.lean",
+      "owner": "sprint_proof_integrity",
+      "reason": "Active full installed-page/refinement and accepted physical receiving join; lower Controller freeze does not cover this file."
+    }
+  ],
+  "planned_not_included": [
+    {
+      "path": "Kernel/PolicyInstallReceiver.lean",
+      "owner": "sprint_program_install",
+      "reason": "Not created at owner handoff; physical policy replacement remains future work."
+    }
+  ],
+  "scope_limits": [
+    "No umbrella build or whole-project/end-to-end completion verdict is claimed.",
+    "Native signature probe proves observed authentication success through the existing controller after actual persisted-key reopen, not an independent signature-state commit.",
+    "Native capability probe produces the actual existing policy-install AcceptedCellEffect; it does not commit a durable policy replacement or establish root-grant issuance from bootstrap fixtures.",
+    "Resource source probe performs real SQLite source storage/reopen and read-guard checks; complete birth/install physical receiver execution remains separate.",
+    "Explicit fixture fields and scalar widths are probe parameters, not deployment profile selections.",
+    "Current strict lineage is checked. Explicit delegated ParentLink representation and global capability-ID freshness wiring into every creation path remain next-wave work.",
+    "Native IO/cryptography/binary integrity and key-custody assumptions remain explicit; audited standard-axiom laws do not discharge those operational assumptions.",
+    "Only named new/changed frozen sources are checkpoint candidates. Observed dependency sources and prior committed sources were not silently added.",
+    "Declared-resource actual native durable publication/reopen/replay passes from an explicit bootstrap fixture; joined accepted birth and delegated capability creation are not claimed by that run."
+  ],
+  "compiler_seats_at_capture": {
+    "seat_1": {
+      "owner": "sprint_program_install",
+      "status": "Upper birth remains active: nested structure elaboration-timeout fixes, no green verdict yet.",
+      "last_reported_session": 13621,
+      "log": "/tmp/dregg-birth-native-upper.log",
+      "handoff_history": [
+        "core_effect_admission completed native probe + audit",
+        "core_durable_receiver completed native axiom audit",
+        "sprint_proof_integrity lower ResourceBirthController passed and froze",
+        "direct handoff to sprint_program_install upper birth"
+      ]
+    },
+    "seat_2": {
+      "owner": null,
+      "status": "Released explicitly by sprint_localfirst after actual native invocation probe GREEN exit 0; no active process reported.",
+      "completed_session": 30137,
+      "log": "/tmp/dregg-declared-resource-probe-native.log"
+    },
+    "collision_observed": false,
+    "collector_started_processes": false,
+    "coordination_boundary": "Finite checkpoint delivered to root; owner direct handoffs remain authoritative. Instantaneous absence of processes does not release a reserved seat."
+  }
+}

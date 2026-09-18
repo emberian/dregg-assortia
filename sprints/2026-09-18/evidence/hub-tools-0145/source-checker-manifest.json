@@ -1,0 +1,34 @@
+{
+  "scope": "W-SOURCE-IMPACT; frozen owned paths only; no graph or Git changes",
+  "files": [
+    {
+      "path": "/Users/ember/dev/dregg-assortia/check_sources.py",
+      "sha256": "40173c8827ecb3316864c0c3ca8d1cab281055951e421e3cbd92b9ba46fbe916"
+    },
+    {
+      "path": "/Users/ember/dev/dregg-assortia/tests/test_check_sources.py",
+      "sha256": "da2957b8c4505c4ac34f709a2a3adb737a99f85c1d432c55cefbeb56cda0ad1c"
+    },
+    {
+      "path": "/Users/ember/dev/dregg-assortia/internal/source-checking.md",
+      "sha256": "ee6fe6e49c43b2063638c7b6a6cba4c09fc8aac9e24c4612ede0b0dde06431e6"
+    }
+  ],
+  "checks": [
+    {
+      "command": "python3 -m unittest tests.test_check_sources",
+      "log": "/tmp/assortia-source-checker-focused.log",
+      "verdict": "PASS; 23 tests"
+    },
+    {
+      "command": "python3 -m unittest discover -s tests",
+      "log": "/tmp/assortia-source-checker-all-tests.log",
+      "verdict": "PASS; 41 tests"
+    },
+    {
+      "command": "isolated subprocess CLI fixture with repeatable overrides and changed/unavailable states",
+      "log": "/tmp/assortia-source-checker-cli.log",
+      "verdict": "PASS; 3 assertions groups; historical graph unchanged"
+    }
+  ]
+}

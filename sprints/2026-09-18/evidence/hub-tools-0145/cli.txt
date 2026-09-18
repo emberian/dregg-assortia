@@ -1,0 +1,3 @@
+PASS real CLI: repeated portable overrides, changed bytes, unknown checkout, transitive work impact, exit 1
+PASS real CLI: readable explanation retains recorded reference path
+PASS real CLI: absent checkouts remain unknown with exit 0 and no source-change findings; historical graph unchanged

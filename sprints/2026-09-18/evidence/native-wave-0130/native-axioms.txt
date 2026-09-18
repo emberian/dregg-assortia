@@ -1,0 +1,19 @@
+'Minidregg.Compiler.CredentialSignatureAdmission.canonicalEnvelopeCodec_accepted_bytes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Compiler.CredentialSignatureAdmission.requestBytes_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Compiler.CredentialSignatureAdmission.verified_request_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Compiler.CredentialSignatureAdmission.checked_key_from_same_snapshot' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Compiler.CredentialSignatureAdmission.checked_frame_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Compiler.CredentialSignatureAdmission.issued_of_checked' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Compiler.CredentialSignatureIO.positive_response_exact' depends on axioms: [propext]

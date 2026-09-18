@@ -1,0 +1,442 @@
+[
+  {
+    "check": "authority-1",
+    "originalPath": "/tmp/dregg-key-CredentialAuthorityState.log",
+    "capturedPath": "authority-1.txt",
+    "sha256": "50d9941397e6b39aa9a50b68d69201e5264e075899fa9a94393cc990209ed337",
+    "kind": "lean_source_check",
+    "scope": "targeted Lean exit0, olean emitted",
+    "exitEvidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+    "reportedExit": 0
+  },
+  {
+    "check": "authority-2",
+    "originalPath": "/tmp/dregg-key-CredentialAuthorityFamily.log",
+    "capturedPath": "authority-2.txt",
+    "sha256": "bd80bfa36924ea5b9e9d185a06a7ed56645d0fc57e62a0e4b792d04057faab61",
+    "kind": "lean_source_check",
+    "scope": "targeted Lean exit0, olean emitted",
+    "exitEvidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+    "reportedExit": 0
+  },
+  {
+    "check": "authority-3",
+    "originalPath": "/tmp/dregg-foundation-Compiler-CredentialAuthorityEntryCodec.log",
+    "capturedPath": "authority-3.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "kind": "lean_source_check",
+    "scope": "targeted Lean exit0, olean emitted",
+    "exitEvidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+    "reportedExit": 0
+  },
+  {
+    "check": "authority-4",
+    "originalPath": "/tmp/dregg-foundation-Compiler-CredentialAuthorityPageMaterializer.log",
+    "capturedPath": "authority-4.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "kind": "lean_source_check",
+    "scope": "targeted Lean exit0, olean emitted",
+    "exitEvidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+    "reportedExit": 0
+  },
+  {
+    "check": "authority-5",
+    "originalPath": "/tmp/dregg-foundation-Compiler-CredentialAuthorityStateCodec.log",
+    "capturedPath": "authority-5.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "kind": "lean_source_check",
+    "scope": "targeted Lean exit0, olean emitted",
+    "exitEvidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+    "reportedExit": 0
+  },
+  {
+    "check": "authority-6",
+    "originalPath": "/tmp/dregg-foundation-Compiler-CredentialAuthorityDomain.log",
+    "capturedPath": "authority-6.txt",
+    "sha256": "aab4cfb2ba78e00e67346c3305b3410fa6df1adcb52bd576fb2fdb796690a189",
+    "kind": "lean_source_check",
+    "scope": "targeted Lean exit0, olean emitted",
+    "exitEvidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+    "reportedExit": 0
+  },
+  {
+    "check": "authority-7",
+    "originalPath": "/tmp/dregg-authority-initial-policies-receiver.log",
+    "capturedPath": "authority-7.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "kind": "lean_source_check",
+    "scope": "targeted Lean exit0, olean emitted",
+    "exitEvidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+    "reportedExit": 0
+  },
+  {
+    "check": "authority-8",
+    "originalPath": "/tmp/dregg-foundation-Compiler-BoundedPageExtensionCatalog.log",
+    "capturedPath": "authority-8.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "kind": "lean_source_check",
+    "scope": "targeted Lean exit0, olean emitted",
+    "exitEvidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+    "reportedExit": 0
+  },
+  {
+    "check": "authority-9",
+    "originalPath": "/tmp/dregg-foundation-Compiler-BoundedPageSchemaUpgrade.log",
+    "capturedPath": "authority-9.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "kind": "lean_source_check",
+    "scope": "targeted Lean exit0, olean emitted",
+    "exitEvidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+    "reportedExit": 0
+  },
+  {
+    "check": "authority-10",
+    "originalPath": "/tmp/dregg-foundation-Assurance-BoundedPageSchemaUpgradeCutover.log",
+    "capturedPath": "authority-10.txt",
+    "sha256": "2764894267c668f240522a781a118dd3a9f61959fd1249871ad17c9eeef9c94f",
+    "kind": "lean_source_check",
+    "scope": "targeted Lean exit0, olean emitted",
+    "exitEvidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+    "reportedExit": 0
+  },
+  {
+    "check": "authority-axioms",
+    "originalPath": "/tmp/dregg-key-authority-axioms.log",
+    "capturedPath": "authority-axioms.txt",
+    "sha256": "c8712430a2ad537692ffb4ae7effa925d780410947b55b91fa774552142691e1",
+    "kind": "axiom_audit",
+    "scope": "16 checked keystones, only propext/Classical.choice/Quot.sound; four State selector laws use propext/Quot.sound only",
+    "exitEvidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+    "reportedExit": 0
+  },
+  {
+    "check": "proof-1",
+    "originalPath": "/tmp/dregg-resource-birth-v2-check.log",
+    "capturedPath": "proof-1.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "kind": "lean_source_check",
+    "scope": "Lower source only; upper native birth and physical accepted receiver remain outside this check.",
+    "exitEvidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+    "reportedExit": 0
+  },
+  {
+    "check": "proof-2",
+    "originalPath": "/tmp/dregg-resource-birth-authority-v2-check.log",
+    "capturedPath": "proof-2.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "kind": "lean_source_check",
+    "scope": "Lower source only; upper native birth and physical accepted receiver remain outside this check.",
+    "exitEvidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+    "reportedExit": 0
+  },
+  {
+    "check": "proof-3",
+    "originalPath": "/tmp/dregg-resource-birth-codec-v2-check.log",
+    "capturedPath": "proof-3.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "kind": "lean_source_check",
+    "scope": "Lower source only; upper native birth and physical accepted receiver remain outside this check.",
+    "exitEvidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+    "reportedExit": 0
+  },
+  {
+    "check": "proof-4",
+    "originalPath": "/tmp/dregg-resource-birth-controller-v2-check.log",
+    "capturedPath": "proof-4.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "kind": "lean_source_check",
+    "scope": "Lower source only; upper native birth and physical accepted receiver remain outside this check.",
+    "exitEvidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+    "reportedExit": 0
+  },
+  {
+    "check": "proof-5",
+    "originalPath": "/tmp/dregg-authority-replay-helper.log",
+    "capturedPath": "proof-5.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "kind": "lean_source_check",
+    "scope": "Lower source only; upper native birth and physical accepted receiver remain outside this check.",
+    "exitEvidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+    "reportedExit": 0
+  },
+  {
+    "check": "resource-1",
+    "originalPath": "/tmp/dregg-policy-source-cell-check.log",
+    "capturedPath": "resource-1.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "kind": "lean_source_check",
+    "scope": "Canonical immutable policy source representation and production registry.",
+    "exitEvidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+    "reportedExit": 0
+  },
+  {
+    "check": "resource-2",
+    "originalPath": "/tmp/dregg-policy-source-registry-check.log",
+    "capturedPath": "resource-2.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "kind": "lean_source_check",
+    "scope": "Canonical immutable policy source representation and production registry.",
+    "exitEvidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+    "reportedExit": 0
+  },
+  {
+    "check": "resource-3",
+    "originalPath": "/tmp/dregg-policy-source-cell-probe.log",
+    "capturedPath": "resource-3.txt",
+    "sha256": "b999789659b906cc6f0df0d513002747dd616bc6fde64dab8a12181196a49725",
+    "kind": "native_runtime_probe",
+    "scope": "Exact policy source storage and canonical registry; actual SQLite reopen probe has 33 PASS assertions, not complete birth/install authorization.",
+    "exitEvidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+    "reportedExit": 0
+  },
+  {
+    "check": "resource-axioms",
+    "originalPath": "/tmp/dregg-policy-source-cell-axioms.log",
+    "capturedPath": "resource-axioms.txt",
+    "sha256": "0e488badbfec80aefb3818196f9f447117039bd8c62a7433f7e1202afe385408",
+    "kind": "axiom_audit",
+    "scope": "25 universal source/storage/immutability laws; standard axioms only.",
+    "exitEvidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+    "reportedExit": 0
+  },
+  {
+    "check": "native-key",
+    "originalPath": "/tmp/dregg-credential-signing-key-check.log",
+    "capturedPath": "native-key.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "kind": "lean_source_check",
+    "scope": "Shared exact existing KeyRecord and canonical stream.",
+    "exitEvidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+    "reportedExit": 0
+  },
+  {
+    "check": "native-io",
+    "originalPath": "/tmp/dregg-signature-io-check.log",
+    "capturedPath": "native-io.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "kind": "lean_source_check",
+    "scope": "Exact external verifier response protocol.",
+    "exitEvidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+    "reportedExit": 0
+  },
+  {
+    "check": "native-admission",
+    "originalPath": "/tmp/dregg-signature-admission-check.log",
+    "capturedPath": "native-admission.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "kind": "lean_source_check",
+    "scope": "Exact source-selected key/frame/request and private checked receipt; native execution/crypto assumptions remain explicit.",
+    "exitEvidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+    "reportedExit": 0
+  },
+  {
+    "check": "native-signature-probe",
+    "originalPath": "/tmp/dregg-credential-signature-probe.log",
+    "capturedPath": "native-signature-probe.txt",
+    "sha256": "e1453a94451d574e0ce1ade915324fad30726812253f8f0623e47d04119b7ce8",
+    "kind": "native_runtime_probe",
+    "scope": "Actual Ed25519 authentication using committed key after native SQLite/full authority reopen; no independent signature-state commit or policy authorization claim.",
+    "exitEvidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+    "reportedExit": 0
+  },
+  {
+    "check": "native-release-build",
+    "originalPath": "/tmp/minidregg-credential-signature-verifier-build.log",
+    "capturedPath": "native-release-build.txt",
+    "sha256": "480d63a05a7103e98decf23791117e5c41c61c5941f0d7c3e59682a62c1dcf42",
+    "kind": "cargo_release_build",
+    "scope": "Pinned production verification CLI compiled in release.",
+    "exitEvidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+    "reportedExit": 0
+  },
+  {
+    "check": "native-nextest",
+    "originalPath": "/tmp/minidregg-credential-signature-verifier-nextest.log",
+    "capturedPath": "native-nextest.txt",
+    "sha256": "52541b4b507ecd7816921a0f9e654fe940547476033c5c0fb8b26aa1921adb4a",
+    "kind": "native_cli_tests",
+    "scope": "Ten actual verification CLI tests, including strict weak-key refusal and RFC8032 vectors.",
+    "exitEvidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+    "reportedExit": 0
+  },
+  {
+    "check": "native-test-signer",
+    "originalPath": "/tmp/minidregg-credential-signature-verifier-sign-probe.log",
+    "capturedPath": "native-test-signer.txt",
+    "sha256": "5b3979835c2a75b77b11755bb88575102f108d89a457bb3be935ff7c33a709a7",
+    "kind": "native_test_helper_probe",
+    "scope": "Public deterministic test signer seeds 0, 41, 255 roundtrip; invalid seeds refuse.",
+    "exitEvidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+    "reportedExit": 0
+  },
+  {
+    "check": "native-durable-bytes",
+    "originalPath": "/tmp/dregg-durable-post-member-check.log",
+    "capturedPath": "native-durable-bytes.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "kind": "lean_source_check",
+    "scope": "Generic actual installer member-byte law under unique write IDs.",
+    "exitEvidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+    "reportedExit": 0
+  },
+  {
+    "check": "native-axioms",
+    "originalPath": "/tmp/dregg-signature-axioms.log",
+    "capturedPath": "native-axioms.txt",
+    "sha256": "91b98635d6f80f23d429822211620b112568982d704cdc867c6f1fd9ae1beb83",
+    "kind": "axiom_audit",
+    "scope": "Seven selected source laws; crypto and observed native IO remain explicit premises.",
+    "exitEvidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+    "reportedExit": 0
+  },
+  {
+    "check": "effect-1",
+    "originalPath": "/tmp/dregg-capability-use-base.log",
+    "capturedPath": "effect-1.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "kind": "lean_source_check",
+    "scope": "Mandatory source capability use and current strict stored-lineage receiver contract.",
+    "exitEvidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+    "reportedExit": 0
+  },
+  {
+    "check": "effect-2",
+    "originalPath": "/tmp/dregg-capability-use-witness.log",
+    "capturedPath": "effect-2.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "kind": "lean_source_check",
+    "scope": "Mandatory source capability use and current strict stored-lineage receiver contract.",
+    "exitEvidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+    "reportedExit": 0
+  },
+  {
+    "check": "effect-3",
+    "originalPath": "/tmp/dregg-capability-use-declaration.log",
+    "capturedPath": "effect-3.txt",
+    "sha256": "433533f860b1a3977319cb23a789f75dc2ac3ad45f039f64d7b79c10fc0cd75b",
+    "kind": "lean_source_check",
+    "scope": "Mandatory source capability use and current strict stored-lineage receiver contract.",
+    "exitEvidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+    "reportedExit": 0
+  },
+  {
+    "check": "effect-4",
+    "originalPath": "/tmp/dregg-lineage-admission-check.log",
+    "capturedPath": "effect-4.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "kind": "lean_source_check",
+    "scope": "Mandatory source capability use and current strict stored-lineage receiver contract.",
+    "exitEvidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+    "reportedExit": 0
+  },
+  {
+    "check": "effect-5",
+    "originalPath": "/tmp/dregg-capability-registry-check.log",
+    "capturedPath": "effect-5.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "kind": "lean_source_check",
+    "scope": "Mandatory source capability use and current strict stored-lineage receiver contract.",
+    "exitEvidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+    "reportedExit": 0
+  },
+  {
+    "check": "effect-native-capability",
+    "originalPath": "/tmp/dregg-native-capability-use-probe.log",
+    "capturedPath": "effect-native-capability.txt",
+    "sha256": "b0b61af0e1101ebde96db9f9f9adf08a6ec51815cc2fa2c7bde2d74d9c7fb448",
+    "kind": "native_runtime_probe",
+    "scope": "Existing actual capability-only PolicyInstall AcceptedCellEffect from persisted full canonical authority and native Ed25519. No durable policy-install commit or root issuance provenance from the bootstrap fixture is claimed.",
+    "exitEvidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+    "reportedExit": 0
+  },
+  {
+    "check": "effect-axioms",
+    "originalPath": "/tmp/dregg-capability-axiom-audit.log",
+    "capturedPath": "effect-axioms.txt",
+    "sha256": "c65b06402e83d2520a0a9f552ca250b97fb7dff1c1aa4ffbffca6d9df2834075",
+    "kind": "axiom_audit",
+    "scope": "13 source/checker/native-mode laws.",
+    "exitEvidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+    "reportedExit": 0
+  },
+  {
+    "check": "shell-7",
+    "originalPath": "/tmp/dregg-runtime-profile-final.log",
+    "capturedPath": "shell-7.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "kind": "lean_source_check",
+    "scope": "One compiler order fold and explicit common source runtime profile; no deployment field or full controller integration selected by these source checks.",
+    "exitEvidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+    "reportedExit": 0
+  },
+  {
+    "check": "installer-controller",
+    "originalPath": "/tmp/dregg-policy-native-controller.log",
+    "capturedPath": "installer-controller.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "kind": "lean_source_check",
+    "scope": "Actual capability-only semantic policy installer; physical durable installation is not claimed.",
+    "exitEvidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+    "reportedExit": 0
+  },
+  {
+    "check": "installer-preparation-probe",
+    "originalPath": "/tmp/dregg-policy-native-preparation-probe.log",
+    "capturedPath": "installer-preparation-probe.txt",
+    "sha256": "818ddfd4997d6fbd5c9a67d061e9d3ce0fb229edad325dfc0f5047ea4bb5fa2c",
+    "kind": "lean_source_runtime_probe",
+    "scope": "Policy source codec and complete multishard preparation/old-source weakening checks; no native signature token or durable install in this probe.",
+    "exitEvidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+    "reportedExit": 0
+  },
+  {
+    "check": "localfirst-controller",
+    "originalPath": "/tmp/dregg-declared-resource-controller.log",
+    "capturedPath": "localfirst-controller.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "kind": "lean_source_check",
+    "scope": "Declared-resource controller source compiles; separate native invocation evidence is captured under localfirst-native-invocation.",
+    "exitEvidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+    "reportedExit": 0
+  },
+  {
+    "check": "localfirst-probe-source",
+    "originalPath": "/tmp/dregg-declared-resource-probe-check.log",
+    "capturedPath": "localfirst-probe-source.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "kind": "lean_source_check",
+    "scope": "Probe source compilation, distinct from the later actual native invocation run.",
+    "exitEvidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+    "reportedExit": 0
+  },
+  {
+    "check": "localfirst-axioms",
+    "originalPath": "/tmp/dregg-declared-resource-axioms.log",
+    "capturedPath": "localfirst-axioms.txt",
+    "sha256": "c77877d01ae949f10676be20df884da9b3a42316f48229066c8cbb0542596f1a",
+    "kind": "axiom_audit",
+    "scope": "13 controller codec/request/tuple/physical laws, standard axioms only.",
+    "exitEvidence": "Captured owner manifest or explicit owner handoff; not rerun by checkpoint collector.",
+    "reportedExit": 0
+  },
+  {
+    "check": "localfirst-native-invocation",
+    "originalPath": "/tmp/dregg-declared-resource-probe-native.log",
+    "capturedPath": "localfirst-native-invocation.txt",
+    "sha256": "943afd6a6ad9c6b44a9f3ad3f34537f9622a84cd6ebc83573c4424fb73ff76e1",
+    "kind": "native_runtime_probe",
+    "scope": "Actual native signatures, stored capability, selected physical policy source, exact page/authority tuple, durable publication/reopen/replay. Tamper, unrelated signer, stale root, overbroad edit and object-to-program edit refuse. Explicit bootstrap fixture only; no joined accepted birth/delegation admission claimed.",
+    "exitEvidence": "Explicit owner and root handoff; exact log read by collector, no rerun.",
+    "reportedExit": 0
+  },
+  {
+    "check": "carrier-page-reflection",
+    "originalPath": "/tmp/dregg-page-execution-reflection.log",
+    "capturedPath": "carrier-page-reflection.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "kind": "lean_source_check",
+    "scope": "single module; shared ancestors refreshed by authority owner; no full build",
+    "exitEvidence": "Carrier frozen check manifest and explicit root handoff; not rerun by collector.",
+    "reportedExit": 0
+  }
+]

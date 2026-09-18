@@ -1,0 +1,35 @@
+Policy source storage probe parameters: ZMod 65537, scalar width 8; no deployment field selection or authorization claim
+PASS policy source cell: strict initial checker retains exact source bytes
+PASS policy source cell: initial checker rejects noncanonical appended source bytes
+PASS policy source cell: initial checker rejects wrong domain
+PASS policy source cell: initial checker rejects wrong content address
+PASS policy source cell: initial checker rejects another policy identifier
+PASS policy source cell: initial checker rejects another compiler semantics
+PASS policy source cell: initial checker rejects nonzero epoch
+PASS policy source cell: initial checker rejects a predecessor
+PASS policy source cell: source-defined internal kind satisfies actual source law
+PASS policy source cell: raw user source-cell birth is refused
+PASS policy source cell: permanent source law binds exact deterministic identity
+PASS policy source cell: source materializer accepts canonical exact state bytes
+PASS policy source cell: source materializer rejects trailing bytes
+PASS policy source cell: source materializer rejects another wire version
+PASS policy source cell: source bytes cannot be relabeled as the Book schema
+PASS policy source cell: absent source is distinct from present source
+PASS policy source cell: same-directory lookup returns exact source bytes
+PASS policy source cell: missing source refuses
+PASS policy source cell: present source cell with absent record refuses
+PASS policy source cell: wrong physical kind at exact derived identity refuses
+PASS policy source cell: wrong record domain at exact derived identity refuses
+PASS policy source cell: same-domain altered record at exact derived identity refuses
+PASS policy source cell: exact source content changes the materialized content root
+PASS policy source cell: actual lifecycle source create retains exact source bytes
+PASS policy source cell: occupied source identity refuses repeated create
+PASS policy source cell: retired source identity refuses resurrection
+PASS policy source cell: duplicate derived source identifiers refuse in actual atomic allocator
+PASS policy source cell: unchanged source passes exact final immutable law
+PASS policy source cell: rewriting source fails exact final immutable law
+source bytes=104, source cell bytes=132, derived identifier bits=255
+PASS policy source cell: SQLite reopened exact source lifecycle bytes
+PASS policy source cell: same reopened snapshot resolves canonical policy source bytes
+PASS policy source cell: source read guard uses same snapshot's actual outer physical root
+PASS policy source cell: reopened source retains actual internal schema identity

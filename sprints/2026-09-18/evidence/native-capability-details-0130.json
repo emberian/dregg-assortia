@@ -1,0 +1,97 @@
+{
+  "checked_at": "2026-09-18T05:04:15.425171+00:00",
+  "checks": [
+    {
+      "module": "Theory.TypedAuthorization",
+      "source_sha256": "276537e3ecf0a115a7ad05e29a00a19b3deb374dc3e0afe8945bbf4e44c61538",
+      "log": "/tmp/dregg-capability-use-base.log",
+      "exit_code": 0,
+      "olean": "/Users/ember/dev/minidregg/.lake/build/lib/lean/Theory/TypedAuthorization.olean",
+      "olean_mtime": 1789706000.4176388,
+      "command": "env LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Theory/TypedAuthorization.olean Theory/TypedAuthorization.lean"
+    },
+    {
+      "module": "Theory.TypedAuthorizationWitness",
+      "source_sha256": "5706117a4c244ed4b87f4f8c0199cd5aafc58ef5645b0afacf999e47f62614ce",
+      "log": "/tmp/dregg-capability-use-witness.log",
+      "exit_code": 0,
+      "olean": "/Users/ember/dev/minidregg/.lake/build/lib/lean/Theory/TypedAuthorizationWitness.olean",
+      "olean_mtime": 1789706016.9799547,
+      "command": "env LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Theory/TypedAuthorizationWitness.olean Theory/TypedAuthorizationWitness.lean"
+    },
+    {
+      "module": "Theory.AuthorizationDeclaration",
+      "source_sha256": "dfd887d10604cf642ae71bac4973a79b5cbc12403a09350c7002672ad3e9c0b9",
+      "log": "/tmp/dregg-capability-use-declaration.log",
+      "exit_code": 0,
+      "olean": "/Users/ember/dev/minidregg/.lake/build/lib/lean/Theory/AuthorizationDeclaration.olean",
+      "olean_mtime": 1789706042.78319,
+      "command": "env LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Theory/AuthorizationDeclaration.olean Theory/AuthorizationDeclaration.lean"
+    },
+    {
+      "module": "Theory.CredentialLineageAdmission",
+      "source_sha256": "d9eeab7f064d0101fa2027782cdb38c64daf1de18b4ad91bff31754b80fd9fd5",
+      "log": "/tmp/dregg-lineage-admission-check.log",
+      "exit_code": 0,
+      "olean": "/Users/ember/dev/minidregg/.lake/build/lib/lean/Theory/CredentialLineageAdmission.olean",
+      "olean_mtime": 1789707571.3791103,
+      "command": "env LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Theory/CredentialLineageAdmission.olean Theory/CredentialLineageAdmission.lean"
+    },
+    {
+      "module": "Compiler.CredentialAuthorityPolicyRegistry",
+      "source_sha256": "d05d098099208893502e23cd316eff8457132e531cc8a7cb0c8ab58108431975",
+      "log": "/tmp/dregg-capability-registry-check.log",
+      "exit_code": 0,
+      "olean": "/Users/ember/dev/minidregg/.lake/build/lib/lean/Compiler/CredentialAuthorityPolicyRegistry.olean",
+      "olean_mtime": 1789707739.8717465,
+      "command": "env LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Compiler/CredentialAuthorityPolicyRegistry.olean Compiler/CredentialAuthorityPolicyRegistry.lean"
+    }
+  ],
+  "native_probe": {
+    "source": "/Users/ember/dev/minidregg/scripts/probe-credential-capability-use.lean",
+    "source_sha256": "5955258a8fb67d3820f23802a501a7690c49dd2969f132f0d6c4f56a1ba5853b",
+    "exit_code": 0,
+    "log": "/tmp/dregg-native-capability-use-probe.log",
+    "command": "env LEAN_NUM_THREADS=2 lake env lean --run scripts/probe-credential-capability-use.lean /tmp/minidregg-credential-signature-verifier-target/release/minidregg-credential-signature-verifier /tmp/minidregg-credential-signature-verifier-target/release/examples/sign-probe native/hyperdocument-link-sqlite-store/target/release/minidregg-link-sqlite-store",
+    "field_fixture": {
+      "prime": 65537,
+      "order_width": 15,
+      "deployment_choice": false
+    },
+    "binaries": [
+      {
+        "path": "/tmp/minidregg-credential-signature-verifier-target/release/minidregg-credential-signature-verifier",
+        "sha256": "3cac3584c9bcf46bf54d19d298cadd568b24df57e19fecd9dfca19dbaee700ad"
+      },
+      {
+        "path": "/tmp/minidregg-credential-signature-verifier-target/release/examples/sign-probe",
+        "sha256": "3a2ee794ed7abd35a75baf2394bb84b1bb8382a86348a0a14bc4ae66204f17c1"
+      },
+      {
+        "path": "/Users/ember/dev/minidregg/native/hyperdocument-link-sqlite-store/target/release/minidregg-link-sqlite-store",
+        "sha256": "6c716da59969563cb9ddbe71a25370bbe9db8de13670fabaac5abe8a2ed42a03"
+      }
+    ],
+    "scope": "Existing actual capability-only PolicyInstall AcceptedCellEffect from persisted full canonical authority and native Ed25519. No durable policy-install commit or root issuance provenance from the bootstrap fixture is claimed."
+  },
+  "axiom_audit": {
+    "source": "/tmp/dregg-capability-axiom-audit.lean",
+    "source_sha256": "e13c3c294bce4912218a0a350045bd5b49d1438d5fd8fab73b17b4e4f43b247f",
+    "log": "/tmp/dregg-capability-axiom-audit.log",
+    "exit_code": 0,
+    "theorem_count": 13,
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "source_only_wip": [
+    {
+      "source": "/Users/ember/dev/minidregg/Assurance/DeployedCredentialLifecycle.lean",
+      "source_sha256": "c7cb5f1cbf9649a641de531fb05e3b27a2205c6f73f402da27731748718668b3",
+      "scope": "Only explicit permissive fixture Portal fields and one positional capability constructor migrated. Not rechecked by this lane; shared Effects/lineage wave and central affected closure remain."
+    }
+  ],
+  "finished_at": "2026-09-18T05:15:37.189494+00:00"
+}

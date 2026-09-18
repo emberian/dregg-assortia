@@ -1,0 +1,2 @@
+PASS policy-source-v2: 10 constructors/closures, canonical decoding, malformed input, cSHAKE and existing registry consumer; combined source 261 bytes
+PASS policy preparation: complete multishard head+marker candidate, actual bounded order fold, old-source selection and weakening refusal, exact request/source binding. Native accepted installs are checked by probe-native-capability-use; no signature fixture or fabricated accepted token here.

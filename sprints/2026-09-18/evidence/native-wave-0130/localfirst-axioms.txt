@@ -1,0 +1,37 @@
+'Minidregg.Kernel.DeclaredResourceController.command_decode_encode' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Kernel.DeclaredResourceController.command_decode_canonical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Kernel.DeclaredResourceController.pagePatch_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minidregg.Kernel.DeclaredResourceController.PreparedPage.action_semantics_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Kernel.DeclaredResourceController.source_request_epoch_current' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Kernel.DeclaredResourceController.tuple_source_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Kernel.DeclaredResourceController.tuple_post_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Kernel.DeclaredResourceController.AcceptedInvocation.native_ingress_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Kernel.DeclaredResourceController.AcceptedInvocation.post_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Kernel.DeclaredResourceController.AcceptedInvocation.authority_post_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Kernel.DeclaredResourceController.AcceptedInvocation.policy_view_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Kernel.DeclaredResourceController.writes_roots_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Kernel.DeclaredResourceController.readGuards_readonly' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

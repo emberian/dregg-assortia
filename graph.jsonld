@@ -442,18 +442,19 @@
       "sources": [
         "urn:dregg:assortia:S-IMPLEMENTATION-2300",
         "urn:dregg:assortia:S-IMPLEMENTATION-2330",
-        "urn:dregg:assortia:S-IMPLEMENTATION-0045"
+        "urn:dregg:assortia:S-IMPLEMENTATION-0045",
+        "urn:dregg:assortia:S-IMPLEMENTATION-0130"
       ],
-      "owner": "Astra: resource_history",
-      "updatedAt": "2026-09-18T00:45:00-04:00",
+      "owner": "Astra: root + kernel_carrier + localfirst",
+      "updatedAt": "2026-09-18T01:30:00-04:00",
       "advances": [
         "urn:dregg:assortia:E-DOC",
         "urn:dregg:assortia:E-COORD"
       ],
-      "nextAction": "Repair intermediate-root disagreement across reopen, then rerun the exact failed World/history checks.",
+      "nextAction": "Complete ordered factory/history repair and connect document edits to accepted kernel operations instead of setup writes.",
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
-      "progress": "World/history attempt2:14 passed,2 failed,2 not run. Final-state equality does not close every-boundary recovery.",
+      "progress": "The earlier intermediate-root failures are fixed: cell/turn/World24/24 pass. Kernel-authorized document saves remain a distinct receiving task.",
       "blockedBy": []
     },
     {
@@ -461,7 +462,7 @@
       "@type": "WorkItem",
       "label": "Trace one canonical typed event through its real compiler and consumer",
       "description": "Connect the canonical source request and accepted joint state to actual artifact and native consumers. Keep mandatory request/capability-use and policy-change verb tags consistent.",
-      "status": "active",
+      "status": "done",
       "dependsOn": [
         "urn:dregg:assortia:C-KERNEL-COMPILER"
       ],
@@ -470,18 +471,22 @@
       ],
       "closure": "One explicit event/schema/codec/acceptance/storage path, with each existing join or missing obligation sourced. No broad rewrite before the path is understood.",
       "owner": "Astra: kernel_carrier",
-      "updatedAt": "2026-09-18T00:45:00-04:00",
+      "updatedAt": "2026-09-18T01:30:00-04:00",
       "advances": [
         "urn:dregg:assortia:E-KERNEL",
         "urn:dregg:assortia:E-COMPILER"
       ],
-      "nextAction": "Finish regenerated authorization artifacts, then prove actual page-write reflection used by invocation.",
+      "nextAction": "Use the captured receiving evidence as a regression boundary while completing the linked resource journey.",
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
-      "progress": "Authorization base3/3 and artifact closure27/27 passed; regenerated outputs byte-compared and pushed in c41d77e. Page reflection and actual native consumers continue.",
+      "progress": "Regenerated authorization artifacts, actual page execution reflection, and one source-authorized native invocation/physical publication path are captured at minidregg278ed6a. This bounded trace does not close every compiler or proof consumer.",
       "blockedBy": [],
       "sources": [
-        "urn:dregg:assortia:S-IMPLEMENTATION-0045"
+        "urn:dregg:assortia:S-IMPLEMENTATION-0045",
+        "urn:dregg:assortia:S-IMPLEMENTATION-0130"
+      ],
+      "completionEvidence": [
+        "urn:dregg:assortia:S-IMPLEMENTATION-0130"
       ]
     },
     {
@@ -1915,7 +1920,8 @@
       "sources": [
         "urn:dregg:assortia:S-IMPLEMENTATION-2300",
         "urn:dregg:assortia:S-IMPLEMENTATION-2330",
-        "urn:dregg:assortia:S-IMPLEMENTATION-0045"
+        "urn:dregg:assortia:S-IMPLEMENTATION-0045",
+        "urn:dregg:assortia:S-IMPLEMENTATION-0130"
       ],
       "motivatedBy": [
         "urn:dregg:assortia:I-CORE-SPRINT",
@@ -1926,19 +1932,16 @@
       ],
       "closure": "Actual source-authorized birth commits identity, initial content, owner grant and selected fee together; refusals and crash/retry cannot expose a partial accepted result.",
       "owner": "Astra: proof_integrity + program_install",
-      "updatedAt": "2026-09-18T00:45:00-04:00",
+      "updatedAt": "2026-09-18T01:30:00-04:00",
       "advances": [
         "urn:dregg:assortia:E-KERNEL",
         "urn:dregg:assortia:E-WORLD"
       ],
-      "nextAction": "Commit initial policy/source bytes, owner and policy-control grants, funding and fees through accepted native receiving.",
+      "nextAction": "Finish native upper/physical checks, derive both operation identity fields from the authenticated creator coordinate, then run accepted birth/reopen/invoke.",
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
-      "progress": "Complete authority and funded birth preparation exercised; real source authorization, initial policy and native publication are still joining.",
-      "blockedBy": [
-        "urn:dregg:assortia:W-AUTHORITY-NATIVE",
-        "urn:dregg:assortia:W-POLICY-SOURCE"
-      ]
+      "progress": "Lower resource birth controller and initial source/allocation laws pass. Upper native admission and physical receiver are active; caller-isolated transaction/marker identity repair is joining before the native birth witness.",
+      "blockedBy": []
     },
     {
       "@id": "urn:dregg:assortia:W-EFFECT-ADMISSION",
@@ -2005,11 +2008,12 @@
       "@type": "WorkItem",
       "label": "Connect canonical DataIntent execution to a real durable receiver",
       "description": "The existing Lean executor now crosses exact-byte SQLite CAS with crash/retry/concurrency checks; full source-authorized resource birth and product receiving joins remain active.",
-      "status": "active",
+      "status": "done",
       "sources": [
         "urn:dregg:assortia:S-IMPLEMENTATION-2300",
         "urn:dregg:assortia:S-IMPLEMENTATION-2330",
-        "urn:dregg:assortia:S-IMPLEMENTATION-0045"
+        "urn:dregg:assortia:S-IMPLEMENTATION-0045",
+        "urn:dregg:assortia:S-IMPLEMENTATION-0130"
       ],
       "motivatedBy": [
         "urn:dregg:assortia:I-CORE-SPRINT",
@@ -2022,16 +2026,19 @@
       ],
       "closure": "A controller-bound multi-cell operation crosses real Lean decoding/admission/execute and physical CAS; stale/conflicting/malformed requests refuse, exact retry replays, and reopen preserves exact bytes and history.",
       "owner": "Astra: core_durable_receiver + proof_integrity",
-      "updatedAt": "2026-09-18T00:45:00-04:00",
+      "updatedAt": "2026-09-18T01:30:00-04:00",
       "advances": [
         "urn:dregg:assortia:E-KERNEL",
         "urn:dregg:assortia:E-WORLD"
       ],
-      "nextAction": "Join source-authorized operations and reconcile exact signed retries from retained journal entries.",
+      "nextAction": "Use the captured receiving evidence as a regression boundary while completing the linked resource journey.",
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
-      "progress": "SQLite CAS/reopen/concurrency component checks passed; strict native Ed25519 helper exercised. Complete signed journey remains active.",
-      "blockedBy": []
+      "progress": "Actual controller-bound page and authority-marker writes pass native admission, SQLite publication, reopen, exact-ingress replay and conflicting/hostile input refusal. Probe authority is explicitly bootstrapped; accepted birth/delegation have their own active work.",
+      "blockedBy": [],
+      "completionEvidence": [
+        "urn:dregg:assortia:S-IMPLEMENTATION-0130"
+      ]
     },
     {
       "@id": "urn:dregg:assortia:S-IMPLEMENTATION-2330",
@@ -2049,10 +2056,11 @@
       "@type": "WorkItem",
       "label": "Keep embedded candidates atomic through durable publication",
       "description": "SDK/World align with the current node rejection policy: no retained fee, nonce, executor side-state or observer notification from a refused candidate. A possibly committed storage failure still requires authoritative reopen.",
-      "status": "active",
+      "status": "done",
       "sources": [
         "urn:dregg:assortia:S-IMPLEMENTATION-2330",
-        "urn:dregg:assortia:S-IMPLEMENTATION-0045"
+        "urn:dregg:assortia:S-IMPLEMENTATION-0045",
+        "urn:dregg:assortia:S-IMPLEMENTATION-0130"
       ],
       "related": [
         "urn:dregg:assortia:W-DOC-PERSIST"
@@ -2062,16 +2070,19 @@
       ],
       "closure": "Paid late refusal leaves exact prior state; storage refusal restores executor side-state; pending/unwound candidates cannot reenter; observer runs once only after acceptance; next success replays and reopens correctly.",
       "owner": "Astra: root + resource_history",
-      "updatedAt": "2026-09-18T00:45:00-04:00",
+      "updatedAt": "2026-09-18T01:30:00-04:00",
       "advances": [
         "urn:dregg:assortia:E-HERMES",
         "urn:dregg:assortia:E-DOC"
       ],
-      "nextAction": "Finish current World batch validation and remeasure the SDK/Hermes path after lazy initialization.",
+      "nextAction": "Use the captured receiving evidence as a regression boundary while completing the linked resource journey.",
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
-      "progress": "Four actual SDK candidate rollback/publication tests passed; World intermediate-history failures remain separate.",
-      "blockedBy": []
+      "progress": "SDK4/4 candidate/publication tests pass after lazy registration; World/cell/history24/24 pass at breadstuffs73136dd30 including paid refusal, storage failure, subsequent acceptance and reopen.",
+      "blockedBy": [],
+      "completionEvidence": [
+        "urn:dregg:assortia:S-IMPLEMENTATION-0130"
+      ]
     },
     {
       "@id": "urn:dregg:assortia:S-IMPLEMENTATION-0045",
@@ -2106,18 +2117,20 @@
       "description": "Persist exact signing keys/epochs; accept actual configured native verification of the exact request and capability against the complete same-snapshot authority.",
       "status": "active",
       "owner": "Astra: authority_pages + durable_receiver + effect_admission",
-      "updatedAt": "2026-09-18T00:45:00-04:00",
+      "updatedAt": "2026-09-18T01:30:00-04:00",
       "advances": [
         "urn:dregg:assortia:E-KERNEL"
       ],
-      "nextAction": "Refresh affected authority consumers, then exercise real signed acceptance and wrong-key/request/epoch refusals.",
+      "nextAction": "Preserve native acceptance/refusals through the next delegation/request migration and refresh all affected consumers.",
       "closure": "Actual installed verification plus complete committed authority checks feed accepted source operations; stale/altered/revoked credentials cannot authorize them.",
       "sources": [
-        "urn:dregg:assortia:S-IMPLEMENTATION-0045"
+        "urn:dregg:assortia:S-IMPLEMENTATION-0045",
+        "urn:dregg:assortia:S-IMPLEMENTATION-0130"
       ],
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
-      "blockedBy": []
+      "blockedBy": [],
+      "progress": "Real configured Ed25519, full committed key snapshot, mandatory exact-request capability use and strict canonical lineage pass actual native probes. Explicit delegated lineage and forthcoming request/profile migrations still require consumer closure."
     },
     {
       "@id": "urn:dregg:assortia:W-POLICY-SOURCE",
@@ -2126,19 +2139,21 @@
       "description": "Immutable internal policy-source cells and a common field/compiler/request profile make resource creation, invocation and policy replacement agree.",
       "status": "active",
       "owner": "Astra: resource_pages + shell_hermes + program_install",
-      "updatedAt": "2026-09-18T00:45:00-04:00",
+      "updatedAt": "2026-09-18T01:30:00-04:00",
       "advances": [
         "urn:dregg:assortia:E-KERNEL",
         "urn:dregg:assortia:E-WORLD"
       ],
-      "nextAction": "Finish source-cell/profile closure and install/birth/invoke consumers.",
+      "nextAction": "Complete physical birth and policy replacement under the shared profile and exact same-directory source guards.",
       "closure": "Policy source is created atomically and selected from the same durable directory; kind/domain/address mismatches refuse, and all consuming verbs share compatible source semantics.",
       "sources": [
-        "urn:dregg:assortia:S-IMPLEMENTATION-0045"
+        "urn:dregg:assortia:S-IMPLEMENTATION-0045",
+        "urn:dregg:assortia:S-IMPLEMENTATION-0130"
       ],
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
-      "blockedBy": []
+      "blockedBy": [],
+      "progress": "Canonical source-cell/registry33 checks, common profile and actual invocation consumer pass. Initial birth and replacement source creation remain integrated receiving work."
     },
     {
       "@id": "urn:dregg:assortia:W-DECLARED-INVOKE",
@@ -2147,22 +2162,23 @@
       "description": "Compact commands use actual page execution, complete old authority, stored policy and accepted final-state evidence.",
       "status": "active",
       "owner": "Astra: localfirst",
-      "updatedAt": "2026-09-18T00:45:00-04:00",
+      "updatedAt": "2026-09-18T01:30:00-04:00",
       "advances": [
         "urn:dregg:assortia:E-KERNEL",
         "urn:dregg:assortia:E-WORLD"
       ],
-      "nextAction": "Finish page-write reflection, native per-incidence admission and durable acknowledgment.",
+      "nextAction": "Create through the accepted birth receiver, reopen, then invoke using the born owner grant; exercise response-loss retry and refusal.",
       "closure": "An owner can invoke an authored operation, invalid requests refuse unchanged, and accepted data/receipt survive reopen.",
       "sources": [
-        "urn:dregg:assortia:S-IMPLEMENTATION-0045"
+        "urn:dregg:assortia:S-IMPLEMENTATION-0045",
+        "urn:dregg:assortia:S-IMPLEMENTATION-0130"
       ],
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
       "blockedBy": [
-        "urn:dregg:assortia:W-POLICY-SOURCE",
-        "urn:dregg:assortia:W-AUTHORITY-NATIVE"
-      ]
+        "urn:dregg:assortia:W-RESOURCE-BIRTH"
+      ],
+      "progress": "Actual native stored-capability invocation, publication, reopen and exact retry pass at278ed6a from explicit bootstrap authority. Joined accepted-birth ownership is now the next witness."
     },
     {
       "@id": "urn:dregg:assortia:W-AUTHORIZED-DELEGATION",
@@ -2211,39 +2227,47 @@
       "@type": "WorkItem",
       "label": "Make assortia usable for ongoing work and new contributors",
       "description": "Graph-backed work ownership, concrete briefs, generated current views and an explicit update routine replace an orientation-only entry point.",
-      "status": "active",
+      "status": "done",
       "owner": "Astra: root",
-      "updatedAt": "2026-09-18T00:45:00-04:00",
+      "updatedAt": "2026-09-18T01:45:00-04:00",
       "advances": [
         "urn:dregg:assortia:E-KNOWLEDGE-HUB"
       ],
-      "nextAction": "Publish the current graph-backed board and substantive contributor feature investigation.",
+      "nextAction": "Use and maintain the tested hub tools during project handoffs; contributor/runtime selection continues in W-ANDROID-CONTRACT.",
       "closure": "A clean assortia clone exposes current work, ownership and a concrete feature-handoff investigation without sibling repositories; graph/status checks and generated-view checks pass.",
       "sources": [
-        "urn:dregg:assortia:S-IMPLEMENTATION-0045"
+        "urn:dregg:assortia:S-IMPLEMENTATION-0045",
+        "urn:dregg:assortia:S-IMPLEMENTATION-0130",
+        "urn:dregg:assortia:S-HUB-TOOLS-0145"
       ],
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 0,
       "blockedBy": [],
       "motivatedBy": [
         "urn:dregg:assortia:I-CONTRIBUTOR-LEGIBILITY"
-      ]
+      ],
+      "completionEvidence": [
+        "urn:dregg:assortia:S-HUB-TOOLS-0145"
+      ],
+      "progress": "Graph-backed ownership/board, portable tools and substantial source-backed contributor proposal are present. Runtime/feature selection remains explicitly active."
     },
     {
       "@id": "urn:dregg:assortia:W-GRAPH-NAVIGATION",
       "@type": "WorkItem",
       "label": "Follow graph relationships in both directions",
       "description": "Extend the existing graph browser so readers can move from work to purpose, dependencies and evidence, and discover what points back.",
-      "status": "backlog",
-      "owner": null,
-      "updatedAt": "2026-09-18T00:51:00-04:00",
+      "status": "done",
+      "owner": "Astra: core_durable_receiver",
+      "updatedAt": "2026-09-18T01:45:00-04:00",
       "advances": [
         "urn:dregg:assortia:E-KNOWLEDGE-HUB"
       ],
-      "nextAction": "Astra handles this internal tooling work; it is not an external contributor assignment.",
+      "nextAction": "Use and maintain the tested hub tools during project handoffs; contributor/runtime selection continues in W-ANDROID-CONTRACT.",
       "closure": "Existing graph relationships are traversable deterministically and safely in both directions; broken links and cycles are handled explicitly; default short output remains usable.",
       "sources": [
-        "urn:dregg:assortia:S-IMPLEMENTATION-0045"
+        "urn:dregg:assortia:S-IMPLEMENTATION-0045",
+        "urn:dregg:assortia:S-IMPLEMENTATION-0130",
+        "urn:dregg:assortia:S-HUB-TOOLS-0145"
       ],
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 0,
@@ -2261,27 +2285,37 @@
       ],
       "motivatedBy": [
         "urn:dregg:assortia:I-CONTRIBUTOR-LEGIBILITY"
-      ]
+      ],
+      "completionEvidence": [
+        "urn:dregg:assortia:S-HUB-TOOLS-0145"
+      ],
+      "progress": "12 focused tests pass, including real graph traversal and a standalone script-plus-graph checkout."
     },
     {
       "@id": "urn:dregg:assortia:W-SOURCE-IMPACT",
       "@type": "WorkItem",
       "label": "Make source freshness portable and actionable",
       "description": "Report which claims/work items need reinspection when source bytes change, with repository paths configurable on a contributor machine.",
-      "status": "backlog",
-      "owner": null,
-      "updatedAt": "2026-09-18T00:45:00-04:00",
+      "status": "done",
+      "owner": "Astra: core_resource_pages",
+      "updatedAt": "2026-09-18T01:45:00-04:00",
       "advances": [
         "urn:dregg:assortia:E-KNOWLEDGE-HUB"
       ],
-      "nextAction": "Agree the portable path override and structured impact report contract before assignment.",
+      "nextAction": "Use and maintain the tested hub tools during project handoffs; contributor/runtime selection continues in W-ANDROID-CONTRACT.",
       "closure": "The checker identifies unavailable repositories separately from changed files, explains affected records without rewriting their historical hashes, and runs against temporary fixture repositories.",
       "sources": [
-        "urn:dregg:assortia:S-IMPLEMENTATION-0045"
+        "urn:dregg:assortia:S-IMPLEMENTATION-0045",
+        "urn:dregg:assortia:S-IMPLEMENTATION-0130",
+        "urn:dregg:assortia:S-HUB-TOOLS-0145"
       ],
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
-      "blockedBy": []
+      "blockedBy": [],
+      "completionEvidence": [
+        "urn:dregg:assortia:S-HUB-TOOLS-0145"
+      ],
+      "progress": "23 focused tests,41 total hub tests and actual CLI fixtures pass; unavailable evidence is unknown, old hashes remain unchanged, and contextual reference paths are explicit."
     },
     {
       "@id": "urn:dregg:assortia:M-2026-09-26",
@@ -2319,11 +2353,11 @@
     {
       "@id": "urn:dregg:assortia:W-ANDROID-CONTRACT",
       "@type": "WorkItem",
-      "label": "Define a substantial Android product work package",
-      "description": "Trace existing mobile work and actual node/receiver APIs, then specify app responsibilities, embedded runtime contract, system/UI integrations and acceptance scenarios for an outside contributor. Android is the concrete example supplied by ember, not yet a settled release commitment. Ember also suggested DreggNet/cloud for the experienced platform contributor; compare the shared native-host boundary rather than presuming Android is selected.",
+      "label": "Define substantial cloud/native-host or Android product ownership",
+      "description": "Compare actual DreggNet lifecycle machinery and native runtime export/embedding boundaries. Wisper can own platform design and implementation. Android was the initial example; this stable work ID is retained while cloud ownership is evaluated.",
       "status": "active",
-      "owner": "Astra: root + mobile inventory + runtime review",
-      "updatedAt": "2026-09-18T00:51:00-04:00",
+      "owner": "Astra: root; contributor/runtime selection with ember",
+      "updatedAt": "2026-09-18T01:45:00-04:00",
       "priority": 0,
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "advances": [
@@ -2331,14 +2365,115 @@
         "urn:dregg:assortia:E-KNOWLEDGE-HUB"
       ],
       "sources": [
-        "urn:dregg:assortia:S-IMPLEMENTATION-0045"
+        "urn:dregg:assortia:S-IMPLEMENTATION-0045",
+        "urn:dregg:assortia:S-IMPLEMENTATION-0130",
+        "urn:dregg:assortia:S-CLOUD-HOST-REVIEW",
+        "urn:dregg:assortia:S-MOBILE-REVIEW",
+        "urn:dregg:assortia:S-HOST-CONTRIBUTOR-PROPOSAL"
       ],
       "motivatedBy": [
         "urn:dregg:assortia:I-CONTRIBUTOR-LEGIBILITY"
       ],
       "blockedBy": [],
-      "nextAction": "Compare Android embedding and cloud lifecycle ownership against the actual node/receiver source; publish a substantial feature proposal.",
-      "closure": "A contributor can scaffold a real product surface from a concrete brief and agreed contracts, with executable receiving interfaces or explicitly owned upstream delivery, test scenarios and no need to infer core architecture from chat."
+      "nextAction": "Review the published resource-host lifecycle proposal with ember; select the first runtime/export and consumer, then freeze its owned upstream delivery and acceptance harness.",
+      "closure": "A contributor can scaffold a real product surface from a concrete brief and agreed contracts, with executable receiving interfaces or explicitly owned upstream delivery, test scenarios and no need to infer core architecture from chat.",
+      "brief": "contributing/resource-host-lifecycle.md",
+      "progress": "Source-backed cloud and mobile inventories plus concrete feature/contract proposal published. Cloud supervisor is the recommendation; no assignment or release commitment. Wisper can own platform design and implementation, including native host extraction by agreement.",
+      "writeScope": [
+        "DreggNet/control provider/server/supervisor and gateway lifecycle",
+        "Selected native host extraction/export, jointly reserved with core",
+        "Selected packaging and integration harness"
+      ],
+      "acceptance": [
+        "Fault-injected provision/settlement/publication crash intervals reconcile one backend and one charge.",
+        "Actual native authorized operation and exact retained state/result survive restart and response-loss retry.",
+        "Owner isolation, stop/wake, incompatible/corrupt storage refusal and acknowledged event resume are exercised."
+      ]
+    },
+    {
+      "@id": "urn:dregg:assortia:S-IMPLEMENTATION-0130",
+      "@type": "Source",
+      "label": "Durable native invocation and repaired runtime history, September 18 01:30",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-18/checkpoint-0130.md",
+      "lineStart": 1,
+      "lineEnd": 39,
+      "sha256": "c431082797b3172bc5e557739c049bffb59901a39fddc1f041d932a73b20ac96",
+      "recordedDate": "2026-09-18",
+      "evidenceKind": "captured-runs-and-coordination-record"
+    },
+    {
+      "@id": "urn:dregg:assortia:W-FACTORY-HISTORY",
+      "@type": "WorkItem",
+      "label": "Retain factory deployment at its actual history boundary",
+      "description": "World deployment currently mutates volatile registries; historical paths either omit factories or preload the present registry into the past. Persist ordered descriptor/VK evidence and replay the actual executor deployment at that boundary.",
+      "status": "active",
+      "owner": "Astra: kernel_carrier",
+      "updatedAt": "2026-09-18T01:30:00-04:00",
+      "advances": [
+        "urn:dregg:assortia:E-DOC",
+        "urn:dregg:assortia:E-KERNEL"
+      ],
+      "sources": [
+        "urn:dregg:assortia:S-IMPLEMENTATION-0130"
+      ],
+      "milestone": "urn:dregg:assortia:M-2026-09-26",
+      "priority": 1,
+      "blockedBy": [],
+      "related": [
+        "urn:dregg:assortia:W-DOC-PERSIST",
+        "urn:dregg:assortia:W-EMBEDDED-CANDIDATE"
+      ],
+      "nextAction": "Implement one ordered durable deployment event across World, replay, reversible history and forks; verify exact duplicate/conflicting descriptors, storage refusal and reopen.",
+      "closure": "Actual factory deployment, birth/mutation and recovery use the same ordered descriptor/VK evidence; no historical prefix sees a later factory; conflicting deployment and persistence failures leave committed state unchanged; unsupported old images refuse without changing evidence."
+    },
+    {
+      "@id": "urn:dregg:assortia:S-CLOUD-HOST-REVIEW",
+      "@type": "Source",
+      "label": "Bounded cloud lifecycle source review, September 18",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "research/cloud-host-2026-09-18.md",
+      "lineStart": 1,
+      "lineEnd": 55,
+      "sha256": "3bc9a131a317a69d5900860169a5a8aa6bf9472467f55b531ae39e073535fe5a",
+      "recordedDate": "2026-09-18",
+      "evidenceKind": "source-inspection"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-MOBILE-REVIEW",
+      "@type": "Source",
+      "label": "Bounded Android/mobile source inventory, September 18",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "research/mobile-2026-09-18.md",
+      "lineStart": 1,
+      "lineEnd": 14,
+      "sha256": "912a921819252fee133e43f3dd9ae213428547d23b23adf8b6f62adfc5476140",
+      "recordedDate": "2026-09-18",
+      "evidenceKind": "source-inspection"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-HOST-CONTRIBUTOR-PROPOSAL",
+      "@type": "Source",
+      "label": "Proposed resource-host lifecycle ownership and receiving contract",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "contributing/resource-host-lifecycle.md",
+      "lineStart": 1,
+      "lineEnd": 90,
+      "sha256": "0a6438f72f07e62c5e94c717143401fc18e9964b0817e3b86dbe5c7e005226d9",
+      "recordedDate": "2026-09-18",
+      "evidenceKind": "assistant-proposal"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-HUB-TOOLS-0145",
+      "@type": "Source",
+      "label": "Graph navigation/source-impact tooling and captured tests",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-18/hub-tools-0145.md",
+      "lineStart": 1,
+      "lineEnd": 19,
+      "sha256": "cd729ad7fa103189765a83be3a5d86ca03413d7230fa427db8788cc20385556e",
+      "recordedDate": "2026-09-18",
+      "evidenceKind": "captured-tool-tests"
     }
   ]
 }

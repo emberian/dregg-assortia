@@ -1,0 +1,61 @@
+'Minidregg.Compiler.PolicySourceCell.decode_encode' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minidregg.Compiler.PolicySourceCell.decode_canonical' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minidregg.Compiler.PolicySourceCell.encode_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minidregg.Compiler.PolicySourceCell.wrong_version_refused' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minidregg.Compiler.PolicySourceCell.CheckedInitial.bytes_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Compiler.PolicySourceCell.CheckedInitial.source_valid' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Compiler.PolicySourceCell.checkInitial_of_valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minidregg.Compiler.PolicySourceCell.wrong_domain_refused' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minidregg.Compiler.PolicySourceCell.wrong_digest_refused' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minidregg.Compiler.PolicySourceCell.research_profile_refused' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Compiler.PolicySourceCell.CheckedInitials.ids_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Compiler.PolicySourceCell.CheckedInitials.record_of_member' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Compiler.CanonicalCellRegistry.LoadedPolicySource.lifecycle_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Compiler.CanonicalCellRegistry.LoadedPolicySource.readGuard_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Compiler.CanonicalCellRegistry.LoadedPolicySource.cell_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Compiler.CanonicalCellRegistry.fetchPolicySource_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Compiler.CanonicalCellRegistry.missing_policy_source_refused' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Compiler.CanonicalCellRegistry.wrong_policy_source_kind_refused' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Compiler.CanonicalCellRegistry.wrong_policy_source_domain_refused' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Compiler.CanonicalCellRegistry.wrong_policy_source_digest_refused' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Compiler.CanonicalCellRegistry.policy_source_final_bytes_immutable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Compiler.CanonicalCellRegistry.policy_source_final_state_immutable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Compiler.CanonicalCellRegistry.policy_source_occupied_refused' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Compiler.CanonicalCellRegistry.policy_source_retired_refused' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Compiler.CanonicalCellRegistry.policy_source_identifier_collision_refused' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

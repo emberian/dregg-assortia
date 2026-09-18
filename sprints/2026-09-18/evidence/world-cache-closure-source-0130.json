@@ -1,0 +1,82 @@
+{
+  "gitHead": "3b949775346616a91330c75d86df09927909dafb",
+  "captureNote": "Captured immediately after build launch; owned source was held frozen. Initial manifest script failed before writing.",
+  "files": [
+    {
+      "path": "cell/src/ledger.rs",
+      "sha256": "ec14200d1cd302bf4fe603b1a35a1c8c582e56fa14501a722e5640feba6889a5"
+    },
+    {
+      "path": "dregg-lean-ffi/src/lib.rs",
+      "sha256": "6b077a9af358f652e5b3970faf2894c81fc58cc72c75ba92cdc5dd969d30c731"
+    },
+    {
+      "path": "sdk/src/embed.rs",
+      "sha256": "e2acac71f249ec69e9c57e78fe4c3dfa1e06340dce08e9c1652a204b9f301c7b"
+    },
+    {
+      "path": "sdk/src/runtime.rs",
+      "sha256": "ce23f8e63230167ab86193cd03674db91fc986acff4b468425127e25c82b455d"
+    },
+    {
+      "path": "starbridge-v2/src/agent_attach.rs",
+      "sha256": "46e2aefd69bb0b3db1f91e85c9caac2e1eff62f93c08654fc198946002489228"
+    },
+    {
+      "path": "starbridge-v2/src/deos_desktop/provenance_walker.rs",
+      "sha256": "942a4301d19c7c98b9a97b64bc8bda2f8d18c5d537263bc91999032e257511e4"
+    },
+    {
+      "path": "starbridge-v2/src/distributed_card.rs",
+      "sha256": "510d2b28e5aadcc17d7772c1e9d8ba5aa30357fd801dcf6f645cbb1c0f905f18"
+    },
+    {
+      "path": "starbridge-v2/src/meta_debug.rs",
+      "sha256": "c9bb57bb44ed60eba549754ec3fe7551be93d7dadc020916db5abdad7b25fcc1"
+    },
+    {
+      "path": "starbridge-v2/src/persistence.rs",
+      "sha256": "6bda55250cb8b0dcfd0a274630b55cdf1136de73e7f29710a26201d5883abf16"
+    },
+    {
+      "path": "starbridge-v2/src/receipts_inspector.rs",
+      "sha256": "9daf45b173ff1d7475effc0738385f3eceb49006c0affc285862343fce6a6a41"
+    },
+    {
+      "path": "starbridge-v2/src/replay.rs",
+      "sha256": "8fd8174f565dd8193aa1f5342c42b5af630606138542631b777299d31454ab2a"
+    },
+    {
+      "path": "starbridge-v2/src/time_travel.rs",
+      "sha256": "5a1653019972a77dac85b09e00557349c00652302a09714eff796541863e0daf"
+    },
+    {
+      "path": "starbridge-v2/src/ui_snapshot.rs",
+      "sha256": "2ba7c9b163188f1f296db5421556ca059f8c1041efc1cd408d68132968c2c7d3"
+    },
+    {
+      "path": "starbridge-v2/src/world/collapse.rs",
+      "sha256": "1b25e98f6bd429cb94b3baa303d4bb9caadf3dca183a07323c0151a23489e2fe"
+    },
+    {
+      "path": "starbridge-v2/src/world/mod.rs",
+      "sha256": "47fcdc8d319f9b00a05d176042d71c4fc34de000cecc842971bc0482842e7863"
+    },
+    {
+      "path": "turn/src/executor/execute.rs",
+      "sha256": "76dc463d528714245fac117932c14d31ac8dc742e993d6a475e477d424b3e0eb"
+    },
+    {
+      "path": "turn/src/executor/mod.rs",
+      "sha256": "82647ef4c8f2d172a66377941b2ca15ed76ade703dcd0bef9c70b0a3cafd7d70"
+    },
+    {
+      "path": "turn/src/executor/producer_transaction.rs",
+      "sha256": "6a1f530984f2c49e071be28f962e698bf5c87cf1fad342852a9151f54d1d0703"
+    },
+    {
+      "path": "turn/src/reversible.rs",
+      "sha256": "0c6274d96875b5ee09b5973c9ff567f59da95384dd8a3f1c282be4e2aae68092"
+    }
+  ]
+}

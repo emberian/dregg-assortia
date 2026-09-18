@@ -1,0 +1,33 @@
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2m 01s
+warning: the following packages contain code that will be rejected by a future version of Rust: proc-macro-error2 v2.0.1
+note: to see what the problems were, use the option `--future-incompat-report`, or run `cargo report future-incompatibilities --id 1`
+────────────
+ Nextest run ID e9c69e7a-352c-489d-9008-4cea481a9782 with nextest profile: full
+    Starting 24 tests across 3 binaries (2424 tests skipped)
+        PASS [   0.004s] ( 1/24) dregg-cell ledger::replacement_tests::replacement_refuses_missing_or_changed_identity_without_mutation
+        PASS [   0.004s] ( 2/24) dregg-cell ledger::replacement_tests::replacement_preserves_auxiliary_state_and_the_restore_point
+        PASS [   0.006s] ( 3/24) dregg-cell ledger::replacement_tests::replacement_of_changed_warm_clones_matches_fresh_roots_and_decoded_images
+        PASS [   0.007s] ( 4/24) dregg-turn reversible::tests::setup_updates_refuse_missing_cells_and_tampered_preimages
+        PASS [   0.010s] ( 5/24) starbridge-v2 meta_debug::tests::a_pending_symbolic_capture_has_no_replayed_publication_witness
+        PASS [   0.089s] ( 6/24) starbridge-v2 persistence::tests::corrupt_published_turn_clock_refuses_recovery_without_truncating_any_evidence
+        PASS [   0.080s] ( 7/24) starbridge-v2 replay::tests::paid_rejected_fork_retains_the_exact_branch_point
+        PASS [   0.130s] ( 8/24) dregg-turn reversible::tests::setup_updates_preserve_order_and_restore_the_complete_prior_cell
+        PASS [   0.046s] ( 9/24) starbridge-v2 replay::tests::replay_checks_original_chain_head_instead_of_replacing_it
+        PASS [   0.038s] (10/24) starbridge-v2 replay::tests::replay_checks_the_committed_step_root_as_well_as_the_parallel_root
+        PASS [   0.090s] (11/24) starbridge-v2 replay::tests::replay_checks_receipt_and_clock_even_without_a_ledger_root_change
+        PASS [   0.060s] (12/24) starbridge-v2 time_travel::tests::atomic_birth_batches_have_one_tick_and_one_fork_boundary
+        PASS [   0.011s] (13/24) starbridge-v2 ui_snapshot::tests::an_unpublished_symbolic_head_does_not_replace_a_retained_snapshot
+        PASS [   0.024s] (14/24) starbridge-v2 ui_snapshot::tests::prediction_forks_do_not_manufacture_a_snapshot_origin
+        PASS [   0.060s] (15/24) starbridge-v2 time_travel::tests::setup_updates_remain_distinct_in_ticks_mirrors_and_forks
+        PASS [   0.016s] (16/24) starbridge-v2 ui_snapshot::tests::snapshots_land_before_or_after_a_complete_birth_batch
+        PASS [   0.097s] (17/24) starbridge-v2 time_travel::tests::reversible_mirror_refuses_corrupt_clock_and_embedded_root_evidence
+        PASS [   0.055s] (18/24) starbridge-v2 world::tests::durable_genesis_update_storage_failure_keeps_both_ledgers_and_events_unchanged
+        PASS [   0.125s] (19/24) starbridge-v2 world::tests::durable_paid_late_refusal_preserves_root_nonce_head_and_reopen
+        PASS [   0.441s] (20/24) starbridge-v2 persistence::tests::ordered_recovery_preserves_intermediate_setup_and_only_removes_unpublished_tail
+        PASS [   0.030s] (21/24) starbridge-v2 world::tests::published_boundary_cache_invalidates_setup_and_refuses_pending_candidates
+        PASS [   0.243s] (22/24) starbridge-v2 world::tests::durable_atomic_birth_batches_keep_one_boundary_across_turns_and_reopen
+        PASS [   0.068s] (23/24) starbridge-v2 world::tests::durable_publication_failure_restores_revocations_budget_and_observer_boundary
+        PASS [   0.357s] (24/24) starbridge-v2 world::tests::durable_ordered_setup_preserves_births_updates_receipts_and_every_history_root
+────────────
+     Summary [   0.638s] 24 tests run: 24 passed, 2424 skipped
+pbuild: VERDICT outcome=PASS status=0 lane=hcargo host=hbox cmd=timeout --signal=TERM --kill-after=15s 1800s cargo nextest run --profile full --build-jobs 4 --test-threads=4 --no-fail-fast --no-tests fail -p dregg-cell -p dregg-turn -p starbridge-v2 --features starbridge-v2/agent-js --lib -E test(ledger::replacement_tests::) or test(~setup_updates_) or test(~durable_paid_late_refusal) or test(~durable_publication_failure) or test(~durable_atomic_birth_batches) or test(~published_boundary_cache) or test(~durable_ordered_setup) or test(~durable_genesis_update_storage_failure) or test(~ordered_recovery_preserves_intermediate_setup) or test(~corrupt_published_turn_clock) or test(~replay_checks_original_chain_head) or test(~replay_checks_receipt_and_clock) or test(~replay_checks_the_committed_step_root) or test(~paid_rejected_fork) or test(~atomic_birth_batches_have_one_tick) or test(~snapshots_land_before_or_after) or test(~an_unpublished_symbolic_head) or test(~prediction_forks_do_not_manufacture) or test(~a_pending_symbolic_capture) or test(~reversible_mirror_refuses_corrupt_clock)

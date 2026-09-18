@@ -1,0 +1,1 @@
+PASS declared resource: real native signatures + stored capability + selected physical policy source + exact page/authority tuple + durable publication/reopen/replay; tamper, unrelated signer, stale root, overbroad edit and object-to-program edit refuse. Bootstrap fixture only; no birth/delegation admission claimed.
