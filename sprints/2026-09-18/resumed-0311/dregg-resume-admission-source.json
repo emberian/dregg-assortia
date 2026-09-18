@@ -1,0 +1,222 @@
+{
+  "repo": "/Users/ember/dev/minidregg",
+  "owned": [
+    {
+      "path": "Theory/CredentialLineageAdmission.lean",
+      "sha256": "da0a6cdd306a4fef71960475816fb0612824c15c8254bc1d6931e996a34f14cb",
+      "check": {
+        "source": "Theory/CredentialLineageAdmission.lean",
+        "sha256": "da0a6cdd306a4fef71960475816fb0612824c15c8254bc1d6931e996a34f14cb",
+        "sha256_after": "da0a6cdd306a4fef71960475816fb0612824c15c8254bc1d6931e996a34f14cb",
+        "stable": true,
+        "command": [
+          "lake",
+          "env",
+          "lean",
+          "-o",
+          ".lake/build/lib/lean/Theory/CredentialLineageAdmission.olean",
+          "Theory/CredentialLineageAdmission.lean"
+        ],
+        "cwd": "/Users/ember/dev/minidregg",
+        "exit": 0,
+        "seconds": 4.079,
+        "log": "/tmp/dregg-resume-admission-Theory-CredentialLineageAdmission-da0a6cdd306a.log",
+        "output": "/Users/ember/dev/minidregg/.lake/build/lib/lean/Theory/CredentialLineageAdmission.olean",
+        "env": {
+          "LEAN_NUM_THREADS": "2"
+        },
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "path": "Assurance/CredentialDelegationLineageWitness.lean",
+      "sha256": "d34fdc1f17e2b949b1a9a272f9704d8f91e688445c7ae336a1487189c6b62380",
+      "check": {
+        "source": "Assurance/CredentialDelegationLineageWitness.lean",
+        "sha256": "d34fdc1f17e2b949b1a9a272f9704d8f91e688445c7ae336a1487189c6b62380",
+        "sha256_after": "d34fdc1f17e2b949b1a9a272f9704d8f91e688445c7ae336a1487189c6b62380",
+        "stable": true,
+        "command": [
+          "lake",
+          "env",
+          "lean",
+          "-o",
+          ".lake/build/lib/lean/Assurance/CredentialDelegationLineageWitness.olean",
+          "Assurance/CredentialDelegationLineageWitness.lean"
+        ],
+        "cwd": "/Users/ember/dev/minidregg",
+        "exit": 0,
+        "seconds": 4.24,
+        "log": "/tmp/dregg-resume-admission-Assurance-CredentialDelegationLineageWitness-d34fdc1f17e2.log",
+        "output": "/Users/ember/dev/minidregg/.lake/build/lib/lean/Assurance/CredentialDelegationLineageWitness.olean",
+        "env": {
+          "LEAN_NUM_THREADS": "2"
+        },
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "path": "Assurance/CredentialDelegationLineageAudit.lean",
+      "sha256": "04e47d977df1cbdb5c33492cb5427b738f1eec6afa6b477a2a80d4f0720810fc",
+      "check": {
+        "source": "Assurance/CredentialDelegationLineageAudit.lean",
+        "sha256": "04e47d977df1cbdb5c33492cb5427b738f1eec6afa6b477a2a80d4f0720810fc",
+        "sha256_after": "04e47d977df1cbdb5c33492cb5427b738f1eec6afa6b477a2a80d4f0720810fc",
+        "stable": true,
+        "command": [
+          "lake",
+          "env",
+          "lean",
+          "-o",
+          ".lake/build/lib/lean/Assurance/CredentialDelegationLineageAudit.olean",
+          "Assurance/CredentialDelegationLineageAudit.lean"
+        ],
+        "cwd": "/Users/ember/dev/minidregg",
+        "exit": 0,
+        "seconds": 3.902,
+        "log": "/tmp/dregg-resume-admission-Assurance-CredentialDelegationLineageAudit-04e47d977df1.log",
+        "output": "/Users/ember/dev/minidregg/.lake/build/lib/lean/Assurance/CredentialDelegationLineageAudit.olean",
+        "env": {
+          "LEAN_NUM_THREADS": "2"
+        },
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "path": "Assurance/CredentialSourceAdmissionAudit.lean",
+      "sha256": "a3846958c6fbb5bde15765d441c0e6aec53632b463633e3ee88fdd2a449d249f",
+      "check": {
+        "source": "Assurance/CredentialSourceAdmissionAudit.lean",
+        "sha256": "a3846958c6fbb5bde15765d441c0e6aec53632b463633e3ee88fdd2a449d249f",
+        "sha256_after": "a3846958c6fbb5bde15765d441c0e6aec53632b463633e3ee88fdd2a449d249f",
+        "stable": true,
+        "command": [
+          "lake",
+          "env",
+          "lean",
+          "-o",
+          ".lake/build/lib/lean/Assurance/CredentialSourceAdmissionAudit.olean",
+          "Assurance/CredentialSourceAdmissionAudit.lean"
+        ],
+        "cwd": "/Users/ember/dev/minidregg",
+        "exit": 0,
+        "seconds": 3.771,
+        "log": "/tmp/dregg-resume-admission-Assurance-CredentialSourceAdmissionAudit-a3846958c6fb.log",
+        "output": "/Users/ember/dev/minidregg/.lake/build/lib/lean/Assurance/CredentialSourceAdmissionAudit.olean",
+        "env": {
+          "LEAN_NUM_THREADS": "2"
+        },
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "path": "Compiler/CanonicalPolicyAdmission.lean",
+      "sha256": "8264a54ed19b730f1af0f269880929caf217630f66cc3c7ff8126f50fae746f2",
+      "check": {
+        "source": "Compiler/CanonicalPolicyAdmission.lean",
+        "sha256": "8264a54ed19b730f1af0f269880929caf217630f66cc3c7ff8126f50fae746f2",
+        "sha256_after": "8264a54ed19b730f1af0f269880929caf217630f66cc3c7ff8126f50fae746f2",
+        "stable": true,
+        "command": [
+          "lake",
+          "env",
+          "lean",
+          "-o",
+          ".lake/build/lib/lean/Compiler/CanonicalPolicyAdmission.olean",
+          "Compiler/CanonicalPolicyAdmission.lean"
+        ],
+        "cwd": "/Users/ember/dev/minidregg",
+        "exit": 0,
+        "seconds": 4.477,
+        "log": "/tmp/dregg-resume-admission-Compiler-CanonicalPolicyAdmission-8264a54ed19b.log",
+        "output": "/Users/ember/dev/minidregg/.lake/build/lib/lean/Compiler/CanonicalPolicyAdmission.olean",
+        "env": {
+          "LEAN_NUM_THREADS": "2"
+        },
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "path": "Compiler/CredentialAuthorityPolicyRegistry.lean",
+      "sha256": "588cffbd7445322e94df10ba536a092153dd70eef58c0d72965bbb1d05dc790a",
+      "check": {
+        "source": "Compiler/CredentialAuthorityPolicyRegistry.lean",
+        "sha256": "588cffbd7445322e94df10ba536a092153dd70eef58c0d72965bbb1d05dc790a",
+        "sha256_after": "588cffbd7445322e94df10ba536a092153dd70eef58c0d72965bbb1d05dc790a",
+        "stable": true,
+        "command": [
+          "lake",
+          "env",
+          "lean",
+          "-o",
+          ".lake/build/lib/lean/Compiler/CredentialAuthorityPolicyRegistry.olean",
+          "Compiler/CredentialAuthorityPolicyRegistry.lean"
+        ],
+        "cwd": "/Users/ember/dev/minidregg",
+        "exit": 0,
+        "seconds": 4.438,
+        "log": "/tmp/dregg-resume-admission-Compiler-CredentialAuthorityPolicyRegistry-588cffbd7445.log",
+        "output": "/Users/ember/dev/minidregg/.lake/build/lib/lean/Compiler/CredentialAuthorityPolicyRegistry.olean",
+        "env": {
+          "LEAN_NUM_THREADS": "2"
+        },
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "path": "Kernel/CanonicalPolicyRegistry.lean",
+      "sha256": "c85e0fb993325fc882b6c1bd79266012af37c2ecc24e01ed0e7e7444cf696210",
+      "check": {
+        "source": "Kernel/CanonicalPolicyRegistry.lean",
+        "sha256": "c85e0fb993325fc882b6c1bd79266012af37c2ecc24e01ed0e7e7444cf696210",
+        "sha256_after": "c85e0fb993325fc882b6c1bd79266012af37c2ecc24e01ed0e7e7444cf696210",
+        "stable": true,
+        "command": [
+          "lake",
+          "env",
+          "lean",
+          "-o",
+          ".lake/build/lib/lean/Kernel/CanonicalPolicyRegistry.olean",
+          "Kernel/CanonicalPolicyRegistry.lean"
+        ],
+        "cwd": "/Users/ember/dev/minidregg",
+        "exit": 0,
+        "seconds": 4.096,
+        "log": "/tmp/dregg-resume-admission-Kernel-CanonicalPolicyRegistry-c85e0fb99332.log",
+        "output": "/Users/ember/dev/minidregg/.lake/build/lib/lean/Kernel/CanonicalPolicyRegistry.olean",
+        "env": {
+          "LEAN_NUM_THREADS": "2"
+        },
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "path": "Compiler/BoundedQuantifiedPolicyAdmission.lean",
+      "sha256": "b403caa703f0624a3d60a71dcaf60892866d280d3723219702ab1cc71ff8060f",
+      "check": {
+        "source": "Compiler/BoundedQuantifiedPolicyAdmission.lean",
+        "sha256": "b403caa703f0624a3d60a71dcaf60892866d280d3723219702ab1cc71ff8060f",
+        "sha256_after": "b403caa703f0624a3d60a71dcaf60892866d280d3723219702ab1cc71ff8060f",
+        "stable": true,
+        "command": [
+          "lake",
+          "env",
+          "lean",
+          "-o",
+          ".lake/build/lib/lean/Compiler/BoundedQuantifiedPolicyAdmission.olean",
+          "Compiler/BoundedQuantifiedPolicyAdmission.lean"
+        ],
+        "cwd": "/Users/ember/dev/minidregg",
+        "exit": 0,
+        "seconds": 3.896,
+        "log": "/tmp/dregg-resume-admission-Compiler-BoundedQuantifiedPolicyAdmission-b403caa703f0.log",
+        "output": "/Users/ember/dev/minidregg/.lake/build/lib/lean/Compiler/BoundedQuantifiedPolicyAdmission.olean",
+        "env": {
+          "LEAN_NUM_THREADS": "2"
+        },
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    }
+  ],
+  "status": "All eight owned files compiled and emitted at these exact hashes; no native receiving journey run in this lane."
+}

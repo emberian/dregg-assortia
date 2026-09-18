@@ -1,0 +1,163 @@
+{
+  "schema": "dregg-resume-signature-artifact-checkpoint/v1",
+  "checked": [
+    {
+      "path": "Theory/AuthorizationDeclaration.lean",
+      "sha256": "39855219c5784d217b903c158477554d045cbbbfab0943ceab5df6c40c2469c5",
+      "command": "LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Theory/AuthorizationDeclaration.olean Theory/AuthorizationDeclaration.lean",
+      "exitCode": 0,
+      "log": "/tmp/dregg-resume-signatures-AuthorizationDeclaration.log",
+      "logSha256": "5fd29ebbeee92f7ad89b25f5ff9897b1cda46470d3c429745e69e9a2cb8e7aea",
+      "scope": "focused module emission; imported closure coordinated by resume_authority"
+    },
+    {
+      "path": "Compiler/SemanticManifest.lean",
+      "sha256": "4b7ffe22397106760c4a5b1640edf74e437cd512a1ed33b3969a8d622f266265",
+      "command": "LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Compiler/SemanticManifest.olean Compiler/SemanticManifest.lean",
+      "exitCode": 0,
+      "log": "/tmp/dregg-resume-signatures-SemanticManifest.log",
+      "logSha256": "2a4e2f0eda4d9e8b4963ed60d418cf5b1af2e7a49465964134609f98b1f6c7f3",
+      "scope": "focused module emission; imported closure coordinated by resume_authority"
+    },
+    {
+      "path": "Compiler/SemanticArtifactBundle.lean",
+      "sha256": "3883c9a6774c5f46df8dee666887061a624f4f1f917c9a7346d0b6aa82a476a9",
+      "command": "LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Compiler/SemanticArtifactBundle.olean Compiler/SemanticArtifactBundle.lean",
+      "exitCode": 0,
+      "log": "/tmp/dregg-resume-signatures-SemanticArtifactBundle.log",
+      "logSha256": "36457586f33f569da6454f9ed281e889a42876cb8111f8aac545cb94801ce9bb",
+      "scope": "focused module emission; imported closure coordinated by resume_authority"
+    },
+    {
+      "path": "Compiler/MinidreggV1Artifact.lean",
+      "sha256": "9f6d5c77b83f3866f2a68bf533a35141ee571b2e7f9372a5bbc3aca68fb6110e",
+      "command": "LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Compiler/MinidreggV1Artifact.olean Compiler/MinidreggV1Artifact.lean",
+      "exitCode": 0,
+      "log": "/tmp/dregg-resume-signatures-MinidreggV1Artifact.log",
+      "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "scope": "focused module emission; imported closure coordinated by resume_authority"
+    },
+    {
+      "path": "Compiler/TypedAuthorizationRequestCodec.lean",
+      "sha256": "a90eb71fff82daded92ab69d288bb42b3ef1828cb057db9c611eb73518aa28f5",
+      "command": "LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Compiler/TypedAuthorizationRequestCodec.olean Compiler/TypedAuthorizationRequestCodec.lean",
+      "exitCode": 0,
+      "log": "/tmp/dregg-resume-signatures-TypedAuthorizationRequestCodec-attempt2.log",
+      "logSha256": "f4af573eb80a9dceec665c042d3bca4ecacdffd7dcabf97431e62c70b2e17bee",
+      "scope": "focused module emission; imported closure coordinated by resume_authority"
+    },
+    {
+      "path": "Theory/DeclaredActionLowering.lean",
+      "sha256": "9a4e55194bd048ddbd768e2ac8a55eaff8c06a77629aea4052864cdb3cac6a00",
+      "command": "LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Theory/DeclaredActionLowering.olean Theory/DeclaredActionLowering.lean",
+      "exitCode": 0,
+      "log": "/tmp/dregg-resume-signatures-DeclaredActionLowering.log",
+      "logSha256": "43be8b77cedfeb41eddf82d3ac9b1f4449f4d3892763d3368c79e44fac45755a",
+      "scope": "focused module emission; imported closure coordinated by resume_authority"
+    },
+    {
+      "path": "Theory/HyperdocumentOperations.lean",
+      "sha256": "4cd7ef26d1124545835d6d9bc984645f602e54a7c3f2e2e8b1ee86264077a26b",
+      "command": "LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Theory/HyperdocumentOperations.olean Theory/HyperdocumentOperations.lean",
+      "exitCode": 0,
+      "log": "/tmp/dregg-resume-signatures-HyperdocumentOperations.log",
+      "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "scope": "focused module emission; imported closure coordinated by resume_authority"
+    },
+    {
+      "path": "Compiler/HyperdocumentCodec.lean",
+      "sha256": "0f096fdc62751d9ad3644e602053bb92012cbd0e89cd48d799451c850e597185",
+      "command": "LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Compiler/HyperdocumentCodec.olean Compiler/HyperdocumentCodec.lean",
+      "exitCode": 0,
+      "log": "/tmp/dregg-resume-signatures-HyperdocumentCodec.log",
+      "logSha256": "244fc18ba615dac3601100416de800433464230f694710fdd9166e398e42ec01",
+      "scope": "focused module emission; imported closure coordinated by resume_authority"
+    },
+    {
+      "path": "Compiler/CredentialSignatureAdmission.lean",
+      "sha256": "47d4dbdfaed4e069675a5cc4587567e64eedf089525cd402a5126d038656fc43",
+      "command": "LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Compiler/CredentialSignatureAdmission.olean Compiler/CredentialSignatureAdmission.lean",
+      "exitCode": 0,
+      "log": "/tmp/dregg-resume-signatures-CredentialSignatureAdmission.log",
+      "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "scope": "focused module emission; imported closure coordinated by resume_authority"
+    },
+    {
+      "path": "Kernel/DeclaredHyperedge.lean",
+      "sha256": "1b3e18c5723c0451b6ce622516bb41e09aea6aeb5a02aded562d8439ea83c7f4",
+      "command": "LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Kernel/DeclaredHyperedge.olean Kernel/DeclaredHyperedge.lean",
+      "exitCode": 0,
+      "log": "/tmp/dregg-resume-signatures-DeclaredHyperedge-current.log",
+      "logSha256": "71572212e94c6ff183195f6baf458dd2736bb23a700251bda3487cab41b40926",
+      "scope": "focused module emission; imported closure coordinated by resume_authority"
+    },
+    {
+      "path": "Kernel/DeclaredHyperedgeWitness.lean",
+      "sha256": "1fe56ad0e04b12c6a636a66894292ccab452a2458d19c301a4e64d867299d8c6",
+      "command": "LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Kernel/DeclaredHyperedgeWitness.olean Kernel/DeclaredHyperedgeWitness.lean",
+      "exitCode": 0,
+      "log": "/tmp/dregg-resume-signatures-DeclaredHyperedgeWitness-current.log",
+      "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "scope": "focused module emission; imported closure coordinated by resume_authority"
+    },
+    {
+      "path": "Compiler/DeclaredEffectPageMaterializer.lean",
+      "sha256": "991115955c527eb267b0c6568e7074c9626724b4c4cda7bd14c6da5fc886d67c",
+      "command": "LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Compiler/DeclaredEffectPageMaterializer.olean Compiler/DeclaredEffectPageMaterializer.lean",
+      "exitCode": 0,
+      "log": "/tmp/dregg-resume-signatures-DeclaredEffectPageMaterializer-current.log",
+      "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "scope": "focused module emission; imported closure coordinated by resume_authority"
+    },
+    {
+      "path": "Compiler/DeclaredHyperedgeArtifact.lean",
+      "sha256": "a8a9f2ec93f8083381db0ea15e5d831f6f24247908c665dc21bc8a49dfeb95d3",
+      "command": "LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Compiler/DeclaredHyperedgeArtifact.olean Compiler/DeclaredHyperedgeArtifact.lean",
+      "exitCode": 0,
+      "log": "/tmp/dregg-resume-signatures-DeclaredHyperedgeArtifact-current.log",
+      "logSha256": "76d1b44a82f98adce605c191a4dd8de07060533da6ec650a40448df4e7117cec",
+      "scope": "focused module emission; imported closure coordinated by resume_authority"
+    }
+  ],
+  "pending": [
+    {
+      "path": "Compiler/DeclaredActionAir.lean",
+      "sha256": "938aa55e90407fd616390b84855acb37034243a5759a43780b6896cb0c80dabb",
+      "status": "source only; compile/native check queued"
+    },
+    {
+      "path": "Assurance/CredentialTokenLocalEndpoint.lean",
+      "sha256": "f04d87fe8d1128e94d77213cd9b32f9d216ad7f50ef07d85ee1808e6833637b1",
+      "status": "source only; compile/native check queued"
+    }
+  ],
+  "generated": [
+    {
+      "path": "prover/testdata/semantic_artifact_v1.json",
+      "sha256": "47453aee1eeffb425d7aac55efc2dfec9ef6fac45a4f0ef003200f8b0bcd396a",
+      "emitter": "Compiler/MinidreggV1Artifact.lean",
+      "status": "source emitter completed; native consumer tests pending"
+    }
+  ],
+  "remainingGenerated": [
+    "prover/generated/semantic_artifact_v1.rs",
+    "prover/src/semantic_artifact_arithmetic.rs",
+    "prover/generated/evm_stage0_add_aux.rs"
+  ],
+  "failedAttemptsRetained": [
+    "/tmp/dregg-resume-signatures-TypedAuthorizationRequestCodec.log",
+    "/tmp/dregg-resume-signatures-DeclaredHyperedge.log"
+  ],
+  "nativeProbe": {
+    "path": "scripts/probe-credential-signature.lean",
+    "sha256": "4d43682aa97c39d789c41e6a2729f1ea1726301d93e1d87613009dff0eeaef6f",
+    "command": "LEAN_NUM_THREADS=2 lake env lean --run scripts/probe-credential-signature.lean /tmp/minidregg-credential-signature-verifier-target/release/minidregg-credential-signature-verifier /tmp/minidregg-credential-signature-verifier-target/release/examples/sign-probe /Users/ember/dev/minidregg/native/hyperdocument-link-sqlite-store/target/release/minidregg-link-sqlite-store",
+    "exitCode": 0,
+    "log": "/tmp/dregg-resume-native-signature.log",
+    "logSha256": "58f3e43997d8d1b6bf6c45c6d0bc8cd2ba238fe9203423dfadebc47ba6b70f06",
+    "sourceManifest": "/tmp/dregg-resume-native-signature-source.json",
+    "sourceManifestSha256": "209a179a57089bd416f4dbd9197ff1f8771d2bef9e6bc3e3d5253d02c14cf18a",
+    "allRecordedInputsStillMatch": true,
+    "scope": "real Ed25519 with public test seeds, native SQLite/full authority reopen; exact seventeen-field request, independently bound policy revision, tampering and actually signed legacy frames refused; no full policy/delegation/birth journey claim"
+  }
+}

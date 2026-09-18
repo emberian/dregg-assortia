@@ -1,0 +1,656 @@
+{
+  "scope": "Baseline full initialization: all three fresh-process default/ST lifecycle scenarios passed; inclusive module timings",
+  "rows": [
+    {
+      "scenario": "lean_init_lifecycle_heavy_foreign_full_first_then_narrow",
+      "module": "initialize_Dregg2_Dregg2_Apps_DelegAdmit",
+      "elapsedMs": 0.565,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_foreign_full_first_then_narrow",
+      "module": "initialize_Dregg2_Dregg2_Exec_FFI",
+      "elapsedMs": 36.575,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_foreign_full_first_then_narrow",
+      "module": "initialize_Dregg2_Dregg2_Distributed_FinalityGate",
+      "elapsedMs": 0.072,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_foreign_full_first_then_narrow",
+      "module": "initialize_Dregg2_Dregg2_Distributed_StrandAdmission",
+      "elapsedMs": 0.001,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_foreign_full_first_then_narrow",
+      "module": "initialize_Dregg2_Dregg2_Distributed_RoundAdvanceGate",
+      "elapsedMs": 0.001,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_foreign_full_first_then_narrow",
+      "module": "initialize_Dregg2_Dregg2_Distributed_AckBeforeAdmit",
+      "elapsedMs": 0.001,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_foreign_full_first_then_narrow",
+      "module": "initialize_Dregg2_Dregg2_Exec_DistributedExports",
+      "elapsedMs": 0.041,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_foreign_full_first_then_narrow",
+      "module": "initialize_Dregg2_Dregg2_Deos_FlowRefine",
+      "elapsedMs": 0.01,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_foreign_full_first_then_narrow",
+      "module": "initialize_Dregg2_Dregg2_Exec_FFIDirect",
+      "elapsedMs": 0.002,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_foreign_full_first_then_narrow",
+      "module": "initialize_Dregg2_Dregg2_Storage_Deployed",
+      "elapsedMs": 0.071,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_foreign_full_first_then_narrow",
+      "module": "initialize_Dregg2_Dregg2_Exec_DeployedConstraint",
+      "elapsedMs": 0.004,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_foreign_full_first_then_narrow",
+      "module": "initialize_Dregg2_Dregg2_Bridge_MinaStateHashWordGate",
+      "elapsedMs": 665.707,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_foreign_full_first_then_narrow",
+      "module": "initialize_Dregg2_Dregg2_Bridge_MinaWrapChallenges",
+      "elapsedMs": 0.002,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_foreign_full_first_then_narrow",
+      "module": "initialize_Dregg2_Dregg2_Bridge_MinaWrapFtEval0",
+      "elapsedMs": 0.007,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_foreign_full_first_then_narrow",
+      "module": "initialize_Dregg2_Dregg2_Bridge_MinaAccountOpening",
+      "elapsedMs": 9.246,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_foreign_full_first_then_narrow",
+      "module": "initialize_Dregg2_Dregg2_Circuit_Emit_PastaIpaDeferral",
+      "elapsedMs": 0.768,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_foreign_full_first_then_narrow",
+      "module": "initialize_Dregg2_Dregg2_Bridge_MinaForkChoiceGate",
+      "elapsedMs": 0.002,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_foreign_full_first_then_narrow",
+      "module": "initialize_Dregg2_Dregg2_Bridge_MinaCheckpoint",
+      "elapsedMs": 0.014,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_foreign_full_first_then_narrow",
+      "module": "initialize_Dregg2_Dregg2_Circuit_CrossCellConserveDecision",
+      "elapsedMs": 0.001,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_foreign_full_first_then_narrow",
+      "module": "initialize_Dregg2_Dregg2_Crypto_Fips204Verify",
+      "elapsedMs": 110.913,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_foreign_full_first_then_narrow",
+      "module": "initialize_Dregg2_Dregg2_Crypto_Fips203Kem",
+      "elapsedMs": 0.004,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_foreign_full_first_then_narrow",
+      "module": "initialize_Dregg2_Dregg2_Crypto_MlKemDecaps",
+      "elapsedMs": 47.541,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_foreign_full_first_then_narrow",
+      "module": "initialize_Dregg2_Dregg2_Crypto_MlKemEncaps",
+      "elapsedMs": 0.002,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_foreign_full_first_then_narrow",
+      "module": "initialize_Dregg2_Dregg2_Crypto_MlKemKeygen",
+      "elapsedMs": 0.001,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_foreign_full_first_then_narrow",
+      "module": "initialize_Dregg2_Dregg2_Crypto_MlDsaKeygen",
+      "elapsedMs": 0.003,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_foreign_full_first_then_narrow",
+      "module": "initialize_Dregg2_Dregg2_Crypto_MlDsaSignReal",
+      "elapsedMs": 0.006,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_foreign_full_first_then_narrow",
+      "module": "initialize_Dregg2_Dregg2_Games_AutomataflFFI",
+      "elapsedMs": 0.585,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_foreign_full_first_then_narrow",
+      "module": "initialize_Dregg2_Dregg2_Games_MultiwayTugFFI",
+      "elapsedMs": 0.055,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_foreign_full_first_then_narrow",
+      "module": "initialize_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge",
+      "elapsedMs": 53511.558,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_foreign_full_first_then_narrow",
+      "module": "initialize_Dregg2_Dregg2_Games_PathOfAngels_RecordsRuntime",
+      "elapsedMs": 673.567,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_foreign_full_first_then_narrow",
+      "module": "initialize_Dregg2_Dregg2_Games_PathOfAngels_StationDailyRuntime",
+      "elapsedMs": 2.47,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_foreign_full_first_then_narrow",
+      "module": "initialize_Dregg2_Dregg2_Games_PathOfAngels_StationCrateOpenRuntime",
+      "elapsedMs": 1.443,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_foreign_full_first_then_narrow",
+      "module": "initialize_Dregg2_Dregg2_Games_PathOfAngels_NetworkGenesis",
+      "elapsedMs": 92.122,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_foreign_full_first_then_narrow",
+      "module": "initialize_Dregg2_Dregg2_Games_PathOfAngels_SlotDeriveRuntime",
+      "elapsedMs": 69.133,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_foreign_full_first_then_narrow",
+      "module": "initialize_Dregg2_Dregg2_Games_PathOfAngels_SignalFeedbackRuntime",
+      "elapsedMs": 210.61,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_foreign_full_first_then_narrow",
+      "module": "initialize_Dregg2_Dregg2_Games_PathOfAngels_DarkBazaarJudge",
+      "elapsedMs": 2080.999,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_foreign_full_first_then_narrow",
+      "module": "initialize_Dregg2_Dregg2_Games_PathOfAngels_GalleyMaintenanceDailyRuntime",
+      "elapsedMs": 4547.888,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_foreign_full_first_then_narrow",
+      "module": "initialize_Dregg2_Dregg2_Games_PathOfAngels_NightWatchCampaignWire",
+      "elapsedMs": 116696.14,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_foreign_full_first_then_narrow",
+      "module": "initialize_Dregg2_Dregg2_Games_PathOfAngels_CrewFieldMissionAdmission",
+      "elapsedMs": 1607.636,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_foreign_full_first_then_narrow",
+      "module": "initialize_Dregg2_Dregg2_Games_PathOfAngels_EventBatchRuntime",
+      "elapsedMs": 6577.76,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_foreign_full_first_then_narrow",
+      "module": "initialize_Dregg2_Dregg2_Games_PathOfAngels_WorldActivation",
+      "elapsedMs": 0.001,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_foreign_full_first_then_narrow",
+      "module": "initialize_Dregg2_Dregg2_Games_PathOfAngels_ActivatedContentRuntime",
+      "elapsedMs": 0.003,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_foreign_full_first_then_narrow",
+      "module": "initialize_Dregg2_Dregg2_Games_PathOfAngels_BazaarGameRuntime",
+      "elapsedMs": 5.968,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_narrow_then_concurrent_full",
+      "module": "initialize_Dregg2_Dregg2_Apps_DelegAdmit",
+      "elapsedMs": 0.654,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_narrow_then_concurrent_full",
+      "module": "initialize_Dregg2_Dregg2_Exec_FFI",
+      "elapsedMs": 30.482,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_narrow_then_concurrent_full",
+      "module": "initialize_Dregg2_Dregg2_Distributed_FinalityGate",
+      "elapsedMs": 0.055,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_narrow_then_concurrent_full",
+      "module": "initialize_Dregg2_Dregg2_Distributed_StrandAdmission",
+      "elapsedMs": 0.001,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_narrow_then_concurrent_full",
+      "module": "initialize_Dregg2_Dregg2_Distributed_RoundAdvanceGate",
+      "elapsedMs": 0.001,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_narrow_then_concurrent_full",
+      "module": "initialize_Dregg2_Dregg2_Distributed_AckBeforeAdmit",
+      "elapsedMs": 0.001,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_narrow_then_concurrent_full",
+      "module": "initialize_Dregg2_Dregg2_Exec_DistributedExports",
+      "elapsedMs": 0.044,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_narrow_then_concurrent_full",
+      "module": "initialize_Dregg2_Dregg2_Deos_FlowRefine",
+      "elapsedMs": 0.008,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_narrow_then_concurrent_full",
+      "module": "initialize_Dregg2_Dregg2_Exec_FFIDirect",
+      "elapsedMs": 0.001,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_narrow_then_concurrent_full",
+      "module": "initialize_Dregg2_Dregg2_Storage_Deployed",
+      "elapsedMs": 0.068,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_narrow_then_concurrent_full",
+      "module": "initialize_Dregg2_Dregg2_Exec_DeployedConstraint",
+      "elapsedMs": 0.003,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_narrow_then_concurrent_full",
+      "module": "initialize_Dregg2_Dregg2_Bridge_MinaStateHashWordGate",
+      "elapsedMs": 624.446,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_narrow_then_concurrent_full",
+      "module": "initialize_Dregg2_Dregg2_Bridge_MinaWrapChallenges",
+      "elapsedMs": 0.002,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_narrow_then_concurrent_full",
+      "module": "initialize_Dregg2_Dregg2_Bridge_MinaWrapFtEval0",
+      "elapsedMs": 0.004,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_narrow_then_concurrent_full",
+      "module": "initialize_Dregg2_Dregg2_Bridge_MinaAccountOpening",
+      "elapsedMs": 9.112,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_narrow_then_concurrent_full",
+      "module": "initialize_Dregg2_Dregg2_Circuit_Emit_PastaIpaDeferral",
+      "elapsedMs": 0.707,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_narrow_then_concurrent_full",
+      "module": "initialize_Dregg2_Dregg2_Bridge_MinaForkChoiceGate",
+      "elapsedMs": 0.004,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_narrow_then_concurrent_full",
+      "module": "initialize_Dregg2_Dregg2_Bridge_MinaCheckpoint",
+      "elapsedMs": 0.011,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_narrow_then_concurrent_full",
+      "module": "initialize_Dregg2_Dregg2_Circuit_CrossCellConserveDecision",
+      "elapsedMs": 0.001,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_narrow_then_concurrent_full",
+      "module": "initialize_Dregg2_Dregg2_Crypto_Fips204Verify",
+      "elapsedMs": 106.73,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_narrow_then_concurrent_full",
+      "module": "initialize_Dregg2_Dregg2_Crypto_Fips203Kem",
+      "elapsedMs": 0.003,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_narrow_then_concurrent_full",
+      "module": "initialize_Dregg2_Dregg2_Crypto_MlKemDecaps",
+      "elapsedMs": 45.861,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_narrow_then_concurrent_full",
+      "module": "initialize_Dregg2_Dregg2_Crypto_MlKemEncaps",
+      "elapsedMs": 0.001,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_narrow_then_concurrent_full",
+      "module": "initialize_Dregg2_Dregg2_Crypto_MlKemKeygen",
+      "elapsedMs": 0.001,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_narrow_then_concurrent_full",
+      "module": "initialize_Dregg2_Dregg2_Crypto_MlDsaKeygen",
+      "elapsedMs": 0.003,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_narrow_then_concurrent_full",
+      "module": "initialize_Dregg2_Dregg2_Crypto_MlDsaSignReal",
+      "elapsedMs": 0.001,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_narrow_then_concurrent_full",
+      "module": "initialize_Dregg2_Dregg2_Games_AutomataflFFI",
+      "elapsedMs": 0.543,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_narrow_then_concurrent_full",
+      "module": "initialize_Dregg2_Dregg2_Games_MultiwayTugFFI",
+      "elapsedMs": 0.051,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_narrow_then_concurrent_full",
+      "module": "initialize_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge",
+      "elapsedMs": 53860.763,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_narrow_then_concurrent_full",
+      "module": "initialize_Dregg2_Dregg2_Games_PathOfAngels_RecordsRuntime",
+      "elapsedMs": 678.502,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_narrow_then_concurrent_full",
+      "module": "initialize_Dregg2_Dregg2_Games_PathOfAngels_StationDailyRuntime",
+      "elapsedMs": 2.51,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_narrow_then_concurrent_full",
+      "module": "initialize_Dregg2_Dregg2_Games_PathOfAngels_StationCrateOpenRuntime",
+      "elapsedMs": 1.442,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_narrow_then_concurrent_full",
+      "module": "initialize_Dregg2_Dregg2_Games_PathOfAngels_NetworkGenesis",
+      "elapsedMs": 91.784,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_narrow_then_concurrent_full",
+      "module": "initialize_Dregg2_Dregg2_Games_PathOfAngels_SlotDeriveRuntime",
+      "elapsedMs": 68.782,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_narrow_then_concurrent_full",
+      "module": "initialize_Dregg2_Dregg2_Games_PathOfAngels_SignalFeedbackRuntime",
+      "elapsedMs": 210.237,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_narrow_then_concurrent_full",
+      "module": "initialize_Dregg2_Dregg2_Games_PathOfAngels_DarkBazaarJudge",
+      "elapsedMs": 2054.05,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_narrow_then_concurrent_full",
+      "module": "initialize_Dregg2_Dregg2_Games_PathOfAngels_GalleyMaintenanceDailyRuntime",
+      "elapsedMs": 4475.311,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_narrow_then_concurrent_full",
+      "module": "initialize_Dregg2_Dregg2_Games_PathOfAngels_NightWatchCampaignWire",
+      "elapsedMs": 117968.131,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_narrow_then_concurrent_full",
+      "module": "initialize_Dregg2_Dregg2_Games_PathOfAngels_CrewFieldMissionAdmission",
+      "elapsedMs": 1626.154,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_narrow_then_concurrent_full",
+      "module": "initialize_Dregg2_Dregg2_Games_PathOfAngels_EventBatchRuntime",
+      "elapsedMs": 6747.631,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_narrow_then_concurrent_full",
+      "module": "initialize_Dregg2_Dregg2_Games_PathOfAngels_WorldActivation",
+      "elapsedMs": 0.001,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_narrow_then_concurrent_full",
+      "module": "initialize_Dregg2_Dregg2_Games_PathOfAngels_ActivatedContentRuntime",
+      "elapsedMs": 0.002,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_narrow_then_concurrent_full",
+      "module": "initialize_Dregg2_Dregg2_Games_PathOfAngels_BazaarGameRuntime",
+      "elapsedMs": 6.136,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_st_owner_and_mode_exclusion",
+      "module": "initialize_Dregg2_Dregg2_Apps_DelegAdmit",
+      "elapsedMs": 0.541,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_st_owner_and_mode_exclusion",
+      "module": "initialize_Dregg2_Dregg2_Exec_FFI",
+      "elapsedMs": 30.35,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_st_owner_and_mode_exclusion",
+      "module": "initialize_Dregg2_Dregg2_Distributed_FinalityGate",
+      "elapsedMs": 0.066,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_st_owner_and_mode_exclusion",
+      "module": "initialize_Dregg2_Dregg2_Distributed_StrandAdmission",
+      "elapsedMs": 0.001,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_st_owner_and_mode_exclusion",
+      "module": "initialize_Dregg2_Dregg2_Distributed_RoundAdvanceGate",
+      "elapsedMs": 0.001,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_st_owner_and_mode_exclusion",
+      "module": "initialize_Dregg2_Dregg2_Distributed_AckBeforeAdmit",
+      "elapsedMs": 0.001,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_st_owner_and_mode_exclusion",
+      "module": "initialize_Dregg2_Dregg2_Exec_DistributedExports",
+      "elapsedMs": 0.034,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_st_owner_and_mode_exclusion",
+      "module": "initialize_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge",
+      "elapsedMs": 53255.805,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_st_owner_and_mode_exclusion",
+      "module": "initialize_Dregg2_Dregg2_Games_PathOfAngels_RecordsRuntime",
+      "elapsedMs": 672.611,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_st_owner_and_mode_exclusion",
+      "module": "initialize_Dregg2_Dregg2_Games_PathOfAngels_SlotDeriveRuntime",
+      "elapsedMs": 69.274,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_st_owner_and_mode_exclusion",
+      "module": "initialize_Dregg2_Dregg2_Games_PathOfAngels_StationDailyRuntime",
+      "elapsedMs": 2.487,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_st_owner_and_mode_exclusion",
+      "module": "initialize_Dregg2_Dregg2_Games_PathOfAngels_StationCrateOpenRuntime",
+      "elapsedMs": 1.434,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_st_owner_and_mode_exclusion",
+      "module": "initialize_Dregg2_Dregg2_Games_PathOfAngels_SignalFeedbackRuntime",
+      "elapsedMs": 218.369,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_st_owner_and_mode_exclusion",
+      "module": "initialize_Dregg2_Dregg2_Games_PathOfAngels_NetworkGenesis",
+      "elapsedMs": 171.798,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_st_owner_and_mode_exclusion",
+      "module": "initialize_Dregg2_Dregg2_Games_PathOfAngels_DarkBazaarJudge",
+      "elapsedMs": 2089.171,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_st_owner_and_mode_exclusion",
+      "module": "initialize_Dregg2_Dregg2_Games_PathOfAngels_GalleyMaintenanceDailyRuntime",
+      "elapsedMs": 4608.123,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_st_owner_and_mode_exclusion",
+      "module": "initialize_Dregg2_Dregg2_Games_PathOfAngels_NightWatchCampaignWire",
+      "elapsedMs": 119442.281,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_st_owner_and_mode_exclusion",
+      "module": "initialize_Dregg2_Dregg2_Games_PathOfAngels_CrewFieldMissionAdmission",
+      "elapsedMs": 1609.675,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_st_owner_and_mode_exclusion",
+      "module": "initialize_Dregg2_Dregg2_Games_PathOfAngels_EventBatchRuntime",
+      "elapsedMs": 6785.546,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_st_owner_and_mode_exclusion",
+      "module": "initialize_Dregg2_Dregg2_Games_PathOfAngels_WorldActivation",
+      "elapsedMs": 0.001,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_st_owner_and_mode_exclusion",
+      "module": "initialize_Dregg2_Dregg2_Games_PathOfAngels_ActivatedContentRuntime",
+      "elapsedMs": 0.003,
+      "result": "ok"
+    },
+    {
+      "scenario": "lean_init_lifecycle_heavy_st_owner_and_mode_exclusion",
+      "module": "initialize_Dregg2_Dregg2_Games_PathOfAngels_BazaarGameRuntime",
+      "elapsedMs": 6.079,
+      "result": "ok"
+    }
+  ],
+  "verdict": "PASS",
+  "selectedTests": 3,
+  "summarySeconds": 564.57
+}

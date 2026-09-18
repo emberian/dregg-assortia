@@ -1,0 +1,46 @@
+[
+  {
+    "path": "scripts/probe-credential-signature.lean",
+    "sha256": "4d43682aa97c39d789c41e6a2729f1ea1726301d93e1d87613009dff0eeaef6f"
+  },
+  {
+    "path": "Compiler/CredentialSignatureAdmission.lean",
+    "sha256": "47d4dbdfaed4e069675a5cc4587567e64eedf089525cd402a5126d038656fc43"
+  },
+  {
+    "path": "Compiler/TypedAuthorizationRequestCodec.lean",
+    "sha256": "a90eb71fff82daded92ab69d288bb42b3ef1828cb057db9c611eb73518aa28f5"
+  },
+  {
+    "path": "Theory/AuthorizationDeclaration.lean",
+    "sha256": "39855219c5784d217b903c158477554d045cbbbfab0943ceab5df6c40c2469c5"
+  },
+  {
+    "path": "Theory/TypedAuthorization.lean",
+    "sha256": "2f28c931b779455b93a657f5ca5a4870aa3af998e92f791e13bed032e217085f"
+  },
+  {
+    "path": "Compiler/CredentialAuthorityDomainReceiver.lean",
+    "sha256": "0181dafd83f16bb67f9c9c9aacf536ffd4f2d8fff9830e9f0928ad4470d457c9"
+  },
+  {
+    "path": "Compiler/CredentialAuthorityDomain.lean",
+    "sha256": "480bf3042822cb3e304ef76c19387ea376c2b31094b22f8da2a1a5bf0a860079"
+  },
+  {
+    "path": "Compiler/ResourceBirthCodec.lean",
+    "sha256": "a0868febdd03723bbbc5d8feaea35d2fbb000c2225862f66257743e771262650"
+  },
+  {
+    "path": "/tmp/minidregg-credential-signature-verifier-target/release/minidregg-credential-signature-verifier",
+    "sha256": "3cac3584c9bcf46bf54d19d298cadd568b24df57e19fecd9dfca19dbaee700ad"
+  },
+  {
+    "path": "/tmp/minidregg-credential-signature-verifier-target/release/examples/sign-probe",
+    "sha256": "3a2ee794ed7abd35a75baf2394bb84b1bb8382a86348a0a14bc4ae66204f17c1"
+  },
+  {
+    "path": "native/hyperdocument-link-sqlite-store/target/release/minidregg-link-sqlite-store",
+    "sha256": "6c716da59969563cb9ddbe71a25370bbe9db8de13670fabaac5abe8a2ed42a03"
+  }
+]

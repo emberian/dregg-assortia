@@ -1,0 +1,427 @@
+{
+  "capturedAt": "2026-09-18T03:11:24-04:00",
+  "scope": "Immutable copies of scoped source checks and native runs; read each manifest for checked revision and pending receiving paths. Logs referenced by earlier overwritten attempts are not reconstructed.",
+  "files": [
+    {
+      "file": "dregg-birth-revision-axioms.lean",
+      "sha256": "98252c5cdb43646ff767c096d6902b8c604745aaab86ac8960b3b4d225a64995",
+      "bytes": 2872,
+      "capturedFrom": "/tmp/dregg-birth-revision-axioms.lean"
+    },
+    {
+      "file": "dregg-birth-revision-axioms.log",
+      "sha256": "1b9ee6e9cc9404e364daa86a5b7afe82879e66ce634fcbbe67e2acf258f77eff",
+      "bytes": 4363,
+      "capturedFrom": "/tmp/dregg-birth-revision-axioms.log"
+    },
+    {
+      "file": "dregg-birth-revision-checkpoint.json",
+      "sha256": "72a877ddf527146fe980d8c575405640595e2580f17e557cb941d3ff8540b0d9",
+      "bytes": 5156,
+      "capturedFrom": "/tmp/dregg-birth-revision-checkpoint.json"
+    },
+    {
+      "file": "dregg-host-BabyBear-attempt2.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "capturedFrom": "/tmp/dregg-host-BabyBear-attempt2.log"
+    },
+    {
+      "file": "dregg-host-CanonicalRuntimeProfile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "capturedFrom": "/tmp/dregg-host-CanonicalRuntimeProfile.log"
+    },
+    {
+      "file": "dregg-host-EmitSerialize.log",
+      "sha256": "e3fda8698296d4be95bd4600f174e9201ca039b34b3ec1b95ef957bd7b7d4318",
+      "bytes": 46,
+      "capturedFrom": "/tmp/dregg-host-EmitSerialize.log"
+    },
+    {
+      "file": "dregg-host-NativeHostProfile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "capturedFrom": "/tmp/dregg-host-NativeHostProfile.log"
+    },
+    {
+      "file": "dregg-host-profile-checkpoint.json",
+      "sha256": "f9d83a90eb98c9aa4a715f3fd39ee01a0dd5878abcd62627c56b878774b3e9e4",
+      "bytes": 2743,
+      "capturedFrom": "/tmp/dregg-host-profile-checkpoint.json"
+    },
+    {
+      "file": "dregg-resume-AcceptedCellEffect.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "capturedFrom": "/tmp/dregg-resume-AcceptedCellEffect.log"
+    },
+    {
+      "file": "dregg-resume-AuthorizationDeclaration.log",
+      "sha256": "ca4ea7bfc3cbdb4eb37b2fcdead2c537631f56a60f2d7e21b4ddb8ad8c9357d8",
+      "bytes": 256,
+      "capturedFrom": "/tmp/dregg-resume-AuthorizationDeclaration.log"
+    },
+    {
+      "file": "dregg-resume-BoundedPageExtensionCatalog.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "capturedFrom": "/tmp/dregg-resume-BoundedPageExtensionCatalog.log"
+    },
+    {
+      "file": "dregg-resume-BoundedPageSchemaUpgrade-current.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "capturedFrom": "/tmp/dregg-resume-BoundedPageSchemaUpgrade-current.log"
+    },
+    {
+      "file": "dregg-resume-BoundedPageSchemaUpgradeCutover-current.log",
+      "sha256": "4519cd37b1af35d077ff12f50a421d2bfd58fd6c2f12a5fd01c684b4e97f1bb2",
+      "bytes": 177,
+      "capturedFrom": "/tmp/dregg-resume-BoundedPageSchemaUpgradeCutover-current.log"
+    },
+    {
+      "file": "dregg-resume-CanonicalAuthorityProjection.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "capturedFrom": "/tmp/dregg-resume-CanonicalAuthorityProjection.log"
+    },
+    {
+      "file": "dregg-resume-CanonicalCellRegistry-current.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "capturedFrom": "/tmp/dregg-resume-CanonicalCellRegistry-current.log"
+    },
+    {
+      "file": "dregg-resume-CredentialAuthorityDomain-current.log",
+      "sha256": "3a9ca5b7fca2bb7d081da05e37fbadd0298d05e7b91b520309fd6a03826cc499",
+      "bytes": 333,
+      "capturedFrom": "/tmp/dregg-resume-CredentialAuthorityDomain-current.log"
+    },
+    {
+      "file": "dregg-resume-CredentialAuthorityDomainReceiver-current.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "capturedFrom": "/tmp/dregg-resume-CredentialAuthorityDomainReceiver-current.log"
+    },
+    {
+      "file": "dregg-resume-CredentialAuthorityEffects.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "capturedFrom": "/tmp/dregg-resume-CredentialAuthorityEffects.log"
+    },
+    {
+      "file": "dregg-resume-CredentialAuthorityEntryCodec.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "capturedFrom": "/tmp/dregg-resume-CredentialAuthorityEntryCodec.log"
+    },
+    {
+      "file": "dregg-resume-CredentialAuthorityFamily.log",
+      "sha256": "d40c6000205dfc14fc5ac26b05f6fcbbd0c46c7671236db2f5dd64ecb553818e",
+      "bytes": 169,
+      "capturedFrom": "/tmp/dregg-resume-CredentialAuthorityFamily.log"
+    },
+    {
+      "file": "dregg-resume-CredentialAuthorityPageMaterializer-current.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "capturedFrom": "/tmp/dregg-resume-CredentialAuthorityPageMaterializer-current.log"
+    },
+    {
+      "file": "dregg-resume-CredentialAuthorityPageProbe.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "capturedFrom": "/tmp/dregg-resume-CredentialAuthorityPageProbe.log"
+    },
+    {
+      "file": "dregg-resume-CredentialAuthorityState.log",
+      "sha256": "3d1769bbde6e1a7b9b404cc8e0fd9362374039272c9aa71cfed0396b8d6bae7d",
+      "bytes": 166,
+      "capturedFrom": "/tmp/dregg-resume-CredentialAuthorityState.log"
+    },
+    {
+      "file": "dregg-resume-CredentialAuthorityStateCodec.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "capturedFrom": "/tmp/dregg-resume-CredentialAuthorityStateCodec.log"
+    },
+    {
+      "file": "dregg-resume-CredentialFoundationMigrationAudit.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "capturedFrom": "/tmp/dregg-resume-CredentialFoundationMigrationAudit.log"
+    },
+    {
+      "file": "dregg-resume-DeclaredTurn.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "capturedFrom": "/tmp/dregg-resume-DeclaredTurn.log"
+    },
+    {
+      "file": "dregg-resume-DeployedMaterializerWitness.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "capturedFrom": "/tmp/dregg-resume-DeployedMaterializerWitness.log"
+    },
+    {
+      "file": "dregg-resume-ResourceBirthAuthority-attempt2.log",
+      "sha256": "3af795a7fd4ea6e6aa8a54e0d903dd7d0d6f8ea5a26e3c16aabad94459930764",
+      "bytes": 191,
+      "capturedFrom": "/tmp/dregg-resume-ResourceBirthAuthority-attempt2.log"
+    },
+    {
+      "file": "dregg-resume-TypedAuthorization.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "capturedFrom": "/tmp/dregg-resume-TypedAuthorization.log"
+    },
+    {
+      "file": "dregg-resume-admission-Assurance-CredentialDelegationLineageAudit-04e47d977df1.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "capturedFrom": "/tmp/dregg-resume-admission-Assurance-CredentialDelegationLineageAudit-04e47d977df1.log"
+    },
+    {
+      "file": "dregg-resume-admission-Assurance-CredentialDelegationLineageWitness-d34fdc1f17e2.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "capturedFrom": "/tmp/dregg-resume-admission-Assurance-CredentialDelegationLineageWitness-d34fdc1f17e2.log"
+    },
+    {
+      "file": "dregg-resume-admission-Assurance-CredentialSourceAdmissionAudit-a3846958c6fb.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "capturedFrom": "/tmp/dregg-resume-admission-Assurance-CredentialSourceAdmissionAudit-a3846958c6fb.log"
+    },
+    {
+      "file": "dregg-resume-admission-Compiler-BoundedQuantifiedPolicyAdmission-b403caa703f0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "capturedFrom": "/tmp/dregg-resume-admission-Compiler-BoundedQuantifiedPolicyAdmission-b403caa703f0.log"
+    },
+    {
+      "file": "dregg-resume-admission-Compiler-CanonicalPolicyAdmission-8264a54ed19b.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "capturedFrom": "/tmp/dregg-resume-admission-Compiler-CanonicalPolicyAdmission-8264a54ed19b.log"
+    },
+    {
+      "file": "dregg-resume-admission-Compiler-CredentialAuthorityPolicyRegistry-588cffbd7445.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "capturedFrom": "/tmp/dregg-resume-admission-Compiler-CredentialAuthorityPolicyRegistry-588cffbd7445.log"
+    },
+    {
+      "file": "dregg-resume-admission-Kernel-CanonicalPolicyRegistry-c85e0fb99332.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "capturedFrom": "/tmp/dregg-resume-admission-Kernel-CanonicalPolicyRegistry-c85e0fb99332.log"
+    },
+    {
+      "file": "dregg-resume-admission-Theory-CredentialLineageAdmission-da0a6cdd306a.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "capturedFrom": "/tmp/dregg-resume-admission-Theory-CredentialLineageAdmission-da0a6cdd306a.log"
+    },
+    {
+      "file": "dregg-resume-admission-report.md",
+      "sha256": "d12c64ee57fa2891c65358cfa6835610db43f119ac92eaf382ce4742d4f9e04e",
+      "bytes": 5245,
+      "capturedFrom": "/tmp/dregg-resume-admission-report.md"
+    },
+    {
+      "file": "dregg-resume-admission-source.json",
+      "sha256": "6213090b60be183328feddff2c9e1bd584b0b8cabddac8723ba1283bbd32394a",
+      "bytes": 9336,
+      "capturedFrom": "/tmp/dregg-resume-admission-source.json"
+    },
+    {
+      "file": "dregg-resume-authority-checkpoint.json",
+      "sha256": "d2ca22b5615364c679ba13a9e54a77c41239e691208a568257b427fca35797fc",
+      "bytes": 5491,
+      "capturedFrom": "/tmp/dregg-resume-authority-checkpoint.json"
+    },
+    {
+      "file": "dregg-resume-authority-upgrade-checks.json",
+      "sha256": "b7a8b4edd9a4c02f779e7567772598a92da7e495d418db9d97e81076a79a1bea",
+      "bytes": 997,
+      "capturedFrom": "/tmp/dregg-resume-authority-upgrade-checks.json"
+    },
+    {
+      "file": "dregg-resume-baseline-init-profile-20260918.json",
+      "sha256": "4aac1cf3bcde064a91148bb1fd5e4bee938123c6b8f24e07d4c15f3991131afb",
+      "bytes": 22922,
+      "capturedFrom": "/tmp/dregg-resume-baseline-init-profile-20260918.json"
+    },
+    {
+      "file": "dregg-resume-birth-CanonicalResourceEffect.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "capturedFrom": "/tmp/dregg-resume-birth-CanonicalResourceEffect.log"
+    },
+    {
+      "file": "dregg-resume-birth-ResourceBirth.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "capturedFrom": "/tmp/dregg-resume-birth-ResourceBirth.log"
+    },
+    {
+      "file": "dregg-resume-birth-ResourceBirthCodec.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "capturedFrom": "/tmp/dregg-resume-birth-ResourceBirthCodec.log"
+    },
+    {
+      "file": "dregg-resume-birth-ResourceBirthController.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "capturedFrom": "/tmp/dregg-resume-birth-ResourceBirthController.log"
+    },
+    {
+      "file": "dregg-resume-birth-ResourceBirthPolicyController.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "capturedFrom": "/tmp/dregg-resume-birth-ResourceBirthPolicyController.log"
+    },
+    {
+      "file": "dregg-resume-birth-ResourceBirthReceiver.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "capturedFrom": "/tmp/dregg-resume-birth-ResourceBirthReceiver.log"
+    },
+    {
+      "file": "dregg-resume-ffi-full-lifecycle-20260918.log",
+      "sha256": "c2cb6bce09771d51349c34f5deeb886dde8b1f24888fd3f3124b92920d3a7136",
+      "bytes": 49223,
+      "capturedFrom": "/tmp/dregg-resume-ffi-full-lifecycle-20260918.log"
+    },
+    {
+      "file": "dregg-resume-fixture-closure-build-20260918.log",
+      "sha256": "88c80f87c39f0c9b6aa75505572cd664267358d764cb9048f70b92003a315fc9",
+      "bytes": 123774,
+      "capturedFrom": "/tmp/dregg-resume-fixture-closure-build-20260918.log"
+    },
+    {
+      "file": "dregg-resume-foundation-axioms.log",
+      "sha256": "c214f2103e9c895b93aed0871c2c24447ef2b57aad3154fbaab5bcb95da2eb76",
+      "bytes": 5519,
+      "capturedFrom": "/tmp/dregg-resume-foundation-axioms.log"
+    },
+    {
+      "file": "dregg-resume-foundations-checkpoint.json",
+      "sha256": "4ed98d64f7ab178acc31c226a8f955ccfa21890b74c565039ca3fbc4196cc200",
+      "bytes": 5431,
+      "capturedFrom": "/tmp/dregg-resume-foundations-checkpoint.json"
+    },
+    {
+      "file": "dregg-resume-foundations-handoff.md",
+      "sha256": "a981b01007233e82a364d71bb93ca5f1718cd627e37e512580c0ea75333d85a1",
+      "bytes": 2975,
+      "capturedFrom": "/tmp/dregg-resume-foundations-handoff.md"
+    },
+    {
+      "file": "dregg-resume-fresh-fixture-initializers-20260918.json",
+      "sha256": "73d52c91c099814bcc864676342d3572db808a521bc8ef71dba17fec7799f2ff",
+      "bytes": 468,
+      "capturedFrom": "/tmp/dregg-resume-fresh-fixture-initializers-20260918.json"
+    },
+    {
+      "file": "dregg-resume-native-signature-source.json",
+      "sha256": "209a179a57089bd416f4dbd9197ff1f8771d2bef9e6bc3e3d5253d02c14cf18a",
+      "bytes": 1737,
+      "capturedFrom": "/tmp/dregg-resume-native-signature-source.json"
+    },
+    {
+      "file": "dregg-resume-native-signature.log",
+      "sha256": "58f3e43997d8d1b6bf6c45c6d0bc8cd2ba238fe9203423dfadebc47ba6b70f06",
+      "bytes": 359,
+      "capturedFrom": "/tmp/dregg-resume-native-signature.log"
+    },
+    {
+      "file": "dregg-resume-signatures-AuthorizationDeclaration.log",
+      "sha256": "5fd29ebbeee92f7ad89b25f5ff9897b1cda46470d3c429745e69e9a2cb8e7aea",
+      "bytes": 256,
+      "capturedFrom": "/tmp/dregg-resume-signatures-AuthorizationDeclaration.log"
+    },
+    {
+      "file": "dregg-resume-signatures-CredentialSignatureAdmission.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "capturedFrom": "/tmp/dregg-resume-signatures-CredentialSignatureAdmission.log"
+    },
+    {
+      "file": "dregg-resume-signatures-DeclaredActionLowering.log",
+      "sha256": "43be8b77cedfeb41eddf82d3ac9b1f4449f4d3892763d3368c79e44fac45755a",
+      "bytes": 541,
+      "capturedFrom": "/tmp/dregg-resume-signatures-DeclaredActionLowering.log"
+    },
+    {
+      "file": "dregg-resume-signatures-DeclaredEffectPageMaterializer-current.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "capturedFrom": "/tmp/dregg-resume-signatures-DeclaredEffectPageMaterializer-current.log"
+    },
+    {
+      "file": "dregg-resume-signatures-DeclaredHyperedge-current.log",
+      "sha256": "71572212e94c6ff183195f6baf458dd2736bb23a700251bda3487cab41b40926",
+      "bytes": 3415,
+      "capturedFrom": "/tmp/dregg-resume-signatures-DeclaredHyperedge-current.log"
+    },
+    {
+      "file": "dregg-resume-signatures-DeclaredHyperedgeArtifact-current.log",
+      "sha256": "76d1b44a82f98adce605c191a4dd8de07060533da6ec650a40448df4e7117cec",
+      "bytes": 1498,
+      "capturedFrom": "/tmp/dregg-resume-signatures-DeclaredHyperedgeArtifact-current.log"
+    },
+    {
+      "file": "dregg-resume-signatures-DeclaredHyperedgeWitness-current.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "capturedFrom": "/tmp/dregg-resume-signatures-DeclaredHyperedgeWitness-current.log"
+    },
+    {
+      "file": "dregg-resume-signatures-HyperdocumentCodec.log",
+      "sha256": "244fc18ba615dac3601100416de800433464230f694710fdd9166e398e42ec01",
+      "bytes": 359,
+      "capturedFrom": "/tmp/dregg-resume-signatures-HyperdocumentCodec.log"
+    },
+    {
+      "file": "dregg-resume-signatures-HyperdocumentOperations.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "capturedFrom": "/tmp/dregg-resume-signatures-HyperdocumentOperations.log"
+    },
+    {
+      "file": "dregg-resume-signatures-MinidreggV1Artifact.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "capturedFrom": "/tmp/dregg-resume-signatures-MinidreggV1Artifact.log"
+    },
+    {
+      "file": "dregg-resume-signatures-SemanticArtifactBundle.log",
+      "sha256": "36457586f33f569da6454f9ed281e889a42876cb8111f8aac545cb94801ce9bb",
+      "bytes": 196,
+      "capturedFrom": "/tmp/dregg-resume-signatures-SemanticArtifactBundle.log"
+    },
+    {
+      "file": "dregg-resume-signatures-SemanticManifest.log",
+      "sha256": "2a4e2f0eda4d9e8b4963ed60d418cf5b1af2e7a49465964134609f98b1f6c7f3",
+      "bytes": 950,
+      "capturedFrom": "/tmp/dregg-resume-signatures-SemanticManifest.log"
+    },
+    {
+      "file": "dregg-resume-signatures-TypedAuthorizationRequestCodec-attempt2.log",
+      "sha256": "f4af573eb80a9dceec665c042d3bca4ecacdffd7dcabf97431e62c70b2e17bee",
+      "bytes": 1175,
+      "capturedFrom": "/tmp/dregg-resume-signatures-TypedAuthorizationRequestCodec-attempt2.log"
+    },
+    {
+      "file": "dregg-resume-signatures-checkpoint.json",
+      "sha256": "41b25d1da9de359ac635f0916a73ffadccd2d66afe3e31d3d7810d1b64ca872a",
+      "bytes": 9856,
+      "capturedFrom": "/tmp/dregg-resume-signatures-checkpoint.json"
+    }
+  ],
+  "missingReferences": []
+}

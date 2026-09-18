@@ -1,0 +1,23 @@
+{
+  "captured_at": "2026-09-18T07:05:17.900879+00:00",
+  "earlier_manifest": "/tmp/dregg-resume-authority-checkpoint.json",
+  "source_changes_since_checkpoint": false,
+  "additional_checks": [
+    {
+      "path": "Compiler/BoundedPageSchemaUpgrade.lean",
+      "sha256": "bc4dd453c8ebe3d40eea217fdde395e4db2d278cc352c79e391706ee22047461",
+      "exit": 0,
+      "log": "/tmp/dregg-resume-BoundedPageSchemaUpgrade-current.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "scope": "narrow emitted module, no full umbrella claim"
+    },
+    {
+      "path": "Assurance/BoundedPageSchemaUpgradeCutover.lean",
+      "sha256": "3e5e8ad8b1f151d194efdc68f7be80bf93f24e444ec357ac5b0ed98c229e6caa",
+      "exit": 0,
+      "log": "/tmp/dregg-resume-BoundedPageSchemaUpgradeCutover-current.log",
+      "log_sha256": "4519cd37b1af35d077ff12f50a421d2bfd58fd6c2f12a5fd01c684b4e97f1bb2",
+      "scope": "narrow emitted module, no full umbrella claim"
+    }
+  ]
+}

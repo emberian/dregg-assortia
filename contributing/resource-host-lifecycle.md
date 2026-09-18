@@ -2,7 +2,7 @@
 
 Draft for ember and Wisper, September 18. **Ember selected this contribution area; it is not assigned, and runtime/export decisions below remain open.** This is a substantial platform design and implementation package serving the intended community shellserver and participant-operated hosting. Android embedding remains a separate possible future feature.
 
-The [native-host export investigation](../sprints/2026-09-18/account-handoff/design/dregg-native-host-export-proposal.md) names concrete Mini calls and missing exports. Its BabyBear/29 execution profile is a reviewed candidate, not an accepted or implemented deployment profile. The [account handoff](../sprints/2026-09-18/account-handoff.md) records current source and integration status.
+The [native-host export investigation](../sprints/2026-09-18/account-handoff/design/dregg-native-host-export-proposal.md) is the earlier proposal. The BabyBear/29 profile is now implemented and passes its focused source checks; the receiving process and authenticated read/preparation interface are under construction. The [current checkpoint](../sprints/2026-09-18/resumed-0311.md) distinguishes source checks, actual receiving tests and the still-pending linked host. The public deployment and contributor-facing contract are not frozen.
 
 The user-visible result: a friend obtains a programmable DREGG resource host, operates a resource through the real kernel, disconnects, and returns to the same identity, committed state and history. Its operator can restart, stop and wake the host without silently duplicating machines, losing state, double charging, or treating an uncertain command as a failed command safe to repeat.
 
@@ -30,7 +30,7 @@ The bounded [cloud review](../research/cloud-host-2026-09-18.md), [source identi
 
 Own a **durable resource-host lifecycle**, spanning provider reconciliation, native process/library supervision, persistent storage and identity, owner commands, command status, events and packaging. The existing gateway/fleet is a concrete starting consumer, not a mandate to preserve every abstraction.
 
-The intended host itself must become a programmable DREGG resource: ownership and desired lifecycle operations belong to its kernel-governed contract. Provider handles and reconciliation journals record the physical implementation of that intent. Core and the host owner must define this source schema and the meaning of provider observations together; the existing `ServerRecord` is not automatically that canonical contract. Keep a request to start a host distinct from evidence that the external host actually started.
+The intended host itself must become a programmable DREGG resource: ownership and desired lifecycle operations belong to its kernel-governed contract. Provider handles and reconciliation journals record the physical implementation of that intent. Ember selected self-governing management: resource rules may deliberately deny even their owner a subsequent policy change. Restart/recovery must preserve that decision, not provide an implicit repair privilege. Core and the host owner must define this source schema and the meaning of provider observations together; the existing `ServerRecord` is not automatically that canonical contract. Keep a request to start a host distinct from evidence that the external host actually started.
 
 Proposed responsibilities:
 
@@ -51,9 +51,9 @@ These are required meanings, **not existing stable method names**. The exact wir
 |---|---|---|
 | Initialize / open / stop | Explicit store and custody handle; incompatible or corrupt state refuses; readiness follows full recovery; stop reports pending/uncertain operations | Host owner with core recovery reviewer |
 | Describe | Exact runtime, deployment, profile, supported codecs, durable boundary and actual network/finality state | Host owner; core supplies authoritative identifiers |
-| Prepare / submit | Source-owned canonical signing frames; exact signed operation bytes; recheck current state at admission; same identity on retry | Core exports; host transports and supervises |
+| Prepare / submit | Preparation discloses private state only after actual per-resource read authority; source-owned canonical signing frames; exact signed operation bytes and retry identity; blind signed writes remain possible with uniform public refusal | Core exports; host transports and supervises |
 | Operation lookup | Original retained result and its boundary after response loss/restart; current state is separately identified | Core journal semantics; host API |
-| Resource/history read | A projection from one identified committed boundary with applicable read authority | Core projection/export; host caching/API |
+| Resource/history read | A projection from one identified committed boundary with applicable read authority; imported history rechecks original semantic authorization, not only physical roots | Core projection/export; host caching/API |
 | Subscribe / acknowledge / resume | Store/deployment-bound cursor over retained records, explicit retention gaps and refresh; application acknowledgement controls its durable resume position | Joint contract; host implementation |
 | Provider ensure / observe / terminate | Stable logical identity and durable reconciliation of uncertain external outcomes | Host owner |
 | Charge / lookup charge | Canonical charge identity and external settlement evidence; unknown outcome is reconciled | Host owner with economic/core reviewer |
@@ -68,7 +68,7 @@ The first runtime remains a decision to freeze. The September kernel work is min
 |---|---|
 | Host/fleet/gateway | DreggNet `control/src/provider.rs`, `server.rs`, relevant provider implementation; `gateway/src/vats.rs`, `main.rs` and owner/status/event routes |
 | Native Bread lifecycle if selected | `breadstuffs/node/src/lib.rs`, `state.rs`, a proposed reusable host module, task startup and SDK network consumers; reserve shared files before editing |
-| Canonical Mini exports | `minidregg/Kernel/{ResourceBirthReceiver,PolicyInstallReceiver,DeclaredResourceController}.lean` and native storage/signature adapters; current core owners are proof_integrity, program_install and localfirst |
+| Canonical Mini exports | `minidregg/Kernel/{ResourceBirthReceiver,PolicyInstallReceiver,DeclaredResourceController}.lean` and native storage/signature adapters; current core owners are resume_host, resume_journey, resume_install and resume_birth_review; observation is owned by resume_foundations |
 | Recovery/initialization | Bread runtime history and FFI lanes currently own factory-history and narrow/full Lean initialization changes; coordinate their checkpoints |
 | Packaging/deployment | Selected DreggNet deployment directories and `dregg-infra`; first acceptance uses an explicitly configured local/homelab target |
 
@@ -87,6 +87,6 @@ Keep an exact build/run recipe and source identities beside these witnesses. Uni
 
 ## Decisions before assignment
 
-Ember and Wisper should choose the first consumer: an operated Linux/homelab resource host is the recommendation; Android is a strong later consumer or an alternative first package. Freeze its runtime/export and owner identity together with core. For Android, also choose ordinary app/service versus privileged system integration and the intended key backup/recovery experience.
+Ember and Wisper should choose the first consumer: an operated Linux/homelab resource host is the recommendation. Freeze its runtime/export and owner identity together with core. Android remains separate future work; this package is the selected cloud/resource-host lifecycle area.
 
 Real $DREGG lockup and devnet recorded-only penalties remain accepted product intent, with asset, custody and exit terms unresolved. They require their own canonical economic contract; this host package should expose the necessary provider identity/evidence seam without inventing those terms.

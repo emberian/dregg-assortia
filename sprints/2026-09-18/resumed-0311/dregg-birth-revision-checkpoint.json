@@ -1,0 +1,98 @@
+{
+  "scope": "Current source-owned birth generation/revision migration plus exact-image receiving and generic cross-kind grant-ID collision refusal. Native regression is pending receiving journey lane.",
+  "checks": [
+    {
+      "source": "/Users/ember/dev/minidregg/Theory/ResourceBirth.lean",
+      "source_sha256": "b5d00f1616649c892fc6fd3ceae067efeb75011474f855a012dbb1a4f82d0419",
+      "source_stable": true,
+      "command": "LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Theory/ResourceBirth.olean Theory/ResourceBirth.lean",
+      "exit_code": 0,
+      "elapsed_seconds": 4.876,
+      "log": "/tmp/dregg-resume-birth-ResourceBirth.log",
+      "verdict": "PASS",
+      "olean_sha256": "3fa743f44d3c6224a265ed4deeba40b7f2885f0e046af0bde80f74ce44df355b"
+    },
+    {
+      "source": "/Users/ember/dev/minidregg/Theory/ResourceBirthAuthority.lean",
+      "source_sha256": "a2451697d126ef607752618fc6c6866cf35098877945701e222a427e827d9ba5",
+      "source_stable": true,
+      "command": "LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Theory/ResourceBirthAuthority.olean Theory/ResourceBirthAuthority.lean",
+      "exit_code": 0,
+      "elapsed_seconds": 4.5,
+      "log": "/tmp/dregg-resume-ResourceBirthAuthority-attempt2.log",
+      "verdict": "PASS",
+      "olean_sha256": "2d4785ff6115268aca8a79074a73a1fb9583ca73fadf3e300439bb0e6b5a1cdb",
+      "execution_owner": "resume_authority; exact source hash and exit0 independently reported, this lane read warning-only final log and verified current source hash"
+    },
+    {
+      "source": "/Users/ember/dev/minidregg/Compiler/ResourceBirthCodec.lean",
+      "source_sha256": "a0868febdd03723bbbc5d8feaea35d2fbb000c2225862f66257743e771262650",
+      "source_stable": true,
+      "command": "LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Compiler/ResourceBirthCodec.olean Compiler/ResourceBirthCodec.lean",
+      "exit_code": 0,
+      "elapsed_seconds": 4.646,
+      "log": "/tmp/dregg-resume-birth-ResourceBirthCodec.log",
+      "verdict": "PASS",
+      "olean_sha256": "5d97f1d7baf6a784ffeb318c456ee7b9ae811dc273550cebb12ee5b9e484e229"
+    },
+    {
+      "source": "/Users/ember/dev/minidregg/Kernel/CanonicalResourceEffect.lean",
+      "source_sha256": "4e94999267bbf43d38124d47432587aec445ad4990148c51dce6a2c95cb486f0",
+      "source_stable": true,
+      "command": "LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Kernel/CanonicalResourceEffect.olean Kernel/CanonicalResourceEffect.lean",
+      "exit_code": 0,
+      "elapsed_seconds": 4.235,
+      "log": "/tmp/dregg-resume-birth-CanonicalResourceEffect.log",
+      "verdict": "PASS",
+      "olean_sha256": "e5a5a670d14e6b587290b357924427c6ff2c680c3d77cca41ac2a7ff7d5ade4a"
+    },
+    {
+      "source": "/Users/ember/dev/minidregg/Kernel/ResourceBirthController.lean",
+      "source_sha256": "ae96c1984fc369ba811785a677b9a228c59c70460712a1328d754a566fc57522",
+      "source_stable": true,
+      "command": "LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Kernel/ResourceBirthController.olean Kernel/ResourceBirthController.lean",
+      "exit_code": 0,
+      "elapsed_seconds": 4.908,
+      "log": "/tmp/dregg-resume-birth-ResourceBirthController.log",
+      "verdict": "PASS",
+      "olean_sha256": "016de2863c1b39b3c66b6ac4a7ef28bb77da277c6523d4035a50529424c7dd46"
+    },
+    {
+      "source": "/Users/ember/dev/minidregg/Kernel/ResourceBirthPolicyController.lean",
+      "source_sha256": "922b7515e0f447f1bc21c79f262910ec3e156cafd103696cbbb4ddb41dc51a0b",
+      "source_stable": true,
+      "command": "LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Kernel/ResourceBirthPolicyController.olean Kernel/ResourceBirthPolicyController.lean",
+      "exit_code": 0,
+      "elapsed_seconds": 5.564,
+      "log": "/tmp/dregg-resume-birth-ResourceBirthPolicyController.log",
+      "verdict": "PASS",
+      "olean_sha256": "57d3711938e521a4cc5a9d33639581e83d5dc894a800c0c8909c673756bacbcd"
+    },
+    {
+      "source": "/Users/ember/dev/minidregg/Kernel/ResourceBirthReceiver.lean",
+      "source_sha256": "040d6cf31fb75b2e358d2c88eeae036e72870981ed6a233f3b533f2ddd080c8b",
+      "source_stable": true,
+      "command": "LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Kernel/ResourceBirthReceiver.olean Kernel/ResourceBirthReceiver.lean",
+      "exit_code": 0,
+      "elapsed_seconds": 4.266,
+      "log": "/tmp/dregg-resume-birth-ResourceBirthReceiver.log",
+      "verdict": "PASS",
+      "olean_sha256": "175df830595dd6f4cafd4af0b218be4a4cb5d8e2bd8d99dc5f4ce3229954f039"
+    }
+  ],
+  "axiom_audit": {
+    "command": "LEAN_NUM_THREADS=2 lake env lean /tmp/dregg-birth-revision-axioms.lean",
+    "script": "/tmp/dregg-birth-revision-axioms.lean",
+    "log": "/tmp/dregg-birth-revision-axioms.log",
+    "log_sha256": "1b9ee6e9cc9404e364daa86a5b7afe82879e66ce634fcbbe67e2acf258f77eff",
+    "exit_code": 0,
+    "declarations": 34,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "source_review": "/tmp/dregg-birth-revision-review.md",
+  "runtime_verdict": "PENDING; do not carry forward old8056f9b native PASS as current migration evidence"
+}

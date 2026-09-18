@@ -2,7 +2,7 @@
 
 > Generated from `graph.jsonld` by `python3 hub.py render`. Edit the graph, not this file.
 
-Latest work-record update: **2026-09-18T02:51:31-04:00**. This is recorded project state, not a live process monitor.
+Latest work-record update: **2026-09-18T03:14:26-04:00**. This is recorded project state, not a live process monitor.
 
 [New contributor](contributing/README.md) · [Project map](MAP.md) · [Detailed work records](work/records.md)
 
@@ -13,18 +13,18 @@ Latest work-record update: **2026-09-18T02:51:31-04:00**. This is recorded proje
 | Work | Owner / reviewer | Next action |
 |---|---|---|
 | [Define resource-host lifecycle ownership and its kernel contract](contributing/resource-host-lifecycle.md) | Astra: root with ember; contributor assignment pending | Agree the first runtime/export and executable shell consumer with ember and Wisper, then freeze owned core delivery and crash/restart acceptance. |
-| [Bind native use to committed keys and complete authority](work/records.md#w-authority-native) | Astra: resume_authority + resume_signatures + resume_admission | Preserve native acceptance/refusals through the next delegation/request migration and refresh all affected consumers. |
-| [Give a friend a narrower usable right](work/records.md#w-authorized-delegation) | Astra: resume_journey + resume_admission | Integrate one shared 17-field request/revision/delegation wave from the archived drafts; complete parent-evidence extraction, receiver and real Alice-to-Bob invocation. |
+| [Bind native use to committed keys and complete authority](work/records.md#w-authority-native) | Astra: resume_authority + resume_signatures | Finish joined delegation/receiving checks and refresh generated Rust consumers and the root integration gate. |
+| [Give a friend a narrower usable right](work/records.md#w-authorized-delegation) | Astra: resume_journey | Run actual born-resource Alice-to-Bob delegation and recipient invocation with hostile scope/identity cases. |
 | [Establish the chosen document storage/turn contract](work/records.md#w-doc-persist) | Astra: root + kernel_carrier + localfirst | Complete ordered factory/history repair and connect document edits to accepted kernel operations instead of setup writes. |
-| [Make full request and actual-pre binding mandatory for generic effects](work/records.md#w-effect-admission) | Astra: resume_admission + resume_foundations | Finish native registry capability-use/lineage integration after the fresh authority closure. |
+| [Make full request and actual-pre binding mandatory for generic effects](work/records.md#w-effect-admission) | Astra: resume_journey + resume_authority | Use the current exact-parent/source-admission laws in the joined native receiving path and root integration. |
 | [Retain factory deployment at its actual history boundary](work/records.md#w-factory-history) | Astra: resume_runtime | Run the affected history regression set against the exact recorded current source and preserve completion evidence. |
-| [Keep grants valid across policy source revisions](work/records.md#w-grant-revision) | Astra: resume_foundations + resume_authority + resume_install | Coordinate one request/profile/schema migration with explicit delegation; implement revision-exact authorization and separate generation rotation, then exercise both physical receivers. |
-| [Make actual Hermes/SDK startup avoid unused Lean initialization](work/records.md#w-hermes-startup) | Astra: resume_runtime + resume_init_hotspot | Finish targeted coordinator tests, fresh-process full/ST/PQ checks and actual Hermes first-use module profiling without weakening native admission. |
+| [Keep grants valid across policy source revisions](work/records.md#w-grant-revision) | Astra: resume_install + resume_authority; root integration | Run repeated native installs and retained-grant use, then expose explicitly authorized generation revocation through the same core. Preserve deliberate management lockout. |
+| [Make actual Hermes/SDK startup avoid unused Lean initialization](work/records.md#w-hermes-startup) | Astra: resume_runtime + resume_init_hotspot | Complete fresh runtime/PQ/Hermes checks and wide-credential ABI repair with actual accepted cases. |
 | [Check composition against the actual joint post-state](work/records.md#w-joint-post) | Astra: kernel_carrier + program_install | Exercise concrete factory/invocation policies against the same actual final tuple. |
 | [Define the September 26 programmable nexus and its shared contracts](work/records.md#w-m26-design) | ember + Astra | Review the running create/install/invoke/share/reopen journey; decide the public economic operation and release promises. |
-| [Operate real resources through a compiled programmable host](work/records.md#w-native-host) | Astra: resume_host + resume_genesis; root pinned publication | Compile the native profile/genesis/call codecs and actual host; run signed create/install/share/invoke/reopen from its public CLI while preserving exact original ingress on retries. |
-| [Store initial policies and use one runtime profile](work/records.md#w-policy-source) | Astra: resume_install + resume_birth_review + resume_host | Split source revision from grant generation across the shared signed request and physical consumers, then run repeated install and retained-grant invocation/reopen. |
-| [Implement and exercise the canonical authored-program-to-resource path](work/records.md#w-programmable-path) | Astra: resume_journey + resume_install + resume_host | Complete create → repeated rule replacement preserving grants → delegated recipient invocation → reopen/retry through the same native path, then consume it from the programmable shell. |
+| [Operate real resources through a compiled programmable host](work/records.md#w-native-host) | Astra: resume_host + resume_foundations + resume_genesis + resume_admission + resume_birth_review | Implement per-resource authenticated observation/preparation, Book support enforcement and semantic journal verification; link host and run public CLI acceptance. |
+| [Store initial policies and use one runtime profile](work/records.md#w-policy-source) | Astra: resume_install + resume_journey | Run current native repeated installation and the joined born-resource journey. |
+| [Implement and exercise the canonical authored-program-to-resource path](work/records.md#w-programmable-path) | Astra: resume_journey + resume_host + resume_genesis | Complete the native joined journey, then drive it through authenticated preparation and the public compiled host. |
 
 ## Backlog
 

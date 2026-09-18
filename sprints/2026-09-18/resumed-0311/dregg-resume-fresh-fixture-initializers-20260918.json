@@ -1,0 +1,16 @@
+[
+  {
+    "module": "NetworkJudge",
+    "c_sha256": "84e94fea5dcbc057be76e2a2c2b285f97b99e90eddcd8c111ed89289a07e920d",
+    "moved_count": 42,
+    "moved_symbols_remaining_in_runtime_C": [],
+    "direct_eager_assignment_count": 0
+  },
+  {
+    "module": "DeckDescent",
+    "c_sha256": "d40599f30cd90acca3d59f611b287c706e28c9f7fb1f25da6ecee8171f72104c",
+    "moved_count": 6,
+    "moved_symbols_remaining_in_runtime_C": [],
+    "direct_eager_assignment_count": 29
+  }
+]

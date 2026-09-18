@@ -102,15 +102,15 @@ Graph-backed work ownership, concrete briefs, generated current views and an exp
 
 **Bind native use to committed keys and complete authority**
 
-Status: **active** · Owner: Astra: resume_authority + resume_signatures + resume_admission · Updated: 2026-09-18T02:51:31-04:00
+Status: **active** · Owner: Astra: resume_authority + resume_signatures · Updated: 2026-09-18T03:14:26-04:00
 
 Persist exact signing keys/epochs; accept actual configured native verification of the exact request and capability against the complete same-snapshot authority.
 
-**Next:** Preserve native acceptance/refusals through the next delegation/request migration and refresh all affected consumers.
+**Next:** Finish joined delegation/receiving checks and refresh generated Rust consumers and the root integration gate.
 
 **Done when:** Actual installed verification plus complete committed authority checks feed accepted source operations; stale/altered/revoked credentials cannot authorize them.
 
-**Evidence so far:** Real configured Ed25519, full committed key snapshot, mandatory exact-request capability use and strict canonical lineage pass actual native probes. Explicit delegated lineage and forthcoming request/profile migrations still require consumer closure.
+**Evidence so far:** Real Ed25519/SQLite signature probe passes the17-field revision migration, legacy and tamper refusals. Physical authority and source admission modules pass.
 
 **Enables:**
 
@@ -121,20 +121,21 @@ Persist exact signing keys/epochs; accept actual configured native verification 
 - [S-IMPLEMENTATION-0045 — September 18 implementation and contributor checkpoint](../sprints/2026-09-18/checkpoint-0045.md)
 - [S-IMPLEMENTATION-0130 — Durable native invocation and repaired runtime history, September 18 01:30](../sprints/2026-09-18/checkpoint-0130.md)
 - [S-RESUMED-0250 — Resumed native runtime and pinned publication checks, September18](../sprints/2026-09-18/resumed-0250.md)
+- [S-RESUMED-0311 — Revision migration checks and host review, September18 03:11](../sprints/2026-09-18/resumed-0311.md)
 
 ## W-AUTHORIZED-DELEGATION
 
 **Give a friend a narrower usable right**
 
-Status: **active** · Owner: Astra: resume_journey + resume_admission · Updated: 2026-09-18T02:51:31-04:00
+Status: **active** · Owner: Astra: resume_journey · Updated: 2026-09-18T03:14:26-04:00
 
 Add an explicit authorized subject-to-subject delegation edge without weakening strict holder-narrowing or inventing bearer custody.
 
-**Next:** Integrate one shared 17-field request/revision/delegation wave from the archived drafts; complete parent-evidence extraction, receiver and real Alice-to-Bob invocation.
+**Next:** Run actual born-resource Alice-to-Bob delegation and recipient invocation with hostile scope/identity cases.
 
 **Done when:** Owner delegates a bounded right; friend can use that right, cannot exceed it or replace policy, and revocation/current epochs remain enforced.
 
-**Evidence so far:** Checked isolated Family/State/Effects, mixed lineage checker/witness and ParentLink codecs are archived with actual hashes and audits. No live representation cutover or native recipient delegation occurred.
+**Evidence so far:** Controller and receiver compile; mandatory exact parent authorization, actual whole post, stored lineage and final authority-byte/frame laws pass their scoped checks.
 
 **Enables:**
 
@@ -146,6 +147,7 @@ Add an explicit authorized subject-to-subject delegation edge without weakening 
 - [S-IMPLEMENTATION-0045 — September 18 implementation and contributor checkpoint](../sprints/2026-09-18/checkpoint-0045.md)
 - [S-ACCOUNT-HANDOFF-0918 — September18 account handoff: native born-owner journey and next integration wave](../sprints/2026-09-18/account-handoff.md)
 - [S-RESUMED-0250 — Resumed native runtime and pinned publication checks, September18](../sprints/2026-09-18/resumed-0250.md)
+- [S-RESUMED-0311 — Revision migration checks and host review, September18 03:11](../sprints/2026-09-18/resumed-0311.md)
 
 ## W-CANONICAL-CONSUMER
 
@@ -260,15 +262,15 @@ Implement durable refusal propagation and exact ordered physical history in brea
 
 **Make full request and actual-pre binding mandatory for generic effects**
 
-Status: **active** · Owner: Astra: resume_admission + resume_foundations · Updated: 2026-09-18T02:51:31-04:00
+Status: **active** · Owner: Astra: resume_journey + resume_authority · Updated: 2026-09-18T03:14:26-04:00
 
 Replace optional binding adapters with a source-derived family request and exact pre requirement in AcceptedCellEffect, migrating concrete families and consumers.
 
-**Next:** Finish native registry capability-use/lineage integration after the fresh authority closure.
+**Next:** Use the current exact-parent/source-admission laws in the joined native receiving path and root integration.
 
 **Done when:** All receiving constructors use the strengthened base token; target/verb/args/nonce/pre relabeling refuses, honest effects remain inhabited, and the integrated tree checks.
 
-**Evidence so far:** Mandatory full request, pre-state and joint postconditions are published; current capability-use and installPolicy base checks passed.
+**Evidence so far:** Eight source modules and28 exact axiom pins pass. The shared capability helper now proves the exact input-parent identity.
 
 **Enables:**
 
@@ -280,6 +282,7 @@ Replace optional binding adapters with a source-derived family request and exact
 - [S-IMPLEMENTATION-2330 — Executable receiving/admission checkpoint and rejected-turn correction](../sprints/2026-09-17/checkpoint-2330.md)
 - [S-IMPLEMENTATION-0045 — September 18 implementation and contributor checkpoint](../sprints/2026-09-18/checkpoint-0045.md)
 - [S-RESUMED-0250 — Resumed native runtime and pinned publication checks, September18](../sprints/2026-09-18/resumed-0250.md)
+- [S-RESUMED-0311 — Revision migration checks and host review, September18 03:11](../sprints/2026-09-18/resumed-0311.md)
 
 ## W-EMBEDDED-CANDIDATE
 
@@ -335,15 +338,15 @@ World deployment currently mutates volatile registries; historical paths either 
 
 **Keep grants valid across policy source revisions**
 
-Status: **active** · Owner: Astra: resume_foundations + resume_authority + resume_install · Updated: 2026-09-18T02:51:31-04:00
+Status: **active** · Owner: Astra: resume_install + resume_authority; root integration · Updated: 2026-09-18T03:14:26-04:00
 
 Separate immutable policy-source revision from grant revocation generation across the exact signed request, authority representation, compiled/source policies and every receiving consumer.
 
-**Next:** Coordinate one request/profile/schema migration with explicit delegation; implement revision-exact authorization and separate generation rotation, then exercise both physical receivers.
+**Next:** Run repeated native installs and retained-grant use, then expose explicitly authorized generation revocation through the same core. Preserve deliberate management lockout.
 
-**Done when:** After two admitted rule replacements, previously issued owner/control and delegated grants remain usable exactly when their scope and new rules authorize the new request; stale revisions refuse, explicit generation revocation invalidates prior grants, and restart/retry preserves exact state and receipts.
+**Done when:** After two admitted rule replacements, previously issued owner/control and delegated grants remain usable exactly when their scope and new rules authorize the new request; stale revisions refuse, explicit generation revocation invalidates prior grants, and restart/retry preserves exact state and receipts. Resource policy can deliberately refuse further management, with no implicit owner bypass.
 
-**Evidence so far:** User decision accepted. Design and independent source review archived; implementation remains pending. Current 16-field drafts still use conflated epoch semantics.
+**Evidence so far:** Foundation, physical codecs, signature, source registry and installer source checks pass at the new schema. Native integration is now running. No owner repair bypass.
 
 **Enables:**
 
@@ -354,20 +357,21 @@ Separate immutable policy-source revision from grant revocation generation acros
 
 - [S-ACCOUNT-HANDOFF-0918 — September18 account handoff: native born-owner journey and next integration wave](../sprints/2026-09-18/account-handoff.md)
 - [S-RESUMED-0250 — Resumed native runtime and pinned publication checks, September18](../sprints/2026-09-18/resumed-0250.md)
+- [S-RESUMED-0311 — Revision migration checks and host review, September18 03:11](../sprints/2026-09-18/resumed-0311.md)
 
 ## W-HERMES-STARTUP
 
 **Make actual Hermes/SDK startup avoid unused Lean initialization**
 
-Status: **active** · Owner: Astra: resume_runtime + resume_init_hotspot · Updated: 2026-09-18T02:51:31-04:00
+Status: **active** · Owner: Astra: resume_runtime + resume_init_hotspot · Updated: 2026-09-18T03:14:26-04:00
 
 SDK route discovery is lazy while actual cryptographic calls retain real Lean initialization.
 
-**Next:** Finish targeted coordinator tests, fresh-process full/ST/PQ checks and actual Hermes first-use module profiling without weakening native admission.
+**Next:** Complete fresh runtime/PQ/Hermes checks and wide-credential ABI repair with actual accepted cases.
 
 **Done when:** The same operations and refusal/publication checks pass through actual receiving code without eager unused-core initialization; real PQ first-use remains checked.
 
-**Evidence so far:** Combined9-test suite passes narrow native DelegAdmit/lifecycle checks. Real full-init profile places the long delay after fast executor initialization; full/ST/PQ/Hermes captures and dependency-backed executor-family narrowing are active.
+**Evidence so far:** Original full lifecycle passes at~187–189s; game fixture separation retains both proof suites. Narrow executor actual initialization~41ms. Existing differential corpus covers refusal paths; accepted cases and width repair are in progress.
 
 **Enables:**
 
@@ -378,6 +382,7 @@ SDK route discovery is lazy while actual cryptographic calls retain real Lean in
 - [S-IMPLEMENTATION-0045 — September 18 implementation and contributor checkpoint](../sprints/2026-09-18/checkpoint-0045.md)
 - [S-ACCOUNT-HANDOFF-0918 — September18 account handoff: native born-owner journey and next integration wave](../sprints/2026-09-18/account-handoff.md)
 - [S-RESUMED-0250 — Resumed native runtime and pinned publication checks, September18](../sprints/2026-09-18/resumed-0250.md)
+- [S-RESUMED-0311 — Revision migration checks and host review, September18 03:11](../sprints/2026-09-18/resumed-0311.md)
 
 ## W-JOINT-POST
 
@@ -453,15 +458,15 @@ The existing Lean executor now crosses exact-byte SQLite CAS with crash/retry/co
 
 **Operate real resources through a compiled programmable host**
 
-Status: **active** · Owner: Astra: resume_host + resume_genesis; root pinned publication · Updated: 2026-09-18T02:51:31-04:00
+Status: **active** · Owner: Astra: resume_host + resume_foundations + resume_genesis + resume_admission + resume_birth_review · Updated: 2026-09-18T03:14:26-04:00
 
 Compile the source-owned Mini birth, rule installation, invocation and delegation path into an executable shell/stdio interface with exact signed calls, committed-history clock and replay receipts.
 
-**Next:** Compile the native profile/genesis/call codecs and actual host; run signed create/install/share/invoke/reopen from its public CLI while preserving exact original ingress on retries.
+**Next:** Implement per-resource authenticated observation/preparation, Book support enforcement and semantic journal verification; link host and run public CLI acceptance.
 
 **Done when:** A real compiled host with operator-owned configuration accepts only source-authorized signed calls, preserves committed resources/receipts across restart and lost replies, and drives the same grant-preserving shared-resource journey through the programmable shell.
 
-**Evidence so far:** Source implementation underway; new same-loaded-image CAS primitive passed actual native SQLite clock-race checks. Host itself is not yet compiled or exercised.
+**Evidence so far:** Concrete native profile compiles. Independent review found unsigned preparation balance oracle and missing historical semantic revalidation; fixes are assigned, public prepare closed. Host binary and CLI journey remain unverified.
 
 **Enables:**
 
@@ -472,20 +477,21 @@ Compile the source-owned Mini birth, rule installation, invocation and delegatio
 
 - [S-RESUMED-0250 — Resumed native runtime and pinned publication checks, September18](../sprints/2026-09-18/resumed-0250.md)
 - [S-ACCOUNT-HANDOFF-0918 — September18 account handoff: native born-owner journey and next integration wave](../sprints/2026-09-18/account-handoff.md)
+- [S-RESUMED-0311 — Revision migration checks and host review, September18 03:11](../sprints/2026-09-18/resumed-0311.md)
 
 ## W-POLICY-SOURCE
 
 **Store initial policies and use one runtime profile**
 
-Status: **active** · Owner: Astra: resume_install + resume_birth_review + resume_host · Updated: 2026-09-18T02:51:31-04:00
+Status: **active** · Owner: Astra: resume_install + resume_journey · Updated: 2026-09-18T03:14:26-04:00
 
 Immutable internal policy-source cells and a common field/compiler/request profile make resource creation, invocation and policy replacement agree.
 
-**Next:** Split source revision from grant generation across the shared signed request and physical consumers, then run repeated install and retained-grant invocation/reopen.
+**Next:** Run current native repeated installation and the joined born-resource journey.
 
 **Done when:** Policy source is created atomically and selected from the same durable directory; kind/domain/address mismatches refuse, and all consuming verbs share compatible source semantics.
 
-**Evidence so far:** Actual native birth and invocation select initial source from the same durable directory. Physical policy installer compiles at a21633c; its native probe is uncompiled/unrun, and its conflated epoch behavior remains pending migration.
+**Evidence so far:** Current source revision is independent of exact grant generation; native installer and birth source closure compile.
 
 **Enables:**
 
@@ -498,20 +504,21 @@ Immutable internal policy-source cells and a common field/compiler/request profi
 - [S-IMPLEMENTATION-0130 — Durable native invocation and repaired runtime history, September 18 01:30](../sprints/2026-09-18/checkpoint-0130.md)
 - [S-ACCOUNT-HANDOFF-0918 — September18 account handoff: native born-owner journey and next integration wave](../sprints/2026-09-18/account-handoff.md)
 - [S-RESUMED-0250 — Resumed native runtime and pinned publication checks, September18](../sprints/2026-09-18/resumed-0250.md)
+- [S-RESUMED-0311 — Revision migration checks and host review, September18 03:11](../sprints/2026-09-18/resumed-0311.md)
 
 ## W-PROGRAMMABLE-PATH
 
 **Implement and exercise the canonical authored-program-to-resource path**
 
-Status: **active** · Owner: Astra: resume_journey + resume_install + resume_host · Updated: 2026-09-18T02:51:31-04:00
+Status: **active** · Owner: Astra: resume_journey + resume_host + resume_genesis · Updated: 2026-09-18T03:14:26-04:00
 
 Select the canonical rule/program representation and actual authority projection, then implement needed compiler/native/proof/durable support and shell/Hermes consumers. Existing guards are retired only by replacing their missing guarantees. Active source investigation is recorded in sprints/2026-09-17.md.
 
-**Next:** Complete create → repeated rule replacement preserving grants → delegated recipient invocation → reopen/retry through the same native path, then consume it from the programmable shell.
+**Next:** Complete the native joined journey, then drive it through authenticated preparation and the public compiled host.
 
 **Done when:** Author and install a rule under actual resource authority, invoke a permitted operation through the chosen shell/agent path, refuse a violating operation with correct state/outcome evidence, and recover accepted behavior/history through the chosen durable runtime. Complete all necessary core obligations, not merely a private demo.
 
-**Evidence so far:** Actual paid birth → source/owner/control creation → reopen → issued-owner invocation → reopen passes. Rule replacement receiver compiles; preserving grants and recipient delegation remain the next coherent integration.
+**Evidence so far:** Birth, invocation, installer and delegation receiving modules compile against current semantics; actual joined probe is next.
 
 **Enables:**
 
@@ -524,6 +531,7 @@ Select the canonical rule/program representation and actual authority projection
 - [S-IMPLEMENTATION-0045 — September 18 implementation and contributor checkpoint](../sprints/2026-09-18/checkpoint-0045.md)
 - [S-ACCOUNT-HANDOFF-0918 — September18 account handoff: native born-owner journey and next integration wave](../sprints/2026-09-18/account-handoff.md)
 - [S-RESUMED-0250 — Resumed native runtime and pinned publication checks, September18](../sprints/2026-09-18/resumed-0250.md)
+- [S-RESUMED-0311 — Revision migration checks and host review, September18 03:11](../sprints/2026-09-18/resumed-0311.md)
 
 ## W-PROVIDER-PATH
 

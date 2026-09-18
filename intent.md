@@ -124,4 +124,13 @@ Asked whether an owner changing resource rules should preserve existing grants u
 
 > Keep grants; check the new rules (Recommended)
 
-The intended behavior is now settled. Source revision and grant-revocation generation must be distinct. Existing grants remain subject to their own scope, current signatures, expiry and the newly installed rules; this decision does not bypass those checks or promise that every old operation remains allowed. Current installation still conflates revision and generation and invalidates grants. The coordinated schema and consumer migration remains implementation work.
+The intended behavior is now settled. Source revision and grant-revocation generation must be distinct. Existing grants remain subject to their own scope, current signatures, expiry and the newly installed rules; this decision does not bypass those checks or promise that every old operation remains allowed. At the time of this decision, installation conflated revision and generation and invalidated grants. Current implementation and validation are tracked in W-GRANT-REVISION; this decision record does not establish completion.
+
+
+## Resource management can govern itself (September 18 decision)
+
+Asked whether ownership should provide a separate management right that can repair rules even when ordinary rules deny every operation, ember selected:
+
+> Let resources deliberately govern—and potentially lock—their own management
+
+A resource may deliberately deny further policy updates, including updates proposed by its owner. There is no implicit owner recovery bypass. Grant preservation across source revisions is independent: the grants remain present, and every attempted use still faces the current rules. Operational restart/recovery preserves accepted state; it does not override resource policy. The policy installer and host acceptance checks must retain a deliberate management-lockout case.
