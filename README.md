@@ -6,6 +6,8 @@ A working place to recover the DREGG suite's intentions, evidence, decisions, an
 
 Start with [the orientation](orientation/2026-09-17.md), then [ember's stated intentions](intent.md). The [graph specimen](graph.jsonld) carries a few concrete findings, candidate work items, and their sources. [Repository revisions](repositories.json) distinguish committed heads from worktrees. The [research index](research/README.md) links the bounded investigations and their corrective follow-ups.
 
+The next discussion is [the September 26 experience and design contract](milestones/2026-09-26.md). The release cadence is accepted intent; the proposed experience and work organization are open for discussion.
+
 The practical questions this should eventually answer:
 
 - What are we trying to make possible, and for whom?

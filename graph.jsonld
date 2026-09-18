@@ -217,7 +217,7 @@
       "@id": "urn:dregg:assortia:I-CURRENT",
       "@type": "Intent",
       "label": "Investigate current holdings; no past demo is the chosen target",
-      "description": "Ember answered that none of the old demos felt close to the desired world. Present investigation should not nominate one by assumption.",
+      "description": "Ember answered that none of the old demos felt close to the desired world. The initial task was present-state investigation. The next instruction asks us to use that inventory to establish coherent design intent and the next user experience; no old demo is selected by assumption.",
       "sources": [
         "urn:dregg:assortia:S-CONVERSATION"
       ]
@@ -226,7 +226,7 @@
       "@id": "urn:dregg:assortia:I-PROVIDERS",
       "@type": "Intent",
       "label": "Contributed heterogeneous hosting with real $DREGG stake and devnet shadow penalties",
-      "description": "Allow contributors to run eligible publicly executable jobs; use optimistic adjudication and provider reputation. Devnet penalties should be real recorded outcomes without charging their monetary amount. Stake custody remains undecided.",
+      "description": "Allow contributors to run eligible publicly executable jobs; use optimistic adjudication and provider reputation. Ember chose actual locking of real $DREGG for devnet, with penalties recorded on reputation/the leaderboard and no monetary deduction for those penalties. The custody mechanism and withdrawal/release conditions remain open.",
       "subject": "urn:dregg:assortia:E-PROVIDERS",
       "sources": [
         "urn:dregg:assortia:S-CONVERSATION"
@@ -454,10 +454,13 @@
       "@id": "urn:dregg:assortia:Q-STAKE",
       "@type": "Question",
       "label": "What does real stake mean during devnet?",
-      "description": "Real tokens locked with shadow penalties, or verified holdings with simulated stake? User clarification requested; no custody choice assumed.",
-      "status": "awaiting-user",
+      "description": "Answered by ember: \"Lock real stake; record penalties only\". Real $DREGG is to be locked during devnet; adjudicated penalties are recorded without deducting them from the locked balance. Custody implementation and withdrawal/release conditions remain open; no asset action has been performed.",
+      "status": "answered",
       "related": [
         "urn:dregg:assortia:I-PROVIDERS"
+      ],
+      "sources": [
+        "urn:dregg:assortia:S-CONVERSATION"
       ]
     },
     {
@@ -999,6 +1002,46 @@
       "lineEnd": 116,
       "sha256": "2008807876e71a0eaa9b73ee183312cf1fceee52edfaf7909168a83576eac3cf",
       "recordedDate": "2026-09-17"
+    },
+    {
+      "@id": "urn:dregg:assortia:I-CADENCE",
+      "@type": "Intent",
+      "label": "Release on the 13th and 26th; next horizon September 26, 2026",
+      "description": "Ember reports a regular release cadence on the 13th and 26th, with nine days from September 17 to the next release and usually 27–50 swarmcycles in that interval, with ember participating. Treat this as reported capacity, not a scope-specific estimate or a guarantee of research closure.",
+      "sources": [
+        "urn:dregg:assortia:S-CONVERSATION"
+      ]
+    },
+    {
+      "@id": "urn:dregg:assortia:I-DESIGN-COHERENCE",
+      "@type": "Intent",
+      "label": "Establish consistent design intent and implement the next experience across critical pathways",
+      "description": "Use the current inventory to decide what the next user experience means, then implement that meaning across all required pathways. The exact experience and receiving runtime are not yet selected.",
+      "subject": "urn:dregg:assortia:E-WORLD",
+      "sources": [
+        "urn:dregg:assortia:S-CONVERSATION"
+      ]
+    },
+    {
+      "@id": "urn:dregg:assortia:W-M26-DESIGN",
+      "@type": "WorkItem",
+      "label": "Define the September 26 experience and its shared design contracts",
+      "description": "Discussion proposal in milestones/2026-09-26.md: begin with a two-person programmable resource journey, decide identity/authority/history/sharing/execution meanings, and trace its required receiving implementations and evidence. The fieldbook example and provider inclusion are open product choices.",
+      "status": "proposed-for-discussion",
+      "evidenceKind": "assistant-proposal",
+      "localPath": "/Users/ember/dev/dregg-assortia/milestones/2026-09-26.md",
+      "motivatedBy": [
+        "urn:dregg:assortia:I-WORLD",
+        "urn:dregg:assortia:I-CADENCE",
+        "urn:dregg:assortia:I-DESIGN-COHERENCE"
+      ],
+      "related": [
+        "urn:dregg:assortia:W-DOC-PERSIST",
+        "urn:dregg:assortia:W-CANONICAL-CONSUMER",
+        "urn:dregg:assortia:W-COORD-CONTRACT",
+        "urn:dregg:assortia:W-PROVIDER-PATH"
+      ],
+      "closure": "An accepted user journey; explicit consequential design decisions; selected semantic and receiving runtime paths; linked implementation obligations with observable acceptance conditions and scoped assurance claims. Agreement on the design does not close its implementation or deployment."
     }
   ]
 }

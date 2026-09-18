@@ -50,8 +50,22 @@ On practical resources and the provider model:
 
 > "Fake-slash" it during devnet ... it'd just show up on a leaderboard instead of us actually charging them, at least during devnet
 
-The desired devnet penalty is a real recorded verdict with a nonmonetary consequence. Real stake custody, eligible job semantics, dispute procedure, and later monetary enforcement are separate open choices. No real asset action is authorized by this orientation.
+Asked whether devnet stake should actually be locked or merely simulated against verified holdings, ember answered:
 
-One clarification is pending: during devnet, is real stake actually locked with shadow penalties, or are holdings verified while stake is simulated? No answer is assumed.
+> Lock real stake; record penalties only
+
+This settles the intended devnet rule: providers lock real $DREGG; adjudicated penalties are recorded in reputation/the leaderboard without deducting the penalty from the locked balance. The custody mechanism, withdrawal/release conditions, eligible job semantics, dispute procedure, and any later monetary enforcement remain to be designed. No asset operation has been performed or is authorized by recording this decision.
+
+## Release cadence and the next experience
+
+Ember identifies the next task as establishing a consistent design intent and implementing it across the critical pathways required by the next user experience milestone:
+
+> we have a consistent release cadence of the 13th and the 26th, and we presently have 9 days until the next Release Day.
+
+> at swarmcycling speed, that 9 days is usually 27-50 swarmcycles
+
+Recorded on September 17, 2026: the next release day is **September 26, 2026**. The cycle range is ember's report of the team's working pace, with ember participating in quality and design decisions; it is not a measured estimate for a particular scope. Plan substantial coherent work against this cadence. Do not substitute conventional staffing estimates or assume that every open research question will close within it.
+
+The request has advanced from inventory alone to using that inventory to establish shared design intent and an implementable experience. The exact September 26 experience, receiving runtime, and release promises are not yet selected. [The release discussion draft](milestones/2026-09-26.md) is an assistant proposal, not an accepted design.
 
 Historical context and exact cv session/message references are in [the intent archaeology](research/intent.md). Adopted goal/stop-hook instructions are distinguished there from ordinary user prose.
