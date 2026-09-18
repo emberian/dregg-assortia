@@ -1,0 +1,22 @@
+{
+  "captured": "2026-09-18T06:47:00.252881+00:00",
+  "scope": "Same-loaded-image publication and actual native internal durable CAS regression; not full current-schema policy integration.",
+  "files": {
+    "Compiler/DurableReceiverIO.lean": "af1a3cf40cbfdaf09bcb7cbbd8fbe22d6962ebb4bd49a7dfc91943ad9bd16df0",
+    "scripts/durable-receiver.lean": "cc5ff27bd43dc39721b77e50c8531b3d175666822f5ab9a2a977cedd5c04a5e8"
+  },
+  "native_binary_sha256": "6c716da59969563cb9ddbe71a25370bbe9db8de13670fabaac5abe8a2ed42a03",
+  "checks": [
+    {
+      "command": "LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Compiler/DurableReceiverIO.olean Compiler/DurableReceiverIO.lean",
+      "exit": 0,
+      "log": "/tmp/dregg-receive-loaded-io-20260918.log"
+    },
+    {
+      "command": "LEAN_NUM_THREADS=2 lake env lean --run scripts/durable-receiver.lean /Users/ember/dev/minidregg/native/hyperdocument-link-sqlite-store/target/release/minidregg-link-sqlite-store",
+      "exit": 0,
+      "log": "/tmp/dregg-receive-loaded-native-attempt2-20260918.log"
+    }
+  ],
+  "earlier_attempt": "Test fixture initially had no writes; canonical noCells refused. Fixture changed to nonempty identity write, no gate weakened."
+}

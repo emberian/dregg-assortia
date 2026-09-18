@@ -102,7 +102,7 @@ Graph-backed work ownership, concrete briefs, generated current views and an exp
 
 **Bind native use to committed keys and complete authority**
 
-Status: **active** · Owner: Astra: authority_pages + durable_receiver + effect_admission · Updated: 2026-09-18T01:30:00-04:00
+Status: **active** · Owner: Astra: resume_authority + resume_signatures + resume_admission · Updated: 2026-09-18T02:51:31-04:00
 
 Persist exact signing keys/epochs; accept actual configured native verification of the exact request and capability against the complete same-snapshot authority.
 
@@ -120,12 +120,13 @@ Persist exact signing keys/epochs; accept actual configured native verification 
 
 - [S-IMPLEMENTATION-0045 — September 18 implementation and contributor checkpoint](../sprints/2026-09-18/checkpoint-0045.md)
 - [S-IMPLEMENTATION-0130 — Durable native invocation and repaired runtime history, September 18 01:30](../sprints/2026-09-18/checkpoint-0130.md)
+- [S-RESUMED-0250 — Resumed native runtime and pinned publication checks, September18](../sprints/2026-09-18/resumed-0250.md)
 
 ## W-AUTHORIZED-DELEGATION
 
 **Give a friend a narrower usable right**
 
-Status: **active** · Owner: Astra: durable_callers + effect_admission · Updated: 2026-09-18T02:12:02-04:00
+Status: **active** · Owner: Astra: resume_journey + resume_admission · Updated: 2026-09-18T02:51:31-04:00
 
 Add an explicit authorized subject-to-subject delegation edge without weakening strict holder-narrowing or inventing bearer custody.
 
@@ -144,6 +145,7 @@ Add an explicit authorized subject-to-subject delegation edge without weakening 
 
 - [S-IMPLEMENTATION-0045 — September 18 implementation and contributor checkpoint](../sprints/2026-09-18/checkpoint-0045.md)
 - [S-ACCOUNT-HANDOFF-0918 — September18 account handoff: native born-owner journey and next integration wave](../sprints/2026-09-18/account-handoff.md)
+- [S-RESUMED-0250 — Resumed native runtime and pinned publication checks, September18](../sprints/2026-09-18/resumed-0250.md)
 
 ## W-CANONICAL-CONSUMER
 
@@ -258,7 +260,7 @@ Implement durable refusal propagation and exact ordered physical history in brea
 
 **Make full request and actual-pre binding mandatory for generic effects**
 
-Status: **active** · Owner: Astra: core_effect_admission · Updated: 2026-09-18T00:45:00-04:00
+Status: **active** · Owner: Astra: resume_admission + resume_foundations · Updated: 2026-09-18T02:51:31-04:00
 
 Replace optional binding adapters with a source-derived family request and exact pre requirement in AcceptedCellEffect, migrating concrete families and consumers.
 
@@ -277,6 +279,7 @@ Replace optional binding adapters with a source-derived family request and exact
 - [S-IMPLEMENTATION-2300 — Late-evening source checkpoints, captured run, and shared-core assignments](../sprints/2026-09-17/checkpoint-2300.md)
 - [S-IMPLEMENTATION-2330 — Executable receiving/admission checkpoint and rejected-turn correction](../sprints/2026-09-17/checkpoint-2330.md)
 - [S-IMPLEMENTATION-0045 — September 18 implementation and contributor checkpoint](../sprints/2026-09-18/checkpoint-0045.md)
+- [S-RESUMED-0250 — Resumed native runtime and pinned publication checks, September18](../sprints/2026-09-18/resumed-0250.md)
 
 ## W-EMBEDDED-CANDIDATE
 
@@ -307,15 +310,15 @@ SDK/World align with the current node rejection policy: no retained fee, nonce, 
 
 **Retain factory deployment at its actual history boundary**
 
-Status: **active** · Owner: Astra: kernel_carrier · Updated: 2026-09-18T02:12:02-04:00
+Status: **active** · Owner: Astra: resume_runtime · Updated: 2026-09-18T02:51:31-04:00
 
 World deployment currently mutates volatile registries; historical paths either omit factories or preload the present registry into the past. Persist ordered descriptor/VK evidence and replay the actual executor deployment at that boundary.
 
-**Next:** Complete the five targeted factory chronology tests, then affected history regressions and native consumer checks against the exact new snapshot.
+**Next:** Run the affected history regression set against the exact recorded current source and preserve completion evidence.
 
 **Done when:** Actual factory deployment, birth/mutation and recovery use the same ordered descriptor/VK evidence; no historical prefix sees a later factory; conflicting deployment and persistence failures leave committed state unchanged; unsupported old images refuse without changing evidence.
 
-**Evidence so far:** Ordered deployment, exact descriptors, historical forks and failure/refusal tests implemented. First combined build mutability failure fixed; second exposed stale Mina test callers, now repaired. Targeted runtime retry is recorded in the account handoff. Bread bf953115d checkpoints the changes. Latest combined attempt failed at profiler-clock linking before tests; timer source repaired and syntax-checked, post-repair link/runtime unrun.
+**Evidence so far:** All five targeted factory chronology tests now ran and passed with actual native Lean in the combined9-test suite. Current-source affected history regressions remain queued.
 
 **Enables:**
 
@@ -326,12 +329,13 @@ World deployment currently mutates volatile registries; historical paths either 
 
 - [S-IMPLEMENTATION-0130 — Durable native invocation and repaired runtime history, September 18 01:30](../sprints/2026-09-18/checkpoint-0130.md)
 - [S-ACCOUNT-HANDOFF-0918 — September18 account handoff: native born-owner journey and next integration wave](../sprints/2026-09-18/account-handoff.md)
+- [S-RESUMED-0250 — Resumed native runtime and pinned publication checks, September18](../sprints/2026-09-18/resumed-0250.md)
 
 ## W-GRANT-REVISION
 
 **Keep grants valid across policy source revisions**
 
-Status: **active** · Owner: Astra: root + authority_pages + program_install · Updated: 2026-09-18T02:12:02-04:00
+Status: **active** · Owner: Astra: resume_foundations + resume_authority + resume_install · Updated: 2026-09-18T02:51:31-04:00
 
 Separate immutable policy-source revision from grant revocation generation across the exact signed request, authority representation, compiled/source policies and every receiving consumer.
 
@@ -349,12 +353,13 @@ Separate immutable policy-source revision from grant revocation generation acros
 **Evidence / provenance:**
 
 - [S-ACCOUNT-HANDOFF-0918 — September18 account handoff: native born-owner journey and next integration wave](../sprints/2026-09-18/account-handoff.md)
+- [S-RESUMED-0250 — Resumed native runtime and pinned publication checks, September18](../sprints/2026-09-18/resumed-0250.md)
 
 ## W-HERMES-STARTUP
 
 **Make actual Hermes/SDK startup avoid unused Lean initialization**
 
-Status: **active** · Owner: Astra: resource_history + root · Updated: 2026-09-18T02:12:02-04:00
+Status: **active** · Owner: Astra: resume_runtime + resume_init_hotspot · Updated: 2026-09-18T02:51:31-04:00
 
 SDK route discovery is lazy while actual cryptographic calls retain real Lean initialization.
 
@@ -362,7 +367,7 @@ SDK route discovery is lazy while actual cryptographic calls retain real Lean in
 
 **Done when:** The same operations and refusal/publication checks pass through actual receiving code without eager unused-core initialization; real PQ first-use remains checked.
 
-**Evidence so far:** Earlier SDK 4 and exact js-agent 191.097s native pass retained. New FFI lifecycle/narrow actual DelegAdmit implementation is in targeted runtime validation; no measured startup improvement claimed yet. Bread bf953115d checkpoints the changes. Latest combined attempt failed at profiler-clock linking before tests; timer source repaired and syntax-checked, post-repair link/runtime unrun.
+**Evidence so far:** Combined9-test suite passes narrow native DelegAdmit/lifecycle checks. Real full-init profile places the long delay after fast executor initialization; full/ST/PQ/Hermes captures and dependency-backed executor-family narrowing are active.
 
 **Enables:**
 
@@ -372,6 +377,7 @@ SDK route discovery is lazy while actual cryptographic calls retain real Lean in
 
 - [S-IMPLEMENTATION-0045 — September 18 implementation and contributor checkpoint](../sprints/2026-09-18/checkpoint-0045.md)
 - [S-ACCOUNT-HANDOFF-0918 — September18 account handoff: native born-owner journey and next integration wave](../sprints/2026-09-18/account-handoff.md)
+- [S-RESUMED-0250 — Resumed native runtime and pinned publication checks, September18](../sprints/2026-09-18/resumed-0250.md)
 
 ## W-JOINT-POST
 
@@ -443,11 +449,35 @@ The existing Lean executor now crosses exact-byte SQLite CAS with crash/retry/co
 - [S-IMPLEMENTATION-0045 — September 18 implementation and contributor checkpoint](../sprints/2026-09-18/checkpoint-0045.md)
 - [S-IMPLEMENTATION-0130 — Durable native invocation and repaired runtime history, September 18 01:30](../sprints/2026-09-18/checkpoint-0130.md)
 
+## W-NATIVE-HOST
+
+**Operate real resources through a compiled programmable host**
+
+Status: **active** · Owner: Astra: resume_host + resume_genesis; root pinned publication · Updated: 2026-09-18T02:51:31-04:00
+
+Compile the source-owned Mini birth, rule installation, invocation and delegation path into an executable shell/stdio interface with exact signed calls, committed-history clock and replay receipts.
+
+**Next:** Compile the native profile/genesis/call codecs and actual host; run signed create/install/share/invoke/reopen from its public CLI while preserving exact original ingress on retries.
+
+**Done when:** A real compiled host with operator-owned configuration accepts only source-authorized signed calls, preserves committed resources/receipts across restart and lost replies, and drives the same grant-preserving shared-resource journey through the programmable shell.
+
+**Evidence so far:** Source implementation underway; new same-loaded-image CAS primitive passed actual native SQLite clock-race checks. Host itself is not yet compiled or exercised.
+
+**Enables:**
+
+- E-KERNEL — Canonical typed semantic kernel
+- E-WORLD — Programmable social resource world
+
+**Evidence / provenance:**
+
+- [S-RESUMED-0250 — Resumed native runtime and pinned publication checks, September18](../sprints/2026-09-18/resumed-0250.md)
+- [S-ACCOUNT-HANDOFF-0918 — September18 account handoff: native born-owner journey and next integration wave](../sprints/2026-09-18/account-handoff.md)
+
 ## W-POLICY-SOURCE
 
 **Store initial policies and use one runtime profile**
 
-Status: **active** · Owner: Astra: resource_pages + shell_hermes + program_install · Updated: 2026-09-18T02:12:02-04:00
+Status: **active** · Owner: Astra: resume_install + resume_birth_review + resume_host · Updated: 2026-09-18T02:51:31-04:00
 
 Immutable internal policy-source cells and a common field/compiler/request profile make resource creation, invocation and policy replacement agree.
 
@@ -467,12 +497,13 @@ Immutable internal policy-source cells and a common field/compiler/request profi
 - [S-IMPLEMENTATION-0045 — September 18 implementation and contributor checkpoint](../sprints/2026-09-18/checkpoint-0045.md)
 - [S-IMPLEMENTATION-0130 — Durable native invocation and repaired runtime history, September 18 01:30](../sprints/2026-09-18/checkpoint-0130.md)
 - [S-ACCOUNT-HANDOFF-0918 — September18 account handoff: native born-owner journey and next integration wave](../sprints/2026-09-18/account-handoff.md)
+- [S-RESUMED-0250 — Resumed native runtime and pinned publication checks, September18](../sprints/2026-09-18/resumed-0250.md)
 
 ## W-PROGRAMMABLE-PATH
 
 **Implement and exercise the canonical authored-program-to-resource path**
 
-Status: **active** · Owner: Astra: program_install + localfirst · Updated: 2026-09-18T02:12:02-04:00
+Status: **active** · Owner: Astra: resume_journey + resume_install + resume_host · Updated: 2026-09-18T02:51:31-04:00
 
 Select the canonical rule/program representation and actual authority projection, then implement needed compiler/native/proof/durable support and shell/Hermes consumers. Existing guards are retired only by replacing their missing guarantees. Active source investigation is recorded in sprints/2026-09-17.md.
 
@@ -492,6 +523,7 @@ Select the canonical rule/program representation and actual authority projection
 - [S-PROGRAMMING-REVIEW — Parent-reviewed programming and shell investigation](../research/programming.md)
 - [S-IMPLEMENTATION-0045 — September 18 implementation and contributor checkpoint](../sprints/2026-09-18/checkpoint-0045.md)
 - [S-ACCOUNT-HANDOFF-0918 — September18 account handoff: native born-owner journey and next integration wave](../sprints/2026-09-18/account-handoff.md)
+- [S-RESUMED-0250 — Resumed native runtime and pinned publication checks, September18](../sprints/2026-09-18/resumed-0250.md)
 
 ## W-PROVIDER-PATH
 

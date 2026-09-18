@@ -1,0 +1,1 @@
+PASS durable receiver: Lean codec/executor + SQLite CAS, two-cell repeated commit, replay/conflict/read/write/nullifier/budget refusal, process-exit rollback, lost-response reopen, concurrent guard move, pinned admission refuses journal-only race, corruption; final valid image 1423 bytes / 7 commits

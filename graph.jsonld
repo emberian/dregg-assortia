@@ -1857,11 +1857,12 @@
       "sources": [
         "urn:dregg:assortia:S-PROGRAMMING-REVIEW",
         "urn:dregg:assortia:S-IMPLEMENTATION-0045",
-        "urn:dregg:assortia:S-ACCOUNT-HANDOFF-0918"
+        "urn:dregg:assortia:S-ACCOUNT-HANDOFF-0918",
+        "urn:dregg:assortia:S-RESUMED-0250"
       ],
       "closure": "Author and install a rule under actual resource authority, invoke a permitted operation through the chosen shell/agent path, refuse a violating operation with correct state/outcome evidence, and recover accepted behavior/history through the chosen durable runtime. Complete all necessary core obligations, not merely a private demo.",
-      "owner": "Astra: program_install + localfirst",
-      "updatedAt": "2026-09-18T02:12:02-04:00",
+      "owner": "Astra: resume_journey + resume_install + resume_host",
+      "updatedAt": "2026-09-18T02:51:31-04:00",
       "advances": [
         "urn:dregg:assortia:E-WORLD",
         "urn:dregg:assortia:E-KERNEL"
@@ -1958,7 +1959,8 @@
       "sources": [
         "urn:dregg:assortia:S-IMPLEMENTATION-2300",
         "urn:dregg:assortia:S-IMPLEMENTATION-2330",
-        "urn:dregg:assortia:S-IMPLEMENTATION-0045"
+        "urn:dregg:assortia:S-IMPLEMENTATION-0045",
+        "urn:dregg:assortia:S-RESUMED-0250"
       ],
       "motivatedBy": [
         "urn:dregg:assortia:I-CORE-SPRINT",
@@ -1968,8 +1970,8 @@
         "urn:dregg:assortia:W-RESOURCE-BIRTH"
       ],
       "closure": "All receiving constructors use the strengthened base token; target/verb/args/nonce/pre relabeling refuses, honest effects remain inhabited, and the integrated tree checks.",
-      "owner": "Astra: core_effect_admission",
-      "updatedAt": "2026-09-18T00:45:00-04:00",
+      "owner": "Astra: resume_admission + resume_foundations",
+      "updatedAt": "2026-09-18T02:51:31-04:00",
       "advances": [
         "urn:dregg:assortia:E-KERNEL"
       ],
@@ -2122,8 +2124,8 @@
       "label": "Bind native use to committed keys and complete authority",
       "description": "Persist exact signing keys/epochs; accept actual configured native verification of the exact request and capability against the complete same-snapshot authority.",
       "status": "active",
-      "owner": "Astra: authority_pages + durable_receiver + effect_admission",
-      "updatedAt": "2026-09-18T01:30:00-04:00",
+      "owner": "Astra: resume_authority + resume_signatures + resume_admission",
+      "updatedAt": "2026-09-18T02:51:31-04:00",
       "advances": [
         "urn:dregg:assortia:E-KERNEL"
       ],
@@ -2131,7 +2133,8 @@
       "closure": "Actual installed verification plus complete committed authority checks feed accepted source operations; stale/altered/revoked credentials cannot authorize them.",
       "sources": [
         "urn:dregg:assortia:S-IMPLEMENTATION-0045",
-        "urn:dregg:assortia:S-IMPLEMENTATION-0130"
+        "urn:dregg:assortia:S-IMPLEMENTATION-0130",
+        "urn:dregg:assortia:S-RESUMED-0250"
       ],
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
@@ -2144,8 +2147,8 @@
       "label": "Store initial policies and use one runtime profile",
       "description": "Immutable internal policy-source cells and a common field/compiler/request profile make resource creation, invocation and policy replacement agree.",
       "status": "active",
-      "owner": "Astra: resource_pages + shell_hermes + program_install",
-      "updatedAt": "2026-09-18T02:12:02-04:00",
+      "owner": "Astra: resume_install + resume_birth_review + resume_host",
+      "updatedAt": "2026-09-18T02:51:31-04:00",
       "advances": [
         "urn:dregg:assortia:E-KERNEL",
         "urn:dregg:assortia:E-WORLD"
@@ -2155,7 +2158,8 @@
       "sources": [
         "urn:dregg:assortia:S-IMPLEMENTATION-0045",
         "urn:dregg:assortia:S-IMPLEMENTATION-0130",
-        "urn:dregg:assortia:S-ACCOUNT-HANDOFF-0918"
+        "urn:dregg:assortia:S-ACCOUNT-HANDOFF-0918",
+        "urn:dregg:assortia:S-RESUMED-0250"
       ],
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
@@ -2195,8 +2199,8 @@
       "label": "Give a friend a narrower usable right",
       "description": "Add an explicit authorized subject-to-subject delegation edge without weakening strict holder-narrowing or inventing bearer custody.",
       "status": "active",
-      "owner": "Astra: durable_callers + effect_admission",
-      "updatedAt": "2026-09-18T02:12:02-04:00",
+      "owner": "Astra: resume_journey + resume_admission",
+      "updatedAt": "2026-09-18T02:51:31-04:00",
       "advances": [
         "urn:dregg:assortia:E-KERNEL",
         "urn:dregg:assortia:E-WORLD"
@@ -2205,7 +2209,8 @@
       "closure": "Owner delegates a bounded right; friend can use that right, cannot exceed it or replace policy, and revocation/current epochs remain enforced.",
       "sources": [
         "urn:dregg:assortia:S-IMPLEMENTATION-0045",
-        "urn:dregg:assortia:S-ACCOUNT-HANDOFF-0918"
+        "urn:dregg:assortia:S-ACCOUNT-HANDOFF-0918",
+        "urn:dregg:assortia:S-RESUMED-0250"
       ],
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
@@ -2218,8 +2223,8 @@
       "label": "Make actual Hermes/SDK startup avoid unused Lean initialization",
       "description": "SDK route discovery is lazy while actual cryptographic calls retain real Lean initialization.",
       "status": "active",
-      "owner": "Astra: resource_history + root",
-      "updatedAt": "2026-09-18T02:12:02-04:00",
+      "owner": "Astra: resume_runtime + resume_init_hotspot",
+      "updatedAt": "2026-09-18T02:51:31-04:00",
       "advances": [
         "urn:dregg:assortia:E-HERMES"
       ],
@@ -2227,12 +2232,13 @@
       "closure": "The same operations and refusal/publication checks pass through actual receiving code without eager unused-core initialization; real PQ first-use remains checked.",
       "sources": [
         "urn:dregg:assortia:S-IMPLEMENTATION-0045",
-        "urn:dregg:assortia:S-ACCOUNT-HANDOFF-0918"
+        "urn:dregg:assortia:S-ACCOUNT-HANDOFF-0918",
+        "urn:dregg:assortia:S-RESUMED-0250"
       ],
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
       "blockedBy": [],
-      "progress": "Earlier SDK 4 and exact js-agent 191.097s native pass retained. New FFI lifecycle/narrow actual DelegAdmit implementation is in targeted runtime validation; no measured startup improvement claimed yet. Bread bf953115d checkpoints the changes. Latest combined attempt failed at profiler-clock linking before tests; timer source repaired and syntax-checked, post-repair link/runtime unrun."
+      "progress": "Combined9-test suite passes narrow native DelegAdmit/lifecycle checks. Real full-init profile places the long delay after fast executor initialization; full/ST/PQ/Hermes captures and dependency-backed executor-family narrowing are active."
     },
     {
       "@id": "urn:dregg:assortia:W-HUB-LIVE",
@@ -2422,15 +2428,16 @@
       "label": "Retain factory deployment at its actual history boundary",
       "description": "World deployment currently mutates volatile registries; historical paths either omit factories or preload the present registry into the past. Persist ordered descriptor/VK evidence and replay the actual executor deployment at that boundary.",
       "status": "active",
-      "owner": "Astra: kernel_carrier",
-      "updatedAt": "2026-09-18T02:12:02-04:00",
+      "owner": "Astra: resume_runtime",
+      "updatedAt": "2026-09-18T02:51:31-04:00",
       "advances": [
         "urn:dregg:assortia:E-DOC",
         "urn:dregg:assortia:E-KERNEL"
       ],
       "sources": [
         "urn:dregg:assortia:S-IMPLEMENTATION-0130",
-        "urn:dregg:assortia:S-ACCOUNT-HANDOFF-0918"
+        "urn:dregg:assortia:S-ACCOUNT-HANDOFF-0918",
+        "urn:dregg:assortia:S-RESUMED-0250"
       ],
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
@@ -2439,9 +2446,9 @@
         "urn:dregg:assortia:W-DOC-PERSIST",
         "urn:dregg:assortia:W-EMBEDDED-CANDIDATE"
       ],
-      "nextAction": "Complete the five targeted factory chronology tests, then affected history regressions and native consumer checks against the exact new snapshot.",
+      "nextAction": "Run the affected history regression set against the exact recorded current source and preserve completion evidence.",
       "closure": "Actual factory deployment, birth/mutation and recovery use the same ordered descriptor/VK evidence; no historical prefix sees a later factory; conflicting deployment and persistence failures leave committed state unchanged; unsupported old images refuse without changing evidence.",
-      "progress": "Ordered deployment, exact descriptors, historical forks and failure/refusal tests implemented. First combined build mutability failure fixed; second exposed stale Mina test callers, now repaired. Targeted runtime retry is recorded in the account handoff. Bread bf953115d checkpoints the changes. Latest combined attempt failed at profiler-clock linking before tests; timer source repaired and syntax-checked, post-repair link/runtime unrun."
+      "progress": "All five targeted factory chronology tests now ran and passed with actual native Lean in the combined9-test suite. Current-source affected history regressions remain queued."
     },
     {
       "@id": "urn:dregg:assortia:S-CLOUD-HOST-REVIEW",
@@ -2527,12 +2534,13 @@
       "label": "Keep grants valid across policy source revisions",
       "description": "Separate immutable policy-source revision from grant revocation generation across the exact signed request, authority representation, compiled/source policies and every receiving consumer.",
       "status": "active",
-      "owner": "Astra: root + authority_pages + program_install",
-      "updatedAt": "2026-09-18T02:12:02-04:00",
+      "owner": "Astra: resume_foundations + resume_authority + resume_install",
+      "updatedAt": "2026-09-18T02:51:31-04:00",
       "priority": 1,
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "sources": [
-        "urn:dregg:assortia:S-ACCOUNT-HANDOFF-0918"
+        "urn:dregg:assortia:S-ACCOUNT-HANDOFF-0918",
+        "urn:dregg:assortia:S-RESUMED-0250"
       ],
       "motivatedBy": [
         "urn:dregg:assortia:I-POLICY-GRANTS"
@@ -2550,6 +2558,45 @@
       "nextAction": "Coordinate one request/profile/schema migration with explicit delegation; implement revision-exact authorization and separate generation rotation, then exercise both physical receivers.",
       "closure": "After two admitted rule replacements, previously issued owner/control and delegated grants remain usable exactly when their scope and new rules authorize the new request; stale revisions refuse, explicit generation revocation invalidates prior grants, and restart/retry preserves exact state and receipts.",
       "progress": "User decision accepted. Design and independent source review archived; implementation remains pending. Current 16-field drafts still use conflated epoch semantics."
+    },
+    {
+      "@id": "urn:dregg:assortia:S-RESUMED-0250",
+      "@type": "Source",
+      "label": "Resumed native runtime and pinned publication checks, September18",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-18/resumed-0250.md",
+      "lineStart": 1,
+      "lineEnd": 13,
+      "sha256": "68b84b72a6309cbad1d0e8ef03eccee7c1795d8fb497d42824668d1c341994b4",
+      "recordedDate": "2026-09-18",
+      "evidenceKind": "captured-runs-and-implementation-checkpoint"
+    },
+    {
+      "@id": "urn:dregg:assortia:W-NATIVE-HOST",
+      "@type": "WorkItem",
+      "label": "Operate real resources through a compiled programmable host",
+      "description": "Compile the source-owned Mini birth, rule installation, invocation and delegation path into an executable shell/stdio interface with exact signed calls, committed-history clock and replay receipts.",
+      "status": "active",
+      "owner": "Astra: resume_host + resume_genesis; root pinned publication",
+      "updatedAt": "2026-09-18T02:51:31-04:00",
+      "priority": 1,
+      "milestone": "urn:dregg:assortia:M-2026-09-26",
+      "sources": [
+        "urn:dregg:assortia:S-RESUMED-0250",
+        "urn:dregg:assortia:S-ACCOUNT-HANDOFF-0918"
+      ],
+      "advances": [
+        "urn:dregg:assortia:E-KERNEL",
+        "urn:dregg:assortia:E-WORLD"
+      ],
+      "related": [
+        "urn:dregg:assortia:W-PROGRAMMABLE-PATH",
+        "urn:dregg:assortia:W-ANDROID-CONTRACT"
+      ],
+      "blockedBy": [],
+      "nextAction": "Compile the native profile/genesis/call codecs and actual host; run signed create/install/share/invoke/reopen from its public CLI while preserving exact original ingress on retries.",
+      "closure": "A real compiled host with operator-owned configuration accepts only source-authorized signed calls, preserves committed resources/receipts across restart and lost replies, and drives the same grant-preserving shared-resource journey through the programmable shell.",
+      "progress": "Source implementation underway; new same-loaded-image CAS primitive passed actual native SQLite clock-race checks. Host itself is not yet compiled or exercised."
     }
   ]
 }

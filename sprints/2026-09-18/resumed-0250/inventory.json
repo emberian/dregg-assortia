@@ -1,0 +1,32 @@
+[
+  {
+    "path": "sprints/2026-09-18/resumed-0250/dregg-receive-loaded-checkpoint-20260918.json",
+    "original": "/tmp/dregg-receive-loaded-checkpoint-20260918.json",
+    "sha256": "a4daad302eb1a8c4e088ca0a64033c0de499c21e56bb5510edf083a0512a52ea"
+  },
+  {
+    "path": "sprints/2026-09-18/resumed-0250/dregg-receive-loaded-io-20260918.log",
+    "original": "/tmp/dregg-receive-loaded-io-20260918.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "sprints/2026-09-18/resumed-0250/dregg-receive-loaded-native-20260918.log",
+    "original": "/tmp/dregg-receive-loaded-native-20260918.log",
+    "sha256": "622c59b497894ceed5df349391813713a60e40f6ae137433d3ffeb5a7ca8dcb1"
+  },
+  {
+    "path": "sprints/2026-09-18/resumed-0250/dregg-receive-loaded-native-attempt2-20260918.log",
+    "original": "/tmp/dregg-receive-loaded-native-attempt2-20260918.log",
+    "sha256": "f39099a68c566c94ab13f45c4083836deb573d6158aa0bad610b42d49c27d44d"
+  },
+  {
+    "path": "sprints/2026-09-18/resumed-0250/dregg-resume-ffi-factory-fast-attempt2-20260918.log",
+    "original": "/tmp/dregg-resume-ffi-factory-fast-attempt2-20260918.log",
+    "sha256": "ab8435dca7a656f13c66f81d694a0ba2823784394e21159a4393e3a9ea5d71d7"
+  },
+  {
+    "path": "sprints/2026-09-18/resumed-0250/dregg-resume-ffi-factory-fast-attempt2-source-20260918.json",
+    "original": "/tmp/dregg-resume-ffi-factory-fast-attempt2-source-20260918.json",
+    "sha256": "b23f90b69b32288912654437804426b9433dfc417d8ffa94707cd75412188097"
+  }
+]
