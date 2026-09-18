@@ -111,3 +111,9 @@ Recorded on September 17, 2026: the next release day is **September 26, 2026**. 
 The request has advanced from inventory alone to using that inventory to establish shared design intent and an implementable experience. The exact September 26 experience, receiving runtime, and release promises are not yet selected. [The release discussion draft](milestones/2026-09-26.md) is an assistant proposal, not an accepted design.
 
 Historical context and exact cv session/message references are in [the intent archaeology](research/intent.md). Adopted goal/stop-hook instructions are distinguished there from ordinary user prose.
+
+## Substantial external contribution (September 18 clarification)
+
+Assortia is intended as a living knowledge index and project-management hub that makes substantial product work legible to outside contributors. Wisper is waiting for a specific opportunity. Ember rejected graph-tooling maintenance as that contribution, giving Android scaffolding with an embedded DREGG node and specified system/UI responsibilities as the scale of work intended. Ember subsequently suggested DreggNet/cloud as another possible fit for an experienced backend/platform engineer trusted with broad systems work.
+
+Neither Android nor cloud is assigned or fixed release scope yet. The next action is to inspect actual implementations and establish a coherent ownership/interface boundary. The contributor can own design and implementation; this is not limited to consuming a finished API or building a UI wrapper. Internal hub tooling remains the agents' responsibility.

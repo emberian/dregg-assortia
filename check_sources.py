@@ -4,6 +4,7 @@ import hashlib
 import json
 import subprocess
 from pathlib import Path
+from hub import RELATIONS
 
 ROOT = Path(__file__).resolve().parent
 graph = json.loads((ROOT / "graph.jsonld").read_text())["@graph"]
@@ -11,7 +12,7 @@ by_id = {item["@id"]: item for item in graph}
 if len(by_id) != len(graph):
     raise SystemExit("Duplicate graph identities")
 errors = []
-links = ("subject", "object", "sources", "dependsOn", "motivatedBy", "related", "repository")
+links = RELATIONS
 for item in graph:
     for key in links:
         values = item.get(key, [])

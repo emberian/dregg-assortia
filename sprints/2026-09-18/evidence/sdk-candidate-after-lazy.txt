@@ -1,0 +1,12 @@
+Captured2026-09-18; complete nextest result and phase output. Compiler prelude omitted.
+Full log SHA-256: 7b348013fa0d1e43494027cb0ff24838cb022e8452f412f4dad74d159c9f7db7
+
+ Nextest run ID 8710cac6-ac02-468f-9c51-501460c4d37a with nextest profile: full
+    Starting 4 tests across 76 binaries (625 tests skipped)
+        PASS [   0.026s] (1/4) dregg-sdk embed::tests::embedded_execution_unwind_retains_candidate_until_explicit_rollback
+        PASS [   0.037s] (2/4) dregg-sdk embed::tests::embedded_candidate_requires_explicit_resolution_and_keeps_outer_restore_points
+        PASS [   0.041s] (3/4) dregg-sdk embed::tests::embedded_paid_late_refusal_restores_state_and_accepts_the_same_next_nonce
+        PASS [   0.047s] (4/4) dregg-sdk embed::tests::embedded_observer_runs_once_only_after_candidate_publication
+────────────
+     Summary [   0.067s] 4 tests run: 4 passed, 625 skipped
+pbuild: VERDICT outcome=PASS status=0 lane=hcargo host=hbox cmd=timeout --signal=TERM --kill-after=15s 1800s cargo nextest run --profile full --build-jobs 4 --test-threads=4 --no-fail-fast --no-tests fail -p deos-hermes -p dregg-sdk -E test(~run_js_over_the_world_bridge_lands_on_the_served_world) or test(~embedded_paid_late_refusal_restores_state_and_accepts_the_same_next_nonce) or test(~embedded_candidate_requires_explicit_resolution_and_keeps_outer_restore_points) or test(~embedded_observer_runs_once_only_after_candidate_publication) or test(~embedded_execution_unwind_retains_candidate_until_explicit_rollback)

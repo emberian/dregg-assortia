@@ -1,0 +1,58 @@
+Captured2026-09-18; complete nextest result and phase output. Compiler prelude omitted.
+Full log SHA-256: db3c666d738b623acbcfb3aaddad5d2e791d1ea04a487957d430275947910136
+
+ Nextest run ID a34dd0d3-982b-454d-b99c-fb3166c242c6 with nextest profile: full
+    Starting 1 test across 1 binary (2 tests skipped)
+       START [         ] (1/1) deos-hermes::world_bridge_e2e js_agent_weld::run_js_over_the_world_bridge_lands_on_the_served_world
+[world-bridge MCP +0.000s] test body entered
+[world-bridge MCP +0.000s] AgentCipherclerk::new begin
+[world-bridge MCP +0.000s] AgentCipherclerk::new returned; mint_token begin
+[world-bridge MCP +0.000s] mint_token returned; AgentRuntime::new begin
+[world-bridge MCP +0.002s] AgentRuntime::new returned; registry/tool setup begin
+[world-bridge MCP +0.002s] registry/tool ready; gateway/host construction begin
+[world-bridge MCP +0.002s] gateway/host ready; JsRuntime boot begin
+[world-bridge MCP +0.009s] JsRuntime boot returned; bridge configured
+[world-bridge MCP +0.009s] absent-socket call begin (must refuse before admission)
+[world-bridge MCP +0.009s] absent-socket call returned
+[world-bridge MCP +0.009s] spawn served-world thread
+[world-bridge server +0.000s] served-world construction begin
+[world-bridge server +0.002s] served-world ready; bind/accept/serve begin
+[world-bridge MCP +0.019s] socket path ready; first connected admission/fire begin
+        SLOW [> 60.000s] (───) deos-hermes::world_bridge_e2e js_agent_weld::run_js_over_the_world_bridge_lands_on_the_served_world
+test js_agent_weld::run_js_over_the_world_bridge_lands_on_the_served_world has been running for over 60 seconds
+        SLOW [>120.000s] (───) deos-hermes::world_bridge_e2e js_agent_weld::run_js_over_the_world_bridge_lands_on_the_served_world
+        SLOW [>180.000s] (───) deos-hermes::world_bridge_e2e js_agent_weld::run_js_over_the_world_bridge_lands_on_the_served_world
+[world-bridge server fire 1 +0.000s] request received: bump
+[world-bridge server fire 1 +0.000s] execute_turn begin
+[world-bridge server fire 1 +0.000s] execute_turn returned
+[world-bridge server fire 1 +0.000s] receipt ready
+[world-bridge MCP +191.048s] first connected admission/fire returned
+[world-bridge MCP +191.048s] two-fire-then-throw call begin
+[world-bridge server fire 2 +0.000s] request received: bump
+[world-bridge server fire 2 +0.000s] execute_turn begin
+test js_agent_weld::run_js_over_the_world_bridge_lands_on_the_served_world ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 2 filtered out; finished in 191.08s
+
+[world-bridge server fire 2 +0.000s] execute_turn returned
+[world-bridge server fire 2 +0.000s] receipt ready
+[world-bridge server fire 3 +0.000s] request received: bump
+[world-bridge server fire 3 +0.000s] execute_turn begin
+[world-bridge server fire 3 +0.000s] execute_turn returned
+[world-bridge server fire 3 +0.000s] receipt ready
+[world-bridge MCP +191.057s] two-fire-then-throw call returned
+[world-bridge MCP +191.057s] no-fire runtime error call begin
+[world-bridge MCP +191.065s] no-fire runtime error call returned
+[world-bridge MCP +191.065s] no-fire syntax error call begin
+[world-bridge MCP +191.074s] no-fire syntax error call returned
+[world-bridge MCP +191.074s] post-error readback call begin
+[world-bridge MCP +191.082s] post-error readback call returned
+[world-bridge MCP +191.082s] drop host begin (JsRuntime and final session socket)
+[world-bridge MCP +191.083s] drop host returned; server join begin
+[world-bridge server +191.074s] serve returned after 10 requests (client EOF)
+[world-bridge MCP +191.083s] server join returned; final ledger/receipt assertions begin
+[world-bridge MCP +191.083s] all assertions passed; test body returning
+        PASS [ 191.097s] (1/1) deos-hermes::world_bridge_e2e js_agent_weld::run_js_over_the_world_bridge_lands_on_the_served_world
+────────────
+     Summary [ 191.098s] 1 test run: 1 passed (1 slow), 2 skipped
+pbuild: VERDICT outcome=PASS status=0 lane=hcargo host=hbox cmd=timeout --signal=TERM --kill-after=15s 1800s cargo nextest run --profile full --build-jobs 4 --test-threads=1 --no-tests fail --no-capture -p deos-hermes --features js-agent --test world_bridge_e2e -E test(~run_js_over_the_world_bridge_lands_on_the_served_world)

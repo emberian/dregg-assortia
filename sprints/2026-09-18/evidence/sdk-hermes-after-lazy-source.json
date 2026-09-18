@@ -1,0 +1,37 @@
+{
+  "gitHead": "3b949775346616a91330c75d86df09927909dafb",
+  "files": [
+    {
+      "path": "sdk/src/runtime.rs",
+      "sha256": "ce23f8e63230167ab86193cd03674db91fc986acff4b468425127e25c82b455d"
+    },
+    {
+      "path": "sdk/src/embed.rs",
+      "sha256": "e2acac71f249ec69e9c57e78fe4c3dfa1e06340dce08e9c1652a204b9f301c7b"
+    },
+    {
+      "path": "dregg-lean-ffi/src/lib.rs",
+      "sha256": "6b077a9af358f652e5b3970faf2894c81fc58cc72c75ba92cdc5dd969d30c731"
+    },
+    {
+      "path": "deos-hermes/tests/world_bridge_e2e.rs",
+      "sha256": "21f8eece5bb7455f3ce5453fc0c2692a2fded48747415534f9ac95f7b53aa708"
+    },
+    {
+      "path": "starbridge-v2/src/world/mod.rs",
+      "sha256": "81ade4564a2c0b7ce16047d7c8102c70fd3c1414eab8e13bea947fd81a51fbcc"
+    },
+    {
+      "path": "starbridge-v2/src/persistence.rs",
+      "sha256": "66ef737eb363839fc9dda72f632f01f0b8e15510d07ffa5db5e66b47966d16f4"
+    },
+    {
+      "path": "starbridge-v2/src/agent_attach.rs",
+      "sha256": "46e2aefd69bb0b3db1f91e85c9caac2e1eff62f93c08654fc198946002489228"
+    },
+    {
+      "path": "starbridge-v2/src/distributed_card.rs",
+      "sha256": "510d2b28e5aadcc17d7772c1e9d8ba5aa30357fd801dcf6f645cbb1c0f905f18"
+    }
+  ]
+}

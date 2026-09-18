@@ -1,0 +1,21 @@
+{
+  "gitHead": "6fa2659374ffb3f7ad931da02c0cef5d91f388be",
+  "files": [
+    {
+      "path": "sdk/src/embed.rs",
+      "sha256": "e2acac71f249ec69e9c57e78fe4c3dfa1e06340dce08e9c1652a204b9f301c7b"
+    },
+    {
+      "path": "turn/src/executor/execute.rs",
+      "sha256": "76dc463d528714245fac117932c14d31ac8dc742e993d6a475e477d424b3e0eb"
+    },
+    {
+      "path": "turn/src/executor/producer_transaction.rs",
+      "sha256": "6a1f530984f2c49e071be28f962e698bf5c87cf1fad342852a9151f54d1d0703"
+    },
+    {
+      "path": "turn/src/executor/mod.rs",
+      "sha256": "82647ef4c8f2d172a66377941b2ca15ed76ade703dcd0bef9c70b0a3cafd7d70"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+Captured 2026-09-18. Compiler prelude omitted; complete nextest result below.
+Original log SHA-256: a78c53517b31a2d3cdf19cb51609dc760de1d93e32d8ccd2a0280f6af609e77e
+
+ Nextest run ID 5f65cd1e-f671-4034-aaa1-e42b987546f4 with nextest profile: full
+    Starting 1 test across 1 binary
+        SLOW [> 60.000s] (───) dregg-lean-ffi::lazy_pq_registration pq_route_discovery_is_lazy_but_first_real_call_initializes
+        SLOW [>120.000s] (───) dregg-lean-ffi::lazy_pq_registration pq_route_discovery_is_lazy_but_first_real_call_initializes
+        SLOW [>180.000s] (───) dregg-lean-ffi::lazy_pq_registration pq_route_discovery_is_lazy_but_first_real_call_initializes
+        PASS [ 188.347s] (1/1) dregg-lean-ffi::lazy_pq_registration pq_route_discovery_is_lazy_but_first_real_call_initializes
+────────────
+     Summary [ 188.348s] 1 test run: 1 passed (1 slow), 0 skipped
+pbuild: VERDICT outcome=PASS status=0 lane=hcargo host=hbox cmd=timeout --signal=TERM --kill-after=15s 900s cargo nextest run --profile full --build-jobs 4 --test-threads=1 --no-tests fail -p dregg-lean-ffi --features lean-lib --test lazy_pq_registration

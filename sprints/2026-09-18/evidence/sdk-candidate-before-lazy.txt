@@ -1,0 +1,24 @@
+Captured 2026-09-18. Compiler prelude omitted; complete nextest result below.
+Original log SHA-256: 3682aecf2edcae5b3d98d14f752febcae02ec93641328e143e4b47fed8f65774
+
+ Nextest run ID 2c51a1b2-abbf-4f46-b8b7-a463c0275cd9 with nextest profile: full
+    Starting 4 tests across 1 binary (318 tests skipped)
+        SLOW [> 60.000s] (───) dregg-sdk embed::tests::embedded_execution_unwind_retains_candidate_until_explicit_rollback
+        SLOW [> 60.000s] (───) dregg-sdk embed::tests::embedded_paid_late_refusal_restores_state_and_accepts_the_same_next_nonce
+        SLOW [> 60.000s] (───) dregg-sdk embed::tests::embedded_observer_runs_once_only_after_candidate_publication
+        SLOW [> 60.000s] (───) dregg-sdk embed::tests::embedded_candidate_requires_explicit_resolution_and_keeps_outer_restore_points
+        SLOW [>120.000s] (───) dregg-sdk embed::tests::embedded_candidate_requires_explicit_resolution_and_keeps_outer_restore_points
+        SLOW [>120.000s] (───) dregg-sdk embed::tests::embedded_paid_late_refusal_restores_state_and_accepts_the_same_next_nonce
+        SLOW [>120.000s] (───) dregg-sdk embed::tests::embedded_execution_unwind_retains_candidate_until_explicit_rollback
+        SLOW [>120.000s] (───) dregg-sdk embed::tests::embedded_observer_runs_once_only_after_candidate_publication
+        SLOW [>180.000s] (───) dregg-sdk embed::tests::embedded_observer_runs_once_only_after_candidate_publication
+        SLOW [>180.000s] (───) dregg-sdk embed::tests::embedded_candidate_requires_explicit_resolution_and_keeps_outer_restore_points
+        SLOW [>180.000s] (───) dregg-sdk embed::tests::embedded_paid_late_refusal_restores_state_and_accepts_the_same_next_nonce
+        SLOW [>180.000s] (───) dregg-sdk embed::tests::embedded_execution_unwind_retains_candidate_until_explicit_rollback
+        PASS [ 213.325s] (1/4) dregg-sdk embed::tests::embedded_candidate_requires_explicit_resolution_and_keeps_outer_restore_points
+        PASS [ 213.347s] (2/4) dregg-sdk embed::tests::embedded_observer_runs_once_only_after_candidate_publication
+        PASS [ 213.447s] (3/4) dregg-sdk embed::tests::embedded_execution_unwind_retains_candidate_until_explicit_rollback
+        PASS [ 214.046s] (4/4) dregg-sdk embed::tests::embedded_paid_late_refusal_restores_state_and_accepts_the_same_next_nonce
+────────────
+     Summary [ 214.048s] 4 tests run: 4 passed (4 slow), 318 skipped
+pbuild: VERDICT outcome=PASS status=0 lane=hcargo host=hbox cmd=timeout --signal=TERM --kill-after=15s 900s cargo nextest run --profile full --build-jobs 4 --test-threads=4 --no-tests fail -p dregg-sdk --lib -E test(~embedded_paid_late_refusal) or test(~embedded_candidate_requires) or test(~embedded_observer_runs) or test(~embedded_execution_unwind)

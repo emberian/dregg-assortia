@@ -1,40 +1,45 @@
 # dregg-assortia
 
-A working place to recover the DREGG suite's intentions, evidence, decisions, and ongoing work.
+The living knowledge index and project hub for DREGG: what we are building, how the pieces connect, who owns current work, and what evidence supports each claim.
 
-**First orientation: 2026-09-17.** This is a source-linked research snapshot and a small graph specimen, not a new authority over the code or a settled project-management system. Git remains the primary VCS. Fossil is being considered for issues, discussion, and project memory.
+**[Current work](CURRENT.md) · [Project map](MAP.md) · [Contributor entry](contributing/README.md)**
 
-Start with [the orientation](orientation/2026-09-17.md), then [ember's stated intentions](intent.md). The [graph specimen](graph.jsonld) carries a few concrete findings, candidate work items, and their sources. [Repository revisions](repositories.json) distinguish committed heads from worktrees. The [research index](research/README.md) links the bounded investigations and their corrective follow-ups.
+The current effort is the September 26 programmable nexus: friends and agents author, govern, share and run DREGG-native resources through a programmable shell and related interfaces. The core and its real receiving applications are being developed together. The exact public release offering and economic operation remain under design. [Ember's intentions](intent.md) distinguish accepted direction from proposals.
 
-The next discussion is [the September 26 programmable nexus](milestones/2026-09-26.md). The release cadence, DREGG-native direction, desired Solana utility and participant-operated hosting are recorded intent. Ember explicitly permits a mix of activities, centered on kernel-level programmability / integration with a programmable shell. The precise mix, concrete contracts and release scope remain open. The [Clutch](research/clutch.md) and [Solana](research/solana.md) follow-ups add current source boundaries and dated execution records.
+An outside contributor should be able to own a substantial product feature from this hub—for example, an Android application with an embedded DREGG node and defined system/UI responsibilities. That requires concrete runtime contracts, upstream ownership and acceptance scenarios. The [Android work-package investigation](work/records.md#w-android-contract) is making that boundary explicit. It is not yet a claim that an Android runtime or release commitment exists.
 
-Ember has now authorized a broad autonomous sprint, including substantial core work to close the gaps the desired experience exposes. [The active sprint record](sprints/2026-09-17.md) tracks the shared target, swarm ownership and implementation evidence. Earlier source-only orientation findings remain dated observations, not accepted product limitations.
+## Where information lives
 
-The practical questions this should eventually answer:
+| Question | Start here |
+|---|---|
+| What is happening now, and who owns it? | [Current board](CURRENT.md), generated from graph work records |
+| How do repositories and capabilities relate? | [Project map](MAP.md), then [source investigations](research/README.md) |
+| What can I build, against which interface? | [Contributor entry](contributing/README.md), linked feature briefs and contracts |
+| What does done mean? | [Work records](work/records.md): closure, dependencies, owner and evidence |
+| What was actually checked? | [Latest checkpoint](sprints/2026-09-18/checkpoint-0045.md) and dated test/source artifacts |
+| Why are we doing this? | [Intent](intent.md) and [September 26 design discussion](milestones/2026-09-26.md) |
+| What did the first investigation find? | [September 17 orientation](orientation/2026-09-17.md), a historical snapshot |
 
-- What are we trying to make possible, and for whom?
-- Which implementations and research results bear on that capability?
-- What actually connects, at which revision and in which configuration?
-- What is proved, what was exercised, what was deployed, and what is only proposed?
-- What decision or missing connection is preventing the next useful experience?
-- What changed since the last time ember or an agent understood this part?
+## Use the hub
 
-## Reading the evidence
+These commands require only Python 3.10+ and this repository. No sibling checkout, server or database is needed.
 
-No project build, proof replay, test run, or live-service probe was performed in this orientation. A test file is evidence of an executable scenario, not a newly observed pass. Historical deployment records retain their historical dates.
+```sh
+python3 hub.py board
+python3 hub.py show W-RESOURCE-BIRTH
+python3 hub.py check
+python3 hub.py render --check
+python3 browse_graph.py --id C-DOC-DURABLE
+```
 
-Source records contain the inspected file's SHA-256, Git HEAD and blob identity where available. An unchanged hash means the source observation is still about the same bytes; it does not prove its claim. A changed hash means recheck the observation, not declare the claim false.
+`graph.jsonld` owns source assertions and current work records. `CURRENT.md`, `MAP.md` and `work/records.md` are generated views. Update the graph, then run `python3 hub.py render`. [The update routine](WORKFLOW.md) explains ownership, evidence and handoffs. A current board is maintained information, not a live view of running agents.
 
-Repository HEAD movement is informational when the inspected file bytes are unchanged. During active implementation, changed-source warnings identify observations to revisit; they are not proof failures or a reason to stop recording work-in-progress checkpoints.
+`python3 check_sources.py` additionally inspects the sibling file paths recorded during the original investigation. Those paths currently refer to ember's machine; portability and source-impact reporting are internal tooling work. Missing local repositories on another machine do not disprove claims. Changed source bytes mean the old observation needs reinspection, not that its claim is false. Never silently refresh an old hash to suppress a warning.
 
-Run `python3 check_sources.py` to check source freshness and graph references. This reads files and Git metadata only; it runs no project checks. Run `python3 browse_graph.py` for a short text view of the graph's findings and proposed work; `--id C-DOC-DURABLE` expands one record.
+Git remains primary. The Git-tracked work records are usable now; Fossil's issue/discussion features remain an undecided option. No tracker service is required to read or contribute to this hub.
 
-## Deliberately unresolved
+## Read claims at their actual scope
 
-- Whether Fossil becomes the shared issue/discussion service.
-- The long-term graph vocabulary, query engine, and editing interface.
-- Which existing application surface should carry the first community experience.
-- The exact relation between future minidregg semantics and existing breadstuffs consumers.
-- Whether a particular old component is retained, adapted, replaced, or archived.
+User intent, design decisions, source inspection, theorem checks, captured runtime tests and deployments are distinct evidence. A passing component does not establish its integration, and a checkpoint commit may contain work still converging. The work records keep the remaining receiving path explicit.
 
-This directory has no deployed service and changes no sibling repository. The Loore profile was read as personal context and is not copied or indexed here.
+This graph is incomplete. Missing evidence means unknown; an absent relationship is not proof of absence. Older observations remain dated even as current tasks advance. Credentials, private profiles and unrelated transcripts do not belong here.
