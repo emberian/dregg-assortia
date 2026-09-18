@@ -431,7 +431,7 @@
       "@type": "WorkItem",
       "label": "Establish the chosen document storage/turn contract",
       "description": "Implement durable refusal propagation and exact ordered physical history in breadstuffs, while joining resource birth, owner authority and charge in the canonical shared core. Repeated body updates still require the selected accepted operation and receiving cutover.",
-      "status": "active",
+      "status": "backlog",
       "dependsOn": [
         "urn:dregg:assortia:C-DOC-DURABLE"
       ],
@@ -443,18 +443,19 @@
         "urn:dregg:assortia:S-IMPLEMENTATION-2300",
         "urn:dregg:assortia:S-IMPLEMENTATION-2330",
         "urn:dregg:assortia:S-IMPLEMENTATION-0045",
-        "urn:dregg:assortia:S-IMPLEMENTATION-0130"
+        "urn:dregg:assortia:S-IMPLEMENTATION-0130",
+        "urn:dregg:assortia:S-WIND-DOWN-0918"
       ],
-      "owner": "Astra: root + kernel_carrier + localfirst",
-      "updatedAt": "2026-09-18T01:30:00-04:00",
+      "owner": null,
+      "updatedAt": "2026-09-18T03:34:10-04:00",
       "advances": [
         "urn:dregg:assortia:E-DOC",
         "urn:dregg:assortia:E-COORD"
       ],
-      "nextAction": "Complete ordered factory/history repair and connect document edits to accepted kernel operations instead of setup writes.",
+      "nextAction": "Complete current-source history regressions and connect document edits to accepted kernel operations.",
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
-      "progress": "The earlier intermediate-root failures are fixed: cell/turn/World24/24 pass. Kernel-authorized document saves remain a distinct receiving task.",
+      "progress": "Earlier 24-test history repair passed; new targeted ordered-factory chronology tests pass. Kernel-authorized document saves remain a distinct receiving task. Work frozen at ember’s request; no agent is currently assigned.",
       "blockedBy": []
     },
     {
@@ -1121,7 +1122,7 @@
       "@type": "WorkItem",
       "label": "Define the September 26 programmable nexus and its shared contracts",
       "description": "Active design and implementation planning for the September 26 mixed programmable nexus: canonical resource/authority/history, user-authored rules and shell/Hermes invocation, participant hosting and meaningful economic operations. Close required core/compiler/proof/runtime gaps instead of routing around them.",
-      "status": "active",
+      "status": "backlog",
       "evidenceKind": "assistant-proposal",
       "localPath": "/Users/ember/dev/dregg-assortia/milestones/2026-09-26.md",
       "motivatedBy": [
@@ -1149,18 +1150,20 @@
         "urn:dregg:assortia:W-PROGRAMMABLE-PATH"
       ],
       "closure": "Accepted nexus operations and consequential design decisions; selected semantic and receiving-runtime paths; an explicit owned-node participation path and selected Solana/resource outcome; linked implementation obligations and evidence. Selecting a contract does not close implementation or deployment.",
-      "owner": "ember + Astra",
-      "updatedAt": "2026-09-18T00:45:00-04:00",
+      "owner": null,
+      "updatedAt": "2026-09-18T03:34:10-04:00",
       "advances": [
         "urn:dregg:assortia:E-WORLD"
       ],
-      "nextAction": "Review the running create/install/invoke/share/reopen journey; decide the public economic operation and release promises.",
+      "nextAction": "Review the measured native journey with ember and converge the public host, first economic operation and release promises.",
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
       "blockedBy": [],
       "sources": [
-        "urn:dregg:assortia:S-IMPLEMENTATION-0045"
-      ]
+        "urn:dregg:assortia:S-IMPLEMENTATION-0045",
+        "urn:dregg:assortia:S-WIND-DOWN-0918"
+      ],
+      "progress": "First joined native kernel journey now passes; compiled public host remains unfinished. Exact release activity and economic operation still need design decisions. Work frozen at ember’s request; no agent is currently assigned."
     },
     {
       "@id": "urn:dregg:assortia:S-NEXUS-INTERFACE",
@@ -1843,7 +1846,7 @@
       "@type": "WorkItem",
       "label": "Implement and exercise the canonical authored-program-to-resource path",
       "description": "Select the canonical rule/program representation and actual authority projection, then implement needed compiler/native/proof/durable support and shell/Hermes consumers. Existing guards are retired only by replacing their missing guarantees. Active source investigation is recorded in sprints/2026-09-17.md.",
-      "status": "active",
+      "status": "backlog",
       "motivatedBy": [
         "urn:dregg:assortia:I-NEXUS",
         "urn:dregg:assortia:I-MIXED-PROGRAMMING",
@@ -1859,20 +1862,21 @@
         "urn:dregg:assortia:S-IMPLEMENTATION-0045",
         "urn:dregg:assortia:S-ACCOUNT-HANDOFF-0918",
         "urn:dregg:assortia:S-RESUMED-0250",
-        "urn:dregg:assortia:S-RESUMED-0311"
+        "urn:dregg:assortia:S-RESUMED-0311",
+        "urn:dregg:assortia:S-WIND-DOWN-0918"
       ],
       "closure": "Author and install a rule under actual resource authority, invoke a permitted operation through the chosen shell/agent path, refuse a violating operation with correct state/outcome evidence, and recover accepted behavior/history through the chosen durable runtime. Complete all necessary core obligations, not merely a private demo.",
-      "owner": "Astra: resume_journey + resume_host + resume_genesis",
-      "updatedAt": "2026-09-18T03:14:26-04:00",
+      "owner": null,
+      "updatedAt": "2026-09-18T03:34:10-04:00",
       "advances": [
         "urn:dregg:assortia:E-WORLD",
         "urn:dregg:assortia:E-KERNEL"
       ],
-      "nextAction": "Complete the native joined journey, then drive it through authenticated preparation and the public compiled host.",
+      "nextAction": "Repair and check the preserved host stack, then drive the joined journey through signed public CLI preparation and submission.",
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
       "blockedBy": [],
-      "progress": "Birth, invocation, installer and delegation receiving modules compile against current semantics; actual joined probe is next."
+      "progress": "Actual native joined birth/rules/delegation/Bob/reopen/retry journey PASS at exact archived source. Public compiled host remains unfinished. Work frozen at ember’s request; no agent is currently assigned."
     },
     {
       "@id": "urn:dregg:assortia:S-COMPUTE-PAYMENT",
@@ -1956,13 +1960,14 @@
       "@type": "WorkItem",
       "label": "Make full request and actual-pre binding mandatory for generic effects",
       "description": "Replace optional binding adapters with a source-derived family request and exact pre requirement in AcceptedCellEffect, migrating concrete families and consumers.",
-      "status": "active",
+      "status": "backlog",
       "sources": [
         "urn:dregg:assortia:S-IMPLEMENTATION-2300",
         "urn:dregg:assortia:S-IMPLEMENTATION-2330",
         "urn:dregg:assortia:S-IMPLEMENTATION-0045",
         "urn:dregg:assortia:S-RESUMED-0250",
-        "urn:dregg:assortia:S-RESUMED-0311"
+        "urn:dregg:assortia:S-RESUMED-0311",
+        "urn:dregg:assortia:S-WIND-DOWN-0918"
       ],
       "motivatedBy": [
         "urn:dregg:assortia:I-CORE-SPRINT",
@@ -1972,15 +1977,15 @@
         "urn:dregg:assortia:W-RESOURCE-BIRTH"
       ],
       "closure": "All receiving constructors use the strengthened base token; target/verb/args/nonce/pre relabeling refuses, honest effects remain inhabited, and the integrated tree checks.",
-      "owner": "Astra: resume_journey + resume_authority",
-      "updatedAt": "2026-09-18T03:14:26-04:00",
+      "owner": null,
+      "updatedAt": "2026-09-18T03:34:10-04:00",
       "advances": [
         "urn:dregg:assortia:E-KERNEL"
       ],
-      "nextAction": "Use the current exact-parent/source-admission laws in the joined native receiving path and root integration.",
+      "nextAction": "Finish pending consumer modules and full-root checks without weakening the mandatory exact-parent/request/source contract.",
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
-      "progress": "Eight source modules and28 exact axiom pins pass. The shared capability helper now proves the exact input-parent identity.",
+      "progress": "Eight source modules and 28 exact axiom pins pass; actual joined native receiving journey also passed. Remaining consumer/root integration is unfinished. Work frozen at ember’s request; no agent is currently assigned.",
       "blockedBy": []
     },
     {
@@ -1988,11 +1993,12 @@
       "@type": "WorkItem",
       "label": "Check composition against the actual joint post-state",
       "description": "Actual-joint resource accounting and accepted field preservation now reject minted overlap and lost fees in targeted Lean witnesses. Source-policy validity on the joint post, including cross-field dependencies, is the next compulsory composition closure.",
-      "status": "active",
+      "status": "backlog",
       "sources": [
         "urn:dregg:assortia:S-IMPLEMENTATION-2300",
         "urn:dregg:assortia:S-IMPLEMENTATION-2330",
-        "urn:dregg:assortia:S-IMPLEMENTATION-0045"
+        "urn:dregg:assortia:S-IMPLEMENTATION-0045",
+        "urn:dregg:assortia:S-WIND-DOWN-0918"
       ],
       "motivatedBy": [
         "urn:dregg:assortia:I-CORE-SPRINT",
@@ -2002,15 +2008,15 @@
         "urn:dregg:assortia:W-RESOURCE-BIRTH"
       ],
       "closure": "Generic accepted composition preserves incidence outcomes, enforces resource laws and source-owned policy/postconditions on the actual joint result; hostile overlap/cross-field examples refuse, legitimate composition remains inhabited, and receiving constructors use the contract.",
-      "owner": "Astra: kernel_carrier + program_install",
-      "updatedAt": "2026-09-18T00:45:00-04:00",
+      "owner": null,
+      "updatedAt": "2026-09-18T03:34:10-04:00",
       "advances": [
         "urn:dregg:assortia:E-KERNEL"
       ],
       "nextAction": "Exercise concrete factory/invocation policies against the same actual final tuple.",
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
-      "progress": "Mandatory general postcondition API and constructive cross-field refusal witnesses passed; concrete new consumers still need their joined checks.",
+      "progress": "Mandatory general postcondition API and constructive cross-field refusal witnesses passed; concrete new consumers still need their joined checks. Work frozen at ember’s request; no agent is currently assigned.",
       "blockedBy": []
     },
     {
@@ -2125,50 +2131,52 @@
       "@type": "WorkItem",
       "label": "Bind native use to committed keys and complete authority",
       "description": "Persist exact signing keys/epochs; accept actual configured native verification of the exact request and capability against the complete same-snapshot authority.",
-      "status": "active",
-      "owner": "Astra: resume_authority + resume_signatures",
-      "updatedAt": "2026-09-18T03:14:26-04:00",
+      "status": "backlog",
+      "owner": null,
+      "updatedAt": "2026-09-18T03:34:10-04:00",
       "advances": [
         "urn:dregg:assortia:E-KERNEL"
       ],
-      "nextAction": "Finish joined delegation/receiving checks and refresh generated Rust consumers and the root integration gate.",
+      "nextAction": "Finish remaining consumer checks, actual generated Rust emissions and full-root integration against coherent current source.",
       "closure": "Actual installed verification plus complete committed authority checks feed accepted source operations; stale/altered/revoked credentials cannot authorize them.",
       "sources": [
         "urn:dregg:assortia:S-IMPLEMENTATION-0045",
         "urn:dregg:assortia:S-IMPLEMENTATION-0130",
         "urn:dregg:assortia:S-RESUMED-0250",
-        "urn:dregg:assortia:S-RESUMED-0311"
+        "urn:dregg:assortia:S-RESUMED-0311",
+        "urn:dregg:assortia:S-WIND-DOWN-0918"
       ],
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
       "blockedBy": [],
-      "progress": "Real Ed25519/SQLite signature probe passes the17-field revision migration, legacy and tamper refusals. Physical authority and source admission modules pass."
+      "progress": "Native signatures, capability refusal and joined receiving journeys PASS. Source-only later codec/Registry edits and remaining generated/consumer gates cannot inherit those passes. Work frozen at ember’s request; no agent is currently assigned."
     },
     {
       "@id": "urn:dregg:assortia:W-POLICY-SOURCE",
       "@type": "WorkItem",
       "label": "Store initial policies and use one runtime profile",
       "description": "Immutable internal policy-source cells and a common field/compiler/request profile make resource creation, invocation and policy replacement agree.",
-      "status": "active",
-      "owner": "Astra: resume_install + resume_journey",
-      "updatedAt": "2026-09-18T03:14:26-04:00",
+      "status": "backlog",
+      "owner": null,
+      "updatedAt": "2026-09-18T03:34:10-04:00",
       "advances": [
         "urn:dregg:assortia:E-KERNEL",
         "urn:dregg:assortia:E-WORLD"
       ],
-      "nextAction": "Run current native repeated installation and the joined born-resource journey.",
+      "nextAction": "Recheck source-policy consumers under coordinated final Registry/profile and compiled-host integration.",
       "closure": "Policy source is created atomically and selected from the same durable directory; kind/domain/address mismatches refuse, and all consuming verbs share compatible source semantics.",
       "sources": [
         "urn:dregg:assortia:S-IMPLEMENTATION-0045",
         "urn:dregg:assortia:S-IMPLEMENTATION-0130",
         "urn:dregg:assortia:S-ACCOUNT-HANDOFF-0918",
         "urn:dregg:assortia:S-RESUMED-0250",
-        "urn:dregg:assortia:S-RESUMED-0311"
+        "urn:dregg:assortia:S-RESUMED-0311",
+        "urn:dregg:assortia:S-WIND-DOWN-0918"
       ],
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
       "blockedBy": [],
-      "progress": "Current source revision is independent of exact grant generation; native installer and birth source closure compile."
+      "progress": "Repeated native installation and joined birth/rules/delegation journey PASS; immutable source revision and retained grants work in the captured fixture. Later profile/Registry integration is pending. Work frozen at ember’s request; no agent is currently assigned."
     },
     {
       "@id": "urn:dregg:assortia:W-DECLARED-INVOKE",
@@ -2202,49 +2210,51 @@
       "@type": "WorkItem",
       "label": "Give a friend a narrower usable right",
       "description": "Add an explicit authorized subject-to-subject delegation edge without weakening strict holder-narrowing or inventing bearer custody.",
-      "status": "active",
-      "owner": "Astra: resume_journey",
-      "updatedAt": "2026-09-18T03:14:26-04:00",
+      "status": "backlog",
+      "owner": null,
+      "updatedAt": "2026-09-18T03:34:10-04:00",
       "advances": [
         "urn:dregg:assortia:E-KERNEL",
         "urn:dregg:assortia:E-WORLD"
       ],
-      "nextAction": "Run actual born-resource Alice-to-Bob delegation and recipient invocation with hostile scope/identity cases.",
+      "nextAction": "Carry the measured delegation path into the compiled public host and complete actual revocation/current-generation receiving coverage.",
       "closure": "Owner delegates a bounded right; friend can use that right, cannot exceed it or replace policy, and revocation/current epochs remain enforced.",
       "sources": [
         "urn:dregg:assortia:S-IMPLEMENTATION-0045",
         "urn:dregg:assortia:S-ACCOUNT-HANDOFF-0918",
         "urn:dregg:assortia:S-RESUMED-0250",
-        "urn:dregg:assortia:S-RESUMED-0311"
+        "urn:dregg:assortia:S-RESUMED-0311",
+        "urn:dregg:assortia:S-WIND-DOWN-0918"
       ],
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
       "blockedBy": [],
-      "progress": "Controller and receiver compile; mandatory exact parent authorization, actual whole post, stored lineage and final authority-byte/frame laws pass their scoped checks."
+      "progress": "Native Alice-to-Bob source-created narrower delegation and real recipient invocation/reopen PASS, including amplification/identity/redelegation refusals. Public host and explicit revocation receiving work remain. Work frozen at ember’s request; no agent is currently assigned."
     },
     {
       "@id": "urn:dregg:assortia:W-HERMES-STARTUP",
       "@type": "WorkItem",
       "label": "Make actual Hermes/SDK startup avoid unused Lean initialization",
       "description": "SDK route discovery is lazy while actual cryptographic calls retain real Lean initialization.",
-      "status": "active",
-      "owner": "Astra: resume_runtime + resume_init_hotspot",
-      "updatedAt": "2026-09-18T03:14:26-04:00",
+      "status": "backlog",
+      "owner": null,
+      "updatedAt": "2026-09-18T03:34:10-04:00",
       "advances": [
         "urn:dregg:assortia:E-HERMES"
       ],
-      "nextAction": "Complete fresh runtime/PQ/Hermes checks and wide-credential ABI repair with actual accepted cases.",
+      "nextAction": "Apply and check preserved full-width credential/string fixes with accepted cases, finish NightWatch assurance cut and retime actual native consumers.",
       "closure": "The same operations and refusal/publication checks pass through actual receiving code without eager unused-core initialization; real PQ first-use remains checked.",
       "sources": [
         "urn:dregg:assortia:S-IMPLEMENTATION-0045",
         "urn:dregg:assortia:S-ACCOUNT-HANDOFF-0918",
         "urn:dregg:assortia:S-RESUMED-0250",
-        "urn:dregg:assortia:S-RESUMED-0311"
+        "urn:dregg:assortia:S-RESUMED-0311",
+        "urn:dregg:assortia:S-WIND-DOWN-0918"
       ],
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
       "blockedBy": [],
-      "progress": "Original full lifecycle passes at~187–189s; game fixture separation retains both proof suites. Narrow executor actual initialization~41ms. Existing differential corpus covers refusal paths; accepted cases and width repair are in progress."
+      "progress": "Executor-family native initialization 41.285ms; focused 11-test suite PASS. Actual JS-agent Hermes test PASS 0.073s; full-byte PQ PASS. Final full/PQ/Hermes capture 5/5 PASS in 802.039s; lease released; width/string repairs staged only. No NetworkJudge inclusive startup gain established. Work frozen at ember’s request; no agent is currently assigned."
     },
     {
       "@id": "urn:dregg:assortia:W-HUB-LIVE",
@@ -2379,9 +2389,9 @@
       "@type": "WorkItem",
       "label": "Define resource-host lifecycle ownership and its kernel contract",
       "description": "Cloud/resource-host lifecycle is the selected area to offer Wisper. This stable work ID retains the original Android example; exact runtime/export contract is still open.",
-      "status": "active",
-      "owner": "Astra: root with ember; contributor assignment pending",
-      "updatedAt": "2026-09-18T02:12:02-04:00",
+      "status": "ready",
+      "owner": "Astra: root on resumption",
+      "updatedAt": "2026-09-18T03:34:10-04:00",
       "priority": 0,
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "advances": [
@@ -2394,7 +2404,8 @@
         "urn:dregg:assortia:S-CLOUD-HOST-REVIEW",
         "urn:dregg:assortia:S-MOBILE-REVIEW",
         "urn:dregg:assortia:S-HOST-CONTRIBUTOR-PROPOSAL",
-        "urn:dregg:assortia:S-ACCOUNT-HANDOFF-0918"
+        "urn:dregg:assortia:S-ACCOUNT-HANDOFF-0918",
+        "urn:dregg:assortia:S-WIND-DOWN-0918"
       ],
       "motivatedBy": [
         "urn:dregg:assortia:I-CONTRIBUTOR-LEGIBILITY",
@@ -2404,7 +2415,7 @@
       "nextAction": "Agree the first runtime/export and executable shell consumer with ember and Wisper, then freeze owned core delivery and crash/restart acceptance.",
       "closure": "A contributor can scaffold a real product surface from a concrete brief and agreed contracts, with executable receiving interfaces or explicitly owned upstream delivery, test scenarios and no need to infer core architecture from chat.",
       "brief": "contributing/resource-host-lifecycle.md",
-      "progress": "Ember selected cloud/resource-host lifecycle. Source-backed brief and concrete native-host export proposal are preserved; exact first runtime/profile and owned upstream exports remain open. No contributor contact or assignment.",
+      "progress": "Ember selected cloud/resource-host lifecycle. Source-backed brief and concrete native-host export proposal are preserved; exact first runtime/profile and owned upstream exports remain open. No contributor contact or assignment. Work frozen at ember’s request; no agent is currently assigned.",
       "writeScope": [
         "DreggNet/control provider/server/supervisor and gateway lifecycle",
         "Selected native host extraction/export, jointly reserved with core",
@@ -2433,9 +2444,9 @@
       "@type": "WorkItem",
       "label": "Retain factory deployment at its actual history boundary",
       "description": "World deployment currently mutates volatile registries; historical paths either omit factories or preload the present registry into the past. Persist ordered descriptor/VK evidence and replay the actual executor deployment at that boundary.",
-      "status": "active",
-      "owner": "Astra: resume_runtime",
-      "updatedAt": "2026-09-18T02:51:31-04:00",
+      "status": "backlog",
+      "owner": null,
+      "updatedAt": "2026-09-18T03:34:10-04:00",
       "advances": [
         "urn:dregg:assortia:E-DOC",
         "urn:dregg:assortia:E-KERNEL"
@@ -2443,7 +2454,8 @@
       "sources": [
         "urn:dregg:assortia:S-IMPLEMENTATION-0130",
         "urn:dregg:assortia:S-ACCOUNT-HANDOFF-0918",
-        "urn:dregg:assortia:S-RESUMED-0250"
+        "urn:dregg:assortia:S-RESUMED-0250",
+        "urn:dregg:assortia:S-WIND-DOWN-0918"
       ],
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
@@ -2452,9 +2464,9 @@
         "urn:dregg:assortia:W-DOC-PERSIST",
         "urn:dregg:assortia:W-EMBEDDED-CANDIDATE"
       ],
-      "nextAction": "Run the affected history regression set against the exact recorded current source and preserve completion evidence.",
+      "nextAction": "Run the preserved affected history regression filter on resumption and retain exact current-source evidence.",
       "closure": "Actual factory deployment, birth/mutation and recovery use the same ordered descriptor/VK evidence; no historical prefix sees a later factory; conflicting deployment and persistence failures leave committed state unchanged; unsupported old images refuse without changing evidence.",
-      "progress": "All five targeted factory chronology tests now ran and passed with actual native Lean in the combined9-test suite. Current-source affected history regressions remain queued."
+      "progress": "All five targeted factory chronology tests passed twice in current native suites. Wider 24-case history/replay regression filter remains unrun after this repair. Work frozen at ember’s request; no agent is currently assigned."
     },
     {
       "@id": "urn:dregg:assortia:S-CLOUD-HOST-REVIEW",
@@ -2539,15 +2551,16 @@
       "@type": "WorkItem",
       "label": "Keep grants valid across policy source revisions",
       "description": "Separate immutable policy-source revision from grant revocation generation across the exact signed request, authority representation, compiled/source policies and every receiving consumer.",
-      "status": "active",
-      "owner": "Astra: resume_install + resume_authority; root integration",
-      "updatedAt": "2026-09-18T03:14:26-04:00",
+      "status": "backlog",
+      "owner": null,
+      "updatedAt": "2026-09-18T03:34:10-04:00",
       "priority": 1,
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "sources": [
         "urn:dregg:assortia:S-ACCOUNT-HANDOFF-0918",
         "urn:dregg:assortia:S-RESUMED-0250",
-        "urn:dregg:assortia:S-RESUMED-0311"
+        "urn:dregg:assortia:S-RESUMED-0311",
+        "urn:dregg:assortia:S-WIND-DOWN-0918"
       ],
       "motivatedBy": [
         "urn:dregg:assortia:I-POLICY-GRANTS",
@@ -2563,9 +2576,9 @@
         "urn:dregg:assortia:W-AUTHORIZED-DELEGATION",
         "urn:dregg:assortia:W-PROGRAMMABLE-PATH"
       ],
-      "nextAction": "Run repeated native installs and retained-grant use, then expose explicitly authorized generation revocation through the same core. Preserve deliberate management lockout.",
+      "nextAction": "Finish authorized generation revocation and remaining consumers/profile/root integration; preserve deliberate resource management lockout.",
       "closure": "After two admitted rule replacements, previously issued owner/control and delegated grants remain usable exactly when their scope and new rules authorize the new request; stale revisions refuse, explicit generation revocation invalidates prior grants, and restart/retry preserves exact state and receipts. Resource policy can deliberately refuse further management, with no implicit owner bypass.",
-      "progress": "Foundation, physical codecs, signature, source registry and installer source checks pass at the new schema. Native integration is now running. No owner repair bypass."
+      "progress": "Repeated native rule changes preserve exact original grants/generation; current-rule refusal, intentional management lockout and expired retry PASS. Explicit revocation receiver remains unfinished. Work frozen at ember’s request; no agent is currently assigned."
     },
     {
       "@id": "urn:dregg:assortia:S-RESUMED-0250",
@@ -2584,15 +2597,16 @@
       "@type": "WorkItem",
       "label": "Operate real resources through a compiled programmable host",
       "description": "Compile the source-owned Mini birth, rule installation, invocation and delegation path into an executable shell/stdio interface with exact signed calls, committed-history clock and replay receipts.",
-      "status": "active",
-      "owner": "Astra: resume_host + resume_foundations + resume_genesis + resume_admission + resume_birth_review",
-      "updatedAt": "2026-09-18T03:14:26-04:00",
+      "status": "backlog",
+      "owner": null,
+      "updatedAt": "2026-09-18T03:34:10-04:00",
       "priority": 1,
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "sources": [
         "urn:dregg:assortia:S-RESUMED-0250",
         "urn:dregg:assortia:S-ACCOUNT-HANDOFF-0918",
-        "urn:dregg:assortia:S-RESUMED-0311"
+        "urn:dregg:assortia:S-RESUMED-0311",
+        "urn:dregg:assortia:S-WIND-DOWN-0918"
       ],
       "advances": [
         "urn:dregg:assortia:E-KERNEL",
@@ -2603,9 +2617,9 @@
         "urn:dregg:assortia:W-ANDROID-CONTRACT"
       ],
       "blockedBy": [],
-      "nextAction": "Implement per-resource authenticated observation/preparation, Book support enforcement and semantic journal verification; link host and run public CLI acceptance.",
+      "nextAction": "Repair saved codec/genesis failures, coordinate Book/observation profile pins, check downstream modules and root closure, then link bounded host and run public CLI acceptance.",
       "closure": "A real compiled host with operator-owned configuration accepts only source-authorized signed calls, preserves committed resources/receipts across restart and lost replies, and drives the same grant-preserving shared-resource journey through the programmable shell.",
-      "progress": "Concrete native profile compiles. Independent review found unsigned preparation balance oracle and missing historical semantic revalidation; fixes are assigned, public prepare closed. Host binary and CLI journey remain unverified."
+      "progress": "Frozen source checkpoint: HostCodec and Genesis compile RED; observation, semantic history, Book enforcement and host/CLI integration uncompiled. Narrow profile and Book theory checks passed separately. Work frozen at ember’s request; no agent is currently assigned."
     },
     {
       "@id": "urn:dregg:assortia:S-RESUMED-0311",
@@ -2627,6 +2641,18 @@
       "sources": [
         "urn:dregg:assortia:S-RESUMED-0311"
       ]
+    },
+    {
+      "@id": "urn:dregg:assortia:S-WIND-DOWN-0918",
+      "@type": "Source",
+      "label": "User-requested wind-down, exact native passes and unfinished host, September 18",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-18/wind-down.md",
+      "lineStart": 1,
+      "lineEnd": 46,
+      "sha256": "8f99bf0d280432c217792df12e40f80255c3c15e99e4c649539e05c9bc0a387f",
+      "recordedDate": "2026-09-18",
+      "evidenceKind": "captured-runs-source-review-and-user-direction"
     }
   ]
 }

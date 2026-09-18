@@ -1,0 +1,37 @@
+import Kernel.ResourceBirthReceiver
+
+#print axioms Minidregg.Compiler.CredentialAuthorityReplay.birthIdentityBytes_injective
+#print axioms Minidregg.Kernel.ResourceBirthController.Concrete.PreparedBirth.transaction_identity
+#print axioms Minidregg.Kernel.ResourceBirthController.Concrete.PreparedBirth.authority_marker_identity
+#print axioms Minidregg.Kernel.ResourceBirthController.Concrete.no_prepared_of_wrong_transaction
+#print axioms Minidregg.Kernel.ResourceBirthController.Concrete.no_prepared_of_wrong_marker
+#print axioms Minidregg.Kernel.ResourceBirthReceiver.tuple_source_exact
+#print axioms Minidregg.Kernel.ResourceBirthReceiver.accepted_post_exact
+#print axioms Minidregg.Kernel.ResourceBirthReceiver.accepted_authority_post
+#print axioms Minidregg.Kernel.ResourceBirthReceiver.accepted_allocation_bytes
+#print axioms Minidregg.Kernel.ResourceBirthReceiver.accepted_book_conserves
+#print axioms Minidregg.Kernel.ResourceBirthReceiver.readGuards_exact
+#print axioms Minidregg.Kernel.ResourceBirthReceiver.readGuards_readonly
+#print axioms Minidregg.Kernel.ResourceBirthReceiver.source_reads_covered
+#print axioms Minidregg.Kernel.ResourceBirthReceiver.intent_exact_source
+#print axioms Minidregg.Kernel.ResourceBirthReceiver.intent_derived_identity
+#print axioms Minidregg.Kernel.ResourceBirthReceiver.installed_write_bytes
+#print axioms Minidregg.Kernel.ResourceBirthReceiver.installed_initial_policy_source
+#print axioms Minidregg.Kernel.ResourceBirthReceiver.unchanged_authority_shard_unwritten
+#print axioms Minidregg.Kernel.ResourceBirthReceiver.installed_authority_pages
+#print axioms Minidregg.Kernel.ResourceBirthReceiver.installed_authority_catalogue
+#print axioms Minidregg.Kernel.ResourceBirthReceiver.refusal_no_mutation
+#print axioms Minidregg.Kernel.ResourceBirthReceiver.no_partial_commit
+#print axioms Minidregg.Kernel.ResourceBirthReceiver.replay_only_exact
+#print axioms Minidregg.Kernel.ResourceBirthReceiver.replay_wrong_event_refused
+
+#print axioms Minidregg.Theory.ResourceBirthAuthority.BatchEvidence.installs_policy
+#print axioms Minidregg.Theory.ResourceBirthAuthority.no_initial_revision_overwrite
+#print axioms Minidregg.Theory.ResourceBirthAuthority.no_batch_of_existing_grant_id
+#print axioms Minidregg.Theory.ResourceBirthAuthority.no_final_revision_erasure
+#print axioms Minidregg.Compiler.ResourceBirthCodec.descriptor_pre_revision_version_refused
+#print axioms Minidregg.Kernel.ResourceBirthPolicyController.Concrete.Pending.liftAuthorization
+#print axioms Minidregg.Kernel.ResourceBirthPolicyController.Concrete.selected_policy_evaluates_actual_tuple
+#print axioms Minidregg.Theory.ResourceBirthAuthority.no_batch_of_repeated_grant_id
+#print axioms Minidregg.Theory.ResourceBirthAuthority.CrossKindCollisionWitness.typed_fields_distinct
+#print axioms Minidregg.Theory.ResourceBirthAuthority.CrossKindCollisionWitness.refused

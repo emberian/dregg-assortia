@@ -1,0 +1,55 @@
+Compiler/NativeHostCodec.lean:29:70: error(lean.unknownIdentifier): Unknown identifier `LawfulCodec`
+
+Note: It is not possible to treat `LawfulCodec` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+Compiler/NativeHostCodec.lean:40:8: warning: declaration uses `sorry`
+Compiler/NativeHostCodec.lean:78:16: error(lean.unknownIdentifier): Unknown identifier `LawfulCodec`
+
+Note: It is not possible to treat `LawfulCodec` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+Compiler/NativeHostCodec.lean:114:17: error(lean.unknownIdentifier): Unknown identifier `LawfulCodec`
+
+Note: It is not possible to treat `LawfulCodec` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+Compiler/NativeHostCodec.lean:149:23: error(lean.unknownIdentifier): Unknown identifier `LawfulCodec`
+
+Note: It is not possible to treat `LawfulCodec` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+Compiler/NativeHostCodec.lean:215:19: error(lean.unknownIdentifier): Unknown identifier `LawfulCodec`
+
+Note: It is not possible to treat `LawfulCodec` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+Compiler/NativeHostCodec.lean:218:16: warning: declaration uses `sorry`
+Compiler/NativeHostCodec.lean:221:16: warning: declaration uses `sorry`
+Compiler/NativeHostCodec.lean:225:16: warning: declaration uses `sorry`
+Compiler/NativeHostCodec.lean:230:21: error: don't know how to synthesize placeholder for argument `stream`
+context:
+bytes : List UInt8
+value : SignedCall
+decoded : sorry = some value
+⊢ StreamCodec SignedCall
+Compiler/NativeHostCodec.lean:230:19: error: don't know how to synthesize placeholder for argument `frame`
+context:
+bytes : List UInt8
+value : SignedCall
+decoded : sorry = some value
+⊢ List UInt8
+Compiler/NativeHostCodec.lean:234:21: error: don't know how to synthesize placeholder for argument `stream`
+context:
+bytes : List UInt8
+value : SigningPlan
+decoded : sorry = some value
+⊢ StreamCodec SigningPlan
+Compiler/NativeHostCodec.lean:234:19: error: don't know how to synthesize placeholder for argument `frame`
+context:
+bytes : List UInt8
+value : SigningPlan
+decoded : sorry = some value
+⊢ List UInt8
+Compiler/NativeHostCodec.lean:238:21: error: don't know how to synthesize placeholder for argument `stream`
+context:
+bytes : List UInt8
+value : Outcome
+decoded : sorry = some value
+⊢ StreamCodec Outcome
+Compiler/NativeHostCodec.lean:238:19: error: don't know how to synthesize placeholder for argument `frame`
+context:
+bytes : List UInt8
+value : Outcome
+decoded : sorry = some value
+⊢ List UInt8

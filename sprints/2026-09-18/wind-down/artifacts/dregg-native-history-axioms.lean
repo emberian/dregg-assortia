@@ -1,0 +1,7 @@
+import Kernel.NativeHostReplay
+#print axioms Minidregg.Kernel.DeclaredResourceController.signedBytes_wire_unchanged
+#print axioms Minidregg.Kernel.DeclaredResourceController.decodeSignedBytes_encode
+#print axioms Minidregg.Kernel.DeclaredResourceController.decodeSignedBytes_canonical
+#print axioms Minidregg.Kernel.NativeHostReplay.recordMatches_iff
+#print axioms Minidregg.Kernel.NativeHostReplay.matched_record_admitted
+#print axioms Minidregg.Kernel.NativeHostReplay.Verified.image_exact

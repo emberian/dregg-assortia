@@ -1,0 +1,27 @@
+{
+  "captured": "2026-09-18T06:59:41.353723+00:00",
+  "scope": "Combined executor-family lifecycle and exact fixture separation; source capture before Lean C/olean rebuild, no result implied",
+  "files": {
+    ".config/nextest.toml": "92d83423ac8fba5609d6bf8ca07332335eb915980218331241b07dbfe3cd5689",
+    "dregg-lean-ffi/build.rs": "dfc277eef21cda2ab4479f53e1610667280722e7aea514a1519be9df7ab995c8",
+    "dregg-lean-ffi/src/lean_init.c": "822e2ff9c57084baa82c69b8a88df2a83dfba83ae2d02907f8495777e821b9e2",
+    "dregg-lean-ffi/src/lean_init_st.cpp": "6b47afa70d5ecce66d75a20884a81d2fbb8bad3d191678ee0ec9e6c5d6b2fc22",
+    "dregg-lean-ffi/src/lib.rs": "af5c5a9a26835318b87211e022b6f42a7f2ca7080ebef785ca7ca40a83958af0",
+    "dregg-lean-ffi/src/lean_init_internal.h": "349abea428bc523233607df1afb75a06aac0d5512992b2422e5d37ce79f6ec2a",
+    "dregg-lean-ffi/tests/lean_init_lifecycle.rs": "5280a6720ef591b87a12f94438589a99d956ac7c1b11cc1dafbe204e110a1874",
+    "dregg-lean-ffi/tests/native_init_thread.cpp": "98fa4df11fc333a34e315a15e54c25a8872425ecbad5c5ccc6f6e2dcb1964900",
+    "dregg-lean-ffi/src/bridge_lc_ffi.rs": "fc086f788b11ea03e4191f7b70b0f0e4d65b99ae082b20dcf032ebd18acb21e8",
+    "turn/src/reversible.rs": "78898950b3e7dbfa3ba3f47e374a03b787d3a053fad1fb092b7ee6db3db04d1d",
+    "starbridge-v2/src/world/genesis.rs": "2fa8754323840f8cb0b41b2dcc1cf9d86dc4062125d9b7a4c7aeedb97e166842",
+    "starbridge-v2/src/world/mod.rs": "d8198d9b3d8173c7d63f4725e16624219d17f832c41f68ab4d41c8afe19c0b61",
+    "starbridge-v2/src/replay.rs": "dabd3b132b0524e1f2b6a226ed002449a5ad41a4d410719df74a24b36407bf35",
+    "starbridge-v2/src/persistence.rs": "06ed211c833ddd954ad704a8eedf02514aacba4fe4f0f8ceaed28a8daf630cbf",
+    "starbridge-v2/src/time_travel.rs": "871c47f03ac3323af8a1e874a784aaa423d909506636956b7dc661e4bcb93f50",
+    "starbridge-v2/src/deos_desktop/provenance_walker.rs": "4dd8f70349f2094cb91a98b3712bd5fed6040514d20b027c275f52f5eda97722",
+    "dregg-lean-ffi/src/lean_direct.rs": "036e74fe624c2763082c0c20ecdc0d64e0c0e3046280a22b6d7e89363e81b91a",
+    "metatheory/Dregg2/Games/PathOfAngels/NetworkJudge.lean": "910623f654b0221fa401de004d6a8ef9a2a376681eceb5dfe4df84dd68f161ad",
+    "metatheory/Dregg2/Games/PathOfAngels/NetworkJudgeFixtures.lean": "0b90ecc7c1d668dd55d0264e43d925ab2b5173b7eb553000823f3efe8adf47b1",
+    "metatheory/Dregg2/Games/PathOfAngels/DeckDescent.lean": "7fe7c6cbdbfaa67efffa0bc64bf018294c6d301ce8d5948b7991a2568e211cd3",
+    "metatheory/Dregg2/Games/PathOfAngels/DeckDescentFixtures.lean": "6bcd28e56954da20416c74270bed61c490a8ba4468b001470c6396040beada30"
+  }
+}

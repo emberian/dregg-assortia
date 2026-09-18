@@ -1,0 +1,1973 @@
+pbuild: host is Darwin-arm64, hbox is Linux-x86_64 — NOT shipping
+        dregg-lean-ffi/libdregg_lean.a (it is arch-specific; a cross-shipped archive links as
+        'neither ET_REL nor LLVM bitcode'). The lane gets a platform-native one from
+        the release instead — see ARCHIVE PROVISIONING below.
+cannot delete non-empty directory: drive59-baseline
+pbuild:   archive present, vouched by its provenance record (skipping the ~8s export rescan).
+pbuild: lean archive kept in lane 'hcargo' (release, 0s)
+        Dregg2 provenance: tree fc2be11509bb — NOT any of the last 40 commits of this history
+        ⚠ metatheory/Dregg2 is DIRTY here, and the lane received the WORKING tree while
+          a seed is keyed to a COMMITTED one — so no published asset can correspond to
+          the sources being built. dregg-lean-ffi/build.rs is the authority: it splices
+          the current slice over the seed from a warm .lake and refuses a stale one
+          under DREGG_REQUIRE_LEAN=1.
+pbuild: forwarding LEAN_NUM_THREADS SWARM_MEM_MAX DREGG_LEANC_JOBS to hbox
+⚠ [832/833] Replayed Dregg2.Games.PathOfAngels.SignalTriangulation
+warning: Dregg2/Games/PathOfAngels/SignalTriangulation.lean:450:10: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Dregg2/Games/PathOfAngels/SignalTriangulation.lean:454:10: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [833/845] Replayed Dregg2.Games.PathOfAngels.RelayRepair
+warning: Dregg2/Games/PathOfAngels/RelayRepair.lean:200:10: This simp argument is unused:
+  hr
+
+Hint: Omit it from the simp argument list.
+  simp ̵[̵h̵r̵]̵
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/PathOfAngels/RelayRepair.lean:212:10: This simp argument is unused:
+  hc
+
+Hint: Omit it from the simp argument list.
+  simp ̵[̵h̵c̵]̵
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/PathOfAngels/RelayRepair.lean:217:10: This simp argument is unused:
+  hi
+
+Hint: Omit it from the simp argument list.
+  simp ̵[̵h̵i̵]̵
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/PathOfAngels/RelayRepair.lean:362:8: '(revert h; decide)' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Dregg2/Games/PathOfAngels/RelayRepair.lean:362:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [834/845] Replayed Dregg2.Games.PathOfAngels.SalvageLock
+warning: Dregg2/Games/PathOfAngels/SalvageLock.lean:518:10: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Dregg2/Games/PathOfAngels/SalvageLock.lean:522:10: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [835/845] Replayed Dregg2.Games.PathOfAngels.FiniteTables
+warning: Dregg2/Games/PathOfAngels/FiniteTables.lean:336:15: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [841/845] Replayed Dregg2.Games.PathOfAngels.ArtificerLogic
+warning: Dregg2/Games/PathOfAngels/ArtificerLogic.lean:1082:50: This simp argument is unused:
+  oracleAnswer
+
+Hint: Omit it from the simp argument list.
+  simp only [rowFor, hopen, hall, rowOf, stepAns,̵ ̵o̵r̵a̵c̵l̵e̵A̵n̵s̵w̵e̵r̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [868/886] Replayed Dregg2.Authority.Positional
+warning: Dregg2/Authority/Positional.lean:191:5: unused variable `refined`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [871/886] Replayed Dregg2.Authority.ClearanceGraph
+warning: Dregg2/Authority/ClearanceGraph.lean:34:7: The namespace 'ClearanceGraph' is duplicated in the declaration 'Dregg2.Authority.ClearanceGraph.ClearanceGraph'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+ℹ [872/886] Replayed Dregg2.Exec.Program
+info: Dregg2/Exec/Program.lean:2498:0: #assert_namespace_axioms Dregg2.Exec: 316 theorems pinned kernel-clean
+⚠ [875/892] Replayed Dregg2.Circuit.FinKernelState
+warning: Dregg2/Circuit/FinKernelState.lean:303:2: The namespace 'FinKernelState' is duplicated in the declaration 'Dregg2.Circuit.FinKernelState.FinKernelState.slotCaveats'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Dregg2/Circuit/FinKernelState.lean:315:2: The namespace 'FinKernelState' is duplicated in the declaration 'Dregg2.Circuit.FinKernelState.FinKernelState.delegationEpoch'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Dregg2/Circuit/FinKernelState.lean:285:17: The namespace 'FinKernelState' is duplicated in the declaration 'Dregg2.Circuit.FinKernelState.FinKernelState'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Dregg2/Circuit/FinKernelState.lean:319:2: The namespace 'FinKernelState' is duplicated in the declaration 'Dregg2.Circuit.FinKernelState.FinKernelState.heaps'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Dregg2/Circuit/FinKernelState.lean:285:2: The namespace 'FinKernelState' is duplicated in the declaration 'Dregg2.Circuit.FinKernelState.FinKernelState.ext'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Dregg2/Circuit/FinKernelState.lean:293:2: The namespace 'FinKernelState' is duplicated in the declaration 'Dregg2.Circuit.FinKernelState.FinKernelState.caps'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Dregg2/Circuit/FinKernelState.lean:307:2: The namespace 'FinKernelState' is duplicated in the declaration 'Dregg2.Circuit.FinKernelState.FinKernelState.lifecycle'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Dregg2/Circuit/FinKernelState.lean:311:2: The namespace 'FinKernelState' is duplicated in the declaration 'Dregg2.Circuit.FinKernelState.FinKernelState.delegate'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Dregg2/Circuit/FinKernelState.lean:309:2: The namespace 'FinKernelState' is duplicated in the declaration 'Dregg2.Circuit.FinKernelState.FinKernelState.deathCert'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Dregg2/Circuit/FinKernelState.lean:301:2: The namespace 'FinKernelState' is duplicated in the declaration 'Dregg2.Circuit.FinKernelState.FinKernelState.bal'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Dregg2/Circuit/FinKernelState.lean:323:2: The namespace 'FinKernelState' is duplicated in the declaration 'Dregg2.Circuit.FinKernelState.FinKernelState.nullifierRoot'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Dregg2/Circuit/FinKernelState.lean:287:2: The namespace 'FinKernelState' is duplicated in the declaration 'Dregg2.Circuit.FinKernelState.FinKernelState.accounts'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Dregg2/Circuit/FinKernelState.lean:291:2: The namespace 'FinKernelState' is duplicated in the declaration 'Dregg2.Circuit.FinKernelState.FinKernelState.cell'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Dregg2/Circuit/FinKernelState.lean:295:2: The namespace 'FinKernelState' is duplicated in the declaration 'Dregg2.Circuit.FinKernelState.FinKernelState.nullifiers'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Dregg2/Circuit/FinKernelState.lean:285:2: The namespace 'FinKernelState' is duplicated in the declaration 'Dregg2.Circuit.FinKernelState.FinKernelState.ext_iff'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Dregg2/Circuit/FinKernelState.lean:325:2: The namespace 'FinKernelState' is duplicated in the declaration 'Dregg2.Circuit.FinKernelState.FinKernelState.revokedRoot'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Dregg2/Circuit/FinKernelState.lean:313:2: The namespace 'FinKernelState' is duplicated in the declaration 'Dregg2.Circuit.FinKernelState.FinKernelState.delegations'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Dregg2/Circuit/FinKernelState.lean:297:2: The namespace 'FinKernelState' is duplicated in the declaration 'Dregg2.Circuit.FinKernelState.FinKernelState.revoked'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Dregg2/Circuit/FinKernelState.lean:328:2: The namespace 'FinKernelState' is duplicated in the declaration 'Dregg2.Circuit.FinKernelState.FinKernelState.commitmentsRoot'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Dregg2/Circuit/FinKernelState.lean:317:2: The namespace 'FinKernelState' is duplicated in the declaration 'Dregg2.Circuit.FinKernelState.FinKernelState.delegationEpochAt'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Dregg2/Circuit/FinKernelState.lean:299:2: The namespace 'FinKernelState' is duplicated in the declaration 'Dregg2.Circuit.FinKernelState.FinKernelState.commitments'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Dregg2/Circuit/FinKernelState.lean:285:17: The namespace 'FinKernelState' is duplicated in the declaration 'Dregg2.Circuit.FinKernelState.FinKernelState.mk'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Dregg2/Circuit/FinKernelState.lean:305:2: The namespace 'FinKernelState' is duplicated in the declaration 'Dregg2.Circuit.FinKernelState.FinKernelState.factories'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+⚠ [878/895] Replayed Dregg2.Catalog
+warning: Dregg2/Catalog.lean:219:19: unused variable `h`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Dregg2/Catalog.lean:227:46: unused variable `w`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Dregg2/Catalog.lean:227:72: unused variable `hp`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+ℹ [880/895] Replayed Dregg2.CatalogInstances
+info: Dregg2/CatalogInstances.lean:525:0: #assert_namespace_axioms Dregg2.CatalogInstances: 111 theorems pinned kernel-clean
+ℹ [881/895] Replayed Dregg2.CatalogEffects
+info: Dregg2/CatalogEffects.lean:291:0: #assert_namespace_axioms Dregg2.CatalogEffects: 70 theorems pinned kernel-clean
+ℹ [1031/1042] Replayed Dregg2.Crypto.NonMembership
+info: Dregg2/Crypto/NonMembership.lean:547:0: 'Dregg2.Crypto.NonMembership.Reference.reference_cascade_nonvacuous' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [1032/1042] Replayed Dregg2.Exec.StepComplete
+warning: Dregg2/Exec/StepComplete.lean:143:31: This simp argument is unused:
+  add_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [execConservation, a̵d̵d̵_̵z̵e̵r̵o̵,̵ ̵← hdelta]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [1436/1455] Replayed Dregg2.Crypto.HermineHiding
+warning: Dregg2/Crypto/HermineHiding.lean:33:0: automatically included section variable(s) unused in theorem `Dregg2.Crypto.HermineHiding.statDist_triangle`:
+  [DecidableEq α]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq α] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Dregg2/Crypto/HermineHiding.lean:42:0: automatically included section variable(s) unused in theorem `Dregg2.Crypto.HermineHiding.statDist_comm`:
+  [DecidableEq α]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq α] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Dregg2/Crypto/HermineHiding.lean:202:5: unused variable `hM`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [1445/1455] Replayed Dregg2.Circuit.Poseidon2Binding
+warning: Dregg2/Circuit/Poseidon2Binding.lean:485:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: Dregg2/Circuit/Poseidon2Binding.lean:491:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: Dregg2/Circuit/Poseidon2Binding.lean:495:8: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: Dregg2/Circuit/Poseidon2Binding.lean:499:10: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+ℹ [3019/3041] Replayed Dregg2.Crypto.ConcreteSecurity
+info: Dregg2/Crypto/ConcreteSecurity.lean:283:0: #assert_all_clean: 15 keystones pinned kernel-clean
+⚠ [3026/3049] Replayed Dregg2.Crypto.HermineTSUF
+warning: Dregg2/Crypto/HermineTSUF.lean:187:0: automatically included section variable(s) unused in theorem `Dregg2.Crypto.HermineTSUF.fresh_forgery_distinct_from_sessions`:
+  [ShortNorm Rq]
+  [ShortNorm M]
+  [ShortNorm N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [ShortNorm Rq] [ShortNorm M] [ShortNorm N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Dregg2/Crypto/HermineTSUF.lean:211:0: automatically included section variable(s) unused in theorem `Dregg2.Crypto.HermineTSUF.oracle_answer_secret_free`:
+  [ShortNorm Rq]
+  [ShortNorm M]
+  [ShortNorm N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [ShortNorm Rq] [ShortNorm M] [ShortNorm N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Dregg2/Crypto/HermineTSUF.lean:218:0: automatically included section variable(s) unused in theorem `Dregg2.Crypto.HermineTSUF.oracle_hiding_grounded_in_mlwe`:
+  [ShortNorm Rq]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [ShortNorm Rq] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Dregg2/Crypto/HermineTSUF.lean:283:8: automatically included section variable(s) unused in theorem `Dregg2.Crypto.HermineTSUF.Forger.rewind_at`:
+  [ShortNorm Rq]
+  [ShortNorm M]
+  [ShortNorm N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [ShortNorm Rq] [ShortNorm M] [ShortNorm N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Dregg2/Crypto/HermineTSUF.lean:288:0: automatically included section variable(s) unused in theorem `Dregg2.Crypto.HermineTSUF.Forger.rewind_below`:
+  [ShortNorm Rq]
+  [ShortNorm M]
+  [ShortNorm N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [ShortNorm Rq] [ShortNorm M] [ShortNorm N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Dregg2/Crypto/HermineTSUF.lean:658:0: automatically included section variable(s) unused in theorem `Dregg2.Crypto.HermineTSUF.forkPairs_card`:
+  [CommRing Rq]
+  [ShortNorm Rq]
+  [Fintype Ω]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CommRing Rq] [ShortNorm Rq] [Fintype Ω] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Dregg2/Crypto/HermineTSUF.lean:709:0: automatically included section variable(s) unused in theorem `Dregg2.Crypto.HermineTSUF.sq_sum_hits_le`:
+  [CommRing Rq]
+  [ShortNorm Rq]
+  [DecidableEq Rq]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CommRing Rq] [ShortNorm Rq] [DecidableEq Rq] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Dregg2/Crypto/HermineTSUF.lean:716:0: automatically included section variable(s) unused in theorem `Dregg2.Crypto.HermineTSUF.advantage_nonneg`:
+  [ShortNorm Rq]
+  [DecidableEq Rq]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [ShortNorm Rq] [DecidableEq Rq] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Dregg2/Crypto/HermineTSUF.lean:784:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: Dregg2/Crypto/HermineTSUF.lean:766:0: automatically included section variable(s) unused in theorem `Dregg2.Crypto.HermineTSUF.exists_forked_pair_of_forkProb_pos`:
+  [ShortNorm Rq]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [ShortNorm Rq] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3027/3049] Replayed Dregg2.Crypto.ProbCrypto
+warning: Dregg2/Crypto/ProbCrypto.lean:236:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: Dregg2/Crypto/ProbCrypto.lean:343:51: 'push_cast' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Dregg2/Crypto/ProbCrypto.lean:388:0: Definition `Dregg2.Crypto.ProbCrypto.trivNorm` of class type must be marked with `@[reducible]` or `@[implicit_reducible]`
+warning: Dregg2/Crypto/ProbCrypto.lean:518:48: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: Dregg2/Crypto/ProbCrypto.lean:670:0: #assert_all_clean: 27 keystones pinned kernel-clean
+ℹ [3029/3049] Replayed Dregg2.Crypto.SchnorrCurveField
+info: Dregg2/Crypto/SchnorrCurveField.lean:459:0: #assert_all_clean: 24 keystones pinned kernel-clean
+⚠ [3030/3049] Replayed Dregg2.Crypto.FloorGames
+warning: Dregg2/Crypto/FloorGames.lean:541:19: unused variable `i`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Dregg2/Crypto/FloorGames.lean:541:21: unused variable `x`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: Dregg2/Crypto/FloorGames.lean:869:0: #assert_all_clean: 24 keystones pinned kernel-clean
+⚠ [3031/3049] Replayed Dregg2.Crypto.CostAdversary
+warning: Dregg2/Crypto/CostAdversary.lean:374:8: automatically included section variable(s) unused in theorem `Dregg2.Crypto.CostAdversary.FreeOracle.maxOut_pure`:
+  [DecidableEq O]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq O] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Dregg2/Crypto/CostAdversary.lean:377:8: automatically included section variable(s) unused in theorem `Dregg2.Crypto.CostAdversary.FreeOracle.maxOut_tick`:
+  [DecidableEq O]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq O] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Dregg2/Crypto/CostAdversary.lean:380:8: automatically included section variable(s) unused in theorem `Dregg2.Crypto.CostAdversary.FreeOracle.maxOut_query`:
+  [DecidableEq O]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq O] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Dregg2/Crypto/CostAdversary.lean:443:8: automatically included section variable(s) unused in theorem `Dregg2.Crypto.CostAdversary.FreeOracle.maxOut_tickN`:
+  [DecidableEq O]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq O] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Dregg2/Crypto/CostAdversary.lean:468:39: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Dregg2/Crypto/CostAdversary.lean:537:8: automatically included section variable(s) unused in theorem `Dregg2.Crypto.CostAdversary.FreeOracle.denote_pure`:
+  [DecidableEq O]
+  [(o : O) → Fintype (R o)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq O] [(o : O) → Fintype (R o)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Dregg2/Crypto/CostAdversary.lean:540:8: automatically included section variable(s) unused in theorem `Dregg2.Crypto.CostAdversary.FreeOracle.denote_tickN`:
+  [DecidableEq O]
+  [(o : O) → Fintype (R o)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq O] [(o : O) → Fintype (R o)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Dregg2/Crypto/CostAdversary.lean:550:0: automatically included section variable(s) unused in theorem `Dregg2.Crypto.CostAdversary.FreeOracle.denote_bind`:
+  [DecidableEq O]
+  [(o : O) → Fintype (R o)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq O] [(o : O) → Fintype (R o)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Dregg2/Crypto/CostAdversary.lean:559:0: automatically included section variable(s) unused in theorem `Dregg2.Crypto.CostAdversary.FreeOracle.sz_denote_le_maxOut`:
+  [DecidableEq O]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq O] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Dregg2/Crypto/CostAdversary.lean:639:21: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: Dregg2/Crypto/CostAdversary.lean:703:8: automatically included section variable(s) unused in theorem `Dregg2.Crypto.CostAdversary.idAdv_cost`:
+  [Fintype O]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype O] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Dregg2/Crypto/CostAdversary.lean:848:0: automatically included section variable(s) unused in theorem `Dregg2.Crypto.CostAdversary.cost_postMapProg_tight`:
+  [Fintype O]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype O] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Dregg2/Crypto/CostAdversary.lean:913:0: automatically included section variable(s) unused in theorem `Dregg2.Crypto.CostAdversary.toAdversary_postMapProg`:
+  [Fintype O]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype O] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+info: Dregg2/Crypto/CostAdversary.lean:999:0: #assert_all_clean: 30 keystones pinned kernel-clean
+ℹ [3033/3049] Replayed Dregg2.Crypto.RomCounting
+info: Dregg2/Crypto/RomCounting.lean:269:0: #assert_all_clean: 16 keystones pinned kernel-clean
+ℹ [3034/3058] Replayed Dregg2.Crypto.CostTactics
+info: Dregg2/Crypto/CostTactics.lean:222:0: #assert_all_clean: 8 keystones pinned kernel-clean
+⚠ [3035/3058] Replayed Dregg2.Crypto.SpongeCarrierReduction
+warning: Dregg2/Crypto/SpongeCarrierReduction.lean:388:5: unused variable `A`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Dregg2/Crypto/SpongeCarrierReduction.lean:389:49: unused variable `hB`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Dregg2/Crypto/SpongeCarrierReduction.lean:390:5: unused variable `hCR`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+ℹ [3036/3058] Replayed Dregg2.Crypto.RomOracle
+info: Dregg2/Crypto/RomOracle.lean:188:0: #assert_all_clean: 13 keystones pinned kernel-clean
+ℹ [3037/3058] Replayed Dregg2.Crypto.RomQueryFloor
+info: Dregg2/Crypto/RomQueryFloor.lean:779:0: #assert_all_clean: 26 keystones pinned kernel-clean
+ℹ [3038/3058] Replayed Dregg2.Crypto.KeyedRomFloor
+info: Dregg2/Crypto/KeyedRomFloor.lean:385:0: #assert_all_clean: 14 keystones pinned kernel-clean
+ℹ [3039/3058] Replayed Dregg2.Crypto.RomBindingReduction
+info: Dregg2/Crypto/RomBindingReduction.lean:268:0: #assert_all_clean: 9 keystones pinned kernel-clean
+ℹ [3040/3058] Replayed Dregg2.Tactics.ThreadAdvantageBound
+info: Dregg2/Tactics/ThreadAdvantageBound.lean:332:0: #assert_all_clean: 7 keystones pinned kernel-clean
+⚠ [3041/3065] Replayed Dregg2.Crypto.HermineHashCRRegrounded
+warning: Dregg2/Crypto/HermineHashCRRegrounded.lean:293:5: unused variable `A`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Dregg2/Crypto/HermineHashCRRegrounded.lean:293:69: unused variable `hB`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Dregg2/Crypto/HermineHashCRRegrounded.lean:294:5: unused variable `hD`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Dregg2/Crypto/HermineHashCRRegrounded.lean:589:47: unused variable `A`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Dregg2/Crypto/HermineHashCRRegrounded.lean:590:49: unused variable `hB`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Dregg2/Crypto/HermineHashCRRegrounded.lean:591:37: unused variable `hE`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Dregg2/Crypto/HermineHashCRRegrounded.lean:592:5: unused variable `hmsis`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Dregg2/Crypto/HermineHashCRRegrounded.lean:592:50: unused variable `hcol`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: Dregg2/Crypto/HermineHashCRRegrounded.lean:677:0: #assert_all_clean: 20 keystones pinned kernel-clean
+⚠ [3042/3065] Replayed Dregg2.Crypto.RomCarrierSites
+warning: Dregg2/Crypto/RomCarrierSites.lean:483:5: unused variable `hQ`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Dregg2/Crypto/RomCarrierSites.lean:484:5: unused variable `hw`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Dregg2/Crypto/RomCarrierSites.lean:485:5: unused variable `A`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Dregg2/Crypto/RomCarrierSites.lean:486:42: unused variable `hB`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: Dregg2/Crypto/RomCarrierSites.lean:555:0: #assert_all_clean: 22 keystones pinned kernel-clean
+⚠ [3043/3065] Replayed Dregg2.Substrate.Heap
+warning: Dregg2/Substrate/Heap.lean:795:26: unused variable `h₁`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Dregg2/Substrate/Heap.lean:795:29: unused variable `h₂`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3049/3067] Replayed Dregg2.Exec.TurnExecutorFull.PerAsset
+warning: Dregg2/Exec/TurnExecutorFull/PerAsset.lean:483:13: This simp argument is unused:
+  if_true
+
+Hint: Omit it from the simp argument list.
+  simp only [̵i̵f̵_̵t̵r̵u̵e̵,̵ ̵t̵r̵u̵e̵_̵a̵n̵d̵,̵[̲t̲r̲u̲e̲_̲a̲n̲d̲,̲ if_pos]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Exec/TurnExecutorFull/PerAsset.lean:807:58: unused variable `topic`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Dregg2/Exec/TurnExecutorFull/PerAsset.lean:807:64: unused variable `data`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Dregg2/Exec/TurnExecutorFull/PerAsset.lean:2456:18: unused variable `s`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Dregg2/Exec/TurnExecutorFull/PerAsset.lean:3154:24: unused variable `h`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Dregg2/Exec/TurnExecutorFull/PerAsset.lean:3377:19: unused variable `idx`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+ℹ [3050/3067] Replayed Dregg2.Exec.TurnExecutorFull
+info: Dregg2/Exec/TurnExecutorFull.lean:736:0: #assert_namespace_axioms Dregg2.Exec.TurnExecutorFull: 294 theorems pinned kernel-clean
+⚠ [3051/3067] Replayed Dregg2.Exec.FullForest
+warning: Dregg2/Exec/FullForest.lean:319:30: This simp argument is unused:
+  hct
+
+Hint: Omit it from the simp argument list.
+  simp only [h̵c̵t̵,̵ ̵execFullTurnA, execFullA, hd]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Exec/FullForest.lean:321:21: This simp argument is unused:
+  hct
+
+Hint: Omit it from the simp argument list.
+  simp only [h̵c̵t̵,̵ ̵execFullTurnA, execFullA, hd, execFullTurnA_append,
+               ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵execFullForestA_eq_execFullTurnA s1 sub]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Exec/FullForest.lean:328:17: This simp argument is unused:
+  hct
+
+Hint: Omit it from the simp argument list.
+  simp only [h̵c̵t̵,̵ ̵execFullTurnA_append, execFullForestA_eq_execFullTurnA s sub]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3057/3071] Replayed Dregg2.Exec.CrossCaveat
+warning: Dregg2/Exec/CrossCaveat.lean:62:7: The namespace 'CrossCaveat' is duplicated in the declaration 'Dregg2.Exec.CrossCaveat.CrossCaveat'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+⚠ [3060/3074] Replayed Dregg2.Authority.CaveatChain
+warning: Dregg2/Authority/CaveatChain.lean:261:0: automatically included section variable(s) unused in theorem `Dregg2.Authority.CaveatChain.chainToken_admits`:
+  [DecidableEq Tag]
+  [MacKernel (Key Tag) Bytes Tag]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq Tag] [MacKernel (Key Tag) Bytes Tag] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Dregg2/Authority/CaveatChain.lean:304:5: unused variable `hroot`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Dregg2/Authority/CaveatChain.lean:304:43: unused variable `hnonce`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: Dregg2/Authority/CaveatChain.lean:523:0: 'Dregg2.Authority.CaveatChain.chain_unforgeable' depends on axioms: [propext, Quot.sound]
+⚠ [3064/3082] Replayed Dregg2.Exec.FullForestAuth
+warning: Dregg2/Exec/FullForestAuth.lean:383:0: automatically included section variable(s) unused in theorem `Dregg2.Exec.FullForestAuth.forestEdgesG_eq_forestEdgesA_eraseG`:
+  [DecidableEq CellId]
+  [DecidableLE Rights]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq CellId] [DecidableLE Rights] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Dregg2/Exec/FullForestAuth.lean:391:0: automatically included section variable(s) unused in theorem `Dregg2.Exec.FullForestAuth.childrenEdgesG_eq_childrenEdgesA_eraseG`:
+  [DecidableEq CellId]
+  [DecidableLE Rights]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq CellId] [DecidableLE Rights] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Dregg2/Exec/FullForestAuth.lean:797:0: automatically included section variable(s) unused in theorem `Dregg2.Exec.FullForestAuth.lowerForestG_actions_eq_eraseG`:
+  [DecidableEq CellId]
+  [DecidableLE Rights]
+  [Laws.Verifiable Stmt Wit]
+  [DecidableEq Tag]
+  [CaveatChain.MacKernel (CaveatChain.Key Tag) Bytes Tag]
+  [AuthPortal (Authorization Digest Proof) Ctx]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq
+  CellId] [DecidableLE
+  Rights] [Laws.Verifiable Stmt
+  Wit] [DecidableEq
+  Tag] [CaveatChain.MacKernel (CaveatChain.Key Tag) Bytes
+  Tag] [AuthPortal (Authorization Digest Proof) Ctx] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Dregg2/Exec/FullForestAuth.lean:808:0: automatically included section variable(s) unused in theorem `Dregg2.Exec.FullForestAuth.lowerChildrenG_actions_eq_eraseG`:
+  [DecidableEq CellId]
+  [DecidableLE Rights]
+  [Laws.Verifiable Stmt Wit]
+  [DecidableEq Tag]
+  [CaveatChain.MacKernel (CaveatChain.Key Tag) Bytes Tag]
+  [AuthPortal (Authorization Digest Proof) Ctx]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq
+  CellId] [DecidableLE
+  Rights] [Laws.Verifiable Stmt
+  Wit] [DecidableEq
+  Tag] [CaveatChain.MacKernel (CaveatChain.Key Tag) Bytes
+  Tag] [AuthPortal (Authorization Digest Proof) Ctx] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Dregg2/Exec/FullForestAuth.lean:832:21: This simp argument is unused:
+  hct
+
+Hint: Omit it from the simp argument list.
+  simp only [h̵c̵t̵,̵ ̵List.map_cons]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Exec/FullForestAuth.lean:837:21: This simp argument is unused:
+  hct
+
+Hint: Omit it from the simp argument list.
+  simp only ̵[̵h̵c̵t̵]̵
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Exec/FullForestAuth.lean:903:30: This simp argument is unused:
+  hct
+
+Hint: Omit it from the simp argument list.
+  simp only [h̵c̵t̵,̵ ̵execFullTurnG, hga]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Exec/FullForestAuth.lean:905:21: This simp argument is unused:
+  hct
+
+Hint: Omit it from the simp argument list.
+  simp only [h̵c̵t̵,̵ ̵execFullTurnG, hga, execFullTurnG_append,
+               ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵execFullForestG_eq_execFullTurnG s1 sub]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Exec/FullForestAuth.lean:911:17: This simp argument is unused:
+  hct
+
+Hint: Omit it from the simp argument list.
+  simp only [h̵c̵t̵,̵ ̵execFullTurnG_append, execFullForestG_eq_execFullTurnG s sub]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Exec/FullForestAuth.lean:1022:0: automatically included section variable(s) unused in theorem `Dregg2.Exec.FullForestAuth.execFullForestG_no_amplify`:
+  [Laws.Verifiable Stmt Wit]
+  [DecidableEq Tag]
+  [CaveatChain.MacKernel (CaveatChain.Key Tag) Bytes Tag]
+  [AuthPortal (Authorization Digest Proof) Ctx]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Laws.Verifiable Stmt
+  Wit] [DecidableEq
+  Tag] [CaveatChain.MacKernel (CaveatChain.Key Tag) Bytes
+  Tag] [AuthPortal (Authorization Digest Proof) Ctx] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3068/3082] Replayed Dregg2.Exec.Admission
+warning: Dregg2/Exec/Admission.lean:158:37: This simp argument is unused:
+  if_neg (Nat.ne_of_gt hbpos)
+
+Hint: Omit it from the simp argument list.
+  simp [admissionClock, hzero,̵ ̵i̵f̵_̵n̵e̵g̵ ̵(̵N̵a̵t̵.̵n̵e̵_̵o̵f̵_̵g̵t̵ ̵h̵b̵p̵o̵s̵)̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3069/3082] Replayed Dregg2.Exec.GatedForestCfg
+warning: Dregg2/Exec/GatedForestCfg.lean:241:2: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: Dregg2/Exec/GatedForestCfg.lean:276:2: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: Dregg2/Exec/GatedForestCfg.lean:581:2: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: Dregg2/Exec/GatedForestCfg.lean:733:2: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: Dregg2/Exec/GatedForestCfg.lean:869:2: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [3071/3090] Replayed Dregg2.Exec.Handlers.StateSupply
+warning: Dregg2/Exec/Handlers/StateSupply.lean:142:14: This simp argument is unused:
+  beq_iff_eq
+
+Hint: Omit it from the simp argument list.
+  simp [b̵e̵q̵_̵i̵f̵f̵_̵e̵q̵,̵ ̵hself]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3078/3095] Replayed Dregg2.Exec.HandlerExecutor
+warning: Dregg2/Exec/HandlerExecutor.lean:568:15: This simp argument is unused:
+  CreateArgs.newCell
+
+Hint: Omit it from the simp argument list.
+  simp only [̵C̵r̵e̵a̵t̵e̵A̵r̵g̵s̵.̵n̵e̵w̵C̵e̵l̵l̵]̵ ̵at hstep
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3079/3095] Replayed Dregg2.Exec.TurnAdmission
+warning: Dregg2/Exec/TurnAdmission.lean:138:15: This simp argument is unused:
+  if_pos hadm
+
+Hint: Omit it from the simp argument list.
+  simp only [̵i̵f̵_̵p̵o̵s̵ ̵h̵a̵d̵m̵,̵ ̵h̵a̵d̵m̵,̵[̲h̲a̲d̲m̲,̲ true_and]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Exec/TurnAdmission.lean:139:63: This simp argument is unused:
+  hb
+
+Hint: Omit it from the simp argument list.
+  simp ̵[̵h̵b̵]̵
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3081/3095] Replayed Dregg2.Exec.AdmissionReason
+warning: Dregg2/Exec/AdmissionReason.lean:51:4: The namespace 'AdmissionReason' is duplicated in the declaration 'Dregg2.Exec.AdmissionReason.AdmissionReason.nonceMismatch'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Dregg2/Exec/AdmissionReason.lean:47:4: The namespace 'AdmissionReason' is duplicated in the declaration 'Dregg2.Exec.AdmissionReason.AdmissionReason.deadAgent'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Dregg2/Exec/AdmissionReason.lean:59:4: The namespace 'AdmissionReason' is duplicated in the declaration 'Dregg2.Exec.AdmissionReason.AdmissionReason.writeSetFrozen'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Dregg2/Exec/AdmissionReason.lean:43:4: The namespace 'AdmissionReason' is duplicated in the declaration 'Dregg2.Exec.AdmissionReason.AdmissionReason.noSuchAgent'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Dregg2/Exec/AdmissionReason.lean:57:4: The namespace 'AdmissionReason' is duplicated in the declaration 'Dregg2.Exec.AdmissionReason.AdmissionReason.agentFrozen'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Dregg2/Exec/AdmissionReason.lean:37:10: The namespace 'AdmissionReason' is duplicated in the declaration 'Dregg2.Exec.AdmissionReason.AdmissionReason'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Dregg2/Exec/AdmissionReason.lean:41:4: The namespace 'AdmissionReason' is duplicated in the declaration 'Dregg2.Exec.AdmissionReason.AdmissionReason.emptyForest'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Dregg2/Exec/AdmissionReason.lean:39:4: The namespace 'AdmissionReason' is duplicated in the declaration 'Dregg2.Exec.AdmissionReason.AdmissionReason.admitted'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Dregg2/Exec/AdmissionReason.lean:49:4: The namespace 'AdmissionReason' is duplicated in the declaration 'Dregg2.Exec.AdmissionReason.AdmissionReason.expired'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Dregg2/Exec/AdmissionReason.lean:53:4: The namespace 'AdmissionReason' is duplicated in the declaration 'Dregg2.Exec.AdmissionReason.AdmissionReason.negativeFee'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Dregg2/Exec/AdmissionReason.lean:55:4: The namespace 'AdmissionReason' is duplicated in the declaration 'Dregg2.Exec.AdmissionReason.AdmissionReason.underfunded'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Dregg2/Exec/AdmissionReason.lean:63:4: The namespace 'AdmissionReason' is duplicated in the declaration 'Dregg2.Exec.AdmissionReason.AdmissionReason.overBudget'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Dregg2/Exec/AdmissionReason.lean:61:4: The namespace 'AdmissionReason' is duplicated in the declaration 'Dregg2.Exec.AdmissionReason.AdmissionReason.chainHeadMismatch'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Dregg2/Exec/AdmissionReason.lean:148:22: This simp argument is unused:
+  hv
+
+Hint: Omit it from the simp argument list.
+  simp ̵[̵h̵v̵]̵
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Exec/AdmissionReason.lean:160:22: This simp argument is unused:
+  hv
+
+Hint: Omit it from the simp argument list.
+  simp ̵[̵h̵v̵]̵
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Exec/AdmissionReason.lean:162:23: This simp argument is unused:
+  expiryGuardFails
+
+Hint: Omit it from the simp argument list.
+  simp only [hv,̵ ̵e̵x̵p̵i̵r̵y̵G̵u̵a̵r̵d̵F̵a̵i̵l̵s̵] at h4 ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Exec/AdmissionReason.lean:214:25: '(rw [hfind]; rfl)' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Dregg2/Exec/AdmissionReason.lean:214:25: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [3083/3096] Replayed Dregg2.Exec.FFI
+warning: Dregg2/Exec/FFI.lean:259:17: unused variable `fuel`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3086/3096] Replayed Dregg2.Exec.CapTPConcrete
+warning: Dregg2/Exec/CapTPConcrete.lean:204:14: unused variable `a`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Dregg2/Exec/CapTPConcrete.lean:204:16: unused variable `b`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Dregg2/Exec/CapTPConcrete.lean:244:4: '(split <;> simp_all [authNarrowerOrEqual])' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Dregg2/Exec/CapTPConcrete.lean:244:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: Dregg2/Exec/CapTPConcrete.lean:288:38: unused variable `heldEff`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Dregg2/Exec/CapTPConcrete.lean:288:46: unused variable `grantedEff`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3094/3112] Replayed Dregg2.Exec.CapTPPipeline
+warning: Dregg2/Exec/CapTPPipeline.lean:427:15: This simp argument is unused:
+  createPromise
+
+Hint: Omit it from the simp argument list.
+  simp only [c̵r̵e̵a̵t̵e̵P̵r̵o̵m̵i̵s̵e̵,̵ ̵promiseState]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Exec/CapTPPipeline.lean:428:15: This simp argument is unused:
+  createPromise
+
+Hint: Omit it from the simp argument list.
+  simp only [c̵r̵e̵a̵t̵e̵P̵r̵o̵m̵i̵s̵e̵,̵ ̵queuedCount]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Exec/CapTPPipeline.lean:452:25: This simp argument is unused:
+  decide_eq_true_eq
+
+Hint: Omit it from the simp argument list.
+  simp only [lookup, d̵e̵c̵i̵d̵e̵_̵e̵q̵_̵t̵r̵u̵e̵_̵e̵q̵,̵ ̵hp] at this ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Exec/CapTPPipeline.lean:452:44: This simp argument is unused:
+  hp
+
+Hint: Omit it from the simp argument list.
+  simp only [lookup, decide_eq_true_eq,̵ ̵h̵p̵] at this ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Exec/CapTPPipeline.lean:493:15: This simp argument is unused:
+  resolvePromise
+
+Hint: Omit it from the simp argument list.
+  simp only [r̵e̵s̵o̵l̵v̵e̵P̵r̵o̵m̵i̵s̵e̵,̵ ̵queuedCount, erase_lookup_self, Option.getD_none, List.length_nil]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Exec/CapTPPipeline.lean:494:15: This simp argument is unused:
+  resolvePromise
+
+Hint: Omit it from the simp argument list.
+  simp only [r̵e̵s̵o̵l̵v̵e̵P̵r̵o̵m̵i̵s̵e̵,̵ ̵promiseState, upsert_lookup_self]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3100/3115] Replayed Dregg2.Exec.CapTPGCConcrete
+warning: Dregg2/Exec/CapTPGCConcrete.lean:317:22: This simp argument is unused:
+  if_true
+
+Hint: Omit it from the simp argument list.
+  simp only [hhd, i̵f̵_̵t̵r̵u̵e̵,̵ ̵Option.map_some, Option.some.injEq] at hf
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Exec/CapTPGCConcrete.lean:320:22: This simp argument is unused:
+  Bool.false_eq_true
+
+Hint: Omit it from the simp argument list.
+  simp only [hhd, B̵o̵o̵l̵.̵f̵a̵l̵s̵e̵_̵e̵q̵_̵t̵r̵u̵e̵,̵ ̵if_false] at hf
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Exec/CapTPGCConcrete.lean:320:42: This simp argument is unused:
+  if_false
+
+Hint: Omit it from the simp argument list.
+  simp only [hhd, Bool.false_eq_true,̵ ̵i̵f̵_̵f̵a̵l̵s̵e̵] at hf
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Exec/CapTPGCConcrete.lean:343:22: This simp argument is unused:
+  if_true
+
+Hint: Omit it from the simp argument list.
+  simp only [hhd, i̵f̵_̵t̵r̵u̵e̵,̵ ̵Option.map_some, Option.some.injEq] at hf
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Exec/CapTPGCConcrete.lean:374:22: This simp argument is unused:
+  Bool.false_eq_true
+
+Hint: Omit it from the simp argument list.
+  simp only [hhd, B̵o̵o̵l̵.̵f̵a̵l̵s̵e̵_̵e̵q̵_̵t̵r̵u̵e̵,̵ ̵if_false] at hf
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Exec/CapTPGCConcrete.lean:374:42: This simp argument is unused:
+  if_false
+
+Hint: Omit it from the simp argument list.
+  simp only [hhd, Bool.false_eq_true,̵ ̵i̵f̵_̵f̵a̵l̵s̵e̵] at hf
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Exec/CapTPGCConcrete.lean:383:29: This simp argument is unused:
+  hguard
+
+Hint: Omit it from the simp argument list.
+  simp ̵[̵h̵g̵u̵a̵r̵d̵]̵
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3106/3131] Replayed Dregg2.Finality
+warning: Dregg2/Finality.lean:238:12: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: Dregg2/Finality.lean:217:22: unused variable `hne`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3107/3131] Replayed Dregg2.World
+warning: Dregg2/World.lean:80:2: The namespace 'World' is duplicated in the declaration 'Dregg2.World.World.rand'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Dregg2/World.lean:87:2: The namespace 'World' is duplicated in the declaration 'Dregg2.World.World.recv_mono'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Dregg2/World.lean:71:2: The namespace 'World' is duplicated in the declaration 'Dregg2.World.World.clock'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Dregg2/World.lean:76:2: The namespace 'World' is duplicated in the declaration 'Dregg2.World.World.recv'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Dregg2/World.lean:65:6: The namespace 'World' is duplicated in the declaration 'Dregg2.World.World'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Dregg2/World.lean:65:6: The namespace 'World' is duplicated in the declaration 'Dregg2.World.World.mk'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Dregg2/World.lean:104:2: The namespace 'World' is duplicated in the declaration 'Dregg2.World.World.gst_liveness'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Dregg2/World.lean:299:5: unused variable `hconflict`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Dregg2/World.lean:301:5: unused variable `hbft`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3110/3131] Replayed Dregg2.Authority.Blocklace
+warning: Dregg2/Authority/Blocklace.lean:99:35: This simp argument is unused:
+  if_false
+
+Hint: Omit it from the simp argument list.
+  simp only [hh, decide_false,̵ ̵i̵f̵_̵f̵a̵l̵s̵e̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: Dregg2/Authority/Blocklace.lean:447:0: 'Dregg2.Authority.Blocklace.equivocation_detectable' does not depend on any axioms
+info: Dregg2/Authority/Blocklace.lean:448:0: 'Dregg2.Authority.Blocklace.honest_no_equivocation' does not depend on any axioms
+info: Dregg2/Authority/Blocklace.lean:449:0: 'Dregg2.Authority.Blocklace.cdt_is_blocklace' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Dregg2/Authority/Blocklace.lean:450:0: 'Dregg2.Authority.Blocklace.demo_equivocation' depends on axioms: [propext]
+info: Dregg2/Authority/Blocklace.lean:451:0: 'Dregg2.Authority.Blocklace.attested_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3113/3131] Replayed Dregg2.Distributed.BlocklaceFinality
+warning: Dregg2/Distributed/BlocklaceFinality.lean:1622:46: This simp argument is unused:
+  Nat.max_def
+
+Hint: Omit it from the simp argument list.
+  simp [N̵a̵t̵.̵m̵a̵x̵_̵d̵e̵f̵,̵ ̵hle]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3120/3136] Replayed Dregg2.Deos.FlowAlgebra
+warning: Dregg2/Deos/FlowAlgebra.lean:199:44: unused variable `σ`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Dregg2/Deos/FlowAlgebra.lean:270:14: unused variable `f`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Dregg2/Deos/FlowAlgebra.lean:270:16: unused variable `g`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Dregg2/Deos/FlowAlgebra.lean:270:18: unused variable `σ`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Dregg2/Deos/FlowAlgebra.lean:271:15: unused variable `f`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Dregg2/Deos/FlowAlgebra.lean:271:17: unused variable `g`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Dregg2/Deos/FlowAlgebra.lean:271:19: unused variable `σ`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Dregg2/Deos/FlowAlgebra.lean:272:9: unused variable `f`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Dregg2/Deos/FlowAlgebra.lean:272:11: unused variable `g`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Dregg2/Deos/FlowAlgebra.lean:272:13: unused variable `h`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: Dregg2/Deos/FlowAlgebra.lean:634:0: #assert_all_clean: 18 keystones pinned kernel-clean
+ℹ [3121/3136] Replayed Dregg2.Deos.FlowRefine
+info: Dregg2/Deos/FlowRefine.lean:636:0: #assert_all_clean: 22 keystones pinned kernel-clean
+ℹ [3122/3142] Replayed Dregg2.Crypto.RomChainedReduction
+info: Dregg2/Crypto/RomChainedReduction.lean:570:0: #assert_all_clean: 21 keystones pinned kernel-clean
+⚠ [3123/3142] Replayed Dregg2.Crypto.RomMerkleOpening
+warning: Dregg2/Crypto/RomMerkleOpening.lean:416:19: unused variable `hQ`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Dregg2/Crypto/RomMerkleOpening.lean:417:5: unused variable `A`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Dregg2/Crypto/RomMerkleOpening.lean:419:5: unused variable `hB`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: Dregg2/Crypto/RomMerkleOpening.lean:428:0: #assert_all_clean: 16 keystones pinned kernel-clean
+⚠ [3124/3142] Replayed Dregg2.Circuit.OodCommitmentBinding
+warning: Dregg2/Circuit/OodCommitmentBinding.lean:104:14: unused variable `sponge`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3125/3142] Replayed Dregg2.Circuit.CommitmentReduction
+warning: Dregg2/Circuit/CommitmentReduction.lean:38:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+ℹ [3127/3142] Replayed Dregg2.Circuit.StateCommitLeafRegrounded
+info: Dregg2/Circuit/StateCommitLeafRegrounded.lean:832:0: #assert_all_clean: 47 keystones pinned kernel-clean
+ℹ [3128/3152] Replayed Dregg2.Circuit.SpongeCollisionShirk
+info: Dregg2/Circuit/SpongeCollisionShirk.lean:201:0: #assert_all_clean: 14 keystones pinned kernel-clean
+info: Dregg2/Circuit/SpongeCollisionShirk.lean:210:0: #assert_depends_on Dregg2.Circuit.SpongeCollisionShirk.perInstance_strictly_sharper_than_bareDisjunction: reaches [Dregg2.Circuit.SpongeCollisionShirk.orBreak_spongeCollision_False,
+ Dregg2.Circuit.SpongeCollisionShirk.noSpongeColl_satisfiable] (walk is not blind)
+info: Dregg2/Circuit/SpongeCollisionShirk.lean:213:0: #assert_not_depends_on Dregg2.Circuit.SpongeCollisionShirk.perInstance_strictly_sharper_than_bareDisjunction: clean of [Dregg2.Circuit.StateCommit.logHashInjective,
+ Dregg2.Circuit.StateCommit.cellLeafInjective] (4897 constants scanned)
+ℹ [3129/3152] Replayed Dregg2.Circuit.StateCommitReduceRaw
+info: Dregg2/Circuit/StateCommitReduceRaw.lean:514:0: #assert_not_depends_on Dregg2.Circuit.StateCommitReduce.recStateCommit_binds_kernel_or_collidesFin: clean of [Dregg2.Circuit.Poseidon2Binding.Poseidon2SpongeCR,
+ Dregg2.Circuit.StateCommit.cellLeafInjective,
+ Dregg2.Circuit.StateCommit.compressInjective,
+ Dregg2.Circuit.StateCommit.compressNInjective] (3058 constants scanned)
+info: Dregg2/Circuit/StateCommitReduceRaw.lean:517:0: #assert_not_depends_on Dregg2.Circuit.StateCommitReduce.recStateCommit_binds_kernel_of_noCollFin: clean of [Dregg2.Circuit.Poseidon2Binding.Poseidon2SpongeCR,
+ Dregg2.Circuit.StateCommit.cellLeafInjective,
+ Dregg2.Circuit.StateCommit.compressInjective,
+ Dregg2.Circuit.StateCommit.compressNInjective] (3059 constants scanned)
+ℹ [3137/3152] Replayed Dregg2.Bridge.ProofOfHoldings
+info: Dregg2/Bridge/ProofOfHoldings.lean:378:0: 'Dregg2.Bridge.ProofOfHoldings.weight_backed_and_noncustodial' does not depend on any axioms
+info: Dregg2/Bridge/ProofOfHoldings.lean:379:0: 'Dregg2.Bridge.ProofOfHoldings.gate_discriminates_both_axes' does not depend on any axioms
+ℹ [3138/3152] Replayed Dregg2.Bridge.InterchainAdapterDecision
+info: Dregg2/Bridge/InterchainAdapterDecision.lean:211:0: 'Dregg2.Bridge.InterchainAdapterDecision.reachedConsensusCore_correct' depends on axioms: [propext]
+info: Dregg2/Bridge/InterchainAdapterDecision.lean:212:0: 'Dregg2.Bridge.InterchainAdapterDecision.reached_consensus_discriminates' does not depend on any axioms
+⚠ [3140/3157] Replayed Dregg2.Games.Automatafl
+warning: Dregg2/Games/Automatafl.lean:841:4: This simp argument is unused:
+  not_false_eq_true
+
+Hint: Omit it from the simp argument list.
+  simp only [applyMoves, List.map, List.filter_cons, ha, hb, List.find?, List.filter_nil,
+      n̵o̵t̵_̵f̵a̵l̵s̵e̵_̵e̵q̵_̵t̵r̵u̵e̵,̵ ̵decide_true, if_true, decide_eq_true_eq, List.length_cons, List.length_nil, List.contains_cons,
+  ̲  ̲ ̲ ̲List.elem_nil, Bool.or_false, if_pos (show ¬(false = true) by decide),
+      show (0 + 1 + 1 + 1 : Nat) = 3 from rfl, Bool.or_eq_true, beq_iff_eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/Automatafl.lean:841:23: This simp argument is unused:
+  decide_true
+
+Hint: Omit it from the simp argument list.
+  simp only [applyMoves, List.map, List.filter_cons, ha, hb, List.find?, List.filter_nil,
+      not_false_eq_true, d̵e̵c̵id̵e̵_̵t̵r̵u̵e̵,̵ ̵i̵f_true, decide_eq_true_eq, List.length_cons,
+  ̵  ̵ ̵ ̵List.length_nil,
+  ̲  ̲ ̲ ̲List.contains_cons, List.elem_nil, Bool.or_false,
+  ̵  ̵ ̵ ̵if_pos (show ¬(false = true) by decide),
+      show (0 + 1 + 1 + 1 : Nat) = 3 from rfl, Bool.or_eq_true, beq_iff_eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/Automatafl.lean:841:36: This simp argument is unused:
+  if_true
+
+Hint: Omit it from the simp argument list.
+  simp only [applyMoves, List.map, List.filter_cons, ha, hb, List.find?, List.filter_nil,
+      not_false_eq_true, decide_true, d̲e̲c̲if̵d̲e̲_e̲q̲_̲true_̲e̲q̲, d̵L̲i̲s̲t̲.̲l̲en̲g̲t̲h̲_̲ci̵d̵e̵_̵e̵q̵_̵t̵r̵u̵e̵_̵e̵q̵o̲n̲s̲, List.length_c̵o̵ns̵i̲l̲,
+      List.l̵e̵n̵g̵t̵h̵_̵n̵i̵l̵,̵ ̵L̵i̵s̵t̵.̵contains_cons, List.elem_nil, Bool.or_false,
+  ̵  ̵ ̵ ̵if_pos (show ¬(false = true) by decide),
+      show (0 + 1 + 1 + 1 : Nat) = 3 from rfl, Bool.or_eq_true, beq_iff_eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/Automatafl.lean:862:4: This simp argument is unused:
+  not_false_eq_true
+
+Hint: Omit it from the simp argument list.
+  simp only [applyMoves, List.map, List.filter_cons, ha, hb, List.find?, List.filter_nil,
+      n̵o̵t̵_̵f̵a̵l̵s̵e̵_̵e̵q̵_̵t̵r̵u̵e̵,̵ ̵decide_true, if_true, decide_eq_true_eq, List.length_cons, List.length_nil, List.contains_cons,
+  ̲  ̲ ̲ ̲List.elem_nil, Bool.or_false, if_pos (show ¬(false = true) by decide),
+  ̲  ̲ ̲ ̲if_neg (show ¬(¬(true = true)) by decide), not_true_eq_false, if_neg not_false,
+      show (0 + 1 + 1 + 1 : Nat) = 3 from rfl, Bool.or_eq_true, beq_iff_eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/Automatafl.lean:862:23: This simp argument is unused:
+  decide_true
+
+Hint: Omit it from the simp argument list.
+  simp only [applyMoves, List.map, List.filter_cons, ha, hb, List.find?, List.filter_nil,
+      not_false_eq_true, d̵e̵c̵i̵d̵e̵_̵t̵r̵u̵e̵,̵ ̵if_true, decide_eq_true_eq, List.length_cons, List.length_nil,
+  ̲  ̲ ̲ ̲List.contains_cons, List.elem_nil, Bool.or_false, if_pos (show ¬(false = true) by decide),
+  ̲  ̲ ̲ ̲if_neg (show ¬(¬(true = true)) by decide), not_true_eq_false, if_neg not_false,
+      show (0 + 1 + 1 + 1 : Nat) = 3 from rfl, Bool.or_eq_true, beq_iff_eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/Automatafl.lean:862:36: This simp argument is unused:
+  if_true
+
+Hint: Omit it from the simp argument list.
+  simp only [applyMoves, List.map, List.filter_cons, ha, hb, List.find?, List.filter_nil,
+      not_false_eq_true, decide_true, i̵f̵_̵t̵r̵u̵e̵,̵ ̵decide_eq_true_eq, List.length_cons, List.length_nil,
+  ̲  ̲ ̲ ̲List.contains_cons, List.elem_nil, Bool.or_false, if_pos (show ¬(false = true) by decide),
+  ̲  ̲ ̲ ̲if_neg (show ¬(¬(true = true)) by decide), not_true_eq_false, if_neg not_false,
+      show (0 + 1 + 1 + 1 : Nat) = 3 from rfl, Bool.or_eq_true, beq_iff_eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/Automatafl.lean:864:45: This simp argument is unused:
+  if_neg (show ¬(¬(true = true)) by decide)
+
+Hint: Omit it from the simp argument list.
+  simp only [applyMoves, List.map, List.filter_cons, ha, hb, List.find?, List.filter_nil,
+      not_false_eq_true, decide_true, if_true, decide_eq_true_eq, List.length_cons, List.length_nil,
+  ̲  ̲ ̲ ̲List.contains_cons, List.elem_nil, Bool.or_false, if_pos (show ¬(false = true) by decide),
+  ̲  ̲ ̲ ̲i̵f̵_̵n̵e̵g̵ ̵(̵s̵h̵o̵w̵ ̵¬̵(̵¬̵(̵t̵r̵u̵e̵ ̵=̵ ̵t̵r̵u̵e̵)̵)̵ ̵b̵y̵ ̵d̵e̵c̵i̵d̵e̵)̵,̵ ̵not_true_eq_false, if_neg not_false, show (0 + 1 + 1 + 1 : Nat) = 3 from rfl, Bool.or_eq_true,
+  ̲  ̲ ̲ ̲beq_iff_eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/Automatafl.lean:865:45: This simp argument is unused:
+  Bool.or_eq_true
+
+Hint: Omit it from the simp argument list.
+  simp only [applyMoves, List.map, List.filter_cons, ha, hb, List.find?, List.filter_nil,
+      not_false_eq_true, decide_true, if_true, decide_eq_true_eq, List.length_cons, List.length_nil,
+  ̲  ̲ ̲ ̲List.contains_cons, List.elem_nil, Bool.or_false, if_pos (show ¬(false = true) by decide),
+  ̲  ̲ ̲ ̲if_neg (show ¬(¬(true = true)) by decide), not_true_eq_false, if_neg not_false,
+      show (0 + 1 + 1 + 1 : Nat) = 3 from rfl, B̵o̵o̵l̵.̵o̵r̵_̵e̵q̵_̵t̵r̵u̵e̵,̵ ̵beq_iff_eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/Automatafl.lean:880:4: This simp argument is unused:
+  not_false_eq_true
+
+Hint: Omit it from the simp argument list.
+  simp only [applyMoves, List.map, List.filter_cons, ha, hb, List.find?, List.filter_nil,
+      n̵o̵t̵_̵f̵a̵l̵s̵e̵_̵e̵q̵_̵t̵r̵u̵e̵,̵ ̵decide_true, if_true, decide_eq_true_eq, List.length_cons, List.length_nil, List.contains_cons,
+  ̲  ̲ ̲ ̲List.elem_nil, Bool.or_false, if_pos (show ¬(false = true) by decide),
+  ̲  ̲ ̲ ̲if_neg (show ¬(¬(true = true)) by decide), not_true_eq_false, if_neg not_false,
+      show (0 + 1 + 1 + 1 : Nat) = 3 from rfl, Bool.or_eq_true, beq_iff_eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/Automatafl.lean:880:23: This simp argument is unused:
+  decide_true
+
+Hint: Omit it from the simp argument list.
+  simp only [applyMoves, List.map, List.filter_cons, ha, hb, List.find?, List.filter_nil,
+      not_false_eq_true, d̵e̵c̵i̵d̵e̵_̵t̵r̵u̵e̵,̵ ̵if_true, decide_eq_true_eq, List.length_cons, List.length_nil,
+  ̲  ̲ ̲ ̲List.contains_cons, List.elem_nil, Bool.or_false, if_pos (show ¬(false = true) by decide),
+  ̲  ̲ ̲ ̲if_neg (show ¬(¬(true = true)) by decide), not_true_eq_false, if_neg not_false,
+      show (0 + 1 + 1 + 1 : Nat) = 3 from rfl, Bool.or_eq_true, beq_iff_eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/Automatafl.lean:880:36: This simp argument is unused:
+  if_true
+
+Hint: Omit it from the simp argument list.
+  simp only [applyMoves, List.map, List.filter_cons, ha, hb, List.find?, List.filter_nil,
+      not_false_eq_true, decide_true, i̵f̵_̵t̵r̵u̵e̵,̵ ̵decide_eq_true_eq, List.length_cons, List.length_nil,
+  ̲  ̲ ̲ ̲List.contains_cons, List.elem_nil, Bool.or_false, if_pos (show ¬(false = true) by decide),
+  ̲  ̲ ̲ ̲if_neg (show ¬(¬(true = true)) by decide), not_true_eq_false, if_neg not_false,
+      show (0 + 1 + 1 + 1 : Nat) = 3 from rfl, Bool.or_eq_true, beq_iff_eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/Automatafl.lean:882:45: This simp argument is unused:
+  if_neg (show ¬(¬(true = true)) by decide)
+
+Hint: Omit it from the simp argument list.
+  simp only [applyMoves, List.map, List.filter_cons, ha, hb, List.find?, List.filter_nil,
+      not_false_eq_true, decide_true, if_true, decide_eq_true_eq, List.length_cons, List.length_nil,
+  ̲  ̲ ̲ ̲List.contains_cons, List.elem_nil, Bool.or_false, if_pos (show ¬(false = true) by decide),
+  ̲  ̲ ̲ ̲i̵f̵_̵n̵e̵g̵ ̵(̵s̵h̵o̵w̵ ̵¬̵(̵¬̵(̵t̵r̵u̵e̵ ̵=̵ ̵t̵r̵u̵e̵)̵)̵ ̵b̵y̵ ̵d̵e̵c̵i̵d̵e̵)̵,̵ ̵not_true_eq_false, if_neg not_false, show (0 + 1 + 1 + 1 : Nat) = 3 from rfl, Bool.or_eq_true,
+  ̲  ̲ ̲ ̲beq_iff_eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/Automatafl.lean:883:45: This simp argument is unused:
+  Bool.or_eq_true
+
+Hint: Omit it from the simp argument list.
+  simp only [applyMoves, List.map, List.filter_cons, ha, hb, List.find?, List.filter_nil,
+      not_false_eq_true, decide_true, if_true, decide_eq_true_eq, List.length_cons, List.length_nil,
+  ̲  ̲ ̲ ̲List.contains_cons, List.elem_nil, Bool.or_false, if_pos (show ¬(false = true) by decide),
+  ̲  ̲ ̲ ̲if_neg (show ¬(¬(true = true)) by decide), not_true_eq_false, if_neg not_false,
+      show (0 + 1 + 1 + 1 : Nat) = 3 from rfl, B̵o̵o̵l̵.̵o̵r̵_̵e̵q̵_̵t̵r̵u̵e̵,̵ ̵beq_iff_eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/Automatafl.lean:885:48: This simp argument is unused:
+  List.contains_cons
+
+Hint: Omit it from the simp argument list.
+  simp only [h1, decide_true, L̵i̵s̵t̵.̵c̵o̵n̵t̵a̵i̵n̵s̵_̵c̵o̵n̵s̵,̵ ̵List.elem_nil, Bool.or_false, beq_iff_eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/Automatafl.lean:885:68: This simp argument is unused:
+  List.elem_nil
+
+Hint: Omit it from the simp argument list.
+  simp only [h1, decide_true, List.contains_cons, L̵i̵s̵t̵.̵e̵l̵e̵m̵_̵n̵i̵l̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵Bool.or_false, beq_iff_eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/Automatafl.lean:886:6: This simp argument is unused:
+  Bool.or_false
+
+Hint: Omit it from the simp argument list.
+  simp only [h1, decide_true, List.contains_cons, List.elem_nil, B̵o̵o̵l̵.̵o̵r̵_̵f̵a̵l̵s̵e̵,̵ ̵beq_iff_eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/Automatafl.lean:886:21: This simp argument is unused:
+  beq_iff_eq
+
+Hint: Omit it from the simp argument list.
+  simp only [h1, decide_true, List.contains_cons, List.elem_nil, B̵o̵o̵l̵.̵o̵r̵_̵f̵a̵l̵s̵e̵,̵ ̵b̵e̵q̵_̵i̵f̵f̵_̵e̵q̵]̵B̲o̲o̲l̲.̲o̲r̲_̲f̲a̲l̲s̲e̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/Automatafl.lean:887:49: This simp argument is unused:
+  List.contains_cons
+
+Hint: Omit it from the simp argument list.
+  simp only [h1, decide_false, L̵i̵s̵t̵.̵c̵o̵n̵t̵a̵i̵n̵s̵_̵c̵o̵n̵s̵,̵ ̵List.elem_nil, Bool.or_false, beq_iff_eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/Automatafl.lean:887:69: This simp argument is unused:
+  List.elem_nil
+
+Hint: Omit it from the simp argument list.
+  simp only [h1, decide_false, List.contains_cons, L̵i̵s̵t̵.̵e̵l̵e̵m̵_̵n̵i̵l̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵Bool.or_false, beq_iff_eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/Automatafl.lean:888:6: This simp argument is unused:
+  Bool.or_false
+
+Hint: Omit it from the simp argument list.
+  simp only [h1, decide_false, List.contains_cons, List.elem_nil, B̵o̵o̵l̵.̵o̵r̵_̵f̵a̵l̵s̵e̵,̵ ̵beq_iff_eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/Automatafl.lean:888:21: This simp argument is unused:
+  beq_iff_eq
+
+Hint: Omit it from the simp argument list.
+  simp only [h1, decide_false, List.contains_cons, List.elem_nil, B̵o̵o̵l̵.̵o̵r̵_̵f̵a̵l̵s̵e̵,̵ ̵b̵e̵q̵_̵i̵f̵f̵_̵e̵q̵]̵B̲o̲o̲l̲.̲o̲r̲_̲f̲a̲l̲s̲e̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/Automatafl.lean:897:4: This simp argument is unused:
+  not_false_eq_true
+
+Hint: Omit it from the simp argument list.
+  simp only [applyMoves, List.map, List.filter_cons, ha, hb, List.find?, List.filter_nil,
+      n̵o̵t̵_̵f̵a̵l̵s̵e̵_̵e̵q̵_̵t̵r̵u̵e̵,̵ ̵decide_true, if_true, decide_eq_true_eq, if_neg (show ¬(¬(true = true)) by decide),
+  ̲  ̲ ̲ ̲not_true_eq_false, if_neg not_false, List.contains_nil]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/Automatafl.lean:897:23: This simp argument is unused:
+  decide_true
+
+Hint: Omit it from the simp argument list.
+  simp only [applyMoves, List.map, List.filter_cons, ha, hb, List.find?, List.filter_nil,
+      not_false_eq_true, d̵e̵c̵i̵d̵e̵_̵t̵r̵u̵e̵,̵ ̵if_true, decide_eq_true_eq, if_neg (show ¬(¬(true = true)) by decide),
+  ̲  ̲ ̲ ̲not_true_eq_false, if_neg not_false, List.contains_nil]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/Automatafl.lean:897:36: This simp argument is unused:
+  if_true
+
+Hint: Omit it from the simp argument list.
+  simp only [applyMoves, List.map, List.filter_cons, ha, hb, List.find?, List.filter_nil,
+      not_false_eq_true, decide_true, i̵f̵_̵t̵r̵u̵e̵,̵ ̵decide_eq_true_eq, if_neg (show ¬(¬(true = true)) by decide),
+  ̲  ̲ ̲ ̲not_true_eq_false, if_neg not_false, List.contains_nil]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/Automatafl.lean:898:4: This simp argument is unused:
+  if_neg (show ¬(¬(true = true)) by decide)
+
+Hint: Omit it from the simp argument list.
+  simp only [applyMoves, List.map, List.filter_cons, ha, hb, List.find?, List.filter_nil,
+      not_false_eq_true, decide_true, if_true, decide_eq_true_eq, i̵f̵_̵n̵e̵g̵ ̵(̵s̵h̵o̵w̵ ̵¬̵(̵¬̵(̵t̵r̵u̵e̵ ̵=̵ ̵t̵r̵u̵e̵)̵)̵ ̵b̵y̵ ̵d̵e̵c̵i̵d̵e̵)̵,̵ ̵not_true_eq_false, if_neg not_false,
+  ̲  ̲ ̲ ̲List.contains_nil]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/Automatafl.lean:919:40: This simp argument is unused:
+  List.find?_nil
+
+Hint: Omit it from the simp argument list.
+  simp only [nextOf, List.find?_cons, L̵i̵s̵t̵.̵f̵i̵n̵d̵?̵_̵n̵i̵l̵,̵ ̵e1, Option.map_some, decide_eq_true_eq,
+        Option.map_eq_some_iff, List.mem_cons, List.not_mem_nil, or_false]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/Automatafl.lean:919:77: This simp argument is unused:
+  decide_eq_true_eq
+
+Hint: Omit it from the simp argument list.
+  simp only [nextOf, List.find?_cons, List.find?_nil, e1, Option.map_some, d̵e̵c̵i̵d̵e̵_̵e̵q̵_̵t̵r̵u̵e̵_̵e̵q̵,̵Option.map_eq_some_iff,
+        List.mem_cons, List.not_mem_nil, or_false]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/Automatafl.lean:920:6: This simp argument is unused:
+  Option.map_eq_some_iff
+
+Hint: Omit it from the simp argument list.
+  simp only [nextOf, List.find?_cons, List.find?_nil, e1, Option.map_some, decide_eq_true_eq,
+        O̵p̵t̵i̵o̵n̵.̵m̵a̵p̵_̵e̵q̵_̵s̵o̵m̵e̵_̵i̵f̵f̵,̵ ̵List.mem_cons, List.not_mem_nil, or_false]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/Automatafl.lean:920:30: This simp argument is unused:
+  List.mem_cons
+
+Hint: Omit it from the simp argument list.
+  simp only [nextOf, List.find?_cons, List.find?_nil, e1, Option.map_some, decide_eq_true_eq,
+        Option.map_eq_some_iff, List.m̵e̵m̵_̵c̵o̵ns̵,̵ ̵L̵i̵s̵t̵.̵n̵ot_mem_nil, or_false]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/Automatafl.lean:920:45: This simp argument is unused:
+  List.not_mem_nil
+
+Hint: Omit it from the simp argument list.
+  simp only [nextOf, List.find?_cons, List.find?_nil, e1, Option.map_some, decide_eq_true_eq,
+        Option.map_eq_some_iff, List.mem_cons, L̵i̵s̵t̵.̵n̵ot̵_̵m̵e̵m̵_̵n̵i̵l̵,̵ ̵o̵r_false]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/Automatafl.lean:920:63: This simp argument is unused:
+  or_false
+
+Hint: Omit it from the simp argument list.
+  simp only [nextOf, List.find?_cons, List.find?_nil, e1, Option.map_some, decide_eq_true_eq,
+        Option.map_eq_some_iff, List.mem_cons, List.not_mem_nil,̵ ̵o̵r̵_̵f̵a̵l̵s̵e̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/Automatafl.lean:932:42: This simp argument is unused:
+  List.find?_nil
+
+Hint: Omit it from the simp argument list.
+  simp only [nextOf, List.find?_cons, L̵i̵s̵t̵.̵f̵i̵n̵d̵?̵_̵n̵i̵l̵,̵ ̵e1, e2, Option.map_some, decide_eq_true_eq,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲Option.map_eq_some_iff, List.mem_cons, List.not_mem_nil, or_false]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/Automatafl.lean:933:8: This simp argument is unused:
+  decide_eq_true_eq
+
+Hint: Omit it from the simp argument list.
+  simp only [nextOf, List.find?_cons, List.find?_nil, e1, e2, Option.map_some,
+          d̵e̵c̵i̵d̵e̵_̵e̵q̵_̵t̵r̵u̵e̵_̵e̵q̵,̵ ̵Option.map_eq_some_iff, List.mem_cons, List.not_mem_nil, or_false]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/Automatafl.lean:933:27: This simp argument is unused:
+  Option.map_eq_some_iff
+
+Hint: Omit it from the simp argument list.
+  simp only [nextOf, List.find?_cons, List.find?_nil, e1, e2, Option.map_some,
+          decide_eq_true_eq, O̵p̵t̵i̵o̵n̵.̵m̵a̵p̵_̵e̵q̵_̵s̵o̵m̵e̵_̵i̵f̵f̵,̵ ̵List.mem_cons, List.not_mem_nil, or_false]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/Automatafl.lean:933:51: This simp argument is unused:
+  List.mem_cons
+
+Hint: Omit it from the simp argument list.
+  simp only [nextOf, List.find?_cons, List.find?_nil, e1, e2, Option.map_some,
+          decide_eq_true_eq, Option.map_eq_some_iff, List.m̵e̵m̵_̵c̵o̵ns̵,̵ ̵L̵i̵s̵t̵.̵n̵ot_mem_nil, or_false]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/Automatafl.lean:933:66: This simp argument is unused:
+  List.not_mem_nil
+
+Hint: Omit it from the simp argument list.
+  simp only [nextOf, List.find?_cons, List.find?_nil, e1, e2, Option.map_some,
+          decide_eq_true_eq, Option.map_eq_some_iff, List.mem_cons, L̵i̵s̵t̵.̵n̵ot̵_̵m̵e̵m̵_̵n̵i̵l̵,̵ ̵o̵r_false]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/Automatafl.lean:933:84: This simp argument is unused:
+  or_false
+
+Hint: Omit it from the simp argument list.
+  simp only [nextOf, List.find?_cons, List.find?_nil, e1, e2, Option.map_some,
+          decide_eq_true_eq, Option.map_eq_some_iff, List.mem_cons, List.not_mem_nil,̵ ̵o̵r̵_̵f̵a̵l̵s̵e̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/Automatafl.lean:942:8: This simp argument is unused:
+  decide_eq_true_eq
+
+Hint: Omit it from the simp argument list.
+  simp only [nextOf, List.find?_cons, List.find?_nil, e1, e2, Option.map_none,
+          d̵e̵c̵i̵d̵e̵_̵e̵q̵_̵t̵r̵u̵e̵_̵e̵q̵,̵ ̵Option.map_eq_none_iff, List.find?_eq_none, List.mem_cons, List.not_mem_nil, or_false,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲not_and, Decidable.not_not]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/Automatafl.lean:942:27: This simp argument is unused:
+  Option.map_eq_none_iff
+
+Hint: Omit it from the simp argument list.
+  simp only [nextOf, List.find?_cons, List.find?_nil, e1, e2, Option.map_none,
+          decide_eq_true_eq, O̵p̵t̵i̵o̵n̵.̵m̵a̵p̵_̵e̵q̵_̵n̵o̵n̵e̵_̵i̵f̵f̵,̵ ̵List.find?_eq_none, List.mem_cons,
+  ̵  ̵ ̵ ̵ ̵ ̵ ̵ ̵List.not_mem_nil, or_false, not_and,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲Decidable.not_not]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/Automatafl.lean:942:51: This simp argument is unused:
+  List.find?_eq_none
+
+Hint: Omit it from the simp argument list.
+  simp only [nextOf, List.find?_cons, List.find?_nil, e1, e2, Option.map_none,
+          decide_eq_true_eq, Option.map_eq_none_iff, List.f̵i̵n̵d̵?̵_̵e̵q̵_̵n̵o̵n̵e̵,̵ ̵L̵i̵s̵t̵.̵mem_cons,
+  ̵  ̵ ̵ ̵ ̵ ̵ ̵ ̵List.not_mem_nil, or_false,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲not_and, Decidable.not_not]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/Automatafl.lean:942:71: This simp argument is unused:
+  List.mem_cons
+
+Hint: Omit it from the simp argument list.
+  simp only [nextOf, List.find?_cons, List.find?_nil, e1, e2, Option.map_none,
+          decide_eq_true_eq, Option.map_eq_none_iff, List.find?_eq_none, List.m̵e̵m̵_̵c̵o̵ns̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵L̵i̵s̵t̵.̵n̵ot_mem_nil, or_false,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲not_and, Decidable.not_not]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/Automatafl.lean:943:8: This simp argument is unused:
+  List.not_mem_nil
+
+Hint: Omit it from the simp argument list.
+  simp only [nextOf, List.find?_cons, List.find?_nil, e1, e2, Option.map_none,
+          decide_eq_true_eq, Option.map_eq_none_iff, List.find?_eq_none, List.mem_cons,
+  ̵  ̵ ̵ ̵ ̵ ̵ ̵ ̵L̵i̵s̵t̵.̵n̵ot̵_̵m̵e̵m̵_̵n̵i̵l̵,̵ ̵o̵r_false,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲not_and, Decidable.not_not]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/Automatafl.lean:943:26: This simp argument is unused:
+  or_false
+
+Hint: Omit it from the simp argument list.
+  simp only [nextOf, List.find?_cons, List.find?_nil, e1, e2, Option.map_none,
+          decide_eq_true_eq, Option.map_eq_none_iff, List.find?_eq_none, List.mem_cons,
+          List.not_mem_nil, o̵r̵_̵f̵a̵l̵s̵e̵,̵ ̵not_and, Decidable.not_not]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/Automatafl.lean:943:36: This simp argument is unused:
+  not_and
+
+Hint: Omit it from the simp argument list.
+  simp only [nextOf, List.find?_cons, List.find?_nil, e1, e2, Option.map_none,
+          decide_eq_true_eq, Option.map_eq_none_iff, List.find?_eq_none, List.mem_cons,
+          List.not_mem_nil, or_false, n̵o̵t̵_̵a̵n̵d̵,̵ ̵Decidable.not_not]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/Automatafl.lean:943:45: This simp argument is unused:
+  Decidable.not_not
+
+Hint: Omit it from the simp argument list.
+  simp only [nextOf, List.find?_cons, List.find?_nil, e1, e2, Option.map_none,
+          decide_eq_true_eq, Option.map_eq_none_iff, List.find?_eq_none, List.mem_cons,
+          List.not_mem_nil, or_false, not_and,̵ ̵D̵e̵c̵i̵d̵a̵b̵l̵e̵.̵n̵o̵t̵_̵n̵o̵t̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: Dregg2/Games/Automatafl.lean:1806:0: 'Dregg2.Games.Automatafl.moveValidB_iff' depends on axioms: [propext]
+info: Dregg2/Games/Automatafl.lean:1807:0: 'Dregg2.Games.Automatafl.automatonOffset_bounded' depends on axioms: [propext]
+info: Dregg2/Games/Automatafl.lean:1808:0: 'Dregg2.Games.Automatafl.automatonStep_preserves_inBounds' depends on axioms: [propext, Quot.sound]
+info: Dregg2/Games/Automatafl.lean:1809:0: 'Dregg2.Games.Automatafl.winner_sound' depends on axioms: [propext]
+info: Dregg2/Games/Automatafl.lean:1810:0: 'Dregg2.Games.Automatafl.applyTurn_preserves_inBounds' depends on axioms: [propext, Quot.sound]
+info: Dregg2/Games/Automatafl.lean:1811:0: 'Dregg2.Games.Automatafl.automatafl_air_refines_applyTurn' depends on axioms: [propext]
+info: Dregg2/Games/Automatafl.lean:1812:0: 'Dregg2.Games.Automatafl.automatonStep_congr' depends on axioms: [propext, Quot.sound]
+info: Dregg2/Games/Automatafl.lean:1813:0: 'Dregg2.Games.Automatafl.applyMoves_cell_TT' depends on axioms: [propext, Quot.sound]
+info: Dregg2/Games/Automatafl.lean:1814:0: 'Dregg2.Games.Automatafl.applyMoves_cell_TF' depends on axioms: [propext, Quot.sound]
+info: Dregg2/Games/Automatafl.lean:1815:0: 'Dregg2.Games.Automatafl.applyMoves_cell_FT' depends on axioms: [propext, Quot.sound]
+info: Dregg2/Games/Automatafl.lean:1816:0: 'Dregg2.Games.Automatafl.applyMoves_cell_FF' depends on axioms: [propext, Quot.sound]
+info: Dregg2/Games/Automatafl.lean:1817:0: 'Dregg2.Games.Automatafl.followChain_landing_has_edge' does not depend on any axioms
+info: Dregg2/Games/Automatafl.lean:1818:0: 'Dregg2.Games.Automatafl.chainDest_aN' depends on axioms: [propext]
+info: Dregg2/Games/Automatafl.lean:1819:0: 'Dregg2.Games.Automatafl.chainDest_bN' depends on axioms: [propext]
+info: Dregg2/Games/Automatafl.lean:1820:0: 'Dregg2.Games.Automatafl.conserves_of_single' depends on axioms: [propext]
+info: Dregg2/Games/Automatafl.lean:1821:0: 'Dregg2.Games.Automatafl.conserves_of_pair' depends on axioms: [propext]
+info: Dregg2/Games/Automatafl.lean:1822:0: 'Dregg2.Games.Automatafl.applyMoves_conserves_pieces' depends on axioms: [propext, Quot.sound]
+info: Dregg2/Games/Automatafl.lean:1823:0: 'Dregg2.Games.Automatafl.landsOnStayer_witness' depends on axioms: [propext]
+info: Dregg2/Games/Automatafl.lean:1824:0: 'Dregg2.Games.Automatafl.buggy_refutes_conservation' depends on axioms: [propext]
+⚠ [3141/3157] Replayed Dregg2.Games.AutomataflRules
+warning: Dregg2/Games/AutomataflRules.lean:2363:52: unused variable `hlegA`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Dregg2/Games/AutomataflRules.lean:2363:77: unused variable `hlegB`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Dregg2/Games/AutomataflRules.lean:2417:12: This simp argument is unused:
+  List.filter_cons
+
+Hint: Omit it from the simp argument list.
+  simp [L̵i̵s̵t̵.̵f̵i̵l̵t̵e̵r̵_̵c̵o̵n̵s̵,̵ ̵h1, h2, hb, hbb, allEqOpt]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/AutomataflRules.lean:2421:12: This simp argument is unused:
+  List.filter_cons
+
+Hint: Omit it from the simp argument list.
+  simp [L̵i̵s̵t̵.̵f̵i̵l̵t̵e̵r̵_̵c̵o̵n̵s̵,̵ ̵h1, h2, hb, hbb, hto, allEqOpt]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/AutomataflRules.lean:2425:10: This simp argument is unused:
+  List.filter_cons
+
+Hint: Omit it from the simp argument list.
+  simp [L̵i̵s̵t̵.̵f̵i̵l̵t̵e̵r̵_̵c̵o̵n̵s̵,̵ ̵h1, h2, allEqOpt]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: Dregg2/Games/AutomataflRules.lean:2920:0: #assert_all_clean: 39 keystones pinned kernel-clean
+⚠ [3143/3157] Replayed Dregg2.Games.MultiwayTug
+warning: Dregg2/Games/MultiwayTug.lean:183:63: This simp argument is unused:
+  add_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [takerShare, cutterShare, Offer.cards, zero_add,̵ ̵a̵d̵d̵_̵z̵e̵r̵o̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/MultiwayTug.lean:434:40: This simp argument is unused:
+  Player.other_p1
+
+Hint: Omit it from the simp argument list.
+  simp only [Function.update_apply, P̵l̵a̵y̵e̵r̵.̵o̵t̵h̵e̵r̵_̵p̵1̵,̵ ̵Player.other_p2, reduceCtorEq, reduceIte]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/MultiwayTug.lean:434:57: This simp argument is unused:
+  Player.other_p2
+
+Hint: Omit it from the simp argument list.
+  simp only [Function.update_apply, Player.other_p1, P̵l̵a̵y̵e̵r̵.̵o̵t̵h̵e̵r̵_̵p̵2̵,̵ ̵reduceCtorEq, reduceIte]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3145/3160] Replayed Dregg2.Bridge.MinaChainSelection
+warning: Dregg2/Bridge/MinaChainSelection.lean:595:54: This simp argument is unused:
+  Bool.not_eq_true'
+
+Hint: Omit it from the simp argument list.
+  simp only [blockchainLengthLonger, candidateVrfBigger, candidateHashBigger,
+  ̲  ̲ ̲ ̲ ̲ ̲Bool.or_eq_false_iff,
+  ̵  ̵ ̵ ̵ ̵ ̵Bool.and_eq_false_iff, decide_eq_false_iff_not,̵ ̵B̵o̵o̵l̵.̵n̵o̵t̵_̵e̵q̵_̵t̵r̵u̵e̵'̵] at hx hy
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Bridge/MinaChainSelection.lean:601:15: This simp argument is unused:
+  Bool.or_eq_false_iff
+
+Hint: Omit it from the simp argument list.
+  simp only [̵B̵o̵o̵l̵.̵o̵r̵_̵e̵q̵_̵f̵a̵l̵s̵e̵_̵i̵f̵f̵,̵ ̵B̵o̵o̵l̵.̵a̵n̵d̵_̵e̵q̵_̵f̵a̵l̵s̵e̵_̵i̵f̵f̵,̵[̲B̲o̲o̲l̲.̲a̲n̲d̲_̲e̲q̲_̲f̲a̲l̲s̲e̲_̲i̲f̲f̲,̲ decide_eq_false_iff_not, Bool.not_eq_true'] at hx2' hy2'
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Bridge/MinaChainSelection.lean:601:37: This simp argument is unused:
+  Bool.and_eq_false_iff
+
+Hint: Omit it from the simp argument list.
+  simp only [Bool.or_eq_false_iff, B̵o̵o̵l̵.̵a̵n̵d̵_̵e̵q̵_̵f̵a̵l̵s̵e̵_̵i̵f̵f̵,̵ ̵decide_eq_false_iff_not, Bool.not_eq_true'] at hx2' hy2'
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Bridge/MinaChainSelection.lean:601:60: This simp argument is unused:
+  decide_eq_false_iff_not
+
+Hint: Omit it from the simp argument list.
+  simp only [Bool.or_eq_false_iff, Bool.and_eq_false_iff, d̵e̵c̵i̵d̵e̵_̵e̵q̵_̵f̵a̵l̵s̵e̵_̵i̵f̵f̵_̵n̵o̵t̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵Bool.not_eq_true'] at hx2' hy2'
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Bridge/MinaChainSelection.lean:602:6: This simp argument is unused:
+  Bool.not_eq_true'
+
+Hint: Omit it from the simp argument list.
+  simp only [Bool.or_eq_false_iff, Bool.and_eq_false_iff, decide_eq_false_iff_not,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵B̵o̵o̵l̵.̵n̵o̵t̵_̵e̵q̵_̵t̵r̵u̵e̵'̵] at hx2' hy2'
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Bridge/MinaChainSelection.lean:608:15: This simp argument is unused:
+  decide_eq_false_iff_not
+
+Hint: Omit it from the simp argument list.
+  simp only [̵d̵e̵c̵i̵d̵e̵_̵e̵q̵_̵f̵a̵l̵s̵e̵_̵i̵f̵f̵_̵n̵o̵t̵]̵ ̵at hxh' hyh'
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: Dregg2/Bridge/MinaChainSelection.lean:1034:0: 'Dregg2.Bridge.MinaChainSelection.select_asymm' depends on axioms: [propext, Quot.sound]
+info: Dregg2/Bridge/MinaChainSelection.lean:1035:0: 'Dregg2.Bridge.MinaChainSelection.beats_not_transitive' depends on axioms: [propext, Quot.sound]
+info: Dregg2/Bridge/MinaChainSelection.lean:1036:0: 'Dregg2.Bridge.MinaChainSelection.three_renderings_three_answers' does not depend on any axioms
+⚠ [3146/3160] Replayed Dregg2.Circuit.FriSoundness
+warning: Dregg2/Circuit/FriSoundness.lean:78:8: automatically included section variable(s) unused in theorem `Dregg2.Circuit.FriSoundness.mem_disagree`:
+  [Field F]
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Field F] [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Dregg2/Circuit/FriSoundness.lean:82:0: automatically included section variable(s) unused in theorem `Dregg2.Circuit.FriSoundness.disagree_eq_empty_iff`:
+  [Field F]
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Field F] [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Dregg2/Circuit/FriSoundness.lean:161:0: automatically included section variable(s) unused in theorem `Dregg2.Circuit.FriSoundness.self_decomp`:
+  [DecidableEq F]
+  [Fintype ι]
+  [DecidableEq ι]
+  [Fintype κ]
+  [DecidableEq κ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq F] [Fintype ι] [DecidableEq ι] [Fintype κ] [DecidableEq κ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Dregg2/Circuit/FriSoundness.lean:180:8: automatically included section variable(s) unused in theorem `Dregg2.Circuit.FriSoundness.unfoldF_apply`:
+  [DecidableEq F]
+  [Fintype ι]
+  [DecidableEq ι]
+  [Fintype κ]
+  [DecidableEq κ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq F] [Fintype ι] [DecidableEq ι] [Fintype κ] [DecidableEq κ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Dregg2/Circuit/FriSoundness.lean:224:0: automatically included section variable(s) unused in theorem `Dregg2.Circuit.FriSoundness.pullback_card_le`:
+  [DecidableEq F]
+  [Fintype κ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq F] [Fintype κ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Dregg2/Circuit/FriSoundness.lean:374:0: automatically included section variable(s) unused in theorem `Dregg2.Circuit.FriSoundness.equivocation_breaks_binding`:
+  [Field F]
+  [DecidableEq F]
+  [Fintype ι]
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Field F] [DecidableEq F] [Fintype ι] [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3152/3172] Replayed Dregg2.Exec.FacetAuthority
+warning: Dregg2/Exec/FacetAuthority.lean:304:5: unused variable `hsat`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Dregg2/Exec/FacetAuthority.lean:458:5: unused variable `hsat`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3154/3172] Replayed Dregg2.Circuit.Emit.EffectVmEmitCapReshape
+warning: Dregg2/Circuit/Emit/EffectVmEmitCapReshape.lean:930:71: This simp argument is unused:
+  col.HELD_BIT_BASE
+
+Hint: Omit it from the simp argument list.
+  simp only [dcol.heldBit, dcol.HELD_BIT_BASE, col.GRANTED_BIT_BASE, c̵o̵l̵.̵H̵E̵L̵D̵_̵B̵I̵T̵_̵B̵A̵S̵E̵,̵ ̵auxCol,
+  ̵  ̵ ̵ ̵ ̵ ̵AUX_BASE,
+  ̲  ̲ ̲ ̲ ̲ ̲STATE_AFTER_BASE, PARAM_BASE, STATE_BEFORE_BASE, aux_off.STATE_INTER3, EFFECT_VM_WIDTH,
+        NUM_EFFECTS, STATE_SIZE, NUM_PARAMS, MASK_BITS]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Circuit/Emit/EffectVmEmitCapReshape.lean:936:77: This simp argument is unused:
+  col.HELD_BIT_BASE
+
+Hint: Omit it from the simp argument list.
+  simp only [dcol.grantedBit, dcol.GRANTED_BIT_BASE, col.GRANTED_BIT_BASE, c̵o̵l̵.̵H̵E̵L̵D̵_̵B̵I̵T̵_̵B̵A̵S̵E̵,̵ ̵auxCol,
+  ̵  ̵ ̵ ̵ ̵ ̵AUX_BASE,
+  ̲  ̲ ̲ ̲ ̲ ̲STATE_AFTER_BASE, PARAM_BASE, STATE_BEFORE_BASE, aux_off.STATE_INTER3, EFFECT_VM_WIDTH,
+        NUM_EFFECTS, STATE_SIZE, NUM_PARAMS, MASK_BITS]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Circuit/Emit/EffectVmEmitCapReshape.lean:1049:28: This simp argument is unused:
+  col.HELD_BIT_BASE
+
+Hint: Omit it from the simp argument list.
+  simp only [dcol.grantedBit, dcol.heldBit, dcol.GRANTED_BIT_BASE, dcol.HELD_BIT_BASE,
+        col.GRANTED_BIT_BASE, c̵o̵l̵.̵H̵E̵L̵D̵_̵B̵I̵T̵_̵B̵A̵S̵E̵,̵ ̵auxCol, AUX_BASE, STATE_AFTER_BASE, PARAM_BASE,
+  ̵  ̵ ̵ ̵ ̵ ̵STATE_BEFORE_BASE,
+  ̲  ̲ ̲ ̲ ̲ ̲aux_off.STATE_INTER3, NUM_EFFECTS, STATE_SIZE, NUM_PARAMS, MASK_BITS,
+  ̵  ̵ ̵ ̵ ̵ ̵goodDelegRow]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3156/3183] Replayed Dregg2.Crypto.RomHashedLeafOpening
+warning: Dregg2/Crypto/RomHashedLeafOpening.lean:580:23: unused variable `hQ`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Dregg2/Crypto/RomHashedLeafOpening.lean:581:5: unused variable `A`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Dregg2/Crypto/RomHashedLeafOpening.lean:583:5: unused variable `hB`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: Dregg2/Crypto/RomHashedLeafOpening.lean:593:0: #assert_all_clean: 23 keystones pinned kernel-clean
+⚠ [3157/3183] Replayed Dregg2.Circuit.DeployedCapTree
+warning: Dregg2/Circuit/DeployedCapTree.lean:595:14: `Int.emod_add_ediv'` has been deprecated: Use `Int.emod_add_ediv_mul` instead
+warning: Dregg2/Circuit/DeployedCapTree.lean:690:24: `Int.emod_add_ediv'` has been deprecated: Use `Int.emod_add_ediv_mul` instead
+warning: Dregg2/Circuit/DeployedCapTree.lean:651:61: unused variable `hn`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Dregg2/Circuit/DeployedCapTree.lean:1104:24: `Int.emod_add_ediv'` has been deprecated: Use `Int.emod_add_ediv_mul` instead
+warning: Dregg2/Circuit/DeployedCapTree.lean:1074:61: unused variable `hn`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Dregg2/Circuit/DeployedCapTree.lean:1624:65: unused variable `l`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+ℹ [3160/3183] Replayed Dregg2.Circuit.DeployedMapDenotation
+info: Dregg2/Circuit/DeployedMapDenotation.lean:927:0: #assert_not_depends_on Dregg2.Circuit.DeployedMapDenotation.padImtRoot: clean of [Dregg2.Circuit.DeployedMapDenotation.padToSaturating] (236 constants scanned)
+info: Dregg2/Circuit/DeployedMapDenotation.lean:928:0: #assert_not_depends_on Dregg2.Circuit.DeployedMapDenotation.padImtRootFind: clean of [Dregg2.Circuit.DeployedMapDenotation.padToSaturating] (562 constants scanned)
+info: Dregg2/Circuit/DeployedMapDenotation.lean:929:0: #assert_not_depends_on Dregg2.Circuit.DeployedMapDenotation.padImtSchema: clean of [Dregg2.Circuit.DeployedMapDenotation.padToSaturating] (726 constants scanned)
+info: Dregg2/Circuit/DeployedMapDenotation.lean:930:0: #assert_not_depends_on Dregg2.Circuit.DeployedMapDenotation.padImtRoot_binds_or_ghost_or_collides: clean of [Dregg2.Circuit.DeployedMapDenotation.padToSaturating] (1957 constants scanned)
+info: Dregg2/Circuit/DeployedMapDenotation.lean:931:0: #assert_depends_on Dregg2.Circuit.DeployedMapDenotation.padImtRoot: reaches [Dregg2.Circuit.DeployedMapDenotation.padTo] (walk is not blind)
+info: Dregg2/Circuit/DeployedMapDenotation.lean:932:0: #assert_depends_on Dregg2.Circuit.DeployedMapDenotation.over_capacity_roots_collide: reaches [Dregg2.Circuit.DeployedMapDenotation.padToSaturating] (walk is not blind)
+ℹ [3161/3183] Replayed Dregg2.Crypto.MemoryChecking
+info: Dregg2/Crypto/MemoryChecking.lean:741:0: #assert_namespace_axioms Dregg2.Crypto.MemoryChecking: 49 theorems pinned kernel-clean
+ℹ [3162/3183] Replayed Dregg2.Crypto.UniversalMemory
+info: Dregg2/Crypto/UniversalMemory.lean:1120:0: #assert_namespace_axioms Dregg2.Crypto.UniversalMemory: 34 theorems pinned kernel-clean
+⚠ [3163/3183] Replayed Dregg2.Circuit.DescriptorIR2
+warning: Dregg2/Circuit/DescriptorIR2.lean:2025:52: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: Dregg2/Circuit/DescriptorIR2.lean:2026:56: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+ℹ [3166/3195] Replayed Dregg2.Circuit.Emit.Blake2bGadget
+info: Dregg2/Circuit/Emit/Blake2bGadget.lean:612:0: 'Dregg2.Circuit.Emit.Blake2bGadget.addMod64_forces' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Dregg2/Circuit/Emit/Blake2bGadget.lean:613:0: 'Dregg2.Circuit.Emit.Blake2bGadget.xor2_forces' depends on axioms: [propext, Quot.sound]
+info: Dregg2/Circuit/Emit/Blake2bGadget.lean:614:0: 'Dregg2.Circuit.Emit.Blake2bGadget.finalize_bit_forces' depends on axioms: [propext, Quot.sound]
+⚠ [3180/3201] Replayed Dregg2.Games.PathOfAngels.EventSourcing
+warning: Dregg2/Games/PathOfAngels/EventSourcing.lean:162:57: This simp argument is unused:
+  throw
+
+Hint: Omit it from the simp argument list.
+  simp only [applyEvent, hreduce, bind, Except.bind, throw,̵ ̵t̵h̵r̵o̵w̵The,
+  ̵  ̵ ̵ ̵ ̵ ̵ ̵ ̵MonadExceptOf.throw] at accepted
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/PathOfAngels/EventSourcing.lean:162:64: This simp argument is unused:
+  throwThe
+
+Hint: Omit it from the simp argument list.
+  simp only [applyEvent, hreduce, bind, Except.bind, throw, t̵h̵r̵o̵w̵T̵h̵e̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵MonadExceptOf.throw] at accepted
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/PathOfAngels/EventSourcing.lean:163:8: This simp argument is unused:
+  MonadExceptOf.throw
+
+Hint: Omit it from the simp argument list.
+  simp only [applyEvent, hreduce, bind, Except.bind, throw, throwThe,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵M̵o̵n̵a̵d̵E̵x̵c̵e̵p̵t̵O̵f̵.̵t̵h̵r̵o̵w̵] at accepted
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/PathOfAngels/EventSourcing.lean:167:76: This simp argument is unused:
+  throw
+
+Hint: Omit it from the simp argument list.
+  simp only [applyEvent, hreduce, bind, Except.bind, pure, Except.pure, throw,̵ ̵t̵h̵r̵o̵w̵The,
+          MonadExceptOf.throw] at accepted
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/PathOfAngels/EventSourcing.lean:167:83: This simp argument is unused:
+  throwThe
+
+Hint: Omit it from the simp argument list.
+  simp only [applyEvent, hreduce, bind, Except.bind, pure, Except.pure, throw, ̵t̵h̵r̵o̵w̵T̵h̵e̵,̵
+          MonadExceptOf.throw] at accepted
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/PathOfAngels/EventSourcing.lean:168:8: This simp argument is unused:
+  MonadExceptOf.throw
+
+Hint: Omit it from the simp argument list.
+  simp only [applyEvent, hreduce, bind, Except.bind, pure, Except.pure, throw,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲t̵h̵r̵o̵w̵T̵h̵e̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵M̵o̵n̵a̵d̵E̵x̵c̵e̵p̵t̵O̵f̵.̵t̵h̵r̵o̵w̵]̵t̲h̲r̲o̲w̲T̲h̲e̲]̲ at accepted
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3186/3212] Replayed Dregg2.Games.PathOfAngels.GalleyMaintenanceDailyRuntime
+warning: Dregg2/Games/PathOfAngels/GalleyMaintenanceDailyRuntime.lean:1031:7: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [3204/3241] Replayed Dregg2.Time.Deadline
+warning: Dregg2/Time/Deadline.lean:60:4: The namespace 'Deadline' is duplicated in the declaration 'Dregg2.Time.Deadline.Deadline.causalAfter'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Dregg2/Time/Deadline.lean:62:4: The namespace 'Deadline' is duplicated in the declaration 'Dregg2.Time.Deadline.Deadline.frameWithin'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Dregg2/Time/Deadline.lean:58:10: The namespace 'Deadline' is duplicated in the declaration 'Dregg2.Time.Deadline.Deadline'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Dregg2/Time/Deadline.lean:67:4: The namespace 'Deadline' is duplicated in the declaration 'Dregg2.Time.Deadline.Deadline.kind'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Dregg2/Time/Deadline.lean:83:4: The namespace 'Deadline' is duplicated in the declaration 'Dregg2.Time.Deadline.Deadline.Met'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+ℹ [3215/3251] Replayed Dregg2.Intent.Kernel
+info: Dregg2/Intent/Kernel.lean:117:0: #assert_namespace_axioms Dregg2.Intent: 44 theorems pinned kernel-clean
+ℹ [3218/3251] Replayed Market.CertF
+info: Market/CertF.lean:322:0: #assert_all_clean: 12 keystones pinned kernel-clean
+⚠ [3221/3251] Replayed Dregg2.Circuit.CaveatBignumCompare
+warning: Dregg2/Circuit/CaveatBignumCompare.lean:59:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: Dregg2/Circuit/CaveatBignumCompare.lean:69:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: Dregg2/Circuit/CaveatBignumCompare.lean:151:10: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+ℹ [3223/3253] Replayed Market.Priced
+info: Market/Priced.lean:469:0: #assert_all_clean: 20 keystones pinned kernel-clean
+ℹ [3224/3253] Replayed Market.Optimality
+info: Market/Optimality.lean:273:0: #assert_all_clean: 11 keystones pinned kernel-clean
+ℹ [3229/3268] Replayed Market.FhEggClearing
+info: Market/FhEggClearing.lean:624:0: #assert_all_clean: 30 keystones pinned kernel-clean
+ℹ [3230/3268] Replayed Market.RevealNothing
+info: Market/RevealNothing.lean:429:0: #assert_all_clean: 15 keystones pinned kernel-clean
+ℹ [3231/3268] Replayed Market.MpcClearingSecurity
+info: Market/MpcClearingSecurity.lean:774:0: #assert_all_clean: 34 keystones pinned kernel-clean
+ℹ [3238/3271] Replayed Market.DarkBazaarPrivateDescriptor
+info: Market/DarkBazaarPrivateDescriptor.lean:1942:0: #assert_all_clean: 20 keystones pinned kernel-clean
+ℹ [3245/3281] Replayed Dregg2.Crypto.HybridCombiner
+info: Dregg2/Crypto/HybridCombiner.lean:498:0: #assert_all_clean: 24 keystones pinned kernel-clean
+ℹ [3247/3281] Replayed Dregg2.Crypto.DreggKemRefinement
+info: Dregg2/Crypto/DreggKemRefinement.lean:365:0: #assert_all_clean: 14 keystones pinned kernel-clean
+ℹ [3249/3281] Replayed Dregg2.Crypto.DreggPqRefinement
+info: Dregg2/Crypto/DreggPqRefinement.lean:355:0: #assert_all_clean: 15 keystones pinned kernel-clean
+⚠ [3265/3302] Replayed Dregg2.Crypto.Hypergraph
+warning: Dregg2/Crypto/Hypergraph.lean:39:10: The namespace 'Hypergraph' is duplicated in the declaration 'Dregg2.Crypto.Hypergraph.Hypergraph.mk'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Dregg2/Crypto/Hypergraph.lean:41:2: The namespace 'Hypergraph' is duplicated in the declaration 'Dregg2.Crypto.Hypergraph.Hypergraph.edges'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Dregg2/Crypto/Hypergraph.lean:39:10: The namespace 'Hypergraph' is duplicated in the declaration 'Dregg2.Crypto.Hypergraph.Hypergraph'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+ℹ [3271/3302] Replayed Dregg2.Crypto.X25519HkdfExtract
+info: Dregg2/Crypto/X25519HkdfExtract.lean:423:0: #assert_all_clean: 15 keystones pinned kernel-clean
+ℹ [3277/3306] Replayed Dregg2.Bridge.ConditionalInterchainAdapter
+info: Dregg2/Bridge/ConditionalInterchainAdapter.lean:244:0: #assert_all_clean: 15 keystones pinned kernel-clean
+ℹ [3278/3316] Replayed Polis.Polis
+info: Polis/Polis.lean:524:0: 'Metatheory.Polis.polis_safety' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Polis/Polis.lean:525:0: 'Metatheory.Polis.maxpol_envelope_safe' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Polis/Polis.lean:526:0: 'Metatheory.Polis.envelope_least_restrictive' does not depend on any axioms
+info: Polis/Polis.lean:527:0: 'Metatheory.Polis.override_only_unsafe' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Polis/Polis.lean:528:0: 'Metatheory.Polis.structural_requires_proof' does not depend on any axioms
+info: Polis/Polis.lean:529:0: 'Metatheory.Polis.amendment_stream_nonregression' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Polis/Polis.lean:530:0: 'Metatheory.Polis.regressive_amendment_inert' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Polis/Polis.lean:531:0: 'Metatheory.Polis.disjoint_floors_no_polis' does not depend on any axioms
+info: Polis/Polis.lean:532:0: 'Metatheory.Polis.dregg_shared_floor_inhabited' does not depend on any axioms
+info: Polis/Polis.lean:533:0: 'Metatheory.Polis.dregg_polis_safety' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Polis/Polis.lean:534:0: 'Metatheory.Polis.dregg_amendment_nonregression' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3279/3316] Replayed Metatheory.KeyLeak
+warning: Metatheory/KeyLeak.lean:83:45: unused variable `h`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Metatheory/KeyLeak.lean:83:47: unused variable `g`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Metatheory/KeyLeak.lean:110:62: unused variable `c`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: Metatheory/KeyLeak.lean:347:0: 'Metatheory.KeyLeak.leak_blast_no_amplify' does not depend on any axioms
+info: Metatheory/KeyLeak.lean:348:0: 'Metatheory.KeyLeak.reaches_closed' does not depend on any axioms
+info: Metatheory/KeyLeak.lean:349:0: 'Metatheory.KeyLeak.key_leak_contained' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Metatheory/KeyLeak.lean:350:0: 'Metatheory.KeyLeak.key_leak_contained_confined' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Metatheory/KeyLeak.lean:351:0: 'Metatheory.KeyLeak.revoke_kills_leak' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Metatheory/KeyLeak.lean:352:0: 'Metatheory.KeyLeak.revoke_kills_leak_immediate' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3280/3316] Replayed Metatheory.SettlementSoundness
+info: Metatheory/SettlementSoundness.lean:517:0: 'Metatheory.SettlementSoundness.settlement_soundness' does not depend on any axioms
+info: Metatheory/SettlementSoundness.lean:518:0: 'Metatheory.SettlementSoundness.revoke_before_tip_unsettleable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Metatheory/SettlementSoundness.lean:519:0: 'Metatheory.SettlementSoundness.deployedSettle_binds_live_authority' does not depend on any axioms
+info: Metatheory/SettlementSoundness.lean:520:0: 'Metatheory.SettlementSoundness.branchSettle_NOT_binds' depends on axioms: [propext]
+ℹ [3282/3316] Replayed Metatheory.Bridge.InterchainAdapter
+info: Metatheory/Bridge/InterchainAdapter.lean:294:0: 'Metatheory.Bridge.interchain_credit_sound_and_conservative' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Metatheory/Bridge/InterchainAdapter.lean:295:0: 'Metatheory.Bridge.interchain_zero_confirm_unsettleable' depends on axioms: [propext, Quot.sound]
+ℹ [3283/3321] Replayed Dregg2.Bridge.VerifiedLightClient
+info: Dregg2/Bridge/VerifiedLightClient.lean:496:0: 'Dregg2.Bridge.VerifiedLightClient.toAdapter_foreignFinal_discharged' does not depend on any axioms
+info: Dregg2/Bridge/VerifiedLightClient.lean:497:0: 'Dregg2.Bridge.VerifiedLightClient.toy_gate_discriminates' does not depend on any axioms
+ℹ [3284/3321] Replayed Dregg2.Bridge.LightClientEth
+info: Dregg2/Bridge/LightClientEth.lean:1135:0: 'Dregg2.Bridge.LightClientEth.eth_no_forgery' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Dregg2/Bridge/LightClientEth.lean:1136:0: 'Dregg2.Bridge.LightClientEth.eth_gate_discriminates' depends on axioms: [propext, Quot.sound]
+ℹ [3285/3321] Replayed Dregg2.Bridge.LightClientMpt
+info: Dregg2/Bridge/LightClientMpt.lean:638:0: #assert_all_clean: 21 keystones pinned kernel-clean
+info: Dregg2/Bridge/LightClientMpt.lean:646:0: 'Dregg2.Bridge.LightClientMpt.mpt_balance_binding' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Dregg2/Bridge/LightClientMpt.lean:647:0: 'Dregg2.Bridge.LightClientMpt.mpt_gate_discriminates' depends on axioms: [propext]
+ℹ [3286/3321] Replayed Dregg2.Bridge.LightClientTendermint
+info: Dregg2/Bridge/LightClientTendermint.lean:694:0: 'Dregg2.Bridge.LightClientTendermint.tmNoForgery' depends on axioms: [propext, Quot.sound]
+info: Dregg2/Bridge/LightClientTendermint.lean:695:0: 'Dregg2.Bridge.LightClientTendermint.tm_gate_discriminates' depends on axioms: [propext]
+ℹ [3287/3321] Replayed Dregg2.Bridge.LightClientTendermintSkip
+info: Dregg2/Bridge/LightClientTendermintSkip.lean:675:0: 'Dregg2.Bridge.LightClientTendermintSkip.tmSkipVerifyDecision_refines' does not depend on any axioms
+info: Dregg2/Bridge/LightClientTendermintSkip.lean:676:0: 'Dregg2.Bridge.LightClientTendermintSkip.tmSkipNoForgery' depends on axioms: [propext, Quot.sound]
+info: Dregg2/Bridge/LightClientTendermintSkip.lean:677:0: 'Dregg2.Bridge.LightClientTendermintSkip.tmSkip_zero_overlap_rejected' depends on axioms: [propext]
+ℹ [3288/3331] Replayed Dregg2.Bridge.LightClientEthGate
+info: Dregg2/Bridge/LightClientEthGate.lean:423:0: 'Dregg2.Bridge.LightClientEthGate.ethVerifyDecision_refines' does not depend on any axioms
+info: Dregg2/Bridge/LightClientEthGate.lean:424:0: 'Dregg2.Bridge.LightClientEthGate.ethVerifyDecision_no_forgery' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3289/3331] Replayed Dregg2.Bridge.LightClientMptGate
+info: Dregg2/Bridge/LightClientMptGate.lean:257:0: 'Dregg2.Bridge.LightClientMptGate.mptVerifyDecision_refines' depends on axioms: [propext]
+info: Dregg2/Bridge/LightClientMptGate.lean:258:0: 'Dregg2.Bridge.LightClientMptGate.mptVerifyDecision_balance_binding' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3290/3331] Replayed Dregg2.Bridge.LightClientTendermintGate
+info: Dregg2/Bridge/LightClientTendermintGate.lean:287:0: 'Dregg2.Bridge.LightClientTendermintGate.tmVerifyDecision_refines' does not depend on any axioms
+info: Dregg2/Bridge/LightClientTendermintGate.lean:288:0: 'Dregg2.Bridge.LightClientTendermintGate.tmVerifyDecision_no_forgery' depends on axioms: [propext, Quot.sound]
+ℹ [3291/3331] Replayed Dregg2.Bridge.LightClientMina
+info: Dregg2/Bridge/LightClientMina.lean:546:0: 'Dregg2.Bridge.LightClientMina.mina_no_forgery' depends on axioms: [propext, Quot.sound]
+info: Dregg2/Bridge/LightClientMina.lean:547:0: 'Dregg2.Bridge.LightClientMina.mina_depth_is_witnessed' depends on axioms: [propext, Quot.sound]
+ℹ [3292/3331] Replayed Dregg2.Bridge.LightClientMinaGate
+info: Dregg2/Bridge/LightClientMinaGate.lean:214:0: 'Dregg2.Bridge.LightClientMinaGate.minaVerifyDecision_refines' does not depend on any axioms
+info: Dregg2/Bridge/LightClientMinaGate.lean:215:0: 'Dregg2.Bridge.LightClientMinaGate.minaVerifyDecision_depth_witnessed' depends on axioms: [propext, Quot.sound]
+ℹ [3299/3340] Replayed Dregg2.Circuit.Emit.PicklesVerifyPreamble
+info: Dregg2/Circuit/Emit/PicklesVerifyPreamble.lean:759:0: 'Dregg2.Circuit.Emit.PicklesVerifyPreamble.the_flagless_contract_is_a_theorem' depends on axioms: [propext]
+info: Dregg2/Circuit/Emit/PicklesVerifyPreamble.lean:760:0: 'Dregg2.Circuit.Emit.PicklesVerifyPreamble.d1Ok_at_the_real_block' does not depend on any axioms
+info: Dregg2/Circuit/Emit/PicklesVerifyPreamble.lean:761:0: 'Dregg2.Circuit.Emit.PicklesVerifyPreamble.the_wrap_preimage_length_is_the_schedule_length' depends on axioms: [propext,
+ Quot.sound]
+ℹ [3300/3340] Replayed Dregg2.Bridge.PicklesWrapShapeGate
+info: Dregg2/Bridge/PicklesWrapShapeGate.lean:476:0: 'Dregg2.Bridge.PicklesWrapShapeGate.real_block_wrap_shape_accepts' does not depend on any axioms
+info: Dregg2/Bridge/PicklesWrapShapeGate.lean:477:0: 'Dregg2.Bridge.PicklesWrapShapeGate.picklesWrapShapeOk_imp_shapeOkRec' depends on axioms: [propext]
+info: Dregg2/Bridge/PicklesWrapShapeGate.lean:478:0: 'Dregg2.Bridge.PicklesWrapShapeGate.picklesWrapShapeOk_imp_publicInputLen' depends on axioms: [propext]
+info: Dregg2/Bridge/PicklesWrapShapeGate.lean:479:0: 'Dregg2.Bridge.PicklesWrapShapeGate.the_old_gate_admits_a_public_input_it_should_refuse' does not depend on any axioms
+ℹ [3301/3340] Replayed Dregg2.Bridge.PicklesProofChainGate
+info: Dregg2/Bridge/PicklesProofChainGate.lean:486:0: 'Dregg2.Bridge.PicklesProofChainGate.real_devnet_chain_discriminates' does not depend on any axioms
+info: Dregg2/Bridge/PicklesProofChainGate.lean:487:0: 'Dregg2.Bridge.PicklesProofChainGate.chainOk_adjacent_proofs_differ' depends on axioms: [propext]
+ℹ [3302/3340] Replayed Dregg2.Circuit.Emit.PastaPoseidonFq
+info: Dregg2/Circuit/Emit/PastaPoseidonFq.lean:744:0: #assert_namespace_axioms Dregg2.Circuit.Emit.PastaPoseidonFq: 25 theorems pinned kernel-clean, 9 skipped via `except`
+ℹ [3303/3340] Replayed Dregg2.Bridge.MinaStateHashWordGate
+info: Dregg2/Bridge/MinaStateHashWordGate.lean:1113:0: 'Dregg2.Bridge.MinaStateHashWordGate.word12_preimage_carries_the_chain_accumulator' does not depend on any axioms
+info: Dregg2/Bridge/MinaStateHashWordGate.lean:1114:0: 'Dregg2.Bridge.MinaStateHashWordGate.headerOk_entails' depends on axioms: [propext, Quot.sound]
+ℹ [3304/3340] Replayed Dregg2.Circuit.Emit.PicklesRecursion
+info: Dregg2/Circuit/Emit/PicklesRecursion.lean:1225:0: #assert_namespace_axioms Dregg2.Circuit.Emit.PicklesRecursion: 89 theorems pinned kernel-clean
+⚠ [3305/3340] Replayed Dregg2.Circuit.Emit.PastaIpaDeferral
+warning: Dregg2/Circuit/Emit/PastaIpaDeferral.lean:747:49: This simp argument is unused:
+  Bool.true_and
+
+Hint: Omit it from the simp argument list.
+  simp only [batchOk, h1, h2, h3, Bool.and_true,̵ ̵B̵o̵o̵l̵.̵t̵r̵u̵e̵_̵a̵n̵d̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: Dregg2/Circuit/Emit/PastaIpaDeferral.lean:979:0: #assert_namespace_axioms Dregg2.Circuit.Emit.PastaIpaDeferral: 28 theorems pinned kernel-clean
+ℹ [3306/3340] Replayed Dregg2.Bridge.MinaForkChoiceGate
+info: Dregg2/Bridge/MinaForkChoiceGate.lean:381:0: 'Dregg2.Bridge.MinaForkChoiceGate.rollHead_finalized_monotone' depends on axioms: [propext]
+info: Dregg2/Bridge/MinaForkChoiceGate.lean:382:0: 'Dregg2.Bridge.MinaForkChoiceGate.the_cycle_moves_the_head_but_not_the_finalized_point' does not depend on any axioms
+⚠ [3307/3340] Replayed Dregg2.Bridge.MinaSlidingWindow
+warning: Dregg2/Bridge/MinaSlidingWindow.lean:396:42: unused variable `hsps`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: Dregg2/Bridge/MinaSlidingWindow.lean:1553:0: 'Dregg2.Bridge.MinaSlidingWindow.mina_window_replays_real_devnet' does not depend on any axioms
+info: Dregg2/Bridge/MinaSlidingWindow.lean:1554:0: 'Dregg2.Bridge.MinaSlidingWindow.withinRange_iff_out_of_window' does not depend on any axioms
+info: Dregg2/Bridge/MinaSlidingWindow.lean:1555:0: 'Dregg2.Bridge.MinaSlidingWindow.WindowOk_step' depends on axioms: [propext, Quot.sound]
+ℹ [3308/3340] Replayed Dregg2.Bridge.MinaCheckpoint
+info: Dregg2/Bridge/MinaCheckpoint.lean:601:0: 'Dregg2.Bridge.MinaCheckpoint.runSteps_finalized_monotone' depends on axioms: [propext]
+info: Dregg2/Bridge/MinaCheckpoint.lean:602:0: 'Dregg2.Bridge.MinaCheckpoint.provisional_never_ratchets' does not depend on any axioms
+info: Dregg2/Bridge/MinaCheckpoint.lean:603:0: 'Dregg2.Bridge.MinaCheckpoint.density_admits_exactly_the_step' depends on axioms: [propext]
+ℹ [3309/3340] Replayed Dregg2.Bridge.MinaWrapChallenges
+info: Dregg2/Bridge/MinaWrapChallenges.lean:435:0: 'Dregg2.Bridge.MinaWrapChallenges.phase1_shape_discriminates' does not depend on any axioms
+info: Dregg2/Bridge/MinaWrapChallenges.lean:436:0: 'Dregg2.Bridge.MinaWrapChallenges.challengesGate_is_the_derivation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3310/3340] Replayed Dregg2.Bridge.MinaWrapFtEval0
+info: Dregg2/Bridge/MinaWrapFtEval0.lean:596:0: 'Dregg2.Bridge.MinaWrapFtEval0.cols_shape_discriminates' depends on axioms: [propext, Quot.sound]
+info: Dregg2/Bridge/MinaWrapFtEval0.lean:597:0: 'Dregg2.Bridge.MinaWrapFtEval0.ftGate_is_the_derivation' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3312/3340] Built Dregg2.Games.PathOfAngels.DeckDescent (39s)
+✔ [3313/3340] Built Dregg2.Games.PathOfAngels.Judged (4.5s)
+✔ [3314/3340] Built Dregg2.Games.PathOfAngels.DeckDescentEmit (1.6s)
+✔ [3315/3340] Built Dregg2.Games.PathOfAngels.Canon (1.2s)
+⚠ [3316/3340] Built Dregg2.Games.PathOfAngels.Emit (12s)
+warning: Dregg2/Games/PathOfAngels/Emit.lean:465:13: This simp argument is unused:
+  List.all_eq_true
+
+Hint: Omit it from the simp argument list.
+  simp only [̵L̵i̵s̵t̵.̵a̵l̵l̵_̵e̵q̵_̵t̵r̵u̵e̵]̵ ̵at hrow
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Dregg2/Games/PathOfAngels/Emit.lean:756:2: `String.mk` has been deprecated: Use `String.ofList` instead
+✔ [3317/3340] Built Dregg2.Games.PathOfAngels.AttendantKernel (4.5s)
+✔ [3318/3340] Built Dregg2.Games.PathOfAngels.FieldArchive (970ms)
+✔ [3319/3340] Built Dregg2.Games.PathOfAngels.NetworkJudgeWire (3.3s)
+✔ [3320/3340] Built Dregg2.Games.PathOfAngels.AttendantContinuityAggregate (7.0s)
+✔ [3321/3340] Built Dregg2.Games.PathOfAngels.DeckDescentFixtures (96s)
+✔ [3322/3340] Built Dregg2.Games.PathOfAngels.StationDailyRuntime (1.7s)
+✔ [3323/3340] Built Dregg2.Games.PathOfAngels.NetworkGenesisWire (19s)
+✔ [3324/3340] Built Dregg2.Games.PathOfAngels.SlotDeriveRuntime (1.3s)
+✔ [3325/3340] Built Dregg2.Games.PathOfAngels.BazaarGame (81s)
+✔ [3326/3340] Built Dregg2.Games.PathOfAngels.StationCrateOpenRuntime (1.3s)
+✔ [3327/3340] Built Dregg2.Games.PathOfAngels.NetworkGenesis (1.8s)
+✔ [3328/3340] Built Dregg2.Games.PathOfAngels.SignalFeedbackRuntime (1.0s)
+✔ [3329/3340] Built Dregg2.Games.PathOfAngels.NetworkJudge (4.5s)
+✔ [3330/3340] Built Dregg2.Games.PathOfAngels.BazaarGameRuntime (2.8s)
+✔ [3331/3340] Built Dregg2.Games.PathOfAngels.FinalizedRunEventAggregate (2.4s)
+✔ [3332/3340] Built Dregg2.Games.PathOfAngels.ShipExpeditionSeason (5.6s)
+⚠ [3333/3340] Built Dregg2.Games.PathOfAngels.RecordsRuntime (1.7s)
+warning: Dregg2/Games/PathOfAngels/RecordsRuntime.lean:669:12: This simp argument is unused:
+  hs
+
+Hint: Omit it from the simp argument list.
+  simp ̵[̵h̵s̵]̵
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [3334/3340] Built Dregg2.Games.PathOfAngels.ShipLifeProgression (4.6s)
+✔ [3335/3340] Built Dregg2.Games.PathOfAngels.NetworkJudgeFixtures (7.7s)
+✔ [3336/3340] Built Dregg2.Games.PathOfAngels.NightWatchCampaign (3.2s)
+✔ [3337/3340] Built Dregg2.Games.PathOfAngels.NightWatchCampaignAdmission (2.2s)
+✔ [3338/3340] Built Dregg2.Games.PathOfAngels.NightWatchCampaignWire (6.2s)
+✔ [3339/3340] Built Dregg2.Games.PathOfAngels.CrewFieldMissionAdmission (6.8s)
+✔ [3340/3340] Built Dregg2.FFI (9.2s)
+Build completed successfully (3340 jobs).
+pbuild: VERDICT outcome=PASS status=0 lane=hcargo host=hbox cmd=cd metatheory && timeout --signal=TERM --kill-after=15s 1800s lake build Dregg2.Games.PathOfAngels.NetworkJudgeFixtures Dregg2.Games.PathOfAngels.DeckDescentFixtures Dregg2.FFI

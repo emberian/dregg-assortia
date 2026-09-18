@@ -1,0 +1,6 @@
+'Minidregg.Compiler.CanonicalPolicyAdmission.admit_preserves_evidence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Compiler.CanonicalPolicyAdmission.verifies_policy_generation_independent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

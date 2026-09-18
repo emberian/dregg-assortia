@@ -1,0 +1,60 @@
+{
+  "captured_utc": "2026-09-18T07:22:14.906496+00:00",
+  "owned_sources": {
+    "Kernel/PolicyInstallController.lean": "aa967d1de89d9b6c80706e8c601e99a4833663be9222f87b075a9bc0a056663d",
+    "Kernel/PolicyInstallReceiver.lean": "bad9205811909d96444c47935b48233ebb6183d76ae4cd7eb801de8267bd3c45",
+    "scripts/probe-policy-install-receiver.lean": "9af42dd684f1c0a3d18d66d83a254a99bd6ca61cc22a5a39b2dcf33c5d5a89a9",
+    "scripts/probe-credential-capability-use.lean": "06b7a66a270db6e8f30db5eb5a2b3bea22b1e23b0bbb4b4e0b77e22a14bc951f"
+  },
+  "checks": [
+    {
+      "name": "installer semantic module + installed generation/capability axiom pins",
+      "exit": 0,
+      "log": "/tmp/dregg-resume-policy-install-controller.log"
+    },
+    {
+      "name": "actual physical receiver exact-image CAS module",
+      "exit": 0,
+      "log": "/tmp/dregg-resume-policy-install-receiver.log"
+    },
+    {
+      "name": "repeated-install probe source check",
+      "exit": 0,
+      "log": "/tmp/dregg-resume-policy-install-probe-check.log"
+    },
+    {
+      "name": "native SQLite repeated installations, retained owner/control grants, current rules, lockout, replay",
+      "exit": 0,
+      "log": "/tmp/dregg-resume-policy-install-native.log",
+      "source_manifest": "/tmp/dregg-resume-policy-install-native-sources.json",
+      "source_stability": "/tmp/dregg-resume-policy-install-native-source-stability.json",
+      "attribution": "Consumed pre-codec-factor DeclaredResourceController ca22fd70077620c6bc16990ca2eb7537d9eb12c3c217b921adc75636b3a26918. Exact source preserved at /tmp/dregg-declared-before-history-codec.lean. Later encoder-factor equivalence proof belongs to birth-review, not this runtime verdict."
+    },
+    {
+      "name": "all public receiver theorem axiom audit",
+      "exit": 0,
+      "declarations": 26,
+      "unexpected_axioms": [],
+      "log": "/tmp/dregg-resume-policy-install-axioms.log"
+    },
+    {
+      "name": "migrated legacy capability probe source check",
+      "exit": 0,
+      "log": "/tmp/dregg-resume-capability-use-check.log"
+    },
+    {
+      "name": "native signature + capability negative matrix",
+      "exit": 0,
+      "log": "/tmp/dregg-resume-capability-use-native.log",
+      "source_manifest": "/tmp/dregg-resume-capability-use-native-sources.json",
+      "source_stability": "/tmp/dregg-resume-capability-use-source-stability.json"
+    }
+  ],
+  "attempt1": {
+    "result": "FAIL second-install fixture used global verb ordinal10; actual runtime local tag4 correctly denied source policy. Fixed fixture to actual typed EntryCodec.verbTag; no production gate change.",
+    "log": "/tmp/dregg-resume-policy-install-native-attempt1.log",
+    "source_manifest": "/tmp/dregg-resume-policy-install-native-attempt1-sources.json"
+  },
+  "scope": "Kernel-native Lean + real native Ed25519 and SQLite fixture. Not production field choice, STARK statement closure, or complete shellserver. Separate born-grant provenance joint witness belongs to journey lane.",
+  "compiler_seat": "released; no active process"
+}

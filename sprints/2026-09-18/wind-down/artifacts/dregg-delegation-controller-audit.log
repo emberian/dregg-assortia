@@ -1,0 +1,21 @@
+'Minidregg.Kernel.CapabilityDelegationController.command_decode_canonical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Kernel.CapabilityDelegationController.universe_authState_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Kernel.CapabilityDelegationController.child_anchored' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Kernel.CapabilityDelegationController.Accepted.post_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Kernel.CapabilityDelegationController.Accepted.child_lineage' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Kernel.CapabilityDelegationController.Accepted.parent_authorized' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Kernel.CapabilityDelegationController.Accepted.policy_evaluated_actual_post' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

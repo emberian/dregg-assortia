@@ -1,0 +1,2357 @@
+pbuild: host is Darwin-arm64, hbox is Linux-x86_64 — NOT shipping
+        dregg-lean-ffi/libdregg_lean.a (it is arch-specific; a cross-shipped archive links as
+        'neither ET_REL nor LLVM bitcode'). The lane gets a platform-native one from
+        the release instead — see ARCHIVE PROVISIONING below.
+cannot delete non-empty directory: drive59-baseline
+pbuild:   archive present, vouched by its provenance record (skipping the ~8s export rescan).
+pbuild: lean archive kept in lane 'hcargo' (release, 0s)
+        Dregg2 provenance: tree fc2be11509bb — NOT any of the last 40 commits of this history
+        ⚠ metatheory/Dregg2 is DIRTY here, and the lane received the WORKING tree while
+          a seed is keyed to a COMMITTED one — so no published asset can correspond to
+          the sources being built. dregg-lean-ffi/build.rs is the authority: it splices
+          the current slice over the seed from a warm .lake and refuses a stale one
+          under DREGG_REQUIRE_LEAN=1.
+pbuild: forwarding LEAN_NUM_THREADS SWARM_MEM_MAX DREGG_REQUIRE_LEAN DREGG_LEANC_JOBS to hbox
+warning: ignoring --test-threads because --no-capture is specified
+   Compiling proc-macro2 v1.0.106
+   Compiling libc v0.2.186
+   Compiling typeid v1.0.3
+   Compiling serde_fmt v1.1.0
+   Compiling erased-serde v0.4.10
+   Compiling either v1.16.0
+   Compiling quote v1.0.46
+   Compiling syn v2.0.118
+   Compiling value-bag-serde1 v1.12.0
+   Compiling value-bag v1.12.0
+   Compiling getrandom v0.2.17
+   Compiling rand_core v0.6.4
+   Compiling log v0.4.33
+   Compiling rayon v1.12.0
+   Compiling smallvec v1.15.2
+   Compiling getrandom v0.4.3
+   Compiling indexmap v2.14.0
+   Compiling itertools v0.14.0
+   Compiling rand v0.10.1
+   Compiling p3-maybe-rayon v0.5.1 (https://github.com/Plonky3/Plonky3?rev=82cfad73cd734d37a0d51953094f970c531817ec#82cfad73)
+   Compiling winnow v1.0.3
+   Compiling parking_lot_core v0.9.12
+   Compiling getrandom v0.3.4
+   Compiling parking_lot v0.12.5
+   Compiling futures-io v0.3.32
+   Compiling byteorder v1.5.0
+   Compiling rustix v1.1.4
+   Compiling toml_parser v1.1.2+spec-1.1.0
+   Compiling linux-raw-sys v0.12.1
+   Compiling syn v1.0.109
+   Compiling toml_edit v0.25.12+spec-1.1.0
+   Compiling errno v0.3.14
+   Compiling signal-hook-registry v1.4.8
+   Compiling proc-macro-crate v3.5.0
+   Compiling serde_json v1.0.150
+   Compiling ff v0.13.1
+   Compiling group v0.13.0
+   Compiling blake3 v1.8.5
+   Compiling hash32 v0.2.1
+   Compiling synstructure v0.13.2
+   Compiling regex-automata v0.4.14
+   Compiling rand_core v0.9.5
+   Compiling darling_core v0.23.0
+   Compiling serde_derive v1.0.228
+   Compiling zeroize_derive v1.5.0
+   Compiling zerocopy-derive v0.8.52
+   Compiling zeroize v1.9.0
+   Compiling generic-array v0.14.7
+   Compiling tracing-attributes v0.1.31
+   Compiling crypto-common v0.1.7
+   Compiling block-buffer v0.10.4
+   Compiling digest v0.10.7
+   Compiling zerocopy v0.8.52
+   Compiling thiserror-impl v2.0.18
+   Compiling serde v1.0.228
+   Compiling sha2 v0.10.9
+   Compiling ppv-lite86 v0.2.21
+   Compiling p3-util v0.5.1 (https://github.com/Plonky3/Plonky3?rev=82cfad73cd734d37a0d51953094f970c531817ec#82cfad73)
+   Compiling hex v0.4.3
+   Compiling bytemuck_derive v1.10.2
+   Compiling rand_chacha v0.3.1
+   Compiling rand v0.8.6
+   Compiling num-bigint v0.4.6
+   Compiling tracing v0.1.44
+   Compiling p3-field v0.5.1 (https://github.com/Plonky3/Plonky3?rev=82cfad73cd734d37a0d51953094f970c531817ec#82cfad73)
+   Compiling p3-matrix v0.5.1 (https://github.com/Plonky3/Plonky3?rev=82cfad73cd734d37a0d51953094f970c531817ec#82cfad73)
+   Compiling p3-symmetric v0.5.1 (https://github.com/Plonky3/Plonky3?rev=82cfad73cd734d37a0d51953094f970c531817ec#82cfad73)
+   Compiling p3-dft v0.5.1 (https://github.com/Plonky3/Plonky3?rev=82cfad73cd734d37a0d51953094f970c531817ec#82cfad73)
+   Compiling p3-mds v0.5.1 (https://github.com/Plonky3/Plonky3?rev=82cfad73cd734d37a0d51953094f970c531817ec#82cfad73)
+   Compiling p3-poseidon2 v0.5.1 (https://github.com/Plonky3/Plonky3?rev=82cfad73cd734d37a0d51953094f970c531817ec#82cfad73)
+   Compiling p3-poseidon1 v0.5.1 (https://github.com/Plonky3/Plonky3?rev=82cfad73cd734d37a0d51953094f970c531817ec#82cfad73)
+   Compiling hmac v0.12.1
+   Compiling p3-multilinear-util v0.5.1 (https://github.com/Plonky3/Plonky3?rev=82cfad73cd734d37a0d51953094f970c531817ec#82cfad73)
+   Compiling p3-monty-31 v0.5.1 (https://github.com/Plonky3/Plonky3?rev=82cfad73cd734d37a0d51953094f970c531817ec#82cfad73)
+   Compiling p3-challenger v0.5.1 (/tank/dregg-build/hcargo/vendor/plonky3-challenger-82cfad73)
+   Compiling p3-air v0.5.1 (https://github.com/Plonky3/Plonky3?rev=82cfad73cd734d37a0d51953094f970c531817ec#82cfad73)
+   Compiling p3-commit v0.5.1 (https://github.com/Plonky3/Plonky3?rev=82cfad73cd734d37a0d51953094f970c531817ec#82cfad73)
+   Compiling thiserror-impl v1.0.69
+   Compiling curve25519-dalek-derive v0.1.1
+   Compiling thiserror v2.0.18
+   Compiling p3-fri v0.5.1 (/tank/dregg-build/hcargo/vendor/plonky3-fri-82cfad73)
+   Compiling p3-uni-stark v0.5.1 (https://github.com/Plonky3/Plonky3?rev=82cfad73cd734d37a0d51953094f970c531817ec#82cfad73)
+   Compiling bytemuck v1.25.0
+   Compiling cobs v0.3.0
+   Compiling p3-baby-bear v0.5.1 (https://github.com/Plonky3/Plonky3?rev=82cfad73cd734d37a0d51953094f970c531817ec#82cfad73)
+   Compiling p3-lookup v0.5.1 (https://github.com/Plonky3/Plonky3?rev=82cfad73cd734d37a0d51953094f970c531817ec#82cfad73)
+   Compiling heapless v0.7.17
+   Compiling postcard v1.1.3
+   Compiling p3-poseidon1-air v0.5.1 (https://github.com/Plonky3/Plonky3?rev=82cfad73cd734d37a0d51953094f970c531817ec#82cfad73)
+   Compiling p3-koala-bear v0.5.1 (https://github.com/Plonky3/Plonky3?rev=82cfad73cd734d37a0d51953094f970c531817ec#82cfad73)
+   Compiling p3-goldilocks v0.5.1 (https://github.com/Plonky3/Plonky3?rev=82cfad73cd734d37a0d51953094f970c531817ec#82cfad73)
+   Compiling curve25519-dalek v4.1.3 (/tank/dregg-build/hcargo/vendor/curve25519-dalek-dregg)
+warning: the feature `avx512_target_feature` has been stable since 1.89.0 and no longer requires an attribute to enable
+  --> vendor/curve25519-dalek-dregg/src/lib.rs:23:13
+   |
+23 |     feature(avx512_target_feature)
+   |             ^^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: `#[warn(stable_features)]` on by default
+
+warning: the feature `stdarch_x86_avx512` has been stable since 1.89.0 and no longer requires an attribute to enable
+  --> vendor/curve25519-dalek-dregg/src/lib.rs:19:13
+   |
+19 |     feature(stdarch_x86_avx512)
+   |             ^^^^^^^^^^^^^^^^^^
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:51:17
+    |
+ 51 |                   unsafe {
+    |                   ^^^^^^ unnecessary `unsafe` block
+...
+213 | / impl_shared!(
+214 | |     u64x4,
+215 | |     u64,
+216 | |     _mm256_add_epi64,
+...   |
+220 | |     _mm256_extract_epi64
+221 | | );
+    | |_- in this macro invocation
+    |
+    = note: `#[warn(unused_unsafe)]` (part of `#[warn(unused)]`) on by default
+    = note: this warning originates in the macro `impl_shared` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:86:17
+    |
+ 86 |                   unsafe { core::arch::x86_64::$add_intrinsic(self.0, rhs.0).into() }
+    |                   ^^^^^^ unnecessary `unsafe` block
+...
+213 | / impl_shared!(
+214 | |     u64x4,
+215 | |     u64,
+216 | |     _mm256_add_epi64,
+...   |
+220 | |     _mm256_extract_epi64
+221 | | );
+    | |_- in this macro invocation
+    |
+    = note: this warning originates in the macro `impl_shared` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:105:17
+    |
+105 |                   unsafe { core::arch::x86_64::$sub_intrinsic(self.0, rhs.0).into() }
+    |                   ^^^^^^ unnecessary `unsafe` block
+...
+213 | / impl_shared!(
+214 | |     u64x4,
+215 | |     u64,
+216 | |     _mm256_add_epi64,
+...   |
+220 | |     _mm256_extract_epi64
+221 | | );
+    | |_- in this macro invocation
+    |
+    = note: this warning originates in the macro `impl_shared` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:115:17
+    |
+115 |                   unsafe { core::arch::x86_64::_mm256_and_si256(self.0, rhs.0).into() }
+    |                   ^^^^^^ unnecessary `unsafe` block
+...
+213 | / impl_shared!(
+214 | |     u64x4,
+215 | |     u64,
+216 | |     _mm256_add_epi64,
+...   |
+220 | |     _mm256_extract_epi64
+221 | | );
+    | |_- in this macro invocation
+    |
+    = note: this warning originates in the macro `impl_shared` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:125:17
+    |
+125 |                   unsafe { core::arch::x86_64::_mm256_xor_si256(self.0, rhs.0).into() }
+    |                   ^^^^^^ unnecessary `unsafe` block
+...
+213 | / impl_shared!(
+214 | |     u64x4,
+215 | |     u64,
+216 | |     _mm256_add_epi64,
+...   |
+220 | |     _mm256_extract_epi64
+221 | | );
+    | |_- in this macro invocation
+    |
+    = note: this warning originates in the macro `impl_shared` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:152:17
+    |
+152 |                   unsafe { core::arch::x86_64::$shl_intrinsic(self.0, N).into() }
+    |                   ^^^^^^ unnecessary `unsafe` block
+...
+213 | / impl_shared!(
+214 | |     u64x4,
+215 | |     u64,
+216 | |     _mm256_add_epi64,
+...   |
+220 | |     _mm256_extract_epi64
+221 | | );
+    | |_- in this macro invocation
+    |
+    = note: this warning originates in the macro `impl_shared` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:157:17
+    |
+157 |                   unsafe { core::arch::x86_64::$shr_intrinsic(self.0, N).into() }
+    |                   ^^^^^^ unnecessary `unsafe` block
+...
+213 | / impl_shared!(
+214 | |     u64x4,
+215 | |     u64,
+216 | |     _mm256_add_epi64,
+...   |
+220 | |     _mm256_extract_epi64
+221 | | );
+    | |_- in this macro invocation
+    |
+    = note: this warning originates in the macro `impl_shared` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:162:17
+    |
+162 |                   unsafe { core::arch::x86_64::$extract_intrinsic(self.0, N) as $lane_ty }
+    |                   ^^^^^^ unnecessary `unsafe` block
+...
+213 | / impl_shared!(
+214 | |     u64x4,
+215 | |     u64,
+216 | |     _mm256_add_epi64,
+...   |
+220 | |     _mm256_extract_epi64
+221 | | );
+    | |_- in this macro invocation
+    |
+    = note: this warning originates in the macro `impl_shared` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:51:17
+    |
+ 51 |                   unsafe {
+    |                   ^^^^^^ unnecessary `unsafe` block
+...
+222 | / impl_shared!(
+223 | |     u32x8,
+224 | |     u32,
+225 | |     _mm256_add_epi32,
+...   |
+229 | |     _mm256_extract_epi32
+230 | | );
+    | |_- in this macro invocation
+    |
+    = note: this warning originates in the macro `impl_shared` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:86:17
+    |
+ 86 |                   unsafe { core::arch::x86_64::$add_intrinsic(self.0, rhs.0).into() }
+    |                   ^^^^^^ unnecessary `unsafe` block
+...
+222 | / impl_shared!(
+223 | |     u32x8,
+224 | |     u32,
+225 | |     _mm256_add_epi32,
+...   |
+229 | |     _mm256_extract_epi32
+230 | | );
+    | |_- in this macro invocation
+    |
+    = note: this warning originates in the macro `impl_shared` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:105:17
+    |
+105 |                   unsafe { core::arch::x86_64::$sub_intrinsic(self.0, rhs.0).into() }
+    |                   ^^^^^^ unnecessary `unsafe` block
+...
+222 | / impl_shared!(
+223 | |     u32x8,
+224 | |     u32,
+225 | |     _mm256_add_epi32,
+...   |
+229 | |     _mm256_extract_epi32
+230 | | );
+    | |_- in this macro invocation
+    |
+    = note: this warning originates in the macro `impl_shared` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:115:17
+    |
+115 |                   unsafe { core::arch::x86_64::_mm256_and_si256(self.0, rhs.0).into() }
+    |                   ^^^^^^ unnecessary `unsafe` block
+...
+222 | / impl_shared!(
+223 | |     u32x8,
+224 | |     u32,
+225 | |     _mm256_add_epi32,
+...   |
+229 | |     _mm256_extract_epi32
+230 | | );
+    | |_- in this macro invocation
+    |
+    = note: this warning originates in the macro `impl_shared` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:125:17
+    |
+125 |                   unsafe { core::arch::x86_64::_mm256_xor_si256(self.0, rhs.0).into() }
+    |                   ^^^^^^ unnecessary `unsafe` block
+...
+222 | / impl_shared!(
+223 | |     u32x8,
+224 | |     u32,
+225 | |     _mm256_add_epi32,
+...   |
+229 | |     _mm256_extract_epi32
+230 | | );
+    | |_- in this macro invocation
+    |
+    = note: this warning originates in the macro `impl_shared` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:152:17
+    |
+152 |                   unsafe { core::arch::x86_64::$shl_intrinsic(self.0, N).into() }
+    |                   ^^^^^^ unnecessary `unsafe` block
+...
+222 | / impl_shared!(
+223 | |     u32x8,
+224 | |     u32,
+225 | |     _mm256_add_epi32,
+...   |
+229 | |     _mm256_extract_epi32
+230 | | );
+    | |_- in this macro invocation
+    |
+    = note: this warning originates in the macro `impl_shared` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:157:17
+    |
+157 |                   unsafe { core::arch::x86_64::$shr_intrinsic(self.0, N).into() }
+    |                   ^^^^^^ unnecessary `unsafe` block
+...
+222 | / impl_shared!(
+223 | |     u32x8,
+224 | |     u32,
+225 | |     _mm256_add_epi32,
+...   |
+229 | |     _mm256_extract_epi32
+230 | | );
+    | |_- in this macro invocation
+    |
+    = note: this warning originates in the macro `impl_shared` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:162:17
+    |
+162 |                   unsafe { core::arch::x86_64::$extract_intrinsic(self.0, N) as $lane_ty }
+    |                   ^^^^^^ unnecessary `unsafe` block
+...
+222 | / impl_shared!(
+223 | |     u32x8,
+224 | |     u32,
+225 | |     _mm256_add_epi32,
+...   |
+229 | |     _mm256_extract_epi32
+230 | | );
+    | |_- in this macro invocation
+    |
+    = note: this warning originates in the macro `impl_shared` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:258:9
+    |
+258 |         unsafe {
+    |         ^^^^^^ unnecessary `unsafe` block
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:270:9
+    |
+270 |         unsafe { u64x4(core::arch::x86_64::_mm256_set1_epi64x(x as i64)) }
+    |         ^^^^^^ unnecessary `unsafe` block
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:309:9
+    |
+309 |         unsafe {
+    |         ^^^^^^ unnecessary `unsafe` block
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:322:9
+    |
+322 |         unsafe { u32x8(core::arch::x86_64::_mm256_set1_epi32(x as i32)) }
+    |         ^^^^^^ unnecessary `unsafe` block
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:335:9
+    |
+335 |         unsafe { core::arch::x86_64::_mm256_mul_epu32(self.0, rhs.0).into() }
+    |         ^^^^^^ unnecessary `unsafe` block
+
+warning: unnecessary `unsafe` block
+  --> vendor/curve25519-dalek-dregg/src/backend/vector/avx2/field.rs:68:5
+   |
+68 |     unsafe {
+   |     ^^^^^^ unnecessary `unsafe` block
+
+warning: unnecessary `unsafe` block
+  --> vendor/curve25519-dalek-dregg/src/backend/vector/avx2/field.rs:89:5
+   |
+89 |     unsafe {
+   |     ^^^^^^ unnecessary `unsafe` block
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/avx2/field.rs:432:13
+    |
+432 |             unsafe {
+    |             ^^^^^^ unnecessary `unsafe` block
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/avx2/field.rs:456:13
+    |
+456 |             unsafe {
+    |             ^^^^^^ unnecessary `unsafe` block
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/avx2/field.rs:479:28
+    |
+479 |         let c9_19: u32x8 = unsafe {
+    |                            ^^^^^^ unnecessary `unsafe` block
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/avx2/field.rs:663:13
+    |
+663 |             unsafe {
+    |             ^^^^^^ unnecessary `unsafe` block
+
+warning: unnecessary `unsafe` block
+  --> vendor/curve25519-dalek-dregg/src/backend/vector/ifma/field.rs:63:5
+   |
+63 |     unsafe {
+   |     ^^^^^^ unnecessary `unsafe` block
+
+warning: unnecessary `unsafe` block
+  --> vendor/curve25519-dalek-dregg/src/backend/vector/ifma/field.rs:95:5
+   |
+95 |     unsafe {
+   |     ^^^^^^ unnecessary `unsafe` block
+
+   Compiling rmp-serde v1.3.1
+   Compiling unroll v0.1.5
+   Compiling thiserror v1.0.69
+   Compiling der_derive v0.7.3
+   Compiling p3-keccak v0.5.1 (https://github.com/Plonky3/Plonky3?rev=82cfad73cd734d37a0d51953094f970c531817ec#82cfad73)
+warning: `curve25519-dalek` (lib) generated 31 warnings
+   Compiling strum_macros v0.28.0
+   Compiling p3-poseidon2-air v0.5.1 (https://github.com/Plonky3/Plonky3?rev=82cfad73cd734d37a0d51953094f970c531817ec#82cfad73)
+   Compiling p3-batch-stark v0.5.1 (https://github.com/Plonky3/Plonky3?rev=82cfad73cd734d37a0d51953094f970c531817ec#82cfad73)
+   Compiling p3-merkle-tree v0.5.1 (https://github.com/Plonky3/Plonky3?rev=82cfad73cd734d37a0d51953094f970c531817ec#82cfad73)
+   Compiling p3-poseidon1-circuit-air v0.1.0 (https://github.com/emberian/plonky3-recursion?rev=fc3c6df#fc3c6dfa)
+   Compiling futures-macro v0.3.32
+   Compiling hkdf v0.12.4
+   Compiling dregg-codec v0.1.0 (/tank/dregg-build/hcargo/dregg-codec)
+   Compiling hashbrown v0.15.5
+   Compiling dregg-dsl v0.1.0 (/tank/dregg-build/hcargo/dregg-dsl)
+   Compiling rand_chacha v0.9.0
+   Compiling rand v0.9.4
+   Compiling signature v2.2.0
+   Compiling darling_macro v0.23.0
+   Compiling der v0.7.10
+   Compiling futures-util v0.3.32
+   Compiling spki v0.7.3
+   Compiling darling v0.23.0
+   Compiling displaydoc v0.2.6
+   Compiling zerofrom-derive v0.1.7
+   Compiling pkcs8 v0.10.2
+   Compiling mio v1.2.1
+   Compiling serde_with_macros v3.21.0
+   Compiling p3-circuit v0.1.0 (https://github.com/emberian/plonky3-recursion?rev=fc3c6df#fc3c6dfa)
+   Compiling p3-poseidon2-circuit-air v0.1.0 (https://github.com/emberian/plonky3-recursion?rev=fc3c6df#fc3c6dfa)
+   Compiling dregg-circuit v0.1.0 (/tank/dregg-build/hcargo/circuit)
+   Compiling tiny-keccak v2.0.2
+   Compiling const-random-macro v0.1.16
+   Compiling sha3 v0.10.9
+   Compiling tokio-macros v2.7.0
+warning: unused import: `crate::dsl::descriptors::merkle_poseidon2_circuit`
+  --> circuit/src/body_membership.rs:24:5
+   |
+24 | use crate::dsl::descriptors::merkle_poseidon2_circuit;
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `AccumulatorNonMembershipWitness`
+  --> circuit/src/dsl/accumulator.rs:25:24
+   |
+25 |     ACCUMULATOR_WIDTH, AccumulatorNonMembershipWitness, AccumulatorNonRevocationWitness, ExtElem,
+   |                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused imports: `BoundaryDef`, `BoundaryRow`, `CircuitDescriptor`, `ColumnDef`, `ColumnKind`, `ConstraintExpr`, and `DslCircuit`
+  --> circuit/src/dsl/fold.rs:30:5
+   |
+30 |     BoundaryDef, BoundaryRow, CircuitDescriptor, ColumnDef, ColumnKind, ConstraintExpr, DslCircuit,
+   |     ^^^^^^^^^^^  ^^^^^^^^^^^  ^^^^^^^^^^^^^^^^^  ^^^^^^^^^  ^^^^^^^^^^  ^^^^^^^^^^^^^^  ^^^^^^^^^^
+
+warning: unused import: `hash_4_to_1`
+ --> circuit/src/effect_vm/trace.rs:8:37
+  |
+8 | use crate::poseidon2::{hash_2_to_1, hash_4_to_1};
+  |                                     ^^^^^^^^^^^
+
+warning: private item shadows public glob re-export
+  --> circuit/src/effect_vm/trace_rotated.rs:47:13
+   |
+47 | use super::{EFFECT_VM_WIDTH, EffectVmContext, generate_effect_vm_trace_ext};
+   |             ^^^^^^^^^^^^^^^
+   |
+note: the name `EFFECT_VM_WIDTH` in the value namespace is supposed to be publicly re-exported here
+  --> circuit/src/effect_vm/trace_rotated.rs:52:9
+   |
+52 | pub use crate::effect_vm::layout_generated::*;
+   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+note: but the private item here shadows it
+  --> circuit/src/effect_vm/trace_rotated.rs:47:13
+   |
+47 | use super::{EFFECT_VM_WIDTH, EffectVmContext, generate_effect_vm_trace_ext};
+   |             ^^^^^^^^^^^^^^^
+   = note: `#[warn(hidden_glob_reexports)]` on by default
+
+warning: unused import: `EFFECT_VM_WIDTH`
+  --> circuit/src/effect_vm/transfer_fee_avail_weld.rs:37:5
+   |
+37 |     EFFECT_VM_WIDTH, PARAM_BASE, STATE_AFTER_BASE, STATE_BEFORE_BASE, param, state,
+   |     ^^^^^^^^^^^^^^^
+
+warning: unused imports: `prove` and `verify`
+  --> circuit/src/plonky3_prover.rs:40:40
+   |
+40 | use p3_uni_stark::{Proof, StarkConfig, prove, verify};
+   |                                        ^^^^^  ^^^^^^
+
+warning: unused doc comment
+   --> circuit/src/refusal.rs:485:1
+    |
+485 | / /// Set while this thread is inside [`catch_quietly`]. The hook installed below reads it, so
+486 | | /// silencing is scoped to the thread that asked for it.
+    | |_-------------------------------------------------------^
+    |   |
+    |   rustdoc does not generate documentation for macro invocations
+    |
+    = help: to document an item produced by a macro, the macro must produce the documentation as part of its expansion
+    = note: `#[warn(unused_doc_comments)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `crate::dsl::predicates::*`
+   --> circuit/src/lib.rs:700:13
+    |
+700 |     pub use crate::dsl::predicates::*;
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `crate::dsl::predicates::*`
+   --> circuit/src/lib.rs:701:13
+    |
+701 |     pub use crate::dsl::predicates::*;
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+   Compiling serde_with v3.21.0
+warning: unused import: `WindowAccess`
+  --> circuit/src/plonky3_prover.rs:29:40
+   |
+29 | use p3_air::{Air, AirBuilder, BaseAir, WindowAccess};
+   |                                        ^^^^^^^^^^^^
+
+warning: unused import: `BaseAir`
+  --> circuit/src/plonky3_prover.rs:29:31
+   |
+29 | use p3_air::{Air, AirBuilder, BaseAir, WindowAccess};
+   |                               ^^^^^^^
+
+warning: unused import: `Air`
+  --> circuit/src/plonky3_prover.rs:29:14
+   |
+29 | use p3_air::{Air, AirBuilder, BaseAir, WindowAccess};
+   |              ^^^
+
+   Compiling enum-ordinalize-derive v4.3.2
+   Compiling zerofrom v0.1.8
+   Compiling socket2 v0.6.4
+   Compiling ahash v0.8.12
+   Compiling tokio v1.52.3
+warning: variable does not need to be mutable
+    --> circuit/src/descriptor_ir2.rs:5712:9
+     |
+5712 |     let mut fact_hist: BTreeMap<(u32, u32, u32), u64> = BTreeMap::new();
+     |         ----^^^^^^^^^
+     |         |
+     |         help: remove this `mut`
+     |
+     = note: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+warning: variable does not need to be mutable
+   --> circuit/src/table_air.rs:404:13
+    |
+404 |         let mut share_out_of_range = |e: &TableExpr, what: &str| -> Result<(), String> {
+    |             ----^^^^^^^^^^^^^^^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> circuit/src/table_air.rs:428:13
+    |
+428 |         let mut prep_out_of_range = |e: &TableExpr, what: &str| -> Result<(), String> {
+    |             ----^^^^^^^^^^^^^^^^^
+    |             |
+    |             help: remove this `mut`
+
+   Compiling ark-std v0.5.0
+   Compiling const-random v0.1.18
+   Compiling serde-encoded-bytes v0.2.1
+warning: type `CompiledMain` is more private than the item `Ir2Air::Main::compiled`
+    --> circuit/src/descriptor_ir2.rs:3672:9
+     |
+3672 |         compiled: Arc<crate::flat_eval::CompiledMain>,
+     |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ field `Ir2Air::Main::compiled` is reachable at visibility `pub`
+     |
+note: but type `CompiledMain` is only usable at visibility `pub(crate)`
+    --> circuit/src/flat_eval.rs:368:1
+     |
+ 368 | pub(crate) struct CompiledMain {
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+     = note: `#[warn(private_interfaces)]` on by default
+
+warning: type `CompiledTable` is more private than the item `Ir2Air::LeanTable::compiled`
+    --> circuit/src/descriptor_ir2.rs:3760:9
+     |
+3760 |         compiled: Arc<crate::flat_eval::CompiledTable>,
+     |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ field `Ir2Air::LeanTable::compiled` is reachable at visibility `pub`
+     |
+note: but type `CompiledTable` is only usable at visibility `pub(crate)`
+    --> circuit/src/flat_eval.rs:418:1
+     |
+ 418 | pub(crate) struct CompiledTable {
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: method `resolve_row` is never used
+   --> circuit/src/dsl/circuit.rs:636:8
+    |
+635 | impl BoundaryDef {
+    | ---------------- method in this implementation
+636 |     fn resolve_row(&self, trace_len: usize) -> usize {
+    |        ^^^^^^^^^^^
+    |
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: field `lookup_index` is never read
+   --> circuit/src/dsl/circuit.rs:673:5
+    |
+668 | pub struct DslCircuit {
+    |            ---------- field in this struct
+...
+673 |     lookup_index: LookupIndex,
+    |     ^^^^^^^^^^^^
+
+warning: field `set_elements` is never read
+   --> circuit/src/non_membership.rs:140:5
+    |
+138 | pub struct NonMembershipProver {
+    |            ------------------- field in this struct
+139 |     /// The set's elements (needed for witness generation).
+140 |     set_elements: Vec<BabyBear>,
+    |     ^^^^^^^^^^^^
+    |
+    = note: `NonMembershipProver` has derived impls for the traits `Debug` and `Clone`, but these are intentionally ignored during dead code analysis
+
+warning: constant `ROUND_STATES_OFFSET` is never used
+   --> circuit/src/plonky3_prover.rs:289:7
+    |
+289 | const ROUND_STATES_OFFSET: usize = 5;
+    |       ^^^^^^^^^^^^^^^^^^^
+
+warning: constant `PARENT_COL` is never used
+   --> circuit/src/plonky3_prover.rs:292:7
+    |
+292 | const PARENT_COL: usize = P3_TRACE_WIDTH - 1; // 245
+    |       ^^^^^^^^^^
+
+warning: function `vm_site_digest_concrete` is never used
+    --> circuit/src/lean_descriptor_air.rs:1633:15
+     |
+1633 | pub(crate) fn vm_site_digest_concrete(
+     |               ^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: constant `CHIP_MULT_STATE16` is never used
+    --> circuit/src/descriptor_ir2.rs:3505:7
+     |
+3505 | const CHIP_MULT_STATE16: usize = CHIP_MULT_NARROW;
+     |       ^^^^^^^^^^^^^^^^^
+
+warning: function `hash2_state_c` is never used
+    --> circuit/src/descriptor_ir2.rs:5248:4
+     |
+5248 | fn hash2_state_c(a: BabyBear, b: BabyBear) -> [BabyBear; POSEIDON2_WIDTH] {
+     |    ^^^^^^^^^^^^^
+
+   Compiling ark-serialize-derive v0.5.0 (https://github.com/emberian/algebra?branch=serde-integration#814047cb)
+   Compiling enum-ordinalize v4.3.2
+   Compiling regex v1.12.4
+   Compiling itertools v0.13.0
+   Compiling ark-serialize v0.5.0 (https://github.com/emberian/algebra?branch=serde-integration#814047cb)
+   Compiling educe v0.6.0
+   Compiling ark-ff-macros v0.5.0
+   Compiling ed25519 v2.2.3
+   Compiling kem v0.3.0-pre.0
+   Compiling ark-ff-asm v0.5.0
+   Compiling ml-kem v0.2.3
+   Compiling ed25519-dalek v2.2.0
+   Compiling fips204 v0.4.6
+   Compiling x25519-dalek v2.0.1
+   Compiling dregg-pq v0.1.0 (/tank/dregg-build/hcargo/dregg-pq)
+   Compiling block-padding v0.3.3
+   Compiling inout v0.1.4
+   Compiling cipher v0.4.4
+   Compiling borsh-derive v1.7.0
+   Compiling tempfile v3.27.0
+   Compiling proc-macro-error-attr2 v2.0.0
+   Compiling proc-macro-error2 v2.0.1
+   Compiling tokio-util v0.7.18
+   Compiling ark-ff v0.5.0
+   Compiling globset v0.4.18
+   Compiling ark-poly v0.5.0
+   Compiling dregg-types v0.1.0 (/tank/dregg-build/hcargo/types)
+   Compiling ark-ec v0.5.0
+   Compiling dregg-dfa v0.1.0 (/tank/dregg-build/hcargo/dfa)
+   Compiling profiling-procmacros v1.0.18
+   Compiling dunce v1.0.5
+   Compiling parking v2.2.1
+   Compiling serdect v0.2.0
+   Compiling sec1 v0.7.3
+   Compiling dregg-cell v0.1.0 (/tank/dregg-build/hcargo/cell)
+   Compiling borsh v1.7.0
+   Compiling profiling v1.0.18
+   Compiling universal-hash v0.5.1
+   Compiling crypto-bigint v0.5.5
+   Compiling solana-program-error v3.0.1
+   Compiling elliptic-curve v0.13.8
+   Compiling poly1305 v0.8.0
+   Compiling chacha20 v0.9.1
+   Compiling aead v0.5.2
+   Compiling enumflags2_derive v0.7.12
+   Compiling concurrent-queue v2.5.0
+   Compiling chacha20poly1305 v0.10.1
+   Compiling solana-nullable v1.3.0
+   Compiling rfc6979 v0.4.0
+   Compiling yoke-derive v0.8.2
+   Compiling ring v0.17.14
+   Compiling ecdsa v0.16.9
+   Compiling primeorder v0.13.6
+   Compiling dregg-dsl-runtime v0.1.0 (/tank/dregg-build/hcargo/dregg-dsl-runtime)
+   Compiling wait-timeout v0.2.1
+   Compiling solana-address v2.6.1
+   Compiling rusty-fork v0.3.1
+   Compiling prost-derive v0.10.1
+   Compiling crypto-common v0.2.2
+   Compiling blake2 v0.10.6
+   Compiling merlin v3.0.0
+   Compiling num-derive v0.4.2
+   Compiling yoke v0.8.3
+   Compiling zerovec-derive v0.11.3
+   Compiling rand_xorshift v0.4.0
+   Compiling dregg-lean-ffi v0.1.0 (/tank/dregg-build/hcargo/dregg-lean-ffi)
+   Compiling adler2 v2.0.1
+   Compiling biscuit-parser v0.2.0
+   Compiling prost v0.10.4
+   Compiling proptest v1.11.0
+   Compiling zerovec v0.11.6
+   Compiling ark-relations v0.5.1
+   Compiling gpu-descriptor v0.3.2
+   Compiling digest v0.11.0-pre.10
+   Compiling khronos-egl v6.0.0
+   Compiling dregg-commit v0.1.0 (/tank/dregg-build/hcargo/commit)
+   Compiling futures-lite v2.6.1
+   Compiling digest v0.9.0
+   Compiling block-buffer v0.9.0
+   Compiling spin v0.10.0
+   Compiling sha2 v0.9.9
+   Compiling ark-snark v0.5.1
+   Compiling biscuit-quote v0.3.0
+   Compiling prost-types v0.10.1
+   Compiling p256 v0.13.2
+   Compiling event-listener v5.4.1
+   Compiling rustls-pki-types v1.14.1
+   Compiling derivative v2.2.0
+   Compiling ark-crypto-primitives-macros v0.5.0
+   Compiling aws-lc-sys v0.41.0
+   Compiling biscuit-auth v6.0.0
+   Compiling ark-crypto-primitives v0.5.0
+   Compiling event-listener-strategy v0.5.4
+   Compiling clear_on_drop v0.2.5
+   Compiling sha2 v0.11.0-pre.5
+   Compiling hmac v0.13.0-pre.5
+   Compiling dregg-macaroon v0.1.0 (/tank/dregg-build/hcargo/macaroon)
+   Compiling scalable_cuckoo_filter v0.5.1
+   Compiling dregg-trace v0.1.0 (/tank/dregg-build/hcargo/trace)
+   Compiling same-file v1.0.6
+   Compiling walkdir v2.5.0
+   Compiling dregg-token v0.1.0 (/tank/dregg-build/hcargo/token)
+   Compiling lockstitch v0.29.0
+   Compiling bulletproofs v5.0.0
+warning: `dregg-circuit` (lib) generated 26 warnings (run `cargo fix --lib -p dregg-circuit` to apply 11 suggestions)
+   Compiling ark-poly-commit v0.5.0
+   Compiling tinystr v0.8.3
+   Compiling ark-bls12-381 v0.5.0
+   Compiling polling v3.11.0
+   Compiling async-task v4.7.1 (https://github.com/smol-rs/async-task.git?rev=b4486cd71e4e94fbda54ce6302444de14f4d190e#b4486cd7)
+   Compiling icu_locale_core v2.2.0
+   Compiling dregg-captp v0.1.0 (/tank/dregg-build/hcargo/captp)
+   Compiling dregg-hints v0.0.5 (/tank/dregg-build/hcargo/hints)
+warning: method `true_outcome` is never used
+   --> captp/src/fraud_proof.rs:112:8
+    |
+ 90 | impl OwnerAnchoredFact {
+    | ---------------------- method in this implementation
+...
+112 |     fn true_outcome(&self, receipt: &CustodyReceipt) -> CustodyOutcome {
+    |        ^^^^^^^^^^^^
+    |
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: `dregg-captp` (lib) generated 1 warning
+   Compiling dregg-cell-crypto v0.1.0 (/tank/dregg-build/hcargo/cell-crypto)
+warning: unused import: `Verifier`
+ --> cell-crypto/src/peer_exchange.rs:9:29
+  |
+9 | use ed25519_dalek::{Signer, Verifier};
+  |                             ^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: `dregg-cell-crypto` (lib) generated 1 warning
+   Compiling potential_utf v0.1.5
+   Compiling zerotrie v0.2.4
+   Compiling solana-pubkey v4.2.0
+   Compiling enumflags2 v0.7.12
+   Compiling solana-instruction-error v2.4.0
+   Compiling simd-adler32 v0.3.9
+   Compiling icu_provider v2.2.0
+   Compiling icu_collections v2.2.0
+   Compiling dregg-turn v0.1.0 (/tank/dregg-build/hcargo/turn)
+   Compiling async-channel v2.5.0
+   Compiling bincode v1.3.3
+   Compiling strum_macros v0.26.4
+warning: associated function `enforce_custom_proof_entry_binding` is never used
+   --> turn/src/executor/proof_verify.rs:717:19
+    |
+177 | impl TurnExecutor {
+    | ----------------- associated function in this implementation
+...
+717 |     pub(super) fn enforce_custom_proof_entry_binding(
+    |                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+   Compiling filetime v0.2.29
+   Compiling sha1_smol v1.0.1
+   Compiling uuid v1.23.4
+   Compiling strum v0.26.3
+   Compiling solana-instruction v3.4.0
+   Compiling async-io v2.6.0
+warning: `dregg-turn` (lib) generated 1 warning
+   Compiling petgraph v0.7.1
+   Compiling ark-bn254 v0.5.0
+   Compiling piper v0.2.5
+   Compiling bcs v0.1.6
+   Compiling naga v24.0.0
+   Compiling o1-utils v0.7.0 (https://github.com/emberian/proof-systems?rev=c5305e63df5474c8cca81f7951264ea6aafe81db#c5305e63)
+   Compiling blocking v1.6.2
+   Compiling mina-curves v0.7.0 (https://github.com/emberian/proof-systems?rev=c5305e63df5474c8cca81f7951264ea6aafe81db#c5305e63)
+   Compiling icu_normalizer v2.2.0
+   Compiling icu_properties v2.2.0
+   Compiling miniz_oxide v0.8.9
+   Compiling async-lock v3.4.2
+   Compiling h2 v0.4.15
+   Compiling wgpu-types v24.0.0
+   Compiling rustc-hash v2.1.2
+   Compiling wgpu-hal v24.0.4
+   Compiling hyper v1.10.1
+   Compiling idna_adapter v1.2.2
+   Compiling mina-poseidon v0.7.0 (https://github.com/emberian/proof-systems?rev=c5305e63df5474c8cca81f7951264ea6aafe81db#c5305e63)
+   Compiling solana-hash v4.4.0
+   Compiling zvariant_utils v3.4.0
+   Compiling p3-circle v0.5.1 (https://github.com/Plonky3/Plonky3?rev=82cfad73cd734d37a0d51953094f970c531817ec#82cfad73)
+   Compiling hyper-util v0.1.20
+   Compiling zvariant_derive v5.12.0
+   Compiling p3-circuit-prover v0.1.0 (https://github.com/emberian/plonky3-recursion?rev=fc3c6df#fc3c6dfa)
+   Compiling idna v1.1.0
+   Compiling wgpu-core v24.0.5
+   Compiling async-signal v0.2.14
+   Compiling async-executor v1.14.0
+   Compiling solana-sdk-ids v3.1.0
+   Compiling spl-discriminator-syn v0.2.1
+   Compiling async-trait v0.1.89
+   Compiling aws-lc-rs v1.17.0
+   Compiling rustls-webpki v0.103.13
+   Compiling rustls v0.23.41
+   Compiling bytes-utils v0.1.4
+   Compiling endi v1.1.1
+   Compiling solana-account-info v3.1.1
+   Compiling aws-smithy-types v1.5.0
+   Compiling tokio-rustls v0.26.4
+   Compiling spl-discriminator-derive v0.2.0
+   Compiling wgpu v24.0.5
+   Compiling async-process v2.5.0 (https://github.com/zed-industries/async-process.git?rev=0b6d6713570af61806e1e5cb40e0f757cb93fd9d#0b6d6713)
+   Compiling url v2.5.8
+   Compiling p3-recursion v0.1.0 (https://github.com/emberian/plonky3-recursion?rev=fc3c6df#fc3c6dfa)
+   Compiling tower v0.5.3
+   Compiling solana-sha256-hasher v3.1.0
+   Compiling dregg-blocklace v0.1.0 (/tank/dregg-build/hcargo/blocklace)
+   Compiling quick-xml v0.39.4
+   Compiling num_enum_derive v0.7.6
+   Compiling dlib v0.5.3
+   Compiling bitflags v1.3.2
+   Compiling solana-sdk-macro v3.0.1
+   Compiling spl-discriminator v0.5.2
+   Compiling dregg-recursion-verify v0.1.0 (/tank/dregg-build/hcargo/recursion-verify)
+   Compiling dregg-p3-pasta v0.1.0 (/tank/dregg-build/hcargo/circuit-prove/p3-pasta)
+   Compiling rustls-native-certs v0.8.4
+   Compiling flate2 v1.1.9
+   Compiling solana-serialize-utils v3.1.2
+   Compiling webpki-roots v1.0.8
+   Compiling solana-zero-copy v1.2.0
+   Compiling p3-bn254 v0.5.1 (https://github.com/Plonky3/Plonky3?rev=82cfad73cd734d37a0d51953094f970c531817ec#82cfad73)
+   Compiling half v2.7.1
+   Compiling num_enum v0.7.6
+   Compiling hyper-rustls v0.27.9
+   Compiling solana-sysvar-id v3.1.0
+   Compiling openssl-sys v0.9.117
+   Compiling serde_urlencoded v0.7.1
+   Compiling solana-zk-sdk-pod v0.1.2
+   Compiling aws-smithy-async v1.2.14
+   Compiling aws-smithy-runtime-api-macros v1.0.0
+   Compiling solana-zk-elgamal-proof-interface v0.1.3
+   Compiling solana-instructions-sysvar v3.0.1
+   Compiling wayland-sys v0.31.11
+   Compiling spl-type-length-value v0.9.1
+   Compiling solana-clock v3.1.1
+   Compiling zstd-sys v2.0.16+zstd.1.5.7
+   Compiling aws-smithy-runtime-api v1.12.3
+   Compiling solana-system-interface v3.2.0
+   Compiling solana-borsh v3.0.2
+   Compiling solana-curve25519 v4.0.1
+   Compiling new_debug_unreachable v1.0.6
+   Compiling spl-token-confidential-transfer-proof-extraction v0.6.1
+   Compiling spl-token-metadata-interface v1.0.1
+   Compiling zvariant v5.12.0
+   Compiling zstd-safe v7.2.4
+   Compiling spl-token-group-interface v0.7.2
+   Compiling solana-rent v4.3.0
+   Compiling solana-program-pack v3.1.0
+   Compiling crypto-hermine v0.1.0 (/tank/dregg-build/hcargo/crypto-hermine)
+   Compiling solana-serde-varint v3.0.1
+   Compiling cfg_eval v0.1.2
+   Compiling yoke-derive v0.7.5
+   Compiling xattr v1.6.1
+   Compiling spl-token-2022-interface v3.1.1
+   Compiling solana-vote-interface v6.0.2
+   Compiling tar v0.4.46
+   Compiling yoke v0.7.5
+   Compiling dregg-federation v0.1.0 (/tank/dregg-build/hcargo/federation)
+   Compiling zbus_names v4.3.2
+   Compiling zstd v0.13.3
+   Compiling solana-stake-interface v4.3.0
+   Compiling zerovec-derive v0.10.3
+   Compiling equator-macro v0.4.2
+   Compiling instant v0.1.13
+   Compiling unicode-bidi v0.3.18
+   Compiling shlex v1.3.0
+   Compiling openssl v0.10.81
+   Compiling equator v0.4.2
+   Compiling pbkdf2 v0.12.2
+   Compiling num-rational v0.4.2
+   Compiling zerovec v0.10.4
+   Compiling pin-project-internal v1.1.13
+   Compiling openssl-macros v0.1.1
+   Compiling iana-time-zone v0.1.65
+   Compiling unicode-segmentation v1.13.3
+   Compiling native-tls v0.2.18
+   Compiling chrono v0.4.45
+   Compiling aligned-vec v0.6.4
+   Compiling object v0.37.3
+   Compiling dirs-sys v0.5.0
+   Compiling sct v0.7.1
+   Compiling rustls-webpki v0.101.7
+   Compiling serde_repr v0.1.20
+   Compiling gpui_util v0.1.0 (https://github.com/emberian/zed?rev=adb9026524#adb90265)
+   Compiling phf_shared v0.11.3
+   Compiling euclid v0.22.14
+   Compiling libbz2-rs-sys v0.2.5
+   Compiling pin-project v1.1.13
+   Compiling bzip2 v0.6.1
+   Compiling collections v0.1.0 (https://github.com/emberian/zed?rev=adb9026524#adb90265)
+   Compiling ar_archive_writer v0.5.2
+   Compiling rustls v0.21.12
+   Compiling dirs v6.0.0
+   Compiling v_frame v0.3.9
+   Compiling slotmap v1.1.1
+   Compiling convert_case v0.10.0
+   Compiling tinystr v0.7.6
+   Compiling dregg-coord v0.1.0 (/tank/dregg-build/hcargo/coord)
+   Compiling ttf-parser v0.25.1
+   Compiling h2 v0.3.27
+   Compiling fdeflate v0.3.7
+   Compiling futures-executor v0.3.32
+   Compiling ref-cast-impl v1.0.25
+   Compiling serde_derive_internals v0.29.1
+   Compiling as-slice v0.2.1
+   Compiling socket2 v0.5.10
+   Compiling memmap2 v0.9.11
+   Compiling downcast-rs v1.2.1
+   Compiling deflate64 v0.1.12
+   Compiling roxmltree v0.20.0
+   Compiling float-cmp v0.9.0
+   Compiling compression-core v0.4.32
+   Compiling scoped-tls v1.0.1
+   Compiling quick-error v2.0.1
+   Compiling weezl v0.1.12
+   Compiling fontconfig-parser v0.5.8
+   Compiling wayland-backend v0.3.15
+   Compiling compression-codecs v0.4.38
+   Compiling icu_locid v1.5.0
+   Compiling strict-num v0.1.1
+   Compiling hyper v0.14.32
+   Compiling aligned v0.4.3
+   Compiling ref-cast v1.0.25
+   Compiling futures v0.3.32
+   Compiling derive_more-impl v2.1.1
+   Compiling schemars_derive v1.2.1
+   Compiling tokio-rustls v0.24.1
+   Compiling tokio-native-tls v0.3.1
+   Compiling psm v0.1.31
+   Compiling shellexpand v3.1.2
+   Compiling crossbeam-utils v0.8.21
+   Compiling lyon_geom v1.0.19
+   Compiling zbus_macros v5.16.0
+   Compiling aws-smithy-schema v0.1.0
+   Compiling rust-embed-utils v8.11.0
+   Compiling wayland-scanner v0.31.10
+   Compiling fhegg-solver v0.1.0 (/tank/dregg-build/hcargo/fhegg-solver)
+   Compiling aws-smithy-eventstream v0.60.20
+warning: dregg-lean-ffi@0.1.0: dregg-lean-ffi: splicing the Dregg2.FFI boundary closure — 347 of 708 emitted Dregg2 C facets (361 off-closure proof modules not shipped in the runtime archive).
+warning: dregg-lean-ffi@0.1.0: dregg-lean-ffi: compiling 347 changed Dregg2 C facet(s) via 4 bounded leanc worker(s) …
+warning: dregg-lean-ffi@0.1.0: dregg-lean-ffi: leanc stderr: /tank/dregg-build/hcargo/metatheory/.lake/build/ir/Dregg2/Games/PathOfAngels/CrewSigningVectors.c:36:167: warning: implicit truncation from 'unsigned long' to bit-field changes value from 98768 to 33232 [-Wbitfield-constant-conversion]
+warning: dregg-lean-ffi@0.1.0: dregg-lean-ffi: leanc stderr: 1 warning generated.
+warning: dregg-lean-ffi@0.1.0: dregg-lean-ffi: spliced 347 Dregg2 objects into /tank/dregg-build/hcargo/target/debug/build/dregg-lean-ffi-dcdf57ade75d53a2/out/libdregg_lean.a (8810 total members).
+warning: dregg-lean-ffi@0.1.0: dregg-lean-ffi: closure pass 0: compiling 6 dependency object(s) via 4 bounded leanc worker(s) …
+warning: dregg-lean-ffi@0.1.0: dregg-lean-ffi: closure pass 0: added 6 dependency object(s).
+warning: dregg-lean-ffi@0.1.0: dregg-lean-ffi: closure pass 1: compiling 10 dependency object(s) via 4 bounded leanc worker(s) …
+warning: dregg-lean-ffi@0.1.0: dregg-lean-ffi: closure pass 1: added 10 dependency object(s).
+warning: dregg-lean-ffi@0.1.0: dregg-lean-ffi: closure pass 2: compiling 1 dependency object(s) via 4 bounded leanc worker(s) …
+warning: dregg-lean-ffi@0.1.0: dregg-lean-ffi: closure pass 2: added 1 dependency object(s).
+warning: dregg-lean-ffi@0.1.0: dregg-lean-ffi: closure pass 3: compiling 1 dependency object(s) via 4 bounded leanc worker(s) …
+warning: dregg-lean-ffi@0.1.0: dregg-lean-ffi: closure pass 3: added 1 dependency object(s).
+warning: dregg-lean-ffi@0.1.0: dregg-lean-ffi: archive GC pruned 5506 unreachable dependency object(s) (kept 3322 reachable from the `dregg_*` exports).
+warning: struct `AuthenticatedJournalRecord` is never constructed
+   --> dregg-lean-ffi/src/poa_bazaar_restart_portal.rs:186:19
+    |
+186 | pub(crate) struct AuthenticatedJournalRecord {
+    |                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: associated function `open_bound` is never used
+   --> dregg-lean-ffi/src/poa_bazaar_restart_portal.rs:377:19
+    |
+346 | impl DurableBazaarHeadStore {
+    | --------------------------- associated function in this implementation
+...
+377 |     pub(crate) fn open_bound(
+    |                   ^^^^^^^^^^
+
+warning: method `load_authenticated_journal_records` is never used
+    --> dregg-lean-ffi/src/poa_bazaar_restart_portal.rs:1096:19
+     |
+1095 | impl DurableBazaarHeadStore {
+     | --------------------------- method in this implementation
+1096 |     pub(crate) fn load_authenticated_journal_records(
+     |                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: function `lean_storage_content_root` is never used
+    --> dregg-lean-ffi/src/lib.rs:2586:12
+     |
+2586 |     pub fn lean_storage_content_root(wire: &str) -> Result<String, String> {
+     |            ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: function `dregg_storage_content_root_str` is never used
+    --> dregg-lean-ffi/src/lib.rs:1858:12
+     |
+1858 |         fn dregg_storage_content_root_str(
+     |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+   Compiling dregg-circuit-prove v0.1.0 (/tank/dregg-build/hcargo/circuit-prove)
+warning: unused import: `ProgramRegistry`
+  --> circuit-prove/src/custom_proof_bind.rs:78:48
+   |
+78 | use dregg_circuit::dsl::circuit::{CellProgram, ProgramRegistry};
+   |                                                ^^^^^^^^^^^^^^^
+   |
+   = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `CLAIM_VPRIME`
+   --> circuit-prove/src/mina_kimchi_verifier_gadget.rs:218:38
+    |
+218 | use crate::mina_wrap_finalize_fold::{CLAIM_VPRIME, FINALIZE_CLAIM_LEN, SK, endo_lift_descriptor};
+    |                                      ^^^^^^^^^^^^
+
+warning: unused import: `nums`
+  --> circuit-prove/src/mina_pasta_fixture_suite.rs:61:70
+   |
+61 |     EF, F, FixtureHashSuite, FixtureTranscript, arr, ef_json, f_u32, nums,
+   |                                                                      ^^^^
+
+warning: unused import: `CanSample`
+  --> circuit-prove/src/mina_pasta_fixture_suite.rs:64:36
+   |
+64 |     CanFinalizeDigest, CanObserve, CanSample, CanSampleBits, FieldChallenger, GrindingChallenger,
+   |                                    ^^^^^^^^^
+
+warning: unused import: `dregg_circuit::exact_nullifier_aafi::Digest8`
+  --> circuit-prove/src/shielded/wide_value_binding.rs:71:5
+   |
+71 | use dregg_circuit::exact_nullifier_aafi::Digest8;
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+   Compiling async-fs v2.2.0
+warning: `dregg-lean-ffi` (lib) generated 5 warnings
+   Compiling dregg-payable v0.1.0 (/tank/dregg-build/hcargo/dregg-payable)
+   Compiling landlock v0.4.5
+   Compiling async-broadcast v0.7.2
+   Compiling dregg-dsl-tests v0.1.0 (/tank/dregg-build/hcargo/dregg-dsl-tests)
+   Compiling starbridge-polis v0.1.0 (/tank/dregg-build/hcargo/starbridge-apps/polis)
+   Compiling dregg-query v0.1.0 (/tank/dregg-build/hcargo/dregg-query)
+   Compiling async-recursion v1.1.1
+warning: function `prove_zk` is never used
+   --> circuit-prove/src/private_book_bfv_terminal.rs:327:4
+    |
+327 | fn prove_zk(
+    |    ^^^^^^^^
+    |
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: function `verify_zk` is never used
+   --> circuit-prove/src/private_book_bfv_terminal.rs:347:4
+    |
+347 | fn verify_zk(
+    |    ^^^^^^^^^
+
+   Compiling arg_enum_proc_macro v0.3.4
+   Compiling icu_provider_macros v1.5.0
+   Compiling ordered-stream v0.2.0
+   Compiling seccompiler v0.4.0
+   Compiling no_std_io2 v0.9.4
+   Compiling nom v8.0.0
+   Compiling bit-vec v0.9.1
+   Compiling unicode-width v0.2.2
+   Compiling y4m v0.8.0
+   Compiling event-listener v2.5.3
+   Compiling unicode-script v0.5.8
+   Compiling color_quant v1.1.0
+   Compiling dyn-clone v1.0.20
+   Compiling zune-core v0.4.12
+   Compiling linux-raw-sys v0.4.15
+   Compiling zune-jpeg v0.4.21
+   Compiling rustix v0.38.44
+   Compiling av1-grain v0.2.5
+   Compiling schemars v1.2.1
+   Compiling dregg-turn-prover v0.1.0 (/tank/dregg-build/hcargo/turn-prover)
+   Compiling av-scenechange v0.14.1
+   Compiling dregg-lightclient v0.1.0 (/tank/dregg-build/hcargo/lightclient)
+   Compiling dregg-bridge v0.1.0 (/tank/dregg-build/hcargo/bridge)
+   Compiling async-channel v1.9.0
+   Compiling zbus v5.16.0
+   Compiling codespan-reporting v0.13.1
+   Compiling dregg-intent v0.1.0 (/tank/dregg-build/hcargo/intent)
+   Compiling toml v1.1.2+spec-1.1.0
+   Compiling dregg-exec-lean v0.1.0 (/tank/dregg-build/hcargo/exec-lean)
+   Compiling dregg-sdk v0.1.0 (/tank/dregg-build/hcargo/sdk)
+warning: unused import: `dregg_circuit::poseidon2`
+    --> sdk/src/cipherclerk.rs:4592:13
+     |
+4592 |         use dregg_circuit::poseidon2;
+     |             ^^^^^^^^^^^^^^^^^^^^^^^^
+     |
+     = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unnecessary parentheses around function argument
+   --> sdk/src/factories.rs:212:17
+    |
+212 |                 (0),
+    |                 ^ ^
+    |
+    = note: `#[warn(unused_parens)]` (part of `#[warn(unused)]`) on by default
+help: remove these parentheses
+    |
+212 -                 (0),
+212 +                 0,
+    |
+
+warning: unnecessary parentheses around function argument
+   --> sdk/src/flashwell.rs:145:17
+    |
+145 |                 (0),
+    |                 ^ ^
+    |
+help: remove these parentheses
+    |
+145 -                 (0),
+145 +                 0,
+    |
+
+warning: unnecessary parentheses around function argument
+   --> sdk/src/polis.rs:128:21
+    |
+128 |                     (0),
+    |                     ^ ^
+    |
+help: remove these parentheses
+    |
+128 -                     (0),
+128 +                     0,
+    |
+
+warning: unnecessary parentheses around function argument
+   --> sdk/src/trustline.rs:190:17
+    |
+190 |                 (0),
+    |                 ^ ^
+    |
+help: remove these parentheses
+    |
+190 -                 (0),
+190 +                 0,
+    |
+
+   Compiling bit-set v0.9.1
+   Compiling bitstream-io v4.10.0
+   Compiling icu_provider v1.5.0
+   Compiling dregg-firmament v0.1.0 (/tank/dregg-build/hcargo/sel4/dregg-firmament)
+warning: `dregg-sdk` (lib) generated 5 warnings (run `cargo fix --lib -p dregg-sdk` to apply 5 suggestions)
+   Compiling wayland-client v0.31.14
+   Compiling aws-smithy-http v0.63.6
+   Compiling rust-embed-impl v8.11.0
+   Compiling derive_more v2.1.1
+   Compiling lyon_path v1.0.19
+   Compiling crossbeam-epoch v0.9.20
+   Compiling hyper-tls v0.6.0
+   Compiling hyper-rustls v0.24.2
+   Compiling nix v0.31.3
+   Compiling ahash v0.7.8
+   Compiling fontdb v0.23.0
+   Compiling tiny-skia-path v0.11.4
+   Compiling async-compression v0.4.42
+   Compiling phf_generator v0.11.3
+   Compiling zbus_xml v5.1.1
+   Compiling aws-credential-types v1.2.14
+   Compiling tower-http v0.6.11
+   Compiling async-global-executor v2.4.1
+   Compiling async-net v2.0.0
+   Compiling accesskit v0.24.1
+   Compiling rgb v0.8.53
+   Compiling sharded-slab v0.1.7
+   Compiling maybe-rayon v0.1.1
+   Compiling simd_helpers v0.1.0
+   Compiling spirv v0.4.0+sdk-1.4.341.0
+   Compiling kurbo v0.11.3
+   Compiling kv-log-macro v1.0.7
+   Compiling tracing-log v0.2.0
+   Compiling thread_local v1.1.9
+   Compiling fastrand v1.9.0
+   Compiling waker-fn v1.2.0
+   Compiling gimli v0.32.3
+   Compiling home v0.5.12
+   Compiling unicode-bidi-mirroring v0.4.0
+   Compiling unicode-properties v0.1.4
+   Compiling imgref v1.12.2
+   Compiling nu-ansi-term v0.50.3
+   Compiling unicode-ccc v0.4.0
+   Compiling byteorder-lite v0.1.0
+   Compiling addr2line v0.25.1
+   Compiling image-webp v0.2.4
+   Compiling rustybuzz v0.20.1
+   Compiling tracing-subscriber v0.3.23
+   Compiling loop9 v0.1.5
+   Compiling rav1e v0.8.1
+   Compiling which v6.0.3
+   Compiling futures-lite v1.13.0
+   Compiling async-std v1.13.2
+   Compiling svgtypes v0.15.3
+   Compiling naga v29.0.3 (https://github.com/zed-industries/wgpu.git?rev=357a0c56e0070480ad9daea5d2eaa83150b79e88#357a0c56)
+   Compiling rust-embed v8.11.0
+   Compiling smol v2.0.2
+   Compiling reqwest v0.12.28
+   Compiling zbus-lockstep v0.5.2
+   Compiling async_zip v0.0.18
+   Compiling hashbrown v0.12.3
+   Compiling command-fds v0.3.3
+   Compiling aws-smithy-http-client v1.1.13
+   Compiling crossbeam-deque v0.8.6
+   Compiling starbridge-web-surface v0.1.0 (/tank/dregg-build/hcargo/starbridge-web-surface)
+warning: unused imports: `AuthRequired` and `Credential`
+  --> starbridge-web-surface/src/affordance.rs:62:18
+   |
+62 | use dregg_cell::{AuthRequired, Credential, Requirement};
+   |                  ^^^^^^^^^^^^  ^^^^^^^^^^
+   |
+   = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: variable does not need to be mutable
+   --> starbridge-web-surface/src/indexer.rs:216:9
+    |
+216 |     let mut push = |c: &String, seen: &mut BTreeSet<String>, out: &mut Vec<String>| {
+    |         ----^^^^
+    |         |
+    |         help: remove this `mut`
+    |
+    = note: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+warning: `starbridge-web-surface` (lib) generated 2 warnings (run `cargo fix --lib -p starbridge-web-surface` to apply 2 suggestions)
+   Compiling nix v0.29.0
+   Compiling pathfinder_simd v0.5.6 (/tank/dregg-build/hcargo/starbridge-v2/vendor/pathfinder_simd)
+   Compiling embed-resource v3.0.9
+   Compiling serde_json_lenient v0.2.4
+   Compiling parking_lot_core v0.8.6
+   Compiling png v0.17.16
+   Compiling zlog v0.1.0 (https://github.com/emberian/zed?rev=adb9026524#adb90265)
+   Compiling aws-smithy-observability v0.2.6
+   Compiling zune-inflate v0.2.54
+   Compiling wgpu-types v29.0.3 (https://github.com/zed-industries/wgpu.git?rev=357a0c56e0070480ad9daea5d2eaa83150b79e88#357a0c56)
+   Compiling font-types v0.11.3
+   Compiling hash32 v0.3.1
+   Compiling simplecss v0.2.2
+   Compiling avif-serialize v0.8.9
+   Compiling num-iter v0.1.45
+   Compiling nanorand v0.7.0
+   Compiling xattr v0.2.3
+   Compiling pxfm v0.1.29
+   Compiling unicode-vo v0.1.0
+   Compiling float_next_after v1.0.0
+   Compiling presser v0.3.1
+   Compiling take-until v0.2.0
+   Compiling pico-args v0.5.0
+   Compiling imagesize v0.13.0
+   Compiling zune-core v0.5.1
+   Compiling lebe v0.5.3
+   Compiling data-url v0.3.2
+   Compiling smol_str v0.3.6
+   Compiling rustc-demangle v0.1.27
+   Compiling bit_field v0.10.3
+   Compiling xmlwriter v0.1.0
+   Compiling fax v0.2.7
+   Compiling unicase v2.9.0
+   Compiling util v0.1.0 (https://github.com/emberian/zed?rev=adb9026524#adb90265)
+   Compiling tiff v0.10.3
+   Compiling usvg v0.45.1
+   Compiling exr v1.74.0
+   Compiling backtrace v0.3.76
+   Compiling moxcms v0.7.11
+   Compiling zune-jpeg v0.5.15
+   Compiling ztracing v0.1.0 (https://github.com/emberian/zed?rev=adb9026524#adb90265)
+   Compiling gpu-allocator v0.28.0
+   Compiling lyon_tessellation v1.0.20
+   Compiling async-tar v0.5.1
+   Compiling flume v0.11.1
+   Compiling wgpu-naga-bridge v29.0.3 (https://github.com/zed-industries/wgpu.git?rev=357a0c56e0070480ad9daea5d2eaa83150b79e88#357a0c56)
+   Compiling ravif v0.12.0
+   Compiling read-fonts v0.37.0
+   Compiling heapless v0.9.3
+   Compiling aws-smithy-runtime v1.11.3
+   Compiling tiny-skia v0.11.4
+   Compiling parking_lot v0.11.2
+   Compiling icu_locid_transform v1.5.0
+   Compiling gpui v0.2.2 (https://github.com/emberian/zed?rev=adb9026524#adb90265)
+   Compiling pathfinder_geometry v0.5.1
+   Compiling ignore v0.4.26
+   Compiling lru v0.7.8
+   Compiling stacker v0.1.24
+   Compiling zbus-lockstep-macros v0.5.2
+   Compiling perf v0.1.0 (https://github.com/emberian/zed?rev=adb9026524#adb90265)
+   Compiling aws-types v1.3.16
+   Compiling aws-sigv4 v1.4.2
+   Compiling string_cache_codegen v0.5.4
+   Compiling phf_codegen v0.11.3
+   Compiling lyon_algorithms v1.0.20
+   Compiling gif v0.13.3
+   Compiling gif v0.14.2
+   Compiling png v0.18.1
+   Compiling groupmap v0.7.0 (https://github.com/emberian/proof-systems?rev=c5305e63df5474c8cca81f7951264ea6aafe81db#c5305e63)
+   Compiling stacksafe-macro v0.1.4
+   Compiling qoi v0.4.1
+   Compiling strum_macros v0.27.2
+   Compiling derive_refineable v0.1.0 (https://github.com/emberian/zed?rev=adb9026524#adb90265)
+   Compiling arc-swap v1.9.1
+   Compiling phf_shared v0.13.1
+   Compiling itertools v0.12.1
+   Compiling crossbeam-queue v0.3.12
+   Compiling ordered-float v5.0.0
+   Compiling mac v0.1.1
+   Compiling pollster v0.2.5
+   Compiling svg_fmt v0.4.5
+   Compiling link-section v0.18.3
+   Compiling grid v1.0.1
+   Compiling atomic v0.5.3
+   Compiling glow v0.17.0
+   Compiling web-time v1.1.0
+   Compiling scheduler v0.1.0 (https://github.com/emberian/zed?rev=adb9026524#adb90265)
+   Compiling wasm-bindgen-macro-support v0.2.126
+   Compiling refineable v0.1.0 (https://github.com/emberian/zed?rev=adb9026524#adb90265)
+   Compiling wgpu-hal v29.0.3 (https://github.com/zed-industries/wgpu.git?rev=357a0c56e0070480ad9daea5d2eaa83150b79e88#357a0c56)
+   Compiling strum v0.27.2
+   Compiling postage v0.5.0
+   Compiling taffy v0.10.1
+   Compiling ctor v1.0.7
+   Compiling etagere v0.2.15
+   Compiling phf_generator v0.13.1
+   Compiling futf v0.1.5
+   Compiling poly-commitment v0.7.0 (https://github.com/emberian/proof-systems?rev=c5305e63df5474c8cca81f7951264ea6aafe81db#c5305e63)
+warning: `dregg-circuit-prove` (lib) generated 7 warnings (run `cargo fix --lib -p dregg-circuit-prove` to apply 5 suggestions)
+   Compiling stacksafe v0.1.4
+   Compiling image v0.25.9
+   Compiling resvg v0.45.1
+   Compiling lyon v1.0.19
+   Compiling markup5ever v0.12.1
+   Compiling aws-runtime v1.7.2
+   Compiling atspi-common v0.13.0
+   Compiling util_macros v0.1.0 (https://github.com/emberian/zed?rev=adb9026524#adb90265)
+   Compiling globwalk v0.8.1
+   Compiling reed-solomon-erasure v6.0.0
+   Compiling sum_tree v0.1.0 (https://github.com/emberian/zed?rev=adb9026524#adb90265)
+   Compiling http_client v0.1.0 (https://github.com/emberian/zed?rev=adb9026524#adb90265)
+   Compiling gpui_shared_string v0.1.0 (https://github.com/emberian/zed?rev=adb9026524#adb90265)
+   Compiling clang-sys v1.8.1
+   Compiling wayland-protocols v0.32.13
+   Compiling aws-smithy-json v0.62.7
+   Compiling axum-core v0.5.6
+   Compiling futures-concurrency v7.7.1
+   Compiling icu_collections v1.5.0
+   Compiling cexpr v0.6.0
+   Compiling toml_datetime v0.6.11
+   Compiling serde_spanned v0.6.9
+   Compiling gpui_macros v0.1.0 (https://github.com/emberian/zed?rev=adb9026524#adb90265)
+   Compiling num_cpus v1.17.0
+   Compiling as-raw-xcb-connection v1.0.1
+   Compiling precomputed-hash v0.1.1
+   Compiling xcursor v0.3.10
+   Compiling seahash v4.1.0
+   Compiling utf-8 v0.7.6
+   Compiling inventory v0.3.24
+   Compiling diplomat_core v0.8.1
+   Compiling tendril v0.4.3
+   Compiling string_cache v0.8.9
+   Compiling toml_edit v0.22.27
+   Compiling axum v0.8.9
+   Compiling bindgen v0.72.1
+   Compiling dregg-storage v0.1.0 (/tank/dregg-build/hcargo/storage)
+   Compiling wasm-bindgen-macro v0.2.126
+   Compiling phf_macros v0.13.1
+   Compiling wgpu-core-deps-windows-linux-android v29.0.3 (https://github.com/zed-industries/wgpu.git?rev=357a0c56e0070480ad9daea5d2eaa83150b79e88#357a0c56)
+   Compiling skrifa v0.40.0
+   Compiling phf v0.11.3
+   Compiling calendrical_calculations v0.1.3
+   Compiling const_format_proc_macros v0.2.34
+   Compiling asn1-rs-derive v0.5.1
+   Compiling asn1-rs-impl v0.2.0
+   Compiling gethostname v1.1.0
+   Compiling base62 v2.2.4
+   Compiling zeno v0.3.3
+   Compiling yazi v0.2.1
+   Compiling x11rb-protocol v0.13.2
+   Compiling triomphe v0.1.15
+   Compiling swash v0.2.9
+   Compiling mozjs_sys v0.140.8-2
+   Compiling x11rb v0.13.2
+   Compiling serde_yaml v0.9.34+deprecated
+   Compiling asn1-rs v0.6.2
+   Compiling phf v0.13.1
+   Compiling const_format v0.2.36
+   Compiling icu_calendar v1.5.2
+   Compiling wgpu-core v29.0.3 (https://github.com/zed-industries/wgpu.git?rev=357a0c56e0070480ad9daea5d2eaa83150b79e88#357a0c56)
+   Compiling icu_segmenter v1.5.0
+   Compiling icu_properties v1.5.1
+   Compiling wasm-bindgen v0.2.126
+   Compiling dregg-app-framework v0.1.0 (/tank/dregg-build/hcargo/app-framework)
+warning: unused imports: `Credential` and `is_attenuation`
+  --> app-framework/src/affordance.rs:52:45
+   |
+52 | use dregg_cell::{AuthRequired, CellProgram, Credential, Requirement, is_attenuation};
+   |                                             ^^^^^^^^^^               ^^^^^^^^^^^^^^
+   |
+   = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused imports: `Credential` and `Requirement`
+   --> app-framework/src/deos_app.rs:103:18
+    |
+103 | use dregg_cell::{Credential, Requirement};
+    |                  ^^^^^^^^^^  ^^^^^^^^^^^
+
+warning: unused import: `Verifier`
+   --> app-framework/src/inbox_endpoint.rs:269:36
+    |
+269 |     use ed25519_dalek::{Signature, Verifier, VerifyingKey};
+    |                                    ^^^^^^^^
+
+warning: unused imports: `Credential` and `Requirement`
+  --> app-framework/src/optimistic_fire.rs:56:18
+   |
+56 | use dregg_cell::{Credential, Requirement};
+   |                  ^^^^^^^^^^  ^^^^^^^^^^^
+
+warning: unused imports: `Credential` and `Requirement`
+  --> app-framework/src/rehydration.rs:44:18
+   |
+44 | use dregg_cell::{Credential, Requirement};
+   |                  ^^^^^^^^^^  ^^^^^^^^^^^
+
+warning: unused import: `AuthRequired`
+  --> app-framework/src/scaffold.rs:53:18
+   |
+53 | use dregg_cell::{AuthRequired, Requirement};
+   |                  ^^^^^^^^^^^^
+
+warning: unused imports: `Credential` and `Requirement`
+  --> app-framework/src/server.rs:57:18
+   |
+57 | use dregg_cell::{Credential, Requirement};
+   |                  ^^^^^^^^^^  ^^^^^^^^^^^
+
+warning: unused imports: `Credential` and `Requirement`
+  --> app-framework/src/starbridge.rs:79:18
+   |
+79 | use dregg_cell::{Credential, Requirement};
+   |                  ^^^^^^^^^^  ^^^^^^^^^^^
+
+warning: unused imports: `Credential` and `Requirement`
+  --> app-framework/src/stark_rehydrate.rs:73:18
+   |
+73 | use dregg_cell::{Credential, Requirement};
+   |                  ^^^^^^^^^^  ^^^^^^^^^^^
+
+warning: unused import: `Credential`
+  --> app-framework/src/transclude_affordance.rs:62:40
+   |
+62 | use dregg_cell::{AuthRequired, CellId, Credential, Requirement};
+   |                                        ^^^^^^^^^^
+
+warning: unused imports: `Credential` and `Requirement`
+  --> app-framework/src/webgen.rs:33:18
+   |
+33 | use dregg_cell::{Credential, Requirement};
+   |                  ^^^^^^^^^^  ^^^^^^^^^^^
+
+warning: `dregg-app-framework` (lib) generated 11 warnings (run `cargo fix --lib -p dregg-app-framework` to apply 11 suggestions)
+   Compiling diplomat v0.8.0
+   Compiling toml v0.8.23
+   Compiling atspi-proxies v0.13.0
+   Compiling freetype-sys v0.20.1
+   Compiling yeslogic-fontconfig-sys v6.0.1
+   Compiling icu_provider_adapters v1.5.0
+   Compiling harfrust v0.5.2
+   Compiling accesskit_consumer v0.36.0
+   Compiling tree-sitter v0.26.9
+   Compiling dregg-agent v0.1.0 (/tank/dregg-build/hcargo/dregg-agent)
+   Compiling html5ever v0.27.0
+   Compiling impl-trait-for-tuples v0.2.3
+   Compiling parity-scale-codec-derive v3.7.5
+   Compiling derive_more-impl v1.0.0
+   Compiling num-complex v0.4.6
+   Compiling is-docker v0.2.0
+   Compiling rangemap v1.7.1
+   Compiling unicode-linebreak v0.1.5
+   Compiling self_cell v1.2.2
+   Compiling sys-locale v0.3.2
+   Compiling linebender_resource_handle v0.1.1
+   Compiling float-ord v0.3.2
+   Compiling icu_capi v1.5.0
+   Compiling zed-font-kit v0.14.1-zed (https://github.com/zed-industries/font-kit?rev=94b0f28166665e8fd2f53ff6d268a14955c82269#94b0f281)
+   Compiling cosmic-text v0.19.0
+   Compiling derive_more v1.0.0
+   Compiling rust-i18n-support v4.1.0
+   Compiling parity-scale-codec v3.7.5
+   Compiling is-wsl v0.4.0
+   Compiling num v0.4.3
+   Compiling accesskit_atspi_common v0.18.1
+   Compiling atspi v0.29.0
+   Compiling js-sys v0.3.103
+   Compiling wgpu v29.0.3 (https://github.com/zed-industries/wgpu.git?rev=357a0c56e0070480ad9daea5d2eaa83150b79e88#357a0c56)
+   Compiling xim-parser v0.2.1 (https://github.com/zed-industries/xim-rs.git?rev=16f35a2c881b815a2b6cdfd6687988e84f8447d8#16f35a2c)
+   Compiling num-bigint-dig v0.9.1
+   Compiling libz-sys v1.1.29
+   Compiling aws-smithy-query v0.60.15
+   Compiling ashpd v0.13.11
+   Compiling rust-i18n v4.1.0
+   Compiling tree-sitter-language v0.1.7
+   Compiling xim-ctext v0.3.0 (https://github.com/zed-industries/xim-rs.git?rev=16f35a2c881b815a2b6cdfd6687988e84f8447d8#16f35a2c)
+   Compiling calloop v0.14.4
+   Compiling cbc v0.1.2
+   Compiling aes v0.8.4
+   Compiling md-5 v0.10.6
+   Compiling scale-info-derive v2.11.6
+   Compiling inotify-sys v0.1.5
+   Compiling xkeysym v0.2.1
+   Compiling pathdiff v0.2.3
+   Compiling open v5.3.5
+   Compiling xkbcommon v0.8.0
+   Compiling ciborium-ll v0.2.2
+   Compiling inotify v0.10.2
+   Compiling oo7 v0.6.0
+   Compiling calloop-wayland-source v0.4.1
+   Compiling zed-xim v0.4.0-zed (https://github.com/zed-industries/xim-rs.git?rev=16f35a2c881b815a2b6cdfd6687988e84f8447d8#16f35a2c)
+   Compiling aws-sdk-sts v1.102.0
+   Compiling wasm-bindgen-futures v0.4.76
+   Compiling gpui_wgpu v0.1.0 (https://github.com/emberian/zed?rev=adb9026524#adb90265)
+   Compiling scale-info v2.11.6
+   Compiling accesskit_unix v0.21.1
+   Compiling rust-i18n-macro v4.1.0
+   Compiling oid-registry v0.7.1
+   Compiling num-bigint-dig v0.8.6
+   Compiling xml5ever v0.18.1
+   Compiling der-parser v9.0.0
+   Compiling x11-clipboard v0.9.3
+   Compiling aws-sdk-ssooidc v1.99.0
+   Compiling aws-sdk-sso v1.97.0
+   Compiling wayland-cursor v0.31.14
+   Compiling wayland-protocols-wlr v0.3.12
+   Compiling wayland-protocols-plasma v0.3.12
+   Compiling notify-types v1.0.1
+   Compiling fluent-uri v0.1.4
+   Compiling dcap-qvl-webpki v0.103.4+dcap.1
+   Compiling serde-human-bytes v0.1.3
+   Compiling pkcs1 v0.7.5
+   Compiling x509-cert v0.2.5
+   Compiling filedescriptor v0.8.3
+   Compiling sha1 v0.10.6
+   Compiling enum-iterator-derive v1.5.0
+   Compiling str_indices v0.4.4
+   Compiling streaming-iterator v0.1.9
+   Compiling unicode-id v0.3.6
+   Compiling gpui-component v0.5.2 (https://github.com/emberian/gpui-component?rev=498321a4#498321a4)
+   Compiling workspace-hack v0.1.0
+   Compiling x509-parser v0.16.0
+   Compiling zed-sum-tree v0.2.0
+   Compiling markdown v1.0.0
+   Compiling dcap-qvl v0.5.2
+   Compiling enum-iterator v2.3.0
+   Compiling ropey v2.0.0-beta.1
+   Compiling aws-config v1.8.15
+   Compiling gpui_linux v0.1.0 (https://github.com/emberian/zed?rev=adb9026524#adb90265)
+   Compiling rsa v0.9.10
+   Compiling lsp-types v0.97.0
+   Compiling notify v7.0.0
+   Compiling markup5ever_rcdom v0.3.0
+   Compiling mozjs v0.15.7
+   Compiling tree-sitter-json v0.24.8
+   Compiling ciborium v0.2.2
+   Compiling redb v2.6.3
+   Compiling gpui-component-assets v0.5.1 (https://github.com/emberian/gpui-component?rev=498321a4#498321a4)
+   Compiling starbridge-execution-lease v0.1.0 (/tank/dregg-build/hcargo/starbridge-apps/execution-lease)
+   Compiling aws-sdk-bedrockruntime v1.129.0
+   Compiling dregg-doc v0.1.0 (/tank/dregg-build/hcargo/dregg-doc)
+warning: unused import: `Pin`
+  --> dregg-doc/src/substrate.rs:40:93
+   |
+40 | use crate::composition::{AtomContent as EmbedAtomContent, ChildRef, EmbedRole, LayoutGraph, Pin};
+   |                                                                                             ^^^
+   |
+   = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+   Compiling deos-reflect v0.1.0 (/tank/dregg-build/hcargo/deos-reflect)
+   Compiling p384 v0.13.1
+warning: `dregg-doc` (lib) generated 1 warning (run `cargo fix --lib -p dregg-doc` to apply 1 suggestion)
+   Compiling deos-js-core v0.1.0 (/tank/dregg-build/hcargo/deos-js-core)
+   Compiling serde-big-array v0.5.1
+   Compiling gpui-component-macros v0.5.1 (https://github.com/emberian/gpui-component?rev=498321a4#498321a4)
+   Compiling fs2 v0.4.3
+   Compiling dregg-narrator v0.1.0 (/tank/dregg-build/hcargo/narrator)
+   Compiling dregg-zkoracle-prove v0.1.0 (/tank/dregg-build/hcargo/zkoracle-prove)
+   Compiling deos-js v0.1.0 (/tank/dregg-build/hcargo/deos-js)
+warning: unnecessary parentheses around function argument
+   --> deos-js/src/attach.rs:743:25
+    |
+743 |                         (0),
+    |                         ^ ^
+    |
+    = note: `#[warn(unused_parens)]` (part of `#[warn(unused)]`) on by default
+help: remove these parentheses
+    |
+743 -                         (0),
+743 +                         0,
+    |
+
+warning: unused import: `Credential`
+  --> deos-js/src/composer_card.rs:48:18
+   |
+48 | use dregg_cell::{Credential, Requirement};
+   |                  ^^^^^^^^^^
+   |
+   = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `Credential`
+  --> deos-js/src/graph_card.rs:47:18
+   |
+47 | use dregg_cell::{Credential, Requirement};
+   |                  ^^^^^^^^^^
+
+warning: unnecessary parentheses around function argument
+    --> deos-js/src/js.rs:2065:17
+     |
+2065 |                 (0),
+     |                 ^ ^
+     |
+help: remove these parentheses
+     |
+2065 -                 (0),
+2065 +                 0,
+     |
+
+warning: unused import: `Credential`
+  --> deos-js/src/layout_card.rs:50:18
+   |
+50 | use dregg_cell::{Credential, Requirement};
+   |                  ^^^^^^^^^^
+
+warning: unused import: `dregg_cell::Credential`
+  --> deos-js/src/multi_cell.rs:65:5
+   |
+65 | use dregg_cell::Credential;
+   |     ^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unnecessary parentheses around function argument
+   --> deos-js/src/multi_cell.rs:557:13
+    |
+557 |             (0),
+    |             ^ ^
+    |
+help: remove these parentheses
+    |
+557 -             (0),
+557 +             0,
+    |
+
+warning: unused import: `Credential`
+  --> deos-js/src/objects_card.rs:47:18
+   |
+47 | use dregg_cell::{Credential, Requirement};
+   |                  ^^^^^^^^^^
+
+warning: function `postmaster_identity` is never used
+   --> deos-js/src/mailtown.rs:118:4
+    |
+118 | fn postmaster_identity() -> AuthRequired {
+    |    ^^^^^^^^^^^^^^^^^^^
+    |
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: function `resident_identity` is never used
+   --> deos-js/src/mailtown.rs:136:4
+    |
+136 | fn resident_identity() -> AuthRequired {
+    |    ^^^^^^^^^^^^^^^^^
+
+warning: `deos-js` (lib) generated 10 warnings (run `cargo fix --lib -p deos-js` to apply 8 suggestions)
+   Compiling dregg-tee-verify v0.1.0 (/tank/dregg-build/hcargo/tee-verify)
+   Compiling dregg-persist v0.1.0 (/tank/dregg-build/hcargo/persist)
+warning: method `commit_finalized_turn_with_faithful_root_and_executor_state_and_poa_galley` is never used
+    --> persist/src/commit_log.rs:1510:19
+     |
+ 965 | impl PersistentStore {
+     | -------------------- method in this implementation
+...
+1510 |     pub(crate) fn commit_finalized_turn_with_faithful_root_and_executor_state_and_poa_galley(
+     |                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+     |
+     = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: function `verify_replayed_exact_fnsp_v3_frame_in` is never used
+    --> persist/src/exact_fnsp_v3_frame_head.rs:1266:15
+     |
+1266 | pub(crate) fn verify_replayed_exact_fnsp_v3_frame_in(
+     |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: function `exact_fnsp_v3_activation_installed_in` is never used
+    --> persist/src/exact_fnsp_v3_frame_head.rs:1278:15
+     |
+1278 | pub(crate) fn exact_fnsp_v3_activation_installed_in(write: &WriteTransaction) -> StoreResult<bool> {
+     |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: function `load_snapshot_from_write` is never used
+    --> persist/src/exact_fnsp_v3_frame_head.rs:1559:4
+     |
+1559 | fn load_snapshot_from_write(
+     |    ^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: function `prepare_from_snapshot` is never used
+   --> persist/src/exact_fnsp_v3_state.rs:822:4
+    |
+822 | fn prepare_from_snapshot(
+    |    ^^^^^^^^^^^^^^^^^^^^^
+
+warning: function `reconstruct_replay_from_snapshot` is never used
+   --> persist/src/exact_fnsp_v3_state.rs:860:4
+    |
+860 | fn reconstruct_replay_from_snapshot(
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: associated function `new` is never used
+  --> persist/src/poa_holding_consumption.rs:60:19
+   |
+54 | impl PreparedPoaHoldingConsumptionV1 {
+   | ------------------------------------ associated function in this implementation
+...
+60 |     pub(crate) fn new(
+   |                   ^^^
+
+warning: function `verify_replayed_poa_world_activation_in` is never used
+   --> persist/src/poa_world_activation.rs:451:15
+    |
+451 | pub(crate) fn verify_replayed_poa_world_activation_in(
+    |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: `dregg-persist` (lib) generated 8 warnings
+   Compiling gpui_platform v0.1.0 (https://github.com/emberian/zed?rev=adb9026524#adb90265)
+   Compiling grain-jail v0.1.0 (/tank/dregg-build/hcargo/grain-jail)
+   Compiling rustls-pemfile v2.2.0
+   Compiling dregg-wire v0.1.0 (/tank/dregg-build/hcargo/wire)
+   Compiling deos-hermes v0.1.0 (/tank/dregg-build/hcargo/deos-hermes)
+   Compiling hosted-lease v0.1.0 (/tank/dregg-build/hcargo/hosted-lease)
+   Compiling starbridge-vat v0.1.0 (/tank/dregg-build/hcargo/starbridge-apps/vat)
+   Compiling grain-turn v0.1.0 (/tank/dregg-build/hcargo/grain-turn)
+   Compiling grain-verify v0.1.0 (/tank/dregg-build/hcargo/grain-verify)
+   Compiling dregg-storage-templates v0.1.0 (/tank/dregg-build/hcargo/dregg-storage-templates)
+   Compiling dregg-auth v0.1.0 (/tank/dregg-build/hcargo/dregg-auth)
+   Compiling hosted-durable v0.1.0 (/tank/dregg-build/hcargo/hosted-durable)
+   Compiling http-serve v0.1.0 (/tank/dregg-build/hcargo/http-serve)
+   Compiling dregg-sdk-net v0.1.0 (/tank/dregg-build/hcargo/dregg-sdk-net)
+   Compiling agent-platform v0.1.0 (/tank/dregg-build/hcargo/agent-platform)
+warning: unnecessary parentheses around function argument
+   --> dregg-sdk-net/src/channels.rs:169:21
+    |
+169 |                     (0),
+    |                     ^ ^
+    |
+    = note: `#[warn(unused_parens)]` (part of `#[warn(unused)]`) on by default
+help: remove these parentheses
+    |
+169 -                     (0),
+169 +                     0,
+    |
+
+warning: unnecessary parentheses around function argument
+   --> dregg-sdk-net/src/channels.rs:689:29
+    |
+689 | ...                   (0),
+    |                       ^ ^
+    |
+help: remove these parentheses
+    |
+689 -                             (0),
+689 +                             0,
+    |
+
+warning: `dregg-sdk-net` (lib) generated 2 warnings (run `cargo fix --lib -p dregg-sdk-net` to apply 2 suggestions)
+warning: constant `POSEIDON2_COMPRESS_WIRE` is never used
+  --> dregg-lean-ffi/src/circuit_differential.rs:39:7
+   |
+39 | const POSEIDON2_COMPRESS_WIRE: &str = r#"{"name":"dregg-poseidon2-compress-v1","trace_width":6,"public_input_count":2,"constraints":...
+   |       ^^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: `dregg-lean-ffi` (bin "circuit_differential") generated 1 warning
+warning: variants `Grant`, `Call`, `Reply`, `Reset`, `Control`, and `Notify` are never constructed
+   --> dregg-lean-ffi/src/state_differential.rs:382:5
+    |
+379 | enum Auth {
+    |      ---- variants in this enum
+...
+382 |     Grant = 2,
+    |     ^^^^^
+383 |     Call = 3,
+    |     ^^^^
+384 |     Reply = 4,
+    |     ^^^^^
+385 |     Reset = 5,
+    |     ^^^^^
+386 |     Control = 6,
+    |     ^^^^^^^
+...
+390 |     Notify = 7,
+    |     ^^^^^^
+    |
+    = note: `Auth` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: `dregg-lean-ffi` (bin "state_differential") generated 1 warning
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 10m 26s
+warning: the following packages contain code that will be rejected by a future version of Rust: proc-macro-error2 v2.0.1
+note: to see what the problems were, use the option `--future-incompat-report`, or run `cargo report future-incompatibilities --id 1`
+────────────
+ Nextest run ID 6c065d42-7331-4376-b7ac-f5b0218b0933 with nextest profile: full
+    Starting 5 tests across 3 binaries (4 tests skipped)
+       START [         ] (1/5) deos-hermes::world_bridge_e2e js_agent_weld::run_js_over_the_world_bridge_lands_on_the_served_world
+
+running 1 test
+[world-bridge MCP +0.000s] test body entered
+[world-bridge MCP +0.000s] AgentCipherclerk::new begin
+[world-bridge MCP +0.000s] AgentCipherclerk::new returned; mint_token begin
+[world-bridge MCP +0.000s] mint_token returned; AgentRuntime::new begin
+[world-bridge MCP +0.002s] AgentRuntime::new returned; registry/tool setup begin
+[world-bridge MCP +0.002s] registry/tool ready; gateway/host construction begin
+[world-bridge MCP +0.002s] gateway/host ready; JsRuntime boot begin
+[world-bridge MCP +0.008s] JsRuntime boot returned; bridge configured
+[world-bridge MCP +0.008s] absent-socket call begin (must refuse before admission)
+[world-bridge MCP +0.008s] absent-socket call returned
+[world-bridge MCP +0.008s] spawn served-world thread
+[world-bridge server +0.000s] served-world construction begin
+[world-bridge server +0.001s] served-world ready; bind/accept/serve begin
+[world-bridge MCP +0.019s] socket path ready; first connected admission/fire begin
+[dregg lean init] runtime=Default elapsed_ms=0.156
+[dregg lean init] module=initialize_Dregg2_Dregg2_Apps_DelegAdmit begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Apps_DelegAdmit elapsed_ms=0.587 result=ok
+[world-bridge server fire 1 +0.000s] request received: bump
+[world-bridge server fire 1 +0.000s] execute_turn begin
+[world-bridge server fire 1 +0.000s] execute_turn returned
+[world-bridge server fire 1 +0.000s] receipt ready
+[world-bridge MCP +0.030s] first connected admission/fire returned
+[world-bridge MCP +0.030s] two-fire-then-throw call begin
+[world-bridge server fire 2 +0.000s] request received: bump
+[world-bridge server fire 2 +0.000s] execute_turn begin
+[world-bridge server fire 2 +0.000s] execute_turn returned
+[world-bridge server fire 2 +0.000s] receipt ready
+[world-bridge server fire 3 +0.000s] request received: bump
+[world-bridge server fire 3 +0.000s] execute_turn begin
+[world-bridge server fire 3 +0.000s] execute_turn returned
+[world-bridge server fire 3 +0.000s] receipt ready
+[world-bridge MCP +0.040s] two-fire-then-throw call returned
+[world-bridge MCP +0.040s] no-fire runtime error call begin
+[world-bridge MCP +0.049s] no-fire runtime error call returned
+[world-bridge MCP +0.049s] no-fire syntax error call begin
+[world-bridge MCP +0.057s] no-fire syntax error call returned
+[world-bridge MCP +0.057s] post-error readback call begin
+test js_agent_weld::run_js_over_the_world_bridge_lands_on_the_served_world ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 2 filtered out; finished in 0.07s
+
+[world-bridge MCP +0.065s] post-error readback call returned
+[world-bridge MCP +0.065s] drop host begin (JsRuntime and final session socket)
+[world-bridge MCP +0.067s] drop host returned; server join begin
+[world-bridge server +0.058s] serve returned after 10 requests (client EOF)
+[world-bridge MCP +0.067s] server join returned; final ledger/receipt assertions begin
+[world-bridge MCP +0.067s] all assertions passed; test body returning
+        PASS [   0.073s] (1/5) deos-hermes::world_bridge_e2e js_agent_weld::run_js_over_the_world_bridge_lands_on_the_served_world
+       START [         ] (2/5) dregg-lean-ffi::lazy_pq_registration pq_route_discovery_is_lazy_but_first_real_call_initializes
+
+running 1 test
+[dregg lean init] runtime=Default elapsed_ms=0.137
+[dregg lean init] module=initialize_Dregg2_Dregg2_Apps_DelegAdmit begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Apps_DelegAdmit elapsed_ms=0.624 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Exec_FFI begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Exec_FFI elapsed_ms=31.815 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_FinalityGate begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_FinalityGate elapsed_ms=0.067 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_StrandAdmission begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_StrandAdmission elapsed_ms=0.001 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_RoundAdvanceGate begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_RoundAdvanceGate elapsed_ms=0.001 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_AckBeforeAdmit begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_AckBeforeAdmit elapsed_ms=0.001 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Exec_DistributedExports begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Exec_DistributedExports elapsed_ms=0.039 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Deos_FlowRefine begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Deos_FlowRefine elapsed_ms=0.009 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Exec_FFIDirect begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Exec_FFIDirect elapsed_ms=0.001 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Storage_Deployed begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Storage_Deployed elapsed_ms=0.073 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Exec_DeployedConstraint begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Exec_DeployedConstraint elapsed_ms=0.004 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaStateHashWordGate begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaStateHashWordGate elapsed_ms=641.726 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaWrapChallenges begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaWrapChallenges elapsed_ms=0.002 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaWrapFtEval0 begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaWrapFtEval0 elapsed_ms=0.006 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaAccountOpening begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaAccountOpening elapsed_ms=8.884 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Circuit_Emit_PastaIpaDeferral begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Circuit_Emit_PastaIpaDeferral elapsed_ms=0.731 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaForkChoiceGate begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaForkChoiceGate elapsed_ms=0.002 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaCheckpoint begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaCheckpoint elapsed_ms=0.014 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Circuit_CrossCellConserveDecision begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Circuit_CrossCellConserveDecision elapsed_ms=0.001 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_Fips204Verify begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_Fips204Verify elapsed_ms=100.687 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_Fips203Kem begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_Fips203Kem elapsed_ms=0.003 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_MlKemDecaps begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_MlKemDecaps elapsed_ms=43.258 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_MlKemEncaps begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_MlKemEncaps elapsed_ms=0.001 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_MlKemKeygen begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_MlKemKeygen elapsed_ms=0.001 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_MlDsaKeygen begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_MlDsaKeygen elapsed_ms=0.002 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_MlDsaSignReal begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_MlDsaSignReal elapsed_ms=0.006 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_AutomataflFFI begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_AutomataflFFI elapsed_ms=0.541 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_MultiwayTugFFI begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_MultiwayTugFFI elapsed_ms=0.050 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge elapsed_ms=53959.493 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_RecordsRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_RecordsRuntime elapsed_ms=681.181 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_StationDailyRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_StationDailyRuntime elapsed_ms=2.448 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_StationCrateOpenRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_StationCrateOpenRuntime elapsed_ms=1.425 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_NetworkGenesis begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_NetworkGenesis elapsed_ms=90.725 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_SlotDeriveRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_SlotDeriveRuntime elapsed_ms=69.357 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_SignalFeedbackRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_SignalFeedbackRuntime elapsed_ms=211.895 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_DarkBazaarJudge begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_DarkBazaarJudge elapsed_ms=2134.501 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_GalleyMaintenanceDailyRuntime begin
+        SLOW [> 60.000s] (───) dregg-lean-ffi::lazy_pq_registration pq_route_discovery_is_lazy_but_first_real_call_initializes
+test pq_route_discovery_is_lazy_but_first_real_call_initializes has been running for over 60 seconds
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_GalleyMaintenanceDailyRuntime elapsed_ms=4637.120 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_NightWatchCampaignWire begin
+        SLOW [>120.000s] (───) dregg-lean-ffi::lazy_pq_registration pq_route_discovery_is_lazy_but_first_real_call_initializes
+        SLOW [>180.000s] (───) dregg-lean-ffi::lazy_pq_registration pq_route_discovery_is_lazy_but_first_real_call_initializes
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_NightWatchCampaignWire elapsed_ms=120114.099 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_CrewFieldMissionAdmission begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_CrewFieldMissionAdmission elapsed_ms=1591.069 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_EventBatchRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_EventBatchRuntime elapsed_ms=6826.898 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_WorldActivation begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_WorldActivation elapsed_ms=0.002 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_ActivatedContentRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_ActivatedContentRuntime elapsed_ms=0.003 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_BazaarGameRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_BazaarGameRuntime elapsed_ms=5.917 result=ok
+test pq_route_discovery_is_lazy_but_first_real_call_initializes ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 191.46s
+
+        PASS [ 191.471s] (2/5) dregg-lean-ffi::lazy_pq_registration pq_route_discovery_is_lazy_but_first_real_call_initializes
+       START [         ] (3/5) dregg-lean-ffi::lean_init_lifecycle lean_init_lifecycle_heavy_foreign_full_first_then_narrow
+
+running 1 test
+
+running 1 test
+test lean_init_lifecycle_heavy_foreign_full_first_then_narrow ... [dregg lean init] runtime=Default elapsed_ms=0.134
+[dregg lean init] module=initialize_Dregg2_Dregg2_Apps_DelegAdmit begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Apps_DelegAdmit elapsed_ms=0.607 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Exec_FFI begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Exec_FFI elapsed_ms=29.515 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_FinalityGate begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_FinalityGate elapsed_ms=0.064 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_StrandAdmission begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_StrandAdmission elapsed_ms=0.001 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_RoundAdvanceGate begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_RoundAdvanceGate elapsed_ms=0.001 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_AckBeforeAdmit begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_AckBeforeAdmit elapsed_ms=0.001 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Exec_DistributedExports begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Exec_DistributedExports elapsed_ms=0.036 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Deos_FlowRefine begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Deos_FlowRefine elapsed_ms=0.010 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Exec_FFIDirect begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Exec_FFIDirect elapsed_ms=0.001 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Storage_Deployed begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Storage_Deployed elapsed_ms=0.062 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Exec_DeployedConstraint begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Exec_DeployedConstraint elapsed_ms=0.003 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaStateHashWordGate begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaStateHashWordGate elapsed_ms=635.955 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaWrapChallenges begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaWrapChallenges elapsed_ms=0.002 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaWrapFtEval0 begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaWrapFtEval0 elapsed_ms=0.005 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaAccountOpening begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaAccountOpening elapsed_ms=9.239 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Circuit_Emit_PastaIpaDeferral begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Circuit_Emit_PastaIpaDeferral elapsed_ms=0.756 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaForkChoiceGate begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaForkChoiceGate elapsed_ms=0.002 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaCheckpoint begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaCheckpoint elapsed_ms=0.011 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Circuit_CrossCellConserveDecision begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Circuit_CrossCellConserveDecision elapsed_ms=0.001 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_Fips204Verify begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_Fips204Verify elapsed_ms=105.572 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_Fips203Kem begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_Fips203Kem elapsed_ms=0.003 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_MlKemDecaps begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_MlKemDecaps elapsed_ms=45.187 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_MlKemEncaps begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_MlKemEncaps elapsed_ms=0.001 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_MlKemKeygen begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_MlKemKeygen elapsed_ms=0.001 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_MlDsaKeygen begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_MlDsaKeygen elapsed_ms=0.001 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_MlDsaSignReal begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_MlDsaSignReal elapsed_ms=0.002 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_AutomataflFFI begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_AutomataflFFI elapsed_ms=0.546 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_MultiwayTugFFI begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_MultiwayTugFFI elapsed_ms=0.052 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge elapsed_ms=52656.617 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_RecordsRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_RecordsRuntime elapsed_ms=747.084 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_StationDailyRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_StationDailyRuntime elapsed_ms=2.363 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_StationCrateOpenRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_StationCrateOpenRuntime elapsed_ms=1.365 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_NetworkGenesis begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_NetworkGenesis elapsed_ms=94.677 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_SlotDeriveRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_SlotDeriveRuntime elapsed_ms=76.196 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_SignalFeedbackRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_SignalFeedbackRuntime elapsed_ms=231.529 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_DarkBazaarJudge begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_DarkBazaarJudge elapsed_ms=2399.085 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_GalleyMaintenanceDailyRuntime begin
+        SLOW [> 60.000s] (───) dregg-lean-ffi::lean_init_lifecycle lean_init_lifecycle_heavy_foreign_full_first_then_narrow
+test lean_init_lifecycle_heavy_foreign_full_first_then_narrow has been running for over 60 seconds
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_GalleyMaintenanceDailyRuntime elapsed_ms=5118.619 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_NightWatchCampaignWire begin
+        SLOW [>120.000s] (───) dregg-lean-ffi::lean_init_lifecycle lean_init_lifecycle_heavy_foreign_full_first_then_narrow
+        SLOW [>180.000s] (───) dregg-lean-ffi::lean_init_lifecycle lean_init_lifecycle_heavy_foreign_full_first_then_narrow
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_NightWatchCampaignWire elapsed_ms=132681.404 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_CrewFieldMissionAdmission begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_CrewFieldMissionAdmission elapsed_ms=1662.770 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_EventBatchRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_EventBatchRuntime elapsed_ms=7573.023 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_WorldActivation begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_WorldActivation elapsed_ms=0.002 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_ActivatedContentRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_ActivatedContentRuntime elapsed_ms=0.003 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_BazaarGameRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_BazaarGameRuntime elapsed_ms=5.838 result=ok
+ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 4 filtered out; finished in 204.09s
+
+test lean_init_lifecycle_heavy_foreign_full_first_then_narrow ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 4 filtered out; finished in 204.10s
+
+
+running 1 test
+        PASS [ 204.100s] (3/5) dregg-lean-ffi::lean_init_lifecycle lean_init_lifecycle_heavy_foreign_full_first_then_narrow
+       START [         ] (4/5) dregg-lean-ffi::lean_init_lifecycle lean_init_lifecycle_heavy_narrow_then_concurrent_full
+
+running 1 test
+test lean_init_lifecycle_heavy_narrow_then_concurrent_full ... [dregg lean init] runtime=Default elapsed_ms=0.118
+[dregg lean init] module=initialize_Dregg2_Dregg2_Apps_DelegAdmit begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Apps_DelegAdmit elapsed_ms=0.575 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Exec_FFIDirect begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Exec_FFIDirect elapsed_ms=29.244 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Exec_FFI begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Exec_FFI elapsed_ms=0.015 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_FinalityGate begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_FinalityGate elapsed_ms=0.066 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_StrandAdmission begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_StrandAdmission elapsed_ms=0.001 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_RoundAdvanceGate begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_RoundAdvanceGate elapsed_ms=0.001 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_AckBeforeAdmit begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_AckBeforeAdmit elapsed_ms=0.001 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Exec_DistributedExports begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Exec_DistributedExports elapsed_ms=0.044 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Deos_FlowRefine begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Deos_FlowRefine elapsed_ms=0.011 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Exec_FFIDirect begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Exec_FFIDirect elapsed_ms=0.001 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Storage_Deployed begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Storage_Deployed elapsed_ms=0.064 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Exec_DeployedConstraint begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Exec_DeployedConstraint elapsed_ms=0.004 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaStateHashWordGate begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaStateHashWordGate elapsed_ms=631.687 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaWrapChallenges begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaWrapChallenges elapsed_ms=0.002 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaWrapFtEval0 begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaWrapFtEval0 elapsed_ms=0.006 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaAccountOpening begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaAccountOpening elapsed_ms=9.198 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Circuit_Emit_PastaIpaDeferral begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Circuit_Emit_PastaIpaDeferral elapsed_ms=0.698 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaForkChoiceGate begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaForkChoiceGate elapsed_ms=0.002 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaCheckpoint begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaCheckpoint elapsed_ms=0.010 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Circuit_CrossCellConserveDecision begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Circuit_CrossCellConserveDecision elapsed_ms=0.001 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_Fips204Verify begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_Fips204Verify elapsed_ms=103.793 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_Fips203Kem begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_Fips203Kem elapsed_ms=0.004 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_MlKemDecaps begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_MlKemDecaps elapsed_ms=46.178 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_MlKemEncaps begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_MlKemEncaps elapsed_ms=0.001 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_MlKemKeygen begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_MlKemKeygen elapsed_ms=0.001 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_MlDsaKeygen begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_MlDsaKeygen elapsed_ms=0.002 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_MlDsaSignReal begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_MlDsaSignReal elapsed_ms=0.002 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_AutomataflFFI begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_AutomataflFFI elapsed_ms=0.545 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_MultiwayTugFFI begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_MultiwayTugFFI elapsed_ms=0.055 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge elapsed_ms=52482.399 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_RecordsRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_RecordsRuntime elapsed_ms=718.235 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_StationDailyRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_StationDailyRuntime elapsed_ms=2.403 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_StationCrateOpenRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_StationCrateOpenRuntime elapsed_ms=1.376 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_NetworkGenesis begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_NetworkGenesis elapsed_ms=90.429 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_SlotDeriveRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_SlotDeriveRuntime elapsed_ms=75.734 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_SignalFeedbackRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_SignalFeedbackRuntime elapsed_ms=230.290 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_DarkBazaarJudge begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_DarkBazaarJudge elapsed_ms=2317.534 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_GalleyMaintenanceDailyRuntime begin
+        SLOW [> 60.000s] (───) dregg-lean-ffi::lean_init_lifecycle lean_init_lifecycle_heavy_narrow_then_concurrent_full
+test lean_init_lifecycle_heavy_narrow_then_concurrent_full has been running for over 60 seconds
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_GalleyMaintenanceDailyRuntime elapsed_ms=5155.963 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_NightWatchCampaignWire begin
+        SLOW [>120.000s] (───) dregg-lean-ffi::lean_init_lifecycle lean_init_lifecycle_heavy_narrow_then_concurrent_full
+        SLOW [>180.000s] (───) dregg-lean-ffi::lean_init_lifecycle lean_init_lifecycle_heavy_narrow_then_concurrent_full
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_NightWatchCampaignWire elapsed_ms=132400.940 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_CrewFieldMissionAdmission begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_CrewFieldMissionAdmission elapsed_ms=1647.499 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_EventBatchRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_EventBatchRuntime elapsed_ms=7408.413 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_WorldActivation begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_WorldActivation elapsed_ms=0.002 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_ActivatedContentRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_ActivatedContentRuntime elapsed_ms=0.003 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_BazaarGameRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_BazaarGameRuntime elapsed_ms=5.859 result=ok
+ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 4 filtered out; finished in 203.37s
+
+test lean_init_lifecycle_heavy_narrow_then_concurrent_full ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 4 filtered out; finished in 203.38s
+
+
+running 1 test
+        PASS [ 203.382s] (4/5) dregg-lean-ffi::lean_init_lifecycle lean_init_lifecycle_heavy_narrow_then_concurrent_full
+       START [         ] (5/5) dregg-lean-ffi::lean_init_lifecycle lean_init_lifecycle_heavy_st_owner_and_mode_exclusion
+
+running 1 test
+test lean_init_lifecycle_heavy_st_owner_and_mode_exclusion ... [dregg lean init] runtime=SingleThreaded elapsed_ms=0.059
+[dregg lean init] module=initialize_Dregg2_Dregg2_Apps_DelegAdmit begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Apps_DelegAdmit elapsed_ms=0.763 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Exec_FFI begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Exec_FFI elapsed_ms=32.908 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_FinalityGate begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_FinalityGate elapsed_ms=0.051 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_StrandAdmission begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_StrandAdmission elapsed_ms=0.002 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_RoundAdvanceGate begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_RoundAdvanceGate elapsed_ms=0.001 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_AckBeforeAdmit begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_AckBeforeAdmit elapsed_ms=0.001 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Exec_DistributedExports begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Exec_DistributedExports elapsed_ms=0.035 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge elapsed_ms=52791.041 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_RecordsRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_RecordsRuntime elapsed_ms=722.882 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_SlotDeriveRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_SlotDeriveRuntime elapsed_ms=76.105 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_StationDailyRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_StationDailyRuntime elapsed_ms=2.378 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_StationCrateOpenRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_StationCrateOpenRuntime elapsed_ms=1.370 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_SignalFeedbackRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_SignalFeedbackRuntime elapsed_ms=230.360 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_NetworkGenesis begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_NetworkGenesis elapsed_ms=174.151 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_DarkBazaarJudge begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_DarkBazaarJudge elapsed_ms=2313.672 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_GalleyMaintenanceDailyRuntime begin
+        SLOW [> 60.000s] (───) dregg-lean-ffi::lean_init_lifecycle lean_init_lifecycle_heavy_st_owner_and_mode_exclusion
+test lean_init_lifecycle_heavy_st_owner_and_mode_exclusion has been running for over 60 seconds
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_GalleyMaintenanceDailyRuntime elapsed_ms=5080.582 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_NightWatchCampaignWire begin
+        SLOW [>120.000s] (───) dregg-lean-ffi::lean_init_lifecycle lean_init_lifecycle_heavy_st_owner_and_mode_exclusion
+        SLOW [>180.000s] (───) dregg-lean-ffi::lean_init_lifecycle lean_init_lifecycle_heavy_st_owner_and_mode_exclusion
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_NightWatchCampaignWire elapsed_ms=132331.234 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_CrewFieldMissionAdmission begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_CrewFieldMissionAdmission elapsed_ms=1668.050 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_EventBatchRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_EventBatchRuntime elapsed_ms=7566.307 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_WorldActivation begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_WorldActivation elapsed_ms=0.002 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_ActivatedContentRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_ActivatedContentRuntime elapsed_ms=0.002 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_BazaarGameRuntime begin
+ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 4 filtered out; finished in 203.00s
+
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_BazaarGameRuntime elapsed_ms=5.819 result=ok
+test lean_init_lifecycle_heavy_st_owner_and_mode_exclusion ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 4 filtered out; finished in 203.01s
+
+        PASS [ 203.013s] (5/5) dregg-lean-ffi::lean_init_lifecycle lean_init_lifecycle_heavy_st_owner_and_mode_exclusion
+────────────
+     Summary [ 802.039s] 5 tests run: 5 passed (4 slow), 4 skipped
+pbuild: VERDICT outcome=PASS status=0 lane=hcargo host=hbox cmd=env DREGG_LEAN_INIT_PROFILE=1 timeout --signal=TERM --kill-after=15s 1800s cargo nextest run --profile full --build-jobs 4 --test-threads=1 --no-fail-fast --no-tests fail --no-capture -p dregg-lean-ffi -p deos-hermes -p starbridge-v2 --features dregg-lean-ffi/lean-lib,deos-hermes/js-agent,starbridge-v2/agent-js --test lean_init_lifecycle --test lazy_pq_registration --test world_bridge_e2e -E test(~lean_init_lifecycle_heavy) or test(~pq_route_discovery_is_lazy_but_first_real_call_initializes) or test(~run_js_over_the_world_bridge_lands_on_the_served_world)

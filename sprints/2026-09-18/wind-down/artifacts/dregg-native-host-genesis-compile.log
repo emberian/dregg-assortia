@@ -1,0 +1,73 @@
+Kernel/NativeHostGenesis.lean:139:21: error(lean.unknownIdentifier): Unknown identifier `LawfulCodec`
+
+Note: It is not possible to treat `LawfulCodec` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+Kernel/NativeHostGenesis.lean:153:18: error(lean.unknownIdentifier): Unknown identifier `LawfulCodec`
+
+Note: It is not possible to treat `LawfulCodec` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+Kernel/NativeHostGenesis.lean:155:16: warning: declaration uses `sorry`
+Kernel/NativeHostGenesis.lean:159:8: warning: declaration uses `sorry`
+Kernel/NativeHostGenesis.lean:232:10: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (fund asset book rest).totalAsset selectedAsset
+in the target expression
+  (fund asset
+          (book.applyPosting
+            { source := asset, destination := enrollment.accountId, asset := asset,
+              amount := enrollment.initialBalance })
+          rest).totalAsset
+      selectedAsset =
+    book.totalAsset selectedAsset
+
+case cons
+asset selectedAsset : ℕ
+enrollment : Enrollment
+rest : List Enrollment
+ih :
+  ∀ (book : Book),
+    asset ∈ book.accounts →
+      (∀ enrollment ∈ rest, enrollment.accountId ∈ book.accounts) →
+        (fund asset book rest).totalAsset selectedAsset = book.totalAsset selectedAsset
+book : Book
+issuerPresent : asset ∈ book.accounts
+recipientsPresent : ∀ enrollment_1 ∈ enrollment :: rest, enrollment_1.accountId ∈ book.accounts
+⊢ (fund asset
+          (book.applyPosting
+            { source := asset, destination := enrollment.accountId, asset := asset,
+              amount := enrollment.initialBalance })
+          rest).totalAsset
+      selectedAsset =
+    book.totalAsset selectedAsset
+Kernel/NativeHostGenesis.lean:374:0: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+Kernel/NativeHostGenesis.lean:387:9: error(lean.invalidField): Invalid field `seed`: The environment does not contain `Minidregg.Kernel.NativeHostGenesis.Built.seed`, so it is not possible to project the field `seed` from an expression
+  built
+of type `Built profile config`
+Kernel/NativeHostGenesis.lean:396:8: error(lean.invalidField): Invalid field `configured`: The environment does not contain `Minidregg.Kernel.NativeHostGenesis.Built.configured`, so it is not possible to project the field `configured` from an expression
+  built
+of type `Built profile config`
+Kernel/NativeHostGenesis.lean:402:18: error(lean.invalidField): Invalid field `seed`: The environment does not contain `Minidregg.Kernel.NativeHostGenesis.Built.seed`, so it is not possible to project the field `seed` from an expression
+  built
+of type `Built profile config`
+Kernel/NativeHostGenesis.lean:403:23: error(lean.invalidField): Invalid field `seed`: The environment does not contain `Minidregg.Kernel.NativeHostGenesis.Built.seed`, so it is not possible to project the field `seed` from an expression
+  built
+of type `Built profile config`
+Kernel/NativeHostGenesis.lean:404:14: error(lean.invalidField): Invalid field `exactSeed`: The environment does not contain `Minidregg.Kernel.NativeHostGenesis.Built.exactSeed`, so it is not possible to project the field `exactSeed` from an expression
+  built
+of type `Built profile config`
+Kernel/NativeHostGenesis.lean:407:52: error: Invalid argument: Variable `unique` is not a proposition or let-declaration
+Kernel/NativeHostGenesis.lean:402:65: error: unsolved goals
+F : Type
+inst✝ : _root_.Field F
+profile : CanonicalRuntimeProfile.Profile F
+config : Config
+built : Built profile config
+unique : sorry
+⊢ (List.map Prod.fst (sorry ()).cells).Nodup ∧
+    DurableReceiver.Seed.snapshot ResourceBirthCodec.rootBytes (sorry ()) = sorry ()
+Kernel/NativeHostGenesis.lean:407:8: warning: declaration uses `sorry`
+Kernel/NativeHostGenesis.lean:483:4: warning: declaration uses `sorry`
+Kernel/NativeHostGenesis.lean:484:5: warning: unused variable `bytes`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`

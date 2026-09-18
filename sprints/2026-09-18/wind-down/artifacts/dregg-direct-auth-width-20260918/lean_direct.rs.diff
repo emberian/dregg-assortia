@@ -1,0 +1,160 @@
+--- lean_direct.rs.before
++++ lean_direct.rs
+@@ -148,16 +148,48 @@
+             delegate: Obj,
+         ) -> Obj;
+ 
+-        fn dregg_d_auth_signature(pk: u64, sig: u64) -> Obj;
+-        fn dregg_d_auth_proof(vk: u64, pf: u64, ba: u64, br: u64) -> Obj;
++        fn dregg_d_auth_signature_w(pk0: u64, pk1: u64, pk2: u64, pk3: u64, sig: u64) -> Obj;
++        fn dregg_d_auth_proof_w(
++            vk0: u64,
++            vk1: u64,
++            vk2: u64,
++            vk3: u64,
++            pf: u64,
++            ba: u64,
++            br: u64,
++        ) -> Obj;
+         fn dregg_d_auth_breadstuff(tok: u64) -> Obj;
+-        fn dregg_d_auth_bearer(dm: u64, ds: u64, stark: u8) -> Obj;
++        fn dregg_d_auth_bearer_w(dm0: u64, dm1: u64, dm2: u64, dm3: u64, ds: u64, stark: u8)
++            -> Obj;
+         static dregg_d_auth_unchecked: Obj;
+-        fn dregg_d_auth_captp(im: u64, sm: u64, isig: u64, ss: u64) -> Obj;
+-        fn dregg_d_auth_custom(st: u64, pf: u64) -> Obj;
++        fn dregg_d_auth_captp_w(
++            im0: u64,
++            im1: u64,
++            im2: u64,
++            im3: u64,
++            sm0: u64,
++            sm1: u64,
++            sm2: u64,
++            sm3: u64,
++            isig: u64,
++            ss: u64,
++        ) -> Obj;
++        fn dregg_d_auth_custom_w(st0: u64, st1: u64, st2: u64, st3: u64, pf: u64) -> Obj;
+         fn dregg_d_auth_oneof(cands: Obj, i: u64) -> Obj;
+-        fn dregg_d_auth_stealth(otp: u64, eph: u64, sig: u64) -> Obj;
+-        fn dregg_d_auth_token(key: u64, sig: u64) -> Obj;
++        fn dregg_d_auth_stealth_w(
++            otp0: u64,
++            otp1: u64,
++            otp2: u64,
++            otp3: u64,
++            eph0: u64,
++            eph1: u64,
++            eph2: u64,
++            eph3: u64,
++            sig: u64,
++        ) -> Obj;
++        fn dregg_d_auth_token_w(key0: u64, key1: u64, key2: u64, key3: u64, sig: u64) -> Obj;
++        #[cfg(test)]
++        fn dregg_d_auth_encode_w(auth: Obj) -> Obj;
+         static dregg_d_authwlist_nil: Obj;
+         fn dregg_d_authwlist_cons(x: Obj, xs: Obj) -> Obj;
+ 
+@@ -398,33 +430,53 @@
+ 
+     unsafe fn build_auth_w(a: &WireAuth) -> Obj {
+         match a {
+-            WireAuth::Signature { pubkey, sig } => dregg_d_auth_signature(digest_low(pubkey), *sig),
++            WireAuth::Signature { pubkey, sig } => {
++                let [pk0, pk1, pk2, pk3] = digest_limbs(pubkey);
++                dregg_d_auth_signature_w(pk0, pk1, pk2, pk3, *sig)
++            }
+             WireAuth::Proof {
+                 vk,
+                 proof,
+                 bound_action,
+                 bound_resource,
+-            } => dregg_d_auth_proof(digest_low(vk), *proof, *bound_action, *bound_resource),
++            } => {
++                let [vk0, vk1, vk2, vk3] = digest_limbs(vk);
++                dregg_d_auth_proof_w(vk0, vk1, vk2, vk3, *proof, *bound_action, *bound_resource)
++            }
+             WireAuth::Breadstuff { token } => dregg_d_auth_breadstuff(*token),
+             WireAuth::Bearer {
+                 deleg_msg,
+                 deleg_sig,
+                 stark,
+-            } => dregg_d_auth_bearer(digest_low(deleg_msg), *deleg_sig, *stark as u8),
++            } => {
++                let [dm0, dm1, dm2, dm3] = digest_limbs(deleg_msg);
++                dregg_d_auth_bearer_w(dm0, dm1, dm2, dm3, *deleg_sig, *stark as u8)
++            }
+             WireAuth::Unchecked => dregg_d_auth_unchecked,
+             WireAuth::CapTpDelivered {
+                 intro_msg,
+                 sender_msg,
+                 intro_sig,
+                 sender_sig,
+-            } => dregg_d_auth_captp(
+-                digest_low(intro_msg),
+-                digest_low(sender_msg),
+-                *intro_sig,
+-                *sender_sig,
+-            ),
++            } => {
++                let [im0, im1, im2, im3] = digest_limbs(intro_msg);
++                let [sm0, sm1, sm2, sm3] = digest_limbs(sender_msg);
++                dregg_d_auth_captp_w(
++                    im0,
++                    im1,
++                    im2,
++                    im3,
++                    sm0,
++                    sm1,
++                    sm2,
++                    sm3,
++                    *intro_sig,
++                    *sender_sig,
++                )
++            }
+             WireAuth::Custom { kind_stmt, proof } => {
+-                dregg_d_auth_custom(digest_low(kind_stmt), *proof)
++                let [st0, st1, st2, st3] = digest_limbs(kind_stmt);
++                dregg_d_auth_custom_w(st0, st1, st2, st3, *proof)
+             }
+             WireAuth::OneOf {
+                 candidates,
+@@ -440,22 +492,21 @@
+                 one_time_pk,
+                 ephemeral_pk,
+                 sig,
+-            } => dregg_d_auth_stealth(digest_low(one_time_pk), digest_low(ephemeral_pk), *sig),
+-            WireAuth::Token { issuer_key, sig } => dregg_d_auth_token(digest_low(issuer_key), *sig),
+-        }
+-    }
+-
+-    /// The verified `liftAuthW` lowers every digest field (pubkey/vk/…) via `Int.ofNat` of the wire
+-    /// `Nat`. The JSON path carries the FULL 256-bit digest as 64-hex, but `parseHex32` reads it into
+-    /// a `Nat` and `stateOfWState`/`liftAuthW` only ever fold it as that `Nat` — and the gate's WHO
+-    /// leg the demos exercise compares the lifted statement to the proof. The kernel's `Nat` digest is
+-    /// the WHOLE hex as a big Nat; a `u64` low slice is what the JSON `to_hex32(u64)` demos use. To
+-    /// stay byte-identical to the JSON path for the credential leg we carry the SAME `Nat` the JSON
+-    /// parser would produce — i.e. the full 256-bit big-endian value. Since the builder takes a `u64`,
+-    /// we pass the low 64 bits, matching the demo/fixture digests (`Digest::from_u64`) the producer
+-    /// path uses; a full-width digest credential is a JSON-path-only feature until the builder widens.
+-    fn digest_low(d: &crate::marshal::Digest) -> u64 {
+-        u64::from_be_bytes(d.0[24..32].try_into().unwrap())
++            } => {
++                let [otp0, otp1, otp2, otp3] = digest_limbs(one_time_pk);
++                let [eph0, eph1, eph2, eph3] = digest_limbs(ephemeral_pk);
++                dregg_d_auth_stealth_w(otp0, otp1, otp2, otp3, eph0, eph1, eph2, eph3, *sig)
++            }
++            WireAuth::Token { issuer_key, sig } => {
++                let [key0, key1, key2, key3] = digest_limbs(issuer_key);
++                dregg_d_auth_token_w(key0, key1, key2, key3, *sig)
++            }
++        }
++    }
++
++    /// Full 256-bit digest as low-first limbs; Lean composes the same `Nat` as the JSON codec.
++    fn digest_limbs(d: &crate::marshal::Digest) -> [u64; 4] {
++        crate::marshal::WideInt::from_be_bytes32(d.0).limbs_le()
+     }
+ 
+     unsafe fn build_caveat_list(cs: &[WireCaveat]) -> Obj {

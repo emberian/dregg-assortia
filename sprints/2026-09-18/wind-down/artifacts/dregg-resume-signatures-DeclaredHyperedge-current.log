@@ -1,0 +1,52 @@
+Kernel/DeclaredHyperedge.lean:171:8: warning: automatically included section variable(s) unused in theorem `Minidregg.Kernel.DeclaredHyperedge.Declaration.authState_same_pre`:
+  [Fintype Incidence]
+  [DecidableEq Incidence]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Incidence] [DecidableEq Incidence] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Kernel/DeclaredHyperedge.lean:283:12: warning: This simp argument is unused:
+  outside
+
+Hint: Omit it from the simp argument list.
+  simp [̵o̵u̵t̵s̵i̵d̵e̵,̵ ̵i̵n̵d̵u̵c̵t̵i̵o̵n̵]̵[̲i̲n̲d̲u̲c̲t̲i̲o̲n̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Kernel/DeclaredHyperedge.lean:301:12: warning: This simp argument is unused:
+  outside
+
+Hint: Omit it from the simp argument list.
+  simp [̵o̵u̵t̵s̵i̵d̵e̵,̵ ̵i̵n̵d̵u̵c̵t̵i̵o̵n̵]̵[̲i̲n̲d̲u̲c̲t̲i̲o̲n̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Kernel/DeclaredHyperedge.lean:423:8: warning: automatically included section variable(s) unused in theorem `Minidregg.Kernel.DeclaredHyperedge.Declaration.balanceCheck_eq_true_iff`:
+  [DecidableEq Incidence]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq Incidence] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Kernel/DeclaredHyperedge.lean:466:0: warning: automatically included section variable(s) unused in theorem `Minidregg.Kernel.DeclaredHyperedge.Declaration.aggregateDelta_zero`:
+  [DecidableEq Incidence]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq Incidence] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Kernel/DeclaredHyperedge.lean:528:8: warning: automatically included section variable(s) unused in theorem `Minidregg.Kernel.DeclaredHyperedge.Outcome.rejected_materialized`:
+  [Fintype Incidence]
+  [DecidableEq Incidence]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Incidence] [DecidableEq Incidence] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Kernel/DeclaredHyperedge.lean:637:8: warning: automatically included section variable(s) unused in theorem `Minidregg.Kernel.DeclaredHyperedge.CommittedHyperedge.prepared_preRoot`:
+  [DecidableEq Incidence]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq Incidence] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Kernel/DeclaredHyperedge.lean:644:8: warning: automatically included section variable(s) unused in theorem `Minidregg.Kernel.DeclaredHyperedge.CommittedHyperedge.prepared_postRoot`:
+  [DecidableEq Incidence]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq Incidence] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`

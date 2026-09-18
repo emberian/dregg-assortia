@@ -1,0 +1,37 @@
+{
+  "capturedAt": "2026-09-18T07:26:03.619800+00:00",
+  "status": "frozen incomplete; genesis first emit RED; no olean; both probes UNRUN",
+  "files": {
+    "Kernel/NativeHostGenesis.lean": "1fd0eced5d9a68c402f3df9b6dae2c8c5d3e4fd79b9dc91ecc1a9da59c74cefe",
+    "scripts/probe-native-host-genesis.lean": "45039aacbcb347114702ee5c0d79fe491b801955c855b6546c29c751ac6282ef",
+    "scripts/probe-native-host-cli.lean": "c6ee2815f9c63ce2e2a33d5fc437c3db67302a591beb2fe43d476ad8fc8ce8c0"
+  },
+  "compile": {
+    "command": "LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Kernel/NativeHostGenesis.olean Kernel/NativeHostGenesis.lean",
+    "session": 61995,
+    "wrapperExit": 1,
+    "wrapperError": "zsh readonly variable status after Lean command; underlying Lean exit not separately retained",
+    "log": "/tmp/dregg-native-host-genesis-compile.log",
+    "logSha256": "8b741e881e9f1ff1266800951d62e33e9ed8b3f4b632259c574b2551ca6db53b",
+    "evidence": "Lean diagnostic errors and missing output olean establish failed compile independent of wrapper failure",
+    "boundary": "Used pre-Book-strengthening Registry olean; Registry source law update began during/after check; runtime observation semantic pin still pending at this attempt"
+  },
+  "dependencies": {
+    "Compiler/CanonicalRuntimeProfile": {
+      "sourceSha256": "a53d209861edeef73c8625a466a602dd27e6a1385aad2c9bf27eb92770c8a584",
+      "oleanSha256": "365191a2748e45a131d835de402af76b914ff9082f0c905f21b7b08627d4ef05"
+    },
+    "Compiler/CanonicalCellRegistry": {
+      "sourceSha256": "14a22018722e30757e3d622437b32ba8cc29c040c3bda12018ad6f269a39fff5",
+      "oleanSha256": "a8c1bf1a1ac70caf535d65ddc23b00a34531cb36e393853d909394fa1497e465"
+    },
+    "Kernel/ResourceBirthPolicyController": {
+      "sourceSha256": "922b7515e0f447f1bc21c79f262910ec3e156cafd103696cbbb4ddb41dc51a0b",
+      "oleanSha256": "57d3711938e521a4cc5a9d33639581e83d5dc894a800c0c8909c673756bacbcd"
+    },
+    "Compiler/NativeHostProfile": {
+      "sourceSha256": "46f49b958a3c54b945bcc7b129004c561fb13cac706fed8a1f3c12bfebb0727a",
+      "oleanSha256": "e5b014f1fd5ae57de93e6b5978cc420705c80c8b9042c7264468792005f63de1"
+    }
+  }
+}

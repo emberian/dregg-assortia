@@ -1,0 +1,3 @@
+Compiler/HyperdocumentCodec.lean:87:14: warning: Local variable 'value' resembles constructor 'Minidregg.Theory.Hyperdocument.StoredOpeningShape.value' - write '.value' (with a dot) or 'Minidregg.Theory.Hyperdocument.StoredOpeningShape.value' to use the constructor.
+
+Note: This linter can be disabled with `set_option linter.constructorNameAsVariable false`

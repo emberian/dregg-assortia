@@ -1,0 +1,97 @@
+Kernel/DeclaredHyperedge.lean:75:58: error(lean.invalidField): Invalid field `derive`: The environment does not contain `Function.derive`, so it is not possible to project the field `derive` from an expression
+  DeclaredTurn.RequestSeed.mk seed.domain seed.semantics seed.federation seed.subject seed.subjectKeyEpoch seed.target
+    seed.verb apex seed.nonce seed.height seed.policyId seed.policyEpoch seed.cost
+of type
+  ℕ → DeclaredTurn.RequestSeed kind
+Kernel/DeclaredHyperedge.lean:90:0: error: Not a definitional equality: the left-hand side
+  leg.request.target
+is not definitionally equal to the right-hand side
+  leg.seed.target
+Kernel/DeclaredHyperedge.lean:91:78: error: Type mismatch
+  rfl
+has type
+  ?m.11 = ?m.11
+but is expected to have type
+  leg.request.target = leg.seed.target
+Kernel/DeclaredHyperedge.lean:93:0: error: Not a definitional equality: the left-hand side
+  leg.request.argsDigest
+is not definitionally equal to the right-hand side
+  apex
+Kernel/DeclaredHyperedge.lean:94:71: error: Type mismatch
+  rfl
+has type
+  ?m.7 = ?m.7
+but is expected to have type
+  leg.request.argsDigest = apex
+Kernel/DeclaredHyperedge.lean:96:0: error: Not a definitional equality: the left-hand side
+  leg.request.effectsDigest
+is not definitionally equal to the right-hand side
+  leg.effects.digest
+Kernel/DeclaredHyperedge.lean:99:54: error: Type mismatch
+  rfl
+has type
+  ?m.12 = ?m.12
+but is expected to have type
+  leg.request.effectsDigest = leg.effects.digest
+Kernel/DeclaredHyperedge.lean:101:0: error: Not a definitional equality: the left-hand side
+  leg.request.preStateRoot
+is not definitionally equal to the right-hand side
+  preRoot
+Kernel/DeclaredHyperedge.lean:102:76: error: Type mismatch
+  rfl
+has type
+  ?m.7 = ?m.7
+but is expected to have type
+  leg.request.preStateRoot = preRoot
+Kernel/DeclaredHyperedge.lean:166:8: warning: automatically included section variable(s) unused in theorem `Minidregg.Kernel.DeclaredHyperedge.Declaration.authState_same_pre`:
+  [Fintype Incidence]
+  [DecidableEq Incidence]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Incidence] [DecidableEq Incidence] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Kernel/DeclaredHyperedge.lean:278:12: warning: This simp argument is unused:
+  outside
+
+Hint: Omit it from the simp argument list.
+  simp [̵o̵u̵t̵s̵i̵d̵e̵,̵ ̵i̵n̵d̵u̵c̵t̵i̵o̵n̵]̵[̲i̲n̲d̲u̲c̲t̲i̲o̲n̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Kernel/DeclaredHyperedge.lean:296:12: warning: This simp argument is unused:
+  outside
+
+Hint: Omit it from the simp argument list.
+  simp [̵o̵u̵t̵s̵i̵d̵e̵,̵ ̵i̵n̵d̵u̵c̵t̵i̵o̵n̵]̵[̲i̲n̲d̲u̲c̲t̲i̲o̲n̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Kernel/DeclaredHyperedge.lean:418:8: warning: automatically included section variable(s) unused in theorem `Minidregg.Kernel.DeclaredHyperedge.Declaration.balanceCheck_eq_true_iff`:
+  [DecidableEq Incidence]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq Incidence] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Kernel/DeclaredHyperedge.lean:461:0: warning: automatically included section variable(s) unused in theorem `Minidregg.Kernel.DeclaredHyperedge.Declaration.aggregateDelta_zero`:
+  [DecidableEq Incidence]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq Incidence] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Kernel/DeclaredHyperedge.lean:523:8: warning: automatically included section variable(s) unused in theorem `Minidregg.Kernel.DeclaredHyperedge.Outcome.rejected_materialized`:
+  [Fintype Incidence]
+  [DecidableEq Incidence]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Incidence] [DecidableEq Incidence] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Kernel/DeclaredHyperedge.lean:632:8: warning: automatically included section variable(s) unused in theorem `Minidregg.Kernel.DeclaredHyperedge.CommittedHyperedge.prepared_preRoot`:
+  [DecidableEq Incidence]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq Incidence] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Kernel/DeclaredHyperedge.lean:639:8: warning: automatically included section variable(s) unused in theorem `Minidregg.Kernel.DeclaredHyperedge.CommittedHyperedge.prepared_postRoot`:
+  [DecidableEq Incidence]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq Incidence] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`

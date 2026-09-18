@@ -1,0 +1,47 @@
+{
+  "checked_at_utc": "2026-09-18T07:10:46.299689+00:00",
+  "checks": [
+    {
+      "source": "/Users/ember/dev/minidregg/Kernel/DeclaredResourceController.lean",
+      "sha256": "ca22fd70077620c6bc16990ca2eb7537d9eb12c3c217b921adc75636b3a26918",
+      "command": "LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Kernel/DeclaredResourceController.olean Kernel/DeclaredResourceController.lean",
+      "log": "/tmp/dregg-resume-declared-controller.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "exit_code": 0,
+      "verdict": "PASS"
+    },
+    {
+      "source": "/Users/ember/dev/minidregg/Kernel/CapabilityDelegationController.lean",
+      "sha256": "685b032c30b5cea35285c800167b567d1ff00078feeffce97982ee70697baf3b",
+      "command": "LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Kernel/CapabilityDelegationController.olean Kernel/CapabilityDelegationController.lean",
+      "log": "/tmp/dregg-resume-delegation-controller.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "exit_code": 0,
+      "verdict": "PASS"
+    }
+  ],
+  "axiom_audit": {
+    "source": "/tmp/dregg-delegation-controller-audit.lean",
+    "log": "/tmp/dregg-delegation-controller-audit.log",
+    "sha256": "8ce3059849a0bfd5df0595f55fa0859978ce548052bcff193117cf5366c00a83",
+    "exit_code": 0,
+    "declarations": 7,
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "scope": "Source compile plus ordinary-axiom theorem audit. No native joined journey result yet.",
+  "joined_native_manifest": "/tmp/dregg-resume-born-joined-source.json",
+  "joined_native_result": "PASS exit0, source compile also PASS; old DeclaredController source retained for concurrent byte-preserving codec factor",
+  "source_only_files": [
+    {
+      "path": "/Users/ember/dev/minidregg/scripts/probe-declared-resource.lean",
+      "sha256": "e0100b162448a79c2c946ec14ce57bf95b6d0bf4a2223314c1a26e6e6d10c335",
+      "scope": "Physical Entry.policy adds distinct generation/revision; not compiled or run in this wave."
+    }
+  ],
+  "active_processes": [],
+  "frozen": true
+}

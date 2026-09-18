@@ -1,0 +1,104 @@
+{
+  "scope": "Shared semantic foundations only; downstream current-source receiver/native/umbrella closure remains separate",
+  "utc": "2026-09-18T06:49:30.579416+00:00",
+  "checks": [
+    {
+      "source": "Theory/TypedAuthorization.lean",
+      "sha256": "2f28c931b779455b93a657f5ca5a4870aa3af998e92f791e13bed032e217085f",
+      "command": "LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Theory/TypedAuthorization.olean Theory/TypedAuthorization.lean",
+      "exitCode": 0,
+      "log": "/tmp/dregg-resume-TypedAuthorization.log",
+      "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "Theory/AuthorizationDeclaration.lean",
+      "sha256": "39855219c5784d217b903c158477554d045cbbbfab0943ceab5df6c40c2469c5",
+      "command": "LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Theory/AuthorizationDeclaration.olean Theory/AuthorizationDeclaration.lean",
+      "exitCode": 0,
+      "log": "/tmp/dregg-resume-signatures-AuthorizationDeclaration.log",
+      "logSha256": "5fd29ebbeee92f7ad89b25f5ff9897b1cda46470d3c429745e69e9a2cb8e7aea",
+      "owner": "resume_signatures",
+      "addition": "Candidate-independent canonical requestWords/requestWireOfWords and source version moved down to break lowcodec backend/artifact import cycle",
+      "priorCheck": {
+        "source": "Theory/AuthorizationDeclaration.lean",
+        "sha256": "2173b7df0958d731517c94d2300772f5af216870d16d72095b529ea9c60d2369",
+        "command": "LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Theory/AuthorizationDeclaration.olean Theory/AuthorizationDeclaration.lean",
+        "exitCode": 0,
+        "log": "/tmp/dregg-resume-AuthorizationDeclaration.log",
+        "logSha256": "ca4ea7bfc3cbdb4eb37b2fcdead2c537631f56a60f2d7e21b4ddb8ad8c9357d8"
+      }
+    },
+    {
+      "source": "Theory/CredentialAuthorityFamily.lean",
+      "sha256": "92110d1550c1298cce3ad7eceeb899b7352240791893d43688af97b84d1d7574",
+      "command": "LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Theory/CredentialAuthorityFamily.olean Theory/CredentialAuthorityFamily.lean",
+      "exitCode": 0,
+      "log": "/tmp/dregg-resume-CredentialAuthorityFamily.log",
+      "logSha256": "d40c6000205dfc14fc5ac26b05f6fcbbd0c46c7671236db2f5dd64ecb553818e"
+    },
+    {
+      "source": "Theory/DeclaredTurn.lean",
+      "sha256": "2e13a1fe69980926154d88149a499e2aea07306ebe456ad891f3bf1f2718a53e",
+      "command": "LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Theory/DeclaredTurn.olean Theory/DeclaredTurn.lean",
+      "exitCode": 0,
+      "log": "/tmp/dregg-resume-DeclaredTurn.log",
+      "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "Theory/AcceptedCellEffect.lean",
+      "sha256": "bdb308366a71fd90bd7c39d7f473ecf8d87487adc5f117f906084616d7dbce58",
+      "command": "LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Theory/AcceptedCellEffect.olean Theory/AcceptedCellEffect.lean",
+      "exitCode": 0,
+      "log": "/tmp/dregg-resume-AcceptedCellEffect.log",
+      "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "Theory/CredentialAuthorityState.lean",
+      "sha256": "12dec5243b7c412b077ce6a52ca50b9dc4b5a7be4faf5ebc1ccbd741fcc6a9f4",
+      "command": "LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Theory/CredentialAuthorityState.olean Theory/CredentialAuthorityState.lean",
+      "exitCode": 0,
+      "log": "/tmp/dregg-resume-CredentialAuthorityState.log",
+      "logSha256": "3d1769bbde6e1a7b9b404cc8e0fd9362374039272c9aa71cfed0396b8d6bae7d"
+    },
+    {
+      "source": "Theory/CredentialAuthorityEffects.lean",
+      "sha256": "eb5c1d37900889047aa8cf8089d4f877d6f8b16fd3a747e736a48677d07fbd0b",
+      "command": "LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Theory/CredentialAuthorityEffects.olean Theory/CredentialAuthorityEffects.lean",
+      "exitCode": 0,
+      "log": "/tmp/dregg-resume-CredentialAuthorityEffects.log",
+      "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "axiomAudit": {
+    "declarations": 44,
+    "source": "/tmp/dregg-resume-foundation-axioms.lean",
+    "log": "/tmp/dregg-resume-foundation-axioms.log",
+    "logSha256": "c214f2103e9c895b93aed0871c2c24447ef2b57aad3154fbaab5bcb95da2eb76",
+    "exitCode": 0,
+    "allowedAxioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+    ]
+  },
+  "unchangedDependencyRefreshes": [
+    "Theory/EffectDeclaration.lean",
+    "Theory/CanonicalTransition.lean"
+  ],
+  "permanentAudit": {
+    "source": "Assurance/CredentialFoundationMigrationAudit.lean",
+    "sha256": "eccad30194fac86fd66146acc75caed1c79f7358bb4dec26f65d39f0c4902932",
+    "status": "GREEN",
+    "exitCode": 0,
+    "command": "LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Assurance/CredentialFoundationMigrationAudit.olean Assurance/CredentialFoundationMigrationAudit.lean",
+    "log": "/tmp/dregg-resume-CredentialFoundationMigrationAudit.log",
+    "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "declarations": 44
+  },
+  "noChange": "Theory/PrivateComputationDeclaration.lean needed no constructor migration",
+  "importBoundary": {
+    "command": "bash scripts/check-import-boundary.sh",
+    "exitCode": 0
+  },
+  "finalUtc": "2026-09-18T06:53:56.547332+00:00"
+}

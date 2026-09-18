@@ -1,0 +1,71 @@
+PASS policy install receiver: public-test-key signer executed
+PASS policy install receiver: public-test-key signer executed
+PASS policy install receiver: preexisting exact successor source refuses: Minidregg.Kernel.PolicyInstallReceiver.Reject.allocation (Minidregg.Theory.CellRegistry.RejectReason.duplicateCreate)
+PASS policy install receiver: preexisting exact successor source refuses: exact SQLite bytes unchanged
+PASS policy install receiver: public-test-key signer executed
+PASS policy install receiver: retired successor identity cannot resurrect: Minidregg.Kernel.PolicyInstallReceiver.Reject.allocation (Minidregg.Theory.CellRegistry.RejectReason.retiredIdentifier)
+PASS policy install receiver: retired successor identity cannot resurrect: exact SQLite bytes unchanged
+PASS policy install receiver: public-test-key signer executed
+PASS policy install receiver: unavailable old canonical source refuses: Minidregg.Kernel.PolicyInstallReceiver.Reject.oldSourceUnavailable
+PASS policy install receiver: unavailable old canonical source refuses: exact SQLite bytes unchanged
+PASS policy install receiver: public-test-key signer executed
+PASS policy install receiver: ordinary code-edit cap cannot replace law: Minidregg.Kernel.PolicyInstallReceiver.Reject.semantic (Minidregg.Kernel.PolicyInstallController.Reject.capability)
+PASS policy install receiver: ordinary code-edit cap cannot replace law: exact SQLite bytes unchanged
+PASS policy install receiver: public-test-key signer executed
+PASS policy install receiver: copied public cap without holder key refuses: Minidregg.Kernel.PolicyInstallReceiver.Reject.nativeSignature
+  (Minidregg.Compiler.CredentialSignatureAdmission.Reject.envelope
+    (Minidregg.Kernel.CredentialSignedEnvelopeController.Failure.invalidSignature))
+PASS policy install receiver: copied public cap without holder key refuses: exact SQLite bytes unchanged
+PASS policy install receiver: public-test-key signer executed
+PASS policy install receiver: actual old policy controls replacement: Minidregg.Kernel.PolicyInstallReceiver.Reject.semantic (Minidregg.Kernel.PolicyInstallController.Reject.policyRejected)
+PASS policy install receiver: actual old policy controls replacement: exact SQLite bytes unchanged
+PASS policy install receiver: public-test-key signer executed
+PASS policy install receiver: trailing ingress byte refuses
+PASS policy install receiver: new source identity participates in actual allocation
+PASS policy install receiver: lost native reply recovered by exact readback
+PASS policy install receiver: actual committed new head selects exact source content
+PASS policy install receiver: actual committed semantic marker consumed
+PASS policy install receiver: retired source address is absent from authority selection
+PASS policy install receiver: resolved exact successor bytes and record
+PASS policy install receiver: old immutable source remains available for provenance
+PASS policy install receiver: one recorded transaction and one event
+PASS policy install receiver: actual exact vector charged once
+PASS policy install receiver: original expired-key and expired-grant request replayed before fresh native admission
+PASS policy install receiver: historical replay returns only same receipt IDs
+PASS policy install receiver: restart replay neither rewrites storage nor charges again
+PASS policy install receiver: changed payload at same source-derived transaction identity conflicts: Minidregg.Kernel.PolicyInstallReceiver.Reject.transactionConflict
+PASS policy install receiver: payload conflict leaves exact physical bytes unchanged
+PASS policy install receiver: source revision advances independently of grant generation
+PASS policy install receiver: original ordinary owner grant retained exactly, not reissued
+PASS policy install receiver: original policy-control grant retained exactly, not reissued
+PASS policy install receiver: public-test-key signer executed
+PASS policy install receiver: public-test-key signer executed
+PASS policy install receiver: retained owner grant still checks revision-two rules
+PASS policy install receiver: new-law refusal preserves exact physical image
+PASS policy install receiver: public-test-key signer executed
+PASS policy install receiver: public-test-key signer executed
+PASS policy install receiver: same original owner grant mutates under revision two
+PASS policy install receiver: source revision advances independently of grant generation
+PASS policy install receiver: original ordinary owner grant retained exactly, not reissued
+PASS policy install receiver: original policy-control grant retained exactly, not reissued
+PASS policy install receiver: public-test-key signer executed
+PASS policy install receiver: same original control grant installs revision three
+PASS policy install receiver: source revision advances independently of grant generation
+PASS policy install receiver: original ordinary owner grant retained exactly, not reissued
+PASS policy install receiver: original policy-control grant retained exactly, not reissued
+PASS policy install receiver: public-test-key signer executed
+PASS policy install receiver: public-test-key signer executed
+PASS policy install receiver: same owner grant now satisfies the changed revision-three rule
+PASS policy install receiver: source revision advances independently of grant generation
+PASS policy install receiver: original ordinary owner grant retained exactly, not reissued
+PASS policy install receiver: original policy-control grant retained exactly, not reissued
+PASS policy install receiver: both owner mutations survive actual SQLite reopen
+PASS policy install receiver: two installs plus two accepted owner mutations are the whole journal
+PASS policy install receiver: public-test-key signer executed
+PASS policy install receiver: self-governing rule lockout is policy refusal, not a revoked control grant: Minidregg.Kernel.PolicyInstallReceiver.Reject.semantic (Minidregg.Kernel.PolicyInstallController.Reject.policyRejected)
+PASS policy install receiver: first install replay survives subsequent source and object changes
+PASS policy install receiver: second install replay survives subsequent object changes
+PASS policy install receiver: both historical receipts are the original receipts
+PASS policy install receiver: lockout and expired historical replay preserve all physical bytes and charges
+committed source bytes=239, first writes=4, first guards=7, final journal=4
+PASS policy installation: real native holder signature and control capability, same-snapshot old source, atomic durable new source+head+marker, occupied/retired/old-law/cap/key refusals, lost-reply recovery and unchanged-ingress restart replay. Successive source revisions preserve the exact original owner/control grants, newly selected rules govern actual object mutations, and deliberate self-governing install lockout remains distinct from epoch revocation.

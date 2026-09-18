@@ -1,0 +1,33 @@
+{
+  "task": "Native semantic history verification",
+  "frozen": "User wind-down: no checks launched for these edits",
+  "sources": [
+    {
+      "path": "/Users/ember/dev/minidregg/Kernel/DeclaredResourceController.lean",
+      "sha256": "85a807c067eab31f5710044e7d808e83a51823b77e07c4428aacec07b2bd80f0",
+      "status": "SOURCE_ONLY_NO_CHECK_BY_THIS_LANE"
+    },
+    {
+      "path": "/Users/ember/dev/minidregg/Kernel/NativeHostContext.lean",
+      "sha256": "317eb5fff66d8975569214bcad6613b581fce03501f1e6d7c86a60bca7a619f6",
+      "status": "SOURCE_ONLY_NO_CHECK_BY_THIS_LANE"
+    },
+    {
+      "path": "/Users/ember/dev/minidregg/Kernel/NativeHostReplay.lean",
+      "sha256": "c98466c7af5b64e246631e352b0352ca9d2ffdf28a69ed95f929984fc4e75ec7",
+      "status": "SOURCE_ONLY_NO_CHECK_BY_THIS_LANE"
+    }
+  ],
+  "prior_controller_snapshot": "/tmp/dregg-declared-before-history-codec.lean",
+  "prior_controller_sha256": "ca22fd70077620c6bc16990ca2eb7537d9eb12c3c217b921adc75636b3a26918",
+  "codec_factor_manifest": "/tmp/dregg-declared-ingress-codec-factor.json",
+  "contract": "NativeHostReplay.verifyLoaded config target : IO (Except Failure (Verified config target)); verifyBytes config bytes : IO (Except Failure (Sigma (Verified config)))",
+  "pending": [
+    "Narrow emit DeclaredResourceController signed codec factor; confirm signedBytes_wire_unchanged rfl and strict decode laws",
+    "Fresh NativeHostCodec + NativeHostContext imports as needed; Context emission status held by host lane",
+    "Narrow emit NativeHostReplay and six-law axiom audit /tmp/dregg-native-history-axioms.lean",
+    "Reemit NativeHost hot entrypoint and downstream genesis/CLI after host/context/book changes",
+    "Run valid four-family native history and physically consistent tamper refusal against actual public open; original-height past-expiry regression"
+  ],
+  "runtime_claim": "None for semantic history verification; previous joined/installer native passes consumed saved prior controller source"
+}

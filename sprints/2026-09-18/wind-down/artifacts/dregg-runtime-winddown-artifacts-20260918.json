@@ -1,0 +1,546 @@
+{
+  "captured_utc": "2026-09-18T07:34:28.956997+00:00",
+  "status": "Final allowed native capture PASS; scratch repairs remain unapplied; own hcargo lease released; no new builds.",
+  "files": {
+    "/tmp/dregg-direct-auth-width-20260918/staged-manifest.json": {
+      "sha256": "6eba7d480841a7b5dbc6bd1bc907e240839cd2a9b064c7885b8cb99c874a05de",
+      "bytes": 3426
+    },
+    "/tmp/dregg-resume-AcceptedCellEffect.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-AuthorizationDeclaration.log": {
+      "sha256": "ca4ea7bfc3cbdb4eb37b2fcdead2c537631f56a60f2d7e21b4ddb8ad8c9357d8",
+      "bytes": 256
+    },
+    "/tmp/dregg-resume-BoundedPageExtensionCatalog.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-BoundedPageSchemaUpgrade-current.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-BoundedPageSchemaUpgradeCutover-current.log": {
+      "sha256": "4519cd37b1af35d077ff12f50a421d2bfd58fd6c2f12a5fd01c684b4e97f1bb2",
+      "bytes": 177
+    },
+    "/tmp/dregg-resume-CanonicalAuthorityProjection.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-CanonicalCellRegistry-attempt2.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-CanonicalCellRegistry-current.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-CanonicalTransition.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-CredentialAuthorityDomain-current.log": {
+      "sha256": "3a9ca5b7fca2bb7d081da05e37fbadd0298d05e7b91b520309fd6a03826cc499",
+      "bytes": 333
+    },
+    "/tmp/dregg-resume-CredentialAuthorityDomain.log": {
+      "sha256": "3a9ca5b7fca2bb7d081da05e37fbadd0298d05e7b91b520309fd6a03826cc499",
+      "bytes": 333
+    },
+    "/tmp/dregg-resume-CredentialAuthorityDomainReceiver-attempt2.log": {
+      "sha256": "96a27ad73b32d1a90db0bd96bbfb91f541f475610c430c8089b4bcd98507dfa4",
+      "bytes": 1176
+    },
+    "/tmp/dregg-resume-CredentialAuthorityDomainReceiver-attempt3.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-CredentialAuthorityDomainReceiver-current.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-CredentialAuthorityEffects.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-CredentialAuthorityEntryCodec.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-CredentialAuthorityFamily.log": {
+      "sha256": "d40c6000205dfc14fc5ac26b05f6fcbbd0c46c7671236db2f5dd64ecb553818e",
+      "bytes": 169
+    },
+    "/tmp/dregg-resume-CredentialAuthorityPageMaterializer-current.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-CredentialAuthorityPageMaterializer.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-CredentialAuthorityPageProbe.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-CredentialAuthorityState.log": {
+      "sha256": "3d1769bbde6e1a7b9b404cc8e0fd9362374039272c9aa71cfed0396b8d6bae7d",
+      "bytes": 166
+    },
+    "/tmp/dregg-resume-CredentialAuthorityStateCodec.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-CredentialFoundationMigrationAudit.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-DeclaredTurn.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-DeployedMaterializerWitness.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-EffectDeclaration.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-PolicySourceCell-attempt2.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-ResourceBirthAuthority-attempt2.log": {
+      "sha256": "3af795a7fd4ea6e6aa8a54e0d903dd7d0d6f8ea5a26e3c16aabad94459930764",
+      "bytes": 191
+    },
+    "/tmp/dregg-resume-ResourceBirthAuthority.log": {
+      "sha256": "720c53f818bd151d773eb37466d0e2aa1e701ce36f2cf642adee97a54729e8db",
+      "bytes": 443
+    },
+    "/tmp/dregg-resume-TypedAuthorization.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-TypedAuthorizationRequestCodec.log": {
+      "sha256": "f4af573eb80a9dceec665c042d3bca4ecacdffd7dcabf97431e62c70b2e17bee",
+      "bytes": 1175
+    },
+    "/tmp/dregg-resume-admission-Assurance-CredentialDelegationLineageAudit-04e47d977df1.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-admission-Assurance-CredentialDelegationLineageAudit.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-admission-Assurance-CredentialDelegationLineageWitness-d34fdc1f17e2.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-admission-Assurance-CredentialDelegationLineageWitness.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-admission-Assurance-CredentialSourceAdmissionAudit-a3846958c6fb.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-admission-Assurance-CredentialSourceAdmissionAudit.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-admission-Compiler-BoundedQuantifiedPolicyAdmission-b403caa703f0.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-admission-Compiler-BoundedQuantifiedPolicyAdmission.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-admission-Compiler-CanonicalPolicyAdmission-8264a54ed19b.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-admission-Compiler-CanonicalPolicyAdmission.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-admission-Compiler-CredentialAuthorityPolicyRegistry-588cffbd7445.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-admission-Compiler-CredentialAuthorityPolicyRegistry.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-admission-Compiler-PolicyRecordCodec-7d620effcc4c.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-admission-Compiler-PolicyRecordCodec.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-admission-Kernel-CanonicalPolicyRegistry-c85e0fb99332.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-admission-Kernel-CanonicalPolicyRegistry.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-admission-Kernel-MultiCellHyperedge-7a76220a45f5.log": {
+      "sha256": "aa92c38a3cf70e9675b8180e87699ea037f30e7c361bc013641e80e435ad547d",
+      "bytes": 3749
+    },
+    "/tmp/dregg-resume-admission-Kernel-MultiCellHyperedge.log": {
+      "sha256": "aa92c38a3cf70e9675b8180e87699ea037f30e7c361bc013641e80e435ad547d",
+      "bytes": 3749
+    },
+    "/tmp/dregg-resume-admission-Theory-CredentialLineageAdmission-da0a6cdd306a.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-admission-Theory-CredentialLineageAdmission.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-admission-Theory-PolicyInstall-bf53ebf39e33.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-admission-Theory-PolicyInstall.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-admission-checks.json": {
+      "sha256": "76acd9b2e4ce19ed745a12b058561cc5f2512720c616c509312373f5aa3ee15c",
+      "bytes": 14925
+    },
+    "/tmp/dregg-resume-admission-source.json": {
+      "sha256": "6213090b60be183328feddff2c9e1bd584b0b8cabddac8723ba1283bbd32394a",
+      "bytes": 9336
+    },
+    "/tmp/dregg-resume-authority-checkpoint.json": {
+      "sha256": "d2ca22b5615364c679ba13a9e54a77c41239e691208a568257b427fca35797fc",
+      "bytes": 5491
+    },
+    "/tmp/dregg-resume-authority-upgrade-checks.json": {
+      "sha256": "b7a8b4edd9a4c02f779e7567772598a92da7e495d418db9d97e81076a79a1bea",
+      "bytes": 997
+    },
+    "/tmp/dregg-resume-baseline-init-profile-20260918.json": {
+      "sha256": "4aac1cf3bcde064a91148bb1fd5e4bee938123c6b8f24e07d4c15f3991131afb",
+      "bytes": 22922
+    },
+    "/tmp/dregg-resume-birth-CanonicalResourceEffect.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-birth-CapabilityDelegationReceiver.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-birth-ResourceBirth.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-birth-ResourceBirthAuthority.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-birth-ResourceBirthCodec.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-birth-ResourceBirthController.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-birth-ResourceBirthPolicyController.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-birth-ResourceBirthReceiver.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-born-joined-compile.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-born-joined-native.log": {
+      "sha256": "03e6b034a8f967ab32f9655c5ea504d7f7cf959011f47ff31d93fd578ae7da20",
+      "bytes": 4054
+    },
+    "/tmp/dregg-resume-born-joined-source.json": {
+      "sha256": "6df0cc83907117c0fccc713f6f49d4c1249b6cbe7bdfdb194a4e9a4a2c6d1166",
+      "bytes": 5736
+    },
+    "/tmp/dregg-resume-capability-use-check.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-capability-use-native-sources.json": {
+      "sha256": "a41d2b6a1e53a862e8193e6e88b746e5b964b7945fb2049c87279c69d4ddec28",
+      "bytes": 13529
+    },
+    "/tmp/dregg-resume-capability-use-native.log": {
+      "sha256": "b0b61af0e1101ebde96db9f9f9adf08a6ec51815cc2fa2c7bde2d74d9c7fb448",
+      "bytes": 263
+    },
+    "/tmp/dregg-resume-capability-use-source-stability.json": {
+      "sha256": "cc9b5ad9ee5b4e9067fb80a2ad07f6ea29aa9ce9ddc13f2af3fa1b6fb1b51780",
+      "bytes": 46
+    },
+    "/tmp/dregg-resume-declared-controller.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-delegation-controller.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-executor-family-fast-20260918.log": {
+      "sha256": "66f0f89fb5507908ef46ca69405f39fa22d4f481c513c7c57723b0a0d2b75003",
+      "bytes": 52314
+    },
+    "/tmp/dregg-resume-executor-family-remote-source-20260918.json": {
+      "sha256": "847f6ea4a4de801631cffef95c530213989a94bcf70d614824b85daf9a5006e7",
+      "bytes": 2341
+    },
+    "/tmp/dregg-resume-executor-family-source-20260918.json": {
+      "sha256": "21ba79e7dcbeec92734c7a07d6e2aeb5538841caf9f5a9bf21ae8b4e8198c34f",
+      "bytes": 2591
+    },
+    "/tmp/dregg-resume-executor-full-pq-hermes-20260918.log": {
+      "sha256": "551ef8b47ed2cbbf5b013f726053becac420f4f589cfbeaf48ca8b70d380ead6",
+      "bytes": 113979
+    },
+    "/tmp/dregg-resume-executor-nine-file-checkpoint-20260918.json": {
+      "sha256": "45b0926a5e69603d6c729d306be1b73b6958037c4acba7727edc23ae6d7b47b3",
+      "bytes": 1644
+    },
+    "/tmp/dregg-resume-ffi-factory-fast-20260918.log": {
+      "sha256": "87c1c0daacf0f174d16e4e5655b82d1bab6e62276efe93839ed93d6949fa5b31",
+      "bytes": 43520
+    },
+    "/tmp/dregg-resume-ffi-factory-fast-attempt2-20260918.log": {
+      "sha256": "ab8435dca7a656f13c66f81d694a0ba2823784394e21159a4393e3a9ea5d71d7",
+      "bytes": 49471
+    },
+    "/tmp/dregg-resume-ffi-factory-fast-attempt2-remote-source-20260918.json": {
+      "sha256": "06eda12e5c62cd7faecb5a943896900ec4658c7ad48d0a248639fc64bf2436ef",
+      "bytes": 1708
+    },
+    "/tmp/dregg-resume-ffi-factory-fast-attempt2-source-20260918.json": {
+      "sha256": "b23f90b69b32288912654437804426b9433dfc417d8ffa94707cd75412188097",
+      "bytes": 1905
+    },
+    "/tmp/dregg-resume-ffi-factory-fast-source-20260918.json": {
+      "sha256": "6a809894e261bc4c410dddaf6c7def73740967ce9837d327df23cc108f125d4e",
+      "bytes": 1963
+    },
+    "/tmp/dregg-resume-ffi-full-lifecycle-20260918.log": {
+      "sha256": "c2cb6bce09771d51349c34f5deeb886dde8b1f24888fd3f3124b92920d3a7136",
+      "bytes": 49223
+    },
+    "/tmp/dregg-resume-ffi-full-lifecycle-source-20260918.json": {
+      "sha256": "e4c1ba890ee0d4682e94da33bad475e6228faf1afcb534c6aaaf4318c5ecac16",
+      "bytes": 1919
+    },
+    "/tmp/dregg-resume-final-capture-extra-source-20260918.json": {
+      "sha256": "0cd5dee8ef3f3a821ba41402f37a02e639db74c1ae210a1c0844527f2640586a",
+      "bytes": 1253
+    },
+    "/tmp/dregg-resume-final-runtime-results-20260918.json": {
+      "sha256": "fb2b854cd471a8ecf89f6b791e109fb682e02da863ff72c796fb5b03fbcb10ee",
+      "bytes": 25897
+    },
+    "/tmp/dregg-resume-fixture-closure-build-20260918.log": {
+      "sha256": "88c80f87c39f0c9b6aa75505572cd664267358d764cb9048f70b92003a315fc9",
+      "bytes": 123774
+    },
+    "/tmp/dregg-resume-foundation-axioms.log": {
+      "sha256": "c214f2103e9c895b93aed0871c2c24447ef2b57aad3154fbaab5bcb95da2eb76",
+      "bytes": 5519
+    },
+    "/tmp/dregg-resume-foundations-checkpoint.json": {
+      "sha256": "4ed98d64f7ab178acc31c226a8f955ccfa21890b74c565039ca3fbc4196cc200",
+      "bytes": 5431
+    },
+    "/tmp/dregg-resume-fresh-fixture-initializers-20260918.json": {
+      "sha256": "73d52c91c099814bcc864676342d3572db808a521bc8ef71dba17fec7799f2ff",
+      "bytes": 468
+    },
+    "/tmp/dregg-resume-host-checkpoint.json": {
+      "sha256": "bcde169dbd9cb0120fe0908367472a10a4ab8ab1977453c31ba4e0d488b3246a",
+      "bytes": 8191
+    },
+    "/tmp/dregg-resume-initializer-generated-c-20260918.json": {
+      "sha256": "e8d5ece01376d36a486d5ba336efd1869e0494382dcd150139b0c94d22c8b137",
+      "bytes": 1035
+    },
+    "/tmp/dregg-resume-install-checkpoint.json": {
+      "sha256": "9f2a3e0ed65ca83e0a112f85eab8cd51902f6bae16ded11b0f93b89fda0d47ba",
+      "bytes": 3054
+    },
+    "/tmp/dregg-resume-install-source-status.json": {
+      "sha256": "09d1ee1fc4dcfad86cf204dfc0883033868188f7a5db85ed191d97088884fb8f",
+      "bytes": 926
+    },
+    "/tmp/dregg-resume-journey-checks.json": {
+      "sha256": "0ea49a17501cecdc67e1785c8c9a26fd01da236867bc648a57c8536348eeda64",
+      "bytes": 2185
+    },
+    "/tmp/dregg-resume-native-signature-source.json": {
+      "sha256": "209a179a57089bd416f4dbd9197ff1f8771d2bef9e6bc3e3d5253d02c14cf18a",
+      "bytes": 1737
+    },
+    "/tmp/dregg-resume-native-signature.log": {
+      "sha256": "58f3e43997d8d1b6bf6c45c6d0bc8cd2ba238fe9203423dfadebc47ba6b70f06",
+      "bytes": 359
+    },
+    "/tmp/dregg-resume-policy-gate-axioms.log": {
+      "sha256": "9cc5d315ce54f053aaf6fb0fdc456af0384f0841864cae794024e263bd02bc53",
+      "bytes": 278
+    },
+    "/tmp/dregg-resume-policy-install-axioms.log": {
+      "sha256": "fe56cd87f07d6cdadd10e347742210a950484450d7764120f32eb6051a79e696",
+      "bytes": 3357
+    },
+    "/tmp/dregg-resume-policy-install-controller.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-policy-install-native-attempt1-sources.json": {
+      "sha256": "01027819dfd2916cce2723daac7c05f521be57ce72ef2da0c4c6a28ea0270ac3",
+      "bytes": 13995
+    },
+    "/tmp/dregg-resume-policy-install-native-attempt1.log": {
+      "sha256": "89758c2284ac86bb7c9bda434bb4198a4fe1d1f26c78ac70277a5bdb38097225",
+      "bytes": 4884
+    },
+    "/tmp/dregg-resume-policy-install-native-source-stability.json": {
+      "sha256": "838f115fb3372251eaffded623e8ae41a58db5dbe3f57ddce481a354e925c09b",
+      "bytes": 94
+    },
+    "/tmp/dregg-resume-policy-install-native-sources.json": {
+      "sha256": "286fa48002bb20104a8cd514e7673865db75c5c4b55e7ed9a6823fb1a7a59b04",
+      "bytes": 13995
+    },
+    "/tmp/dregg-resume-policy-install-native.log": {
+      "sha256": "1f151be740dced125b2a91f93021bbca536fc33ebe28d5fcc888b10d95ac3b27",
+      "bytes": 6905
+    },
+    "/tmp/dregg-resume-policy-install-probe-check.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-policy-install-receiver.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-postcut-linked-members-20260918.json": {
+      "sha256": "7fd5eabd73b3587726448bd971cd16410522dec5ed065ade404e060304be5c70",
+      "bytes": 74483
+    },
+    "/tmp/dregg-resume-runtime-checkpoint.md": {
+      "sha256": "e16b2a4b360678b6580db1b5521a6f4ce5f8a9cafa7076947cba1f04fe611830",
+      "bytes": 9910
+    },
+    "/tmp/dregg-resume-runtime-push-20260918.log": {
+      "sha256": "351fde7f9b3a5ead7a7a86de4370c013695a6746618cf6bba5381f854d4b414e",
+      "bytes": 9592
+    },
+    "/tmp/dregg-resume-signatures-AuthorizationDeclaration.log": {
+      "sha256": "5fd29ebbeee92f7ad89b25f5ff9897b1cda46470d3c429745e69e9a2cb8e7aea",
+      "bytes": 256
+    },
+    "/tmp/dregg-resume-signatures-CredentialSignatureAdmission.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-signatures-DeclaredActionLowering.log": {
+      "sha256": "43be8b77cedfeb41eddf82d3ac9b1f4449f4d3892763d3368c79e44fac45755a",
+      "bytes": 541
+    },
+    "/tmp/dregg-resume-signatures-DeclaredEffectPageMaterializer-current.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-signatures-DeclaredHyperedge-current.log": {
+      "sha256": "71572212e94c6ff183195f6baf458dd2736bb23a700251bda3487cab41b40926",
+      "bytes": 3415
+    },
+    "/tmp/dregg-resume-signatures-DeclaredHyperedge.log": {
+      "sha256": "1077b88d08c46c677097bae6c18bf6f1987bfff6a6fca761e0babcec437e85aa",
+      "bytes": 5227
+    },
+    "/tmp/dregg-resume-signatures-DeclaredHyperedgeArtifact-current.log": {
+      "sha256": "76d1b44a82f98adce605c191a4dd8de07060533da6ec650a40448df4e7117cec",
+      "bytes": 1498
+    },
+    "/tmp/dregg-resume-signatures-DeclaredHyperedgeWitness-current.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-signatures-HyperdocumentCodec.log": {
+      "sha256": "244fc18ba615dac3601100416de800433464230f694710fdd9166e398e42ec01",
+      "bytes": 359
+    },
+    "/tmp/dregg-resume-signatures-HyperdocumentOperations.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-signatures-MinidreggV1Artifact.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/tmp/dregg-resume-signatures-SemanticArtifactBundle.log": {
+      "sha256": "36457586f33f569da6454f9ed281e889a42876cb8111f8aac545cb94801ce9bb",
+      "bytes": 196
+    },
+    "/tmp/dregg-resume-signatures-SemanticManifest.log": {
+      "sha256": "2a4e2f0eda4d9e8b4963ed60d418cf5b1af2e7a49465964134609f98b1f6c7f3",
+      "bytes": 950
+    },
+    "/tmp/dregg-resume-signatures-TypedAuthorizationRequestCodec-attempt2.log": {
+      "sha256": "f4af573eb80a9dceec665c042d3bca4ecacdffd7dcabf97431e62c70b2e17bee",
+      "bytes": 1175
+    },
+    "/tmp/dregg-resume-signatures-TypedAuthorizationRequestCodec.log": {
+      "sha256": "1850f835c976ec96e429d7acbdd7c38d1ad68ea986f0c008f1ff762e6987ea83",
+      "bytes": 3949
+    },
+    "/tmp/dregg-resume-signatures-checkpoint.json": {
+      "sha256": "41b25d1da9de359ac635f0916a73ffadccd2d66afe3e31d3d7810d1b64ca872a",
+      "bytes": 9856
+    },
+    "/tmp/dregg-wide-auth-test-draft/lean_init_lifecycle.rs": {
+      "sha256": "b8e4339db7e80e2ec37d9a2484a08f5eeb2c51b161a8f90c5a5b604f2d508e38",
+      "bytes": 13882
+    },
+    "/tmp/dregg-wide-auth-test-draft/support/direct_auth_cases.rs": {
+      "sha256": "54d526f764c618dc9e6714c69b22bc7a86e8ea69228d70ac2b8377098935666a",
+      "bytes": 4988
+    },
+    "/tmp/dregg-wide-auth-test-draft/unit-tests.rs": {
+      "sha256": "1c797160e40617c59554d4e9ab64dd80ba0980715b0f4eec8c7f52a1311e1068",
+      "bytes": 1511
+    },
+    "/tmp/dregg-wide-auth-test-draft-manifest-20260918.json": {
+      "sha256": "f022d0f6c32ab8b358d870cd9f0cc675cfeb1933a7f3d17ce71b8c1909e3fe6f",
+      "bytes": 1688
+    },
+    "/tmp/resume_wire_strings/HANDOFF.md": {
+      "sha256": "c614f01692830ebbf48fc77f420877b1728543c9402228604c000e5011acb763",
+      "bytes": 4469
+    }
+  }
+}

@@ -6,7 +6,7 @@
 
 **Define resource-host lifecycle ownership and its kernel contract**
 
-Status: **active** · Owner: Astra: root with ember; contributor assignment pending · Updated: 2026-09-18T02:12:02-04:00
+Status: **ready** · Owner: Astra: root on resumption · Updated: 2026-09-18T03:34:10-04:00
 
 Cloud/resource-host lifecycle is the selected area to offer Wisper. This stable work ID retains the original Android example; exact runtime/export contract is still open.
 
@@ -14,7 +14,7 @@ Cloud/resource-host lifecycle is the selected area to offer Wisper. This stable 
 
 **Done when:** A contributor can scaffold a real product surface from a concrete brief and agreed contracts, with executable receiving interfaces or explicitly owned upstream delivery, test scenarios and no need to infer core architecture from chat.
 
-**Evidence so far:** Ember selected cloud/resource-host lifecycle. Source-backed brief and concrete native-host export proposal are preserved; exact first runtime/profile and owned upstream exports remain open. No contributor contact or assignment.
+**Evidence so far:** Ember selected cloud/resource-host lifecycle. Source-backed brief and concrete native-host export proposal are preserved; exact first runtime/profile and owned upstream exports remain open. No contributor contact or assignment. Work frozen at ember’s request; no agent is currently assigned.
 
 [Task brief](../contributing/resource-host-lifecycle.md)
 
@@ -31,6 +31,7 @@ Cloud/resource-host lifecycle is the selected area to offer Wisper. This stable 
 - [S-MOBILE-REVIEW — Bounded Android/mobile source inventory, September 18](../research/mobile-2026-09-18.md)
 - [S-HOST-CONTRIBUTOR-PROPOSAL — Proposed resource-host lifecycle ownership and receiving contract](../contributing/resource-host-lifecycle.md)
 - [S-ACCOUNT-HANDOFF-0918 — September18 account handoff: native born-owner journey and next integration wave](../sprints/2026-09-18/account-handoff.md)
+- [S-WIND-DOWN-0918 — User-requested wind-down, exact native passes and unfinished host, September 18](../sprints/2026-09-18/wind-down.md)
 
 **Write scope:** DreggNet/control provider/server/supervisor and gateway lifecycle; Selected native host extraction/export, jointly reserved with core; Selected packaging and integration harness
 
@@ -102,15 +103,15 @@ Graph-backed work ownership, concrete briefs, generated current views and an exp
 
 **Bind native use to committed keys and complete authority**
 
-Status: **active** · Owner: Astra: resume_authority + resume_signatures · Updated: 2026-09-18T03:14:26-04:00
+Status: **backlog** · Owner: Unassigned · Updated: 2026-09-18T03:34:10-04:00
 
 Persist exact signing keys/epochs; accept actual configured native verification of the exact request and capability against the complete same-snapshot authority.
 
-**Next:** Finish joined delegation/receiving checks and refresh generated Rust consumers and the root integration gate.
+**Next:** Finish remaining consumer checks, actual generated Rust emissions and full-root integration against coherent current source.
 
 **Done when:** Actual installed verification plus complete committed authority checks feed accepted source operations; stale/altered/revoked credentials cannot authorize them.
 
-**Evidence so far:** Real Ed25519/SQLite signature probe passes the17-field revision migration, legacy and tamper refusals. Physical authority and source admission modules pass.
+**Evidence so far:** Native signatures, capability refusal and joined receiving journeys PASS. Source-only later codec/Registry edits and remaining generated/consumer gates cannot inherit those passes. Work frozen at ember’s request; no agent is currently assigned.
 
 **Enables:**
 
@@ -122,20 +123,21 @@ Persist exact signing keys/epochs; accept actual configured native verification 
 - [S-IMPLEMENTATION-0130 — Durable native invocation and repaired runtime history, September 18 01:30](../sprints/2026-09-18/checkpoint-0130.md)
 - [S-RESUMED-0250 — Resumed native runtime and pinned publication checks, September18](../sprints/2026-09-18/resumed-0250.md)
 - [S-RESUMED-0311 — Revision migration checks and host review, September18 03:11](../sprints/2026-09-18/resumed-0311.md)
+- [S-WIND-DOWN-0918 — User-requested wind-down, exact native passes and unfinished host, September 18](../sprints/2026-09-18/wind-down.md)
 
 ## W-AUTHORIZED-DELEGATION
 
 **Give a friend a narrower usable right**
 
-Status: **active** · Owner: Astra: resume_journey · Updated: 2026-09-18T03:14:26-04:00
+Status: **backlog** · Owner: Unassigned · Updated: 2026-09-18T03:34:10-04:00
 
 Add an explicit authorized subject-to-subject delegation edge without weakening strict holder-narrowing or inventing bearer custody.
 
-**Next:** Run actual born-resource Alice-to-Bob delegation and recipient invocation with hostile scope/identity cases.
+**Next:** Carry the measured delegation path into the compiled public host and complete actual revocation/current-generation receiving coverage.
 
 **Done when:** Owner delegates a bounded right; friend can use that right, cannot exceed it or replace policy, and revocation/current epochs remain enforced.
 
-**Evidence so far:** Controller and receiver compile; mandatory exact parent authorization, actual whole post, stored lineage and final authority-byte/frame laws pass their scoped checks.
+**Evidence so far:** Native Alice-to-Bob source-created narrower delegation and real recipient invocation/reopen PASS, including amplification/identity/redelegation refusals. Public host and explicit revocation receiving work remain. Work frozen at ember’s request; no agent is currently assigned.
 
 **Enables:**
 
@@ -148,6 +150,7 @@ Add an explicit authorized subject-to-subject delegation edge without weakening 
 - [S-ACCOUNT-HANDOFF-0918 — September18 account handoff: native born-owner journey and next integration wave](../sprints/2026-09-18/account-handoff.md)
 - [S-RESUMED-0250 — Resumed native runtime and pinned publication checks, September18](../sprints/2026-09-18/resumed-0250.md)
 - [S-RESUMED-0311 — Revision migration checks and host review, September18 03:11](../sprints/2026-09-18/resumed-0311.md)
+- [S-WIND-DOWN-0918 — User-requested wind-down, exact native passes and unfinished host, September 18](../sprints/2026-09-18/wind-down.md)
 
 ## W-CANONICAL-CONSUMER
 
@@ -232,15 +235,15 @@ Compact commands use actual page execution, complete old authority, stored polic
 
 **Establish the chosen document storage/turn contract**
 
-Status: **active** · Owner: Astra: root + kernel_carrier + localfirst · Updated: 2026-09-18T01:30:00-04:00
+Status: **backlog** · Owner: Unassigned · Updated: 2026-09-18T03:34:10-04:00
 
 Implement durable refusal propagation and exact ordered physical history in breadstuffs, while joining resource birth, owner authority and charge in the canonical shared core. Repeated body updates still require the selected accepted operation and receiving cutover.
 
-**Next:** Complete ordered factory/history repair and connect document edits to accepted kernel operations instead of setup writes.
+**Next:** Complete current-source history regressions and connect document edits to accepted kernel operations.
 
 **Done when:** Repeated authorized saves, rejection without committed mutation, crash/reopen at each ordered boundary, and matching body/receipt history through the actual selected consumer. Physical setup journaling alone does not close kernel authorization.
 
-**Evidence so far:** The earlier intermediate-root failures are fixed: cell/turn/World24/24 pass. Kernel-authorized document saves remain a distinct receiving task.
+**Evidence so far:** Earlier 24-test history repair passed; new targeted ordered-factory chronology tests pass. Kernel-authorized document saves remain a distinct receiving task. Work frozen at ember’s request; no agent is currently assigned.
 
 **Enables:**
 
@@ -257,20 +260,21 @@ Implement durable refusal propagation and exact ordered physical history in brea
 - [S-IMPLEMENTATION-2330 — Executable receiving/admission checkpoint and rejected-turn correction](../sprints/2026-09-17/checkpoint-2330.md)
 - [S-IMPLEMENTATION-0045 — September 18 implementation and contributor checkpoint](../sprints/2026-09-18/checkpoint-0045.md)
 - [S-IMPLEMENTATION-0130 — Durable native invocation and repaired runtime history, September 18 01:30](../sprints/2026-09-18/checkpoint-0130.md)
+- [S-WIND-DOWN-0918 — User-requested wind-down, exact native passes and unfinished host, September 18](../sprints/2026-09-18/wind-down.md)
 
 ## W-EFFECT-ADMISSION
 
 **Make full request and actual-pre binding mandatory for generic effects**
 
-Status: **active** · Owner: Astra: resume_journey + resume_authority · Updated: 2026-09-18T03:14:26-04:00
+Status: **backlog** · Owner: Unassigned · Updated: 2026-09-18T03:34:10-04:00
 
 Replace optional binding adapters with a source-derived family request and exact pre requirement in AcceptedCellEffect, migrating concrete families and consumers.
 
-**Next:** Use the current exact-parent/source-admission laws in the joined native receiving path and root integration.
+**Next:** Finish pending consumer modules and full-root checks without weakening the mandatory exact-parent/request/source contract.
 
 **Done when:** All receiving constructors use the strengthened base token; target/verb/args/nonce/pre relabeling refuses, honest effects remain inhabited, and the integrated tree checks.
 
-**Evidence so far:** Eight source modules and28 exact axiom pins pass. The shared capability helper now proves the exact input-parent identity.
+**Evidence so far:** Eight source modules and 28 exact axiom pins pass; actual joined native receiving journey also passed. Remaining consumer/root integration is unfinished. Work frozen at ember’s request; no agent is currently assigned.
 
 **Enables:**
 
@@ -283,6 +287,7 @@ Replace optional binding adapters with a source-derived family request and exact
 - [S-IMPLEMENTATION-0045 — September 18 implementation and contributor checkpoint](../sprints/2026-09-18/checkpoint-0045.md)
 - [S-RESUMED-0250 — Resumed native runtime and pinned publication checks, September18](../sprints/2026-09-18/resumed-0250.md)
 - [S-RESUMED-0311 — Revision migration checks and host review, September18 03:11](../sprints/2026-09-18/resumed-0311.md)
+- [S-WIND-DOWN-0918 — User-requested wind-down, exact native passes and unfinished host, September 18](../sprints/2026-09-18/wind-down.md)
 
 ## W-EMBEDDED-CANDIDATE
 
@@ -313,15 +318,15 @@ SDK/World align with the current node rejection policy: no retained fee, nonce, 
 
 **Retain factory deployment at its actual history boundary**
 
-Status: **active** · Owner: Astra: resume_runtime · Updated: 2026-09-18T02:51:31-04:00
+Status: **backlog** · Owner: Unassigned · Updated: 2026-09-18T03:34:10-04:00
 
 World deployment currently mutates volatile registries; historical paths either omit factories or preload the present registry into the past. Persist ordered descriptor/VK evidence and replay the actual executor deployment at that boundary.
 
-**Next:** Run the affected history regression set against the exact recorded current source and preserve completion evidence.
+**Next:** Run the preserved affected history regression filter on resumption and retain exact current-source evidence.
 
 **Done when:** Actual factory deployment, birth/mutation and recovery use the same ordered descriptor/VK evidence; no historical prefix sees a later factory; conflicting deployment and persistence failures leave committed state unchanged; unsupported old images refuse without changing evidence.
 
-**Evidence so far:** All five targeted factory chronology tests now ran and passed with actual native Lean in the combined9-test suite. Current-source affected history regressions remain queued.
+**Evidence so far:** All five targeted factory chronology tests passed twice in current native suites. Wider 24-case history/replay regression filter remains unrun after this repair. Work frozen at ember’s request; no agent is currently assigned.
 
 **Enables:**
 
@@ -333,20 +338,21 @@ World deployment currently mutates volatile registries; historical paths either 
 - [S-IMPLEMENTATION-0130 — Durable native invocation and repaired runtime history, September 18 01:30](../sprints/2026-09-18/checkpoint-0130.md)
 - [S-ACCOUNT-HANDOFF-0918 — September18 account handoff: native born-owner journey and next integration wave](../sprints/2026-09-18/account-handoff.md)
 - [S-RESUMED-0250 — Resumed native runtime and pinned publication checks, September18](../sprints/2026-09-18/resumed-0250.md)
+- [S-WIND-DOWN-0918 — User-requested wind-down, exact native passes and unfinished host, September 18](../sprints/2026-09-18/wind-down.md)
 
 ## W-GRANT-REVISION
 
 **Keep grants valid across policy source revisions**
 
-Status: **active** · Owner: Astra: resume_install + resume_authority; root integration · Updated: 2026-09-18T03:14:26-04:00
+Status: **backlog** · Owner: Unassigned · Updated: 2026-09-18T03:34:10-04:00
 
 Separate immutable policy-source revision from grant revocation generation across the exact signed request, authority representation, compiled/source policies and every receiving consumer.
 
-**Next:** Run repeated native installs and retained-grant use, then expose explicitly authorized generation revocation through the same core. Preserve deliberate management lockout.
+**Next:** Finish authorized generation revocation and remaining consumers/profile/root integration; preserve deliberate resource management lockout.
 
 **Done when:** After two admitted rule replacements, previously issued owner/control and delegated grants remain usable exactly when their scope and new rules authorize the new request; stale revisions refuse, explicit generation revocation invalidates prior grants, and restart/retry preserves exact state and receipts. Resource policy can deliberately refuse further management, with no implicit owner bypass.
 
-**Evidence so far:** Foundation, physical codecs, signature, source registry and installer source checks pass at the new schema. Native integration is now running. No owner repair bypass.
+**Evidence so far:** Repeated native rule changes preserve exact original grants/generation; current-rule refusal, intentional management lockout and expired retry PASS. Explicit revocation receiver remains unfinished. Work frozen at ember’s request; no agent is currently assigned.
 
 **Enables:**
 
@@ -358,20 +364,21 @@ Separate immutable policy-source revision from grant revocation generation acros
 - [S-ACCOUNT-HANDOFF-0918 — September18 account handoff: native born-owner journey and next integration wave](../sprints/2026-09-18/account-handoff.md)
 - [S-RESUMED-0250 — Resumed native runtime and pinned publication checks, September18](../sprints/2026-09-18/resumed-0250.md)
 - [S-RESUMED-0311 — Revision migration checks and host review, September18 03:11](../sprints/2026-09-18/resumed-0311.md)
+- [S-WIND-DOWN-0918 — User-requested wind-down, exact native passes and unfinished host, September 18](../sprints/2026-09-18/wind-down.md)
 
 ## W-HERMES-STARTUP
 
 **Make actual Hermes/SDK startup avoid unused Lean initialization**
 
-Status: **active** · Owner: Astra: resume_runtime + resume_init_hotspot · Updated: 2026-09-18T03:14:26-04:00
+Status: **backlog** · Owner: Unassigned · Updated: 2026-09-18T03:34:10-04:00
 
 SDK route discovery is lazy while actual cryptographic calls retain real Lean initialization.
 
-**Next:** Complete fresh runtime/PQ/Hermes checks and wide-credential ABI repair with actual accepted cases.
+**Next:** Apply and check preserved full-width credential/string fixes with accepted cases, finish NightWatch assurance cut and retime actual native consumers.
 
 **Done when:** The same operations and refusal/publication checks pass through actual receiving code without eager unused-core initialization; real PQ first-use remains checked.
 
-**Evidence so far:** Original full lifecycle passes at~187–189s; game fixture separation retains both proof suites. Narrow executor actual initialization~41ms. Existing differential corpus covers refusal paths; accepted cases and width repair are in progress.
+**Evidence so far:** Executor-family native initialization 41.285ms; focused 11-test suite PASS. Actual JS-agent Hermes test PASS 0.073s; full-byte PQ PASS. Final full/PQ/Hermes capture 5/5 PASS in 802.039s; lease released; width/string repairs staged only. No NetworkJudge inclusive startup gain established. Work frozen at ember’s request; no agent is currently assigned.
 
 **Enables:**
 
@@ -383,12 +390,13 @@ SDK route discovery is lazy while actual cryptographic calls retain real Lean in
 - [S-ACCOUNT-HANDOFF-0918 — September18 account handoff: native born-owner journey and next integration wave](../sprints/2026-09-18/account-handoff.md)
 - [S-RESUMED-0250 — Resumed native runtime and pinned publication checks, September18](../sprints/2026-09-18/resumed-0250.md)
 - [S-RESUMED-0311 — Revision migration checks and host review, September18 03:11](../sprints/2026-09-18/resumed-0311.md)
+- [S-WIND-DOWN-0918 — User-requested wind-down, exact native passes and unfinished host, September 18](../sprints/2026-09-18/wind-down.md)
 
 ## W-JOINT-POST
 
 **Check composition against the actual joint post-state**
 
-Status: **active** · Owner: Astra: kernel_carrier + program_install · Updated: 2026-09-18T00:45:00-04:00
+Status: **backlog** · Owner: Unassigned · Updated: 2026-09-18T03:34:10-04:00
 
 Actual-joint resource accounting and accepted field preservation now reject minted overlap and lost fees in targeted Lean witnesses. Source-policy validity on the joint post, including cross-field dependencies, is the next compulsory composition closure.
 
@@ -396,7 +404,7 @@ Actual-joint resource accounting and accepted field preservation now reject mint
 
 **Done when:** Generic accepted composition preserves incidence outcomes, enforces resource laws and source-owned policy/postconditions on the actual joint result; hostile overlap/cross-field examples refuse, legitimate composition remains inhabited, and receiving constructors use the contract.
 
-**Evidence so far:** Mandatory general postcondition API and constructive cross-field refusal witnesses passed; concrete new consumers still need their joined checks.
+**Evidence so far:** Mandatory general postcondition API and constructive cross-field refusal witnesses passed; concrete new consumers still need their joined checks. Work frozen at ember’s request; no agent is currently assigned.
 
 **Enables:**
 
@@ -407,18 +415,21 @@ Actual-joint resource accounting and accepted field preservation now reject mint
 - [S-IMPLEMENTATION-2300 — Late-evening source checkpoints, captured run, and shared-core assignments](../sprints/2026-09-17/checkpoint-2300.md)
 - [S-IMPLEMENTATION-2330 — Executable receiving/admission checkpoint and rejected-turn correction](../sprints/2026-09-17/checkpoint-2330.md)
 - [S-IMPLEMENTATION-0045 — September 18 implementation and contributor checkpoint](../sprints/2026-09-18/checkpoint-0045.md)
+- [S-WIND-DOWN-0918 — User-requested wind-down, exact native passes and unfinished host, September 18](../sprints/2026-09-18/wind-down.md)
 
 ## W-M26-DESIGN
 
 **Define the September 26 programmable nexus and its shared contracts**
 
-Status: **active** · Owner: ember + Astra · Updated: 2026-09-18T00:45:00-04:00
+Status: **backlog** · Owner: Unassigned · Updated: 2026-09-18T03:34:10-04:00
 
 Active design and implementation planning for the September 26 mixed programmable nexus: canonical resource/authority/history, user-authored rules and shell/Hermes invocation, participant hosting and meaningful economic operations. Close required core/compiler/proof/runtime gaps instead of routing around them.
 
-**Next:** Review the running create/install/invoke/share/reopen journey; decide the public economic operation and release promises.
+**Next:** Review the measured native journey with ember and converge the public host, first economic operation and release promises.
 
 **Done when:** Accepted nexus operations and consequential design decisions; selected semantic and receiving-runtime paths; an explicit owned-node participation path and selected Solana/resource outcome; linked implementation obligations and evidence. Selecting a contract does not close implementation or deployment.
+
+**Evidence so far:** First joined native kernel journey now passes; compiled public host remains unfinished. Exact release activity and economic operation still need design decisions. Work frozen at ember’s request; no agent is currently assigned.
 
 **Enables:**
 
@@ -427,6 +438,7 @@ Active design and implementation planning for the September 26 mixed programmabl
 **Evidence / provenance:**
 
 - [S-IMPLEMENTATION-0045 — September 18 implementation and contributor checkpoint](../sprints/2026-09-18/checkpoint-0045.md)
+- [S-WIND-DOWN-0918 — User-requested wind-down, exact native passes and unfinished host, September 18](../sprints/2026-09-18/wind-down.md)
 
 ## W-NATIVE-DATA-RECEIVER
 
@@ -458,15 +470,15 @@ The existing Lean executor now crosses exact-byte SQLite CAS with crash/retry/co
 
 **Operate real resources through a compiled programmable host**
 
-Status: **active** · Owner: Astra: resume_host + resume_foundations + resume_genesis + resume_admission + resume_birth_review · Updated: 2026-09-18T03:14:26-04:00
+Status: **backlog** · Owner: Unassigned · Updated: 2026-09-18T03:34:10-04:00
 
 Compile the source-owned Mini birth, rule installation, invocation and delegation path into an executable shell/stdio interface with exact signed calls, committed-history clock and replay receipts.
 
-**Next:** Implement per-resource authenticated observation/preparation, Book support enforcement and semantic journal verification; link host and run public CLI acceptance.
+**Next:** Repair saved codec/genesis failures, coordinate Book/observation profile pins, check downstream modules and root closure, then link bounded host and run public CLI acceptance.
 
 **Done when:** A real compiled host with operator-owned configuration accepts only source-authorized signed calls, preserves committed resources/receipts across restart and lost replies, and drives the same grant-preserving shared-resource journey through the programmable shell.
 
-**Evidence so far:** Concrete native profile compiles. Independent review found unsigned preparation balance oracle and missing historical semantic revalidation; fixes are assigned, public prepare closed. Host binary and CLI journey remain unverified.
+**Evidence so far:** Frozen source checkpoint: HostCodec and Genesis compile RED; observation, semantic history, Book enforcement and host/CLI integration uncompiled. Narrow profile and Book theory checks passed separately. Work frozen at ember’s request; no agent is currently assigned.
 
 **Enables:**
 
@@ -478,20 +490,21 @@ Compile the source-owned Mini birth, rule installation, invocation and delegatio
 - [S-RESUMED-0250 — Resumed native runtime and pinned publication checks, September18](../sprints/2026-09-18/resumed-0250.md)
 - [S-ACCOUNT-HANDOFF-0918 — September18 account handoff: native born-owner journey and next integration wave](../sprints/2026-09-18/account-handoff.md)
 - [S-RESUMED-0311 — Revision migration checks and host review, September18 03:11](../sprints/2026-09-18/resumed-0311.md)
+- [S-WIND-DOWN-0918 — User-requested wind-down, exact native passes and unfinished host, September 18](../sprints/2026-09-18/wind-down.md)
 
 ## W-POLICY-SOURCE
 
 **Store initial policies and use one runtime profile**
 
-Status: **active** · Owner: Astra: resume_install + resume_journey · Updated: 2026-09-18T03:14:26-04:00
+Status: **backlog** · Owner: Unassigned · Updated: 2026-09-18T03:34:10-04:00
 
 Immutable internal policy-source cells and a common field/compiler/request profile make resource creation, invocation and policy replacement agree.
 
-**Next:** Run current native repeated installation and the joined born-resource journey.
+**Next:** Recheck source-policy consumers under coordinated final Registry/profile and compiled-host integration.
 
 **Done when:** Policy source is created atomically and selected from the same durable directory; kind/domain/address mismatches refuse, and all consuming verbs share compatible source semantics.
 
-**Evidence so far:** Current source revision is independent of exact grant generation; native installer and birth source closure compile.
+**Evidence so far:** Repeated native installation and joined birth/rules/delegation journey PASS; immutable source revision and retained grants work in the captured fixture. Later profile/Registry integration is pending. Work frozen at ember’s request; no agent is currently assigned.
 
 **Enables:**
 
@@ -505,20 +518,21 @@ Immutable internal policy-source cells and a common field/compiler/request profi
 - [S-ACCOUNT-HANDOFF-0918 — September18 account handoff: native born-owner journey and next integration wave](../sprints/2026-09-18/account-handoff.md)
 - [S-RESUMED-0250 — Resumed native runtime and pinned publication checks, September18](../sprints/2026-09-18/resumed-0250.md)
 - [S-RESUMED-0311 — Revision migration checks and host review, September18 03:11](../sprints/2026-09-18/resumed-0311.md)
+- [S-WIND-DOWN-0918 — User-requested wind-down, exact native passes and unfinished host, September 18](../sprints/2026-09-18/wind-down.md)
 
 ## W-PROGRAMMABLE-PATH
 
 **Implement and exercise the canonical authored-program-to-resource path**
 
-Status: **active** · Owner: Astra: resume_journey + resume_host + resume_genesis · Updated: 2026-09-18T03:14:26-04:00
+Status: **backlog** · Owner: Unassigned · Updated: 2026-09-18T03:34:10-04:00
 
 Select the canonical rule/program representation and actual authority projection, then implement needed compiler/native/proof/durable support and shell/Hermes consumers. Existing guards are retired only by replacing their missing guarantees. Active source investigation is recorded in sprints/2026-09-17.md.
 
-**Next:** Complete the native joined journey, then drive it through authenticated preparation and the public compiled host.
+**Next:** Repair and check the preserved host stack, then drive the joined journey through signed public CLI preparation and submission.
 
 **Done when:** Author and install a rule under actual resource authority, invoke a permitted operation through the chosen shell/agent path, refuse a violating operation with correct state/outcome evidence, and recover accepted behavior/history through the chosen durable runtime. Complete all necessary core obligations, not merely a private demo.
 
-**Evidence so far:** Birth, invocation, installer and delegation receiving modules compile against current semantics; actual joined probe is next.
+**Evidence so far:** Actual native joined birth/rules/delegation/Bob/reopen/retry journey PASS at exact archived source. Public compiled host remains unfinished. Work frozen at ember’s request; no agent is currently assigned.
 
 **Enables:**
 
@@ -532,6 +546,7 @@ Select the canonical rule/program representation and actual authority projection
 - [S-ACCOUNT-HANDOFF-0918 — September18 account handoff: native born-owner journey and next integration wave](../sprints/2026-09-18/account-handoff.md)
 - [S-RESUMED-0250 — Resumed native runtime and pinned publication checks, September18](../sprints/2026-09-18/resumed-0250.md)
 - [S-RESUMED-0311 — Revision migration checks and host review, September18 03:11](../sprints/2026-09-18/resumed-0311.md)
+- [S-WIND-DOWN-0918 — User-requested wind-down, exact native passes and unfinished host, September 18](../sprints/2026-09-18/wind-down.md)
 
 ## W-PROVIDER-PATH
 

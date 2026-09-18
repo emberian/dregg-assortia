@@ -1,0 +1,22 @@
+{
+  "/tank/dregg-build/hcargo/metatheory/.lake/build/ir/Dregg2/Games/PathOfAngels/NetworkJudge.c": {
+    "sha256": "0d0ddf39743daf7fa9461e8173bebc50d3db2aa8a99b1f3ea1082eb1adb1bf26",
+    "size": 205825
+  },
+  "/tank/dregg-build/hcargo/metatheory/.lake/build/ir/Dregg2/Games/PathOfAngels/NetworkJudgeWire.c": {
+    "sha256": "bc0023032aff18147c8656f0615596902b62b40f8d56fbd3122a6019eb9a82f0",
+    "size": 1583821
+  },
+  "/tank/dregg-build/hcargo/metatheory/.lake/build/ir/Dregg2/Games/PathOfAngels/Emit.c": {
+    "sha256": "def225c2bfcdcf8e580bcc69c85d7bcbc1ebcfd977d5ab38b0e170dd089f1748",
+    "size": 1476746
+  },
+  "/tank/dregg-build/hcargo/metatheory/.lake/build/ir/Dregg2/Games/PathOfAngels/DeckDescent.c": {
+    "sha256": "98a33425f0f3c1661d43c8374bac69123515e377ac40c04a595c68b467161af1",
+    "size": 713381
+  },
+  "/tank/dregg-build/hcargo/metatheory/.lake/build/ir/Dregg2/Games/PathOfAngels/NightWatchCampaignWire.c": {
+    "sha256": "661b44e9423318975b71add7595c93250eb1d890518a07e22869963735bc2ffa",
+    "size": 460475
+  }
+}

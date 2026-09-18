@@ -1,0 +1,11 @@
+Theory/DeclaredActionLowering.lean:513:4: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+Theory/DeclaredActionLowering.lean:512:6: warning: This simp argument is unused:
+  forall_eq
+
+Hint: Omit it from the simp argument list.
+  simp only [List.all_eq_true, List.mem_replicate, beq_iff_eq, f̵o̵r̵a̵l̵l̵_̵e̵q̵,̵ ̵List.length_replicate,
+  ̲  ̲ ̲ ̲ ̲ ̲Nat.add_sub_cancel]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

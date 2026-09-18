@@ -1,0 +1,3 @@
+Theory/ResourceBirthAuthority.lean:277:2: warning: Try `simp at distinct` instead of `simpa using distinct`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`

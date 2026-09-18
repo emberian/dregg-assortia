@@ -1,0 +1,9 @@
+{
+  "module": "/Users/ember/dev/minidregg/Kernel/NativeObservationController.lean",
+  "sha256": "8c02ff7f32cebd253221d1bac2d4b16d3a89bc0c8b603441ded584adc9f0fe72",
+  "lines": 461,
+  "status": "SOURCE DRAFT ONLY \u2014 NOT COMPILED OR EXECUTED",
+  "compile_commands_run": [],
+  "required_next_command": "LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Kernel/NativeObservationController.olean Kernel/NativeObservationController.lean",
+  "compiler_coordination": "Ask resume_authority/root for a seat first. At most two Lean processes total."
+}

@@ -1,0 +1,914 @@
+[
+  {
+    "module": "Dregg2/Games/PathOfAngels/NetworkJudge.c",
+    "calls": [
+      "Init",
+      "Init",
+      "Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire"
+    ],
+    "eager": [
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge_check__fixture__processSignalWire__success",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge_check__fixture__signalJudgeFFI__success",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge_check__fixture__signalJudgeFFI__malformed__refused",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge_check__fixture__verifySignalTransition__success",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge_incompleteCanonOutputWire",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge_check__fixture__incomplete__canon__output__refused",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge_wrongPlayerInputWire",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge_check__fixture__wrong__player__refused",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge_wrongConfigInputWire",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge_check__fixture__wrong__config__refused",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge_wrongCurrentCounterInputWire",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge_check__fixture__wrong__current__counter__refused",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge_staleCounterInputWire",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge_check__fixture__stale__counter__refused",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge_wrongActionInputWire",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge_check__fixture__wrong__action__refused",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge_multipleActionsInputWire",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge_check__fixture__multiple__actions__refused",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge_staleRevisionInputWire",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge_check__fixture__stale__revision__refused",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge_replayAgainstSuccessorInputWire",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge_check__fixture__replay__against__successor__refused",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge_swappedSlotSecretInputWire",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge_check__fixture__swapped__slot__secret__refused",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge_wrongSlotCommitmentInputWire",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge_check__fixture__wrong__slot__commitment__refused",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge_wrongSlotInputWire",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge_check__fixture__wrong__claimed__slot__refused",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge_unboundSeedConfig",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge_unboundSeedInputWire",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge_check__vent__fixture__settles",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge_check__vent__output__is__canonical",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge_check__vent__and__signal__are__different__runs",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge_check__vent__forged__continuation__refused",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge_check__vent__wrong__instance__refused",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge_check__vent__replayed__counter__refused",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge_check__vent__wrong__mission__refused",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge_ventRetaggedBytes",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge_check__vent__retagged__as__signal__refused",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge_signalRetaggedBytes",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge_check__signal__retagged__as__vent__refused",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge_check__fixture__unbound__run__seed__refused"
+    ]
+  },
+  {
+    "module": "Dregg2/Games/PathOfAngels/NetworkJudgeWire.c",
+    "calls": [
+      "Init",
+      "Init",
+      "Lean_Data_Json",
+      "mathlib_Mathlib_Data_Finset_Sort",
+      "Dregg2_Dregg2_Games_PathOfAngels_Emit",
+      "Dregg2_Dregg2_Games_PathOfAngels_Canon",
+      "Dregg2_Dregg2_Tactics"
+    ],
+    "eager": [
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_WIRE__NAT__LIMIT",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_WIRE__ID__LIMIT",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_WIRE__ARTIFACT__LIMIT",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_WIRE__RECEIPT__LIMIT",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_WIRE__COUNTER__LIMIT",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_WIRE__ACTION__LIMIT",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_WIRE__BYTE__LIMIT",
+      "lp_Dregg2___private_Dregg2_Games_PathOfAngels_NetworkJudgeWire_0__Dregg2_Games_PathOfAngels_NetworkJudgeWire_zeroDigest",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_fixtureFederationId",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_fixtureSourceDigest",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_fixtureContentDigest",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_fixtureContentRoot",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_fixtureActivationDigest",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_fixtureActorRoot",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_fixturePlayerKey",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_fixtureCuratorKey",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_fixtureSlotSecret",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_fixtureSlot",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_fixtureSlotCommitment",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_fixtureMissionContext",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_fixtureRunSeed",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_fixtureTarget",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_fixtureMission",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_fixtureConfig",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_fixtureCanon",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_fixtureCarrier",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_fixtureRequestWire",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_fixtureSlotStateWire",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_fixtureInput",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_fixtureInputWire",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_fixtureInputBytes",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_ventFixtureMissionContext",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_ventFixtureRunSeed",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_ventFixtureConfig",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_ventFixtureMission",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_ventFixtureCanon",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_ventFixtureCarrier",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_ventFixtureRequestWire",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_ventFixtureInputWire",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_ventFixtureInputBytes",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_ventForgedContinuationInputWire",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_ventWrongInstanceInputWire",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_ventReplayedCounterInputWire",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_ventWrongMissionInputWire",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_fixturePostWorldWire",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_fixtureSuccessorCanonWire",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_fixtureReceiptWire",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_fixtureOutputWire",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_fixtureOutputBytes",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_check__fixture__input__roundtrip",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_check__fixture__input__refuses__tight__byte__cap",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_check__fixture__input__semantic__inhabited",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_check__fixture__input__refuses__trailing__bytes",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_check__fixture__input__refuses__uppercase__digest",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_oversizedActionsInput",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_check__fixture__input__refuses__oversized__actions",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_duplicateKnownInput",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_check__fixture__input__refuses__duplicate__canon__rows",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_mismatchedWorldInput",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_check__fixture__semantics__refuses__world__canon__mismatch",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_oversizedCarrierInput",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_check__fixture__input__refuses__oversized__carrier__counter",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_check__fixture__output__roundtrip",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_check__fixture__output__refuses__tight__byte__cap",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_check__fixture__output__semantic__inhabited",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudgeWire_check__fixture__output__refuses__trailing__bytes"
+    ]
+  },
+  {
+    "module": "Dregg2/Games/PathOfAngels/Emit.c",
+    "calls": [
+      "Init",
+      "Init",
+      "Lean_Data_Json",
+      "Dregg2_Dregg2_Games_PathOfAngels_Core",
+      "Dregg2_Dregg2_Games_PathOfAngels_EmitDigestHex",
+      "Dregg2_Dregg2_Games_PathOfAngels_RelicNamespace",
+      "Dregg2_Dregg2_Games_PathOfAngels_SignalTriangulation",
+      "Dregg2_Dregg2_Games_PathOfAngels_FiniteTables",
+      "Dregg2_Dregg2_Games_PathOfAngels_BlackBoxReconstruction",
+      "Dregg2_Dregg2_Games_PathOfAngels_HiddenInstance",
+      "Dregg2_Dregg2_Games_PathOfAngels_EmitJson",
+      "Dregg2_Dregg2_Games_PathOfAngels_DeckDescentEmit",
+      "Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogicEmit",
+      "Dregg2_Dregg2_Games_PathOfAngels_VentCrawlEmit",
+      "Dregg2_Dregg2_Tactics"
+    ],
+    "eager": [
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_SCHEMA__VERSION",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_check__parseBytes32Hex__test__federation__vector",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_check__parseBytes32Hex__refuses__display__label",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_FNV__OFFSET",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_FNV__PRIME",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_check__fnv1a64__empty__vector",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_check__fnv1a64__a__vector",
+      "lp_Dregg2___private_Dregg2_Games_PathOfAngels_Emit_0__Dregg2_Games_PathOfAngels_Emit_artifactRefTestDigest",
+      "lp_Dregg2___private_Dregg2_Games_PathOfAngels_Emit_0__Dregg2_Games_PathOfAngels_Emit_artifactRefTestVector",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_check__artifactRefJson__exact__four__key__vector",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_check__artifactRefJson__parses__as__exact__four__key__projection",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_signalContentSession",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_UNBOUND__RUN__SEED",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_signalAllCodes",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_check__signalAllCodes__length",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_check__signalAllCodes__nodup",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_signalClassPairs",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_signalClassChar___boxed__const__1",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_signalRulesTable",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_check__signalClassPairs__length",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_check__signalClassPairs__complete",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_check__signal__every__row__solves__at__exactly__its__own__index",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_signalDescriptorJson",
+      "lp_Dregg2___private_Dregg2_Games_PathOfAngels_Emit_0__Dregg2_Games_PathOfAngels_Emit_demoPlayer",
+      "lp_Dregg2___private_Dregg2_Games_PathOfAngels_Emit_0__Dregg2_Games_PathOfAngels_Emit_demoSlot",
+      "lp_Dregg2___private_Dregg2_Games_PathOfAngels_Emit_0__Dregg2_Games_PathOfAngels_Emit_relayInstanceJson",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_relayDescriptorJson",
+      "lp_Dregg2___private_Dregg2_Games_PathOfAngels_Emit_0__Dregg2_Games_PathOfAngels_Emit_salvagePracticeBoardsJson",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_salvageDescriptorJson",
+      "lp_Dregg2___private_Dregg2_Games_PathOfAngels_Emit_0__Dregg2_Games_PathOfAngels_Emit_blackBoxProbes",
+      "lp_Dregg2___private_Dregg2_Games_PathOfAngels_Emit_0__Dregg2_Games_PathOfAngels_Emit_blackBoxOracleTableJson",
+      "lp_Dregg2___private_Dregg2_Games_PathOfAngels_Emit_0__Dregg2_Games_PathOfAngels_Emit_blackBoxWitnessesJson",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_blackBoxDescriptorJson",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_blackBoxTableRefinesKernel",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_blackBoxWitnessesRefineKernel",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_check__relayDescriptor__exact__schema",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_check__blackBoxDescriptor__exact__schema",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_check__blackBox__table__is__the__kernel",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_check__blackBox__witnesses__are__the__kernel",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_check__salvageDescriptor__exact__schema",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_check__signalDescriptor__exact__schema",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_signalReward",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_UNBOUND__TARGET",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_check__signalDescriptor__does__not__determine__the__target",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_check__signalDescriptor__demo__seeds__both__draw",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_relayContentSession",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_relayReward",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_check__relayDescriptor__does__not__determine__the__board",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_salvageContentSession",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_salvageReward",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_check__salvageDescriptor__does__not__determine__the__board",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_blackBoxContentSession",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_blackBoxReward",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_check__blackBoxDescriptor__does__not__determine__the__order",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_descentContentSession",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_descentReward",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_check__descentDescriptor__does__not__determine__the__board",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_artificerContentSession",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_artificerReward",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_check__artificerDescriptor__does__not__determine__the__rule",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_ventContentSession",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_ventReward",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_ventDeepRelic",
+      "lp_Dregg2___private_Dregg2_Games_PathOfAngels_Emit_0__Dregg2_Games_PathOfAngels_Emit_demoDayContext",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_check__ventDescriptor__does__not__determine__the__vein",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_schemaJson",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_schemaContentRootPaths",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Emit_check__schemaJson__declares__exactly__the__canonical__game__paths"
+    ]
+  },
+  {
+    "module": "Dregg2/Games/PathOfAngels/Core.c",
+    "calls": [
+      "Init",
+      "Init",
+      "mathlib_Mathlib_Data_Finset_Card",
+      "Dregg2_Dregg2_Tactics"
+    ],
+    "eager": [
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_METRIC__LIMIT",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_RELIC__LIMIT",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_MISSION__RELIC__LIMIT",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_Contribution_zero",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_WORLD__RELIC__LIMIT",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_BETA__ARTIFACT__LIMIT",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_WorldState_empty",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_PLAYER__COUNTER__MODULUS"
+    ]
+  },
+  {
+    "module": "Dregg2/Tactics.c",
+    "calls": [
+      "Init",
+      "Init",
+      "mathlib_Mathlib_Tactic_Tauto",
+      "mathlib_Mathlib_Tactic_Ring",
+      "Lean"
+    ],
+    "eager": []
+  },
+  {
+    "module": "Dregg2/Games/PathOfAngels/EmitDigestHex.c",
+    "calls": [
+      "Init",
+      "Init",
+      "Dregg2_Dregg2_Games_PathOfAngels_Core"
+    ],
+    "eager": []
+  },
+  {
+    "module": "Dregg2/Games/PathOfAngels/RelicNamespace.c",
+    "calls": [
+      "Init",
+      "Init",
+      "Dregg2_Dregg2_Games_PathOfAngels_Core"
+    ],
+    "eager": [
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_MISSION__RELIC__BLOCK"
+    ]
+  },
+  {
+    "module": "Dregg2/Games/PathOfAngels/SignalTriangulation.c",
+    "calls": [
+      "Init",
+      "Init",
+      "Dregg2_Dregg2_Games_PathOfAngels_Core",
+      "Dregg2_Dregg2_Games_PathOfAngels_SeedDraw",
+      "Dregg2_Dregg2_Tactics",
+      "mathlib_Mathlib_Data_Multiset_UnionInter"
+    ],
+    "eager": [
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_SignalTriangulation_MAX__TURNS",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_SignalTriangulation_moduloFibres",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_SignalTriangulation_zeroCode"
+    ]
+  },
+  {
+    "module": "Dregg2/Games/PathOfAngels/SeedDraw.c",
+    "calls": [
+      "Init",
+      "Init",
+      "Dregg2_Dregg2_Games_PathOfAngels_Core",
+      "Dregg2_Dregg2_Tactics"
+    ],
+    "eager": [
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_SeedDraw_drawUniformB",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_SeedDraw_check__draw__is__uniform__on__every__bound",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_SeedDraw_probeBytes"
+    ]
+  },
+  {
+    "module": "Dregg2/Games/PathOfAngels/FiniteTables.c",
+    "calls": [
+      "Init",
+      "Init",
+      "Dregg2_Dregg2_Games_PathOfAngels_RelayRepair",
+      "Dregg2_Dregg2_Games_PathOfAngels_SalvageLock",
+      "Dregg2_Dregg2_Tactics"
+    ],
+    "eager": [
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_FiniteTables_relayRefusalReasonsFamilyLiveB",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_FiniteTables_check__relayTable__closed",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_FiniteTables_check__relayStates__nodup",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_FiniteTables_check__relayRefusalReasons__complete",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_FiniteTables_check__relayRefusalReasons__live__per__board",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_FiniteTables_check__relayRefusalReasons__family__live",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_FiniteTables_check__relayRefusalReasons__declared",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_FiniteTables_check__relayStateIds__unique",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_FiniteTables_relayStateCounts",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_FiniteTables_check__relayStateCounts__pinned",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_FiniteTables_salvageActions",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_FiniteTables_salvagePairingRepresentatives",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_FiniteTables_check__salvage__machine__shape__is__seed__independent",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_FiniteTables_salvageParametricStates",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_FiniteTables_salvageParametricTransitions",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_FiniteTables_salvageParametricClosedB",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_FiniteTables_salvageParametricStatesNodupB",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_FiniteTables_salvageParametricStateIdsUniqueB",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_FiniteTables_check__salvage__parametric__table__is__the__kernel",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_FiniteTables_check__salvage__parametric__table__is__well__formed",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_FiniteTables_check__salvageParametricStates__count",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_FiniteTables_check__salvageParametricTransitions__count",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_FiniteTables_check__parametric__closure__covers__every__board"
+    ]
+  },
+  {
+    "module": "Dregg2/Games/PathOfAngels/RelayRepair.c",
+    "calls": [
+      "Init",
+      "Init",
+      "Dregg2_Dregg2_Games_PathOfAngels_Core",
+      "Dregg2_Dregg2_Tactics"
+    ],
+    "eager": [
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_RelayRepair_MAX__TURNS"
+    ]
+  },
+  {
+    "module": "Dregg2/Games/PathOfAngels/SalvageLock.c",
+    "calls": [
+      "Init",
+      "Init",
+      "Dregg2_Dregg2_Games_PathOfAngels_Core",
+      "Dregg2_Dregg2_Games_PathOfAngels_SeedDraw",
+      "Dregg2_Dregg2_Tactics"
+    ],
+    "eager": [
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_SalvageLock_MAX__TURNS",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_SalvageLock_SEED__SPACE",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_SalvageLock_allSlots",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_SalvageLock_allMatchings",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_SalvageLock_allBoards",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_SalvageLock_realizedMatchings",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_SalvageLock_realizedBoards",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_SalvageLock_check__seed__space__realizes__every__perfect__matching",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_SalvageLock_check__seed__space__is__exactly__the__two__of__each__boards",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_SalvageLock_check__every__matching__has__all__six__labellings",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_SalvageLock_check__glyph__population__two"
+    ]
+  },
+  {
+    "module": "Dregg2/Games/PathOfAngels/BlackBoxReconstruction.c",
+    "calls": [
+      "Init",
+      "Init",
+      "Dregg2_Dregg2_Games_PathOfAngels_Core",
+      "Dregg2_Dregg2_Games_PathOfAngels_SeedDraw",
+      "Dregg2_Dregg2_Tactics"
+    ],
+    "eager": [
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_BlackBoxReconstruction_SLOT__COUNT",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_BlackBoxReconstruction_MAX__TURNS",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_BlackBoxReconstruction_ORDER__SPACE",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_BlackBoxReconstruction_allSlots",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_BlackBoxReconstruction_allFragments",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_BlackBoxReconstruction_allOrderRows",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_BlackBoxReconstruction_candidateRows",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_BlackBoxReconstruction_permutationRows",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_BlackBoxReconstruction_check__order__space__is__exactly__the__permutations",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_BlackBoxReconstruction_scanLengths",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_BlackBoxReconstruction_scanWinCount",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_BlackBoxReconstruction_bisectLengths",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_BlackBoxReconstruction_check__every__instance__is__winnable__inside__the__budget",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_BlackBoxReconstruction_check__the__budget__is__the__listening__policy__worst__case",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_BlackBoxReconstruction_check__the__hint__ignoring__scan__no__longer__wins",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_BlackBoxReconstruction_check__listening__is__what__closes__the__gap",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_BlackBoxReconstruction_losingTranscript",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_BlackBoxReconstruction_check__a__run__can__be__lost",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_BlackBoxReconstruction_refusalWitnesses",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_BlackBoxReconstruction_everyRefusalIsWitnessedB",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_BlackBoxReconstruction_check__every__refusal__is__witnessed",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_BlackBoxReconstruction_check__a__probe__that__is__accepted__witnesses__nothing"
+    ]
+  },
+  {
+    "module": "Dregg2/Games/PathOfAngels/HiddenInstance.c",
+    "calls": [
+      "Init",
+      "Init",
+      "Dregg2_Dregg2_Games_PathOfAngels_Core",
+      "Dregg2_Dregg2_Games_PathOfAngels_SeedDraw",
+      "Dregg2_Dregg2_Circuit_Poseidon2BabyBearW16",
+      "Dregg2_Dregg2_Tactics"
+    ],
+    "eager": [
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_HiddenInstance_W",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_HiddenInstance_RATE",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_HiddenInstance_initialState",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_HiddenInstance_LANE__ACCEPT",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_HiddenInstance_LANE__FIBRE",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_HiddenInstance_COMMIT__DOMAIN",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_HiddenInstance_DERIVE__DOMAIN",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_HiddenInstance_SQUEEZE__BLOCKS",
+      "lp_Dregg2___private_Dregg2_Games_PathOfAngels_HiddenInstance_0__Dregg2_Games_PathOfAngels_HiddenInstance_fixtureFederation",
+      "lp_Dregg2___private_Dregg2_Games_PathOfAngels_HiddenInstance_0__Dregg2_Games_PathOfAngels_HiddenInstance_fixtureSession",
+      "lp_Dregg2___private_Dregg2_Games_PathOfAngels_HiddenInstance_0__Dregg2_Games_PathOfAngels_HiddenInstance_fixtureContentRoot",
+      "lp_Dregg2___private_Dregg2_Games_PathOfAngels_HiddenInstance_0__Dregg2_Games_PathOfAngels_HiddenInstance_fixtureActivation",
+      "lp_Dregg2___private_Dregg2_Games_PathOfAngels_HiddenInstance_0__Dregg2_Games_PathOfAngels_HiddenInstance_fixtureSourceDigest",
+      "lp_Dregg2___private_Dregg2_Games_PathOfAngels_HiddenInstance_0__Dregg2_Games_PathOfAngels_HiddenInstance_secretA",
+      "lp_Dregg2___private_Dregg2_Games_PathOfAngels_HiddenInstance_0__Dregg2_Games_PathOfAngels_HiddenInstance_secretB",
+      "lp_Dregg2___private_Dregg2_Games_PathOfAngels_HiddenInstance_0__Dregg2_Games_PathOfAngels_HiddenInstance_alice",
+      "lp_Dregg2___private_Dregg2_Games_PathOfAngels_HiddenInstance_0__Dregg2_Games_PathOfAngels_HiddenInstance_bob",
+      "lp_Dregg2___private_Dregg2_Games_PathOfAngels_HiddenInstance_0__Dregg2_Games_PathOfAngels_HiddenInstance_fixtureMission",
+      "lp_Dregg2___private_Dregg2_Games_PathOfAngels_HiddenInstance_0__Dregg2_Games_PathOfAngels_HiddenInstance_slotSeven",
+      "lp_Dregg2___private_Dregg2_Games_PathOfAngels_HiddenInstance_0__Dregg2_Games_PathOfAngels_HiddenInstance_slotEight",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_HiddenInstance_check__commit__separates__secrets",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_HiddenInstance_check__commit__separates__slots",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_HiddenInstance_check__published__context__does__not__determine__the__run__seed",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_HiddenInstance_check__two__players__draw__different__instances",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_HiddenInstance_check__two__slots__draw__different__instances",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_HiddenInstance_check__practice__is__not__judged",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_HiddenInstance_check__commitment__is__not__the__seed"
+    ]
+  },
+  {
+    "module": "Dregg2/Circuit/Poseidon2BabyBearW16.c",
+    "calls": [
+      "Init",
+      "Init"
+    ],
+    "eager": [
+      "lp_Dregg2_Dregg2_Circuit_Poseidon2BabyBearW16_P",
+      "lp_Dregg2_Dregg2_Circuit_Poseidon2BabyBearW16_inv2"
+    ]
+  },
+  {
+    "module": "Dregg2/Games/PathOfAngels/EmitJson.c",
+    "calls": [
+      "Init",
+      "Init",
+      "Lean_Data_Json",
+      "Dregg2_Dregg2_Tactics"
+    ],
+    "eager": []
+  },
+  {
+    "module": "Dregg2/Games/PathOfAngels/DeckDescentEmit.c",
+    "calls": [
+      "Init",
+      "Init",
+      "Lean_Data_Json",
+      "Dregg2_Dregg2_Games_PathOfAngels_DeckDescent",
+      "Dregg2_Dregg2_Games_PathOfAngels_EmitJson",
+      "Dregg2_Dregg2_Tactics"
+    ],
+    "eager": [
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DeckDescentEmit_descentStates",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DeckDescentEmit_descentActions",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DeckDescentEmit_descentRows",
+      "lp_Dregg2___private_Dregg2_Games_PathOfAngels_DeckDescentEmit_0__Dregg2_Games_PathOfAngels_DeckDescentEmit_parentJson",
+      "lp_Dregg2___private_Dregg2_Games_PathOfAngels_DeckDescentEmit_0__Dregg2_Games_PathOfAngels_DeckDescentEmit_mainChildJson",
+      "lp_Dregg2___private_Dregg2_Games_PathOfAngels_DeckDescentEmit_0__Dregg2_Games_PathOfAngels_DeckDescentEmit_spurChildJson",
+      "lp_Dregg2___private_Dregg2_Games_PathOfAngels_DeckDescentEmit_0__Dregg2_Games_PathOfAngels_DeckDescentEmit_debtJson",
+      "lp_Dregg2___private_Dregg2_Games_PathOfAngels_DeckDescentEmit_0__Dregg2_Games_PathOfAngels_DeckDescentEmit_crossingsJson",
+      "lp_Dregg2___private_Dregg2_Games_PathOfAngels_DeckDescentEmit_0__Dregg2_Games_PathOfAngels_DeckDescentEmit_forfeitOrderJson",
+      "lp_Dregg2___private_Dregg2_Games_PathOfAngels_DeckDescentEmit_0__Dregg2_Games_PathOfAngels_DeckDescentEmit_shaftJson",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DeckDescentEmit_descentPracticeBoards",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DeckDescentEmit_deckDescentDescriptorJson",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DeckDescentEmit_flattenedResolveRows",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DeckDescentEmit_flattenedResolveDescriptor",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DeckDescentEmit_truncatedDescriptor",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DeckDescentEmit_sevenBoardDescriptor",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DeckDescentEmit_duplicatedBoardDescriptor",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DeckDescentEmit_check__descentDescriptor__exact__schema",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DeckDescentEmit_check__descentDescriptor__table__is__the__kernel",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DeckDescentEmit_check__descentDescriptor__views__are__the__kernel",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DeckDescentEmit_check__flattened__resolve__is__caught",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DeckDescentEmit_check__truncated__table__is__caught",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DeckDescentEmit_check__descentDescriptor__practice__is__the__kernel",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DeckDescentEmit_check__a__missing__board__is__caught",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DeckDescentEmit_check__a__duplicated__board__is__caught"
+    ]
+  },
+  {
+    "module": "Dregg2/Games/PathOfAngels/DeckDescent.c",
+    "calls": [
+      "Init",
+      "Init",
+      "Dregg2_Dregg2_Games_PathOfAngels_Core",
+      "Dregg2_Dregg2_Games_PathOfAngels_SeedDraw",
+      "Dregg2_Dregg2_Games_PathOfAngels_DayWater",
+      "Dregg2_Dregg2_Tactics"
+    ],
+    "eager": [
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DeckDescent_AIR",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DeckDescent_SHORING",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DeckDescent_BASE__CAPACITY",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DeckDescent_BANK__TARGET",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DeckDescent_allNodes",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DeckDescent_check__every__board__can__be__banked",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DeckDescent_check__the__answer__selects__the__branch",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DeckDescent_bestBlind",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DeckDescent_check__no__blind__line__banks__every__board",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DeckDescent_check__the__junction__is__one__state",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DeckDescent_check__the__look__is__worth__its__air",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DeckDescent_check__budgets__are__incomparable",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DeckDescent_check__every__board__forks",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DeckDescent_check__every__board__can__be__lost",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DeckDescent_check__family__shape__is__measured",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DeckDescent_check__the__mirror__is__broken",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DeckDescent_check__walking__in__blind__costs__a__body",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DeckDescent_check__the__deck__keeps__what__you__could__not__carry",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DeckDescent_check__a__sound__shaft__keeps__both__relics",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DeckDescent_familyStateCount",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DeckDescent_parametricStates",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DeckDescent_parametricRowCount",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DeckDescent_check__parametric__closure__is__closed",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DeckDescent_check__parametric__states__nodup",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DeckDescent_check__initial__state__is__declared",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DeckDescent_check__parametric__shape__is__measured",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DeckDescent_check__declared__states__fit__the__sling",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DeckDescent_resolveRowCount",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DeckDescent_check__the__table__consults__the__instance",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DeckDescent_check__state__ids__are__distinct",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DeckDescent_check__state__ids__are__identifiers"
+    ]
+  },
+  {
+    "module": "Dregg2/Games/PathOfAngels/DayWater.c",
+    "calls": [
+      "Init",
+      "Init",
+      "Dregg2_Dregg2_Games_PathOfAngels_Core",
+      "Dregg2_Dregg2_Games_PathOfAngels_SeedDraw",
+      "Dregg2_Dregg2_Games_PathOfAngels_HiddenInstance",
+      "Dregg2_Dregg2_Tactics"
+    ],
+    "eager": [
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DayWater_SHIP__DOMAIN",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DayWater_READING__FACES",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DayWater_READING__AGREE",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DayWater_allReadingDraws",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DayWater_allReadings",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DayWater_BOARD__COUNT",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DayWater_SPUR__COUNT",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DayWater_allSpurs",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DayWater_allMouths",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DayWater_allBoardDraws",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DayWater_allBoardDrawsToday",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DayWater_SEAM__COUNT",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DayWater_VEIN__COUNT",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DayWater_allSeams",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DayWater_allVeinDraws",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_DayWater_allShipDays"
+    ]
+  },
+  {
+    "module": "Dregg2/Games/PathOfAngels/ArtificerLogicEmit.c",
+    "calls": [
+      "Init",
+      "Init",
+      "Lean_Data_Json",
+      "Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogic",
+      "Dregg2_Dregg2_Games_PathOfAngels_EmitJson",
+      "Dregg2_Dregg2_Tactics"
+    ],
+    "eager": [
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogicEmit_logicStates",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogicEmit_logicActions",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogicEmit_logicRows",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogicEmit_manualFamilies",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogicEmit_artificerLogicDescriptorJson",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogicEmit_synonymManualDescriptor",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogicEmit_flattenedResolveRows",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogicEmit_flattenedResolveDescriptor",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogicEmit_truncatedDescriptor",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogicEmit_check__logicDescriptor__exact__schema",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogicEmit_check__logicDescriptor__manual__is__the__kernel",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogicEmit_check__logicDescriptor__manual__is__distinguishing",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogicEmit_check__logicDescriptor__table__is__the__kernel",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogicEmit_check__logicDescriptor__views__are__the__kernel",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogicEmit_check__synonym__manual__is__caught",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogicEmit_check__flattened__resolve__is__caught",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogicEmit_check__truncated__table__is__caught"
+    ]
+  },
+  {
+    "module": "Dregg2/Games/PathOfAngels/ArtificerLogic.c",
+    "calls": [
+      "Init",
+      "Init",
+      "Dregg2_Dregg2_Games_PathOfAngels_Core",
+      "Dregg2_Dregg2_Games_PathOfAngels_SeedDraw",
+      "Dregg2_Dregg2_Tactics"
+    ],
+    "eager": [
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogic_PROBE__BUDGET",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogic_ACTION__LIMIT",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogic_allCharges",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogic_manual",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogic_check__manual__signatures__are__distinct",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogic_repeatedManual",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogic_check__repeated__manual__is__caught",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogic_initialState",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogic_allActions",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogic_check__four__charges__are__enough",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogic_check__three__charges__are__not",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogic_check__an__even__split__is__not__a__good__one",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogic_parametricStates",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogic_parametricRowCount",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogic_check__parametric__layers__are__the__clock",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogic_check__parametric__closure__is__closed",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogic_check__parametric__states__nodup",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogic_check__initial__state__is__declared",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogic_check__no__declared__state__is__empty",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogic_check__resolve__rows__name__two__states",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogic_resolveRowCount",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogic_check__the__table__consults__the__instance",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogic_check__every__open__probe__resolves",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogic_emittedReasons",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogic_check__every__declared__reason__is__reachable",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogic_check__every__rule__is__identifiable",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogic_wagerStates",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogic_check__the__run__can__be__lost",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogic_certifiableCount",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogic_luckOnlyCount",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogic_check__the__skill__line__is__real",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogic_check__rule__tags__are__distinct",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogic_check__action__tags__are__distinct",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogic_check__state__ids__are__distinct",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogic_check__parametric__shape__is__measured",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_ArtificerLogic_check__action__codes__are__distinct"
+    ]
+  },
+  {
+    "module": "Dregg2/Games/PathOfAngels/VentCrawlEmit.c",
+    "calls": [
+      "Init",
+      "Init",
+      "Lean_Data_Json",
+      "Dregg2_Dregg2_Games_PathOfAngels_VentCrawl",
+      "Dregg2_Dregg2_Games_PathOfAngels_EmitJson",
+      "Dregg2_Dregg2_Tactics"
+    ],
+    "eager": [
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_VentCrawlEmit_ventStates",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_VentCrawlEmit_ventActions",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_VentCrawlEmit_ventRows",
+      "lp_Dregg2___private_Dregg2_Games_PathOfAngels_VentCrawlEmit_0__Dregg2_Games_PathOfAngels_VentCrawlEmit_floodLadderJson",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_VentCrawlEmit_ventCrawlDescriptorJson",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_VentCrawlEmit_flattenedWagerRows",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_VentCrawlEmit_flattenedWagerDescriptor",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_VentCrawlEmit_softenedOddsRows",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_VentCrawlEmit_softenedOddsDescriptor",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_VentCrawlEmit_prunedHaulRows",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_VentCrawlEmit_prunedHaulDescriptor",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_VentCrawlEmit_truncatedDescriptor",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_VentCrawlEmit_unpricedMapDescriptor",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_VentCrawlEmit_check__ventCrawlDescriptor__exact__schema",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_VentCrawlEmit_check__ventCrawlDescriptor__table__is__the__kernel",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_VentCrawlEmit_check__ventCrawlDescriptor__views__are__the__kernel",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_VentCrawlEmit_check__ventCrawlDescriptor__payout__is__the__kernel",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_VentCrawlEmit_check__unpriced__map__is__caught",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_VentCrawlEmit_check__flattened__wager__is__caught",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_VentCrawlEmit_check__softened__odds__are__caught",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_VentCrawlEmit_check__pruned__haul__is__caught",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_VentCrawlEmit_check__truncated__table__is__caught"
+    ]
+  },
+  {
+    "module": "Dregg2/Games/PathOfAngels/VentCrawl.c",
+    "calls": [
+      "Init",
+      "Init",
+      "Dregg2_Dregg2_Games_PathOfAngels_Core",
+      "Dregg2_Dregg2_Games_PathOfAngels_SeedDraw",
+      "Dregg2_Dregg2_Games_PathOfAngels_HiddenInstance",
+      "Dregg2_Dregg2_Games_PathOfAngels_DayWater",
+      "Dregg2_Dregg2_Tactics"
+    ],
+    "eager": [
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_VentCrawl_DEPTH__CAP",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_VentCrawl_FACES",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_VentCrawl_MOUTH__SALVAGE",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_VentCrawl_VEINS",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_VentCrawl_SEAMS",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_VentCrawl_ACTION__LIMIT",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_VentCrawl_parametricStates",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_VentCrawl_parametricRowCount",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_VentCrawl_check__parametric__closure__is__closed",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_VentCrawl_check__parametric__states__nodup",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_VentCrawl_check__initial__state__is__declared",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_VentCrawl_check__parametric__shape__is__measured",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_VentCrawl_branchingWagerCount",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_VentCrawl_check__the__table__consults__the__day",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_VentCrawl_check__every__declared__reason__fires",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_VentCrawl_check__no__undeclared__reason__fires",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_VentCrawl_check__family__shape__is__measured",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_VentCrawl_check__every__vein__forks",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_VentCrawl_check__a__calm__tape__rewards__the__deep__line",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_VentCrawl_check__a__foul__tape__drowns__the__first__crawl",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_VentCrawl_check__a__drowned__run__cannot__keep__going",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_VentCrawl_check__the__scout__comes__home__where__the__third__crawl__drowns",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_VentCrawl_check__state__ids__are__distinct",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_VentCrawl_check__a__drowned__run__is__always__worth__submitting",
+      "lp_Dregg2___private_Dregg2_Games_PathOfAngels_VentCrawl_0__Dregg2_Games_PathOfAngels_VentCrawl_fixtureSecret",
+      "lp_Dregg2___private_Dregg2_Games_PathOfAngels_VentCrawl_0__Dregg2_Games_PathOfAngels_VentCrawl_fixtureCrawler",
+      "lp_Dregg2___private_Dregg2_Games_PathOfAngels_VentCrawl_0__Dregg2_Games_PathOfAngels_VentCrawl_fixtureOtherCrawler",
+      "lp_Dregg2___private_Dregg2_Games_PathOfAngels_VentCrawl_0__Dregg2_Games_PathOfAngels_VentCrawl_fixtureSlot",
+      "lp_Dregg2___private_Dregg2_Games_PathOfAngels_VentCrawl_0__Dregg2_Games_PathOfAngels_VentCrawl_fixtureContext",
+      "lp_Dregg2___private_Dregg2_Games_PathOfAngels_VentCrawl_0__Dregg2_Games_PathOfAngels_VentCrawl_fixtureOtherMission",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_VentCrawl_check__the__day__table__is__not__a__player__stream",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_VentCrawl_check__a__mission__scoped__day__would__have__differed",
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_VentCrawl_check__two__crawlers__share__a__vein__and__not__a__tape"
+    ]
+  },
+  {
+    "module": "Dregg2/Games/PathOfAngels/Canon.c",
+    "calls": [
+      "Init",
+      "Init",
+      "Dregg2_Dregg2_Games_PathOfAngels_Judged"
+    ],
+    "eager": []
+  },
+  {
+    "module": "Dregg2/Games/PathOfAngels/Judged.c",
+    "calls": [
+      "Init",
+      "Init",
+      "Dregg2_Dregg2_Games_PathOfAngels_SignalTriangulation",
+      "Dregg2_Dregg2_Games_PathOfAngels_RelayRepair",
+      "Dregg2_Dregg2_Games_PathOfAngels_SalvageLock",
+      "Dregg2_Dregg2_Games_PathOfAngels_DeckDescent",
+      "Dregg2_Dregg2_Games_PathOfAngels_VentCrawl",
+      "Dregg2_Dregg2_Games_PathOfAngels_BlackBoxReconstruction",
+      "Dregg2_Dregg2_Games_PathOfAngels_PlayerCounters",
+      "Dregg2_Dregg2_Games_PathOfAngels_HiddenInstance"
+    ],
+    "eager": []
+  },
+  {
+    "module": "Dregg2/Games/PathOfAngels/PlayerCounters.c",
+    "calls": [
+      "Init",
+      "Init",
+      "Dregg2_Dregg2_Games_PathOfAngels_Core",
+      "Dregg2_Dregg2_Circuit_FinKernelState",
+      "Dregg2_Dregg2_Tactics"
+    ],
+    "eager": [
+      "lp_Dregg2_Dregg2_Games_PathOfAngels_PlayerCounterTable_empty"
+    ]
+  },
+  {
+    "module": "Dregg2/Circuit/FinKernelState.c",
+    "calls": [
+      "Init",
+      "Init",
+      "Dregg2_Dregg2_Exec_RecordKernel",
+      "mathlib_Mathlib_Data_List_Sort",
+      "mathlib_Mathlib_Data_Prod_Lex"
+    ],
+    "eager": [
+      "lp_Dregg2_Dregg2_Circuit_FinKernelState_finInit",
+      "lp_Dregg2___private_Dregg2_Circuit_FinKernelState_0__Dregg2_Circuit_FinKernelState_fA",
+      "lp_Dregg2___private_Dregg2_Circuit_FinKernelState_0__Dregg2_Circuit_FinKernelState_fB"
+    ]
+  },
+  {
+    "module": "Dregg2/Exec/RecordKernel.c",
+    "calls": [
+      "Init",
+      "Init",
+      "Dregg2_Dregg2_Exec_Kernel",
+      "Dregg2_Dregg2_Exec_Program"
+    ],
+    "eager": [
+      "lp_Dregg2_Dregg2_Exec_recKernelSystem",
+      "lp_Dregg2_Dregg2_Exec_recChainedSystem",
+      "lp_Dregg2_Dregg2_Exec_res0",
+      "lp_Dregg2_Dregg2_Exec_rs0",
+      "lp_Dregg2_Dregg2_Exec_rt1",
+      "lp_Dregg2_Dregg2_Exec_rtBad",
+      "lp_Dregg2_Dregg2_Exec_rms0"
+    ]
+  },
+  {
+    "module": "Dregg2/Exec/Kernel.c",
+    "calls": [
+      "Init",
+      "Init",
+      "mathlib_Mathlib_Algebra_BigOperators_Group_Finset_Basic",
+      "mathlib_Mathlib_Tactic_Ring",
+      "Dregg2_Dregg2_Authority_Positional",
+      "Dregg2_Dregg2_Execution",
+      "Dregg2_Dregg2_Tactics"
+    ],
+    "eager": [
+      "lp_Dregg2_Dregg2_Exec_kernelSystem",
+      "lp_Dregg2_Dregg2_Exec_s0",
+      "lp_Dregg2_Dregg2_Exec_t1",
+      "lp_Dregg2_Dregg2_Exec_tBad"
+    ]
+  },
+  {
+    "module": "Dregg2/Authority/Positional.c",
+    "calls": [
+      "Init",
+      "Init",
+      "Dregg2_Dregg2_Laws"
+    ],
+    "eager": []
+  },
+  {
+    "module": "Dregg2/Laws.c",
+    "calls": [
+      "Init",
+      "Init",
+      "mathlib_Mathlib_Order_GaloisConnection_Basic",
+      "mathlib_Mathlib_Order_Heyting_Basic"
+    ],
+    "eager": []
+  },
+  {
+    "module": "Dregg2/Execution.c",
+    "calls": [
+      "Init",
+      "Init",
+      "Dregg2_Dregg2_Tactics"
+    ],
+    "eager": []
+  },
+  {
+    "module": "Dregg2/Exec/Program.c",
+    "calls": [
+      "Init",
+      "Init",
+      "Dregg2_Dregg2_Exec_Value",
+      "Dregg2_Dregg2_Authority_ClearanceGraph"
+    ],
+    "eager": [
+      "lp_Dregg2_Dregg2_Exec_counterOld",
+      "lp_Dregg2_Dregg2_Exec_counterUp",
+      "lp_Dregg2_Dregg2_Exec_counterDn",
+      "lp_Dregg2_Dregg2_Exec_smProgram",
+      "lp_Dregg2_Dregg2_Exec_balLo",
+      "lp_Dregg2_Dregg2_Exec_balHi",
+      "lp_Dregg2_Dregg2_Exec_roleProgram",
+      "lp_Dregg2_Dregg2_Exec_nsProgram",
+      "lp_Dregg2_Dregg2_Exec_priceProgram",
+      "lp_Dregg2_Dregg2_Exec_jitterProgram",
+      "lp_Dregg2_Dregg2_Exec_bandProgram",
+      "lp_Dregg2_Dregg2_Exec_consvProgram",
+      "lp_Dregg2_Dregg2_Exec_budgetProgram",
+      "lp_Dregg2_Dregg2_Exec_tieredBudgetProgram",
+      "lp_Dregg2_Dregg2_Exec_councilBound",
+      "lp_Dregg2_Dregg2_Exec_drainTooth",
+      "lp_Dregg2_Dregg2_Exec_boardBound",
+      "lp_Dregg2_Dregg2_Exec_committedRelease",
+      "lp_Dregg2_Dregg2_Exec_wakeOnResolveClause",
+      "lp_Dregg2_Dregg2_Exec_escrowResolveProgram",
+      "lp_Dregg2_Dregg2_Exec_marketReadsOracle",
+      "lp_Dregg2_Dregg2_Exec_escrowOr",
+      "lp_Dregg2_Dregg2_Exec_witnessedOnly",
+      "lp_Dregg2_Dregg2_Exec_mixedHeapProgram"
+    ]
+  },
+  {
+    "module": "Dregg2/Exec/Value.c",
+    "calls": [
+      "Init",
+      "Init"
+    ],
+    "eager": [
+      "lp_Dregg2_Dregg2_Exec_instInhabitedTy",
+      "lp_Dregg2_Dregg2_Exec_instInhabitedValue",
+      "lp_Dregg2_Dregg2_Exec_acct0",
+      "lp_Dregg2_Dregg2_Exec_nested0"
+    ]
+  },
+  {
+    "module": "Dregg2/Authority/ClearanceGraph.c",
+    "calls": [
+      "Init",
+      "Init",
+      "Dregg2_Dregg2_Tactics"
+    ],
+    "eager": []
+  }
+]

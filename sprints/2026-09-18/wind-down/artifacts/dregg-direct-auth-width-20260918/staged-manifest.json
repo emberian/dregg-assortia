@@ -1,0 +1,53 @@
+{
+  "status": "STAGED ONLY; NOT APPLIED; NOT COMPILED; frozen at user wind-down",
+  "checked": "rustfmt parsed the staged Rust file; only owned regions retained; Lean proofs are source-only",
+  "source_regions": {
+    "metatheory/Dregg2/Exec/FFIDirect.lean": "natOfLimbs move, seven credential builders, ordinary proofs, test encoder",
+    "dregg-lean-ffi/src/lean_direct.rs": "seven credential extern declarations, cfg(test) encoder extern, build_auth_w, digest helper"
+  },
+  "exports": {
+    "dregg_d_auth_signature_w": "(pk0,pk1,pk2,pk3,sig:UInt64) -> AuthW",
+    "dregg_d_auth_proof_w": "(vk0,vk1,vk2,vk3,pf,ba,br:UInt64) -> AuthW",
+    "dregg_d_auth_bearer_w": "(dm0,dm1,dm2,dm3,ds:UInt64)(stark:Bool/u8) -> AuthW",
+    "dregg_d_auth_captp_w": "(im0,im1,im2,im3,sm0,sm1,sm2,sm3,isig,ss:UInt64) -> AuthW",
+    "dregg_d_auth_custom_w": "(st0,st1,st2,st3,pf:UInt64) -> AuthW",
+    "dregg_d_auth_stealth_w": "(otp0,otp1,otp2,otp3,eph0,eph1,eph2,eph3,sig:UInt64) -> AuthW",
+    "dregg_d_auth_token_w": "(key0,key1,key2,key3,sig:UInt64) -> AuthW",
+    "dregg_d_auth_encode_w": "(auth:AuthW/lean_object*) -> String/lean_object*"
+  },
+  "proofs": [
+    "natOfLimbs_high_limbs_do_not_fit_u64",
+    "lift_authSignatureW",
+    "lift_authProofW",
+    "lift_authBearerW",
+    "lift_authCapTpW",
+    "lift_authCustomW",
+    "lift_authStealthW",
+    "lift_authTokenW",
+    "authEncodeW_eq"
+  ],
+  "proof_status": "All nine ordinary #assert_axioms pins are staged; no Lean elaboration performed",
+  "test_draft_owner": "/root/resume_runtime",
+  "test_draft_path": "/tmp/dregg-wide-auth-test-draft",
+  "test_scope": "Existing corpus unchanged; admitted transfers for credential variants and selected OneOf, high192-bit refusal for eight consumed coordinates, canonical native serialization roundtrip of all nine including intentionally ignored ephemeral_pk. Crypto.Reference echo semantics only.",
+  "resume_constraints": "No apply authorized during wind-down. Later apply requires coordination with runtime owner; use replacements.json against current owned regions rather than overwriting whole shared Rust file; remote coherent Lean C/olean/archive build plus native tests are still required.",
+  "reports": [
+    "/tmp/dregg-direct-fidelity-audit-20260918.md",
+    "/tmp/dregg-networkjudge-startup-diagnosis-20260918.md"
+  ],
+  "scratch_files": {
+    "FFIDirect.lean": "7d05b5041692eaa9b79eac2dd128685930e987a49b5e9781fbfd2c11e24e4111",
+    "FFIDirect.lean.before": "930ea2f7541a7c935c2ede7e1f1a839c73bd80f39d33b4425de81b5447e800f9",
+    "FFIDirect.lean.diff": "ecf1f13c860ce8bb9d6514dfbf28f4c4bbbf2159da4693de95072a0fc786ad52",
+    "apply.py": "980d910e642e5ecf86ccb3215dd201f1494f108dd74176de85964f86c111ff52",
+    "lean_direct.rs": "fa7407dbc31716abda80ea03d4cf20c2d732049cf69637719018dec7f17fe18f",
+    "lean_direct.rs.before": "036e74fe624c2763082c0c20ecdc0d64e0c0e3046280a22b6d7e89363e81b91a",
+    "lean_direct.rs.diff": "509c9d75a2e0000501191ceef7639874982fb71521a1ec9d999f97d01cd28dbd",
+    "replacements.json": "bee09301e3d94b986c7f35fe915c174de97f015c7b9f636438a3e163bea8c879",
+    "stage.py": "751447280a5fe0073fd501a06c2763e88645426e3a89439eded115a70dd9a417"
+  },
+  "current_shared_sources": {
+    "metatheory/Dregg2/Exec/FFIDirect.lean": "930ea2f7541a7c935c2ede7e1f1a839c73bd80f39d33b4425de81b5447e800f9",
+    "dregg-lean-ffi/src/lean_direct.rs": "036e74fe624c2763082c0c20ecdc0d64e0c0e3046280a22b6d7e89363e81b91a"
+  }
+}

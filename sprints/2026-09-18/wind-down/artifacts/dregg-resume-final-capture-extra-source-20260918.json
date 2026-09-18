@@ -1,0 +1,14 @@
+{
+  "captured_utc": "2026-09-18T07:29:58.864271+00:00",
+  "scope": "Actual receiving lane during frozen five-test capture; source supplements twenty-one-file manifest. Local pending NightWatch/ABI/string edits are not synced into this snapshot.",
+  "files": {
+    "deos-hermes/tests/world_bridge_e2e.rs": "21f8eece5bb7455f3ce5453fc0c2692a2fded48747415534f9ac95f7b53aa708",
+    "dregg-lean-ffi/tests/lazy_pq_registration.rs": "3567bb1914c81c8435e0a486f04d3fabb9873d357dd852e204e5c261c5430199",
+    "metatheory/Dregg2/Exec/FFI.lean": "8a76f85582318d61e57f6b6b10a6ab743de02e6357ae9b642d0ba01c63cf4a62",
+    "metatheory/Dregg2/Exec/FFIDirect.lean": "930ea2f7541a7c935c2ede7e1f1a839c73bd80f39d33b4425de81b5447e800f9",
+    "dregg-lean-ffi/src/marshal.rs": "bf14de3d55cb375841cc6eb1de3ee4096e0504502eb65cdf084244add4eb0a4a",
+    "metatheory/Dregg2/Games/PathOfAngels/NightWatchCampaignWire.lean": "180f78483c975eead63f145168419b073b3904a2d3403ecd6d9b6cb6f14e6d95",
+    "metatheory/Dregg2/Games/PathOfAngels/NightWatchCampaignWireFixtures.lean": "f7497fa4dcfb48033435c74efa84cdc76a8cf840d5d2648d946fc1981cc1a547",
+    "metatheory/Dregg2/Games/PathOfAngels/CanonicalCodecHealthWire.lean": "3dca9b47524cdb48dc76e1b094418d50ce202bf6f6959a643dc2192733d2ef36"
+  }
+}

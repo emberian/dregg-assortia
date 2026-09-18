@@ -1,0 +1,32 @@
+[
+  {
+    "source": "Theory/CanonicalResourceBookInvariant.lean",
+    "sha256": "21bc2c3ef99964a10a832bc9b0ae699dff012f73f122dddf7a9f7d5ad2baf96d",
+    "status": "checked/emitted",
+    "archive": "/tmp/dregg-book-winddown-source/Theory/CanonicalResourceBookInvariant.lean"
+  },
+  {
+    "source": "Compiler/CanonicalCellRegistry.lean",
+    "sha256": "14a22018722e30757e3d622437b32ba8cc29c040c3bda12018ad6f269a39fff5",
+    "status": "source-only/uncompiled",
+    "archive": "/tmp/dregg-book-winddown-source/Compiler/CanonicalCellRegistry.lean"
+  },
+  {
+    "source": "Kernel/NativeHostBookInvariant.lean",
+    "sha256": "4dfa0071e4f97ee84f4e5db99a4e16fd76fc6e3ff94f2ee2580ada724e654ef3",
+    "status": "source-only/uncompiled",
+    "archive": "/tmp/dregg-book-winddown-source/Kernel/NativeHostBookInvariant.lean"
+  },
+  {
+    "source": "Kernel/NativeHostBookAdmission.lean",
+    "sha256": "b8713832c2145bcdbc622aa4d412f8a9ae07c0f946751680c9455ec6fe43faad",
+    "status": "source-only/uncompiled",
+    "archive": "/tmp/dregg-book-winddown-source/Kernel/NativeHostBookAdmission.lean"
+  },
+  {
+    "source": "Assurance/CanonicalResourceBookInvariantAudit.lean",
+    "sha256": "92ebcdc41e9e3fbc68200d5bf85db4dfa4e4ab4b7d24c8613232f8ecae34f050",
+    "status": "source-only/uncompiled",
+    "archive": "/tmp/dregg-book-winddown-source/Assurance/CanonicalResourceBookInvariantAudit.lean"
+  }
+]

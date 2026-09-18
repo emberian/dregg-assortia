@@ -1,0 +1,27 @@
+import Kernel.PolicyInstallReceiver
+#print axioms Minidregg.Kernel.PolicyInstallReceiver.decodeIngress_canonical
+#print axioms Minidregg.Kernel.PolicyInstallReceiver.Prepared.creates_source_owned
+#print axioms Minidregg.Kernel.PolicyInstallReceiver.Prepared.fresh_pre
+#print axioms Minidregg.Kernel.PolicyInstallReceiver.Prepared.exact_created
+#print axioms Minidregg.Kernel.PolicyInstallReceiver.Prepared.source_reserved
+#print axioms Minidregg.Kernel.PolicyInstallReceiver.Prepared.write_roots_bound
+#print axioms Minidregg.Kernel.PolicyInstallReceiver.Prepared.readGuards_exact
+#print axioms Minidregg.Kernel.PolicyInstallReceiver.Prepared.readGuards_readonly
+#print axioms Minidregg.Kernel.PolicyInstallReceiver.Prepared.authority_reads_covered
+#print axioms Minidregg.Kernel.PolicyInstallReceiver.AcceptedInstall.actual_authority_post
+#print axioms Minidregg.Kernel.PolicyInstallReceiver.AcceptedInstall.actual_post_head
+#print axioms Minidregg.Kernel.PolicyInstallReceiver.AcceptedInstall.generation_preserved
+#print axioms Minidregg.Kernel.PolicyInstallReceiver.AcceptedInstall.capability_preserved
+#print axioms Minidregg.Kernel.PolicyInstallReceiver.AcceptedInstall.marker_consumed
+#print axioms Minidregg.Kernel.PolicyInstallReceiver.intent_exact_source
+#print axioms Minidregg.Kernel.PolicyInstallReceiver.installed_write_bytes
+#print axioms Minidregg.Kernel.PolicyInstallReceiver.installed_source_bytes
+#print axioms Minidregg.Kernel.PolicyInstallReceiver.installed_head_and_source
+#print axioms Minidregg.Kernel.PolicyInstallReceiver.source_loader_of_present
+#print axioms Minidregg.Kernel.PolicyInstallReceiver.Prepared.fresh_before
+#print axioms Minidregg.Kernel.PolicyInstallReceiver.unchanged_authority_shard_unwritten
+#print axioms Minidregg.Kernel.PolicyInstallReceiver.installed_authority_pages
+#print axioms Minidregg.Kernel.PolicyInstallReceiver.installed_authority_catalogue
+#print axioms Minidregg.Kernel.PolicyInstallReceiver.no_partial_commit
+#print axioms Minidregg.Kernel.PolicyInstallReceiver.replay_only_original
+#print axioms Minidregg.Kernel.PolicyInstallReceiver.replay_changed_ingress_refused

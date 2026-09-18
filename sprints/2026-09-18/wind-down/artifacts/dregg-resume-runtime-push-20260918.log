@@ -1,0 +1,102 @@
+2:47AM INF 1 commits scanned.
+2:47AM INF scanned ~1182 bytes (1.18 KB) in 14.7ms
+2:47AM INF no leaks found
+DEAD  docs/DESIGN-shielded-value-on-ramp.md:49  ->  circuit-prove/src/shielded/spend_circuit.rs
+DEAD  docs/DESIGN-shielded-value-on-ramp.md:59  ->  circuit-prove/tests/shielded_transfer_m2a.rs:113
+DEAD  docs/DESIGN-shielded-value-on-ramp.md:105  ->  circuit-prove/tests/shielded_transfer_m2a.rs
+DEAD  docs/DESIGN-shielded-dark-value-campaign.md:12  ->  circuit-prove/src/shielded/spend_circuit.rs
+DEAD  docs/SUPERSEDED/NATIVE-PROOF-BRIDGES.md:176  ->  bridge/src/midnight_verified.rs
+DEAD  docs/VERIFIED-ROTATED-LAYOUT.md:52  ->  circuit-prove/src/shielded_ring_clearing_air.rs
+DEAD  docs/WOUND-felt-width-boundaries-2026-07-19.md:162  ->  circuit-prove/tests/shielded_transfer_m2a.rs
+DEAD  docs/WOUND-felt-width-boundaries-2026-07-19.md:1481  ->  circuit-prove/src/shielded/spend_circuit.rs:462
+DEAD  docs/audit/TRIAGE-2026-07-16.md:523  ->  circuit-prove/src/shielded_ring_clearing_air.rs
+DEAD  docs/audit/TRIAGE-2026-07-16.md:558  ->  circuit-prove/src/shielded_ring_clearing_air.rs
+DEAD  docs/audit/TRIAGE-2026-07-16.md:558  ->  circuit-prove/src/shielded_ring_clearing_air.rs:1
+DEAD  docs/audit/TRIAGE-2026-07-16.md:563  ->  circuit-prove/src/shielded/spend_circuit.rs:485
+DEAD  docs/audit/TRIAGE-2026-07-16.md:570  ->  circuit-prove/src/shielded_ring_clearing_air.rs:1
+DEAD  docs/audit/TRIAGE-2026-07-16.md:575  ->  circuit-prove/src/shielded/spend_circuit.rs:485
+DEAD  docs/audit/TRIAGE-2026-07-16.md:587  ->  circuit-prove/src/shielded_spend_leaf_adapter.rs:469
+DEAD  docs/audit/TRIAGE-2026-07-16.md:738  ->  circuit-prove/src/shielded_ring_clearing_air.rs
+DEAD  docs/audit/TRIAGE-2026-07-16.md:757  ->  circuit-prove/src/shielded_ring_clearing_nleg_air.rs
+DEAD  docs/audit/TRIAGE-2026-07-16.md:757  ->  circuit-prove/src/shielded_ring_clearing_nleg_air.rs:1
+DEAD  docs/audit/TRIAGE-2026-07-16.md:881  ->  circuit-prove/src/shielded_ring_clearing_air.rs
+DEAD  docs/audit/TRIAGE-2026-07-16.md:881  ->  circuit-prove/src/shielded_ring_clearing_nleg_air.rs:13
+DEAD  docs/audit/TRIAGE-2026-07-16.md:883  ->  circuit-prove/src/shielded_ring_clearing_air.rs:33
+DEAD  docs/audit/TRIAGE-2026-07-16.md:1721  ->  circuit-prove/src/shielded/spend_circuit.rs:39
+DEAD  docs/WELD-STATE.md:230  ->  circuit-prove/tests/bridge_binding_mechanism.rs
+DEAD  docs/DESIGN-canonical-byte-felt-codec.md:231  ->  circuit/src/bridge_action_witness.rs
+DEAD  docs/DESIGN-canonical-byte-felt-codec.md:379  ->  circuit/src/bridge_action_witness.rs:159
+DEAD  docs/DESIGN-canonical-byte-felt-codec.md:577  ->  circuit/src/bridge_action_witness.rs:125
+DEAD  docs/DESIGN-canonical-byte-felt-codec.md:694  ->  circuit/src/bridge_action_witness.rs:118
+DEAD  docs/DESIGN-canonical-byte-felt-codec.md:736  ->  circuit/src/bridge_action_witness.rs:159
+DEAD  docs/DESIGN-shielded-apex-tree-reconciliation.md:41  ->  circuit-prove/src/shielded/spend_circuit.rs
+DEAD  docs/DESIGN-shielded-apex-tree-reconciliation.md:221  ->  circuit-prove/src/shielded_spend_leaf_adapter.rs:594
+DEAD  docs/DESIGN-shielded-apex-tree-reconciliation.md:260  ->  circuit-prove/src/shielded_ring_clearing_air.rs:823
+DEAD  docs/VK-REGEN-LOG.md:159  ->  scripts/seed-dregg2-closure.sh
+DEAD  docs/deos/ETH-NATIVE-WRAP.md:330  ->  bridge/src/midnight_verified.rs
+DEAD  docs/deos/DREGG-LAUNCHPAD-DESIGN.md:221  ->  circuit-prove/src/shielded_ring_clearing_air.rs
+DEAD  docs/deos/VK-EPOCH-PLAN-2026-07-05.md:255  ->  circuit-prove/src/bridge_leaf_adapter.rs
+DEAD  docs/deos/ZK-AUCTION-SUITE.md:15  ->  circuit-prove/src/shielded_ring_clearing_air.rs
+DEAD  docs/deos/ZK-AUCTION-SUITE.md:122  ->  circuit-prove/src/shielded_ring_clearing_air.rs
+DEAD  docs/deos/ZK-AUCTION-SUITE.md:507  ->  circuit-prove/src/shielded_ring_clearing_air.rs
+DEAD  docs/deos/ZK-AUCTION-SUITE.md:507  ->  circuit-prove/src/shielded_ring_clearing_nleg_air.rs
+DEAD  docs/deos/DREX-DESIGN.md:102  ->  circuit-prove/src/shielded_ring_clearing_air.rs
+DEAD  docs/deos/DREX-DESIGN.md:203  ->  circuit-prove/src/shielded_ring_clearing_air.rs
+DEAD  docs/deos/DREX-DESIGN.md:449  ->  circuit-prove/src/shielded_ring_clearing_air.rs
+DEAD  docs/deos/DREX-NO-VIEWER-SURPASS.md:261  ->  circuit-prove/src/shielded/spend_circuit.rs
+DEAD  docs/deos/DREX-NO-VIEWER-SURPASS.md:389  ->  circuit-prove/src/shielded_ring_clearing_air.rs
+DEAD  docs/deos/SHIELDED-DREX-ASSURANCE-ROADMAP.md:65  ->  circuit-prove/src/shielded_ring_clearing_air.rs
+DEAD  docs/deos/SHIELDED-DREX-ASSURANCE-ROADMAP.md:73  ->  circuit-prove/src/shielded_ring_clearing_nleg_air.rs
+DEAD  docs/deos/EFFECTVM-SIDESTRUCTURE-ABI.md:41  ->  circuit-prove/src/shielded_spend_leaf_adapter.rs:469
+DEAD  docs/deos/TRUSTLESS-SOLANA-BRIDGE.md:142  ->  bridge/src/midnight_gateway.rs
+DEAD  docs/deos/FHEGG-CODEX-ROUND4.md:53  ->  circuit-prove/src/shielded_ring_clearing_nleg_air.rs
+DEAD  docs/deos/FHEGG-CODEX-ROUND4.md:478  ->  circuit-prove/src/shielded_ring_clearing_nleg_air.rs
+DEAD  docs/deos/LAYERZERO-CONCEPT-MAP.md:47  ->  bridge/src/midnight_verified.rs
+DEAD  docs/deos/BRIDGE-ARCHITECTURE-SOUNDNESS.md:64  ->  circuit/src/bridge_action_witness.rs
+DEAD  docs/deos/BRIDGE-ARCHITECTURE-SOUNDNESS.md:183  ->  circuit/src/bridge_action_witness.rs
+DEAD  docs/deos/SHIELDED-AUCTIONS-DESIGN.md:181  ->  circuit-prove/src/shielded_ring_clearing_air.rs
+DEAD  docs/deos/SHIELDED-AUCTIONS-DESIGN.md:385  ->  circuit-prove/src/shielded_ring_clearing_air.rs
+DEAD  docs/deos/SHIELDED-AUCTIONS-DESIGN.md:385  ->  circuit-prove/src/shielded_ring_clearing_nleg_air.rs
+DEAD  docs/deos/DIFFERENT-MIDNIGHT-BRIDGE.md:3  ->  bridge/src/midnight_verified.rs
+DEAD  docs/deos/BULLETPROOFS-MSM-DISPATCH-INVENTORY.md:75  ->  circuit-prove/tests/shielded_transfer_m2a.rs
+DEAD  docs/deos/PRIVATE-CONVEX-ENGINE.md:375  ->  circuit-prove/src/shielded_ring_clearing_nleg_air.rs
+DEAD  docs/deos/PRIVATE-CONVEX-ENGINE.md:629  ->  circuit-prove/src/shielded_ring_clearing_nleg_air.rs
+DEAD  docs/deos/INTERCHAIN-ADAPTERS-DESIGN.md:133  ->  bridge/src/midnight_gateway.rs:230
+DEAD  docs/deos/INTERCHAIN-ADAPTERS-DESIGN.md:139  ->  bridge/src/action_binding.rs:78
+DEAD  docs/deos/SHIELDED-DEPOSIT-BRIDGE.md:78  ->  circuit-prove/src/bridge_leaf_adapter.rs
+DEAD  docs/deos/SHIELDED-DEPOSIT-BRIDGE.md:147  ->  circuit-prove/src/shielded/spend_circuit.rs
+DEAD  docs/deos/SHIELDED-DEPOSIT-BRIDGE.md:173  ->  circuit-prove/src/shielded_ring_clearing_air.rs
+DEAD  docs/deos/DREX-ROUTING.md:358  ->  circuit-prove/src/shielded_ring_clearing_air.rs
+DEAD  docs/reference/PREALPHA-FINAL-CUT-2026-08-07.md:295  ->  poa-web/src/deckdescent-runtime.js
+DEAD  docs/reference/PREALPHA-FINAL-CUT-2026-08-07.md:296  ->  poa-web/src/deckdescent-controller.js
+DEAD  docs/reference/MARKET-FRONTIER-2026-08-06.md:104  ->  circuit-prove/src/shielded/spend_circuit.rs:270
+DEAD  docs/reference/PROOF-STRATEGY-2026-08-09.md:911  ->  metatheory/Dregg2/Metatheory/OptimisticAdjudication.lean:401
+DEAD  docs/PLAN-shielded-apex-redesign-2026-07-20.md:10  ->  circuit-prove/src/shielded_ring_clearing_nleg_air.rs
+DEAD  docs/PLAN-shielded-apex-redesign-2026-07-20.md:11  ->  circuit-prove/src/shielded_spend_leaf_adapter.rs
+DEAD  docs/PLAN-shielded-apex-redesign-2026-07-20.md:169  ->  circuit-prove/tests/shielded_transfer_m2a.rs:475
+DEAD  metatheory/Bfv/CrossLimb.lean:4  ->  docs/VERDICTS.md
+DEAD  metatheory/Bfv/CrossLimb.lean:4  ->  docs/SELVAGE.md
+DEAD  metatheory/Dregg2/Circuit/Emit/ShieldedSpendDescriptor.lean:9  ->  circuit-prove/src/shielded/spend_circuit.rs:192
+DEAD  metatheory/Dregg2/Circuit/Emit/ShieldedSpendDescriptor.lean:25  ->  circuit-prove/src/shielded_spend_leaf_adapter.rs:594
+DEAD  metatheory/Dregg2/Circuit/Emit/ShieldedValueLinkDescriptor.lean:14  ->  circuit-prove/src/shielded_ring_clearing_nleg_air.rs:27
+DEAD  metatheory/Dregg2/Circuit/ShieldedMerkleRootPin.lean:13  ->  circuit-prove/src/shielded/spend_circuit.rs
+DEAD  metatheory/Dregg2/Circuit/ShieldedOnRampPin.lean:639  ->  circuit-prove/src/shielded_spend_leaf_adapter.rs:610
+DEAD  metatheory/Dregg2/Circuit/ShieldedSpendPortDischarge.lean:6  ->  circuit-prove/src/shielded/spend_circuit.rs
+DEAD  metatheory/Dregg2/Circuit/ShieldedSpendPortResidual.lean:8  ->  circuit-prove/src/shielded/spend_circuit.rs
+DEAD  metatheory/Dregg2/Circuit/ShieldedValueLinkPin.lean:38  ->  circuit-prove/tests/shielded_transfer_m2a.rs:441
+DEAD  metatheory/Dregg2/Shielded/ClaimRefinement.lean:15  ->  circuit-prove/src/shielded/spend_circuit.rs:135
+DEAD  metatheory/Dregg2/Shielded/RealCrypto.lean:184  ->  circuit-prove/src/shielded_ring_clearing_air.rs
+DEAD  metatheory/Dregg2/Shielded/RealCrypto.lean:247  ->  circuit-prove/src/shielded/spend_circuit.rs
+DEAD  metatheory/Market/ProtocolAssurance.lean:947  ->  circuit-prove/src/shielded_ring_clearing_air.rs
+DEAD  metatheory/Market/RevealNothing.lean:7  ->  circuit-prove/src/shielded_ring_clearing_nleg_air.rs
+DEAD  metatheory/Market/RevealNothing.lean:96  ->  circuit-prove/src/shielded_ring_clearing_nleg_air.rs
+check-doc-refs: SUBJECT = working tree at /Users/ember/dev/breadstuffs
+check-doc-refs: scanned 16770 resolvable refs — 12006 across 728 markdown files, 4764 in 3570 lean files
+check-doc-refs: 262 dead reference site(s): 89 GATING (73 markdown + 16 new lean), 173 KNOWN (baselined lean) — re-run with --show-known to list them
+check-doc-refs: 38 WARN (line past EOF)
+check-doc-refs: FAIL — 15 NEW dead reference(s) in lean comments:
+
+pre-push: ALLOWED — dead doc references, permitted by DREGG_ALLOW_DEAD_DOC_REFS=1
+  (declared intent, recorded here and in your transcript)
+To github.com:emberian/dregg.git
+   bf953115d..ff11b7578  main -> main

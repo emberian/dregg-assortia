@@ -1,0 +1,57 @@
+Kernel/MultiCellHyperedge.lean:488:20: warning: unused variable `accepted`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Kernel/MultiCellHyperedge.lean:529:10: warning: unused variable `commit`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Kernel/MultiCellHyperedge.lean:533:8: warning: automatically included section variable(s) unused in theorem `Minidregg.Kernel.MultiCellHyperedge.Commit.post_exact`:
+  [DecidableEq Incidence]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq Incidence] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Kernel/MultiCellHyperedge.lean:538:22: warning: unused variable `commit`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Kernel/MultiCellHyperedge.lean:545:30: warning: unused variable `commit`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Kernel/MultiCellHyperedge.lean:568:5: warning: unused variable `turn`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Kernel/MultiCellHyperedge.lean:571:26: warning: unused variable `commit`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Kernel/MultiCellHyperedge.lean:610:8: warning: automatically included section variable(s) unused in theorem `Minidregg.Kernel.MultiCellHyperedge.Commit.hyperedge_pre_state`:
+  [DecidableEq Incidence]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq Incidence] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Kernel/MultiCellHyperedge.lean:654:15: warning: unused variable `accepted`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Kernel/MultiCellHyperedge.lean:657:8: warning: automatically included section variable(s) unused in theorem `Minidregg.Kernel.MultiCellHyperedge.Admission.rejected_atomic`:
+  [DecidableEq Incidence]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq Incidence] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Kernel/MultiCellHyperedge.lean:665:8: warning: automatically included section variable(s) unused in theorem `Minidregg.Kernel.MultiCellHyperedge.admit_leg_rejected`:
+  [DecidableEq Incidence]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq Incidence] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Kernel/MultiCellHyperedge.lean:703:0: warning: automatically included section variable(s) unused in theorem `Minidregg.Kernel.MultiCellHyperedge.no_commit_of_nonzero_balance`:
+  [DecidableEq Incidence]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq Incidence] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Kernel/MultiCellHyperedge.lean:715:0: warning: automatically included section variable(s) unused in theorem `Minidregg.Kernel.MultiCellHyperedge.no_commit_of_conflicting_cell`:
+  [DecidableEq Incidence]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq Incidence] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`

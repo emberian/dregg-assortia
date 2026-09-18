@@ -1,0 +1,166 @@
+{
+  "capturedAt": "2026-09-18T07:31:10.958099+00:00",
+  "checkpoints": [
+    {
+      "checkpoint": "receiving",
+      "commit": "38326617e4d27526a714c789b5f53d8cbca902ff",
+      "paths": [
+        {
+          "path": "Assurance/CredentialTokenLocalEndpoint.lean",
+          "sha256": "f04d87fe8d1128e94d77213cd9b32f9d216ad7f50ef07d85ee1808e6833637b1"
+        },
+        {
+          "path": "Assurance/SemanticTurnReceipt.lean",
+          "sha256": "20e2950e4200af383d080cfe8d26c148045369fb8883dc98ea079564930e05c7"
+        },
+        {
+          "path": "Compiler/DeclaredActionAir.lean",
+          "sha256": "938aa55e90407fd616390b84855acb37034243a5759a43780b6896cb0c80dabb"
+        },
+        {
+          "path": "Kernel/AuthorizedResourceCharge.lean",
+          "sha256": "7f274a8ad9c5fbd76e5eeef6ab7026bb4893f6891e645c9b4a500873ab35db02"
+        },
+        {
+          "path": "Kernel/CanonicalEscrowMarket.lean",
+          "sha256": "78c119c1c21df42726ed208611407bf0b8b57b110803dbd4bfa35faa1975900e"
+        },
+        {
+          "path": "Kernel/DeclaredResourceController.lean",
+          "sha256": "85a807c067eab31f5710044e7d808e83a51823b77e07c4428aacec07b2bd80f0"
+        },
+        {
+          "path": "Kernel/HyperdocumentMerge.lean",
+          "sha256": "cec8e66b8a7dac28b4d7952910a59ee09d014439ac981f55f77f58fa0cea4955"
+        },
+        {
+          "path": "Kernel/HyperdocumentVersionEffects.lean",
+          "sha256": "11cb360797406ff32addeb6b073b0e9daed2de60f7fd607e0e46ae2b28b00883"
+        },
+        {
+          "path": "Kernel/PolicyInstallController.lean",
+          "sha256": "aa967d1de89d9b6c80706e8c601e99a4833663be9222f87b075a9bc0a056663d"
+        },
+        {
+          "path": "Kernel/PolicyInstallReceiver.lean",
+          "sha256": "bad9205811909d96444c47935b48233ebb6183d76ae4cd7eb801de8267bd3c45"
+        },
+        {
+          "path": "Kernel/ProviderExecutionLease.lean",
+          "sha256": "1307a1a6c74cf5bbddd018f02ec73fb875377686e8cd64fb77b432d4d6461a51"
+        },
+        {
+          "path": "Kernel/TypedCellHyperedgeCompositionWitness.lean",
+          "sha256": "385945735c7448e2b90539fc5014e304de57467cb7b7ee92a7d824886cf9265a"
+        },
+        {
+          "path": "Theory/TypedAuthorizationWitness.lean",
+          "sha256": "8cd48ddf20d2d9ca6587898bc38e3f0060c74430f91aba3551aa2761c70abb70"
+        },
+        {
+          "path": "scripts/probe-born-resource-invocation.lean",
+          "sha256": "6ac4509429cf5c78a43a1fca7ffb498b49d00da241d04401f9cbcd11143961ec"
+        },
+        {
+          "path": "scripts/probe-credential-capability-use.lean",
+          "sha256": "06b7a66a270db6e8f30db5eb5a2b3bea22b1e23b0bbb4b4e0b77e22a14bc951f"
+        },
+        {
+          "path": "scripts/probe-credential-signature.lean",
+          "sha256": "4d43682aa97c39d789c41e6a2729f1ea1726301d93e1d87613009dff0eeaef6f"
+        },
+        {
+          "path": "scripts/probe-declared-resource.lean",
+          "sha256": "e0100b162448a79c2c946ec14ce57bf95b6d0bf4a2223314c1a26e6e6d10c335"
+        },
+        {
+          "path": "scripts/probe-policy-install-receiver.lean",
+          "sha256": "9af42dd684f1c0a3d18d66d83a254a99bd6ca61cc22a5a39b2dcf33c5d5a89a9"
+        },
+        {
+          "path": "Kernel/CapabilityDelegationController.lean",
+          "sha256": "685b032c30b5cea35285c800167b567d1ff00078feeffce97982ee70697baf3b"
+        },
+        {
+          "path": "Kernel/CapabilityDelegationReceiver.lean",
+          "sha256": "dba2c574c1428efaaae1d8a2c57a61eeadec9d03c528ce080b7686c154b9f158"
+        }
+      ]
+    },
+    {
+      "checkpoint": "host-wip",
+      "commit": "b86c80065adc885a4edde03ba3c02eb4eb1485a4",
+      "paths": [
+        {
+          "path": "Compiler/CanonicalCellRegistry.lean",
+          "sha256": "14a22018722e30757e3d622437b32ba8cc29c040c3bda12018ad6f269a39fff5"
+        },
+        {
+          "path": "lakefile.toml",
+          "sha256": "268dec4d082a3f4d1c780fd05d2def2bc8d7ef514d4a84d69fd9e81a2259ec49"
+        },
+        {
+          "path": "Assurance/CanonicalResourceBookInvariantAudit.lean",
+          "sha256": "92ebcdc41e9e3fbc68200d5bf85db4dfa4e4ab4b7d24c8613232f8ecae34f050"
+        },
+        {
+          "path": "Compiler/NativeHostCodec.lean",
+          "sha256": "fc90ab9eb68e4f34e0107469dc659efaee36f8a1e18cd94d472212273b3bfd70"
+        },
+        {
+          "path": "Compiler/NativeObservationCodec.lean",
+          "sha256": "890660b7607e1cf4f7c5a69608bc94698aa80954ba77742c926d54f8c2be779b"
+        },
+        {
+          "path": "Host/Main.lean",
+          "sha256": "59aee655edcc690a82e5fb9830e6dcc68b88a911e3c844c62094d9775bf7a969"
+        },
+        {
+          "path": "Kernel/NativeHost.lean",
+          "sha256": "163f8d795e2a7d6dcdc3023cfadc98c3a0e800b95e81945f8f08e79af03552e6"
+        },
+        {
+          "path": "Kernel/NativeHostBookAdmission.lean",
+          "sha256": "b8713832c2145bcdbc622aa4d412f8a9ae07c0f946751680c9455ec6fe43faad"
+        },
+        {
+          "path": "Kernel/NativeHostBookInvariant.lean",
+          "sha256": "4dfa0071e4f97ee84f4e5db99a4e16fd76fc6e3ff94f2ee2580ada724e654ef3"
+        },
+        {
+          "path": "Kernel/NativeHostContext.lean",
+          "sha256": "317eb5fff66d8975569214bcad6613b581fce03501f1e6d7c86a60bca7a619f6"
+        },
+        {
+          "path": "Kernel/NativeHostGenesis.lean",
+          "sha256": "1fd0eced5d9a68c402f3df9b6dae2c8c5d3e4fd79b9dc91ecc1a9da59c74cefe"
+        },
+        {
+          "path": "Kernel/NativeHostReplay.lean",
+          "sha256": "c98466c7af5b64e246631e352b0352ca9d2ffdf28a69ed95f929984fc4e75ec7"
+        },
+        {
+          "path": "Kernel/NativeObservationController.lean",
+          "sha256": "8c02ff7f32cebd253221d1bac2d4b16d3a89bc0c8b603441ded584adc9f0fe72"
+        },
+        {
+          "path": "Theory/CanonicalResourceBookInvariant.lean",
+          "sha256": "21bc2c3ef99964a10a832bc9b0ae699dff012f73f122dddf7a9f7d5ad2baf96d"
+        },
+        {
+          "path": "docs/NATIVE-HOST.md",
+          "sha256": "b10d3178d1d3492b708fefe5cf131331f46d558053e5aae485acb75497657695"
+        },
+        {
+          "path": "scripts/probe-native-host-cli.lean",
+          "sha256": "c6ee2815f9c63ce2e2a33d5fc437c3db67302a591beb2fe43d476ad8fc8ce8c0"
+        },
+        {
+          "path": "scripts/probe-native-host-genesis.lean",
+          "sha256": "45039aacbcb347114702ee5c0d79fe491b801955c855b6546c29c751ac6282ef"
+        }
+      ]
+    }
+  ],
+  "scope": "Named files only. No checks launched; source statuses in lane manifests. Minidregg root import integration pending."
+}

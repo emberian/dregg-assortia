@@ -1,0 +1,42 @@
+'Minidregg.Kernel.CapabilityDelegationController.Accepted.parent_authorized' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Kernel.CapabilityDelegationController.Accepted.post_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Kernel.CapabilityDelegationController.Accepted.child_lineage' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Kernel.CapabilityDelegationController.Accepted.policy_evaluated_actual_post' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Kernel.CapabilityDelegationReceiver.accepted_authority_post' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Kernel.CapabilityDelegationReceiver.installed_write_bytes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Kernel.CapabilityDelegationReceiver.unchanged_authority_shard_unwritten' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Kernel.CapabilityDelegationReceiver.installed_authority_pages' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Kernel.CapabilityDelegationReceiver.installed_authority_catalogue' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Kernel.CapabilityDelegationReceiver.installed_target_unchanged' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Kernel.CapabilityDelegationReceiver.installed_source_unchanged' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Kernel.CapabilityDelegationReceiver.no_partial_commit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Kernel.CapabilityDelegationReceiver.replay_only_original' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Minidregg.Kernel.CapabilityDelegationReceiver.intent_authority_marker' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

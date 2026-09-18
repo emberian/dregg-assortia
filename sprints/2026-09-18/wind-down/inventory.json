@@ -1,0 +1,1201 @@
+{
+  "capturedAt": "2026-09-18T07:35:42.339214+00:00",
+  "scope": "Copied source/checkpoint/log artifacts. Historical paths inside captures are preserved; use this inventory to resolve them. No new implementation checks run during wind-down. Runtime log finality is recorded in the main handoff.",
+  "artifacts": [
+    {
+      "originalPath": "/tmp/dregg-birth-and-delegation-receiver-checkpoint.json",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-birth-and-delegation-receiver-checkpoint.json",
+      "sha256": "edbfc76cc8a6f2e0c64260393bab89d2b9ddd835c3f1b4a4396c650c41d134d1",
+      "bytes": 7074
+    },
+    {
+      "originalPath": "/tmp/dregg-birth-revision-axioms.lean",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-birth-revision-axioms.lean",
+      "sha256": "98252c5cdb43646ff767c096d6902b8c604745aaab86ac8960b3b4d225a64995",
+      "bytes": 2872
+    },
+    {
+      "originalPath": "/tmp/dregg-birth-revision-axioms.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-birth-revision-axioms.log",
+      "sha256": "1b9ee6e9cc9404e364daa86a5b7afe82879e66ce634fcbbe67e2acf258f77eff",
+      "bytes": 4363
+    },
+    {
+      "originalPath": "/tmp/dregg-birth-revision-checks.json",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-birth-revision-checks.json",
+      "sha256": "188ca705ab205c92d045108e31115b7fb2cc49f93dd524bea1a8c8bdfd4fe1b6",
+      "bytes": 5867
+    },
+    {
+      "originalPath": "/tmp/dregg-birth-revision-review.md",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-birth-revision-review.md",
+      "sha256": "f3d7bd65ca04e6919241a367231e1ec94e52189e43c6723e8e7882d1a06e6557",
+      "bytes": 6954
+    },
+    {
+      "originalPath": "/tmp/dregg-book-Theory-CanonicalResourceBookInvariant-21bc2c3ef999-1789716121205426000.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-book-Theory-CanonicalResourceBookInvariant-21bc2c3ef999-1789716121205426000.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-book-checks.json",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-book-checks.json",
+      "sha256": "f4b103d6706a16080f9a8f525a5a53013d6fc4cb8faa87b42fc6eace18854831",
+      "bytes": 714
+    },
+    {
+      "originalPath": "/tmp/dregg-book-registry-proposed.patch",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-book-registry-proposed.patch",
+      "sha256": "fd28852e7f7fe08a5abda34cec81f0c3dadb8810e8ad0ead147959ccbbddd44a",
+      "bytes": 2289
+    },
+    {
+      "originalPath": "/tmp/dregg-book-winddown-source/Assurance/CanonicalResourceBookInvariantAudit.lean",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-book-winddown-source/Assurance/CanonicalResourceBookInvariantAudit.lean",
+      "sha256": "92ebcdc41e9e3fbc68200d5bf85db4dfa4e4ab4b7d24c8613232f8ecae34f050",
+      "bytes": 1680
+    },
+    {
+      "originalPath": "/tmp/dregg-book-winddown-source/Compiler/CanonicalCellRegistry.lean",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-book-winddown-source/Compiler/CanonicalCellRegistry.lean",
+      "sha256": "14a22018722e30757e3d622437b32ba8cc29c040c3bda12018ad6f269a39fff5",
+      "bytes": 39347
+    },
+    {
+      "originalPath": "/tmp/dregg-book-winddown-source/Kernel/NativeHostBookAdmission.lean",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-book-winddown-source/Kernel/NativeHostBookAdmission.lean",
+      "sha256": "b8713832c2145bcdbc622aa4d412f8a9ae07c0f946751680c9455ec6fe43faad",
+      "bytes": 4546
+    },
+    {
+      "originalPath": "/tmp/dregg-book-winddown-source/Kernel/NativeHostBookInvariant.lean",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-book-winddown-source/Kernel/NativeHostBookInvariant.lean",
+      "sha256": "4dfa0071e4f97ee84f4e5db99a4e16fd76fc6e3ff94f2ee2580ada724e654ef3",
+      "bytes": 3714
+    },
+    {
+      "originalPath": "/tmp/dregg-book-winddown-source/Theory/CanonicalResourceBookInvariant.lean",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-book-winddown-source/Theory/CanonicalResourceBookInvariant.lean",
+      "sha256": "21bc2c3ef99964a10a832bc9b0ae699dff012f73f122dddf7a9f7d5ad2baf96d",
+      "bytes": 8305
+    },
+    {
+      "originalPath": "/tmp/dregg-book-winddown-source.json",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-book-winddown-source.json",
+      "sha256": "b31269d143785dbdaea5d182d1aadf3e7729d4eaa02daf7252260e147322fcee",
+      "bytes": 1385
+    },
+    {
+      "originalPath": "/tmp/dregg-book-winddown.md",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-book-winddown.md",
+      "sha256": "9e7618b8ca510f7fcce5a7b807c6663a90561bd19812bcdc7736901dd606b611",
+      "bytes": 4232
+    },
+    {
+      "originalPath": "/tmp/dregg-declared-before-history-codec.lean",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-declared-before-history-codec.lean",
+      "sha256": "ca22fd70077620c6bc16990ca2eb7537d9eb12c3c217b921adc75636b3a26918",
+      "bytes": 52501
+    },
+    {
+      "originalPath": "/tmp/dregg-declared-ingress-codec-factor.json",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-declared-ingress-codec-factor.json",
+      "sha256": "d71515d181cbe2943bbd6026adba2d9b076e0aa97e651c40218888811b3693fb",
+      "bytes": 568
+    },
+    {
+      "originalPath": "/tmp/dregg-delegation-controller-audit.lean",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-delegation-controller-audit.lean",
+      "sha256": "9cd65be0dec26c04178ecb2b7632558b58dee6389272ad2619bb3d70244cb24e",
+      "bytes": 652
+    },
+    {
+      "originalPath": "/tmp/dregg-delegation-controller-audit.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-delegation-controller-audit.log",
+      "sha256": "8ce3059849a0bfd5df0595f55fa0859978ce548052bcff193117cf5366c00a83",
+      "bytes": 950
+    },
+    {
+      "originalPath": "/tmp/dregg-delegation-receiver-axioms.lean",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-delegation-receiver-axioms.lean",
+      "sha256": "e606d819f78640d9a1fe769e67662abb1abbc136f536ad93cb083353b0db19cb",
+      "bytes": 1254
+    },
+    {
+      "originalPath": "/tmp/dregg-delegation-receiver-axioms.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-delegation-receiver-axioms.log",
+      "sha256": "3bf418af6740a49c4f3dfa3996c2787746f091afdb41d4e154048d5f4be5370a",
+      "bytes": 1897
+    },
+    {
+      "originalPath": "/tmp/dregg-direct-auth-width-20260918/FFIDirect.lean",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-direct-auth-width-20260918/FFIDirect.lean",
+      "sha256": "7d05b5041692eaa9b79eac2dd128685930e987a49b5e9781fbfd2c11e24e4111",
+      "bytes": 41021
+    },
+    {
+      "originalPath": "/tmp/dregg-direct-auth-width-20260918/FFIDirect.lean.before",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-direct-auth-width-20260918/FFIDirect.lean.before",
+      "sha256": "930ea2f7541a7c935c2ede7e1f1a839c73bd80f39d33b4425de81b5447e800f9",
+      "bytes": 37883
+    },
+    {
+      "originalPath": "/tmp/dregg-direct-auth-width-20260918/FFIDirect.lean.diff",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-direct-auth-width-20260918/FFIDirect.lean.diff",
+      "sha256": "ecf1f13c860ce8bb9d6514dfbf28f4c4bbbf2159da4693de95072a0fc786ad52",
+      "bytes": 7488
+    },
+    {
+      "originalPath": "/tmp/dregg-direct-auth-width-20260918/apply.py",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-direct-auth-width-20260918/apply.py",
+      "sha256": "980d910e642e5ecf86ccb3215dd201f1494f108dd74176de85964f86c111ff52",
+      "bytes": 1670
+    },
+    {
+      "originalPath": "/tmp/dregg-direct-auth-width-20260918/lean_direct.rs",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-direct-auth-width-20260918/lean_direct.rs",
+      "sha256": "fa7407dbc31716abda80ea03d4cf20c2d732049cf69637719018dec7f17fe18f",
+      "bytes": 52943
+    },
+    {
+      "originalPath": "/tmp/dregg-direct-auth-width-20260918/lean_direct.rs.before",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-direct-auth-width-20260918/lean_direct.rs.before",
+      "sha256": "036e74fe624c2763082c0c20ecdc0d64e0c0e3046280a22b6d7e89363e81b91a",
+      "bytes": 52080
+    },
+    {
+      "originalPath": "/tmp/dregg-direct-auth-width-20260918/lean_direct.rs.diff",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-direct-auth-width-20260918/lean_direct.rs.diff",
+      "sha256": "509c9d75a2e0000501191ceef7639874982fb71521a1ec9d999f97d01cd28dbd",
+      "bytes": 6816
+    },
+    {
+      "originalPath": "/tmp/dregg-direct-auth-width-20260918/replacements.json",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-direct-auth-width-20260918/replacements.json",
+      "sha256": "bee09301e3d94b986c7f35fe915c174de97f015c7b9f636438a3e163bea8c879",
+      "bytes": 15965
+    },
+    {
+      "originalPath": "/tmp/dregg-direct-auth-width-20260918/stage.py",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-direct-auth-width-20260918/stage.py",
+      "sha256": "751447280a5fe0073fd501a06c2763e88645426e3a89439eded115a70dd9a417",
+      "bytes": 11345
+    },
+    {
+      "originalPath": "/tmp/dregg-direct-auth-width-20260918/staged-manifest.json",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-direct-auth-width-20260918/staged-manifest.json",
+      "sha256": "6eba7d480841a7b5dbc6bd1bc907e240839cd2a9b064c7885b8cb99c874a05de",
+      "bytes": 3426
+    },
+    {
+      "originalPath": "/tmp/dregg-direct-fidelity-audit-20260918.md",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-direct-fidelity-audit-20260918.md",
+      "sha256": "07ed6065223637a97f9eb9818b6e3beae5259b5d8189c5d830ea094b5e53a900",
+      "bytes": 5350
+    },
+    {
+      "originalPath": "/tmp/dregg-host-BabyBear-attempt2.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-host-BabyBear-attempt2.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-host-CanonicalRuntimeProfile.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-host-CanonicalRuntimeProfile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-host-EmitSerialize.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-host-EmitSerialize.log",
+      "sha256": "e3fda8698296d4be95bd4600f174e9201ca039b34b3ec1b95ef957bd7b7d4318",
+      "bytes": 46
+    },
+    {
+      "originalPath": "/tmp/dregg-host-NativeHostCodec-attempt2.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-host-NativeHostCodec-attempt2.log",
+      "sha256": "6c3a75450242f116edff3e3f9fd22ff53bc61ef17ae4358fd68454cde6b16909",
+      "bytes": 357
+    },
+    {
+      "originalPath": "/tmp/dregg-host-NativeHostCodec.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-host-NativeHostCodec.log",
+      "sha256": "e23ac64e18dc66fac4050e1a000da37b7a7c98adedb56e831d109d2922154c2f",
+      "bytes": 2710
+    },
+    {
+      "originalPath": "/tmp/dregg-host-NativeHostProfile.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-host-NativeHostProfile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-host-profile-checkpoint.json",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-host-profile-checkpoint.json",
+      "sha256": "f9d83a90eb98c9aa4a715f3fd39ee01a0dd5878abcd62627c56b878774b3e9e4",
+      "bytes": 2743
+    },
+    {
+      "originalPath": "/tmp/dregg-mini-compiler-seats.json",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-mini-compiler-seats.json",
+      "sha256": "084c9b9d891b79314584958f49ca3a9fb72213d819a67c55b41d66c9c3e68cd7",
+      "bytes": 4449
+    },
+    {
+      "originalPath": "/tmp/dregg-native-history-axioms.lean",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-native-history-axioms.lean",
+      "sha256": "75071b420cc5bf053c8ed0203b94b5b6f0863845de415b0569477c7847815f8f",
+      "bytes": 492
+    },
+    {
+      "originalPath": "/tmp/dregg-native-history-source-checkpoint.json",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-native-history-source-checkpoint.json",
+      "sha256": "596f50815e7c591a4839641da835a539e46b6b6d01008033e43f461f50254a4d",
+      "bytes": 1998
+    },
+    {
+      "originalPath": "/tmp/dregg-native-host-genesis-compile.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-native-host-genesis-compile.log",
+      "sha256": "8b741e881e9f1ff1266800951d62e33e9ed8b3f4b632259c574b2551ca6db53b",
+      "bytes": 4263
+    },
+    {
+      "originalPath": "/tmp/dregg-native-host-genesis-handoff.md",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-native-host-genesis-handoff.md",
+      "sha256": "c1abf8c9d999b5c3a6d6c4982a68b9e31b3b3cafbf756e16af263f7c217ce90b",
+      "bytes": 6901
+    },
+    {
+      "originalPath": "/tmp/dregg-native-host-genesis-sources.json",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-native-host-genesis-sources.json",
+      "sha256": "73513abbeaf2db34119a5e10f040b06c224abb615a8cf5f8bc01e38a4d51029e",
+      "bytes": 2175
+    },
+    {
+      "originalPath": "/tmp/dregg-native-observation-handoff.md",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-native-observation-handoff.md",
+      "sha256": "d3ef1d2035f98a0f79bb5cba81b6afd7dfaeeb7347f6d840de07a60d583a3689",
+      "bytes": 8954
+    },
+    {
+      "originalPath": "/tmp/dregg-native-observation-source-checkpoint.json",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-native-observation-source-checkpoint.json",
+      "sha256": "28c7bc45435e75098a3459b8f32e8545ea8832b05a9c53aeb2880d0f89bde2f8",
+      "bytes": 552
+    },
+    {
+      "originalPath": "/tmp/dregg-native-prepare-read-footprint.md",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-native-prepare-read-footprint.md",
+      "sha256": "b40d6a11152123dc84e8fad9dff94db0ee245d5eadceae1208cd1d3ee8a08653",
+      "bytes": 10202
+    },
+    {
+      "originalPath": "/tmp/dregg-networkjudge-deck-coherent-source-20260918.json",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-networkjudge-deck-coherent-source-20260918.json",
+      "sha256": "13196e2c1ed1e6bc6064d602001234d220536f2e21a3f4dc07f7fe3d8054f1f5",
+      "bytes": 45345
+    },
+    {
+      "originalPath": "/tmp/dregg-networkjudge-init-source-inventory.json",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-networkjudge-init-source-inventory.json",
+      "sha256": "a0c082330b398da52711acbaefda1870dec76b2ee590c332b02e1d8f3b2ea15c",
+      "bytes": 52030
+    },
+    {
+      "originalPath": "/tmp/dregg-networkjudge-startup-diagnosis-20260918.md",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-networkjudge-startup-diagnosis-20260918.md",
+      "sha256": "f3d15adf4e2624965faea7956d58eb3670163d787226e9eb50c30fdc2ed9d8bb",
+      "bytes": 8516
+    },
+    {
+      "originalPath": "/tmp/dregg-nightwatch-fixture-cut-20260918/CanonicalCodecHealthWire.lean",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-nightwatch-fixture-cut-20260918/CanonicalCodecHealthWire.lean",
+      "sha256": "3dca9b47524cdb48dc76e1b094418d50ce202bf6f6959a643dc2192733d2ef36",
+      "bytes": 12059
+    },
+    {
+      "originalPath": "/tmp/dregg-nightwatch-fixture-cut-20260918/NightWatchCampaignWire.lean",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-nightwatch-fixture-cut-20260918/NightWatchCampaignWire.lean",
+      "sha256": "180f78483c975eead63f145168419b073b3904a2d3403ecd6d9b6cb6f14e6d95",
+      "bytes": 36493
+    },
+    {
+      "originalPath": "/tmp/dregg-nightwatch-fixture-cut-20260918/NightWatchCampaignWireFixtures.lean",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-nightwatch-fixture-cut-20260918/NightWatchCampaignWireFixtures.lean",
+      "sha256": "f7497fa4dcfb48033435c74efa84cdc76a8cf840d5d2648d946fc1981cc1a547",
+      "bytes": 6744
+    },
+    {
+      "originalPath": "/tmp/dregg-nightwatch-fixture-cut-20260918/audit.json",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-nightwatch-fixture-cut-20260918/audit.json",
+      "sha256": "588ef9b0dcc30d29f8291e4798fe277c336037fef45ddf850072941c0e83e965",
+      "bytes": 2621
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-AcceptedCellEffect.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-AcceptedCellEffect.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-AuthorizationDeclaration.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-AuthorizationDeclaration.log",
+      "sha256": "ca4ea7bfc3cbdb4eb37b2fcdead2c537631f56a60f2d7e21b4ddb8ad8c9357d8",
+      "bytes": 256
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-BoundedPageExtensionCatalog.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-BoundedPageExtensionCatalog.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-BoundedPageSchemaUpgrade-current.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-BoundedPageSchemaUpgrade-current.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-BoundedPageSchemaUpgradeCutover-current.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-BoundedPageSchemaUpgradeCutover-current.log",
+      "sha256": "4519cd37b1af35d077ff12f50a421d2bfd58fd6c2f12a5fd01c684b4e97f1bb2",
+      "bytes": 177
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-CanonicalAuthorityProjection.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-CanonicalAuthorityProjection.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-CanonicalCellRegistry-attempt2.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-CanonicalCellRegistry-attempt2.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-CanonicalCellRegistry-current.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-CanonicalCellRegistry-current.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-CanonicalTransition.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-CanonicalTransition.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-CredentialAuthorityDomain-current.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-CredentialAuthorityDomain-current.log",
+      "sha256": "3a9ca5b7fca2bb7d081da05e37fbadd0298d05e7b91b520309fd6a03826cc499",
+      "bytes": 333
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-CredentialAuthorityDomain.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-CredentialAuthorityDomain.log",
+      "sha256": "3a9ca5b7fca2bb7d081da05e37fbadd0298d05e7b91b520309fd6a03826cc499",
+      "bytes": 333
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-CredentialAuthorityDomainReceiver-attempt2.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-CredentialAuthorityDomainReceiver-attempt2.log",
+      "sha256": "96a27ad73b32d1a90db0bd96bbfb91f541f475610c430c8089b4bcd98507dfa4",
+      "bytes": 1176
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-CredentialAuthorityDomainReceiver-attempt3.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-CredentialAuthorityDomainReceiver-attempt3.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-CredentialAuthorityDomainReceiver-current.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-CredentialAuthorityDomainReceiver-current.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-CredentialAuthorityEffects.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-CredentialAuthorityEffects.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-CredentialAuthorityEntryCodec.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-CredentialAuthorityEntryCodec.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-CredentialAuthorityFamily.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-CredentialAuthorityFamily.log",
+      "sha256": "d40c6000205dfc14fc5ac26b05f6fcbbd0c46c7671236db2f5dd64ecb553818e",
+      "bytes": 169
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-CredentialAuthorityPageMaterializer-current.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-CredentialAuthorityPageMaterializer-current.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-CredentialAuthorityPageMaterializer.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-CredentialAuthorityPageMaterializer.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-CredentialAuthorityPageProbe.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-CredentialAuthorityPageProbe.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-CredentialAuthorityState.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-CredentialAuthorityState.log",
+      "sha256": "3d1769bbde6e1a7b9b404cc8e0fd9362374039272c9aa71cfed0396b8d6bae7d",
+      "bytes": 166
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-CredentialAuthorityStateCodec.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-CredentialAuthorityStateCodec.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-CredentialFoundationMigrationAudit.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-CredentialFoundationMigrationAudit.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-DeclaredTurn.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-DeclaredTurn.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-DeployedMaterializerWitness.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-DeployedMaterializerWitness.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-EffectDeclaration.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-EffectDeclaration.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-PolicySourceCell-attempt2.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-PolicySourceCell-attempt2.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-ResourceBirthAuthority-attempt2.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-ResourceBirthAuthority-attempt2.log",
+      "sha256": "3af795a7fd4ea6e6aa8a54e0d903dd7d0d6f8ea5a26e3c16aabad94459930764",
+      "bytes": 191
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-ResourceBirthAuthority.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-ResourceBirthAuthority.log",
+      "sha256": "720c53f818bd151d773eb37466d0e2aa1e701ce36f2cf642adee97a54729e8db",
+      "bytes": 443
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-TypedAuthorization.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-TypedAuthorization.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-TypedAuthorizationRequestCodec.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-TypedAuthorizationRequestCodec.log",
+      "sha256": "f4af573eb80a9dceec665c042d3bca4ecacdffd7dcabf97431e62c70b2e17bee",
+      "bytes": 1175
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-admission-Assurance-CredentialDelegationLineageAudit-04e47d977df1.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-admission-Assurance-CredentialDelegationLineageAudit-04e47d977df1.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-admission-Assurance-CredentialDelegationLineageAudit.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-admission-Assurance-CredentialDelegationLineageAudit.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-admission-Assurance-CredentialDelegationLineageWitness-d34fdc1f17e2.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-admission-Assurance-CredentialDelegationLineageWitness-d34fdc1f17e2.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-admission-Assurance-CredentialDelegationLineageWitness.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-admission-Assurance-CredentialDelegationLineageWitness.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-admission-Assurance-CredentialSourceAdmissionAudit-a3846958c6fb.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-admission-Assurance-CredentialSourceAdmissionAudit-a3846958c6fb.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-admission-Assurance-CredentialSourceAdmissionAudit.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-admission-Assurance-CredentialSourceAdmissionAudit.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-admission-Compiler-BoundedQuantifiedPolicyAdmission-b403caa703f0.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-admission-Compiler-BoundedQuantifiedPolicyAdmission-b403caa703f0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-admission-Compiler-BoundedQuantifiedPolicyAdmission.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-admission-Compiler-BoundedQuantifiedPolicyAdmission.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-admission-Compiler-CanonicalPolicyAdmission-8264a54ed19b.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-admission-Compiler-CanonicalPolicyAdmission-8264a54ed19b.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-admission-Compiler-CanonicalPolicyAdmission.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-admission-Compiler-CanonicalPolicyAdmission.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-admission-Compiler-CredentialAuthorityPolicyRegistry-588cffbd7445.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-admission-Compiler-CredentialAuthorityPolicyRegistry-588cffbd7445.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-admission-Compiler-CredentialAuthorityPolicyRegistry.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-admission-Compiler-CredentialAuthorityPolicyRegistry.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-admission-Compiler-PolicyRecordCodec-7d620effcc4c.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-admission-Compiler-PolicyRecordCodec-7d620effcc4c.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-admission-Compiler-PolicyRecordCodec.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-admission-Compiler-PolicyRecordCodec.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-admission-Kernel-CanonicalPolicyRegistry-c85e0fb99332.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-admission-Kernel-CanonicalPolicyRegistry-c85e0fb99332.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-admission-Kernel-CanonicalPolicyRegistry.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-admission-Kernel-CanonicalPolicyRegistry.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-admission-Kernel-MultiCellHyperedge-7a76220a45f5.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-admission-Kernel-MultiCellHyperedge-7a76220a45f5.log",
+      "sha256": "aa92c38a3cf70e9675b8180e87699ea037f30e7c361bc013641e80e435ad547d",
+      "bytes": 3749
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-admission-Kernel-MultiCellHyperedge.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-admission-Kernel-MultiCellHyperedge.log",
+      "sha256": "aa92c38a3cf70e9675b8180e87699ea037f30e7c361bc013641e80e435ad547d",
+      "bytes": 3749
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-admission-Theory-CredentialLineageAdmission-da0a6cdd306a.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-admission-Theory-CredentialLineageAdmission-da0a6cdd306a.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-admission-Theory-CredentialLineageAdmission.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-admission-Theory-CredentialLineageAdmission.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-admission-Theory-PolicyInstall-bf53ebf39e33.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-admission-Theory-PolicyInstall-bf53ebf39e33.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-admission-Theory-PolicyInstall.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-admission-Theory-PolicyInstall.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-admission-checks.json",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-admission-checks.json",
+      "sha256": "76acd9b2e4ce19ed745a12b058561cc5f2512720c616c509312373f5aa3ee15c",
+      "bytes": 14925
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-admission-source.json",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-admission-source.json",
+      "sha256": "6213090b60be183328feddff2c9e1bd584b0b8cabddac8723ba1283bbd32394a",
+      "bytes": 9336
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-authority-checkpoint.json",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-authority-checkpoint.json",
+      "sha256": "d2ca22b5615364c679ba13a9e54a77c41239e691208a568257b427fca35797fc",
+      "bytes": 5491
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-authority-upgrade-checks.json",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-authority-upgrade-checks.json",
+      "sha256": "b7a8b4edd9a4c02f779e7567772598a92da7e495d418db9d97e81076a79a1bea",
+      "bytes": 997
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-baseline-init-profile-20260918.json",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-baseline-init-profile-20260918.json",
+      "sha256": "4aac1cf3bcde064a91148bb1fd5e4bee938123c6b8f24e07d4c15f3991131afb",
+      "bytes": 22922
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-birth-CanonicalResourceEffect.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-birth-CanonicalResourceEffect.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-birth-CapabilityDelegationReceiver.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-birth-CapabilityDelegationReceiver.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-birth-ResourceBirth.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-birth-ResourceBirth.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-birth-ResourceBirthAuthority.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-birth-ResourceBirthAuthority.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-birth-ResourceBirthCodec.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-birth-ResourceBirthCodec.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-birth-ResourceBirthController.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-birth-ResourceBirthController.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-birth-ResourceBirthPolicyController.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-birth-ResourceBirthPolicyController.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-birth-ResourceBirthReceiver.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-birth-ResourceBirthReceiver.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-born-joined-compile.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-born-joined-compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-born-joined-native.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-born-joined-native.log",
+      "sha256": "03e6b034a8f967ab32f9655c5ea504d7f7cf959011f47ff31d93fd578ae7da20",
+      "bytes": 4054
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-born-joined-source.json",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-born-joined-source.json",
+      "sha256": "6df0cc83907117c0fccc713f6f49d4c1249b6cbe7bdfdb194a4e9a4a2c6d1166",
+      "bytes": 5736
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-capability-use-check.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-capability-use-check.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-capability-use-native-sources.json",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-capability-use-native-sources.json",
+      "sha256": "a41d2b6a1e53a862e8193e6e88b746e5b964b7945fb2049c87279c69d4ddec28",
+      "bytes": 13529
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-capability-use-native.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-capability-use-native.log",
+      "sha256": "b0b61af0e1101ebde96db9f9f9adf08a6ec51815cc2fa2c7bde2d74d9c7fb448",
+      "bytes": 263
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-capability-use-source-stability.json",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-capability-use-source-stability.json",
+      "sha256": "cc9b5ad9ee5b4e9067fb80a2ad07f6ea29aa9ce9ddc13f2af3fa1b6fb1b51780",
+      "bytes": 46
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-declared-controller.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-declared-controller.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-delegation-controller.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-delegation-controller.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-executor-family-fast-20260918.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-executor-family-fast-20260918.log",
+      "sha256": "66f0f89fb5507908ef46ca69405f39fa22d4f481c513c7c57723b0a0d2b75003",
+      "bytes": 52314
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-executor-family-remote-source-20260918.json",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-executor-family-remote-source-20260918.json",
+      "sha256": "847f6ea4a4de801631cffef95c530213989a94bcf70d614824b85daf9a5006e7",
+      "bytes": 2341
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-executor-family-source-20260918.json",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-executor-family-source-20260918.json",
+      "sha256": "21ba79e7dcbeec92734c7a07d6e2aeb5538841caf9f5a9bf21ae8b4e8198c34f",
+      "bytes": 2591
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-executor-full-pq-hermes-20260918.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-executor-full-pq-hermes-20260918.log",
+      "sha256": "551ef8b47ed2cbbf5b013f726053becac420f4f589cfbeaf48ca8b70d380ead6",
+      "bytes": 113979
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-executor-nine-file-checkpoint-20260918.json",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-executor-nine-file-checkpoint-20260918.json",
+      "sha256": "45b0926a5e69603d6c729d306be1b73b6958037c4acba7727edc23ae6d7b47b3",
+      "bytes": 1644
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-ffi-factory-fast-20260918.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-ffi-factory-fast-20260918.log",
+      "sha256": "87c1c0daacf0f174d16e4e5655b82d1bab6e62276efe93839ed93d6949fa5b31",
+      "bytes": 43520
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-ffi-factory-fast-attempt2-20260918.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-ffi-factory-fast-attempt2-20260918.log",
+      "sha256": "ab8435dca7a656f13c66f81d694a0ba2823784394e21159a4393e3a9ea5d71d7",
+      "bytes": 49471
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-ffi-factory-fast-attempt2-remote-source-20260918.json",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-ffi-factory-fast-attempt2-remote-source-20260918.json",
+      "sha256": "06eda12e5c62cd7faecb5a943896900ec4658c7ad48d0a248639fc64bf2436ef",
+      "bytes": 1708
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-ffi-factory-fast-attempt2-source-20260918.json",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-ffi-factory-fast-attempt2-source-20260918.json",
+      "sha256": "b23f90b69b32288912654437804426b9433dfc417d8ffa94707cd75412188097",
+      "bytes": 1905
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-ffi-factory-fast-source-20260918.json",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-ffi-factory-fast-source-20260918.json",
+      "sha256": "6a809894e261bc4c410dddaf6c7def73740967ce9837d327df23cc108f125d4e",
+      "bytes": 1963
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-ffi-full-lifecycle-20260918.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-ffi-full-lifecycle-20260918.log",
+      "sha256": "c2cb6bce09771d51349c34f5deeb886dde8b1f24888fd3f3124b92920d3a7136",
+      "bytes": 49223
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-ffi-full-lifecycle-source-20260918.json",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-ffi-full-lifecycle-source-20260918.json",
+      "sha256": "e4c1ba890ee0d4682e94da33bad475e6228faf1afcb534c6aaaf4318c5ecac16",
+      "bytes": 1919
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-final-capture-extra-source-20260918.json",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-final-capture-extra-source-20260918.json",
+      "sha256": "0cd5dee8ef3f3a821ba41402f37a02e639db74c1ae210a1c0844527f2640586a",
+      "bytes": 1253
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-final-runtime-results-20260918.json",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-final-runtime-results-20260918.json",
+      "sha256": "fb2b854cd471a8ecf89f6b791e109fb682e02da863ff72c796fb5b03fbcb10ee",
+      "bytes": 25897
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-fixture-closure-build-20260918.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-fixture-closure-build-20260918.log",
+      "sha256": "88c80f87c39f0c9b6aa75505572cd664267358d764cb9048f70b92003a315fc9",
+      "bytes": 123774
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-foundation-axioms.lean",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-foundation-axioms.lean",
+      "sha256": "2b99562a4a0684cb0fcdbf16440ff71ca33c8eb808cdb131418e879afa5ee489",
+      "bytes": 2849
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-foundation-axioms.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-foundation-axioms.log",
+      "sha256": "c214f2103e9c895b93aed0871c2c24447ef2b57aad3154fbaab5bcb95da2eb76",
+      "bytes": 5519
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-foundations-checkpoint.json",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-foundations-checkpoint.json",
+      "sha256": "4ed98d64f7ab178acc31c226a8f955ccfa21890b74c565039ca3fbc4196cc200",
+      "bytes": 5431
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-fresh-fixture-initializers-20260918.json",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-fresh-fixture-initializers-20260918.json",
+      "sha256": "73d52c91c099814bcc864676342d3572db808a521bc8ef71dba17fec7799f2ff",
+      "bytes": 468
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-host-checkpoint.json",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-host-checkpoint.json",
+      "sha256": "bcde169dbd9cb0120fe0908367472a10a4ab8ab1977453c31ba4e0d488b3246a",
+      "bytes": 8191
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-host-handoff.md",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-host-handoff.md",
+      "sha256": "d5f54156c94f78e6ba0a94fd6e0ef62189a47d6ff1b94283c3d7708b9219a77e",
+      "bytes": 7556
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-initializer-generated-c-20260918.json",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-initializer-generated-c-20260918.json",
+      "sha256": "e8d5ece01376d36a486d5ba336efd1869e0494382dcd150139b0c94d22c8b137",
+      "bytes": 1035
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-install-checkpoint.json",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-install-checkpoint.json",
+      "sha256": "9f2a3e0ed65ca83e0a112f85eab8cd51902f6bae16ded11b0f93b89fda0d47ba",
+      "bytes": 3054
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-install-handoff.md",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-install-handoff.md",
+      "sha256": "3f05badf534858eb891a8ff56ceec31ebdaaf2797e0e7232ecd38f6badc2ed49",
+      "bytes": 5997
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-install-source-status.json",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-install-source-status.json",
+      "sha256": "09d1ee1fc4dcfad86cf204dfc0883033868188f7a5db85ed191d97088884fb8f",
+      "bytes": 926
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-journey-checks.json",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-journey-checks.json",
+      "sha256": "0ea49a17501cecdc67e1785c8c9a26fd01da236867bc648a57c8536348eeda64",
+      "bytes": 2185
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-journey-handoff.md",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-journey-handoff.md",
+      "sha256": "d133647fa84909b3693d9c4bc59651b6f396b64b7ae21df0132e11c584f8e27d",
+      "bytes": 3202
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-native-signature-source.json",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-native-signature-source.json",
+      "sha256": "209a179a57089bd416f4dbd9197ff1f8771d2bef9e6bc3e3d5253d02c14cf18a",
+      "bytes": 1737
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-native-signature.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-native-signature.log",
+      "sha256": "58f3e43997d8d1b6bf6c45c6d0bc8cd2ba238fe9203423dfadebc47ba6b70f06",
+      "bytes": 359
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-policy-gate-axioms.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-policy-gate-axioms.log",
+      "sha256": "9cc5d315ce54f053aaf6fb0fdc456af0384f0841864cae794024e263bd02bc53",
+      "bytes": 278
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-policy-install-axioms.lean",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-policy-install-axioms.lean",
+      "sha256": "c52dfad492dee43eb6a7a49103221e9d22e36b7680318b246613563b97261b9c",
+      "bytes": 2127
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-policy-install-axioms.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-policy-install-axioms.log",
+      "sha256": "fe56cd87f07d6cdadd10e347742210a950484450d7764120f32eb6051a79e696",
+      "bytes": 3357
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-policy-install-controller.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-policy-install-controller.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-policy-install-native-attempt1-sources.json",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-policy-install-native-attempt1-sources.json",
+      "sha256": "01027819dfd2916cce2723daac7c05f521be57ce72ef2da0c4c6a28ea0270ac3",
+      "bytes": 13995
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-policy-install-native-attempt1.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-policy-install-native-attempt1.log",
+      "sha256": "89758c2284ac86bb7c9bda434bb4198a4fe1d1f26c78ac70277a5bdb38097225",
+      "bytes": 4884
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-policy-install-native-source-stability.json",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-policy-install-native-source-stability.json",
+      "sha256": "838f115fb3372251eaffded623e8ae41a58db5dbe3f57ddce481a354e925c09b",
+      "bytes": 94
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-policy-install-native-sources.json",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-policy-install-native-sources.json",
+      "sha256": "286fa48002bb20104a8cd514e7673865db75c5c4b55e7ed9a6823fb1a7a59b04",
+      "bytes": 13995
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-policy-install-native.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-policy-install-native.log",
+      "sha256": "1f151be740dced125b2a91f93021bbca536fc33ebe28d5fcc888b10d95ac3b27",
+      "bytes": 6905
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-policy-install-probe-check.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-policy-install-probe-check.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-policy-install-receiver.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-policy-install-receiver.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-postcut-linked-members-20260918.json",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-postcut-linked-members-20260918.json",
+      "sha256": "7fd5eabd73b3587726448bd971cd16410522dec5ed065ade404e060304be5c70",
+      "bytes": 74483
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-runtime-checkpoint.md",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-runtime-checkpoint.md",
+      "sha256": "e16b2a4b360678b6580db1b5521a6f4ce5f8a9cafa7076947cba1f04fe611830",
+      "bytes": 9910
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-runtime-push-20260918.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-runtime-push-20260918.log",
+      "sha256": "351fde7f9b3a5ead7a7a86de4370c013695a6746618cf6bba5381f854d4b414e",
+      "bytes": 9592
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-signatures-AuthorizationDeclaration.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-signatures-AuthorizationDeclaration.log",
+      "sha256": "5fd29ebbeee92f7ad89b25f5ff9897b1cda46470d3c429745e69e9a2cb8e7aea",
+      "bytes": 256
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-signatures-CredentialSignatureAdmission.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-signatures-CredentialSignatureAdmission.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-signatures-DeclaredActionLowering.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-signatures-DeclaredActionLowering.log",
+      "sha256": "43be8b77cedfeb41eddf82d3ac9b1f4449f4d3892763d3368c79e44fac45755a",
+      "bytes": 541
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-signatures-DeclaredEffectPageMaterializer-current.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-signatures-DeclaredEffectPageMaterializer-current.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-signatures-DeclaredHyperedge-current.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-signatures-DeclaredHyperedge-current.log",
+      "sha256": "71572212e94c6ff183195f6baf458dd2736bb23a700251bda3487cab41b40926",
+      "bytes": 3415
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-signatures-DeclaredHyperedge.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-signatures-DeclaredHyperedge.log",
+      "sha256": "1077b88d08c46c677097bae6c18bf6f1987bfff6a6fca761e0babcec437e85aa",
+      "bytes": 5227
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-signatures-DeclaredHyperedgeArtifact-current.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-signatures-DeclaredHyperedgeArtifact-current.log",
+      "sha256": "76d1b44a82f98adce605c191a4dd8de07060533da6ec650a40448df4e7117cec",
+      "bytes": 1498
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-signatures-DeclaredHyperedgeWitness-current.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-signatures-DeclaredHyperedgeWitness-current.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-signatures-HyperdocumentCodec.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-signatures-HyperdocumentCodec.log",
+      "sha256": "244fc18ba615dac3601100416de800433464230f694710fdd9166e398e42ec01",
+      "bytes": 359
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-signatures-HyperdocumentOperations.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-signatures-HyperdocumentOperations.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-signatures-MinidreggV1Artifact.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-signatures-MinidreggV1Artifact.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-signatures-SemanticArtifactBundle.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-signatures-SemanticArtifactBundle.log",
+      "sha256": "36457586f33f569da6454f9ed281e889a42876cb8111f8aac545cb94801ce9bb",
+      "bytes": 196
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-signatures-SemanticManifest.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-signatures-SemanticManifest.log",
+      "sha256": "2a4e2f0eda4d9e8b4963ed60d418cf5b1af2e7a49465964134609f98b1f6c7f3",
+      "bytes": 950
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-signatures-TypedAuthorizationRequestCodec-attempt2.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-signatures-TypedAuthorizationRequestCodec-attempt2.log",
+      "sha256": "f4af573eb80a9dceec665c042d3bca4ecacdffd7dcabf97431e62c70b2e17bee",
+      "bytes": 1175
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-signatures-TypedAuthorizationRequestCodec.log",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-signatures-TypedAuthorizationRequestCodec.log",
+      "sha256": "1850f835c976ec96e429d7acbdd7c38d1ad68ea986f0c008f1ff762e6987ea83",
+      "bytes": 3949
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-signatures-checkpoint.json",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-signatures-checkpoint.json",
+      "sha256": "41b25d1da9de359ac635f0916a73ffadccd2d66afe3e31d3d7810d1b64ca872a",
+      "bytes": 9856
+    },
+    {
+      "originalPath": "/tmp/dregg-resume-signatures-handoff.md",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-signatures-handoff.md",
+      "sha256": "58dc78424e23baf311a070df3195d154b9ccbf2c3bc4022911f72ef560013136",
+      "bytes": 4794
+    },
+    {
+      "originalPath": "/tmp/dregg-runtime-winddown-artifacts-20260918.json",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-runtime-winddown-artifacts-20260918.json",
+      "sha256": "1db9add347238cfd5bfa32d0af040858f70cb8cacb07e5b5407d84131958e6b4",
+      "bytes": 23672
+    },
+    {
+      "originalPath": "/tmp/dregg-wide-auth-test-draft/lean_init_lifecycle.rs",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-wide-auth-test-draft/lean_init_lifecycle.rs",
+      "sha256": "b8e4339db7e80e2ec37d9a2484a08f5eeb2c51b161a8f90c5a5b604f2d508e38",
+      "bytes": 13882
+    },
+    {
+      "originalPath": "/tmp/dregg-wide-auth-test-draft/support/direct_auth_cases.rs",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-wide-auth-test-draft/support/direct_auth_cases.rs",
+      "sha256": "54d526f764c618dc9e6714c69b22bc7a86e8ea69228d70ac2b8377098935666a",
+      "bytes": 4988
+    },
+    {
+      "originalPath": "/tmp/dregg-wide-auth-test-draft/unit-tests.rs",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-wide-auth-test-draft/unit-tests.rs",
+      "sha256": "1c797160e40617c59554d4e9ab64dd80ba0980715b0f4eec8c7f52a1311e1068",
+      "bytes": 1511
+    },
+    {
+      "originalPath": "/tmp/dregg-wide-auth-test-draft-manifest-20260918.json",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-wide-auth-test-draft-manifest-20260918.json",
+      "sha256": "f022d0f6c32ab8b358d870cd9f0cc675cfeb1933a7f3d17ce71b8c1909e3fe6f",
+      "bytes": 1688
+    },
+    {
+      "originalPath": "/tmp/dregg-winddown-mini-commits.json",
+      "path": "sprints/2026-09-18/wind-down/artifacts/dregg-winddown-mini-commits.json",
+      "sha256": "6bfa9be8fdaf25959541e13d3373a4bfa6286cf468d7797f6b36844481416a1d",
+      "bytes": 6561
+    },
+    {
+      "originalPath": "/tmp/marshal-string.patch",
+      "path": "sprints/2026-09-18/wind-down/artifacts/marshal-string.patch",
+      "sha256": "3f2d5a1acc8c88d9522211b470a8bdcc270f55902f5eba93fcd51fa40097d6f3",
+      "bytes": 6254
+    },
+    {
+      "originalPath": "/tmp/resume_wire_strings/HANDOFF.md",
+      "path": "sprints/2026-09-18/wind-down/artifacts/resume_wire_strings/HANDOFF.md",
+      "sha256": "c614f01692830ebbf48fc77f420877b1728543c9402228604c000e5011acb763",
+      "bytes": 4469
+    },
+    {
+      "originalPath": "/tmp/resume_wire_strings/dregg-lean-ffi/src/marshal.rs",
+      "path": "sprints/2026-09-18/wind-down/artifacts/resume_wire_strings/dregg-lean-ffi/src/marshal.rs",
+      "sha256": "5d2a298cbdbd6bda13ad35c7a78eeb6bec4c4f406c2b77d5364126a0976148f4",
+      "bytes": 117738
+    }
+  ],
+  "missingSeedPaths": []
+}

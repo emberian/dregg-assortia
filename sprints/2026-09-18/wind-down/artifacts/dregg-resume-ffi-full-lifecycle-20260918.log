@@ -1,0 +1,939 @@
+pbuild: host is Darwin-arm64, hbox is Linux-x86_64 — NOT shipping
+        dregg-lean-ffi/libdregg_lean.a (it is arch-specific; a cross-shipped archive links as
+        'neither ET_REL nor LLVM bitcode'). The lane gets a platform-native one from
+        the release instead — see ARCHIVE PROVISIONING below.
+cannot delete non-empty directory: drive59-baseline
+pbuild:   archive present, vouched by its provenance record (skipping the ~8s export rescan).
+pbuild: lean archive kept in lane 'hcargo' (release, 0s)
+        Dregg2 provenance: tree fc2be11509bb — NOT any of the last 40 commits of this history
+pbuild: forwarding LEAN_NUM_THREADS SWARM_MEM_MAX DREGG_REQUIRE_LEAN DREGG_LEANC_JOBS to hbox
+warning: ignoring --test-threads because --no-capture is specified
+warning: the feature `avx512_target_feature` has been stable since 1.89.0 and no longer requires an attribute to enable
+  --> vendor/curve25519-dalek-dregg/src/lib.rs:23:13
+   |
+23 |     feature(avx512_target_feature)
+   |             ^^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: `#[warn(stable_features)]` on by default
+
+warning: the feature `stdarch_x86_avx512` has been stable since 1.89.0 and no longer requires an attribute to enable
+  --> vendor/curve25519-dalek-dregg/src/lib.rs:19:13
+   |
+19 |     feature(stdarch_x86_avx512)
+   |             ^^^^^^^^^^^^^^^^^^
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:51:17
+    |
+ 51 |                   unsafe {
+    |                   ^^^^^^ unnecessary `unsafe` block
+...
+213 | / impl_shared!(
+214 | |     u64x4,
+215 | |     u64,
+216 | |     _mm256_add_epi64,
+...   |
+220 | |     _mm256_extract_epi64
+221 | | );
+    | |_- in this macro invocation
+    |
+    = note: `#[warn(unused_unsafe)]` (part of `#[warn(unused)]`) on by default
+    = note: this warning originates in the macro `impl_shared` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:86:17
+    |
+ 86 |                   unsafe { core::arch::x86_64::$add_intrinsic(self.0, rhs.0).into() }
+    |                   ^^^^^^ unnecessary `unsafe` block
+...
+213 | / impl_shared!(
+214 | |     u64x4,
+215 | |     u64,
+216 | |     _mm256_add_epi64,
+...   |
+220 | |     _mm256_extract_epi64
+221 | | );
+    | |_- in this macro invocation
+    |
+    = note: this warning originates in the macro `impl_shared` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:105:17
+    |
+105 |                   unsafe { core::arch::x86_64::$sub_intrinsic(self.0, rhs.0).into() }
+    |                   ^^^^^^ unnecessary `unsafe` block
+...
+213 | / impl_shared!(
+214 | |     u64x4,
+215 | |     u64,
+216 | |     _mm256_add_epi64,
+...   |
+220 | |     _mm256_extract_epi64
+221 | | );
+    | |_- in this macro invocation
+    |
+    = note: this warning originates in the macro `impl_shared` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:115:17
+    |
+115 |                   unsafe { core::arch::x86_64::_mm256_and_si256(self.0, rhs.0).into() }
+    |                   ^^^^^^ unnecessary `unsafe` block
+...
+213 | / impl_shared!(
+214 | |     u64x4,
+215 | |     u64,
+216 | |     _mm256_add_epi64,
+...   |
+220 | |     _mm256_extract_epi64
+221 | | );
+    | |_- in this macro invocation
+    |
+    = note: this warning originates in the macro `impl_shared` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:125:17
+    |
+125 |                   unsafe { core::arch::x86_64::_mm256_xor_si256(self.0, rhs.0).into() }
+    |                   ^^^^^^ unnecessary `unsafe` block
+...
+213 | / impl_shared!(
+214 | |     u64x4,
+215 | |     u64,
+216 | |     _mm256_add_epi64,
+...   |
+220 | |     _mm256_extract_epi64
+221 | | );
+    | |_- in this macro invocation
+    |
+    = note: this warning originates in the macro `impl_shared` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:152:17
+    |
+152 |                   unsafe { core::arch::x86_64::$shl_intrinsic(self.0, N).into() }
+    |                   ^^^^^^ unnecessary `unsafe` block
+...
+213 | / impl_shared!(
+214 | |     u64x4,
+215 | |     u64,
+216 | |     _mm256_add_epi64,
+...   |
+220 | |     _mm256_extract_epi64
+221 | | );
+    | |_- in this macro invocation
+    |
+    = note: this warning originates in the macro `impl_shared` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:157:17
+    |
+157 |                   unsafe { core::arch::x86_64::$shr_intrinsic(self.0, N).into() }
+    |                   ^^^^^^ unnecessary `unsafe` block
+...
+213 | / impl_shared!(
+214 | |     u64x4,
+215 | |     u64,
+216 | |     _mm256_add_epi64,
+...   |
+220 | |     _mm256_extract_epi64
+221 | | );
+    | |_- in this macro invocation
+    |
+    = note: this warning originates in the macro `impl_shared` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:162:17
+    |
+162 |                   unsafe { core::arch::x86_64::$extract_intrinsic(self.0, N) as $lane_ty }
+    |                   ^^^^^^ unnecessary `unsafe` block
+...
+213 | / impl_shared!(
+214 | |     u64x4,
+215 | |     u64,
+216 | |     _mm256_add_epi64,
+...   |
+220 | |     _mm256_extract_epi64
+221 | | );
+    | |_- in this macro invocation
+    |
+    = note: this warning originates in the macro `impl_shared` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:51:17
+    |
+ 51 |                   unsafe {
+    |                   ^^^^^^ unnecessary `unsafe` block
+...
+222 | / impl_shared!(
+223 | |     u32x8,
+224 | |     u32,
+225 | |     _mm256_add_epi32,
+...   |
+229 | |     _mm256_extract_epi32
+230 | | );
+    | |_- in this macro invocation
+    |
+    = note: this warning originates in the macro `impl_shared` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:86:17
+    |
+ 86 |                   unsafe { core::arch::x86_64::$add_intrinsic(self.0, rhs.0).into() }
+    |                   ^^^^^^ unnecessary `unsafe` block
+...
+222 | / impl_shared!(
+223 | |     u32x8,
+224 | |     u32,
+225 | |     _mm256_add_epi32,
+...   |
+229 | |     _mm256_extract_epi32
+230 | | );
+    | |_- in this macro invocation
+    |
+    = note: this warning originates in the macro `impl_shared` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:105:17
+    |
+105 |                   unsafe { core::arch::x86_64::$sub_intrinsic(self.0, rhs.0).into() }
+    |                   ^^^^^^ unnecessary `unsafe` block
+...
+222 | / impl_shared!(
+223 | |     u32x8,
+224 | |     u32,
+225 | |     _mm256_add_epi32,
+...   |
+229 | |     _mm256_extract_epi32
+230 | | );
+    | |_- in this macro invocation
+    |
+    = note: this warning originates in the macro `impl_shared` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:115:17
+    |
+115 |                   unsafe { core::arch::x86_64::_mm256_and_si256(self.0, rhs.0).into() }
+    |                   ^^^^^^ unnecessary `unsafe` block
+...
+222 | / impl_shared!(
+223 | |     u32x8,
+224 | |     u32,
+225 | |     _mm256_add_epi32,
+...   |
+229 | |     _mm256_extract_epi32
+230 | | );
+    | |_- in this macro invocation
+    |
+    = note: this warning originates in the macro `impl_shared` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:125:17
+    |
+125 |                   unsafe { core::arch::x86_64::_mm256_xor_si256(self.0, rhs.0).into() }
+    |                   ^^^^^^ unnecessary `unsafe` block
+...
+222 | / impl_shared!(
+223 | |     u32x8,
+224 | |     u32,
+225 | |     _mm256_add_epi32,
+...   |
+229 | |     _mm256_extract_epi32
+230 | | );
+    | |_- in this macro invocation
+    |
+    = note: this warning originates in the macro `impl_shared` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:152:17
+    |
+152 |                   unsafe { core::arch::x86_64::$shl_intrinsic(self.0, N).into() }
+    |                   ^^^^^^ unnecessary `unsafe` block
+...
+222 | / impl_shared!(
+223 | |     u32x8,
+224 | |     u32,
+225 | |     _mm256_add_epi32,
+...   |
+229 | |     _mm256_extract_epi32
+230 | | );
+    | |_- in this macro invocation
+    |
+    = note: this warning originates in the macro `impl_shared` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:157:17
+    |
+157 |                   unsafe { core::arch::x86_64::$shr_intrinsic(self.0, N).into() }
+    |                   ^^^^^^ unnecessary `unsafe` block
+...
+222 | / impl_shared!(
+223 | |     u32x8,
+224 | |     u32,
+225 | |     _mm256_add_epi32,
+...   |
+229 | |     _mm256_extract_epi32
+230 | | );
+    | |_- in this macro invocation
+    |
+    = note: this warning originates in the macro `impl_shared` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:162:17
+    |
+162 |                   unsafe { core::arch::x86_64::$extract_intrinsic(self.0, N) as $lane_ty }
+    |                   ^^^^^^ unnecessary `unsafe` block
+...
+222 | / impl_shared!(
+223 | |     u32x8,
+224 | |     u32,
+225 | |     _mm256_add_epi32,
+...   |
+229 | |     _mm256_extract_epi32
+230 | | );
+    | |_- in this macro invocation
+    |
+    = note: this warning originates in the macro `impl_shared` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:258:9
+    |
+258 |         unsafe {
+    |         ^^^^^^ unnecessary `unsafe` block
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:270:9
+    |
+270 |         unsafe { u64x4(core::arch::x86_64::_mm256_set1_epi64x(x as i64)) }
+    |         ^^^^^^ unnecessary `unsafe` block
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:309:9
+    |
+309 |         unsafe {
+    |         ^^^^^^ unnecessary `unsafe` block
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:322:9
+    |
+322 |         unsafe { u32x8(core::arch::x86_64::_mm256_set1_epi32(x as i32)) }
+    |         ^^^^^^ unnecessary `unsafe` block
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/packed_simd.rs:335:9
+    |
+335 |         unsafe { core::arch::x86_64::_mm256_mul_epu32(self.0, rhs.0).into() }
+    |         ^^^^^^ unnecessary `unsafe` block
+
+warning: unnecessary `unsafe` block
+  --> vendor/curve25519-dalek-dregg/src/backend/vector/avx2/field.rs:68:5
+   |
+68 |     unsafe {
+   |     ^^^^^^ unnecessary `unsafe` block
+
+warning: unnecessary `unsafe` block
+  --> vendor/curve25519-dalek-dregg/src/backend/vector/avx2/field.rs:89:5
+   |
+89 |     unsafe {
+   |     ^^^^^^ unnecessary `unsafe` block
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/avx2/field.rs:432:13
+    |
+432 |             unsafe {
+    |             ^^^^^^ unnecessary `unsafe` block
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/avx2/field.rs:456:13
+    |
+456 |             unsafe {
+    |             ^^^^^^ unnecessary `unsafe` block
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/avx2/field.rs:479:28
+    |
+479 |         let c9_19: u32x8 = unsafe {
+    |                            ^^^^^^ unnecessary `unsafe` block
+
+warning: unnecessary `unsafe` block
+   --> vendor/curve25519-dalek-dregg/src/backend/vector/avx2/field.rs:663:13
+    |
+663 |             unsafe {
+    |             ^^^^^^ unnecessary `unsafe` block
+
+warning: unnecessary `unsafe` block
+  --> vendor/curve25519-dalek-dregg/src/backend/vector/ifma/field.rs:63:5
+   |
+63 |     unsafe {
+   |     ^^^^^^ unnecessary `unsafe` block
+
+warning: unnecessary `unsafe` block
+  --> vendor/curve25519-dalek-dregg/src/backend/vector/ifma/field.rs:95:5
+   |
+95 |     unsafe {
+   |     ^^^^^^ unnecessary `unsafe` block
+
+warning: `curve25519-dalek` (lib) generated 31 warnings
+   Compiling dregg-lean-ffi v0.1.0 (/tank/dregg-build/hcargo/dregg-lean-ffi)
+warning: unused import: `crate::dsl::descriptors::merkle_poseidon2_circuit`
+  --> circuit/src/body_membership.rs:24:5
+   |
+24 | use crate::dsl::descriptors::merkle_poseidon2_circuit;
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `AccumulatorNonMembershipWitness`
+  --> circuit/src/dsl/accumulator.rs:25:24
+   |
+25 |     ACCUMULATOR_WIDTH, AccumulatorNonMembershipWitness, AccumulatorNonRevocationWitness, ExtElem,
+   |                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused imports: `BoundaryDef`, `BoundaryRow`, `CircuitDescriptor`, `ColumnDef`, `ColumnKind`, `ConstraintExpr`, and `DslCircuit`
+  --> circuit/src/dsl/fold.rs:30:5
+   |
+30 |     BoundaryDef, BoundaryRow, CircuitDescriptor, ColumnDef, ColumnKind, ConstraintExpr, DslCircuit,
+   |     ^^^^^^^^^^^  ^^^^^^^^^^^  ^^^^^^^^^^^^^^^^^  ^^^^^^^^^  ^^^^^^^^^^  ^^^^^^^^^^^^^^  ^^^^^^^^^^
+
+warning: unused import: `hash_4_to_1`
+ --> circuit/src/effect_vm/trace.rs:8:37
+  |
+8 | use crate::poseidon2::{hash_2_to_1, hash_4_to_1};
+  |                                     ^^^^^^^^^^^
+
+warning: private item shadows public glob re-export
+  --> circuit/src/effect_vm/trace_rotated.rs:47:13
+   |
+47 | use super::{EFFECT_VM_WIDTH, EffectVmContext, generate_effect_vm_trace_ext};
+   |             ^^^^^^^^^^^^^^^
+   |
+note: the name `EFFECT_VM_WIDTH` in the value namespace is supposed to be publicly re-exported here
+  --> circuit/src/effect_vm/trace_rotated.rs:52:9
+   |
+52 | pub use crate::effect_vm::layout_generated::*;
+   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+note: but the private item here shadows it
+  --> circuit/src/effect_vm/trace_rotated.rs:47:13
+   |
+47 | use super::{EFFECT_VM_WIDTH, EffectVmContext, generate_effect_vm_trace_ext};
+   |             ^^^^^^^^^^^^^^^
+   = note: `#[warn(hidden_glob_reexports)]` on by default
+
+warning: unused import: `EFFECT_VM_WIDTH`
+  --> circuit/src/effect_vm/transfer_fee_avail_weld.rs:37:5
+   |
+37 |     EFFECT_VM_WIDTH, PARAM_BASE, STATE_AFTER_BASE, STATE_BEFORE_BASE, param, state,
+   |     ^^^^^^^^^^^^^^^
+
+warning: unused imports: `prove` and `verify`
+  --> circuit/src/plonky3_prover.rs:40:40
+   |
+40 | use p3_uni_stark::{Proof, StarkConfig, prove, verify};
+   |                                        ^^^^^  ^^^^^^
+
+warning: unused doc comment
+   --> circuit/src/refusal.rs:485:1
+    |
+485 | / /// Set while this thread is inside [`catch_quietly`]. The hook installed below reads it, so
+486 | | /// silencing is scoped to the thread that asked for it.
+    | |_-------------------------------------------------------^
+    |   |
+    |   rustdoc does not generate documentation for macro invocations
+    |
+    = help: to document an item produced by a macro, the macro must produce the documentation as part of its expansion
+    = note: `#[warn(unused_doc_comments)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `crate::dsl::predicates::*`
+   --> circuit/src/lib.rs:700:13
+    |
+700 |     pub use crate::dsl::predicates::*;
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `crate::dsl::predicates::*`
+   --> circuit/src/lib.rs:701:13
+    |
+701 |     pub use crate::dsl::predicates::*;
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `WindowAccess`
+  --> circuit/src/plonky3_prover.rs:29:40
+   |
+29 | use p3_air::{Air, AirBuilder, BaseAir, WindowAccess};
+   |                                        ^^^^^^^^^^^^
+
+warning: unused import: `BaseAir`
+  --> circuit/src/plonky3_prover.rs:29:31
+   |
+29 | use p3_air::{Air, AirBuilder, BaseAir, WindowAccess};
+   |                               ^^^^^^^
+
+warning: unused import: `Air`
+  --> circuit/src/plonky3_prover.rs:29:14
+   |
+29 | use p3_air::{Air, AirBuilder, BaseAir, WindowAccess};
+   |              ^^^
+
+warning: variable does not need to be mutable
+    --> circuit/src/descriptor_ir2.rs:5712:9
+     |
+5712 |     let mut fact_hist: BTreeMap<(u32, u32, u32), u64> = BTreeMap::new();
+     |         ----^^^^^^^^^
+     |         |
+     |         help: remove this `mut`
+     |
+     = note: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+warning: variable does not need to be mutable
+   --> circuit/src/table_air.rs:404:13
+    |
+404 |         let mut share_out_of_range = |e: &TableExpr, what: &str| -> Result<(), String> {
+    |             ----^^^^^^^^^^^^^^^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> circuit/src/table_air.rs:428:13
+    |
+428 |         let mut prep_out_of_range = |e: &TableExpr, what: &str| -> Result<(), String> {
+    |             ----^^^^^^^^^^^^^^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: type `CompiledMain` is more private than the item `Ir2Air::Main::compiled`
+    --> circuit/src/descriptor_ir2.rs:3672:9
+     |
+3672 |         compiled: Arc<crate::flat_eval::CompiledMain>,
+     |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ field `Ir2Air::Main::compiled` is reachable at visibility `pub`
+     |
+note: but type `CompiledMain` is only usable at visibility `pub(crate)`
+    --> circuit/src/flat_eval.rs:368:1
+     |
+ 368 | pub(crate) struct CompiledMain {
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+     = note: `#[warn(private_interfaces)]` on by default
+
+warning: type `CompiledTable` is more private than the item `Ir2Air::LeanTable::compiled`
+    --> circuit/src/descriptor_ir2.rs:3760:9
+     |
+3760 |         compiled: Arc<crate::flat_eval::CompiledTable>,
+     |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ field `Ir2Air::LeanTable::compiled` is reachable at visibility `pub`
+     |
+note: but type `CompiledTable` is only usable at visibility `pub(crate)`
+    --> circuit/src/flat_eval.rs:418:1
+     |
+ 418 | pub(crate) struct CompiledTable {
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: method `resolve_row` is never used
+   --> circuit/src/dsl/circuit.rs:636:8
+    |
+635 | impl BoundaryDef {
+    | ---------------- method in this implementation
+636 |     fn resolve_row(&self, trace_len: usize) -> usize {
+    |        ^^^^^^^^^^^
+    |
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: field `lookup_index` is never read
+   --> circuit/src/dsl/circuit.rs:673:5
+    |
+668 | pub struct DslCircuit {
+    |            ---------- field in this struct
+...
+673 |     lookup_index: LookupIndex,
+    |     ^^^^^^^^^^^^
+
+warning: field `set_elements` is never read
+   --> circuit/src/non_membership.rs:140:5
+    |
+138 | pub struct NonMembershipProver {
+    |            ------------------- field in this struct
+139 |     /// The set's elements (needed for witness generation).
+140 |     set_elements: Vec<BabyBear>,
+    |     ^^^^^^^^^^^^
+    |
+    = note: `NonMembershipProver` has derived impls for the traits `Debug` and `Clone`, but these are intentionally ignored during dead code analysis
+
+warning: constant `ROUND_STATES_OFFSET` is never used
+   --> circuit/src/plonky3_prover.rs:289:7
+    |
+289 | const ROUND_STATES_OFFSET: usize = 5;
+    |       ^^^^^^^^^^^^^^^^^^^
+
+warning: constant `PARENT_COL` is never used
+   --> circuit/src/plonky3_prover.rs:292:7
+    |
+292 | const PARENT_COL: usize = P3_TRACE_WIDTH - 1; // 245
+    |       ^^^^^^^^^^
+
+warning: function `vm_site_digest_concrete` is never used
+    --> circuit/src/lean_descriptor_air.rs:1633:15
+     |
+1633 | pub(crate) fn vm_site_digest_concrete(
+     |               ^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: constant `CHIP_MULT_STATE16` is never used
+    --> circuit/src/descriptor_ir2.rs:3505:7
+     |
+3505 | const CHIP_MULT_STATE16: usize = CHIP_MULT_NARROW;
+     |       ^^^^^^^^^^^^^^^^^
+
+warning: function `hash2_state_c` is never used
+    --> circuit/src/descriptor_ir2.rs:5248:4
+     |
+5248 | fn hash2_state_c(a: BabyBear, b: BabyBear) -> [BabyBear; POSEIDON2_WIDTH] {
+     |    ^^^^^^^^^^^^^
+
+warning: `dregg-circuit` (lib) generated 26 warnings (run `cargo fix --lib -p dregg-circuit` to apply 11 suggestions)
+warning: dregg-lean-ffi@0.1.0: dregg-lean-ffi: splicing the Dregg2.FFI boundary closure — 347 of 706 emitted Dregg2 C facets (359 off-closure proof modules not shipped in the runtime archive).
+warning: struct `AuthenticatedJournalRecord` is never constructed
+   --> dregg-lean-ffi/src/poa_bazaar_restart_portal.rs:186:19
+    |
+186 | pub(crate) struct AuthenticatedJournalRecord {
+    |                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: associated function `open_bound` is never used
+   --> dregg-lean-ffi/src/poa_bazaar_restart_portal.rs:377:19
+    |
+346 | impl DurableBazaarHeadStore {
+    | --------------------------- associated function in this implementation
+...
+377 |     pub(crate) fn open_bound(
+    |                   ^^^^^^^^^^
+
+warning: method `load_authenticated_journal_records` is never used
+    --> dregg-lean-ffi/src/poa_bazaar_restart_portal.rs:1096:19
+     |
+1095 | impl DurableBazaarHeadStore {
+     | --------------------------- method in this implementation
+1096 |     pub(crate) fn load_authenticated_journal_records(
+     |                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: function `lean_storage_content_root` is never used
+    --> dregg-lean-ffi/src/lib.rs:2509:12
+     |
+2509 |     pub fn lean_storage_content_root(wire: &str) -> Result<String, String> {
+     |            ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: function `dregg_storage_content_root_str` is never used
+    --> dregg-lean-ffi/src/lib.rs:1855:12
+     |
+1855 |         fn dregg_storage_content_root_str(
+     |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: `dregg-lean-ffi` (lib) generated 5 warnings
+warning: constant `POSEIDON2_COMPRESS_WIRE` is never used
+  --> dregg-lean-ffi/src/circuit_differential.rs:39:7
+   |
+39 | const POSEIDON2_COMPRESS_WIRE: &str = r#"{"name":"dregg-poseidon2-compress-v1","trace_width":6,"public_input_count":2,"constraints":...
+   |       ^^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: variants `Grant`, `Call`, `Reply`, `Reset`, `Control`, and `Notify` are never constructed
+   --> dregg-lean-ffi/src/state_differential.rs:382:5
+    |
+379 | enum Auth {
+    |      ---- variants in this enum
+...
+382 |     Grant = 2,
+    |     ^^^^^
+383 |     Call = 3,
+    |     ^^^^
+384 |     Reply = 4,
+    |     ^^^^^
+385 |     Reset = 5,
+    |     ^^^^^
+386 |     Control = 6,
+    |     ^^^^^^^
+...
+390 |     Notify = 7,
+    |     ^^^^^^
+    |
+    = note: `Auth` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: `dregg-lean-ffi` (bin "circuit_differential") generated 1 warning
+warning: `dregg-lean-ffi` (bin "state_differential") generated 1 warning
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1m 44s
+────────────
+ Nextest run ID d452c313-d2e1-46c8-b513-c2c029f594a2 with nextest profile: heavy
+    Starting 3 tests across 1 binary (1 test skipped)
+       START [         ] (1/3) dregg-lean-ffi::lean_init_lifecycle lean_init_lifecycle_heavy_foreign_full_first_then_narrow
+
+running 1 test
+
+running 1 test
+test lean_init_lifecycle_heavy_foreign_full_first_then_narrow ... [dregg lean init] runtime=Default elapsed_ms=0.139
+[dregg lean init] module=initialize_Dregg2_Dregg2_Apps_DelegAdmit begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Apps_DelegAdmit elapsed_ms=0.565 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Exec_FFI begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Exec_FFI elapsed_ms=36.575 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_FinalityGate begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_FinalityGate elapsed_ms=0.072 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_StrandAdmission begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_StrandAdmission elapsed_ms=0.001 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_RoundAdvanceGate begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_RoundAdvanceGate elapsed_ms=0.001 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_AckBeforeAdmit begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_AckBeforeAdmit elapsed_ms=0.001 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Exec_DistributedExports begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Exec_DistributedExports elapsed_ms=0.041 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Deos_FlowRefine begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Deos_FlowRefine elapsed_ms=0.010 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Exec_FFIDirect begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Exec_FFIDirect elapsed_ms=0.002 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Storage_Deployed begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Storage_Deployed elapsed_ms=0.071 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Exec_DeployedConstraint begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Exec_DeployedConstraint elapsed_ms=0.004 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaStateHashWordGate begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaStateHashWordGate elapsed_ms=665.707 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaWrapChallenges begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaWrapChallenges elapsed_ms=0.002 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaWrapFtEval0 begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaWrapFtEval0 elapsed_ms=0.007 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaAccountOpening begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaAccountOpening elapsed_ms=9.246 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Circuit_Emit_PastaIpaDeferral begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Circuit_Emit_PastaIpaDeferral elapsed_ms=0.768 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaForkChoiceGate begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaForkChoiceGate elapsed_ms=0.002 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaCheckpoint begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaCheckpoint elapsed_ms=0.014 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Circuit_CrossCellConserveDecision begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Circuit_CrossCellConserveDecision elapsed_ms=0.001 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_Fips204Verify begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_Fips204Verify elapsed_ms=110.913 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_Fips203Kem begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_Fips203Kem elapsed_ms=0.004 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_MlKemDecaps begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_MlKemDecaps elapsed_ms=47.541 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_MlKemEncaps begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_MlKemEncaps elapsed_ms=0.002 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_MlKemKeygen begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_MlKemKeygen elapsed_ms=0.001 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_MlDsaKeygen begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_MlDsaKeygen elapsed_ms=0.003 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_MlDsaSignReal begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_MlDsaSignReal elapsed_ms=0.006 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_AutomataflFFI begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_AutomataflFFI elapsed_ms=0.585 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_MultiwayTugFFI begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_MultiwayTugFFI elapsed_ms=0.055 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge elapsed_ms=53511.558 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_RecordsRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_RecordsRuntime elapsed_ms=673.567 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_StationDailyRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_StationDailyRuntime elapsed_ms=2.470 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_StationCrateOpenRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_StationCrateOpenRuntime elapsed_ms=1.443 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_NetworkGenesis begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_NetworkGenesis elapsed_ms=92.122 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_SlotDeriveRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_SlotDeriveRuntime elapsed_ms=69.133 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_SignalFeedbackRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_SignalFeedbackRuntime elapsed_ms=210.610 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_DarkBazaarJudge begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_DarkBazaarJudge elapsed_ms=2080.999 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_GalleyMaintenanceDailyRuntime begin
+        SLOW [> 60.000s] (───) dregg-lean-ffi::lean_init_lifecycle lean_init_lifecycle_heavy_foreign_full_first_then_narrow
+test lean_init_lifecycle_heavy_foreign_full_first_then_narrow has been running for over 60 seconds
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_GalleyMaintenanceDailyRuntime elapsed_ms=4547.888 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_NightWatchCampaignWire begin
+        SLOW [>120.000s] (───) dregg-lean-ffi::lean_init_lifecycle lean_init_lifecycle_heavy_foreign_full_first_then_narrow
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_NightWatchCampaignWire elapsed_ms=116696.140 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_CrewFieldMissionAdmission begin
+        SLOW [>180.000s] (───) dregg-lean-ffi::lean_init_lifecycle lean_init_lifecycle_heavy_foreign_full_first_then_narrow
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_CrewFieldMissionAdmission elapsed_ms=1607.636 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_EventBatchRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_EventBatchRuntime elapsed_ms=6577.760 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_WorldActivation begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_WorldActivation elapsed_ms=0.001 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_ActivatedContentRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_ActivatedContentRuntime elapsed_ms=0.003 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_BazaarGameRuntime begin
+ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 3 filtered out; finished in 186.95s
+
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_BazaarGameRuntime elapsed_ms=5.968 result=ok
+test lean_init_lifecycle_heavy_foreign_full_first_then_narrow ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 3 filtered out; finished in 186.96s
+
+        PASS [ 186.964s] (1/3) dregg-lean-ffi::lean_init_lifecycle lean_init_lifecycle_heavy_foreign_full_first_then_narrow
+       START [         ] (2/3) dregg-lean-ffi::lean_init_lifecycle lean_init_lifecycle_heavy_narrow_then_concurrent_full
+
+running 1 test
+
+running 1 test
+test lean_init_lifecycle_heavy_narrow_then_concurrent_full ... [dregg lean init] runtime=Default elapsed_ms=0.147
+[dregg lean init] module=initialize_Dregg2_Dregg2_Apps_DelegAdmit begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Apps_DelegAdmit elapsed_ms=0.654 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Exec_FFI begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Exec_FFI elapsed_ms=30.482 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_FinalityGate begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_FinalityGate elapsed_ms=0.055 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_StrandAdmission begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_StrandAdmission elapsed_ms=0.001 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_RoundAdvanceGate begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_RoundAdvanceGate elapsed_ms=0.001 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_AckBeforeAdmit begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_AckBeforeAdmit elapsed_ms=0.001 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Exec_DistributedExports begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Exec_DistributedExports elapsed_ms=0.044 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Deos_FlowRefine begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Deos_FlowRefine elapsed_ms=0.008 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Exec_FFIDirect begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Exec_FFIDirect elapsed_ms=0.001 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Storage_Deployed begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Storage_Deployed elapsed_ms=0.068 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Exec_DeployedConstraint begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Exec_DeployedConstraint elapsed_ms=0.003 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaStateHashWordGate begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaStateHashWordGate elapsed_ms=624.446 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaWrapChallenges begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaWrapChallenges elapsed_ms=0.002 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaWrapFtEval0 begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaWrapFtEval0 elapsed_ms=0.004 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaAccountOpening begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaAccountOpening elapsed_ms=9.112 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Circuit_Emit_PastaIpaDeferral begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Circuit_Emit_PastaIpaDeferral elapsed_ms=0.707 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaForkChoiceGate begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaForkChoiceGate elapsed_ms=0.004 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaCheckpoint begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Bridge_MinaCheckpoint elapsed_ms=0.011 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Circuit_CrossCellConserveDecision begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Circuit_CrossCellConserveDecision elapsed_ms=0.001 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_Fips204Verify begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_Fips204Verify elapsed_ms=106.730 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_Fips203Kem begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_Fips203Kem elapsed_ms=0.003 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_MlKemDecaps begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_MlKemDecaps elapsed_ms=45.861 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_MlKemEncaps begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_MlKemEncaps elapsed_ms=0.001 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_MlKemKeygen begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_MlKemKeygen elapsed_ms=0.001 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_MlDsaKeygen begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_MlDsaKeygen elapsed_ms=0.003 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_MlDsaSignReal begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Crypto_MlDsaSignReal elapsed_ms=0.001 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_AutomataflFFI begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_AutomataflFFI elapsed_ms=0.543 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_MultiwayTugFFI begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_MultiwayTugFFI elapsed_ms=0.051 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge elapsed_ms=53860.763 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_RecordsRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_RecordsRuntime elapsed_ms=678.502 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_StationDailyRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_StationDailyRuntime elapsed_ms=2.510 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_StationCrateOpenRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_StationCrateOpenRuntime elapsed_ms=1.442 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_NetworkGenesis begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_NetworkGenesis elapsed_ms=91.784 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_SlotDeriveRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_SlotDeriveRuntime elapsed_ms=68.782 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_SignalFeedbackRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_SignalFeedbackRuntime elapsed_ms=210.237 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_DarkBazaarJudge begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_DarkBazaarJudge elapsed_ms=2054.050 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_GalleyMaintenanceDailyRuntime begin
+        SLOW [> 60.000s] (───) dregg-lean-ffi::lean_init_lifecycle lean_init_lifecycle_heavy_narrow_then_concurrent_full
+test lean_init_lifecycle_heavy_narrow_then_concurrent_full has been running for over 60 seconds
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_GalleyMaintenanceDailyRuntime elapsed_ms=4475.311 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_NightWatchCampaignWire begin
+        SLOW [>120.000s] (───) dregg-lean-ffi::lean_init_lifecycle lean_init_lifecycle_heavy_narrow_then_concurrent_full
+        SLOW [>180.000s] (───) dregg-lean-ffi::lean_init_lifecycle lean_init_lifecycle_heavy_narrow_then_concurrent_full
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_NightWatchCampaignWire elapsed_ms=117968.131 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_CrewFieldMissionAdmission begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_CrewFieldMissionAdmission elapsed_ms=1626.154 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_EventBatchRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_EventBatchRuntime elapsed_ms=6747.631 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_WorldActivation begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_WorldActivation elapsed_ms=0.001 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_ActivatedContentRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_ActivatedContentRuntime elapsed_ms=0.002 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_BazaarGameRuntime begin
+ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 3 filtered out; finished in 188.61s
+
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_BazaarGameRuntime elapsed_ms=6.136 result=ok
+test lean_init_lifecycle_heavy_narrow_then_concurrent_full ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 3 filtered out; finished in 188.62s
+
+        PASS [ 188.626s] (2/3) dregg-lean-ffi::lean_init_lifecycle lean_init_lifecycle_heavy_narrow_then_concurrent_full
+       START [         ] (3/3) dregg-lean-ffi::lean_init_lifecycle lean_init_lifecycle_heavy_st_owner_and_mode_exclusion
+
+running 1 test
+
+running 1 test
+test lean_init_lifecycle_heavy_st_owner_and_mode_exclusion ... [dregg lean init] runtime=SingleThreaded elapsed_ms=0.040
+[dregg lean init] module=initialize_Dregg2_Dregg2_Apps_DelegAdmit begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Apps_DelegAdmit elapsed_ms=0.541 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Exec_FFI begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Exec_FFI elapsed_ms=30.350 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_FinalityGate begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_FinalityGate elapsed_ms=0.066 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_StrandAdmission begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_StrandAdmission elapsed_ms=0.001 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_RoundAdvanceGate begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_RoundAdvanceGate elapsed_ms=0.001 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_AckBeforeAdmit begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Distributed_AckBeforeAdmit elapsed_ms=0.001 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Exec_DistributedExports begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Exec_DistributedExports elapsed_ms=0.034 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_NetworkJudge elapsed_ms=53255.805 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_RecordsRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_RecordsRuntime elapsed_ms=672.611 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_SlotDeriveRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_SlotDeriveRuntime elapsed_ms=69.274 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_StationDailyRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_StationDailyRuntime elapsed_ms=2.487 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_StationCrateOpenRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_StationCrateOpenRuntime elapsed_ms=1.434 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_SignalFeedbackRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_SignalFeedbackRuntime elapsed_ms=218.369 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_NetworkGenesis begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_NetworkGenesis elapsed_ms=171.798 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_DarkBazaarJudge begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_DarkBazaarJudge elapsed_ms=2089.171 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_GalleyMaintenanceDailyRuntime begin
+test lean_init_lifecycle_heavy_st_owner_and_mode_exclusion has been running for over 60 seconds
+        SLOW [> 60.000s] (───) dregg-lean-ffi::lean_init_lifecycle lean_init_lifecycle_heavy_st_owner_and_mode_exclusion
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_GalleyMaintenanceDailyRuntime elapsed_ms=4608.123 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_NightWatchCampaignWire begin
+        SLOW [>120.000s] (───) dregg-lean-ffi::lean_init_lifecycle lean_init_lifecycle_heavy_st_owner_and_mode_exclusion
+        SLOW [>180.000s] (───) dregg-lean-ffi::lean_init_lifecycle lean_init_lifecycle_heavy_st_owner_and_mode_exclusion
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_NightWatchCampaignWire elapsed_ms=119442.281 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_CrewFieldMissionAdmission begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_CrewFieldMissionAdmission elapsed_ms=1609.675 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_EventBatchRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_EventBatchRuntime elapsed_ms=6785.546 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_WorldActivation begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_WorldActivation elapsed_ms=0.001 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_ActivatedContentRuntime begin
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_ActivatedContentRuntime elapsed_ms=0.003 result=ok
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_BazaarGameRuntime begin
+ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 3 filtered out; finished in 188.96s
+
+[dregg lean init] module=initialize_Dregg2_Dregg2_Games_PathOfAngels_BazaarGameRuntime elapsed_ms=6.079 result=ok
+test lean_init_lifecycle_heavy_st_owner_and_mode_exclusion ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 3 filtered out; finished in 188.97s
+
+        PASS [ 188.979s] (3/3) dregg-lean-ffi::lean_init_lifecycle lean_init_lifecycle_heavy_st_owner_and_mode_exclusion
+────────────
+     Summary [ 564.570s] 3 tests run: 3 passed (3 slow), 1 skipped
+pbuild: VERDICT outcome=PASS status=0 lane=hcargo host=hbox cmd=env DREGG_LEAN_INIT_PROFILE=1 timeout --signal=TERM --kill-after=15s 1500s cargo nextest run --profile heavy --build-jobs 4 --test-threads=1 --no-fail-fast --no-tests fail --no-capture -p dregg-lean-ffi --features lean-lib --test lean_init_lifecycle -E test(~lean_init_lifecycle_heavy)

@@ -1,0 +1,7 @@
+Theory/AuthorizationDeclaration.lean:495:10: warning: This simp argument is unused:
+  hlookup
+
+Hint: Omit it from the simp argument list.
+  simp ̵[̵h̵l̵o̵o̵k̵u̵p̵]̵
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

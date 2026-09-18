@@ -1,0 +1,7 @@
+Theory/ResourceBirthAuthority.lean:277:2: warning: Try `simp at distinct` instead of `simpa using distinct`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+Theory/ResourceBirthAuthority.lean:315:75: error: Expected type must not contain free variables
+  (List.map FieldWrite.field (fieldWrites (descriptor registry))).Nodup
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables

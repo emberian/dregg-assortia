@@ -1,0 +1,119 @@
+{
+  "started_at_utc": "2026-09-18T07:14:55.097995+00:00",
+  "files": [
+    {
+      "path": "/Users/ember/dev/minidregg/scripts/probe-born-resource-invocation.lean",
+      "sha256": "6ac4509429cf5c78a43a1fca7ffb498b49d00da241d04401f9cbcd11143961ec"
+    },
+    {
+      "path": "/Users/ember/dev/minidregg/Kernel/DeclaredResourceController.lean",
+      "sha256": "ca22fd70077620c6bc16990ca2eb7537d9eb12c3c217b921adc75636b3a26918"
+    },
+    {
+      "path": "/Users/ember/dev/minidregg/Kernel/CapabilityDelegationController.lean",
+      "sha256": "685b032c30b5cea35285c800167b567d1ff00078feeffce97982ee70697baf3b"
+    },
+    {
+      "path": "/Users/ember/dev/minidregg/Kernel/CapabilityDelegationReceiver.lean",
+      "sha256": "dba2c574c1428efaaae1d8a2c57a61eeadec9d03c528ce080b7686c154b9f158"
+    },
+    {
+      "path": "/Users/ember/dev/minidregg/Kernel/ResourceBirthReceiver.lean",
+      "sha256": "040d6cf31fb75b2e358d2c88eeae036e72870981ed6a233f3b533f2ddd080c8b"
+    },
+    {
+      "path": "/Users/ember/dev/minidregg/Kernel/ResourceBirthPolicyController.lean",
+      "sha256": "922b7515e0f447f1bc21c79f262910ec3e156cafd103696cbbb4ddb41dc51a0b"
+    },
+    {
+      "path": "/Users/ember/dev/minidregg/Kernel/ResourceBirthController.lean",
+      "sha256": "ae96c1984fc369ba811785a677b9a228c59c70460712a1328d754a566fc57522"
+    },
+    {
+      "path": "/Users/ember/dev/minidregg/Kernel/PolicyInstallController.lean",
+      "sha256": "aa967d1de89d9b6c80706e8c601e99a4833663be9222f87b075a9bc0a056663d"
+    },
+    {
+      "path": "/Users/ember/dev/minidregg/Kernel/PolicyInstallReceiver.lean",
+      "sha256": "bad9205811909d96444c47935b48233ebb6183d76ae4cd7eb801de8267bd3c45"
+    },
+    {
+      "path": "/Users/ember/dev/minidregg/Compiler/DurableReceiverIO.lean",
+      "sha256": "af1a3cf40cbfdaf09bcb7cbbd8fbe22d6962ebb4bd49a7dfc91943ad9bd16df0"
+    },
+    {
+      "path": "/Users/ember/dev/minidregg/Compiler/CanonicalRuntimeProfile.lean",
+      "sha256": "a53d209861edeef73c8625a466a602dd27e6a1385aad2c9bf27eb92770c8a584"
+    },
+    {
+      "path": "/Users/ember/dev/minidregg/Compiler/CredentialAuthorityPolicyRegistry.lean",
+      "sha256": "588cffbd7445322e94df10ba536a092153dd70eef58c0d72965bbb1d05dc790a"
+    },
+    {
+      "path": "/Users/ember/dev/minidregg/Compiler/CanonicalPolicyAdmission.lean",
+      "sha256": "8264a54ed19b730f1af0f269880929caf217630f66cc3c7ff8126f50fae746f2"
+    },
+    {
+      "path": "/Users/ember/dev/minidregg/Compiler/CredentialAuthorityDomain.lean",
+      "sha256": "480bf3042822cb3e304ef76c19387ea376c2b31094b22f8da2a1a5bf0a860079"
+    },
+    {
+      "path": "/Users/ember/dev/minidregg/Compiler/CredentialAuthorityDomainReceiver.lean",
+      "sha256": "0181dafd83f16bb67f9c9c9aacf536ffd4f2d8fff9830e9f0928ad4470d457c9"
+    },
+    {
+      "path": "/Users/ember/dev/minidregg/Theory/TypedAuthorization.lean",
+      "sha256": "2f28c931b779455b93a657f5ca5a4870aa3af998e92f791e13bed032e217085f"
+    },
+    {
+      "path": "/Users/ember/dev/minidregg/Theory/CredentialAuthorityFamily.lean",
+      "sha256": "92110d1550c1298cce3ad7eceeb899b7352240791893d43688af97b84d1d7574"
+    },
+    {
+      "path": "/Users/ember/dev/minidregg/Theory/CredentialAuthorityState.lean",
+      "sha256": "12dec5243b7c412b077ce6a52ca50b9dc4b5a7be4faf5ebc1ccbd741fcc6a9f4"
+    },
+    {
+      "path": "/Users/ember/dev/minidregg/Theory/CredentialAuthorityEffects.lean",
+      "sha256": "eb5c1d37900889047aa8cf8089d4f877d6f8b16fd3a747e736a48677d07fbd0b"
+    },
+    {
+      "path": "/Users/ember/dev/minidregg/Theory/CredentialLineageAdmission.lean",
+      "sha256": "da0a6cdd306a4fef71960475816fb0612824c15c8254bc1d6931e996a34f14cb"
+    },
+    {
+      "path": "/private/tmp/minidregg-credential-signature-verifier-target/release/minidregg-credential-signature-verifier",
+      "sha256": "3cac3584c9bcf46bf54d19d298cadd568b24df57e19fecd9dfca19dbaee700ad"
+    },
+    {
+      "path": "/private/tmp/minidregg-credential-signature-verifier-target/release/examples/sign-probe",
+      "sha256": "3a2ee794ed7abd35a75baf2394bb84b1bb8382a86348a0a14bc4ae66204f17c1"
+    },
+    {
+      "path": "/Users/ember/dev/minidregg/native/hyperdocument-link-sqlite-store/target/release/minidregg-link-sqlite-store",
+      "sha256": "6c716da59969563cb9ddbe71a25370bbe9db8de13670fabaac5abe8a2ed42a03"
+    }
+  ],
+  "source_compile": {
+    "command": "LEAN_NUM_THREADS=2 lake env lean scripts/probe-born-resource-invocation.lean",
+    "exit_code": 0,
+    "log": "/tmp/dregg-resume-born-joined-compile.log"
+  },
+  "native_status": "PASS",
+  "native_log": "/tmp/dregg-resume-born-joined-native.log",
+  "scope": "Actual source-generated birth, two rule replacements keep grants, authorized narrower delegation, Bob invocation, exact SQLite reopen and historical replay. FixtureZMod65537/scalar15 and public test keys.",
+  "preserved_pre_factor_controller": "/tmp/dregg-declared-before-history-codec.lean",
+  "concurrent_source_note": "Birth review owns strict signed-ingress codec factor in DeclaredResourceController. Running witness loaded pre-factor emitted controller, whose exact source is preserved. No admission/receiving changes; final byte equality theorem/check recorded separately.",
+  "finished_at_utc": "2026-09-18T07:23:50.195466+00:00",
+  "observed_elapsed_seconds": 535.097471,
+  "native_exit_code": 0,
+  "native_session_id": 30566,
+  "native_log_sha256": "03e6b034a8f967ab32f9655c5ea504d7f7cf959011f47ff31d93fd578ae7da20",
+  "post_run_source_changes": [
+    {
+      "path": "/Users/ember/dev/minidregg/Kernel/DeclaredResourceController.lean",
+      "captured_sha256": "ca22fd70077620c6bc16990ca2eb7537d9eb12c3c217b921adc75636b3a26918",
+      "current_sha256": "85a807c067eab31f5710044e7d808e83a51823b77e07c4428aacec07b2bd80f0"
+    }
+  ]
+}

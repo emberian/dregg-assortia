@@ -1,0 +1,19 @@
+{
+  "captured_utc": "2026-09-18T07:24:41.431694+00:00",
+  "status": "UNAPPLIED / UNCOMPILED / UNRUN; draft paused at user wind-down",
+  "files": {
+    "/tmp/dregg-wide-auth-test-draft/lean_init_lifecycle.rs": "b8e4339db7e80e2ec37d9a2484a08f5eeb2c51b161a8f90c5a5b604f2d508e38",
+    "/tmp/dregg-wide-auth-test-draft/support/direct_auth_cases.rs": "54d526f764c618dc9e6714c69b22bc7a86e8ea69228d70ac2b8377098935666a",
+    "/tmp/dregg-wide-auth-test-draft/unit-tests.rs": "1c797160e40617c59554d4e9ab64dd80ba0980715b0f4eec8c7f52a1311e1068"
+  },
+  "depends_on": "/tmp/dregg-direct-auth-width-20260918",
+  "missing_integration": [
+    "Apply wide ABI owned regions from hotspot agent after reviewed checkpoint.",
+    "Pin all seven wide auth constructors and dregg_d_auth_encode_w in build.rs.",
+    "Add cfg(test) imp::encode_auth_for_test wrapper invoking existing build_auth_w then owned string decode, held inside with_executor.",
+    "Apply test support module, lifecycle additions, and append unit-tests.rs to lean_direct.rs without replacing concurrent initialization edits.",
+    "Check fixtures compile and execute under real native Lean.",
+    "Implement separately approved length-aware UTF-8/NUL transport plus both JSON escaping/decoder changes; not present in this draft."
+  ],
+  "test_scope": "9 digest coordinates x valid/high-192-bit mutation x direct/selected-OneOf = 36 cases. Eight consumed coordinates must refuse mutated input. Existing stealth ephemeralPk is ignored by reference portal, so its mutation must preserve transport and direct/JSON parity without refusal. Existing Crypto.Reference echo assumptions are fixture semantics, not cryptographic security evidence."
+}

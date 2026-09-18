@@ -1,0 +1,8 @@
+Compiler/NativeHostCodec.lean:45:45: error: Application type mismatch: The argument
+  decoded
+has type
+  (framed frame stream).decode bytes = some value
+but is expected to have type
+  (ResourceBirthCodec.strictCodec (framed frame stream)).decode bytes = some value
+in the application
+  ResourceBirthCodec.strictCodec_canonical (framed frame stream) decoded

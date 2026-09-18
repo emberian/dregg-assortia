@@ -1,0 +1,57 @@
+PASS born resource: actual public-test-key signer
+PASS born resource: actual public-test-key signer
+PASS born resource: newborn absent before actual birth
+PASS born resource: no initial owner or policy-control grant
+PASS born resource: newborn policy source absent before actual birth
+PASS born resource: actual public-test-key signer
+PASS born resource: actual public-test-key signer
+PASS born resource: actual public-test-key signer
+PASS born resource: actual public-test-key signer
+PASS born resource: actual public-test-key signer
+PASS born resource: actual public-test-key signer
+PASS born resource: actual public-test-key signer
+PASS born resource: actual public-test-key signer
+PASS born resource: actual public-test-key signer
+PASS born resource: actual public-test-key signer
+PASS born resource: rejected birth leaves exact storage image unchanged
+PASS born resource: actual birth issued the exact ordinary and policy-control roles
+PASS born resource: actual birth persisted the exact initial policy source
+PASS born resource: actual birth consumed its shared authority marker
+PASS born resource: creation fee is an actual conserved Book debit and credit
+PASS born resource: fee admission lane charged the same amount
+PASS born resource: exact birth retry returns original receipt
+PASS born resource: birth retry performs no write, fee or admission charge
+PASS born resource: changed payload retains the source creator/nonce identity
+PASS born resource: changed-payload replay conflict preserves the exact born image
+PASS born resource: actual public-test-key signer
+PASS born resource: actual public-test-key signer
+PASS born resource: unrelated signer refusal preserves the actual born image
+PASS born resource: actual public-test-key signer
+PASS born resource: actual public-test-key signer
+PASS born resource: actual born owner changed the actual object
+PASS born resource: ordinary object invocation does not manufacture or repeat a Book fee
+PASS born resource: birth receipt survives later invocation
+PASS born resource: expired-key and expired-owner replay returns original birth receipt
+PASS born resource: historical and expired-credential retries preserve all storage, fees and admission lanes
+PASS born resource: actual public-test-key signer
+PASS born resource: rule update changes revision while preserving exact owner/control grants and generation
+PASS born resource: actual public-test-key signer
+PASS born resource: actual public-test-key signer
+PASS born resource: new-rule refusal preserves exact durable image
+PASS born resource: actual public-test-key signer
+PASS born resource: same original control grant performs second rule replacement
+PASS born resource: actual public-test-key signer
+PASS born resource: delegation refusals never create child or consume marker
+PASS born resource: exact delegated child retains full source-derived origin and canonical parent
+PASS born resource: actual public-test-key signer
+PASS born resource: actual public-test-key signer
+PASS born resource: wrong recipient signature preserves storage
+PASS born resource: actual public-test-key signer
+PASS born resource: actual public-test-key signer
+PASS born resource: Bob's native invocation changed actual born object under revision2
+PASS born resource: actual public-test-key signer
+PASS born resource: delegation original receipt after expiry
+PASS born resource: original rule-update receipt after later updates and expiry
+PASS born resource: original rule-update receipt after later updates and expiry
+PASS born resource: all historical receipts and payload-conflict refusals preserve final exact image
+PASS born resource: native paid birth -> original owner invocation -> two rule replacements preserve owner/control grants and generation -> new law refuses old owner operation -> actual parent-authorized narrower Alice-to-Bob delegation -> Bob fresh signature/current revision invocation -> reopen; refused inputs and exact historical retries after expiry preserve durable image. Test keys and ZMod65537/scalar15 are fixture parameters.

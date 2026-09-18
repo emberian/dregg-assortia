@@ -1,0 +1,21 @@
+{
+  "captured": "2026-09-18T07:18:21.424703+00:00",
+  "scope": "Frozen nine-file executor-family and two game fixture separations; all named source hashes exactly match combined receiving build and 11-test PASS. Full/PQ/Hermes runtime remains in progress, no wide auth ABI applied.",
+  "files": {
+    "dregg-lean-ffi/build.rs": "dfc277eef21cda2ab4479f53e1610667280722e7aea514a1519be9df7ab995c8",
+    "dregg-lean-ffi/src/lean_direct.rs": "036e74fe624c2763082c0c20ecdc0d64e0c0e3046280a22b6d7e89363e81b91a",
+    "dregg-lean-ffi/src/lean_init.c": "822e2ff9c57084baa82c69b8a88df2a83dfba83ae2d02907f8495777e821b9e2",
+    "dregg-lean-ffi/src/lib.rs": "af5c5a9a26835318b87211e022b6f42a7f2ca7080ebef785ca7ca40a83958af0",
+    "dregg-lean-ffi/tests/lean_init_lifecycle.rs": "5280a6720ef591b87a12f94438589a99d956ac7c1b11cc1dafbe204e110a1874",
+    "metatheory/Dregg2/Games/PathOfAngels/NetworkJudge.lean": "910623f654b0221fa401de004d6a8ef9a2a376681eceb5dfe4df84dd68f161ad",
+    "metatheory/Dregg2/Games/PathOfAngels/NetworkJudgeFixtures.lean": "0b90ecc7c1d668dd55d0264e43d925ab2b5173b7eb553000823f3efe8adf47b1",
+    "metatheory/Dregg2/Games/PathOfAngels/DeckDescent.lean": "7fe7c6cbdbfaa67efffa0bc64bf018294c6d301ce8d5948b7991a2568e211cd3",
+    "metatheory/Dregg2/Games/PathOfAngels/DeckDescentFixtures.lean": "6bcd28e56954da20416c74270bed61c490a8ba4468b001470c6396040beada30"
+  },
+  "evidence": [
+    "/tmp/dregg-resume-fixture-closure-build-20260918.log",
+    "/tmp/dregg-resume-fresh-fixture-initializers-20260918.json",
+    "/tmp/dregg-resume-executor-family-fast-20260918.log",
+    "/tmp/dregg-resume-executor-family-remote-source-20260918.json"
+  ]
+}

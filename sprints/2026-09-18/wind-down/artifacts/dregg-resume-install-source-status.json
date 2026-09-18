@@ -1,0 +1,19 @@
+{
+  "recorded_at": "2026-09-18T06:46:06.172101+00:00",
+  "status": "source edited; compilation waiting for coordinated foundation, authority and admission closure",
+  "sources": {
+    "Kernel/PolicyInstallController.lean": "c1ae8df81dd049420c4439a440749dce5acc87b56e6b8aae9add1d90788e5fe5",
+    "Kernel/PolicyInstallReceiver.lean": "bad9205811909d96444c47935b48233ebb6183d76ae4cd7eb801de8267bd3c45",
+    "scripts/probe-policy-install-receiver.lean": "e8558180da296de45a8f1b3eb3df41982e65bdf3ae2ff5ae1c46fb2a181370a4"
+  },
+  "owned_files": [
+    "Kernel/PolicyInstallController.lean",
+    "Kernel/PolicyInstallReceiver.lean",
+    "scripts/probe-policy-install-receiver.lean"
+  ],
+  "expected_checks": [
+    "controller generation + capability frame axioms",
+    "physical receiver complete authority/source and pinned CAS integration",
+    "native SQLite two installs plus retained owner mutation/new-law refusal/replay"
+  ]
+}

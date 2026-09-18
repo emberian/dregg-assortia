@@ -1,0 +1,106 @@
+{
+  "captured_at": "2026-09-18T07:01:03.072882+00:00",
+  "owner": "/root/resume_authority",
+  "runtime_scope": "Physical and typed source checks only. Native born/install/delegation/host journey owned by other lanes, not claimed here; full umbrella pending.",
+  "files": [
+    {
+      "path": "Compiler/TypedAuthorizationRequestCodec.lean",
+      "sha256": "a90eb71fff82daded92ab69d288bb42b3ef1828cb057db9c611eb73518aa28f5",
+      "status": "green; pure source projection moved down by signatures and exact aliases reemitted",
+      "log": "/tmp/dregg-resume-signatures-TypedAuthorizationRequestCodec-attempt2.log",
+      "log_sha256": "f4af573eb80a9dceec665c042d3bca4ecacdffd7dcabf97431e62c70b2e17bee"
+    },
+    {
+      "path": "Compiler/CredentialAuthorityEntryCodec.lean",
+      "sha256": "758272f19c71952ce348c43dcad295a50859a3ab43c265de6bd017417abc85fa",
+      "status": "green",
+      "log": "/tmp/dregg-resume-CredentialAuthorityEntryCodec.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Compiler/CredentialAuthorityStateCodec.lean",
+      "sha256": "193152a0c7fb3a4c54fb452206f8c0cbcfde6efcac4be1f5e8d1d9f385efd7ea",
+      "status": "green",
+      "log": "/tmp/dregg-resume-CredentialAuthorityStateCodec.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Compiler/CredentialAuthorityPageMaterializer.lean",
+      "sha256": "7ff5e8866581752819a2b7682d289efc31425eaa7ad8f82109b69d7fff10eb98",
+      "status": "green exact current source",
+      "log": "/tmp/dregg-resume-CredentialAuthorityPageMaterializer-current.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Compiler/CredentialAuthorityDomain.lean",
+      "sha256": "480bf3042822cb3e304ef76c19387ea376c2b31094b22f8da2a1a5bf0a860079",
+      "status": "green exact current source",
+      "log": "/tmp/dregg-resume-CredentialAuthorityDomain-current.log",
+      "log_sha256": "3a9ca5b7fca2bb7d081da05e37fbadd0298d05e7b91b520309fd6a03826cc499"
+    },
+    {
+      "path": "Compiler/CredentialAuthorityDomainReceiver.lean",
+      "sha256": "0181dafd83f16bb67f9c9c9aacf536ffd4f2d8fff9830e9f0928ad4470d457c9",
+      "status": "green reemitted with current declared page dependency",
+      "log": "/tmp/dregg-resume-CredentialAuthorityDomainReceiver-current.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Compiler/CredentialAuthorityPageProbe.lean",
+      "sha256": "5adc307f7a9446049a3616e69e3d603d8b586321e4be1e9dabc769b0a71ac13b",
+      "status": "green source; native IO main not executed",
+      "log": "/tmp/dregg-resume-CredentialAuthorityPageProbe.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Compiler/CanonicalCellRegistry.lean",
+      "sha256": "83ccf26ffdb94dcbb3e643caaf16b3dcd5b568ff8610a4531d711a65f7679e4d",
+      "status": "green reemitted with current declared page dependency",
+      "log": "/tmp/dregg-resume-CanonicalCellRegistry-current.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Compiler/BoundedPageExtensionCatalog.lean",
+      "sha256": "5d74e57121061c1b4949f36d35d5abd5f9b8ab575673b537e2b5f88f992049c4",
+      "status": "green",
+      "log": "/tmp/dregg-resume-BoundedPageExtensionCatalog.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Theory/CanonicalAuthorityProjection.lean",
+      "sha256": "91573fc2dd4514f0041c133edfda4d9ba4083da4eb1d43fb6424dd3c7fdf9875",
+      "status": "green",
+      "log": "/tmp/dregg-resume-CanonicalAuthorityProjection.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Theory/DeployedMaterializerWitness.lean",
+      "sha256": "25bd2275f4f1426088ca6752abc0525289d35e50cacd70ae8a76f126b6a05832",
+      "status": "green",
+      "log": "/tmp/dregg-resume-DeployedMaterializerWitness.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Compiler/BoundedPageSchemaUpgrade.lean",
+      "sha256": "bc4dd453c8ebe3d40eea217fdde395e4db2d278cc352c79e391706ee22047461",
+      "status": "comment-only next authority version4\u21925 label; uncompiled this wave",
+      "log": null,
+      "log_sha256": null
+    },
+    {
+      "path": "Assurance/BoundedPageSchemaUpgradeCutover.lean",
+      "sha256": "3e5e8ad8b1f151d194efdc68f7be80bf93f24e444ec357ac5b0ed98c229e6caa",
+      "status": "comment-only next authority version4\u21925 label; uncompiled this wave",
+      "log": null,
+      "log_sha256": null
+    }
+  ],
+  "provenance": "Checks used LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/<module>.olean <module>.lean, explicit exit0 observed. Named DomainReceiver attempt2 failure and current pass logs are retained separately. Routine earlier Page/Domain diagnostic logs were replaced during iteration; the tool transcript retains those initial diagnostics.",
+  "foreign_module_emitted": {
+    "path": "Theory/ResourceBirthAuthority.lean",
+    "sha256": "a2451697d126ef607752618fc6c6866cf35098877945701e222a427e827d9ba5",
+    "log": "/tmp/dregg-resume-ResourceBirthAuthority-attempt2.log",
+    "exit": 0
+  },
+  "frozen": true
+}

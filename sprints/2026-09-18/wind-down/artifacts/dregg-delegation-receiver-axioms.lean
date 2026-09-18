@@ -1,0 +1,15 @@
+import Kernel.CapabilityDelegationReceiver
+#print axioms Minidregg.Kernel.CapabilityDelegationController.Accepted.parent_authorized
+#print axioms Minidregg.Kernel.CapabilityDelegationController.Accepted.post_exact
+#print axioms Minidregg.Kernel.CapabilityDelegationController.Accepted.child_lineage
+#print axioms Minidregg.Kernel.CapabilityDelegationController.Accepted.policy_evaluated_actual_post
+#print axioms Minidregg.Kernel.CapabilityDelegationReceiver.accepted_authority_post
+#print axioms Minidregg.Kernel.CapabilityDelegationReceiver.installed_write_bytes
+#print axioms Minidregg.Kernel.CapabilityDelegationReceiver.unchanged_authority_shard_unwritten
+#print axioms Minidregg.Kernel.CapabilityDelegationReceiver.installed_authority_pages
+#print axioms Minidregg.Kernel.CapabilityDelegationReceiver.installed_authority_catalogue
+#print axioms Minidregg.Kernel.CapabilityDelegationReceiver.installed_target_unchanged
+#print axioms Minidregg.Kernel.CapabilityDelegationReceiver.installed_source_unchanged
+#print axioms Minidregg.Kernel.CapabilityDelegationReceiver.no_partial_commit
+#print axioms Minidregg.Kernel.CapabilityDelegationReceiver.replay_only_original
+#print axioms Minidregg.Kernel.CapabilityDelegationReceiver.intent_authority_marker

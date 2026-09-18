@@ -1,0 +1,20 @@
+[
+  {
+    "source": "Theory/CanonicalResourceBookInvariant.lean",
+    "sha256": "21bc2c3ef99964a10a832bc9b0ae699dff012f73f122dddf7a9f7d5ad2baf96d",
+    "sha256_after": "21bc2c3ef99964a10a832bc9b0ae699dff012f73f122dddf7a9f7d5ad2baf96d",
+    "stable": true,
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-o",
+      ".lake/build/lib/lean/Theory/CanonicalResourceBookInvariant.olean",
+      "Theory/CanonicalResourceBookInvariant.lean"
+    ],
+    "exit": 0,
+    "seconds": 3.991,
+    "log": "/tmp/dregg-book-Theory-CanonicalResourceBookInvariant-21bc2c3ef999-1789716121205426000.log",
+    "output": "/Users/ember/dev/minidregg/.lake/build/lib/lean/Theory/CanonicalResourceBookInvariant.olean"
+  }
+]

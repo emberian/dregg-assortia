@@ -1,0 +1,158 @@
+*** Begin Patch
+*** Update File: dregg-lean-ffi/src/marshal.rs
+@@
+     fn hex32(&mut self) -> Result<u64, String> {
+@@
+         self.i += 64;
+         Ok(acc)
+     }
++    /// Parse the four hex digits after a JSON `\\u` escape.
++    fn unicode_escape_unit(&mut self) -> Result<u16, String> {
++        if self.i + 4 > self.s.len() {
++            return Err("incomplete unicode escape".into());
++        }
++        let mut unit = 0u16;
++        for _ in 0..4 {
++            let digit = match self.s[self.i] {
++                b'0'..=b'9' => (self.s[self.i] - b'0') as u16,
++                b'a'..=b'f' => (self.s[self.i] - b'a' + 10) as u16,
++                b'A'..=b'F' => (self.s[self.i] - b'A' + 10) as u16,
++                other => return Err(format!("non-hex digit {other:?} in unicode escape")),
++            };
++            unit = unit * 16 + digit;
++            self.i += 1;
++        }
++        Ok(unit)
++    }
+     fn string(&mut self) -> Result<String, String> {
+         self.lit("\"")?;
+         let mut out = String::new();
+         loop {
+             match self.peek() {
+@@
+                 Some(b'\\') => {
+                     self.i += 1;
+-                    match self.peek() {
+-                        Some(b'"') => out.push('"'),
+-                        Some(b'\\') => out.push('\\'),
+-                        other => return Err(format!("bad escape {other:?}")),
+-                    }
+-                    self.i += 1;
++                    let escape = self
++                        .peek()
++                        .ok_or_else(|| "unterminated escape".to_string())?;
++                    self.i += 1;
++                    match escape {
++                        b'"' => out.push('"'),
++                        b'\\' => out.push('\\'),
++                        b'/' => out.push('/'),
++                        b'b' => out.push('\u{0008}'),
++                        b'f' => out.push('\u{000c}'),
++                        b'n' => out.push('\n'),
++                        b'r' => out.push('\r'),
++                        b't' => out.push('\t'),
++                        b'u' => {
++                            let first = self.unicode_escape_unit()?;
++                            let scalar = if (0xd800..=0xdbff).contains(&first) {
++                                if self.s.get(self.i..self.i + 2) != Some(&b"\\u"[..]) {
++                                    return Err("high surrogate without low surrogate".into());
++                                }
++                                self.i += 2;
++                                let second = self.unicode_escape_unit()?;
++                                if !(0xdc00..=0xdfff).contains(&second) {
++                                    return Err(
++                                        "high surrogate followed by non-low surrogate".into()
++                                    );
++                                }
++                                0x10000
++                                    + (((first as u32) - 0xd800) << 10)
++                                    + ((second as u32) - 0xdc00)
++                            } else if (0xdc00..=0xdfff).contains(&first) {
++                                return Err("lone low surrogate".into());
++                            } else {
++                                first as u32
++                            };
++                            out.push(
++                                char::from_u32(scalar)
++                                    .ok_or_else(|| "invalid unicode scalar".to_string())?,
++                            );
++                        }
++                        other => return Err(format!("bad escape {other:?}")),
++                    }
+                 }
+-                Some(c) => {
+-                    out.push(c as char);
+-                    self.i += 1;
++                Some(c) if c < 0x20 => {
++                    return Err(format!("unescaped control byte {c:#04x} in string"));
++                }
++                Some(_) => {
++                    // `Parser` is built from `&str`, so the remainder is valid UTF-8. Advance by
++                    // one scalar rather than casting one byte at a time (which corrupts every
++                    // non-ASCII field name returned by Lean).
++                    let rest = std::str::from_utf8(&self.s[self.i..])
++                        .map_err(|e| format!("invalid UTF-8 in string: {e}"))?;
++                    let c = rest
++                        .chars()
++                        .next()
++                        .ok_or_else(|| "unterminated string".to_string())?;
++                    out.push(c);
++                    self.i += c.len_utf8();
+                 }
+                 None => return Err("unterminated string".into()),
+             }
+         }
+@@
+ }
++
++#[cfg(test)]
++mod json_string_parser_tests {
++    use super::Parser;
++
++    fn parse_string(input: &str) -> Result<String, String> {
++        let mut parser = Parser::new(input);
++        let value = parser.string()?;
++        parser.expect_eof()?;
++        Ok(value)
++    }
++
++    #[test]
++    fn preserves_raw_utf8_and_existing_wire_escapes() {
++        assert_eq!(
++            parse_string(r#""café 猫 🧁 \"quoted\" \\ path""#).unwrap(),
++            "café 猫 🧁 \"quoted\" \\ path"
++        );
++    }
++
++    #[test]
++    fn decodes_json_escapes_and_surrogate_pairs() {
++        assert_eq!(
++            parse_string(r#""solidus:\/ controls:\b\f\n\r\t bmp:\u03bb astral:\uD83E\uDDC1""#)
++                .unwrap(),
++            "solidus:/ controls:\u{0008}\u{000c}\n\r\t bmp:λ astral:🧁"
++        );
++    }
++
++    #[test]
++    fn rejects_malformed_or_unterminated_strings() {
++        for malformed in [
++            r#""\x""#,
++            r#""\u12g4""#,
++            r#""\u123""#,
++            r#""\uD83E""#,
++            r#""\uD83E\u0041""#,
++            r#""\uDDC1""#,
++            "\"raw\ncontrol\"",
++            "\"unterminated",
++            "\"trailing\\",
++        ] {
++            assert!(
++                parse_string(malformed).is_err(),
++                "malformed string unexpectedly parsed: {malformed:?}"
++            );
++        }
++    }
++}
+ 
+ // ---- value/cell/cap/side-table parsers (mirror parseValueW / parseCellsW / ...) ----
+*** End Patch

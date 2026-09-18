@@ -1,0 +1,393 @@
+[
+  {
+    "source": "Theory/CredentialLineageAdmission.lean",
+    "sha256": "da0a6cdd306a4fef71960475816fb0612824c15c8254bc1d6931e996a34f14cb",
+    "sha256_after": "da0a6cdd306a4fef71960475816fb0612824c15c8254bc1d6931e996a34f14cb",
+    "stable": true,
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-o",
+      ".lake/build/lib/lean/Theory/CredentialLineageAdmission.olean",
+      "Theory/CredentialLineageAdmission.lean"
+    ],
+    "cwd": "/Users/ember/dev/minidregg",
+    "exit": 0,
+    "seconds": 4.079,
+    "log": "/tmp/dregg-resume-admission-Theory-CredentialLineageAdmission-da0a6cdd306a.log",
+    "output": "/Users/ember/dev/minidregg/.lake/build/lib/lean/Theory/CredentialLineageAdmission.olean",
+    "env": {
+      "LEAN_NUM_THREADS": "2"
+    },
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "Assurance/CredentialDelegationLineageWitness.lean",
+    "sha256": "d34fdc1f17e2b949b1a9a272f9704d8f91e688445c7ae336a1487189c6b62380",
+    "sha256_after": "d34fdc1f17e2b949b1a9a272f9704d8f91e688445c7ae336a1487189c6b62380",
+    "stable": true,
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-o",
+      ".lake/build/lib/lean/Assurance/CredentialDelegationLineageWitness.olean",
+      "Assurance/CredentialDelegationLineageWitness.lean"
+    ],
+    "cwd": "/Users/ember/dev/minidregg",
+    "exit": 0,
+    "seconds": 4.24,
+    "log": "/tmp/dregg-resume-admission-Assurance-CredentialDelegationLineageWitness-d34fdc1f17e2.log",
+    "output": "/Users/ember/dev/minidregg/.lake/build/lib/lean/Assurance/CredentialDelegationLineageWitness.olean",
+    "env": {
+      "LEAN_NUM_THREADS": "2"
+    },
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "Assurance/CredentialDelegationLineageAudit.lean",
+    "sha256": "7a2c141fd07952f0f9557cce2e2f7af3a059a5722b9c9c27be51298cc93cbedc",
+    "sha256_after": "7a2c141fd07952f0f9557cce2e2f7af3a059a5722b9c9c27be51298cc93cbedc",
+    "stable": true,
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-o",
+      ".lake/build/lib/lean/Assurance/CredentialDelegationLineageAudit.olean",
+      "Assurance/CredentialDelegationLineageAudit.lean"
+    ],
+    "cwd": "/Users/ember/dev/minidregg",
+    "exit": 1,
+    "seconds": 1.38,
+    "log": null,
+    "output": "/Users/ember/dev/minidregg/.lake/build/lib/lean/Assurance/CredentialDelegationLineageAudit.olean",
+    "env": {
+      "LEAN_NUM_THREADS": "2"
+    },
+    "log_status": "Earlier runner reused a log path; this attempt output is retained only in the tool transcript. Exit/source/elapsed measurement remains original."
+  },
+  {
+    "source": "Assurance/CredentialDelegationLineageAudit.lean",
+    "sha256": "04e47d977df1cbdb5c33492cb5427b738f1eec6afa6b477a2a80d4f0720810fc",
+    "sha256_after": "04e47d977df1cbdb5c33492cb5427b738f1eec6afa6b477a2a80d4f0720810fc",
+    "stable": true,
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-o",
+      ".lake/build/lib/lean/Assurance/CredentialDelegationLineageAudit.olean",
+      "Assurance/CredentialDelegationLineageAudit.lean"
+    ],
+    "cwd": "/Users/ember/dev/minidregg",
+    "exit": 0,
+    "seconds": 3.902,
+    "log": "/tmp/dregg-resume-admission-Assurance-CredentialDelegationLineageAudit-04e47d977df1.log",
+    "output": "/Users/ember/dev/minidregg/.lake/build/lib/lean/Assurance/CredentialDelegationLineageAudit.olean",
+    "env": {
+      "LEAN_NUM_THREADS": "2"
+    },
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "Theory/PolicyInstall.lean",
+    "sha256": "bf53ebf39e33992b11813e35b4dd96821f328f943330b8721c0037a9c25b70ac",
+    "sha256_after": "bf53ebf39e33992b11813e35b4dd96821f328f943330b8721c0037a9c25b70ac",
+    "stable": true,
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-o",
+      ".lake/build/lib/lean/Theory/PolicyInstall.olean",
+      "Theory/PolicyInstall.lean"
+    ],
+    "cwd": "/Users/ember/dev/minidregg",
+    "exit": 0,
+    "seconds": 3.996,
+    "log": "/tmp/dregg-resume-admission-Theory-PolicyInstall-bf53ebf39e33.log",
+    "output": "/Users/ember/dev/minidregg/.lake/build/lib/lean/Theory/PolicyInstall.olean",
+    "env": {
+      "LEAN_NUM_THREADS": "2"
+    },
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "Kernel/MultiCellHyperedge.lean",
+    "sha256": "7a76220a45f56d32d887df64a08f181a391651481d141fca5934d8d926d92a9e",
+    "sha256_after": "7a76220a45f56d32d887df64a08f181a391651481d141fca5934d8d926d92a9e",
+    "stable": true,
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-o",
+      ".lake/build/lib/lean/Kernel/MultiCellHyperedge.olean",
+      "Kernel/MultiCellHyperedge.lean"
+    ],
+    "cwd": "/Users/ember/dev/minidregg",
+    "exit": 0,
+    "seconds": 4.39,
+    "log": "/tmp/dregg-resume-admission-Kernel-MultiCellHyperedge-7a76220a45f5.log",
+    "output": "/Users/ember/dev/minidregg/.lake/build/lib/lean/Kernel/MultiCellHyperedge.olean",
+    "env": {
+      "LEAN_NUM_THREADS": "2"
+    },
+    "log_sha256": "aa92c38a3cf70e9675b8180e87699ea037f30e7c361bc013641e80e435ad547d"
+  },
+  {
+    "source": "Compiler/CanonicalPolicyAdmission.lean",
+    "sha256": "8264a54ed19b730f1af0f269880929caf217630f66cc3c7ff8126f50fae746f2",
+    "sha256_after": "8264a54ed19b730f1af0f269880929caf217630f66cc3c7ff8126f50fae746f2",
+    "stable": true,
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-o",
+      ".lake/build/lib/lean/Compiler/CanonicalPolicyAdmission.olean",
+      "Compiler/CanonicalPolicyAdmission.lean"
+    ],
+    "cwd": "/Users/ember/dev/minidregg",
+    "exit": 0,
+    "seconds": 4.477,
+    "log": "/tmp/dregg-resume-admission-Compiler-CanonicalPolicyAdmission-8264a54ed19b.log",
+    "output": "/Users/ember/dev/minidregg/.lake/build/lib/lean/Compiler/CanonicalPolicyAdmission.olean",
+    "env": {
+      "LEAN_NUM_THREADS": "2"
+    },
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "Compiler/BoundedQuantifiedPolicyAdmission.lean",
+    "sha256": "b403caa703f0624a3d60a71dcaf60892866d280d3723219702ab1cc71ff8060f",
+    "sha256_after": "b403caa703f0624a3d60a71dcaf60892866d280d3723219702ab1cc71ff8060f",
+    "stable": true,
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-o",
+      ".lake/build/lib/lean/Compiler/BoundedQuantifiedPolicyAdmission.olean",
+      "Compiler/BoundedQuantifiedPolicyAdmission.lean"
+    ],
+    "cwd": "/Users/ember/dev/minidregg",
+    "exit": 0,
+    "seconds": 3.896,
+    "log": "/tmp/dregg-resume-admission-Compiler-BoundedQuantifiedPolicyAdmission-b403caa703f0.log",
+    "output": "/Users/ember/dev/minidregg/.lake/build/lib/lean/Compiler/BoundedQuantifiedPolicyAdmission.olean",
+    "env": {
+      "LEAN_NUM_THREADS": "2"
+    },
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "Kernel/CanonicalPolicyRegistry.lean",
+    "sha256": "c85e0fb993325fc882b6c1bd79266012af37c2ecc24e01ed0e7e7444cf696210",
+    "sha256_after": "c85e0fb993325fc882b6c1bd79266012af37c2ecc24e01ed0e7e7444cf696210",
+    "stable": true,
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-o",
+      ".lake/build/lib/lean/Kernel/CanonicalPolicyRegistry.olean",
+      "Kernel/CanonicalPolicyRegistry.lean"
+    ],
+    "cwd": "/Users/ember/dev/minidregg",
+    "exit": 0,
+    "seconds": 4.096,
+    "log": "/tmp/dregg-resume-admission-Kernel-CanonicalPolicyRegistry-c85e0fb99332.log",
+    "output": "/Users/ember/dev/minidregg/.lake/build/lib/lean/Kernel/CanonicalPolicyRegistry.olean",
+    "env": {
+      "LEAN_NUM_THREADS": "2"
+    },
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "Compiler/PolicyRecordCodec.lean",
+    "sha256": "7d620effcc4c33ff3e0d2d4adb703647912ef15088368eafd65a5a961fc47180",
+    "sha256_after": "7d620effcc4c33ff3e0d2d4adb703647912ef15088368eafd65a5a961fc47180",
+    "stable": true,
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-o",
+      ".lake/build/lib/lean/Compiler/PolicyRecordCodec.olean",
+      "Compiler/PolicyRecordCodec.lean"
+    ],
+    "cwd": "/Users/ember/dev/minidregg",
+    "exit": 0,
+    "seconds": 4.58,
+    "log": "/tmp/dregg-resume-admission-Compiler-PolicyRecordCodec-7d620effcc4c.log",
+    "output": "/Users/ember/dev/minidregg/.lake/build/lib/lean/Compiler/PolicyRecordCodec.olean",
+    "env": {
+      "LEAN_NUM_THREADS": "2"
+    },
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "Compiler/CredentialAuthorityPolicyRegistry.lean",
+    "sha256": "fe5cc8542f53d31480fc4e5c8de9fe9361842e22b1d2782f950276be016a9da8",
+    "sha256_after": "fe5cc8542f53d31480fc4e5c8de9fe9361842e22b1d2782f950276be016a9da8",
+    "stable": true,
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-o",
+      ".lake/build/lib/lean/Compiler/CredentialAuthorityPolicyRegistry.olean",
+      "Compiler/CredentialAuthorityPolicyRegistry.lean"
+    ],
+    "cwd": "/Users/ember/dev/minidregg",
+    "exit": 1,
+    "seconds": 5.01,
+    "log": null,
+    "output": "/Users/ember/dev/minidregg/.lake/build/lib/lean/Compiler/CredentialAuthorityPolicyRegistry.olean",
+    "env": {
+      "LEAN_NUM_THREADS": "2"
+    },
+    "log_status": "Earlier runner reused a log path; this attempt output is retained only in the tool transcript. Exit/source/elapsed measurement remains original."
+  },
+  {
+    "source": "Compiler/CredentialAuthorityPolicyRegistry.lean",
+    "sha256": "2e36e16b3a330c76023221dd8808d23b9b9dddcbb58f162c3ed40c5533b8cc07",
+    "sha256_after": "2e36e16b3a330c76023221dd8808d23b9b9dddcbb58f162c3ed40c5533b8cc07",
+    "stable": true,
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-o",
+      ".lake/build/lib/lean/Compiler/CredentialAuthorityPolicyRegistry.olean",
+      "Compiler/CredentialAuthorityPolicyRegistry.lean"
+    ],
+    "cwd": "/Users/ember/dev/minidregg",
+    "exit": 1,
+    "seconds": 5.348,
+    "log": null,
+    "output": "/Users/ember/dev/minidregg/.lake/build/lib/lean/Compiler/CredentialAuthorityPolicyRegistry.olean",
+    "env": {
+      "LEAN_NUM_THREADS": "2"
+    },
+    "log_status": "Earlier runner reused a log path; this attempt output is retained only in the tool transcript. Exit/source/elapsed measurement remains original."
+  },
+  {
+    "source": "Compiler/CredentialAuthorityPolicyRegistry.lean",
+    "sha256": "f79c3198e15ba38cb8bdf6dfd5ea3310ebea8ffbf7ee8170b521b3b10bb37e13",
+    "sha256_after": "f79c3198e15ba38cb8bdf6dfd5ea3310ebea8ffbf7ee8170b521b3b10bb37e13",
+    "stable": true,
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-o",
+      ".lake/build/lib/lean/Compiler/CredentialAuthorityPolicyRegistry.olean",
+      "Compiler/CredentialAuthorityPolicyRegistry.lean"
+    ],
+    "cwd": "/Users/ember/dev/minidregg",
+    "exit": 1,
+    "seconds": 12.781,
+    "log": null,
+    "output": "/Users/ember/dev/minidregg/.lake/build/lib/lean/Compiler/CredentialAuthorityPolicyRegistry.olean",
+    "env": {
+      "LEAN_NUM_THREADS": "2"
+    },
+    "log_status": "Earlier runner reused a log path; this attempt output is retained only in the tool transcript. Exit/source/elapsed measurement remains original."
+  },
+  {
+    "source": "Compiler/CredentialAuthorityPolicyRegistry.lean",
+    "sha256": "15de60b8e8a1d2f0f810520c57793bcfb48beff9dd3017fb07eb7243ecf595c7",
+    "sha256_after": "15de60b8e8a1d2f0f810520c57793bcfb48beff9dd3017fb07eb7243ecf595c7",
+    "stable": true,
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-o",
+      ".lake/build/lib/lean/Compiler/CredentialAuthorityPolicyRegistry.olean",
+      "Compiler/CredentialAuthorityPolicyRegistry.lean"
+    ],
+    "cwd": "/Users/ember/dev/minidregg",
+    "exit": 1,
+    "seconds": 12.385,
+    "log": null,
+    "output": "/Users/ember/dev/minidregg/.lake/build/lib/lean/Compiler/CredentialAuthorityPolicyRegistry.olean",
+    "env": {
+      "LEAN_NUM_THREADS": "2"
+    },
+    "log_status": "Earlier runner reused a log path; this attempt output is retained only in the tool transcript. Exit/source/elapsed measurement remains original."
+  },
+  {
+    "source": "Compiler/CredentialAuthorityPolicyRegistry.lean",
+    "sha256": "d8cc39a696c91b90150572e189d9b586b51d37e396534fb6a1f9ff0f9c4ea74c",
+    "sha256_after": "d8cc39a696c91b90150572e189d9b586b51d37e396534fb6a1f9ff0f9c4ea74c",
+    "stable": true,
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-o",
+      ".lake/build/lib/lean/Compiler/CredentialAuthorityPolicyRegistry.olean",
+      "Compiler/CredentialAuthorityPolicyRegistry.lean"
+    ],
+    "cwd": "/Users/ember/dev/minidregg",
+    "exit": 1,
+    "seconds": 4.335,
+    "log": null,
+    "output": "/Users/ember/dev/minidregg/.lake/build/lib/lean/Compiler/CredentialAuthorityPolicyRegistry.olean",
+    "env": {
+      "LEAN_NUM_THREADS": "2"
+    },
+    "log_status": "Earlier runner reused a log path; this attempt output is retained only in the tool transcript. Exit/source/elapsed measurement remains original."
+  },
+  {
+    "source": "Compiler/CredentialAuthorityPolicyRegistry.lean",
+    "sha256": "588cffbd7445322e94df10ba536a092153dd70eef58c0d72965bbb1d05dc790a",
+    "sha256_after": "588cffbd7445322e94df10ba536a092153dd70eef58c0d72965bbb1d05dc790a",
+    "stable": true,
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-o",
+      ".lake/build/lib/lean/Compiler/CredentialAuthorityPolicyRegistry.olean",
+      "Compiler/CredentialAuthorityPolicyRegistry.lean"
+    ],
+    "cwd": "/Users/ember/dev/minidregg",
+    "exit": 0,
+    "seconds": 4.438,
+    "log": "/tmp/dregg-resume-admission-Compiler-CredentialAuthorityPolicyRegistry-588cffbd7445.log",
+    "output": "/Users/ember/dev/minidregg/.lake/build/lib/lean/Compiler/CredentialAuthorityPolicyRegistry.olean",
+    "env": {
+      "LEAN_NUM_THREADS": "2"
+    },
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "Assurance/CredentialSourceAdmissionAudit.lean",
+    "sha256": "a3846958c6fbb5bde15765d441c0e6aec53632b463633e3ee88fdd2a449d249f",
+    "sha256_after": "a3846958c6fbb5bde15765d441c0e6aec53632b463633e3ee88fdd2a449d249f",
+    "stable": true,
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-o",
+      ".lake/build/lib/lean/Assurance/CredentialSourceAdmissionAudit.olean",
+      "Assurance/CredentialSourceAdmissionAudit.lean"
+    ],
+    "cwd": "/Users/ember/dev/minidregg",
+    "exit": 0,
+    "seconds": 3.771,
+    "log": "/tmp/dregg-resume-admission-Assurance-CredentialSourceAdmissionAudit-a3846958c6fb.log",
+    "output": "/Users/ember/dev/minidregg/.lake/build/lib/lean/Assurance/CredentialSourceAdmissionAudit.olean",
+    "env": {
+      "LEAN_NUM_THREADS": "2"
+    },
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

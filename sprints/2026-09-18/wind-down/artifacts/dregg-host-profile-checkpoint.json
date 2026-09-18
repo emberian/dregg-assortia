@@ -1,0 +1,46 @@
+{
+  "capturedAt": "2026-09-18T07:07:33.951692+00:00",
+  "scope": "Four source modules emitted with LEAN_NUM_THREADS=2. No linked host or complete client journey claim.",
+  "checks": [
+    {
+      "source": "Compiler/BabyBear.lean",
+      "sha256": "7d09c5f5824f93c098716e8fe9966ffabe6c565bdd5155904c6111f5ce8d9ea2",
+      "command": "LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Compiler/BabyBear.olean Compiler/BabyBear.lean",
+      "exitCode": 0,
+      "artifact": "/Users/ember/dev/minidregg/.lake/build/lib/lean/Compiler/BabyBear.olean",
+      "artifactSha256": "f872e4ec9364cef05f33383e103ee1a1d0479d7a84a641ce396bf27065e929bf",
+      "log": "/tmp/dregg-host-BabyBear-attempt2.log",
+      "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "Compiler/EmitSerialize.lean",
+      "sha256": "3b69d7f27e883d92aaee1d81e8ed3044479722185ddd98b2504da2c703404db3",
+      "command": "LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Compiler/EmitSerialize.olean Compiler/EmitSerialize.lean",
+      "exitCode": 0,
+      "artifact": "/Users/ember/dev/minidregg/.lake/build/lib/lean/Compiler/EmitSerialize.olean",
+      "artifactSha256": "e166b7809b79d362a8a849861d7f04e4a8988d0f4e6d23418603fdcad15e967b",
+      "log": "/tmp/dregg-host-EmitSerialize.log",
+      "logSha256": "e3fda8698296d4be95bd4600f174e9201ca039b34b3ec1b95ef957bd7b7d4318"
+    },
+    {
+      "source": "Compiler/CanonicalRuntimeProfile.lean",
+      "sha256": "a53d209861edeef73c8625a466a602dd27e6a1385aad2c9bf27eb92770c8a584",
+      "command": "LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Compiler/CanonicalRuntimeProfile.olean Compiler/CanonicalRuntimeProfile.lean",
+      "exitCode": 0,
+      "artifact": "/Users/ember/dev/minidregg/.lake/build/lib/lean/Compiler/CanonicalRuntimeProfile.olean",
+      "artifactSha256": "365191a2748e45a131d835de402af76b914ff9082f0c905f21b7b08627d4ef05",
+      "log": "/tmp/dregg-host-CanonicalRuntimeProfile.log",
+      "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "Compiler/NativeHostProfile.lean",
+      "sha256": "46f49b958a3c54b945bcc7b129004c561fb13cac706fed8a1f3c12bfebb0727a",
+      "command": "LEAN_NUM_THREADS=2 lake env lean -o .lake/build/lib/lean/Compiler/NativeHostProfile.olean Compiler/NativeHostProfile.lean",
+      "exitCode": 0,
+      "artifact": "/Users/ember/dev/minidregg/.lake/build/lib/lean/Compiler/NativeHostProfile.olean",
+      "artifactSha256": "e5b014f1fd5ae57de93e6b5978cc420705c80c8b9042c7264468792005f63de1",
+      "log": "/tmp/dregg-host-NativeHostProfile.log",
+      "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

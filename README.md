@@ -16,7 +16,7 @@ An outside contributor should be able to own a substantial product feature from 
 | How do repositories and capabilities relate? | [Project map](MAP.md), then [source investigations](research/README.md) |
 | What can I build, against which interface? | [Contributor entry](contributing/README.md), linked feature briefs and contracts |
 | What does done mean? | [Work records](work/records.md): closure, dependencies, owner and evidence |
-| What was actually checked? | [Latest resumed checkpoint](sprints/2026-09-18/resumed-0311.md) and [account handoff](sprints/2026-09-18/account-handoff.md) and dated test/source artifacts |
+| What was actually checked? | [Latest wind-down handoff](sprints/2026-09-18/wind-down.md) and [account handoff](sprints/2026-09-18/account-handoff.md) and dated test/source artifacts |
 | Why are we doing this? | [Intent](intent.md) and [September 26 design discussion](milestones/2026-09-26.md) |
 | What did the first investigation find? | [September 17 orientation](orientation/2026-09-17.md), a historical snapshot |
 

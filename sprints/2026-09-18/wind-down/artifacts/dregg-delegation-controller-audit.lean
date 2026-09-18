@@ -1,0 +1,8 @@
+import Kernel.CapabilityDelegationController
+#print axioms Minidregg.Kernel.CapabilityDelegationController.command_decode_canonical
+#print axioms Minidregg.Kernel.CapabilityDelegationController.universe_authState_exact
+#print axioms Minidregg.Kernel.CapabilityDelegationController.child_anchored
+#print axioms Minidregg.Kernel.CapabilityDelegationController.Accepted.post_exact
+#print axioms Minidregg.Kernel.CapabilityDelegationController.Accepted.child_lineage
+#print axioms Minidregg.Kernel.CapabilityDelegationController.Accepted.parent_authorized
+#print axioms Minidregg.Kernel.CapabilityDelegationController.Accepted.policy_evaluated_actual_post

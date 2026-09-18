@@ -1,0 +1,9 @@
+{
+  "old_source": "/tmp/dregg-declared-before-history-codec.lean",
+  "old_sha256": "ca22fd70077620c6bc16990ca2eb7537d9eb12c3c217b921adc75636b3a26918",
+  "new_source": "/Users/ember/dev/minidregg/Kernel/DeclaredResourceController.lean",
+  "new_sha256": "85a807c067eab31f5710044e7d808e83a51823b77e07c4428aacec07b2bd80f0",
+  "scope": "Only original signedBytes encoder section replaced with same-wire lawful strict codec and decoder",
+  "proof": "Minidregg.Kernel.DeclaredResourceController.signedBytes_wire_unchanged",
+  "status": "source ready; narrow check pending"
+}

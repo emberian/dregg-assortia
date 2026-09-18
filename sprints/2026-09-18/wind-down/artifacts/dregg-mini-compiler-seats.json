@@ -1,0 +1,77 @@
+{
+  "updated_at": "2026-09-18T07:30:16.310306+00:00",
+  "coordinator": "/root/resume_authority",
+  "limit": {
+    "processes": 2,
+    "LEAN_NUM_THREADS": 2
+  },
+  "seat1": {
+    "owner": null,
+    "status": "released: joined native PASS then already-started genesis emit ended RED; no genesis olean/probe/CLI"
+  },
+  "seat2": {
+    "owner": null,
+    "status": "Released. Already-running NativeHostCodec attempt2 session24701 ended RED exit1; no later checks launched.",
+    "log": "/tmp/dregg-host-NativeHostCodec-attempt2.log",
+    "error": "Compiler/NativeHostCodec.lean:45:45 framed_canonical infers strictCodec around already strict framed codec; decoded framed.decode differs from expected (strictCodec framed).decode."
+  },
+  "next": [
+    {
+      "owner": "/root/resume_genesis",
+      "scope": "Repair NativeHostGenesis compile errors; emit and probe only on resume. No genesis olean or CLI proof exists."
+    },
+    {
+      "owner": "/root/resume_host",
+      "scope": "Repair NativeHostCodec elaboration; then emit NativeObservationCodec/NativeHostContext, integrate observation/replay, coherent runtime pins, actual Host/Main executable and CLI."
+    },
+    {
+      "owner": "/root/resume_admission",
+      "scope": "Compile applied AccountSupported Registry source strengthening plus two new host Book proof modules; Theory invariant alone is GREEN."
+    },
+    {
+      "owner": "/root/resume_foundations",
+      "scope": "Compile NativeObservationController draft after codecs. No observation gate delivery claimed."
+    },
+    {
+      "owner": "/root/resume_birth_review",
+      "scope": "Compile later retained-ingress codec factoring/byte equality in DeclaredResourceController, NativeHostContext, and NativeHostReplay drafts."
+    },
+    {
+      "owner": "/root/resume_journey",
+      "scope": "Compile migrated legacy probe-declared-resource source; actual joined native journey already PASS, do not label it pending."
+    },
+    {
+      "owner": "/root/resume_signatures",
+      "scope": "Restart completed lane for DeclaredActionBytes/Air, three Rust generator outputs, and CredentialTokenLocalEndpoint after lifecycle closure."
+    },
+    {
+      "owner": "/root/resume_consumers",
+      "scope": "Remaining TypedCellHyperedgeCompositionWitness, HyperdocumentVersionEffects/Merge, CanonicalEscrowMarket, AcceptedCellEffectRequestBinding/QuotaGcSettlement, ProviderExecutionLease checks."
+    },
+    {
+      "owner": "/root",
+      "scope": "Full integrated umbrella gate only after source convergence. Authorized rotation receiver remains separate pending work; checked lower rotation is not public delivery."
+    }
+  ],
+  "completed": "Historical exact-source physical authority13file closure GREEN plus two supplemental upgrade modules; current signature Ed25519/SQLite native probe PASS; birth7module closure/34axioms GREEN; delegation controller/receiver and21combined laws GREEN; install controller/receiver and26laws GREEN; joined native paid birth\u2192two preserved-grant rule updates\u2192delegation\u2192recipient invocation\u2192reopen/expiry replay PASS; standalone repeated-install native PASS; legacy capability negative-matrix native PASS. Four host profile modules GREEN at captured hashes. Later source-only changes are explicitly separate.",
+  "status": "FROZEN: both compiler seats released; owner reports no owned compiler processes. No new work authorized during wind-down.",
+  "next_status": "All formerly queued items CANCELLED for this turn; preserved as next-session pending work only",
+  "uncompiled_hot_source": {
+    "path": "Compiler/CanonicalCellRegistry.lean",
+    "owner": "/root/resume_admission",
+    "status": "AccountSupported import/law/proof source applied after explicit GO, before crossed wind-down; no emit, previous olean unchanged; preserve separately from earlier GREEN sourcehash"
+  },
+  "runtime_profile": "Observation+Book law pins never edited; current profile is earlier measured checkpoint",
+  "manifests": [
+    "/tmp/dregg-resume-authority-checkpoint.json",
+    "/tmp/dregg-resume-authority-upgrade-checks.json",
+    "/tmp/dregg-resume-host-checkpoint.json",
+    "/tmp/dregg-resume-host-handoff.md",
+    "/tmp/dregg-book-winddown.md",
+    "/tmp/dregg-book-winddown-source.json",
+    "/tmp/dregg-book-registry-proposed.patch",
+    "/tmp/dregg-birth-revision-checks.json",
+    "/tmp/dregg-resume-signatures-checkpoint.json",
+    "/tmp/dregg-resume-signatures-handoff.md"
+  ]
+}

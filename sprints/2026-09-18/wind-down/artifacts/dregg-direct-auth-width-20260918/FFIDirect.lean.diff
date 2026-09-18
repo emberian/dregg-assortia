@@ -1,0 +1,135 @@
+--- FFIDirect.lean.before
++++ FFIDirect.lean
+@@ -138,23 +138,101 @@
+     queues := [], swiss := [], revoked := revoked,
+     lifecycle := lifecycle, deathCert := deathCert, delegate := delegate }
+ 
+-/-! ## `AuthW` builders (`Authorization Nat Nat`, 10 ctors; `oneOf` recurses). -/
+-
+-@[export dregg_d_auth_signature] def authSignature (pk sig : UInt64) : AuthW := .signature pk.toNat sig.toNat
+-@[export dregg_d_auth_proof]
+-def authProof (vk pf : UInt64) (ba br : UInt64) : AuthW := .proof vk.toNat pf.toNat ba.toNat br.toNat
++/-- Four low-first 64-bit limbs compose a full-width unsigned digest. Receipt-chain heads and
++credential digests share this carrier. Composition stays in Lean; the C caller supplies limbs.
++The helper is unexported because callers use the typed builders below. -/
++def natOfLimbs (l0 l1 l2 l3 : UInt64) : Nat :=
++  l0.toNat + (l1.toNat <<< 64) + (l2.toNat <<< 128) + (l3.toNat <<< 192)
++
++/-- A nonzero upper limb cannot collapse to any 64-bit digest. -/
++theorem natOfLimbs_high_limbs_do_not_fit_u64 (l0 l1 l2 l3 n : UInt64)
++    (h : 0 < l1.toNat ∨ 0 < l2.toNat ∨ 0 < l3.toNat) :
++    natOfLimbs l0 l1 l2 l3 ≠ n.toNat := by
++  have hn : n.toNat < 2 ^ 64 := n.toNat_lt
++  simp only [natOfLimbs, Nat.shiftLeft_eq]
++  omega
++
++#assert_axioms natOfLimbs_high_limbs_do_not_fit_u64
++
++/-! ## `AuthW` builders (`Authorization Nat Nat`, 10 ctors; `oneOf` recurses).
++
++Every digest coordinate crosses as four low-first limbs, matching the full 256-bit JSON carrier.
++Proof blobs, token identifiers, action/resource bindings, and candidate indices retain their
++existing `UInt64` carrier. The `_w` names distinguish these signatures from the retired narrow ABI. -/
++
++@[export dregg_d_auth_signature_w]
++def authSignatureW (pk0 pk1 pk2 pk3 sig : UInt64) : AuthW :=
++  .signature (natOfLimbs pk0 pk1 pk2 pk3) sig.toNat
++@[export dregg_d_auth_proof_w]
++def authProofW (vk0 vk1 vk2 vk3 pf ba br : UInt64) : AuthW :=
++  .proof (natOfLimbs vk0 vk1 vk2 vk3) pf.toNat ba.toNat br.toNat
+ @[export dregg_d_auth_breadstuff] def authBreadstuff (tok : UInt64) : AuthW := .breadstuff tok.toNat
+-@[export dregg_d_auth_bearer]
+-def authBearer (dm ds : UInt64) (stark : Bool) : AuthW := .bearer dm.toNat ds.toNat stark
++@[export dregg_d_auth_bearer_w]
++def authBearerW (dm0 dm1 dm2 dm3 ds : UInt64) (stark : Bool) : AuthW :=
++  .bearer (natOfLimbs dm0 dm1 dm2 dm3) ds.toNat stark
+ @[export dregg_d_auth_unchecked] def authUnchecked : AuthW := .unchecked
+-@[export dregg_d_auth_captp]
+-def authCapTp (im sm isig ss : UInt64) : AuthW := .capTpDelivered im.toNat sm.toNat isig.toNat ss.toNat
+-@[export dregg_d_auth_custom] def authCustom (st pf : UInt64) : AuthW := .custom st.toNat pf.toNat
++@[export dregg_d_auth_captp_w]
++def authCapTpW (im0 im1 im2 im3 sm0 sm1 sm2 sm3 isig ss : UInt64) : AuthW :=
++  .capTpDelivered (natOfLimbs im0 im1 im2 im3) (natOfLimbs sm0 sm1 sm2 sm3) isig.toNat ss.toNat
++@[export dregg_d_auth_custom_w]
++def authCustomW (st0 st1 st2 st3 pf : UInt64) : AuthW :=
++  .custom (natOfLimbs st0 st1 st2 st3) pf.toNat
+ @[export dregg_d_auth_oneof]
+ def authOneOf (cands : List AuthW) (i : UInt64) : AuthW := .oneOf cands i.toNat
+-@[export dregg_d_auth_stealth]
+-def authStealth (otp eph sig : UInt64) : AuthW := .stealth otp.toNat eph.toNat sig.toNat
+-@[export dregg_d_auth_token] def authToken (key sig : UInt64) : AuthW := .token key.toNat sig.toNat
++@[export dregg_d_auth_stealth_w]
++def authStealthW (otp0 otp1 otp2 otp3 eph0 eph1 eph2 eph3 sig : UInt64) : AuthW :=
++  .stealth (natOfLimbs otp0 otp1 otp2 otp3) (natOfLimbs eph0 eph1 eph2 eph3) sig.toNat
++@[export dregg_d_auth_token_w]
++def authTokenW (key0 key1 key2 key3 sig : UInt64) : AuthW :=
++  .token (natOfLimbs key0 key1 key2 key3) sig.toNat
++
++/-- The executor receives every digest coordinate at its full width, including the ephemeral key
++that the current reference stealth verifier does not inspect. These equalities hold for all limbs. -/
++theorem lift_authSignatureW (pk0 pk1 pk2 pk3 sig : UInt64) :
++    liftAuthW (authSignatureW pk0 pk1 pk2 pk3 sig) =
++      .signature (Int.ofNat (natOfLimbs pk0 pk1 pk2 pk3)) (Int.ofNat sig.toNat) := rfl
++
++theorem lift_authProofW (vk0 vk1 vk2 vk3 pf ba br : UInt64) :
++    liftAuthW (authProofW vk0 vk1 vk2 vk3 pf ba br) =
++      .proof (Int.ofNat (natOfLimbs vk0 vk1 vk2 vk3)) (Int.ofNat pf.toNat) ba.toNat br.toNat := rfl
++
++theorem lift_authBearerW (dm0 dm1 dm2 dm3 ds : UInt64) (stark : Bool) :
++    liftAuthW (authBearerW dm0 dm1 dm2 dm3 ds stark) =
++      .bearer (Int.ofNat (natOfLimbs dm0 dm1 dm2 dm3)) (Int.ofNat ds.toNat) stark := rfl
++
++theorem lift_authCapTpW (im0 im1 im2 im3 sm0 sm1 sm2 sm3 isig ss : UInt64) :
++    liftAuthW (authCapTpW im0 im1 im2 im3 sm0 sm1 sm2 sm3 isig ss) =
++      .capTpDelivered (Int.ofNat (natOfLimbs im0 im1 im2 im3))
++        (Int.ofNat (natOfLimbs sm0 sm1 sm2 sm3)) (Int.ofNat isig.toNat) (Int.ofNat ss.toNat) := rfl
++
++theorem lift_authCustomW (st0 st1 st2 st3 pf : UInt64) :
++    liftAuthW (authCustomW st0 st1 st2 st3 pf) =
++      .custom (Int.ofNat (natOfLimbs st0 st1 st2 st3)) (Int.ofNat pf.toNat) := rfl
++
++theorem lift_authStealthW (otp0 otp1 otp2 otp3 eph0 eph1 eph2 eph3 sig : UInt64) :
++    liftAuthW (authStealthW otp0 otp1 otp2 otp3 eph0 eph1 eph2 eph3 sig) =
++      .stealth (Int.ofNat (natOfLimbs otp0 otp1 otp2 otp3))
++        (Int.ofNat (natOfLimbs eph0 eph1 eph2 eph3)) (Int.ofNat sig.toNat) := rfl
++
++theorem lift_authTokenW (key0 key1 key2 key3 sig : UInt64) :
++    liftAuthW (authTokenW key0 key1 key2 key3 sig) =
++      .token (Int.ofNat (natOfLimbs key0 key1 key2 key3)) (Int.ofNat sig.toNat) := rfl
++
++#assert_axioms lift_authSignatureW
++#assert_axioms lift_authProofW
++#assert_axioms lift_authBearerW
++#assert_axioms lift_authCapTpW
++#assert_axioms lift_authCustomW
++#assert_axioms lift_authStealthW
++#assert_axioms lift_authTokenW
++
++/-- Test support for inspecting the actual credential built by the native caller through the
++existing canonical encoder. Execution itself still passes objects directly. -/
++@[export dregg_d_auth_encode_w]
++def authEncodeW (auth : AuthW) : String := encodeAuthW auth
++
++theorem authEncodeW_eq (auth : AuthW) : authEncodeW auth = encodeAuthW auth := rfl
++#assert_axioms authEncodeW_eq
+ 
+ @[export dregg_d_authwlist_nil]  def authWListNil : List AuthW := []
+ @[export dregg_d_authwlist_cons] def authWListCons (x : AuthW) (xs : List AuthW) : List AuthW := x :: xs
+@@ -261,17 +339,6 @@
+ 
+ /-! ## `WTurn` and `WHostCtx` builders. -/
+ 
+-/-- **THE FULL-WIDTH DIGEST CARRIER.** Four 64-bit limbs (LOW-first: `l0` is the least significant)
+-→ a 256-bit `Nat`. The unsigned twin of [`intOfLimbs`], for the receipt-chain head — which is a
+-DIGEST, not a value, so it has no sign.
+-
+-Composition is done HERE, in Lean, over `Nat`; the C side hands four opaque `UInt64`s and performs
+-no arithmetic on the digest. Deliberately NOT `@[export]`ed — unlike `intOfLimbs`, nothing on the C
+-side calls it directly, and an exported symbol no caller names is surface, not an interface. It is
+-exercised through the two builders below. -/
+-def natOfLimbs (l0 l1 l2 l3 : UInt64) : Nat :=
+-  l0.toNat + (l1.toNat <<< 64) + (l2.toNat <<< 128) + (l3.toNat <<< 192)
+-
+ /-- ⚑ **THE HEAD CROSSES WHOLE — FLAG DAY 2026-08-06.** `prevHash` was a single `UInt64` and the
+ Rust marshaller fed it `bytes32_to_nat(prev)` = bytes `[24..32]` of the 32-byte receipt hash, while
+ `mkWHostCtx` fed the stored head the same way. `TurnHdr.prevReceipt`/`AdmCtx.storedHead` are
