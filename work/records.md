@@ -424,15 +424,15 @@ Actual-joint resource accounting and accepted field preservation now reject mint
 
 **Define the September 26 programmable nexus and its shared contracts**
 
-Status: **backlog** · Owner: Unassigned · Updated: 2026-09-19T11:29:38-04:00
+Status: **backlog** · Owner: Unassigned · Updated: 2026-09-19T11:45:42-04:00
 
 Design the complete hosted Nous Hermes offering within the DREGG programmable nexus, including real resource authority, persistence, credential-use policy, metering and typed evidence. External unforked Hermes support is desirable. Protocols, receiving kernel and economic operation remain open.
 
-**Next:** Discuss the source-reviewed grain-control, upstream-Hermes and request-evidence findings; choose one receiving kernel and define durable operation, pause/reconnect and credential-use semantics before implementation resumes.
+**Next:** Choose one receiving kernel and define durable execution scope, disconnect enforcement, reconnect reconciliation and credential-use semantics. Normal disconnect must interrupt ongoing work; explicit soft mode continues under existing authority and budget.
 
 **Done when:** Accepted nexus operations and consequential design decisions; selected semantic and receiving-runtime paths; an explicit owned-node participation path and selected Solana/resource outcome; linked implementation obligations and evidence. Selecting a contract does not close implementation or deployment.
 
-**Evidence so far:** Three bounded Sol source reviews complete; no builds or implementation wave resumed. Hosted Nous Hermes and initial hosted key custody are accepted direction. Foreground pause/reconnect supersedes keep-going-on-disconnect; explicit background work may continue. Grain persistence/effect ordering and request-evidence integration remain substantive work.
+**Evidence so far:** Source investigations preserved; no builds or implementation wave resumed. Current connection-mode intent is normal disconnect as circuit breaker and explicit soft continuation within unchanged authority/budget. Hermes cooperative interrupts, separate asynchronous children and queued work require actual host/controller enforcement and receiving tests.
 
 **Enables:**
 
@@ -444,6 +444,8 @@ Design the complete hosted Nous Hermes offering within the DREGG programmable ne
 - [S-WIND-DOWN-0918 — User-requested wind-down, exact native passes and unfinished host, September 18](../sprints/2026-09-18/wind-down.md)
 - [S-DIRECTION-0919 — September 19 hosted Hermes direction, superseded Wisper plan and revised disconnect preference](../sprints/2026-09-19/direction.md)
 - [S-PROTOCOL-REVIEW-0919 — Astra review of three Sol source investigations and proposed protocol boundaries](../sprints/2026-09-19/protocol-review.md)
+- [S-CONNECTION-BREAKER-0919 — Disconnect as circuit breaker, explicit soft continuation and enforcement investigation](../sprints/2026-09-19/connection-breaker.md)
+- [S-HERMES-BREAKER-0919 — Sol review of actual Hermes cancellation, descendants and continuation](../sprints/2026-09-19/reports/hermes-circuit-breaker.md)
 
 ## W-NATIVE-DATA-RECEIVER
 

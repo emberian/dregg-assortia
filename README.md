@@ -18,6 +18,7 @@ An outside contributor should be able to own a substantial product feature from 
 | What does done mean? | [Work records](work/records.md): closure, dependencies, owner and evidence |
 | What was actually checked? | [Latest wind-down handoff](sprints/2026-09-18/wind-down.md) and [account handoff](sprints/2026-09-18/account-handoff.md) and dated test/source artifacts |
 | What did the hosted-Hermes review find? | [September 19 protocol review](sprints/2026-09-19/protocol-review.md), three source investigations and their inventory; no new execution |
+| What should disconnect do? | [Circuit-breaker follow-up](sprints/2026-09-19/connection-breaker.md): immediate interruption by default; explicit soft mode keeps working under existing authority and budget |
 | Why are we doing this? | [Intent](intent.md), [current hosted-Hermes direction](sprints/2026-09-19/direction.md) and [earlier September 26 design draft](milestones/2026-09-26.md) |
 | What did the first investigation find? | [September 17 orientation](orientation/2026-09-17.md), a historical snapshot |
 

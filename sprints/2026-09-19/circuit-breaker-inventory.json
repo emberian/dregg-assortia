@@ -1,0 +1,100 @@
+{
+  "recordedAt": "2026-09-19T15:47:44+00:00",
+  "scope": "Source inspection and primary-document review only. No execution or measured interruption latency. Working-tree hashes identify selected inspected source files at archival time.",
+  "report": {
+    "path": "sprints/2026-09-19/reports/hermes-circuit-breaker.md",
+    "originalPath": "/tmp/dregg-hermes-circuit-breaker-20260919.md",
+    "sha256": "b90b0406882a1e68f20321352b6cd5c68f532487a477883ca189a85152a9c870",
+    "lines": 118,
+    "agent": "/root/design_hermes_edges",
+    "model": "gpt-5.6-sol"
+  },
+  "repository": {
+    "name": "hermes-agent",
+    "gitHead": "79f297834a9b08ad75d1f2babc55513ae2a7baed",
+    "localPath": "/Users/ember/pug/hermes-agent",
+    "selectedSources": [
+      {
+        "path": "acp_adapter/entry.py",
+        "sha256": "7cb4be5532a03450136368a9d9ee0eb1ef578fbf920ec219a0427b8cda3c505e"
+      },
+      {
+        "path": "acp_adapter/server.py",
+        "sha256": "4b2f1e2b1a5df583955e1c97acdf527d95eca6bb641bfa2f0d5d4dd03240a8f0"
+      },
+      {
+        "path": "acp_adapter/session.py",
+        "sha256": "46fc1e36f66648892841e047a66e518aa6ab1855625af4fb4b9ab39a872f8a94"
+      },
+      {
+        "path": "run_agent.py",
+        "sha256": "4cacd881690e6670eea1045ca95a76fe04586f12b5d4324c63a8820e6b105fe7"
+      },
+      {
+        "path": "tools/interrupt.py",
+        "sha256": "16bd137291952ff07af4603f6003a4150513ff4a3703d0724dadc8c097590206"
+      },
+      {
+        "path": "tools/delegate_tool.py",
+        "sha256": "f7c104c1bc3a6d9c425268dbc41c61bcf0eba69ca0bfbf789cf43d2a7ff846ed"
+      },
+      {
+        "path": "tools/async_delegation.py",
+        "sha256": "d4b65532c4acbdf4ccd4e2d585d62519e2fa35f2f2911829c6583913132a1584"
+      },
+      {
+        "path": "tools/mcp_tool.py",
+        "sha256": "3f0aca90d076a1b0aa5daffd7bb39b0d1a4fee83265f855e68d556e5c8a29d01"
+      },
+      {
+        "path": "tools/environments/base.py",
+        "sha256": "4368bde584295606cb788c6b5fce399e37103720a4d958bd98436ba7f104333d"
+      },
+      {
+        "path": "tools/environments/local.py",
+        "sha256": "af7e90dc8fd3e89e9450a139c352850ecfd1216573c1b91d906fbe15591eeb3f"
+      },
+      {
+        "path": "tools/environments/ssh.py",
+        "sha256": "b00e5393838d0f3a5c4f41dbaa540aa5f33bb0d3a1947f6effbcfeb46b3542c0"
+      },
+      {
+        "path": "agent/conversation_loop.py",
+        "sha256": "fd05229067ecf1ba0746b083e45c2adb09f2add50010da85533fb1fa8a4ca813"
+      },
+      {
+        "path": "agent/turn_finalizer.py",
+        "sha256": "9eeaf590357cdc08274770677b874fd3eb3c8609bc1f14ca2bae8d00717b643b"
+      },
+      {
+        "path": "agent/tool_executor.py",
+        "sha256": "0d00f80220e21e55d29f94bf764d6f185f4d0ca6a3968c5c025e756c3a4af843"
+      },
+      {
+        "path": "agent/chat_completion_helpers.py",
+        "sha256": "ff17762913d3e38aefa57fa22b56048f99d09fc18d189ab6441bf9c69433a76c"
+      },
+      {
+        "path": "hermes_cli/cli_commands_mixin.py",
+        "sha256": "dc14fb80a9dd2ce54de7c5052178c51e3537ecef7261c5545989e2b678e39e7c"
+      }
+    ]
+  },
+  "primaryDocuments": [
+    {
+      "url": "https://docs.kernel.org/admin-guide/cgroup-v2.html#core-interface-files",
+      "accessedDate": "2026-09-19",
+      "scope": "cgroup.freeze completion, descendant coverage and cgroup.kill"
+    },
+    {
+      "url": "https://man.openbsd.org/sshd_config#ClientAliveInterval",
+      "accessedDate": "2026-09-19",
+      "scope": "OpenSSH failure detection timeout"
+    },
+    {
+      "url": "https://modelcontextprotocol.io/specification/2025-06-18/basic/utilities/cancellation",
+      "accessedDate": "2026-09-19",
+      "scope": "Pinned-version example of optional remote cancellation and completion races"
+    }
+  ]
+}

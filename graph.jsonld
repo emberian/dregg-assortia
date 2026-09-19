@@ -1157,11 +1157,11 @@
       ],
       "closure": "Accepted nexus operations and consequential design decisions; selected semantic and receiving-runtime paths; an explicit owned-node participation path and selected Solana/resource outcome; linked implementation obligations and evidence. Selecting a contract does not close implementation or deployment.",
       "owner": null,
-      "updatedAt": "2026-09-19T11:29:38-04:00",
+      "updatedAt": "2026-09-19T11:45:42-04:00",
       "advances": [
         "urn:dregg:assortia:E-WORLD"
       ],
-      "nextAction": "Discuss the source-reviewed grain-control, upstream-Hermes and request-evidence findings; choose one receiving kernel and define durable operation, pause/reconnect and credential-use semantics before implementation resumes.",
+      "nextAction": "Choose one receiving kernel and define durable execution scope, disconnect enforcement, reconnect reconciliation and credential-use semantics. Normal disconnect must interrupt ongoing work; explicit soft mode continues under existing authority and budget.",
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
       "blockedBy": [],
@@ -1169,9 +1169,11 @@
         "urn:dregg:assortia:S-IMPLEMENTATION-0045",
         "urn:dregg:assortia:S-WIND-DOWN-0918",
         "urn:dregg:assortia:S-DIRECTION-0919",
-        "urn:dregg:assortia:S-PROTOCOL-REVIEW-0919"
+        "urn:dregg:assortia:S-PROTOCOL-REVIEW-0919",
+        "urn:dregg:assortia:S-CONNECTION-BREAKER-0919",
+        "urn:dregg:assortia:S-HERMES-BREAKER-0919"
       ],
-      "progress": "Three bounded Sol source reviews complete; no builds or implementation wave resumed. Hosted Nous Hermes and initial hosted key custody are accepted direction. Foreground pause/reconnect supersedes keep-going-on-disconnect; explicit background work may continue. Grain persistence/effect ordering and request-evidence integration remain substantive work."
+      "progress": "Source investigations preserved; no builds or implementation wave resumed. Current connection-mode intent is normal disconnect as circuit breaker and explicit soft continuation within unchanged authority/budget. Hermes cooperative interrupts, separate asynchronous children and queued work require actual host/controller enforcement and receiving tests."
     },
     {
       "@id": "urn:dregg:assortia:S-NEXUS-INTERFACE",
@@ -2767,10 +2769,11 @@
     {
       "@id": "urn:dregg:assortia:I-FOREGROUND-PAUSE",
       "@type": "Intent",
-      "label": "Pause foreground Hermes on disconnect; continue only explicit background work",
-      "description": "Ember withdrew the immediately preceding keep-going answer. Current preference: foreground processing pauses on disconnect and resumes on reconnection; only explicitly backgrounded work continues unattended. Exact interruption, in-flight reconciliation and reconnect mechanics remain design work. Underlying hosted resources have a separate lifecycle.",
+      "label": "Normal disconnect interrupts execution; soft disconnect continues within existing grants",
+      "description": "Ember strengthened the normal disconnect behavior to an immediate circuit breaker for ongoing tools and processing, with task continuation after reconnection. Explicit soft mode means keep working within the existing authority and budget. This supersedes simply waiting for in-flight work to finish. Exact detection, enforcement, scope and recovery mechanisms remain design work.",
       "sources": [
-        "urn:dregg:assortia:S-DIRECTION-0919"
+        "urn:dregg:assortia:S-DIRECTION-0919",
+        "urn:dregg:assortia:S-CONNECTION-BREAKER-0919"
       ],
       "subject": "urn:dregg:assortia:E-GRAINS"
     },
@@ -2817,6 +2820,45 @@
       "evidenceKind": "source-inspection",
       "scope": "Inspected Bread zkoracle-live/prove, provider callers and attestation helpers; dated August test evidence remains separate.",
       "limitations": "No new provider call or proof run. Broker policy enforcement is narrower than full upstream Hermes construction/consumption proof; host custody logs do not prove complete use against a dishonest custodian.",
+      "status": "observed-in-source"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-CONNECTION-BREAKER-0919",
+      "@type": "Source",
+      "label": "Disconnect as circuit breaker, explicit soft continuation and enforcement investigation",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-19/connection-breaker.md",
+      "lineStart": 1,
+      "lineEnd": 55,
+      "sha256": "c4f515a66342e9e53af0552fc3b8adf0a8f345522d1ab42840a5e9e7b4af8631",
+      "recordedDate": "2026-09-19",
+      "evidenceKind": "user-direction-source-review-and-labeled-proposals"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-HERMES-BREAKER-0919",
+      "@type": "Source",
+      "label": "Sol review of actual Hermes cancellation, descendants and continuation",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-19/reports/hermes-circuit-breaker.md",
+      "lineStart": 1,
+      "lineEnd": 118,
+      "sha256": "b90b0406882a1e68f20321352b6cd5c68f532487a477883ca189a85152a9c870",
+      "recordedDate": "2026-09-19",
+      "evidenceKind": "source-review-and-labeled-proposals-no-execution"
+    },
+    {
+      "@id": "urn:dregg:assortia:C-HERMES-CANCELLATION-0919",
+      "@type": "Claim",
+      "label": "Upstream ACP cancellation is cooperative and does not establish scope-wide stoppage",
+      "description": "ACP cancel signals the active agent without waiting for quiescence. Detached async delegation has a separate interrupt registry; sequential/parallel tool results may arrive after cancel; the ACP handler can drain queued prompts after cancellation. Conversation persistence is not a durable interrupted-task frontier. Host/controller enforcement remains necessary for the intended disconnect contract.",
+      "subject": "urn:dregg:assortia:E-HERMES",
+      "sources": [
+        "urn:dregg:assortia:S-HERMES-BREAKER-0919",
+        "urn:dregg:assortia:S-CONNECTION-BREAKER-0919"
+      ],
+      "evidenceKind": "source-inspection",
+      "scope": "Inspected upstream Hermes cancellation, tool and delegation paths; exact selected source hashes in circuit-breaker-inventory.json.",
+      "limitations": "No runtime interruption or latency measurement; ACP SDK EOF behavior not inspected. Late-result and executor-wait consequences include explicitly labeled source inferences.",
       "status": "observed-in-source"
     }
   ]

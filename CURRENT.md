@@ -2,7 +2,7 @@
 
 > Generated from `graph.jsonld` by `python3 hub.py render`. Edit the graph, not this file.
 
-Latest work-record update: **2026-09-19T11:29:38-04:00**. This is recorded project state, not a live process monitor.
+Latest work-record update: **2026-09-19T11:45:42-04:00**. This is recorded project state, not a live process monitor.
 
 [New contributor](contributing/README.md) · [Project map](MAP.md) · [Detailed work records](work/records.md)
 
@@ -22,7 +22,7 @@ Latest work-record update: **2026-09-19T11:29:38-04:00**. This is recorded proje
 | [Keep grants valid across policy source revisions](work/records.md#w-grant-revision) | Unassigned | Finish authorized generation revocation and remaining consumers/profile/root integration; preserve deliberate resource management lockout. |
 | [Make actual Hermes/SDK startup avoid unused Lean initialization](work/records.md#w-hermes-startup) | Unassigned | Apply and check preserved full-width credential/string fixes with accepted cases, finish NightWatch assurance cut and retime actual native consumers. |
 | [Check composition against the actual joint post-state](work/records.md#w-joint-post) | Unassigned | Exercise concrete factory/invocation policies against the same actual final tuple. |
-| [Define the September 26 programmable nexus and its shared contracts](work/records.md#w-m26-design) | Unassigned | Discuss the source-reviewed grain-control, upstream-Hermes and request-evidence findings; choose one receiving kernel and define durable operation, pause/reconnect and credential-use semantics before implementation resumes. |
+| [Define the September 26 programmable nexus and its shared contracts](work/records.md#w-m26-design) | Unassigned | Choose one receiving kernel and define durable execution scope, disconnect enforcement, reconnect reconciliation and credential-use semantics. Normal disconnect must interrupt ongoing work; explicit soft mode continues under existing authority and budget. |
 | [Operate real resources through a compiled programmable host](work/records.md#w-native-host) | Unassigned | Repair saved codec/genesis failures, coordinate Book/observation profile pins, check downstream modules and root closure, then link bounded host and run public CLI acceptance. |
 | [Store initial policies and use one runtime profile](work/records.md#w-policy-source) | Unassigned | Recheck source-policy consumers under coordinated final Registry/profile and compiled-host integration. |
 | [Implement and exercise the canonical authored-program-to-resource path](work/records.md#w-programmable-path) | Unassigned | Repair and check the preserved host stack, then drive the joined journey through signed public CLI preparation and submission. |
