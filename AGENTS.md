@@ -3,6 +3,7 @@
 Read README.md, CURRENT.md, intent.md, the latest checkpoint, and the relevant dated orientation before making project-wide recommendations.
 
 - Git is the primary VCS. Fossil is an undecided issues/discussion candidate.
+- Ember permits unsigned commits when unavailable for the configured 1Password signer (September 19). Use a per-commit signing override when needed; do not block authorized checkpoints or change global signing settings.
 - This is the living knowledge index and project-management hub. A graph record is an assertion with provenance, not authority over a sibling repository.
 - Inspect a claim's actual source and relevant local instructions before editing a sibling. Preserve unrelated working-tree changes. Do not build the whole suite to orient.
 - Separate user intent, historical user instructions, agent inference, source inspection, test source, captured run, and current live observation.
