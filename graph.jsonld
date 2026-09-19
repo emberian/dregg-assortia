@@ -60,7 +60,7 @@
       "branch": "main",
       "lastCommit": "2026-08-19 Record x86 TFHE energy reproduction",
       "workingTreeEntries": 14,
-      "role": "Existing broad Rust/Lean system: transactional World, nodes, cockpit, Hermes transport and durable history. Platform implementation is paused for source-grounded review; execution paths and assurance differ."
+      "role": "Broad Rust/Lean predecessor and reference corpus for New World requirements, algorithms, failure cases and historical evidence. Preserving its runtime/architecture or auditing reuse candidates is not a prerequisite for building Mini."
     },
     {
       "@id": "urn:dregg:assortia:R-minidregg",
@@ -71,7 +71,7 @@
       "branch": "main",
       "lastCommit": "2026-09-06 assurance: the release gate that leaks by routing, the gate that binds, and the Stage-0 receipt as bound evidence",
       "workingTreeEntries": 13,
-      "role": "Canonical typed kernel, source-owned policies/effects, compiler and local native durable receivers. Core/deployment expansion is a leading proposal; implementation is paused, and the current linked public-host journey is unrun."
+      "role": "Implementation home for the New World: build required resource, kernel, node and hosting capabilities here. Canonical typed semantics and native receiver foundations exist; public linked-host acceptance and substantive core expansion remain work."
     },
     {
       "@id": "urn:dregg:assortia:R-degg-research",
@@ -445,19 +445,21 @@
         "urn:dregg:assortia:S-IMPLEMENTATION-2330",
         "urn:dregg:assortia:S-IMPLEMENTATION-0045",
         "urn:dregg:assortia:S-IMPLEMENTATION-0130",
-        "urn:dregg:assortia:S-WIND-DOWN-0918"
+        "urn:dregg:assortia:S-WIND-DOWN-0918",
+        "urn:dregg:assortia:S-REBUILD-MINI-0919"
       ],
       "owner": null,
-      "updatedAt": "2026-09-18T03:34:10-04:00",
+      "updatedAt": "2026-09-19T18:04:40.439Z",
       "advances": [
         "urn:dregg:assortia:E-DOC",
         "urn:dregg:assortia:E-COORD"
       ],
-      "nextAction": "Complete current-source history regressions and connect document edits to accepted kernel operations.",
+      "nextAction": "Retain the unfinished Bread work and evidence as historical maintenance/reference; it is not a prerequisite for the New World implementation in Mini.",
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
       "progress": "Earlier 24-test history repair passed; new targeted ordered-factory chronology tests pass. Kernel-authorized document saves remain a distinct receiving task. Work frozen at ember’s request; no agent is currently assigned.",
-      "blockedBy": []
+      "blockedBy": [],
+      "historicalNextAction": "Complete current-source history regressions and connect document edits to accepted kernel operations."
     },
     {
       "@id": "urn:dregg:assortia:W-CANONICAL-CONSUMER",
@@ -1122,7 +1124,7 @@
       "@id": "urn:dregg:assortia:W-M26-DESIGN",
       "@type": "WorkItem",
       "label": "Define the September 26 programmable nexus and its shared contracts",
-      "description": "Establish the coherent resource/program contract for hosted Nous Hermes and the programmable nexus, comparing actual Bread and Mini receiving paths. Exact shared activity and economic operation remain open.",
+      "description": "Specify the coherent Mini resource/program and hosting contracts for the New World and complete hosted Nous Hermes experience. The construction home is settled; exact shared activity and economic operation remain open.",
       "status": "active",
       "evidenceKind": "assistant-proposal",
       "localPath": "/Users/ember/dev/dregg-assortia/milestones/2026-09-26.md",
@@ -1142,7 +1144,8 @@
         "urn:dregg:assortia:I-SEMANTICS-BEFORE-FULL-PROOFS",
         "urn:dregg:assortia:I-DESIGN-MODE-0919",
         "urn:dregg:assortia:I-FOREGROUND-PAUSE",
-        "urn:dregg:assortia:I-CORE-REORIENTATION-0919"
+        "urn:dregg:assortia:I-CORE-REORIENTATION-0919",
+        "urn:dregg:assortia:I-REBUILD-MINI"
       ],
       "related": [
         "urn:dregg:assortia:W-DOC-PERSIST",
@@ -1158,11 +1161,11 @@
       ],
       "closure": "Accepted nexus operations and consequential design decisions; selected semantic and receiving-runtime paths; an explicit owned-node participation path and selected Solana/resource outcome; linked implementation obligations and evidence. Selecting a contract does not close implementation or deployment.",
       "owner": "Astra: root",
-      "updatedAt": "2026-09-19T17:59:03.858Z",
+      "updatedAt": "2026-09-19T18:04:40.439Z",
       "advances": [
         "urn:dregg:assortia:E-WORLD"
       ],
-      "nextAction": "Discuss typed resource data, programmable laws versus executable programs, joint transactions and the first deployment scope; agree the construction contract before another implementation swarm.",
+      "nextAction": "Define the Mini construction contract for typed resources, laws/programming, joint operations, authority, external attempts and hosted Hermes, with one integrated user journey.",
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
       "blockedBy": [],
@@ -1174,9 +1177,10 @@
         "urn:dregg:assortia:S-CONNECTION-BREAKER-0919",
         "urn:dregg:assortia:S-HERMES-BREAKER-0919",
         "urn:dregg:assortia:S-GRAIN-IMPLEMENTATION-0919",
-        "urn:dregg:assortia:S-CORE-ORIENTATION-0919"
+        "urn:dregg:assortia:S-CORE-ORIENTATION-0919",
+        "urn:dregg:assortia:S-REBUILD-MINI-0919"
       ],
-      "progress": "Read-only microswarm complete: two Astra investigations, one Sol investigation and root review. Mini core expansion with selected Bread operational reuse is recommended, not yet an accepted deployment selection. Implementation remains paused."
+      "progress": "Ember settled the direction after the microswarm: rebuild required capabilities into Mini. Bread supplies reference material; evaluating salvage options is not a prerequisite. The previous Python implementation wave remains paused."
     },
     {
       "@id": "urn:dregg:assortia:S-NEXUS-INTERFACE",
@@ -2257,23 +2261,25 @@
       "description": "SDK route discovery is lazy while actual cryptographic calls retain real Lean initialization.",
       "status": "backlog",
       "owner": null,
-      "updatedAt": "2026-09-18T03:34:10-04:00",
+      "updatedAt": "2026-09-19T18:04:40.439Z",
       "advances": [
         "urn:dregg:assortia:E-HERMES"
       ],
-      "nextAction": "Apply and check preserved full-width credential/string fixes with accepted cases, finish NightWatch assurance cut and retime actual native consumers.",
+      "nextAction": "Retain the unfinished Bread work and evidence as historical maintenance/reference; it is not a prerequisite for the New World implementation in Mini.",
       "closure": "The same operations and refusal/publication checks pass through actual receiving code without eager unused-core initialization; real PQ first-use remains checked.",
       "sources": [
         "urn:dregg:assortia:S-IMPLEMENTATION-0045",
         "urn:dregg:assortia:S-ACCOUNT-HANDOFF-0918",
         "urn:dregg:assortia:S-RESUMED-0250",
         "urn:dregg:assortia:S-RESUMED-0311",
-        "urn:dregg:assortia:S-WIND-DOWN-0918"
+        "urn:dregg:assortia:S-WIND-DOWN-0918",
+        "urn:dregg:assortia:S-REBUILD-MINI-0919"
       ],
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
       "blockedBy": [],
-      "progress": "Executor-family native initialization 41.285ms; focused 11-test suite PASS. Actual JS-agent Hermes test PASS 0.073s; full-byte PQ PASS. Final full/PQ/Hermes capture 5/5 PASS in 802.039s; lease released; width/string repairs staged only. No NetworkJudge inclusive startup gain established. Work frozen at ember’s request; no agent is currently assigned."
+      "progress": "Executor-family native initialization 41.285ms; focused 11-test suite PASS. Actual JS-agent Hermes test PASS 0.073s; full-byte PQ PASS. Final full/PQ/Hermes capture 5/5 PASS in 802.039s; lease released; width/string repairs staged only. No NetworkJudge inclusive startup gain established. Work frozen at ember’s request; no agent is currently assigned.",
+      "historicalNextAction": "Apply and check preserved full-width credential/string fixes with accepted cases, finish NightWatch assurance cut and retime actual native consumers."
     },
     {
       "@id": "urn:dregg:assortia:W-HUB-LIVE",
@@ -2414,7 +2420,7 @@
       "description": "Unassigned cloud/resource-host lifecycle contract work. The earlier proposal to offer it to Wisper is superseded by his separate low-level networking assignment. This stable work ID retains the original Android example.",
       "status": "backlog",
       "owner": null,
-      "updatedAt": "2026-09-19T11:21:30-04:00",
+      "updatedAt": "2026-09-19T18:04:40.439Z",
       "priority": 0,
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "advances": [
@@ -2429,14 +2435,15 @@
         "urn:dregg:assortia:S-HOST-CONTRIBUTOR-PROPOSAL",
         "urn:dregg:assortia:S-ACCOUNT-HANDOFF-0918",
         "urn:dregg:assortia:S-WIND-DOWN-0918",
-        "urn:dregg:assortia:S-DIRECTION-0919"
+        "urn:dregg:assortia:S-DIRECTION-0919",
+        "urn:dregg:assortia:S-REBUILD-MINI-0919"
       ],
       "motivatedBy": [
         "urn:dregg:assortia:I-CONTRIBUTOR-LEGIBILITY",
         "urn:dregg:assortia:I-CLOUD-CONTRIBUTOR"
       ],
       "blockedBy": [],
-      "nextAction": "Select the hosted-grain receiving runtime and lifecycle contract with ember before assigning this preserved hosting package; Wisper is not a prerequisite.",
+      "nextAction": "Define the Mini resource-host lifecycle contract as part of the new platform; Wisper remains on separate networking work outside the critical path.",
       "closure": "A contributor can scaffold a real product surface from a concrete brief and agreed contracts, with executable receiving interfaces or explicitly owned upstream delivery, test scenarios and no need to infer core architecture from chat.",
       "brief": "contributing/resource-host-lifecycle.md",
       "progress": "September 18 source-backed hosting proposal retained. September 19 clarification: Wisper is assigned elsewhere, outside our critical path. Exact runtime/export contract remains open; no implementation owner assigned.",
@@ -2470,7 +2477,7 @@
       "description": "World deployment currently mutates volatile registries; historical paths either omit factories or preload the present registry into the past. Persist ordered descriptor/VK evidence and replay the actual executor deployment at that boundary.",
       "status": "backlog",
       "owner": null,
-      "updatedAt": "2026-09-18T03:34:10-04:00",
+      "updatedAt": "2026-09-19T18:04:40.439Z",
       "advances": [
         "urn:dregg:assortia:E-DOC",
         "urn:dregg:assortia:E-KERNEL"
@@ -2479,7 +2486,8 @@
         "urn:dregg:assortia:S-IMPLEMENTATION-0130",
         "urn:dregg:assortia:S-ACCOUNT-HANDOFF-0918",
         "urn:dregg:assortia:S-RESUMED-0250",
-        "urn:dregg:assortia:S-WIND-DOWN-0918"
+        "urn:dregg:assortia:S-WIND-DOWN-0918",
+        "urn:dregg:assortia:S-REBUILD-MINI-0919"
       ],
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
@@ -2488,9 +2496,10 @@
         "urn:dregg:assortia:W-DOC-PERSIST",
         "urn:dregg:assortia:W-EMBEDDED-CANDIDATE"
       ],
-      "nextAction": "Run the preserved affected history regression filter on resumption and retain exact current-source evidence.",
+      "nextAction": "Retain the unfinished Bread work and evidence as historical maintenance/reference; it is not a prerequisite for the New World implementation in Mini.",
       "closure": "Actual factory deployment, birth/mutation and recovery use the same ordered descriptor/VK evidence; no historical prefix sees a later factory; conflicting deployment and persistence failures leave committed state unchanged; unsupported old images refuse without changing evidence.",
-      "progress": "All five targeted factory chronology tests passed twice in current native suites. Wider 24-case history/replay regression filter remains unrun after this repair. Work frozen at ember’s request; no agent is currently assigned."
+      "progress": "All five targeted factory chronology tests passed twice in current native suites. Wider 24-case history/replay regression filter remains unrun after this repair. Work frozen at ember’s request; no agent is currently assigned.",
+      "historicalNextAction": "Run the preserved affected history regression filter on resumption and retain exact current-source evidence."
     },
     {
       "@id": "urn:dregg:assortia:S-CLOUD-HOST-REVIEW",
@@ -3029,7 +3038,9 @@
       "lineEnd": 72,
       "sha256": "b478dc48a35565e21f886351baa77a0935229e71746f74777fa35e36a4bbe22d",
       "recordedDate": "2026-09-19",
-      "evidenceKind": "source-inspection-and-agent-proposal"
+      "evidenceKind": "source-inspection-and-agent-proposal",
+      "capturedRevision": "c9bbc22",
+      "limitations": "Original source hash identifies the pre-banner investigation. Ember subsequently selected rebuilding in Mini; the source findings remain historical evidence, while the runtime-choice/reuse framing is superseded."
     },
     {
       "@id": "urn:dregg:assortia:S-CORE-INVENTORY-0919",
@@ -3168,6 +3179,27 @@
       "scope": "Kernel/NativeHost.lean; Kernel/NativeHostReplay.lean; Compiler/DurableReceiverIO.lean; native/hyperdocument-link-sqlite-store/src/lib.rs.",
       "limitations": "No new execution in this pass. Exact inspected working-tree hashes, including WIP, are retained in the inventory. This does not establish a deployed user journey.",
       "status": "observed-in-source"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-REBUILD-MINI-0919",
+      "@type": "Source",
+      "label": "Ember chooses rebuilding the New World in Mini",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-19/rebuild-in-mini.md",
+      "lineStart": 1,
+      "lineEnd": 15,
+      "sha256": "0072b92e186f641b32da6a458b0fee519a2e384a1d930d908511d4b761c36a10",
+      "recordedDate": "2026-09-19",
+      "evidenceKind": "user-direction-and-recorded-consequence"
+    },
+    {
+      "@id": "urn:dregg:assortia:I-REBUILD-MINI",
+      "@type": "Intent",
+      "label": "Rebuild the required New World capabilities in Mini",
+      "description": "Mini is the implementation home. Build the capabilities the intended experience needs there; Bread is reference material. Reuse and legacy compatibility are not prerequisite work or reasons to retain incompatible architecture.",
+      "sources": [
+        "urn:dregg:assortia:S-REBUILD-MINI-0919"
+      ]
     }
   ]
 }

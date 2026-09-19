@@ -8,8 +8,8 @@ The repositories below have different roles. Presence of code, a proof, a succes
 
 | Repository | Role in the suite |
 |---|---|
-| breadstuffs | Existing broad Rust/Lean system: transactional World, nodes, cockpit, Hermes transport and durable history. Platform implementation is paused for source-grounded review; execution paths and assurance differ. |
-| minidregg | Canonical typed kernel, source-owned policies/effects, compiler and local native durable receivers. Core/deployment expansion is a leading proposal; implementation is paused, and the current linked public-host journey is unrun. |
+| breadstuffs | Broad Rust/Lean predecessor and reference corpus for New World requirements, algorithms, failure cases and historical evidence. Preserving its runtime/architecture or auditing reuse candidates is not a prerequisite for building Mini. |
+| minidregg | Implementation home for the New World: build required resource, kernel, node and hosting capabilities here. Canonical typed semantics and native receiver foundations exist; public linked-host acceptance and substantive core expansion remain work. |
 | degg-research | Research records and proof-system/design investigations; results need explicit receiving consumers. |
 | zkml-research | Cryptographic and zkML research/artifacts; distinct assumptions and deployment scope. |
 | DreggCloud | Historical cloud/service-cell and House machinery. Some functionality was incorporated into breadstuffs; not globally declared retired. |

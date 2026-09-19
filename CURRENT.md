@@ -2,7 +2,7 @@
 
 > Generated from `graph.jsonld` by `python3 hub.py render`. Edit the graph, not this file.
 
-Latest work-record update: **2026-09-19T17:59:03.858Z**. This is recorded project state, not a live process monitor.
+Latest work-record update: **2026-09-19T18:04:40.439Z**. This is recorded project state, not a live process monitor.
 
 [New contributor](contributing/README.md) · [Project map](MAP.md) · [Detailed work records](work/records.md)
 
@@ -12,25 +12,25 @@ Latest work-record update: **2026-09-19T17:59:03.858Z**. This is recorded projec
 
 | Work | Owner / reviewer | Next action |
 |---|---|---|
-| [Define the September 26 programmable nexus and its shared contracts](work/records.md#w-m26-design) | Astra: root | Discuss typed resource data, programmable laws versus executable programs, joint transactions and the first deployment scope; agree the construction contract before another implementation swarm. |
+| [Define the September 26 programmable nexus and its shared contracts](work/records.md#w-m26-design) | Astra: root | Define the Mini construction contract for typed resources, laws/programming, joint operations, authority, external attempts and hosted Hermes, with one integrated user journey. |
 
 ## Backlog
 
 | Work | Owner / reviewer | Next action |
 |---|---|---|
-| [Define resource-host lifecycle ownership and its kernel contract](contributing/resource-host-lifecycle.md) | Unassigned | Select the hosted-grain receiving runtime and lifecycle contract with ember before assigning this preserved hosting package; Wisper is not a prerequisite. |
+| [Define resource-host lifecycle ownership and its kernel contract](contributing/resource-host-lifecycle.md) | Unassigned | Define the Mini resource-host lifecycle contract as part of the new platform; Wisper remains on separate networking work outside the critical path. |
 | [Bind native use to committed keys and complete authority](sprints/2026-09-19/core-orientation.md) | Unassigned | After the core/resource contract is agreed, review preserved WIP against it and reassign a concrete receiving path before resuming this implementation. |
 | [Give a friend a narrower usable right](work/records.md#w-authorized-delegation) | Unassigned | Carry the measured delegation path into the compiled public host and complete actual revocation/current-generation receiving coverage. |
 | [Compare the three existing local-first contracts](work/records.md#w-coord-contract) | Unassigned | Select and exercise the cross-participant operation after the first authorized create/invoke/delegate/reopen journey. |
-| [Establish the chosen document storage/turn contract](work/records.md#w-doc-persist) | Unassigned | Complete current-source history regressions and connect document edits to accepted kernel operations. |
+| [Establish the chosen document storage/turn contract](work/records.md#w-doc-persist) | Unassigned | Retain the unfinished Bread work and evidence as historical maintenance/reference; it is not a prerequisite for the New World implementation in Mini. |
 | [Make full request and actual-pre binding mandatory for generic effects](work/records.md#w-effect-admission) | Unassigned | Finish pending consumer modules and full-root checks without weakening the mandatory exact-parent/request/source contract. |
-| [Retain factory deployment at its actual history boundary](work/records.md#w-factory-history) | Unassigned | Run the preserved affected history regression filter on resumption and retain exact current-source evidence. |
+| [Retain factory deployment at its actual history boundary](work/records.md#w-factory-history) | Unassigned | Retain the unfinished Bread work and evidence as historical maintenance/reference; it is not a prerequisite for the New World implementation in Mini. |
 | [Custody and meter scoped provider requests](sprints/2026-09-19/core-orientation.md) | Unassigned | After the core/resource contract is agreed, review preserved WIP against it and reassign a concrete receiving path before resuming this implementation. |
 | [Durable hosted grain control and authenticated entrance](sprints/2026-09-19/core-orientation.md) | Unassigned | After the core/resource contract is agreed, review preserved WIP against it and reassign a concrete receiving path before resuming this implementation. |
 | [Host upstream Hermes with persistent confined execution](sprints/2026-09-19/core-orientation.md) | Unassigned | After the core/resource contract is agreed, review preserved WIP against it and reassign a concrete receiving path before resuming this implementation. |
 | [Expose canonical resource programming to Hermes](sprints/2026-09-19/core-orientation.md) | Unassigned | After the core/resource contract is agreed, review preserved WIP against it and reassign a concrete receiving path before resuming this implementation. |
 | [Keep grants valid across policy source revisions](work/records.md#w-grant-revision) | Unassigned | Finish authorized generation revocation and remaining consumers/profile/root integration; preserve deliberate resource management lockout. |
-| [Make actual Hermes/SDK startup avoid unused Lean initialization](work/records.md#w-hermes-startup) | Unassigned | Apply and check preserved full-width credential/string fixes with accepted cases, finish NightWatch assurance cut and retime actual native consumers. |
+| [Make actual Hermes/SDK startup avoid unused Lean initialization](work/records.md#w-hermes-startup) | Unassigned | Retain the unfinished Bread work and evidence as historical maintenance/reference; it is not a prerequisite for the New World implementation in Mini. |
 | [Check composition against the actual joint post-state](work/records.md#w-joint-post) | Unassigned | Exercise concrete factory/invocation policies against the same actual final tuple. |
 | [Operate real resources through a compiled programmable host](sprints/2026-09-19/core-orientation.md) | Unassigned | After the core/resource contract is agreed, review preserved WIP against it and reassign a concrete receiving path before resuming this implementation. |
 | [Store initial policies and use one runtime profile](work/records.md#w-policy-source) | Unassigned | Recheck source-policy consumers under coordinated final Registry/profile and compiled-host integration. |

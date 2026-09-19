@@ -6,11 +6,11 @@
 
 **Define resource-host lifecycle ownership and its kernel contract**
 
-Status: **backlog** · Owner: Unassigned · Updated: 2026-09-19T11:21:30-04:00
+Status: **backlog** · Owner: Unassigned · Updated: 2026-09-19T18:04:40.439Z
 
 Unassigned cloud/resource-host lifecycle contract work. The earlier proposal to offer it to Wisper is superseded by his separate low-level networking assignment. This stable work ID retains the original Android example.
 
-**Next:** Select the hosted-grain receiving runtime and lifecycle contract with ember before assigning this preserved hosting package; Wisper is not a prerequisite.
+**Next:** Define the Mini resource-host lifecycle contract as part of the new platform; Wisper remains on separate networking work outside the critical path.
 
 **Done when:** A contributor can scaffold a real product surface from a concrete brief and agreed contracts, with executable receiving interfaces or explicitly owned upstream delivery, test scenarios and no need to infer core architecture from chat.
 
@@ -33,6 +33,7 @@ Unassigned cloud/resource-host lifecycle contract work. The earlier proposal to 
 - [S-ACCOUNT-HANDOFF-0918 — September18 account handoff: native born-owner journey and next integration wave](../sprints/2026-09-18/account-handoff.md)
 - [S-WIND-DOWN-0918 — User-requested wind-down, exact native passes and unfinished host, September 18](../sprints/2026-09-18/wind-down.md)
 - [S-DIRECTION-0919 — September 19 hosted Hermes direction, superseded Wisper plan and revised disconnect preference](../sprints/2026-09-19/direction.md)
+- [S-REBUILD-MINI-0919 — Ember chooses rebuilding the New World in Mini](../sprints/2026-09-19/rebuild-in-mini.md)
 
 **Write scope:** DreggNet/control provider/server/supervisor and gateway lifecycle; Selected native host extraction/export, jointly reserved with core; Selected packaging and integration harness
 
@@ -242,11 +243,11 @@ Compact commands use actual page execution, complete old authority, stored polic
 
 **Establish the chosen document storage/turn contract**
 
-Status: **backlog** · Owner: Unassigned · Updated: 2026-09-18T03:34:10-04:00
+Status: **backlog** · Owner: Unassigned · Updated: 2026-09-19T18:04:40.439Z
 
 Implement durable refusal propagation and exact ordered physical history in breadstuffs, while joining resource birth, owner authority and charge in the canonical shared core. Repeated body updates still require the selected accepted operation and receiving cutover.
 
-**Next:** Complete current-source history regressions and connect document edits to accepted kernel operations.
+**Next:** Retain the unfinished Bread work and evidence as historical maintenance/reference; it is not a prerequisite for the New World implementation in Mini.
 
 **Done when:** Repeated authorized saves, rejection without committed mutation, crash/reopen at each ordered boundary, and matching body/receipt history through the actual selected consumer. Physical setup journaling alone does not close kernel authorization.
 
@@ -268,6 +269,7 @@ Implement durable refusal propagation and exact ordered physical history in brea
 - [S-IMPLEMENTATION-0045 — September 18 implementation and contributor checkpoint](../sprints/2026-09-18/checkpoint-0045.md)
 - [S-IMPLEMENTATION-0130 — Durable native invocation and repaired runtime history, September 18 01:30](../sprints/2026-09-18/checkpoint-0130.md)
 - [S-WIND-DOWN-0918 — User-requested wind-down, exact native passes and unfinished host, September 18](../sprints/2026-09-18/wind-down.md)
+- [S-REBUILD-MINI-0919 — Ember chooses rebuilding the New World in Mini](../sprints/2026-09-19/rebuild-in-mini.md)
 
 ## W-EFFECT-ADMISSION
 
@@ -325,11 +327,11 @@ SDK/World align with the current node rejection policy: no retained fee, nonce, 
 
 **Retain factory deployment at its actual history boundary**
 
-Status: **backlog** · Owner: Unassigned · Updated: 2026-09-18T03:34:10-04:00
+Status: **backlog** · Owner: Unassigned · Updated: 2026-09-19T18:04:40.439Z
 
 World deployment currently mutates volatile registries; historical paths either omit factories or preload the present registry into the past. Persist ordered descriptor/VK evidence and replay the actual executor deployment at that boundary.
 
-**Next:** Run the preserved affected history regression filter on resumption and retain exact current-source evidence.
+**Next:** Retain the unfinished Bread work and evidence as historical maintenance/reference; it is not a prerequisite for the New World implementation in Mini.
 
 **Done when:** Actual factory deployment, birth/mutation and recovery use the same ordered descriptor/VK evidence; no historical prefix sees a later factory; conflicting deployment and persistence failures leave committed state unchanged; unsupported old images refuse without changing evidence.
 
@@ -346,6 +348,7 @@ World deployment currently mutates volatile registries; historical paths either 
 - [S-ACCOUNT-HANDOFF-0918 — September18 account handoff: native born-owner journey and next integration wave](../sprints/2026-09-18/account-handoff.md)
 - [S-RESUMED-0250 — Resumed native runtime and pinned publication checks, September18](../sprints/2026-09-18/resumed-0250.md)
 - [S-WIND-DOWN-0918 — User-requested wind-down, exact native passes and unfinished host, September 18](../sprints/2026-09-18/wind-down.md)
+- [S-REBUILD-MINI-0919 — Ember chooses rebuilding the New World in Mini](../sprints/2026-09-19/rebuild-in-mini.md)
 
 ## W-GRAIN-BROKER
 
@@ -493,11 +496,11 @@ Separate immutable policy-source revision from grant revocation generation acros
 
 **Make actual Hermes/SDK startup avoid unused Lean initialization**
 
-Status: **backlog** · Owner: Unassigned · Updated: 2026-09-18T03:34:10-04:00
+Status: **backlog** · Owner: Unassigned · Updated: 2026-09-19T18:04:40.439Z
 
 SDK route discovery is lazy while actual cryptographic calls retain real Lean initialization.
 
-**Next:** Apply and check preserved full-width credential/string fixes with accepted cases, finish NightWatch assurance cut and retime actual native consumers.
+**Next:** Retain the unfinished Bread work and evidence as historical maintenance/reference; it is not a prerequisite for the New World implementation in Mini.
 
 **Done when:** The same operations and refusal/publication checks pass through actual receiving code without eager unused-core initialization; real PQ first-use remains checked.
 
@@ -514,6 +517,7 @@ SDK route discovery is lazy while actual cryptographic calls retain real Lean in
 - [S-RESUMED-0250 — Resumed native runtime and pinned publication checks, September18](../sprints/2026-09-18/resumed-0250.md)
 - [S-RESUMED-0311 — Revision migration checks and host review, September18 03:11](../sprints/2026-09-18/resumed-0311.md)
 - [S-WIND-DOWN-0918 — User-requested wind-down, exact native passes and unfinished host, September 18](../sprints/2026-09-18/wind-down.md)
+- [S-REBUILD-MINI-0919 — Ember chooses rebuilding the New World in Mini](../sprints/2026-09-19/rebuild-in-mini.md)
 
 ## W-JOINT-POST
 
@@ -544,15 +548,15 @@ Actual-joint resource accounting and accepted field preservation now reject mint
 
 **Define the September 26 programmable nexus and its shared contracts**
 
-Status: **active** · Owner: Astra: root · Updated: 2026-09-19T17:59:03.858Z
+Status: **active** · Owner: Astra: root · Updated: 2026-09-19T18:04:40.439Z
 
-Establish the coherent resource/program contract for hosted Nous Hermes and the programmable nexus, comparing actual Bread and Mini receiving paths. Exact shared activity and economic operation remain open.
+Specify the coherent Mini resource/program and hosting contracts for the New World and complete hosted Nous Hermes experience. The construction home is settled; exact shared activity and economic operation remain open.
 
-**Next:** Discuss typed resource data, programmable laws versus executable programs, joint transactions and the first deployment scope; agree the construction contract before another implementation swarm.
+**Next:** Define the Mini construction contract for typed resources, laws/programming, joint operations, authority, external attempts and hosted Hermes, with one integrated user journey.
 
 **Done when:** Accepted nexus operations and consequential design decisions; selected semantic and receiving-runtime paths; an explicit owned-node participation path and selected Solana/resource outcome; linked implementation obligations and evidence. Selecting a contract does not close implementation or deployment.
 
-**Evidence so far:** Read-only microswarm complete: two Astra investigations, one Sol investigation and root review. Mini core expansion with selected Bread operational reuse is recommended, not yet an accepted deployment selection. Implementation remains paused.
+**Evidence so far:** Ember settled the direction after the microswarm: rebuild required capabilities into Mini. Bread supplies reference material; evaluating salvage options is not a prerequisite. The previous Python implementation wave remains paused.
 
 **Enables:**
 
@@ -568,6 +572,7 @@ Establish the coherent resource/program contract for hosted Nous Hermes and the 
 - [S-HERMES-BREAKER-0919 — Sol review of actual Hermes cancellation, descendants and continuation](../sprints/2026-09-19/reports/hermes-circuit-breaker.md)
 - [S-GRAIN-IMPLEMENTATION-0919 — Historical, subsequently paused agent-grain implementation wave](../sprints/2026-09-19/implementation.md)
 - [S-CORE-ORIENTATION-0919 — Bread/Mini microswarm after implementation pause](../sprints/2026-09-19/core-orientation.md)
+- [S-REBUILD-MINI-0919 — Ember chooses rebuilding the New World in Mini](../sprints/2026-09-19/rebuild-in-mini.md)
 
 ## W-NATIVE-DATA-RECEIVER
 

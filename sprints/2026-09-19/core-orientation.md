@@ -1,5 +1,7 @@
 # September 19 — deeper Bread/Mini orientation after the implementation pause
 
+> **Subsequent decision:** [build the New World in Mini](rebuild-in-mini.md). Ember settled the construction direction after this report: rebuild required capabilities in Mini, using Bread as reference. The source findings below remain a dated investigation; the open runtime choice and reuse-first emphasis are superseded.
+
 **Current operating mode: investigation and discussion.** Ember rejected introducing Python as a new platform implementation language and asked us to investigate before another implementation swarm. The later request authorized a microswarm on Bread and Mini. The earlier [implementation record](implementation.md) is historical; its Python choice, active assignments and settled Mini selection do not describe current authorization.
 
 Two Astra investigators traced Bread execution and Mini semantics; one Sol investigator traced Mini deployment. Root checked the consequential source paths and external-operation records. This pass ran no builds, tests, services, remote jobs or asset operations, and changed no Bread/Mini source. Source inspection, prior captured runs and proposed construction are separated below. The adjacent [inventory](core-orientation-sources.json) captures current source bytes, including uncommitted WIP; a repository HEAD alone does not identify that WIP.
