@@ -2,7 +2,7 @@
 
 > Generated from `graph.jsonld` by `python3 hub.py render`. Edit the graph, not this file.
 
-Latest work-record update: **2026-09-19T21:36:23.257Z**. This is recorded project state, not a live process monitor.
+Latest work-record update: **2026-09-19T22:02:08.714Z**. This is recorded project state, not a live process monitor.
 
 [New contributor](contributing/README.md) · [Project map](MAP.md) · [Detailed work records](work/records.md)
 
@@ -26,6 +26,7 @@ Latest work-record update: **2026-09-19T21:36:23.257Z**. This is recorded projec
 | Work | Owner / reviewer | Next action |
 |---|---|---|
 | [Define resource-host lifecycle ownership and its kernel contract](contributing/resource-host-lifecycle.md) | Unassigned | Define the Mini resource-host lifecycle contract as part of the new platform; Wisper remains on separate networking work outside the critical path. |
+| [Materialize admitted charges instead of recomputing their source](sprints/2026-09-19/next-cycle-native-computation.md) | Unassigned | Materialize source-derived finite charges once at receiving construction, prove exact intent/record equality, inspect compiled sharing, then measure unchanged signed operations. Measure fresh admission separately before assigning the canonical-only admission proposal. |
 | [Compare the three existing local-first contracts](work/records.md#w-coord-contract) | Unassigned | Select and exercise the cross-participant operation after the first authorized create/invoke/delegate/reopen journey. |
 | [Establish the chosen document storage/turn contract](work/records.md#w-doc-persist) | Unassigned | Retain the unfinished Bread work and evidence as historical maintenance/reference; it is not a prerequisite for the New World implementation in Mini. |
 | [Make full request and actual-pre binding mandatory for generic effects](work/records.md#w-effect-admission) | Unassigned | Finish pending consumer modules and full-root checks without weakening the mandatory exact-parent/request/source contract. |

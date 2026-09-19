@@ -198,6 +198,33 @@ Connect the canonical source request and accepted joint state to actual artifact
 - [S-IMPLEMENTATION-0045 — September 18 implementation and contributor checkpoint](../sprints/2026-09-18/checkpoint-0045.md)
 - [S-IMPLEMENTATION-0130 — Durable native invocation and repaired runtime history, September 18 01:30](../sprints/2026-09-18/checkpoint-0130.md)
 
+## W-CHARGE-MATERIALIZATION
+
+**Materialize admitted charges instead of recomputing their source**
+
+Status: **backlog** · Owner: Unassigned · Updated: 2026-09-19T22:02:08.714Z
+
+Preserve exact admitted charges and record bytes while removing repeated birth write/read-guard computation during historical serialization.
+
+**Next:** Materialize source-derived finite charges once at receiving construction, prove exact intent/record equality, inspect compiled sharing, then measure unchanged signed operations. Measure fresh admission separately before assigning the canonical-only admission proposal.
+
+**Done when:** The actual receiving/replay path retains materialized charge data; a general proof preserves every charge lane, complete intent/record identity and canonical bytes without changed bounds or tariffs. Generated-code and matched native operation evidence show repeated serialization does not reconstruct birth writes/read guards, and semantic replay, receipts, charges and refusal behavior remain unchanged.
+
+**Evidence so far:** A live query sample found all active stacks in history replay and repeated source charge computation during encoding. Existing chargeOfTuple_tuple proves the representation equality; no receiving implementation or measured gain exists yet.
+
+[Task brief](../sprints/2026-09-19/next-cycle-native-computation.md)
+
+**Enables:**
+
+- E-KERNEL — Canonical typed semantic kernel
+- E-WORLD — Programmable social resource world
+
+**Evidence / provenance:**
+
+- [S-NATIVE-COMPUTATION-0919 — Native query profile: repeated charge computation in reconstructed history](../sprints/2026-09-19/next-cycle-native-computation.md)
+
+**Write scope:** minidregg admitted charge and intent/record construction; minidregg/Kernel/ResourceBirthReceiver.lean; minidregg lower-layer finite-charge helper and serialization equality proofs
+
 ## W-COORD-CONTRACT
 
 **Compare the three existing local-first contracts**
@@ -539,7 +566,7 @@ SDK route discovery is lazy while actual cryptographic calls retain real Lean in
 
 **Retain verified history across native host requests**
 
-Status: **backlog** · Owner: Unassigned · Updated: 2026-09-19T21:36:23.257Z
+Status: **backlog** · Owner: Unassigned · Updated: 2026-09-19T22:02:08.713Z
 
 Replace repeated whole-history semantic replay with a source-owned verified session, preserving exact history identity, current authorization and durable CAS/recovery behavior.
 
@@ -547,7 +574,7 @@ Replace repeated whole-history semantic replay with a source-owned verified sess
 
 **Done when:** Prove verified-prefix plus suffix replay agrees with full semantic replay under explicit verifier assumptions; run unchanged-image, external append/revocation, rewritten/rolled-back history, stale challenge, exact CAS, lost reply, restart and verifier-change cases through the real host. Preserve fresh authorization, exact original receipt boundaries and uncertainty. Measure physical reads, replay counts and latency; do not substitute height/hash/mtime for exact image identity.
 
-**Evidence so far:** Current native operations repeatedly verify retained original signed ingress. Matched birth and query measurements identify a concrete latency obstacle; a receiving contract and adversarial matrix are proposed, with no cache implementation claimed.
+**Evidence so far:** Current native operations repeatedly verify retained original signed ingress. Matched birth and query measurements identify a concrete latency obstacle; a receiving contract and adversarial matrix are proposed, with no cache implementation claimed. A later bounded profile shows reconstructed history retains expensive charge functions; a cache alone would retain that recomputation. Charge materialization is tracked separately.
 
 [Task brief](../sprints/2026-09-19/next-cycle-host-session.md)
 
@@ -559,6 +586,7 @@ Replace repeated whole-history semantic replay with a source-owned verified sess
 **Evidence / provenance:**
 
 - [S-HOST-SESSION-PROPOSAL-0919 — Proposed persistent verified host session, grounded in measured native replay cost](../sprints/2026-09-19/next-cycle-host-session.md)
+- [S-NATIVE-COMPUTATION-0919 — Native query profile: repeated charge computation in reconstructed history](../sprints/2026-09-19/next-cycle-native-computation.md)
 
 **Write scope:** minidregg/Kernel/NativeHost.lean and NativeHostReplay.lean; minidregg/Host/Main.lean persistent stdio loop; minidregg native public acceptance and measured replay counts
 

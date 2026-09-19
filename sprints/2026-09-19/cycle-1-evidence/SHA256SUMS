@@ -32,6 +32,9 @@ eb111d5b7fdde071ba562e3052d621a0a88b241df64b8386b309b7a7c2140c46  ./birth-benchm
 a9a98d6056a6cd49e44e1a992505db7a6444bb2494a782cb855de2b4fbd618cf  ./birth-benchmark-20260919T202801Z/source-overlay.tsv
 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./birth-benchmark-20260919T202801Z/stdout.log
 3cd8403454f980c767fadddd9ecc303328022bfa6059cc64b53901ec5f1f5b73  ./birth-benchmark-20260919T202801Z/time.log
+16a2b63b36e2099eeae2f42bd4202d82d5f3ddaef1af7b72f6b46543349a3d3e  ./bread-continuity/README.md
+6e27f561fb2c7e90840edc5b4564bde975f82f6777dfc21089a2bb2fa68a25f0  ./bread-continuity/original-log.sha256
+5c226ed3814595527b46ba432351cd7af5e64a41436febec9cf78a1b00e7973f  ./bread-continuity/push-summary.txt
 8e02271131c99acc1026a9e1bf46d3b72ce0aceaf851a2ac42fd7f940e050dbd  ./cast-injectivity/PredCompile.source-excerpt.txt
 d7fdbc3c7a92d4c0dd35083fa9948212e54a3b3e302453598b554dc46e6e1f31  ./cast-injectivity/canonical-source.sha256
 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./cast-injectivity/compiler.log

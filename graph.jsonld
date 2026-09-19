@@ -3339,9 +3339,10 @@
       "owner": "Unassigned",
       "priority": 1,
       "milestone": "urn:dregg:assortia:M-2026-09-26",
-      "updatedAt": "2026-09-19T21:36:23.257Z",
+      "updatedAt": "2026-09-19T22:02:08.713Z",
       "sources": [
-        "urn:dregg:assortia:S-HOST-SESSION-PROPOSAL-0919"
+        "urn:dregg:assortia:S-HOST-SESSION-PROPOSAL-0919",
+        "urn:dregg:assortia:S-NATIVE-COMPUTATION-0919"
       ],
       "motivatedBy": [
         "urn:dregg:assortia:I-CORE-SPRINT",
@@ -3354,7 +3355,8 @@
       "related": [
         "urn:dregg:assortia:W-NATIVE-HOST",
         "urn:dregg:assortia:W-GRAIN-CONTROL",
-        "urn:dregg:assortia:W-GRAIN-RUNTIME"
+        "urn:dregg:assortia:W-GRAIN-RUNTIME",
+        "urn:dregg:assortia:W-CHARGE-MATERIALIZATION"
       ],
       "blockedBy": [],
       "brief": "sprints/2026-09-19/next-cycle-host-session.md",
@@ -3363,9 +3365,58 @@
         "minidregg/Host/Main.lean persistent stdio loop",
         "minidregg native public acceptance and measured replay counts"
       ],
-      "progress": "Current native operations repeatedly verify retained original signed ingress. Matched birth and query measurements identify a concrete latency obstacle; a receiving contract and adversarial matrix are proposed, with no cache implementation claimed.",
+      "progress": "Current native operations repeatedly verify retained original signed ingress. Matched birth and query measurements identify a concrete latency obstacle; a receiving contract and adversarial matrix are proposed, with no cache implementation claimed. A later bounded profile shows reconstructed history retains expensive charge functions; a cache alone would retain that recomputation. Charge materialization is tracked separately.",
       "nextAction": "Agree and implement the verified-session and pinned-verifier contract, then exercise unchanged-image reuse and exact-prefix suffix replay through persistent stdio.",
       "closure": "Prove verified-prefix plus suffix replay agrees with full semantic replay under explicit verifier assumptions; run unchanged-image, external append/revocation, rewritten/rolled-back history, stale challenge, exact CAS, lost reply, restart and verifier-change cases through the real host. Preserve fresh authorization, exact original receipt boundaries and uncertainty. Measure physical reads, replay counts and latency; do not substitute height/hash/mtime for exact image identity."
+    },
+    {
+      "@id": "urn:dregg:assortia:S-NATIVE-COMPUTATION-0919",
+      "@type": "Source",
+      "label": "Native query profile: repeated charge computation in reconstructed history",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-19/next-cycle-native-computation.md",
+      "lineStart": 1,
+      "lineEnd": 124,
+      "sha256": "3b9033ecf74ed71867ea9d3318aa3338a3f093867e49c3d63618d4ea97169bab",
+      "recordedDate": "2026-09-19",
+      "evidenceKind": "bounded-runtime-profile-and-source-investigation",
+      "limitations": "Two-second inclusive stack sample plus exact source inspection; no implementation or measured speedup. Canonical-only policy admission is a distinct unmeasured proposal."
+    },
+    {
+      "@id": "urn:dregg:assortia:W-CHARGE-MATERIALIZATION",
+      "@type": "WorkItem",
+      "label": "Materialize admitted charges instead of recomputing their source",
+      "description": "Preserve exact admitted charges and record bytes while removing repeated birth write/read-guard computation during historical serialization.",
+      "status": "backlog",
+      "owner": "Unassigned",
+      "priority": 1,
+      "milestone": "urn:dregg:assortia:M-2026-09-26",
+      "updatedAt": "2026-09-19T22:02:08.714Z",
+      "sources": [
+        "urn:dregg:assortia:S-NATIVE-COMPUTATION-0919"
+      ],
+      "motivatedBy": [
+        "urn:dregg:assortia:I-CORE-SPRINT",
+        "urn:dregg:assortia:I-MINI-CYCLE-1"
+      ],
+      "advances": [
+        "urn:dregg:assortia:E-KERNEL",
+        "urn:dregg:assortia:E-WORLD"
+      ],
+      "related": [
+        "urn:dregg:assortia:W-HOST-SESSION",
+        "urn:dregg:assortia:W-NATIVE-HOST"
+      ],
+      "blockedBy": [],
+      "brief": "sprints/2026-09-19/next-cycle-native-computation.md",
+      "writeScope": [
+        "minidregg admitted charge and intent/record construction",
+        "minidregg/Kernel/ResourceBirthReceiver.lean",
+        "minidregg lower-layer finite-charge helper and serialization equality proofs"
+      ],
+      "progress": "A live query sample found all active stacks in history replay and repeated source charge computation during encoding. Existing chargeOfTuple_tuple proves the representation equality; no receiving implementation or measured gain exists yet.",
+      "nextAction": "Materialize source-derived finite charges once at receiving construction, prove exact intent/record equality, inspect compiled sharing, then measure unchanged signed operations. Measure fresh admission separately before assigning the canonical-only admission proposal.",
+      "closure": "The actual receiving/replay path retains materialized charge data; a general proof preserves every charge lane, complete intent/record identity and canonical bytes without changed bounds or tariffs. Generated-code and matched native operation evidence show repeated serialization does not reconstruct birth writes/read guards, and semantic replay, receipts, charges and refusal behavior remain unchanged."
     }
   ]
 }
