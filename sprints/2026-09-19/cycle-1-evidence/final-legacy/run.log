@@ -1,0 +1,127 @@
+PASS actual Ed25519 SPKI public key
+PASS actual Ed25519 SPKI public key
+PASS ordinary open refuses absent genesis
+PASS exact genesis initialization is idempotent
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS authorized account view contains only Alice's exact asset cut
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS own account capability does not reveal Bob's account
+PASS authorized/refused reads add no journal entry
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS host selects actual profile and deployment
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS genesis logical clock
+PASS installed event 1: public birth
+PASS stale signed challenge refuses without a payload
+PASS unauthorized and stale observation refusals have one external diagnostic
+PASS owner/control grants created by actual birth
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS object view has no account balances
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS host selects actual profile and deployment
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS installed event 2: public owner invocation
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS host selects actual profile and deployment
+PASS actual detached Ed25519 signature
+PASS installed event 3: first public rule update
+PASS rule replacement preserves grants and increments only revision
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS object view has no account balances
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS host selects actual profile and deployment
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS refusal: new law applies to retained owner grant; canonical outcome [68, 82, 69, 71, 71, 47, 78, 65, 84, 73, 86, 69, 45, 72, 79, 83, 84, 47, 79, 85, 84, 67, 79, 77, 69, 47, 118, 49, 1, 0,
+ 9, 255, 97, 100, 109, 105, 115, 115, 105, 111, 110, 15, 255, 114, 101, 113, 117, 101, 115, 116, 32, 114, 101, 102, 117,
+ 115, 101, 100]
+PASS policy refusal leaves physical bytes unchanged
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS host selects actual profile and deployment
+PASS actual detached Ed25519 signature
+PASS installed event 4: same original controller changes rules again
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS object view has no account balances
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS resource and parent queries use one image
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS host selects actual profile and deployment
+PASS actual detached Ed25519 signature
+PASS installed event 5: actual Alice to Bob delegation
+PASS canonical current lineage and exact narrow child
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS object view has no account balances
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS host selects actual profile and deployment
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS refusal: Alice cannot sign Bob's received grant; canonical outcome [68, 82, 69, 71, 71, 47, 78, 65, 84, 73, 86, 69, 45, 72, 79, 83, 84, 47, 79, 85, 84, 67, 79, 77, 69, 47, 118, 49, 1, 0,
+ 9, 255, 97, 100, 109, 105, 115, 115, 105, 111, 110, 15, 255, 114, 101, 113, 117, 101, 115, 116, 32, 114, 101, 102, 117,
+ 115, 101, 100]
+PASS signature refusal leaves physical bytes unchanged
+PASS clock derives from accepted history only
+PASS installed event 6: public Bob invocation
+PASS reopen verifies history at its original height after child expiry
+PASS actual object contains Bob's write
+PASS single birth fee and exact conserved genesis supply
+PASS six accepted mutations; refusals add no history
+PASS malformed Book fixture account is absent
+PASS hidden-unregistered-balance: malformed image remains physically replayable
+PASS hidden-unregistered-balance: real public open refuses malformed semantics
+PASS hidden-unregistered-balance: refused open never mutates scratch image
+PASS unknown-ingress: malformed image remains physically replayable
+PASS unknown-ingress: real public open refuses malformed semantics
+PASS unknown-ingress: refused open never mutates scratch image
+PASS changed-event: malformed image remains physically replayable
+PASS changed-event: real public open refuses malformed semantics
+PASS changed-event: refused open never mutates scratch image
+PASS changed-charge: malformed image remains physically replayable
+PASS changed-charge: real public open refuses malformed semantics
+PASS changed-charge: refused open never mutates scratch image
+PASS fresh-process historical lookup
+PASS fresh-process exact retry
+PASS fresh-process historical lookup
+PASS fresh-process exact retry
+PASS fresh-process historical lookup
+PASS fresh-process exact retry
+PASS fresh-process historical lookup
+PASS fresh-process exact retry
+PASS fresh-process historical lookup
+PASS fresh-process exact retry
+PASS fresh-process historical lookup
+PASS fresh-process exact retry
+PASS refusal: noncanonical outer frame; canonical outcome [68, 82, 69, 71, 71, 47, 78, 65, 84, 73, 86, 69, 45, 72, 79, 83, 84, 47, 79, 85, 84, 67, 79, 77, 69, 47, 118, 49, 1, 0,
+ 9, 255, 97, 100, 109, 105, 115, 115, 105, 111, 110, 15, 255, 114, 101, 113, 117, 101, 115, 116, 32, 114, 101, 102, 117,
+ 115, 101, 100]
+PASS all restarted receipt lookups/retries/refusals preserve exact final bytes
+PASS public host CLI: fresh external Ed25519 custody; source genesis/bootstrap; prepare/sign/assemble/submit birth; original owner invocation; two rule changes retain grants; narrowed Bob delegation and current-rule invocation; process restart lookup/exact retry; policy/signature/encoding refusals; exact conserved Book and unchanged replay image. BabyBear/scalar29 native execution, no succinct-proof or chain-funds claim.

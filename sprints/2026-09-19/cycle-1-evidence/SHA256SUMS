@@ -1,4 +1,4 @@
-9d56654b749087839b5fc9b5cfd421237b9ab32de3e4360fb64ef411af751af1  ./INDEX.md
+3a653bddc620cfddce53e82d72b593b51d40a4b6251add0138838ec090237e20  ./INDEX.md
 933ff44c72aeebddde8e84d5ca18b9d5d32de0cf8557b6adaeaa47b002085eef  ./birth-and-order-sharing/README.md
 bc906a70dfbf390b272945bfb849e26c465f7e9a09949ba2d5242d0a2d17edbd  ./birth-and-order-sharing/birth-controller-source-excerpt.txt
 26d92d8fc82d4c1c9df6b0bfbb8f7171b7a056f1892bbb7c57f6b59105eb0a7e  ./birth-and-order-sharing/commands.txt
@@ -85,6 +85,9 @@ cf7213316e56ccc53fbab3dd2b7185e79748fb9bd1027f98d20c43dfd6e8bedd  ./final-client
 5b6625105d86b9ca60eb6679480ceaeef5302ba3006fae8780bc1434815a6e68  ./final-client/nonpass-fixture-note.md
 f93425efa002c5e8eac2629a2ee6cf1d4683d19c110e68b0a0aef9f392d629ef  ./final-client/run-evidence.json
 d5741d35739984c45f4138062e0f0d5997d450df9824ed1b4375ab3c3110435b  ./final-client/scalar-final-view.json
+9a332676a569f6a5756a9ca1eb64ad66f84599e39c5d6391a35bdd4539c4c314  ./final-legacy/README.md
+23a13af3ce3c559c1bd454008f2e7fa0a36d7a7526609743b7090c4f9e31702d  ./final-legacy/manifest.txt
+1c8f7172ff0605b06fcf0b019f55e7b146011cf648bdb6ef82b5ed3416041e8d  ./final-legacy/run.log
 4b333655198b965f33c0daace997aeff1f2a1b412afb54029da4da703f9ac1e1  ./full-gate-green-20260919T202556Z/README.md
 62bd2d6fa99ffff749f9cb38266b184bc4c7d73d51ef5954b102f0517ad48003  ./full-gate-green-20260919T202556Z/artifact-sha256.txt
 0c7d01f0505a2262b0754b4c58ffb0d2103372e53b8fd70da3c006a99bbb523f  ./full-gate-green-20260919T202556Z/build.log
