@@ -228,9 +228,10 @@
       "@id": "urn:dregg:assortia:I-WORLD",
       "@type": "Intent",
       "label": "Friends metaprogram social, Xanadu, distributed, local-first resources",
-      "description": "The community inhabits and changes a DREGG resource world; full Hermes integration is desired within it.",
+      "description": "The community inhabits and changes a DREGG resource world. September 19 clarifies the first hosted offering as a complete Nous Hermes experience, with metering and actual kernel/shell programmability; external unforked Hermes access is desirable too.",
       "sources": [
-        "urn:dregg:assortia:S-CONVERSATION"
+        "urn:dregg:assortia:S-CONVERSATION",
+        "urn:dregg:assortia:S-DIRECTION-0919"
       ],
       "subject": "urn:dregg:assortia:E-WORLD"
     },
@@ -1121,7 +1122,7 @@
       "@id": "urn:dregg:assortia:W-M26-DESIGN",
       "@type": "WorkItem",
       "label": "Define the September 26 programmable nexus and its shared contracts",
-      "description": "Active design and implementation planning for the September 26 mixed programmable nexus: canonical resource/authority/history, user-authored rules and shell/Hermes invocation, participant hosting and meaningful economic operations. Close required core/compiler/proof/runtime gaps instead of routing around them.",
+      "description": "Design the complete hosted Nous Hermes offering within the DREGG programmable nexus, including real resource authority, persistence, credential-use policy, metering and typed evidence. External unforked Hermes support is desirable. Protocols, receiving kernel and economic operation remain open.",
       "status": "backlog",
       "evidenceKind": "assistant-proposal",
       "localPath": "/Users/ember/dev/dregg-assortia/milestones/2026-09-26.md",
@@ -1135,7 +1136,12 @@
         "urn:dregg:assortia:I-MIXED-PROGRAMMING",
         "urn:dregg:assortia:I-CORE-SPRINT",
         "urn:dregg:assortia:I-AUTONOMOUS-NIGHT",
-        "urn:dregg:assortia:I-REGULAR-CHECKPOINTS"
+        "urn:dregg:assortia:I-REGULAR-CHECKPOINTS",
+        "urn:dregg:assortia:I-HOSTED-HERMES",
+        "urn:dregg:assortia:I-HOSTED-CREDENTIAL-CUSTODY",
+        "urn:dregg:assortia:I-SEMANTICS-BEFORE-FULL-PROOFS",
+        "urn:dregg:assortia:I-DESIGN-MODE-0919",
+        "urn:dregg:assortia:I-FOREGROUND-PAUSE"
       ],
       "related": [
         "urn:dregg:assortia:W-DOC-PERSIST",
@@ -1151,19 +1157,21 @@
       ],
       "closure": "Accepted nexus operations and consequential design decisions; selected semantic and receiving-runtime paths; an explicit owned-node participation path and selected Solana/resource outcome; linked implementation obligations and evidence. Selecting a contract does not close implementation or deployment.",
       "owner": null,
-      "updatedAt": "2026-09-18T03:34:10-04:00",
+      "updatedAt": "2026-09-19T11:29:38-04:00",
       "advances": [
         "urn:dregg:assortia:E-WORLD"
       ],
-      "nextAction": "Review the measured native journey with ember and converge the public host, first economic operation and release promises.",
+      "nextAction": "Discuss the source-reviewed grain-control, upstream-Hermes and request-evidence findings; choose one receiving kernel and define durable operation, pause/reconnect and credential-use semantics before implementation resumes.",
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
       "blockedBy": [],
       "sources": [
         "urn:dregg:assortia:S-IMPLEMENTATION-0045",
-        "urn:dregg:assortia:S-WIND-DOWN-0918"
+        "urn:dregg:assortia:S-WIND-DOWN-0918",
+        "urn:dregg:assortia:S-DIRECTION-0919",
+        "urn:dregg:assortia:S-PROTOCOL-REVIEW-0919"
       ],
-      "progress": "First joined native kernel journey now passes; compiled public host remains unfinished. Exact release activity and economic operation still need design decisions. Work frozen at ember’s request; no agent is currently assigned."
+      "progress": "Three bounded Sol source reviews complete; no builds or implementation wave resumed. Hosted Nous Hermes and initial hosted key custody are accepted direction. Foreground pause/reconnect supersedes keep-going-on-disconnect; explicit background work may continue. Grain persistence/effect ordering and request-evidence integration remain substantive work."
     },
     {
       "@id": "urn:dregg:assortia:S-NEXUS-INTERFACE",
@@ -2263,16 +2271,17 @@
       "description": "Graph-backed work ownership, concrete briefs, generated current views and an explicit update routine replace an orientation-only entry point.",
       "status": "done",
       "owner": "Astra: root",
-      "updatedAt": "2026-09-18T01:45:00-04:00",
+      "updatedAt": "2026-09-19T11:21:30-04:00",
       "advances": [
         "urn:dregg:assortia:E-KNOWLEDGE-HUB"
       ],
-      "nextAction": "Use and maintain the tested hub tools during project handoffs; contributor/runtime selection continues in W-ANDROID-CONTRACT.",
+      "nextAction": "Use and maintain the tested hub tools during handoffs; the unassigned hosting-contract proposal remains in W-ANDROID-CONTRACT, while hosted-Hermes design continues in W-M26-DESIGN.",
       "closure": "A clean assortia clone exposes current work, ownership and a concrete feature-handoff investigation without sibling repositories; graph/status checks and generated-view checks pass.",
       "sources": [
         "urn:dregg:assortia:S-IMPLEMENTATION-0045",
         "urn:dregg:assortia:S-IMPLEMENTATION-0130",
-        "urn:dregg:assortia:S-HUB-TOOLS-0145"
+        "urn:dregg:assortia:S-HUB-TOOLS-0145",
+        "urn:dregg:assortia:S-DIRECTION-0919"
       ],
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 0,
@@ -2292,16 +2301,17 @@
       "description": "Extend the existing graph browser so readers can move from work to purpose, dependencies and evidence, and discover what points back.",
       "status": "done",
       "owner": "Astra: core_durable_receiver",
-      "updatedAt": "2026-09-18T01:45:00-04:00",
+      "updatedAt": "2026-09-19T11:21:30-04:00",
       "advances": [
         "urn:dregg:assortia:E-KNOWLEDGE-HUB"
       ],
-      "nextAction": "Use and maintain the tested hub tools during project handoffs; contributor/runtime selection continues in W-ANDROID-CONTRACT.",
+      "nextAction": "Use and maintain the tested hub tools during handoffs; the unassigned hosting-contract proposal remains in W-ANDROID-CONTRACT, while hosted-Hermes design continues in W-M26-DESIGN.",
       "closure": "Existing graph relationships are traversable deterministically and safely in both directions; broken links and cycles are handled explicitly; default short output remains usable.",
       "sources": [
         "urn:dregg:assortia:S-IMPLEMENTATION-0045",
         "urn:dregg:assortia:S-IMPLEMENTATION-0130",
-        "urn:dregg:assortia:S-HUB-TOOLS-0145"
+        "urn:dregg:assortia:S-HUB-TOOLS-0145",
+        "urn:dregg:assortia:S-DIRECTION-0919"
       ],
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 0,
@@ -2332,16 +2342,17 @@
       "description": "Report which claims/work items need reinspection when source bytes change, with repository paths configurable on a contributor machine.",
       "status": "done",
       "owner": "Astra: core_resource_pages",
-      "updatedAt": "2026-09-18T01:45:00-04:00",
+      "updatedAt": "2026-09-19T11:21:30-04:00",
       "advances": [
         "urn:dregg:assortia:E-KNOWLEDGE-HUB"
       ],
-      "nextAction": "Use and maintain the tested hub tools during project handoffs; contributor/runtime selection continues in W-ANDROID-CONTRACT.",
+      "nextAction": "Use and maintain the tested hub tools during handoffs; the unassigned hosting-contract proposal remains in W-ANDROID-CONTRACT, while hosted-Hermes design continues in W-M26-DESIGN.",
       "closure": "The checker identifies unavailable repositories separately from changed files, explains affected records without rewriting their historical hashes, and runs against temporary fixture repositories.",
       "sources": [
         "urn:dregg:assortia:S-IMPLEMENTATION-0045",
         "urn:dregg:assortia:S-IMPLEMENTATION-0130",
-        "urn:dregg:assortia:S-HUB-TOOLS-0145"
+        "urn:dregg:assortia:S-HUB-TOOLS-0145",
+        "urn:dregg:assortia:S-DIRECTION-0919"
       ],
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
@@ -2355,10 +2366,11 @@
       "@id": "urn:dregg:assortia:M-2026-09-26",
       "@type": "Milestone",
       "label": "September26 programmable nexus",
-      "description": "Mixed DREGG-native programmable resources for friends/Discord, with shell/Hermes and outward growth; exact public release promises and economic operation remain under design.",
+      "description": "Hosted Nous Hermes within a DREGG-native programmable resource world for friends/Discord. Desired runnable demo around September 22–23 for iteration before the September 26 momentum release. Exact protocols, receiving kernel, shared activity, economic operation and release promises remain under design.",
       "status": "active",
       "sources": [
-        "urn:dregg:assortia:S-IMPLEMENTATION-0045"
+        "urn:dregg:assortia:S-IMPLEMENTATION-0045",
+        "urn:dregg:assortia:S-DIRECTION-0919"
       ],
       "workItems": [
         "urn:dregg:assortia:W-DOC-PERSIST",
@@ -2388,10 +2400,10 @@
       "@id": "urn:dregg:assortia:W-ANDROID-CONTRACT",
       "@type": "WorkItem",
       "label": "Define resource-host lifecycle ownership and its kernel contract",
-      "description": "Cloud/resource-host lifecycle is the selected area to offer Wisper. This stable work ID retains the original Android example; exact runtime/export contract is still open.",
-      "status": "ready",
-      "owner": "Astra: root on resumption",
-      "updatedAt": "2026-09-18T03:34:10-04:00",
+      "description": "Unassigned cloud/resource-host lifecycle contract work. The earlier proposal to offer it to Wisper is superseded by his separate low-level networking assignment. This stable work ID retains the original Android example.",
+      "status": "backlog",
+      "owner": null,
+      "updatedAt": "2026-09-19T11:21:30-04:00",
       "priority": 0,
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "advances": [
@@ -2405,17 +2417,18 @@
         "urn:dregg:assortia:S-MOBILE-REVIEW",
         "urn:dregg:assortia:S-HOST-CONTRIBUTOR-PROPOSAL",
         "urn:dregg:assortia:S-ACCOUNT-HANDOFF-0918",
-        "urn:dregg:assortia:S-WIND-DOWN-0918"
+        "urn:dregg:assortia:S-WIND-DOWN-0918",
+        "urn:dregg:assortia:S-DIRECTION-0919"
       ],
       "motivatedBy": [
         "urn:dregg:assortia:I-CONTRIBUTOR-LEGIBILITY",
         "urn:dregg:assortia:I-CLOUD-CONTRIBUTOR"
       ],
       "blockedBy": [],
-      "nextAction": "Agree the first runtime/export and executable shell consumer with ember and Wisper, then freeze owned core delivery and crash/restart acceptance.",
+      "nextAction": "Select the hosted-grain receiving runtime and lifecycle contract with ember before assigning this preserved hosting package; Wisper is not a prerequisite.",
       "closure": "A contributor can scaffold a real product surface from a concrete brief and agreed contracts, with executable receiving interfaces or explicitly owned upstream delivery, test scenarios and no need to infer core architecture from chat.",
       "brief": "contributing/resource-host-lifecycle.md",
-      "progress": "Ember selected cloud/resource-host lifecycle. Source-backed brief and concrete native-host export proposal are preserved; exact first runtime/profile and owned upstream exports remain open. No contributor contact or assignment. Work frozen at ember’s request; no agent is currently assigned.",
+      "progress": "September 18 source-backed hosting proposal retained. September 19 clarification: Wisper is assigned elsewhere, outside our critical path. Exact runtime/export contract remains open; no implementation owner assigned.",
       "writeScope": [
         "DreggNet/control provider/server/supervisor and gateway lifecycle",
         "Selected native host extraction/export, jointly reserved with core",
@@ -2540,10 +2553,11 @@
     {
       "@id": "urn:dregg:assortia:I-CLOUD-CONTRIBUTOR",
       "@type": "Intent",
-      "label": "Offer Wisper substantial cloud/resource-host lifecycle ownership",
-      "description": "Ember selected cloud/resource-host lifecycle as the contribution area. Exact kernel/host contract and first runtime remain to be agreed; no agent assigned or contacted Wisper.",
+      "label": "Historical cloud/resource-host proposal for Wisper; superseded September 19",
+      "description": "Ember selected cloud/resource-host lifecycle on September 18, then reported assigning Wisper a separate low-level networking task outside the critical path on September 19. The hosting brief remains unassigned design work. Networking scope and completion are not supplied here.",
       "sources": [
-        "urn:dregg:assortia:S-ACCOUNT-HANDOFF-0918"
+        "urn:dregg:assortia:S-ACCOUNT-HANDOFF-0918",
+        "urn:dregg:assortia:S-DIRECTION-0919"
       ]
     },
     {
@@ -2653,6 +2667,157 @@
       "sha256": "8f99bf0d280432c217792df12e40f80255c3c15e99e4c649539e05c9bc0a387f",
       "recordedDate": "2026-09-18",
       "evidenceKind": "captured-runs-source-review-and-user-direction"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-DIRECTION-0919",
+      "@type": "Source",
+      "label": "September 19 hosted Hermes direction, superseded Wisper plan and revised disconnect preference",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-19/direction.md",
+      "lineStart": 1,
+      "lineEnd": 60,
+      "sha256": "6a9b65a4ecaf47e27de8fd077dbf8a963194eff71742c964d1e6058c49cc5598",
+      "recordedDate": "2026-09-19",
+      "evidenceKind": "user-direction-and-labeled-assistant-proposals"
+    },
+    {
+      "@id": "urn:dregg:assortia:I-HOSTED-HERMES",
+      "@type": "Intent",
+      "label": "A complete hosted Nous Hermes experience with DREGG programmability",
+      "description": "Ember wants hosted Nous Research Hermes on our resources with metering and kernel/shell programmability. SSH is suggested, not selected. External unforked Hermes support is desirable if practical. The user leans toward a custom remote-control interface; ACP, MCP, A2A and kernel/runtime choices remain open.",
+      "sources": [
+        "urn:dregg:assortia:S-DIRECTION-0919"
+      ]
+    },
+    {
+      "@id": "urn:dregg:assortia:I-HOSTED-CREDENTIAL-CUSTODY",
+      "@type": "Intent",
+      "label": "Initial hosted OpenRouter-key custody with scoped use",
+      "description": "Ember accepts a credential service holding a user-provided OpenRouter key while Hermes receives permission to request its use. Desired TLSNotary and parsing evidence should bind authorized request construction to the exchange. This does not prevent unrecorded use by the custodian or establish that present certificates close the intended relation.",
+      "sources": [
+        "urn:dregg:assortia:S-DIRECTION-0919"
+      ]
+    },
+    {
+      "@id": "urn:dregg:assortia:I-SEMANTICS-BEFORE-FULL-PROOFS",
+      "@type": "Intent",
+      "label": "Operate intended semantics before full STARK assurance is complete",
+      "description": "Ember wants to operate the system semantics while full STARK assurance remains incomplete. Actual kernel authorization, persistence, isolation and receiving operations remain required work. Neither Bread nor Mini is selected or declared ready by this intent.",
+      "sources": [
+        "urn:dregg:assortia:S-DIRECTION-0919"
+      ]
+    },
+    {
+      "@id": "urn:dregg:assortia:I-DESIGN-MODE-0919",
+      "@type": "Intent",
+      "label": "Bounded design exploration while implementation remains wound down",
+      "description": "The laptop is occupied by a separate formal-news session. Ember authorizes a few Sol agents for read-only exploration; this does not restart implementation or builds. Desired runnable demo is about September 22–23 for iteration before the September 26 momentum release.",
+      "sources": [
+        "urn:dregg:assortia:S-DIRECTION-0919"
+      ]
+    },
+    {
+      "@id": "urn:dregg:assortia:S-PROTOCOL-REVIEW-0919",
+      "@type": "Source",
+      "label": "Astra review of three Sol source investigations and proposed protocol boundaries",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-19/protocol-review.md",
+      "lineStart": 1,
+      "lineEnd": 72,
+      "sha256": "b8552e3493396a6269492759e3c3591c1ce0a89974a09358852b9846d0ad61b6",
+      "recordedDate": "2026-09-19",
+      "evidenceKind": "source-review-and-assistant-proposals-no-execution"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-GRAIN-CONTROL-0919",
+      "@type": "Source",
+      "label": "Sol source review of grain control, persistence and effect ordering",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-19/reports/grain-control.md",
+      "lineStart": 1,
+      "lineEnd": 155,
+      "sha256": "a7275ed38e7d69b7fdd6d1c4843da8e9f9610d1aff837070e3078d32eb384dc9",
+      "recordedDate": "2026-09-19",
+      "evidenceKind": "source-review-and-assistant-proposals-no-execution"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-HERMES-EDGES-0919",
+      "@type": "Source",
+      "label": "Sol source review of upstream Hermes adapters, persistence and credentials",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-19/reports/hermes-edges.md",
+      "lineStart": 1,
+      "lineEnd": 123,
+      "sha256": "75d0ab36feab02c3445e694620a815de64a591fc03a5544abb5db4507d8951f4",
+      "recordedDate": "2026-09-19",
+      "evidenceKind": "source-review-and-assistant-proposals-no-execution"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-PROVIDER-EVIDENCE-0919",
+      "@type": "Source",
+      "label": "Sol source review of authenticated requests, parsing and agent consumption",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-19/reports/provider-evidence.md",
+      "lineStart": 1,
+      "lineEnd": 151,
+      "sha256": "b48f6cf3d0e8f7ebd0a003f65b958550bc5fea2a76142b47d0f9a542f6a51cd3",
+      "recordedDate": "2026-09-19",
+      "evidenceKind": "source-review-and-assistant-proposals-no-execution"
+    },
+    {
+      "@id": "urn:dregg:assortia:I-FOREGROUND-PAUSE",
+      "@type": "Intent",
+      "label": "Pause foreground Hermes on disconnect; continue only explicit background work",
+      "description": "Ember withdrew the immediately preceding keep-going answer. Current preference: foreground processing pauses on disconnect and resumes on reconnection; only explicitly backgrounded work continues unattended. Exact interruption, in-flight reconciliation and reconnect mechanics remain design work. Underlying hosted resources have a separate lifecycle.",
+      "sources": [
+        "urn:dregg:assortia:S-DIRECTION-0919"
+      ],
+      "subject": "urn:dregg:assortia:E-GRAINS"
+    },
+    {
+      "@id": "urn:dregg:assortia:C-GRAIN-RECOVERY-0919",
+      "@type": "Claim",
+      "label": "Current served grain recovery depends on retained in-memory tenant state",
+      "description": "AgentPlatform starts with an empty in-memory tenant map. Its lease carrier and local node are held in memory, and wake_from_lease first looks up the tenant. Source also places committed action admission before budget draw and external effect, followed by later receipt/checkpoint steps.",
+      "subject": "urn:dregg:assortia:E-GRAINS",
+      "sources": [
+        "urn:dregg:assortia:S-GRAIN-CONTROL-0919",
+        "urn:dregg:assortia:S-PROTOCOL-REVIEW-0919"
+      ],
+      "evidenceKind": "source-inspection",
+      "scope": "Inspected Bread agent-platform, dregg-agent, grain-turn and hosted-lease paths; source hashes in the September 19 inventory.",
+      "limitations": "No new execution. Reconstruction primitives exist; this does not assert absence of storage throughout the wider suite. Crash-window consequences are source inferences.",
+      "status": "observed-in-source"
+    },
+    {
+      "@id": "urn:dregg:assortia:C-HERMES-ADAPTERS-0919",
+      "@type": "Claim",
+      "label": "Upstream Hermes has reusable persistence and ACP/MCP/provider configuration",
+      "description": "The inspected upstream checkout supports a persistent Hermes home/session database, ACP load/resume, MCP tools and alternate provider endpoints. This supports an unmodified hosted-Hermes candidate under a separate DREGG supervisor.",
+      "subject": "urn:dregg:assortia:E-HERMES",
+      "sources": [
+        "urn:dregg:assortia:S-HERMES-EDGES-0919",
+        "urn:dregg:assortia:S-PROTOCOL-REVIEW-0919"
+      ],
+      "evidenceKind": "source-inspection",
+      "scope": "Inspected Hermes 0.17.0 checkout and Bread deos-hermes adapter.",
+      "limitations": "No runtime acceptance. ACP is not a universal tool-authorization hook, MCP is additive, provider fallbacks need separate routing control, and session reload is not durable continuation of an arbitrary interrupted tool.",
+      "status": "observed-in-source"
+    },
+    {
+      "@id": "urn:dregg:assortia:C-PROVIDER-REQUEST-GAP-0919",
+      "@type": "Claim",
+      "label": "Current portable zkOracle acceptance does not bind authorized provider request construction",
+      "description": "The inspected TLS verifiers retain authenticated sent views, but higher AuthenticSession adapters drop them; current POST disclosures omit request bodies. Response CFG proves syntax. Binding delegated request policy to authenticated bytes and joining actual upstream Hermes consumption remain integration/design obligations.",
+      "subject": "urn:dregg:assortia:E-HERMES",
+      "sources": [
+        "urn:dregg:assortia:S-PROVIDER-EVIDENCE-0919",
+        "urn:dregg:assortia:S-PROTOCOL-REVIEW-0919"
+      ],
+      "evidenceKind": "source-inspection",
+      "scope": "Inspected Bread zkoracle-live/prove, provider callers and attestation helpers; dated August test evidence remains separate.",
+      "limitations": "No new provider call or proof run. Broker policy enforcement is narrower than full upstream Hermes construction/consumption proof; host custody logs do not prove complete use against a dishonest custodian.",
+      "status": "observed-in-source"
     }
   ]
 }

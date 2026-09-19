@@ -6,15 +6,15 @@
 
 **Define resource-host lifecycle ownership and its kernel contract**
 
-Status: **ready** · Owner: Astra: root on resumption · Updated: 2026-09-18T03:34:10-04:00
+Status: **backlog** · Owner: Unassigned · Updated: 2026-09-19T11:21:30-04:00
 
-Cloud/resource-host lifecycle is the selected area to offer Wisper. This stable work ID retains the original Android example; exact runtime/export contract is still open.
+Unassigned cloud/resource-host lifecycle contract work. The earlier proposal to offer it to Wisper is superseded by his separate low-level networking assignment. This stable work ID retains the original Android example.
 
-**Next:** Agree the first runtime/export and executable shell consumer with ember and Wisper, then freeze owned core delivery and crash/restart acceptance.
+**Next:** Select the hosted-grain receiving runtime and lifecycle contract with ember before assigning this preserved hosting package; Wisper is not a prerequisite.
 
 **Done when:** A contributor can scaffold a real product surface from a concrete brief and agreed contracts, with executable receiving interfaces or explicitly owned upstream delivery, test scenarios and no need to infer core architecture from chat.
 
-**Evidence so far:** Ember selected cloud/resource-host lifecycle. Source-backed brief and concrete native-host export proposal are preserved; exact first runtime/profile and owned upstream exports remain open. No contributor contact or assignment. Work frozen at ember’s request; no agent is currently assigned.
+**Evidence so far:** September 18 source-backed hosting proposal retained. September 19 clarification: Wisper is assigned elsewhere, outside our critical path. Exact runtime/export contract remains open; no implementation owner assigned.
 
 [Task brief](../contributing/resource-host-lifecycle.md)
 
@@ -32,6 +32,7 @@ Cloud/resource-host lifecycle is the selected area to offer Wisper. This stable 
 - [S-HOST-CONTRIBUTOR-PROPOSAL — Proposed resource-host lifecycle ownership and receiving contract](../contributing/resource-host-lifecycle.md)
 - [S-ACCOUNT-HANDOFF-0918 — September18 account handoff: native born-owner journey and next integration wave](../sprints/2026-09-18/account-handoff.md)
 - [S-WIND-DOWN-0918 — User-requested wind-down, exact native passes and unfinished host, September 18](../sprints/2026-09-18/wind-down.md)
+- [S-DIRECTION-0919 — September 19 hosted Hermes direction, superseded Wisper plan and revised disconnect preference](../sprints/2026-09-19/direction.md)
 
 **Write scope:** DreggNet/control provider/server/supervisor and gateway lifecycle; Selected native host extraction/export, jointly reserved with core; Selected packaging and integration harness
 
@@ -45,11 +46,11 @@ Cloud/resource-host lifecycle is the selected area to offer Wisper. This stable 
 
 **Follow graph relationships in both directions**
 
-Status: **done** · Owner: Astra: core_durable_receiver · Updated: 2026-09-18T01:45:00-04:00
+Status: **done** · Owner: Astra: core_durable_receiver · Updated: 2026-09-19T11:21:30-04:00
 
 Extend the existing graph browser so readers can move from work to purpose, dependencies and evidence, and discover what points back.
 
-**Next:** Use and maintain the tested hub tools during project handoffs; contributor/runtime selection continues in W-ANDROID-CONTRACT.
+**Next:** Use and maintain the tested hub tools during handoffs; the unassigned hosting-contract proposal remains in W-ANDROID-CONTRACT, while hosted-Hermes design continues in W-M26-DESIGN.
 
 **Done when:** Existing graph relationships are traversable deterministically and safely in both directions; broken links and cycles are handled explicitly; default short output remains usable.
 
@@ -66,6 +67,7 @@ Extend the existing graph browser so readers can move from work to purpose, depe
 - [S-IMPLEMENTATION-0045 — September 18 implementation and contributor checkpoint](../sprints/2026-09-18/checkpoint-0045.md)
 - [S-IMPLEMENTATION-0130 — Durable native invocation and repaired runtime history, September 18 01:30](../sprints/2026-09-18/checkpoint-0130.md)
 - [S-HUB-TOOLS-0145 — Graph navigation/source-impact tooling and captured tests](../sprints/2026-09-18/hub-tools-0145.md)
+- [S-DIRECTION-0919 — September 19 hosted Hermes direction, superseded Wisper plan and revised disconnect preference](../sprints/2026-09-19/direction.md)
 
 **Write scope:** dregg-assortia/browse_graph.py; dregg-assortia/tests/test_browse_graph.py
 
@@ -79,11 +81,11 @@ Extend the existing graph browser so readers can move from work to purpose, depe
 
 **Make assortia usable for ongoing work and new contributors**
 
-Status: **done** · Owner: Astra: root · Updated: 2026-09-18T01:45:00-04:00
+Status: **done** · Owner: Astra: root · Updated: 2026-09-19T11:21:30-04:00
 
 Graph-backed work ownership, concrete briefs, generated current views and an explicit update routine replace an orientation-only entry point.
 
-**Next:** Use and maintain the tested hub tools during project handoffs; contributor/runtime selection continues in W-ANDROID-CONTRACT.
+**Next:** Use and maintain the tested hub tools during handoffs; the unassigned hosting-contract proposal remains in W-ANDROID-CONTRACT, while hosted-Hermes design continues in W-M26-DESIGN.
 
 **Done when:** A clean assortia clone exposes current work, ownership and a concrete feature-handoff investigation without sibling repositories; graph/status checks and generated-view checks pass.
 
@@ -98,6 +100,7 @@ Graph-backed work ownership, concrete briefs, generated current views and an exp
 - [S-IMPLEMENTATION-0045 — September 18 implementation and contributor checkpoint](../sprints/2026-09-18/checkpoint-0045.md)
 - [S-IMPLEMENTATION-0130 — Durable native invocation and repaired runtime history, September 18 01:30](../sprints/2026-09-18/checkpoint-0130.md)
 - [S-HUB-TOOLS-0145 — Graph navigation/source-impact tooling and captured tests](../sprints/2026-09-18/hub-tools-0145.md)
+- [S-DIRECTION-0919 — September 19 hosted Hermes direction, superseded Wisper plan and revised disconnect preference](../sprints/2026-09-19/direction.md)
 
 ## W-AUTHORITY-NATIVE
 
@@ -421,15 +424,15 @@ Actual-joint resource accounting and accepted field preservation now reject mint
 
 **Define the September 26 programmable nexus and its shared contracts**
 
-Status: **backlog** · Owner: Unassigned · Updated: 2026-09-18T03:34:10-04:00
+Status: **backlog** · Owner: Unassigned · Updated: 2026-09-19T11:29:38-04:00
 
-Active design and implementation planning for the September 26 mixed programmable nexus: canonical resource/authority/history, user-authored rules and shell/Hermes invocation, participant hosting and meaningful economic operations. Close required core/compiler/proof/runtime gaps instead of routing around them.
+Design the complete hosted Nous Hermes offering within the DREGG programmable nexus, including real resource authority, persistence, credential-use policy, metering and typed evidence. External unforked Hermes support is desirable. Protocols, receiving kernel and economic operation remain open.
 
-**Next:** Review the measured native journey with ember and converge the public host, first economic operation and release promises.
+**Next:** Discuss the source-reviewed grain-control, upstream-Hermes and request-evidence findings; choose one receiving kernel and define durable operation, pause/reconnect and credential-use semantics before implementation resumes.
 
 **Done when:** Accepted nexus operations and consequential design decisions; selected semantic and receiving-runtime paths; an explicit owned-node participation path and selected Solana/resource outcome; linked implementation obligations and evidence. Selecting a contract does not close implementation or deployment.
 
-**Evidence so far:** First joined native kernel journey now passes; compiled public host remains unfinished. Exact release activity and economic operation still need design decisions. Work frozen at ember’s request; no agent is currently assigned.
+**Evidence so far:** Three bounded Sol source reviews complete; no builds or implementation wave resumed. Hosted Nous Hermes and initial hosted key custody are accepted direction. Foreground pause/reconnect supersedes keep-going-on-disconnect; explicit background work may continue. Grain persistence/effect ordering and request-evidence integration remain substantive work.
 
 **Enables:**
 
@@ -439,6 +442,8 @@ Active design and implementation planning for the September 26 mixed programmabl
 
 - [S-IMPLEMENTATION-0045 — September 18 implementation and contributor checkpoint](../sprints/2026-09-18/checkpoint-0045.md)
 - [S-WIND-DOWN-0918 — User-requested wind-down, exact native passes and unfinished host, September 18](../sprints/2026-09-18/wind-down.md)
+- [S-DIRECTION-0919 — September 19 hosted Hermes direction, superseded Wisper plan and revised disconnect preference](../sprints/2026-09-19/direction.md)
+- [S-PROTOCOL-REVIEW-0919 — Astra review of three Sol source investigations and proposed protocol boundaries](../sprints/2026-09-19/protocol-review.md)
 
 ## W-NATIVE-DATA-RECEIVER
 
@@ -625,11 +630,11 @@ Compare provider bonds, resource payments and Clutch claim/settlement operations
 
 **Make source freshness portable and actionable**
 
-Status: **done** · Owner: Astra: core_resource_pages · Updated: 2026-09-18T01:45:00-04:00
+Status: **done** · Owner: Astra: core_resource_pages · Updated: 2026-09-19T11:21:30-04:00
 
 Report which claims/work items need reinspection when source bytes change, with repository paths configurable on a contributor machine.
 
-**Next:** Use and maintain the tested hub tools during project handoffs; contributor/runtime selection continues in W-ANDROID-CONTRACT.
+**Next:** Use and maintain the tested hub tools during handoffs; the unassigned hosting-contract proposal remains in W-ANDROID-CONTRACT, while hosted-Hermes design continues in W-M26-DESIGN.
 
 **Done when:** The checker identifies unavailable repositories separately from changed files, explains affected records without rewriting their historical hashes, and runs against temporary fixture repositories.
 
@@ -644,3 +649,4 @@ Report which claims/work items need reinspection when source bytes change, with 
 - [S-IMPLEMENTATION-0045 — September 18 implementation and contributor checkpoint](../sprints/2026-09-18/checkpoint-0045.md)
 - [S-IMPLEMENTATION-0130 — Durable native invocation and repaired runtime history, September 18 01:30](../sprints/2026-09-18/checkpoint-0130.md)
 - [S-HUB-TOOLS-0145 — Graph navigation/source-impact tooling and captured tests](../sprints/2026-09-18/hub-tools-0145.md)
+- [S-DIRECTION-0919 — September 19 hosted Hermes direction, superseded Wisper plan and revised disconnect preference](../sprints/2026-09-19/direction.md)

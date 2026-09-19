@@ -1,0 +1,216 @@
+{
+  "recordedAt": "2026-09-19T15:28:43+00:00",
+  "scope": "Read-only source investigation and project records. Hashes capture selected cited working-tree files at archival time; repository HEAD is context, not a claim that every file is clean or that anything was executed. Mini HEAD identifies the unchanged implementation checkpoint; this pass did not revalidate its implementation.",
+  "reports": [
+    {
+      "path": "sprints/2026-09-19/reports/grain-control.md",
+      "originalPath": "/tmp/dregg-design-grain-control-20260919.md",
+      "sha256": "a7275ed38e7d69b7fdd6d1c4843da8e9f9610d1aff837070e3078d32eb384dc9",
+      "lines": 155,
+      "evidenceKind": "source-review-and-proposals-no-execution"
+    },
+    {
+      "path": "sprints/2026-09-19/reports/hermes-edges.md",
+      "originalPath": "/tmp/dregg-design-hermes-edges-20260919.md",
+      "sha256": "75d0ab36feab02c3445e694620a815de64a591fc03a5544abb5db4507d8951f4",
+      "lines": 123,
+      "evidenceKind": "source-review-and-proposals-no-execution"
+    },
+    {
+      "path": "sprints/2026-09-19/reports/provider-evidence.md",
+      "originalPath": "/tmp/dregg-design-provider-evidence-20260919.md",
+      "sha256": "b48f6cf3d0e8f7ebd0a003f65b958550bc5fea2a76142b47d0f9a542f6a51cd3",
+      "lines": 151,
+      "evidenceKind": "source-review-and-proposals-no-execution"
+    }
+  ],
+  "repositories": [
+    {
+      "name": "breadstuffs",
+      "gitHead": "ddda6170a1856477378ee98a18a10973650bf315",
+      "localPath": "/Users/ember/dev/breadstuffs",
+      "selectedSources": [
+        {
+          "path": "agent-platform/src/lib.rs",
+          "sha256": "f1012732acf5f2309aedbb5c8b48a2fa060f41bcf62758743fe9cd91cde66d1a"
+        },
+        {
+          "path": "agent-platform/src/node.rs",
+          "sha256": "97fc082def93ccf22362f476bb751ac9efb8f7316dee59fabd16725285ac78ba"
+        },
+        {
+          "path": "agent-platform/src/serve.rs",
+          "sha256": "d54a9ce88e2e67078500bfde155da47a9c74f267fd231d0256a295428538e8cf"
+        },
+        {
+          "path": "agent-platform/src/bin/agent-platform.rs",
+          "sha256": "299ddf13ecf90bfd5b460698a91c657a468e85c536c6e014b6f74ebfb118d851"
+        },
+        {
+          "path": "dregg-agent/src/agent.rs",
+          "sha256": "fee9282a8fca5832b823cba6489321c1c8ce3264b001fc138545b8f4f7335095"
+        },
+        {
+          "path": "dregg-agent/src/session.rs",
+          "sha256": "f1427e9ce6f37e93d052a8d72e236f2b827927e969b0d5ba8f0694b715552b06"
+        },
+        {
+          "path": "dregg-agent/src/session_store.rs",
+          "sha256": "eac9026407d083f3f253ecf24aca48e474ace78f2badaafffdc2e7bb558e6ac6"
+        },
+        {
+          "path": "dregg-agent/src/meter.rs",
+          "sha256": "f14b534d408aaaf8b016e84fb5a8e46a6079ebdb48cfa85dc78d564d5863c0da"
+        },
+        {
+          "path": "dregg-agent/src/brain.rs",
+          "sha256": "80b3e79982fe7988fa5e0f8171da868d68a5676c0ae1b1bb90264e411e32cf94"
+        },
+        {
+          "path": "dregg-agent/src/envelope.rs",
+          "sha256": "d2d4761e9bdebf833706e5e20d46fedbb4c8043bfddfe85c2404def180057b6d"
+        },
+        {
+          "path": "dregg-agent/src/bin/dregg-agent.rs",
+          "sha256": "1fbc85df6887662bf482a3cd692eeaa451d0f1af584615f13e9e560fc46aba7f"
+        },
+        {
+          "path": "grain-turn/src/lib.rs",
+          "sha256": "aec86eb2e2e83eefc124b90137d7fd9a07d80315a8a6ab3c9bc09080bf8f69b6"
+        },
+        {
+          "path": "grain-turn/src/finalize.rs",
+          "sha256": "a13cb4a9f2401fa47685a46b4c8f30e17b256bb719b54f6b42500894d63b08d7"
+        },
+        {
+          "path": "hosted-lease/src/lib.rs",
+          "sha256": "08a08dc354fb4dfec82f797956708c34d1fa02ca07ed37b5d165a0de75d3b1da"
+        },
+        {
+          "path": "deos-hermes/src/acp_client.rs",
+          "sha256": "eb6e00f17500b041a427a9924267694c60eb28fa8769c6f49962936d7269ffbc"
+        },
+        {
+          "path": "deos-hermes/src/mcp_server.rs",
+          "sha256": "e335d71a3a11dd9d572e4123c7b1dc7a3c10f6a412cffbb3b24c0452cc88792f"
+        },
+        {
+          "path": "deos-hermes/src/main.rs",
+          "sha256": "c5e67bfa84dd1045d76044f59199d026847126c8b03728de7299182d2285510b"
+        },
+        {
+          "path": "deos-hermes/src/host.rs",
+          "sha256": "ec067c4118c7b29f7586f64bf7ae043cdd97b77485865f513b6fafd7063afd3b"
+        },
+        {
+          "path": "deos-hermes/src/attest.rs",
+          "sha256": "fc4a04a33582ad0953875975bdba826d7cfe72cc2ee60a018cf9ba01d5593424"
+        },
+        {
+          "path": "deos-hermes/src/confined.rs",
+          "sha256": "5e6f37bddcd700aa487cd9972c1734c07aac0e17bfe227e1cb2d307ffbf61da8"
+        },
+        {
+          "path": "zkoracle-live/src/verify.rs",
+          "sha256": "b33df1dae6cb0aa99421a4b7b3b6ec5e392d1777222c2c677b558fb7886cc67d"
+        },
+        {
+          "path": "zkoracle-live/src/tlsn_live.rs",
+          "sha256": "48d824f30d625959d1fad939199f88d84391df5997160a0a473d60efb67c229c"
+        },
+        {
+          "path": "zkoracle-live/src/tlsn_bedrock.rs",
+          "sha256": "6c2f835d30df078de1da01bb2673485edf18174b73604f5780fc62e800f4f515"
+        },
+        {
+          "path": "zkoracle-prove/src/authentic.rs",
+          "sha256": "c8919e233e5445e8dba4c2977912ac8bd1dae0269d45a0e1fda62c86f9792e38"
+        },
+        {
+          "path": "zkoracle-prove/src/attestation.rs",
+          "sha256": "3144298bedd07596d3a2c91f06370759a8d61f52aa771de71345f7b9304433f7"
+        },
+        {
+          "path": "zkoracle-prove/src/render.rs",
+          "sha256": "bd34404538a5b01f3a673203dfa54bf30733fd229cbfbb88c95ded9101647c3a"
+        },
+        {
+          "path": "zkoracle-prove/src/cfg.rs",
+          "sha256": "24b51f9b71599c9577256988400b7d50bbadb0d32a372d3bded35c7f55dd66f3"
+        }
+      ]
+    },
+    {
+      "name": "hermes-agent",
+      "gitHead": "79f297834a9b08ad75d1f2babc55513ae2a7baed",
+      "localPath": "/Users/ember/pug/hermes-agent",
+      "selectedSources": [
+        {
+          "path": "pyproject.toml",
+          "sha256": "118d2e654d8ae78815da55b5439ff163007959de6adc64dd936c34b095effefb"
+        },
+        {
+          "path": "hermes_constants.py",
+          "sha256": "79dcbc42a01dcbc3dcda3cfcde4e612b0a34a3d543f3af87945a574c90ab175c"
+        },
+        {
+          "path": "hermes_state.py",
+          "sha256": "a8d5283865f6a4c801f33b8cbbee272647bbf967412488cdd5ece9612a1f38a2"
+        },
+        {
+          "path": "acp_adapter/server.py",
+          "sha256": "4b2f1e2b1a5df583955e1c97acdf527d95eca6bb641bfa2f0d5d4dd03240a8f0"
+        },
+        {
+          "path": "acp_adapter/session.py",
+          "sha256": "46fc1e36f66648892841e047a66e518aa6ab1855625af4fb4b9ab39a872f8a94"
+        },
+        {
+          "path": "acp_adapter/entry.py",
+          "sha256": "7cb4be5532a03450136368a9d9ee0eb1ef578fbf920ec219a0427b8cda3c505e"
+        },
+        {
+          "path": "acp_adapter/permissions.py",
+          "sha256": "57001c99a5c04d6c5c795d2e0b18d1f4b021e3731d9d011eb9142301e8e95bc4"
+        },
+        {
+          "path": "hermes_cli/runtime_provider.py",
+          "sha256": "b3946948ddee43135593d81441ff7b991ab0e3c75cef222a2a47db6e2fe9a76f"
+        },
+        {
+          "path": "tools/mcp_tool.py",
+          "sha256": "3f0aca90d076a1b0aa5daffd7bb39b0d1a4fee83265f855e68d556e5c8a29d01"
+        },
+        {
+          "path": "tools/terminal_tool.py",
+          "sha256": "97c3a8505fd806f3d93214dfde76964129eeccaacc142896610ab2a7f961345b"
+        },
+        {
+          "path": "tools/environments/ssh.py",
+          "sha256": "b00e5393838d0f3a5c4f41dbaa540aa5f33bb0d3a1947f6effbcfeb46b3542c0"
+        },
+        {
+          "path": "cli-config.yaml.example",
+          "sha256": "189ba03ed867b98b50e155cd6ef5a7420d83f2e3feb3a7cb50dd05c59ce832c3"
+        }
+      ]
+    },
+    {
+      "name": "degg-research",
+      "gitHead": "03d1ee6676a2e9f8a9b88c83c6f5d32442be7cb9",
+      "localPath": "/Users/ember/dev/degg-research",
+      "selectedSources": [
+        {
+          "path": "docs/research/ATTESTATION_SUITE_RERUN_2026-08-19.md",
+          "sha256": "a53f8a52d97782d4562d862b42a71cf2e8b1a6f163ea6b7c94204765f506f53c"
+        }
+      ]
+    },
+    {
+      "name": "minidregg",
+      "gitHead": "b86c80065adc885a4edde03ba3c02eb4eb1485a4",
+      "localPath": "/Users/ember/dev/minidregg",
+      "selectedSources": []
+    }
+  ]
+}

@@ -4,9 +4,9 @@ The living knowledge index and project hub for DREGG: what we are building, how 
 
 **[Current work](CURRENT.md) · [Project map](MAP.md) · [Contributor entry](contributing/README.md)**
 
-The current effort is the September 26 programmable nexus: friends and agents author, govern, share and run DREGG-native resources through a programmable shell and related interfaces. The core and its real receiving applications are being developed together. The exact public release offering and economic operation remain under design. [Ember's intentions](intent.md) distinguish accepted direction from proposals.
+The current design effort is a complete hosted Nous Hermes experience within the September 26 programmable nexus: friends and agents author, govern, share and run DREGG-native resources. Hosted OpenRouter-key custody is acceptable initially; external unforked Hermes access is also desirable. The exact protocols, receiving kernel, shared activity and economic operation remain under design. Read the [September 19 direction](sprints/2026-09-19/direction.md) and [ember's intentions](intent.md) for accepted choices versus proposals. Implementation remains wound down; bounded read-only investigations are informing the next discussion.
 
-An outside contributor should be able to own a substantial product feature from this hub. Ember selected [resource-host lifecycle](contributing/resource-host-lifecycle.md) as the area to offer Wisper: platform ownership across provider reconciliation, recovery, supervision and owner-facing APIs. The first runtime/export contract remains to be agreed; no assignment or contributor contact has been made by the agents.
+An outside contributor should be able to own a substantial product feature from this hub. [Resource-host lifecycle](contributing/resource-host-lifecycle.md) remains an unassigned platform proposal. Ember has assigned Wisper a separate low-level networking task outside our critical path; the earlier plan to offer him hosting work is superseded.
 
 ## Where information lives
 
@@ -17,7 +17,8 @@ An outside contributor should be able to own a substantial product feature from 
 | What can I build, against which interface? | [Contributor entry](contributing/README.md), linked feature briefs and contracts |
 | What does done mean? | [Work records](work/records.md): closure, dependencies, owner and evidence |
 | What was actually checked? | [Latest wind-down handoff](sprints/2026-09-18/wind-down.md) and [account handoff](sprints/2026-09-18/account-handoff.md) and dated test/source artifacts |
-| Why are we doing this? | [Intent](intent.md) and [September 26 design discussion](milestones/2026-09-26.md) |
+| What did the hosted-Hermes review find? | [September 19 protocol review](sprints/2026-09-19/protocol-review.md), three source investigations and their inventory; no new execution |
+| Why are we doing this? | [Intent](intent.md), [current hosted-Hermes direction](sprints/2026-09-19/direction.md) and [earlier September 26 design draft](milestones/2026-09-26.md) |
 | What did the first investigation find? | [September 17 orientation](orientation/2026-09-17.md), a historical snapshot |
 
 ## Use the hub

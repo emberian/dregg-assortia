@@ -1,12 +1,12 @@
 # Proposed ownership: persistent DREGG resource hosting
 
-Draft for ember and Wisper, September 18. **Ember selected this contribution area; it is not assigned, and runtime/export decisions below remain open.** This is a substantial platform design and implementation package serving the intended community shellserver and participant-operated hosting. Android embedding remains a separate possible future feature.
+Draft from September 18, retained as **unassigned design work**. On September 19, ember reported assigning Wisper a separate low-level networking task outside our critical path. This supersedes the proposal to offer him this package. Runtime/export decisions below remain open; source and former lane ownership references describe the September 18 checkpoint, not current assignments. This platform package serves the intended community shellserver and participant-operated hosting. Android embedding remains a separate possible future feature.
 
 The [native-host export investigation](../sprints/2026-09-18/account-handoff/design/dregg-native-host-export-proposal.md) is the earlier proposal. The BabyBear/29 profile is now implemented and passes its focused source checks; the receiving process and authenticated read/preparation interface are under construction. The [current checkpoint](../sprints/2026-09-18/resumed-0311.md) distinguishes source checks, actual receiving tests and the still-pending linked host. The public deployment and contributor-facing contract are not frozen.
 
 The user-visible result: a friend obtains a programmable DREGG resource host, operates a resource through the real kernel, disconnects, and returns to the same identity, committed state and history. Its operator can restart, stop and wake the host without silently duplicating machines, losing state, double charging, or treating an uncertain command as a failed command safe to repeat.
 
-Wisper would own the host lifecycle and its operational interfaces, with room to change inadequate existing designs. Core owners deliver and maintain the canonical operation/authority/receipt semantics. That boundary permits work in both areas concurrently.
+A future host owner would own the lifecycle and its operational interfaces, with room to change inadequate existing designs. Core owners deliver and maintain the canonical operation/authority/receipt semantics. That boundary permits work in both areas concurrently once assignments resume.
 
 ## Why this is real work
 
@@ -87,6 +87,6 @@ Keep an exact build/run recipe and source identities beside these witnesses. Uni
 
 ## Decisions before assignment
 
-Ember and Wisper should choose the first consumer: an operated Linux/homelab resource host is the recommendation. Freeze its runtime/export and owner identity together with core. Android remains separate future work; this package is the selected cloud/resource-host lifecycle area.
+Ember and the eventual implementation owners should choose the first consumer: an operated Linux/homelab resource host is the proposal. Freeze its runtime/export and owner identity together with core. Android remains separate future work; this package is not Wisper's current assignment.
 
 Real $DREGG lockup and devnet recorded-only penalties remain accepted product intent, with asset, custody and exit terms unresolved. They require their own canonical economic contract; this host package should expose the necessary provider identity/evidence seam without inventing those terms.

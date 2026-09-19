@@ -1,6 +1,8 @@
 # Bounded research notes
 
-All notes are source/history inspections from 2026-09-17. No new project builds, tests, proof replays or live-service probes were run. Recommendations are attributed agent proposals, not accepted architecture decisions.
+The original notes below are source/history inspections from 2026-09-17. No new project builds, tests, proof replays or live-service probes were run for those inspections. Recommendations are attributed agent proposals, not accepted architecture decisions. Later implementation results have their own dated sprint evidence.
+
+The [September 19 hosted-Hermes protocol review](../sprints/2026-09-19/protocol-review.md) adds three bounded Sol source investigations: grain persistence/control, unforked Hermes integration, and provider-request evidence. It incorporates the revised foreground pause-on-disconnect preference. No new project execution occurred in that review.
 
 - [Resources](resources.md): desktop documents, durable refusal, local replica tests and transclusion. Updated after tracing the heap writer; read the durable qualification.
 - [Authoring](authoring.md): card editor versus live World identity, external Hermes versus internal brain, MCP startup/bridge composition.

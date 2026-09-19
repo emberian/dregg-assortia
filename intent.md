@@ -1,6 +1,6 @@
 # Intentions retained from the current conversation
 
-Recorded 2026-09-17. These are ember's instructions and preferences, not claims about implementation.
+Initially recorded 2026-09-17; dated clarifications follow. These are ember's instructions and preferences, not claims about implementation. The [September 19 direction](sprints/2026-09-19/direction.md) is the latest product and operating update.
 
 ## First people and social arrangement
 
@@ -114,6 +114,8 @@ Historical context and exact cv session/message references are in [the intent ar
 
 ## Substantial external contribution (September 18 clarification)
 
+**Superseded as Wisper's assignment on September 19:** ember assigned him separate low-level networking work outside the critical path. The following retains the earlier decision history; resource-host lifecycle is now unassigned design work.
+
 Assortia is intended as a living knowledge index and project-management hub that makes substantial product work legible to outside contributors. Wisper is waiting for a specific opportunity. Ember rejected graph-tooling maintenance as that contribution, giving Android scaffolding with an embedded DREGG node and specified system/UI responsibilities as the scale of work intended. Ember subsequently suggested DreggNet/cloud as another possible fit for an experienced backend/platform engineer trusted with broad systems work.
 
 Ember subsequently selected **cloud/resource-host lifecycle** as the area to offer Wisper. The exact kernel/host contract and first receiving runtime are still to be worked out together. This selects the contribution area; Wisper has not been contacted or assigned by the agents. The contributor can own design and implementation; this is not limited to consuming a finished API or building a UI wrapper. Internal hub tooling remains the agents' responsibility.
@@ -134,3 +136,13 @@ Asked whether ownership should provide a separate management right that can repa
 > Let resources deliberately govern—and potentially lock—their own management
 
 A resource may deliberately deny further policy updates, including updates proposed by its owner. There is no implicit owner recovery bypass. Grant preservation across source revisions is independent: the grants remain present, and every attempted use still faces the current rules. Operational restart/recovery preserves accepted state; it does not override resource policy. The policy installer and host acceptance checks must retain a deliberate management-lockout case.
+
+## Hosted Hermes and present operating mode (September 19 clarification)
+
+Ember wants a complete hosted **Nous Research Hermes Agent** experience on our resources, with metering and DREGG kernel/shell programmability. SSH is one suggested entrance. External unforked Hermes support is desirable if practical; ACP, A2A, MCP and a custom interface are under discussion, with a preference leaning custom rather than an accepted selection.
+
+Users may bring OpenRouter keys; ember explicitly accepts initial hosted key custody with Hermes receiving permission to request key use. The desired TLSNotary/parsing evidence must substantiate authorized request construction, not merely syntactic validity. Hosted custody remains a trust relationship, including the possibility of unrecorded use. Full STARK assurance need not precede operating the intended system semantics.
+
+The desired demo date is approximately September 22–23, allowing iteration before September 26. Release days are a momentum cadence. Implementation remains wound down while the laptop is occupied by the separate formal-news project. A few read-only Sol investigations and lightweight project-record maintenance are authorized; earlier broad swarm authorization does not restart builds. See the [dated record](sprints/2026-09-19/direction.md) for exact distinctions between accepted direction, proposals and open questions.
+
+Ember subsequently revised the disconnect preference: ordinary foreground Hermes work should pause on disconnect and resume on reconnection; only explicitly backgrounded work continues unattended. This supersedes the immediately preceding answer to continue the current task within budget. The exact interrupt/recovery mechanism, connection-loss detection and in-flight-operation handling remain design work.
