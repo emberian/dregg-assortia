@@ -106,15 +106,17 @@ Graph-backed work ownership, concrete briefs, generated current views and an exp
 
 **Bind native use to committed keys and complete authority**
 
-Status: **active** · Owner: Astra: resume_authority · Updated: 2026-09-19T12:21:33-04:00
+Status: **backlog** · Owner: Unassigned · Updated: 2026-09-19T17:59:03.858Z
 
 Persist exact signing keys/epochs; accept actual configured native verification of the exact request and capability against the complete same-snapshot authority.
 
-**Next:** Complete current-source observation and Book enforcement audits and downstream receiving checks.
+**Next:** After the core/resource contract is agreed, review preserved WIP against it and reassign a concrete receiving path before resuming this implementation.
 
 **Done when:** Actual installed verification plus complete committed authority checks feed accepted source operations; stale/altered/revoked credentials cannot authorize them.
 
-**Evidence so far:** Registry law/profile pins refreshed; source and exact theorem audits converging with host integration.
+**Evidence so far:** Paused after ember rejected the Python platform direction and requested deeper orientation. Existing WIP and earlier component evidence are preserved; no integrated acceptance is established. Previous assignment: Astra: resume_authority.
+
+[Task brief](../sprints/2026-09-19/core-orientation.md)
 
 **Enables:**
 
@@ -127,7 +129,8 @@ Persist exact signing keys/epochs; accept actual configured native verification 
 - [S-RESUMED-0250 — Resumed native runtime and pinned publication checks, September18](../sprints/2026-09-18/resumed-0250.md)
 - [S-RESUMED-0311 — Revision migration checks and host review, September18 03:11](../sprints/2026-09-18/resumed-0311.md)
 - [S-WIND-DOWN-0918 — User-requested wind-down, exact native passes and unfinished host, September 18](../sprints/2026-09-18/wind-down.md)
-- [S-GRAIN-IMPLEMENTATION-0919 — User-authorized hosted agent grain implementation and acceptance contract](../sprints/2026-09-19/implementation.md)
+- [S-GRAIN-IMPLEMENTATION-0919 — Historical, subsequently paused agent-grain implementation wave](../sprints/2026-09-19/implementation.md)
+- [S-CORE-ORIENTATION-0919 — Bread/Mini microswarm after implementation pause](../sprints/2026-09-19/core-orientation.md)
 
 ## W-AUTHORIZED-DELEGATION
 
@@ -348,17 +351,17 @@ World deployment currently mutates volatile registries; historical paths either 
 
 **Custody and meter scoped provider requests**
 
-Status: **active** · Owner: Astra: grain_broker + root · Updated: 2026-09-19T12:21:33-04:00
+Status: **backlog** · Owner: Unassigned · Updated: 2026-09-19T17:59:03.858Z
 
 Execute bounded streaming requests after canonical reservation, retain exact evidence, fence old epochs, reconcile uncertain work and demonstrate secret isolation.
 
-**Next:** Execute bounded streaming requests after canonical reservation, retain exact evidence, fence old epochs, reconcile uncertain work and demonstrate secret isolation.
+**Next:** After the core/resource contract is agreed, review preserved WIP against it and reassign a concrete receiving path before resuming this implementation.
 
 **Done when:** Execute bounded streaming requests after canonical reservation, retain exact evidence, fence old epochs, reconcile uncertain work and demonstrate secret isolation.
 
-**Evidence so far:** Implementation underway; component evidence does not yet close the integrated journey.
+**Evidence so far:** Paused after ember rejected the Python platform direction and requested deeper orientation. Existing WIP and earlier component evidence are preserved; no integrated acceptance is established. Previous assignment: Astra: grain_broker + root.
 
-[Task brief](../sprints/2026-09-19/implementation.md)
+[Task brief](../sprints/2026-09-19/core-orientation.md)
 
 **Enables:**
 
@@ -366,9 +369,8 @@ Execute bounded streaming requests after canonical reservation, retain exact evi
 
 **Evidence / provenance:**
 
-- [S-GRAIN-IMPLEMENTATION-0919 — User-authorized hosted agent grain implementation and acceptance contract](../sprints/2026-09-19/implementation.md)
-
-**Write scope:** breadstuffs/agent-platform/hosted/dregg_grain/{credentials,broker,broker_transport,broker_server,cost_policy}.py
+- [S-GRAIN-IMPLEMENTATION-0919 — Historical, subsequently paused agent-grain implementation wave](../sprints/2026-09-19/implementation.md)
+- [S-CORE-ORIENTATION-0919 — Bread/Mini microswarm after implementation pause](../sprints/2026-09-19/core-orientation.md)
 
 **Acceptance:**
 
@@ -378,17 +380,17 @@ Execute bounded streaming requests after canonical reservation, retain exact evi
 
 **Durable hosted grain control and authenticated entrance**
 
-Status: **active** · Owner: Astra: grain_control + root · Updated: 2026-09-19T12:21:33-04:00
+Status: **backlog** · Owner: Unassigned · Updated: 2026-09-19T17:59:03.858Z
 
 Execute authenticated provisioning, hard/soft attachment, retained operation lookup and recovery through actual kernel/runtime adapters.
 
-**Next:** Execute authenticated provisioning, hard/soft attachment, retained operation lookup and recovery through actual kernel/runtime adapters.
+**Next:** After the core/resource contract is agreed, review preserved WIP against it and reassign a concrete receiving path before resuming this implementation.
 
 **Done when:** Execute authenticated provisioning, hard/soft attachment, retained operation lookup and recovery through actual kernel/runtime adapters.
 
-**Evidence so far:** Implementation underway; component evidence does not yet close the integrated journey.
+**Evidence so far:** Paused after ember rejected the Python platform direction and requested deeper orientation. Existing WIP and earlier component evidence are preserved; no integrated acceptance is established. Previous assignment: Astra: grain_control + root.
 
-[Task brief](../sprints/2026-09-19/implementation.md)
+[Task brief](../sprints/2026-09-19/core-orientation.md)
 
 **Enables:**
 
@@ -396,9 +398,8 @@ Execute authenticated provisioning, hard/soft attachment, retained operation loo
 
 **Evidence / provenance:**
 
-- [S-GRAIN-IMPLEMENTATION-0919 — User-authorized hosted agent grain implementation and acceptance contract](../sprints/2026-09-19/implementation.md)
-
-**Write scope:** breadstuffs/agent-platform/hosted/dregg_grain/{models,store,control,server,cli,service}.py
+- [S-GRAIN-IMPLEMENTATION-0919 — Historical, subsequently paused agent-grain implementation wave](../sprints/2026-09-19/implementation.md)
+- [S-CORE-ORIENTATION-0919 — Bread/Mini microswarm after implementation pause](../sprints/2026-09-19/core-orientation.md)
 
 **Acceptance:**
 
@@ -408,17 +409,17 @@ Execute authenticated provisioning, hard/soft attachment, retained operation loo
 
 **Host upstream Hermes with persistent confined execution**
 
-Status: **active** · Owner: Astra: grain_runtime · Updated: 2026-09-19T12:21:33-04:00
+Status: **backlog** · Owner: Unassigned · Updated: 2026-09-19T17:59:03.858Z
 
 Run real upstream Hermes in a confined Linux scope, preserve conversation/output, kill descendants on hard disconnect and retain exact scope on soft reconnect.
 
-**Next:** Run real upstream Hermes in a confined Linux scope, preserve conversation/output, kill descendants on hard disconnect and retain exact scope on soft reconnect.
+**Next:** After the core/resource contract is agreed, review preserved WIP against it and reassign a concrete receiving path before resuming this implementation.
 
 **Done when:** Run real upstream Hermes in a confined Linux scope, preserve conversation/output, kill descendants on hard disconnect and retain exact scope on soft reconnect.
 
-**Evidence so far:** Implementation underway; component evidence does not yet close the integrated journey.
+**Evidence so far:** Paused after ember rejected the Python platform direction and requested deeper orientation. Existing WIP and earlier component evidence are preserved; no integrated acceptance is established. Previous assignment: Astra: grain_runtime.
 
-[Task brief](../sprints/2026-09-19/implementation.md)
+[Task brief](../sprints/2026-09-19/core-orientation.md)
 
 **Enables:**
 
@@ -426,9 +427,8 @@ Run real upstream Hermes in a confined Linux scope, preserve conversation/output
 
 **Evidence / provenance:**
 
-- [S-GRAIN-IMPLEMENTATION-0919 — User-authorized hosted agent grain implementation and acceptance contract](../sprints/2026-09-19/implementation.md)
-
-**Write scope:** breadstuffs/agent-platform/hosted/dregg_grain/{runtime,hermes,confinement}.py
+- [S-GRAIN-IMPLEMENTATION-0919 — Historical, subsequently paused agent-grain implementation wave](../sprints/2026-09-19/implementation.md)
+- [S-CORE-ORIENTATION-0919 — Bread/Mini microswarm after implementation pause](../sprints/2026-09-19/core-orientation.md)
 
 **Acceptance:**
 
@@ -438,17 +438,17 @@ Run real upstream Hermes in a confined Linux scope, preserve conversation/output
 
 **Expose canonical resource programming to Hermes**
 
-Status: **active** · Owner: Sol: grain_tools + host_json; Astra: grain_kernel · Updated: 2026-09-19T12:21:33-04:00
+Status: **backlog** · Owner: Unassigned · Updated: 2026-09-19T17:59:03.858Z
 
 Drive real signed resource create/read/program/invoke/delegate/history operations through the source-owned host; reject stale generation authority without refreshing it.
 
-**Next:** Drive real signed resource create/read/program/invoke/delegate/history operations through the source-owned host; reject stale generation authority without refreshing it.
+**Next:** After the core/resource contract is agreed, review preserved WIP against it and reassign a concrete receiving path before resuming this implementation.
 
 **Done when:** Drive real signed resource create/read/program/invoke/delegate/history operations through the source-owned host; reject stale generation authority without refreshing it.
 
-**Evidence so far:** Implementation underway; component evidence does not yet close the integrated journey.
+**Evidence so far:** Paused after ember rejected the Python platform direction and requested deeper orientation. Existing WIP and earlier component evidence are preserved; no integrated acceptance is established. Previous assignment: Sol: grain_tools + host_json; Astra: grain_kernel.
 
-[Task brief](../sprints/2026-09-19/implementation.md)
+[Task brief](../sprints/2026-09-19/core-orientation.md)
 
 **Enables:**
 
@@ -456,9 +456,8 @@ Drive real signed resource create/read/program/invoke/delegate/history operation
 
 **Evidence / provenance:**
 
-- [S-GRAIN-IMPLEMENTATION-0919 — User-authorized hosted agent grain implementation and acceptance contract](../sprints/2026-09-19/implementation.md)
-
-**Write scope:** breadstuffs/agent-platform/hosted/dregg_grain/{kernelclient,mcp}.py; minidregg/Host/Json.lean and Kernel/AgentGrain*.lean
+- [S-GRAIN-IMPLEMENTATION-0919 — Historical, subsequently paused agent-grain implementation wave](../sprints/2026-09-19/implementation.md)
+- [S-CORE-ORIENTATION-0919 — Bread/Mini microswarm after implementation pause](../sprints/2026-09-19/core-orientation.md)
 
 **Acceptance:**
 
@@ -545,15 +544,15 @@ Actual-joint resource accounting and accepted field preservation now reject mint
 
 **Define the September 26 programmable nexus and its shared contracts**
 
-Status: **active** · Owner: Astra: root · Updated: 2026-09-19T12:21:33-04:00
+Status: **active** · Owner: Astra: root · Updated: 2026-09-19T17:59:03.858Z
 
-Implement the complete hosted Nous Hermes offering within the DREGG programmable nexus, using Mini canonical native resource authority, persistence, credential custody, metering and explicit evidence. External unforked Hermes support is desirable; the public economic operation remains to be selected.
+Establish the coherent resource/program contract for hosted Nous Hermes and the programmable nexus, comparing actual Bread and Mini receiving paths. Exact shared activity and economic operation remain open.
 
-**Next:** Join actual hosted Hermes, canonical resource operations, scoped broker and connection lifecycle; complete the retained user-journey acceptance.
+**Next:** Discuss typed resource data, programmable laws versus executable programs, joint transactions and the first deployment scope; agree the construction contract before another implementation swarm.
 
 **Done when:** Accepted nexus operations and consequential design decisions; selected semantic and receiving-runtime paths; an explicit owned-node participation path and selected Solana/resource outcome; linked implementation obligations and evidence. Selecting a contract does not close implementation or deployment.
 
-**Evidence so far:** Implementation explicitly resumed. Mini canonical native receiver selected by Astra; complete platform construction underway across nine coordinated lanes.
+**Evidence so far:** Read-only microswarm complete: two Astra investigations, one Sol investigation and root review. Mini core expansion with selected Bread operational reuse is recommended, not yet an accepted deployment selection. Implementation remains paused.
 
 **Enables:**
 
@@ -567,7 +566,8 @@ Implement the complete hosted Nous Hermes offering within the DREGG programmable
 - [S-PROTOCOL-REVIEW-0919 — Astra review of three Sol source investigations and proposed protocol boundaries](../sprints/2026-09-19/protocol-review.md)
 - [S-CONNECTION-BREAKER-0919 — Disconnect as circuit breaker, explicit soft continuation and enforcement investigation](../sprints/2026-09-19/connection-breaker.md)
 - [S-HERMES-BREAKER-0919 — Sol review of actual Hermes cancellation, descendants and continuation](../sprints/2026-09-19/reports/hermes-circuit-breaker.md)
-- [S-GRAIN-IMPLEMENTATION-0919 — User-authorized hosted agent grain implementation and acceptance contract](../sprints/2026-09-19/implementation.md)
+- [S-GRAIN-IMPLEMENTATION-0919 — Historical, subsequently paused agent-grain implementation wave](../sprints/2026-09-19/implementation.md)
+- [S-CORE-ORIENTATION-0919 — Bread/Mini microswarm after implementation pause](../sprints/2026-09-19/core-orientation.md)
 
 ## W-NATIVE-DATA-RECEIVER
 
@@ -599,15 +599,17 @@ The existing Lean executor now crosses exact-byte SQLite CAS with crash/retry/co
 
 **Operate real resources through a compiled programmable host**
 
-Status: **active** · Owner: Astra: resume_host + resume_genesis + resume_authority; Sol: host_json · Updated: 2026-09-19T12:21:33-04:00
+Status: **backlog** · Owner: Unassigned · Updated: 2026-09-19T17:59:03.858Z
 
 Compile the source-owned Mini birth, rule installation, invocation and delegation path into an executable shell/stdio interface with exact signed calls, committed-history clock and replay receipts.
 
-**Next:** Complete observation/replay/host closure, source-owned authoring, bounded native link and signed public CLI journey.
+**Next:** After the core/resource contract is agreed, review preserved WIP against it and reassign a concrete receiving path before resuming this implementation.
 
 **Done when:** A real compiled host with operator-owned configuration accepts only source-authorized signed calls, preserves committed resources/receipts across restart and lost replies, and drives the same grant-preserving shared-resource journey through the programmable shell.
 
-**Evidence so far:** HostCodec and Genesis saved failures repaired with narrow checks reported; complete native host and integrated journey remain in progress.
+**Evidence so far:** Paused after ember rejected the Python platform direction and requested deeper orientation. Existing WIP and earlier component evidence are preserved; no integrated acceptance is established. Previous assignment: Astra: resume_host + resume_genesis + resume_authority; Sol: host_json.
+
+[Task brief](../sprints/2026-09-19/core-orientation.md)
 
 **Enables:**
 
@@ -620,7 +622,8 @@ Compile the source-owned Mini birth, rule installation, invocation and delegatio
 - [S-ACCOUNT-HANDOFF-0918 — September18 account handoff: native born-owner journey and next integration wave](../sprints/2026-09-18/account-handoff.md)
 - [S-RESUMED-0311 — Revision migration checks and host review, September18 03:11](../sprints/2026-09-18/resumed-0311.md)
 - [S-WIND-DOWN-0918 — User-requested wind-down, exact native passes and unfinished host, September 18](../sprints/2026-09-18/wind-down.md)
-- [S-GRAIN-IMPLEMENTATION-0919 — User-authorized hosted agent grain implementation and acceptance contract](../sprints/2026-09-19/implementation.md)
+- [S-GRAIN-IMPLEMENTATION-0919 — Historical, subsequently paused agent-grain implementation wave](../sprints/2026-09-19/implementation.md)
+- [S-CORE-ORIENTATION-0919 — Bread/Mini microswarm after implementation pause](../sprints/2026-09-19/core-orientation.md)
 
 ## W-POLICY-SOURCE
 
@@ -654,15 +657,17 @@ Immutable internal policy-source cells and a common field/compiler/request profi
 
 **Implement and exercise the canonical authored-program-to-resource path**
 
-Status: **active** · Owner: Astra: root + grain_kernel; Sol: grain_tools · Updated: 2026-09-19T12:21:33-04:00
+Status: **backlog** · Owner: Unassigned · Updated: 2026-09-19T17:59:03.858Z
 
 Select the canonical rule/program representation and actual authority projection, then implement needed compiler/native/proof/durable support and shell/Hermes consumers. Existing guards are retired only by replacing their missing guarantees. Active source investigation is recorded in sprints/2026-09-17.md.
 
-**Next:** Join source-owned grain rules and generic field projection to actual native CLI/MCP and hosted Hermes.
+**Next:** After the core/resource contract is agreed, review preserved WIP against it and reassign a concrete receiving path before resuming this implementation.
 
 **Done when:** Author and install a rule under actual resource authority, invoke a permitted operation through the chosen shell/agent path, refuse a violating operation with correct state/outcome evidence, and recover accepted behavior/history through the chosen durable runtime. Complete all necessary core obligations, not merely a private demo.
 
-**Evidence so far:** Native host selected as the receiving path; generic scalar transition projections and grain source policy under construction.
+**Evidence so far:** Paused after ember rejected the Python platform direction and requested deeper orientation. Existing WIP and earlier component evidence are preserved; no integrated acceptance is established. Previous assignment: Astra: root + grain_kernel; Sol: grain_tools.
+
+[Task brief](../sprints/2026-09-19/core-orientation.md)
 
 **Enables:**
 
@@ -677,7 +682,8 @@ Select the canonical rule/program representation and actual authority projection
 - [S-RESUMED-0250 — Resumed native runtime and pinned publication checks, September18](../sprints/2026-09-18/resumed-0250.md)
 - [S-RESUMED-0311 — Revision migration checks and host review, September18 03:11](../sprints/2026-09-18/resumed-0311.md)
 - [S-WIND-DOWN-0918 — User-requested wind-down, exact native passes and unfinished host, September 18](../sprints/2026-09-18/wind-down.md)
-- [S-GRAIN-IMPLEMENTATION-0919 — User-authorized hosted agent grain implementation and acceptance contract](../sprints/2026-09-19/implementation.md)
+- [S-GRAIN-IMPLEMENTATION-0919 — Historical, subsequently paused agent-grain implementation wave](../sprints/2026-09-19/implementation.md)
+- [S-CORE-ORIENTATION-0919 — Bread/Mini microswarm after implementation pause](../sprints/2026-09-19/core-orientation.md)
 
 ## W-PROVIDER-PATH
 

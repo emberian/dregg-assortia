@@ -1,5 +1,7 @@
 # Bounded research notes
 
+The latest [Bread/Mini microswarm](../sprints/2026-09-19/core-orientation.md) follows the implementation pause and rejection of a new Python platform. It distinguishes executable resource semantics, source-only foundations, retained runtime evidence and proposed core work. No new builds or tests ran.
+
 The original notes below are source/history inspections from 2026-09-17. No new project builds, tests, proof replays or live-service probes were run for those inspections. Recommendations are attributed agent proposals, not accepted architecture decisions. Later implementation results have their own dated sprint evidence.
 
 The [September 19 hosted-Hermes protocol review](../sprints/2026-09-19/protocol-review.md) adds three bounded Sol source investigations: grain persistence/control, unforked Hermes integration, and provider-request evidence. It incorporates the revised foreground pause-on-disconnect preference. No new project execution occurred in that review.

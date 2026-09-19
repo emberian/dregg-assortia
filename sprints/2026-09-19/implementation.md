@@ -1,5 +1,7 @@
 # September 19 — agent grain implementation resumed
 
+> **Historical wave, subsequently paused.** Ember rejected Python as a new platform implementation language and requested deeper investigation before another implementation swarm. The selection and assignments below are retained history, not current authorization. Read [the subsequent Bread/Mini orientation](core-orientation.md) and the generated current board. The original pre-banner source hash remains in the graph as historical evidence.
+
 Ember explicitly authorized a new swarm to build **an agent grain platform**. This supersedes the earlier wind-down and bounded design-only mode. The current effort is the complete hosted Nous Hermes experience, with a persistent programmable DREGG resource world and initial hosted OpenRouter-key custody. Wisper's separately assigned networking work is outside this critical path.
 
 ## Selected receiving path

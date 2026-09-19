@@ -1,0 +1,499 @@
+{
+  "recordedAt": "2026-09-19T17:58:01.213Z",
+  "evidenceKind": "source-inspection-and-historical-artifact-inventory",
+  "scope": "Three read-only investigators plus root; no builds, tests, services or remote jobs in this pass. Hashes identify working-tree bytes; HEAD alone does not identify uncommitted WIP.",
+  "repositories": [
+    {
+      "repository": "breadstuffs",
+      "head": "ddda6170a1856477378ee98a18a10973650bf315",
+      "branch": "main",
+      "files": [
+        {
+          "path": "sdk/src/embed.rs",
+          "sha256": "e2acac71f249ec69e9c57e78fe4c3dfa1e06340dce08e9c1652a204b9f301c7b",
+          "bytes": 54139,
+          "lines": 1295,
+          "headSha256": "e2acac71f249ec69e9c57e78fe4c3dfa1e06340dce08e9c1652a204b9f301c7b",
+          "differsFromHead": false
+        },
+        {
+          "path": "sdk/src/runtime.rs",
+          "sha256": "ce23f8e63230167ab86193cd03674db91fc986acff4b468425127e25c82b455d",
+          "bytes": 115292,
+          "lines": 2216,
+          "headSha256": "ce23f8e63230167ab86193cd03674db91fc986acff4b468425127e25c82b455d",
+          "differsFromHead": false
+        },
+        {
+          "path": "exec-lean/src/lean_apply.rs",
+          "sha256": "f5e33b2865cb3a57205264d7671e1a0df02337ab103b34a1106cab857635b9bf",
+          "bytes": 112615,
+          "lines": 2042,
+          "headSha256": "f5e33b2865cb3a57205264d7671e1a0df02337ab103b34a1106cab857635b9bf",
+          "differsFromHead": false
+        },
+        {
+          "path": "cell/src/program/types.rs",
+          "sha256": "8148299465de35f9efb61d0c67a239c15ee3251f6af32f7f03c8de6bdc35be3f",
+          "bytes": 110100,
+          "lines": 2075,
+          "headSha256": "8148299465de35f9efb61d0c67a239c15ee3251f6af32f7f03c8de6bdc35be3f",
+          "differsFromHead": false
+        },
+        {
+          "path": "cell/src/program/eval.rs",
+          "sha256": "be2943c696387f39010383ffd1f1162e75a0d27e7b4ab81178aa3586bba75466",
+          "bytes": 169949,
+          "lines": 3689,
+          "headSha256": "be2943c696387f39010383ffd1f1162e75a0d27e7b4ab81178aa3586bba75466",
+          "differsFromHead": false
+        },
+        {
+          "path": "turn/src/executor/conservation_oracle.rs",
+          "sha256": "50ec74b3b84ae92e082c722775f29d8df4efeaea08710b0c75270ea4d83ea704",
+          "bytes": 11439,
+          "lines": 196,
+          "headSha256": "50ec74b3b84ae92e082c722775f29d8df4efeaea08710b0c75270ea4d83ea704",
+          "differsFromHead": false
+        },
+        {
+          "path": "turn/src/executor/apply.rs",
+          "sha256": "b69e68dcbbee75370f863efcf7454335f900571b6cc197b9e460efe51e26d6a8",
+          "bytes": 254834,
+          "lines": 5839,
+          "headSha256": "b69e68dcbbee75370f863efcf7454335f900571b6cc197b9e460efe51e26d6a8",
+          "differsFromHead": false
+        },
+        {
+          "path": "turn/src/executor/execute_tree.rs",
+          "sha256": "2fcdb1fd9dac703be802204edaab9bd1b6f611a01a4e97c03ee12680d865706c",
+          "bytes": 75043,
+          "lines": 1669,
+          "headSha256": "2fcdb1fd9dac703be802204edaab9bd1b6f611a01a4e97c03ee12680d865706c",
+          "differsFromHead": false
+        },
+        {
+          "path": "starbridge-v2/src/service_explorer.rs",
+          "sha256": "71fb5a6218973dedb808327c9498be50ff5c9c7fd1fff4b9a4f3f3565587f9fc",
+          "bytes": 35764,
+          "lines": 815,
+          "headSha256": "71fb5a6218973dedb808327c9498be50ff5c9c7fd1fff4b9a4f3f3565587f9fc",
+          "differsFromHead": false
+        },
+        {
+          "path": "starbridge-v2/src/world/genesis.rs",
+          "sha256": "2fa8754323840f8cb0b41b2dcc1cf9d86dc4062125d9b7a4c7aeedb97e166842",
+          "bytes": 16673,
+          "lines": 287,
+          "headSha256": "2fa8754323840f8cb0b41b2dcc1cf9d86dc4062125d9b7a4c7aeedb97e166842",
+          "differsFromHead": false
+        },
+        {
+          "path": "starbridge-v2/src/world/mod.rs",
+          "sha256": "d8198d9b3d8173c7d63f4725e16624219d17f832c41f68ab4d41c8afe19c0b61",
+          "bytes": 279997,
+          "lines": 6119,
+          "headSha256": "d8198d9b3d8173c7d63f4725e16624219d17f832c41f68ab4d41c8afe19c0b61",
+          "differsFromHead": false
+        },
+        {
+          "path": "node/src/mcp/handlers_apps.rs",
+          "sha256": "92bb860d35d7d745c753d0ae3ab65d5244167400ba38b808fb168a3f3fdb2181",
+          "bytes": 40023,
+          "lines": 1041,
+          "headSha256": "92bb860d35d7d745c753d0ae3ab65d5244167400ba38b808fb168a3f3fdb2181",
+          "differsFromHead": false
+        },
+        {
+          "path": "node/src/api.rs",
+          "sha256": "293777933a6ce4ba0f8b386966fa37c476dc76cfb89dcb538db5810c76f95aa1",
+          "bytes": 670838,
+          "lines": 15522,
+          "headSha256": "293777933a6ce4ba0f8b386966fa37c476dc76cfb89dcb538db5810c76f95aa1",
+          "differsFromHead": false
+        },
+        {
+          "path": "deos-js-runtime/src/world.rs",
+          "sha256": "3a0978989f853fdbb74c73f6636a99a10620c7cd9c708ab73412a3b9b95ca50e",
+          "bytes": 39072,
+          "lines": 807,
+          "headSha256": "3a0978989f853fdbb74c73f6636a99a10620c7cd9c708ab73412a3b9b95ca50e",
+          "differsFromHead": false
+        },
+        {
+          "path": "deos-hermes/src/main.rs",
+          "sha256": "c5e67bfa84dd1045d76044f59199d026847126c8b03728de7299182d2285510b",
+          "bytes": 26356,
+          "lines": 536,
+          "headSha256": "c5e67bfa84dd1045d76044f59199d026847126c8b03728de7299182d2285510b",
+          "differsFromHead": false
+        },
+        {
+          "path": "deos-hermes/src/tool_effects.rs",
+          "sha256": "ee2c7dde63ab85589835ef6d64315066dbf1b8f1fce9d479b4cc262d373f5cd9",
+          "bytes": 13783,
+          "lines": 321,
+          "headSha256": "ee2c7dde63ab85589835ef6d64315066dbf1b8f1fce9d479b4cc262d373f5cd9",
+          "differsFromHead": false
+        },
+        {
+          "path": "dregg-agent/src/agent.rs",
+          "sha256": "fee9282a8fca5832b823cba6489321c1c8ce3264b001fc138545b8f4f7335095",
+          "bytes": 108810,
+          "lines": 2437,
+          "headSha256": "fee9282a8fca5832b823cba6489321c1c8ce3264b001fc138545b8f4f7335095",
+          "differsFromHead": false
+        },
+        {
+          "path": "hosted-durable/src/durable_settlement.rs",
+          "sha256": "412d500beff7a7c96c2da051c0f8446ee0b1de3e1c679e77b9689ab2db328fb7",
+          "bytes": 14925,
+          "lines": 366,
+          "headSha256": "412d500beff7a7c96c2da051c0f8446ee0b1de3e1c679e77b9689ab2db328fb7",
+          "differsFromHead": false
+        },
+        {
+          "path": "hosted-durable/src/settle_ledger.rs",
+          "sha256": "3d52210a772a94072bc168ffae41a55bb6e2def647b9e5730f198b1e18004e27",
+          "bytes": 15437,
+          "lines": 394,
+          "headSha256": "3d52210a772a94072bc168ffae41a55bb6e2def647b9e5730f198b1e18004e27",
+          "differsFromHead": false
+        },
+        {
+          "path": "hosted-durable/src/settle.rs",
+          "sha256": "15caee329ac7ceda1d3030c7936d8688180378db0c2e6dfc697c49bd09b34b55",
+          "bytes": 21593,
+          "lines": 489,
+          "headSha256": "15caee329ac7ceda1d3030c7936d8688180378db0c2e6dfc697c49bd09b34b55",
+          "differsFromHead": false
+        }
+      ]
+    },
+    {
+      "repository": "minidregg",
+      "head": "a328f0e2d1c5ae1037896319f5b05149828b5d9e",
+      "branch": "main",
+      "files": [
+        {
+          "path": "ATLAS.md",
+          "sha256": "d43c10614bde325a28ff73ca5127d0d5ffbda19eeb48d4238c1126caf1d873ad",
+          "bytes": 21224,
+          "lines": 303,
+          "headSha256": "d43c10614bde325a28ff73ca5127d0d5ffbda19eeb48d4238c1126caf1d873ad",
+          "differsFromHead": false
+        },
+        {
+          "path": "docs/decisions/D-0002-canonical-hyperedge-kernel.md",
+          "sha256": "d381a2ab217eae13bd0a057cc256e4725c8d91e189e4b2991c234f0bc50171de",
+          "bytes": 4307,
+          "lines": 80,
+          "headSha256": "d381a2ab217eae13bd0a057cc256e4725c8d91e189e4b2991c234f0bc50171de",
+          "differsFromHead": false
+        },
+        {
+          "path": "Pred/Core.lean",
+          "sha256": "3a61830775fae2c2084bd9dbe8d8c4362853d71ddb1f81946b50e9c3c9487723",
+          "bytes": 19274,
+          "lines": 366,
+          "headSha256": "3a61830775fae2c2084bd9dbe8d8c4362853d71ddb1f81946b50e9c3c9487723",
+          "differsFromHead": false
+        },
+        {
+          "path": "Compiler/CanonicalPolicyAdmission.lean",
+          "sha256": "8264a54ed19b730f1af0f269880929caf217630f66cc3c7ff8126f50fae746f2",
+          "bytes": 44044,
+          "lines": 852,
+          "headSha256": "8264a54ed19b730f1af0f269880929caf217630f66cc3c7ff8126f50fae746f2",
+          "differsFromHead": false
+        },
+        {
+          "path": "Compiler/CanonicalCellRegistry.lean",
+          "sha256": "fa55276dc033ca59fbec419d0b83c0101ba9627183f48af8b2b901eccc9681d4",
+          "bytes": 39694,
+          "lines": 753,
+          "headSha256": "fa55276dc033ca59fbec419d0b83c0101ba9627183f48af8b2b901eccc9681d4",
+          "differsFromHead": false
+        },
+        {
+          "path": "Compiler/HyperdocumentContentPageMaterializer.lean",
+          "sha256": "a0f363542f1d3ad60bc0f788d272df6d3ebc3c36b4353ee7d5517d2868b5c518",
+          "bytes": 28054,
+          "lines": 738,
+          "headSha256": "a0f363542f1d3ad60bc0f788d272df6d3ebc3c36b4353ee7d5517d2868b5c518",
+          "differsFromHead": false
+        },
+        {
+          "path": "Theory/CellState.lean",
+          "sha256": "5e6c082065443a49a682c7c560f27c1b8e60bb8b20e70d4ec3a86d207ca90719",
+          "bytes": 21020,
+          "lines": 474,
+          "headSha256": "5e6c082065443a49a682c7c560f27c1b8e60bb8b20e70d4ec3a86d207ca90719",
+          "differsFromHead": false
+        },
+        {
+          "path": "Theory/HyperdocumentOperations.lean",
+          "sha256": "4cd7ef26d1124545835d6d9bc984645f602e54a7c3f2e2e8b1ee86264077a26b",
+          "bytes": 33769,
+          "lines": 819,
+          "headSha256": "4cd7ef26d1124545835d6d9bc984645f602e54a7c3f2e2e8b1ee86264077a26b",
+          "differsFromHead": false
+        },
+        {
+          "path": "Theory/EffectDeclaration.lean",
+          "sha256": "4286c09fcd25d9da040fa354ea618749a79811149eb8d70b6686861f521099cb",
+          "bytes": 18130,
+          "lines": 416,
+          "headSha256": "4286c09fcd25d9da040fa354ea618749a79811149eb8d70b6686861f521099cb",
+          "differsFromHead": false
+        },
+        {
+          "path": "Theory/DeclaredActionLowering.lean",
+          "sha256": "9a4e55194bd048ddbd768e2ac8a55eaff8c06a77629aea4052864cdb3cac6a00",
+          "bytes": 52739,
+          "lines": 1137,
+          "headSha256": "9a4e55194bd048ddbd768e2ac8a55eaff8c06a77629aea4052864cdb3cac6a00",
+          "differsFromHead": false
+        },
+        {
+          "path": "Theory/ResourceBirth.lean",
+          "sha256": "b5d00f1616649c892fc6fd3ceae067efeb75011474f855a012dbb1a4f82d0419",
+          "bytes": 32382,
+          "lines": 670,
+          "headSha256": "b5d00f1616649c892fc6fd3ceae067efeb75011474f855a012dbb1a4f82d0419",
+          "differsFromHead": false
+        },
+        {
+          "path": "Theory/CredentialAuthorityEffects.lean",
+          "sha256": "eb5c1d37900889047aa8cf8089d4f877d6f8b16fd3a747e736a48677d07fbd0b",
+          "bytes": 62199,
+          "lines": 1208,
+          "headSha256": "eb5c1d37900889047aa8cf8089d4f877d6f8b16fd3a747e736a48677d07fbd0b",
+          "differsFromHead": false
+        },
+        {
+          "path": "Theory/CanonicalReactiveView.lean",
+          "sha256": "12dfae931861f7bc59358ad001926c89cc9849248e7e8b6c7445d43d2b0a1bff",
+          "bytes": 18000,
+          "lines": 374,
+          "headSha256": "12dfae931861f7bc59358ad001926c89cc9849248e7e8b6c7445d43d2b0a1bff",
+          "differsFromHead": false
+        },
+        {
+          "path": "Theory/ReactiveController.lean",
+          "sha256": "9ca1906673892af3a02c14c1b3d231c365347351cd1a48d56d8f291e5e242132",
+          "bytes": 19806,
+          "lines": 453,
+          "headSha256": "9ca1906673892af3a02c14c1b3d231c365347351cd1a48d56d8f291e5e242132",
+          "differsFromHead": false
+        },
+        {
+          "path": "Theory/IndexedProgram.lean",
+          "sha256": "a578ee063520787481e9acc09718d5ebe9fb9675e72a2992260e7631aa826156",
+          "bytes": 10885,
+          "lines": 273,
+          "headSha256": "a578ee063520787481e9acc09718d5ebe9fb9675e72a2992260e7631aa826156",
+          "differsFromHead": false
+        },
+        {
+          "path": "Effects/EffectSpec.lean",
+          "sha256": "bf7923b8fc4447159a8ce630a9bcb36e8704972446886dcfc61a347a9c90ba57",
+          "bytes": 22648,
+          "lines": 425,
+          "headSha256": "bf7923b8fc4447159a8ce630a9bcb36e8704972446886dcfc61a347a9c90ba57",
+          "differsFromHead": false
+        },
+        {
+          "path": "Kernel/MultiCellHyperedge.lean",
+          "sha256": "7a76220a45f56d32d887df64a08f181a391651481d141fca5934d8d926d92a9e",
+          "bytes": 35787,
+          "lines": 743,
+          "headSha256": "7a76220a45f56d32d887df64a08f181a391651481d141fca5934d8d926d92a9e",
+          "differsFromHead": false
+        },
+        {
+          "path": "Kernel/DeclaredResourceProjection.lean",
+          "sha256": "f3bfd30e55c65315a217bc83934e67fc69a1073a0b9953bea1b652bcceb445e8",
+          "bytes": 2273,
+          "lines": 48,
+          "headSha256": null,
+          "differsFromHead": true
+        },
+        {
+          "path": "Kernel/DeclaredResourceController.lean",
+          "sha256": "b97bc93a16845880a52a8f1b23944164ccdae7b516b3ad7517c48857289a5a9b",
+          "bytes": 55095,
+          "lines": 1048,
+          "headSha256": "85a807c067eab31f5710044e7d808e83a51823b77e07c4428aacec07b2bd80f0",
+          "differsFromHead": true
+        },
+        {
+          "path": "Kernel/PolicyInstallController.lean",
+          "sha256": "aa967d1de89d9b6c80706e8c601e99a4833663be9222f87b075a9bc0a056663d",
+          "bytes": 35063,
+          "lines": 627,
+          "headSha256": "aa967d1de89d9b6c80706e8c601e99a4833663be9222f87b075a9bc0a056663d",
+          "differsFromHead": false
+        },
+        {
+          "path": "Kernel/NativeObservationController.lean",
+          "sha256": "e201c3ff2ccfdcc77152e9849c0333b13c27bad37cbd8525a2e2f0240192e9ab",
+          "bytes": 26558,
+          "lines": 462,
+          "headSha256": "e201c3ff2ccfdcc77152e9849c0333b13c27bad37cbd8525a2e2f0240192e9ab",
+          "differsFromHead": false
+        },
+        {
+          "path": "Kernel/AgentGrain.lean",
+          "sha256": "9416b11626a99d1d1d61477663b15e8696143833a3553d75dd4dc84875a400a5",
+          "bytes": 12606,
+          "lines": 246,
+          "headSha256": null,
+          "differsFromHead": true
+        },
+        {
+          "path": "Kernel/IrreversibleEffectSettlement.lean",
+          "sha256": "bc6d9d2e8ee2efe4d419d6c6247248f9193dd10b2e71e85d11b5fbc678b77819",
+          "bytes": 27809,
+          "lines": 645,
+          "headSha256": "bc6d9d2e8ee2efe4d419d6c6247248f9193dd10b2e71e85d11b5fbc678b77819",
+          "differsFromHead": false
+        },
+        {
+          "path": "Kernel/NativeHost.lean",
+          "sha256": "9ebc339b42693baedcc4f8292140f4b076aaa6b03cb003e85d1409ffe66d06d1",
+          "bytes": 22026,
+          "lines": 360,
+          "headSha256": "163f8d795e2a7d6dcdc3023cfadc98c3a0e800b95e81945f8f08e79af03552e6",
+          "differsFromHead": true
+        },
+        {
+          "path": "Kernel/NativeHostReplay.lean",
+          "sha256": "c98466c7af5b64e246631e352b0352ca9d2ffdf28a69ed95f929984fc4e75ec7",
+          "bytes": 12207,
+          "lines": 207,
+          "headSha256": "c98466c7af5b64e246631e352b0352ca9d2ffdf28a69ed95f929984fc4e75ec7",
+          "differsFromHead": false
+        },
+        {
+          "path": "Kernel/DurableWalHandler.lean",
+          "sha256": "0638e41a985074f36cbc0b553ba068b4344629dbae99e1f29b1157b79c0ddc22",
+          "bytes": 21313,
+          "lines": 435,
+          "headSha256": "0638e41a985074f36cbc0b553ba068b4344629dbae99e1f29b1157b79c0ddc22",
+          "differsFromHead": false
+        },
+        {
+          "path": "Compiler/NativeHostCodec.lean",
+          "sha256": "2e96e76d6434b1e4af1c1e5a8548a2d6a43953df93d78eba033f74b98f58ee05",
+          "bytes": 10750,
+          "lines": 243,
+          "headSha256": "2e96e76d6434b1e4af1c1e5a8548a2d6a43953df93d78eba033f74b98f58ee05",
+          "differsFromHead": false
+        },
+        {
+          "path": "Compiler/NativeHostProfile.lean",
+          "sha256": "46f49b958a3c54b945bcc7b129004c561fb13cac706fed8a1f3c12bfebb0727a",
+          "bytes": 3330,
+          "lines": 73,
+          "headSha256": "46f49b958a3c54b945bcc7b129004c561fb13cac706fed8a1f3c12bfebb0727a",
+          "differsFromHead": false
+        },
+        {
+          "path": "Compiler/DurableReceiverIO.lean",
+          "sha256": "af1a3cf40cbfdaf09bcb7cbbd8fbe22d6962ebb4bd49a7dfc91943ad9bd16df0",
+          "bytes": 9796,
+          "lines": 207,
+          "headSha256": "af1a3cf40cbfdaf09bcb7cbbd8fbe22d6962ebb4bd49a7dfc91943ad9bd16df0",
+          "differsFromHead": false
+        },
+        {
+          "path": "Host/Main.lean",
+          "sha256": "32e7e62deabbb1427f71517fea433bb87386e84efc58e21dd1c17e4f30bf5c6c",
+          "bytes": 13017,
+          "lines": 262,
+          "headSha256": "59aee655edcc690a82e5fb9830e6dcc68b88a911e3c844c62094d9775bf7a969",
+          "differsFromHead": true
+        },
+        {
+          "path": "Host/Json.lean",
+          "sha256": "d6f8b94a440c95e5a81651267b3860f675432f65416f28237261a4fd0b4bfa10",
+          "bytes": 34560,
+          "lines": 603,
+          "headSha256": null,
+          "differsFromHead": true
+        },
+        {
+          "path": "native/hyperdocument-link-sqlite-store/src/lib.rs",
+          "sha256": "f5bed6922609ff31de39e9be22640f01684e93d1c04bac3bcb64e345de4b4950",
+          "bytes": 19291,
+          "lines": 564,
+          "headSha256": "f5bed6922609ff31de39e9be22640f01684e93d1c04bac3bcb64e345de4b4950",
+          "differsFromHead": false
+        },
+        {
+          "path": "native/hyperdocument-link-sqlite-store/README.md",
+          "sha256": "46a5d38df0b0572f09dd11eed0dd20fea0ea2bd7ff95bc27c20ae885370e669a",
+          "bytes": 3193,
+          "lines": 53,
+          "headSha256": "46a5d38df0b0572f09dd11eed0dd20fea0ea2bd7ff95bc27c20ae885370e669a",
+          "differsFromHead": false
+        },
+        {
+          "path": "docs/NATIVE-HOST.md",
+          "sha256": "840fcbaf3ef489e5e597390b6da7721fbc0faaa28ea9a346eacb5c2930bf73c0",
+          "bytes": 9285,
+          "lines": 171,
+          "headSha256": "b10d3178d1d3492b708fefe5cf131331f46d558053e5aae485acb75497657695",
+          "differsFromHead": true
+        }
+      ]
+    },
+    {
+      "repository": "DreggCloud",
+      "head": "e9ff17a9a955af68afc0bbd7a537184a3656f6fb",
+      "branch": "main",
+      "files": [
+        {
+          "path": "crates/dreggcloud-core/src/lib.rs",
+          "sha256": "3ee7df0c5fefa28f7c42097d39ea56460b0c5b12d6f0a4b1aa14552434ea81f4",
+          "bytes": 299499,
+          "lines": 7499,
+          "headSha256": "3ee7df0c5fefa28f7c42097d39ea56460b0c5b12d6f0a4b1aa14552434ea81f4",
+          "differsFromHead": false
+        }
+      ]
+    },
+    {
+      "repository": "dregg-assortia",
+      "head": "b44624f0d4b31c7d376cc38d0a64e2d977d3d510",
+      "branch": "main",
+      "files": [
+        {
+          "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-journey-handoff.md",
+          "sha256": "d133647fa84909b3693d9c4bc59651b6f396b64b7ae21df0132e11c584f8e27d",
+          "bytes": 3202,
+          "lines": 13,
+          "headSha256": "d133647fa84909b3693d9c4bc59651b6f396b64b7ae21df0132e11c584f8e27d",
+          "differsFromHead": false
+        },
+        {
+          "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-runtime-checkpoint.md",
+          "sha256": "e16b2a4b360678b6580db1b5521a6f4ce5f8a9cafa7076947cba1f04fe611830",
+          "bytes": 9910,
+          "lines": 63,
+          "headSha256": "e16b2a4b360678b6580db1b5521a6f4ce5f8a9cafa7076947cba1f04fe611830",
+          "differsFromHead": false
+        },
+        {
+          "path": "sprints/2026-09-18/wind-down/artifacts/dregg-resume-ffi-factory-fast-attempt2-20260918.log",
+          "sha256": "ab8435dca7a656f13c66f81d694a0ba2823784394e21159a4393e3a9ea5d71d7",
+          "bytes": 49471,
+          "lines": 1264,
+          "headSha256": "ab8435dca7a656f13c66f81d694a0ba2823784394e21159a4393e3a9ea5d71d7",
+          "differsFromHead": false
+        }
+      ]
+    }
+  ]
+}
