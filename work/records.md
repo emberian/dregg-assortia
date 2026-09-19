@@ -107,17 +107,17 @@ Graph-backed work ownership, concrete briefs, generated current views and an exp
 
 **Bind native use to committed keys and complete authority**
 
-Status: **backlog** · Owner: Unassigned · Updated: 2026-09-19T17:59:03.858Z
+Status: **active** · Owner: Astra: cycle_authority + orient_bread_semantics; review: cycle_adversarial + root · Updated: 2026-09-19T18:43:13.546Z
 
 Persist exact signing keys/epochs; accept actual configured native verification of the exact request and capability against the complete same-snapshot authority.
 
-**Next:** After the core/resource contract is agreed, review preserved WIP against it and reassign a concrete receiving path before resuming this implementation.
+**Next:** Finish scoped observation and explicit revocation against exact old targets/authority, then test missing, excessive, stale, revoked and wrong-kind authority in the public journey.
 
 **Done when:** Actual installed verification plus complete committed authority checks feed accepted source operations; stale/altered/revoked credentials cannot authorize them.
 
-**Evidence so far:** Paused after ember rejected the Python platform direction and requested deeper orientation. Existing WIP and earlier component evidence are preserved; no integrated acceptance is established. Previous assignment: Astra: resume_authority.
+**Evidence so far:** Cycle 1 assigns native control/revocation and scoped observation integration. Old fixture evidence is retained; the current profile and compiled public receiver are still converging.
 
-[Task brief](../sprints/2026-09-19/core-orientation.md)
+[Task brief](../sprints/2026-09-19/cycle-1.md)
 
 **Enables:**
 
@@ -132,20 +132,25 @@ Persist exact signing keys/epochs; accept actual configured native verification 
 - [S-WIND-DOWN-0918 — User-requested wind-down, exact native passes and unfinished host, September 18](../sprints/2026-09-18/wind-down.md)
 - [S-GRAIN-IMPLEMENTATION-0919 — Historical, subsequently paused agent-grain implementation wave](../sprints/2026-09-19/implementation.md)
 - [S-CORE-ORIENTATION-0919 — Bread/Mini microswarm after implementation pause](../sprints/2026-09-19/core-orientation.md)
+- [S-CYCLE-1-0919 — Authorized Mini construction cycle 1: initial convergence record](../sprints/2026-09-19/cycle-1.md)
+
+**Write scope:** minidregg/Kernel/CapabilityRevocation*.lean; minidregg/Kernel/NativeObservationController.lean; minidregg/Compiler/NativeObservationCodec.lean; minidregg/Assurance/CapabilityRevocationAudit.lean and NativeObservationAudit.lean
 
 ## W-AUTHORIZED-DELEGATION
 
 **Give a friend a narrower usable right**
 
-Status: **backlog** · Owner: Unassigned · Updated: 2026-09-18T03:34:10-04:00
+Status: **active** · Owner: Astra: cycle_authority + cycle_acceptance; review: root · Updated: 2026-09-19T18:43:13.546Z
 
 Add an explicit authorized subject-to-subject delegation edge without weakening strict holder-narrowing or inventing bearer custody.
 
-**Next:** Carry the measured delegation path into the compiled public host and complete actual revocation/current-generation receiving coverage.
+**Next:** Carry bounded owner-to-friend delegation through the compiled public transaction host; revoke it explicitly and demonstrate refusal without state publication.
 
 **Done when:** Owner delegates a bounded right; friend can use that right, cannot exceed it or replace policy, and revocation/current epochs remain enforced.
 
-**Evidence so far:** Native Alice-to-Bob source-created narrower delegation and real recipient invocation/reopen PASS, including amplification/identity/redelegation refusals. Public host and explicit revocation receiving work remain. Work frozen at ember’s request; no agent is currently assigned.
+**Evidence so far:** Cycle 1 is integrating the prior delegation semantics with public-host scoped reads, joint use and explicit revocation. No current-cycle end-to-end pass is recorded yet.
+
+[Task brief](../sprints/2026-09-19/cycle-1.md)
 
 **Enables:**
 
@@ -159,6 +164,9 @@ Add an explicit authorized subject-to-subject delegation edge without weakening 
 - [S-RESUMED-0250 — Resumed native runtime and pinned publication checks, September18](../sprints/2026-09-18/resumed-0250.md)
 - [S-RESUMED-0311 — Revision migration checks and host review, September18 03:11](../sprints/2026-09-18/resumed-0311.md)
 - [S-WIND-DOWN-0918 — User-requested wind-down, exact native passes and unfinished host, September 18](../sprints/2026-09-18/wind-down.md)
+- [S-CYCLE-1-0919 — Authorized Mini construction cycle 1: initial convergence record](../sprints/2026-09-19/cycle-1.md)
+
+**Write scope:** minidregg/Kernel/CapabilityRevocationController.lean; minidregg/Kernel/CapabilityRevocationReceiver.lean; minidregg public native acceptance harness
 
 ## W-CANONICAL-CONSUMER
 
@@ -470,15 +478,17 @@ Drive real signed resource create/read/program/invoke/delegate/history operation
 
 **Keep grants valid across policy source revisions**
 
-Status: **backlog** · Owner: Unassigned · Updated: 2026-09-18T03:34:10-04:00
+Status: **active** · Owner: Astra: cycle_authority + root + cycle_acceptance · Updated: 2026-09-19T18:43:13.546Z
 
 Separate immutable policy-source revision from grant revocation generation across the exact signed request, authority representation, compiled/source policies and every receiving consumer.
 
-**Next:** Finish authorized generation revocation and remaining consumers/profile/root integration; preserve deliberate resource management lockout.
+**Next:** Exercise grant-preserving policy replacement, current-rule refusal, deliberate management lockout and explicit revocation in the same compiled public journey.
 
 **Done when:** After two admitted rule replacements, previously issued owner/control and delegated grants remain usable exactly when their scope and new rules authorize the new request; stale revisions refuse, explicit generation revocation invalidates prior grants, and restart/retry preserves exact state and receipts. Resource policy can deliberately refuse further management, with no implicit owner bypass.
 
-**Evidence so far:** Repeated native rule changes preserve exact original grants/generation; current-rule refusal, intentional management lockout and expired retry PASS. Explicit revocation receiver remains unfinished. Work frozen at ember’s request; no agent is currently assigned.
+**Evidence so far:** Cycle 1 preserves the settled distinction between source revision and grant generation while integrating explicit control/revocation and public-host checks. Historical fixture passes are not relabeled as current integration.
+
+[Task brief](../sprints/2026-09-19/cycle-1.md)
 
 **Enables:**
 
@@ -491,6 +501,9 @@ Separate immutable policy-source revision from grant revocation generation acros
 - [S-RESUMED-0250 — Resumed native runtime and pinned publication checks, September18](../sprints/2026-09-18/resumed-0250.md)
 - [S-RESUMED-0311 — Revision migration checks and host review, September18 03:11](../sprints/2026-09-18/resumed-0311.md)
 - [S-WIND-DOWN-0918 — User-requested wind-down, exact native passes and unfinished host, September 18](../sprints/2026-09-18/wind-down.md)
+- [S-CYCLE-1-0919 — Authorized Mini construction cycle 1: initial convergence record](../sprints/2026-09-19/cycle-1.md)
+
+**Write scope:** minidregg/Kernel/CapabilityRevocation*.lean; minidregg/Kernel/PolicyInstallController.lean and coordinated authority/control source; minidregg public native acceptance harness
 
 ## W-HERMES-STARTUP
 
@@ -523,15 +536,17 @@ SDK route discovery is lazy while actual cryptographic calls retain real Lean in
 
 **Check composition against the actual joint post-state**
 
-Status: **backlog** · Owner: Unassigned · Updated: 2026-09-18T03:34:10-04:00
+Status: **active** · Owner: Astra: orient_mini_semantics; review: cycle_adversarial + root · Updated: 2026-09-19T18:43:13.546Z
 
-Actual-joint resource accounting and accepted field preservation now reject minted overlap and lost fees in targeted Lean witnesses. Source-policy validity on the joint post, including cross-field dependencies, is the next compulsory composition closure.
+Implement the general Mini transaction receiver over scalar and typed-content resources, with one exact joint post and current-policy admission for every incidence. Singleton mutations use the same receiver.
 
-**Next:** Exercise concrete factory/invocation policies against the same actual final tuple.
+**Next:** Complete joint receiver/host integration and execute a valid task-plus-content transaction plus an invalid-second-leg refusal with no partial publication.
 
 **Done when:** Generic accepted composition preserves incidence outcomes, enforces resource laws and source-owned policy/postconditions on the actual joint result; hostile overlap/cross-field examples refuse, legitimate composition remains inhabited, and receiving constructors use the contract.
 
-**Evidence so far:** Mandatory general postcondition API and constructive cross-field refusal witnesses passed; concrete new consumers still need their joined checks. Work frozen at ember’s request; no agent is currently assigned.
+**Evidence so far:** General transaction implementation and cross-resource policy projection are assigned in cycle 1. Historical component passes remain scoped; the new public native joint journey is still converging.
+
+[Task brief](../sprints/2026-09-19/cycle-1.md)
 
 **Enables:**
 
@@ -543,20 +558,25 @@ Actual-joint resource accounting and accepted field preservation now reject mint
 - [S-IMPLEMENTATION-2330 — Executable receiving/admission checkpoint and rejected-turn correction](../sprints/2026-09-17/checkpoint-2330.md)
 - [S-IMPLEMENTATION-0045 — September 18 implementation and contributor checkpoint](../sprints/2026-09-18/checkpoint-0045.md)
 - [S-WIND-DOWN-0918 — User-requested wind-down, exact native passes and unfinished host, September 18](../sprints/2026-09-18/wind-down.md)
+- [S-CYCLE-1-0919 — Authorized Mini construction cycle 1: initial convergence record](../sprints/2026-09-19/cycle-1.md)
+
+**Write scope:** minidregg/Kernel/ResourceTransaction*.lean; minidregg/Kernel/DeclaredResourceController.lean and shared scalar projection
 
 ## W-M26-DESIGN
 
 **Define the September 26 programmable nexus and its shared contracts**
 
-Status: **active** · Owner: Astra: root · Updated: 2026-09-19T18:04:40.439Z
+Status: **active** · Owner: Astra: root · Updated: 2026-09-19T18:43:13.546Z
 
 Specify the coherent Mini resource/program and hosting contracts for the New World and complete hosted Nous Hermes experience. The construction home is settled; exact shared activity and economic operation remain open.
 
-**Next:** Define the Mini construction contract for typed resources, laws/programming, joint operations, authority, external attempts and hosted Hermes, with one integrated user journey.
+**Next:** Converge the owned Mini cycle through its public native resource journey, then record delivered behaviors, elapsed time and remaining critical-path construction.
 
 **Done when:** Accepted nexus operations and consequential design decisions; selected semantic and receiving-runtime paths; an explicit owned-node participation path and selected Solana/resource outcome; linked implementation obligations and evidence. Selecting a contract does not close implementation or deployment.
 
-**Evidence so far:** Ember settled the direction after the microswarm: rebuild required capabilities into Mini. Bread supplies reference material; evaluating salvage options is not a prerequisite. The previous Python implementation wave remains paused.
+**Evidence so far:** Ember authorized a substantial implementation minicycle after choosing Mini. The source contract and nine bounded lane assignments are recorded; this checkpoint is convergence, with no current-cycle native journey or deployment pass.
+
+[Task brief](../sprints/2026-09-19/cycle-1.md)
 
 **Enables:**
 
@@ -573,6 +593,9 @@ Specify the coherent Mini resource/program and hosting contracts for the New Wor
 - [S-GRAIN-IMPLEMENTATION-0919 — Historical, subsequently paused agent-grain implementation wave](../sprints/2026-09-19/implementation.md)
 - [S-CORE-ORIENTATION-0919 — Bread/Mini microswarm after implementation pause](../sprints/2026-09-19/core-orientation.md)
 - [S-REBUILD-MINI-0919 — Ember chooses rebuilding the New World in Mini](../sprints/2026-09-19/rebuild-in-mini.md)
+- [S-CYCLE-1-0919 — Authorized Mini construction cycle 1: initial convergence record](../sprints/2026-09-19/cycle-1.md)
+
+**Write scope:** minidregg/docs/CYCLE-2026-09-19.md; dregg-assortia/sprints/2026-09-19/cycle-1.md and graph work records
 
 ## W-NATIVE-DATA-RECEIVER
 
@@ -604,17 +627,17 @@ The existing Lean executor now crosses exact-byte SQLite CAS with crash/retry/co
 
 **Operate real resources through a compiled programmable host**
 
-Status: **backlog** · Owner: Unassigned · Updated: 2026-09-19T17:59:03.858Z
+Status: **active** · Owner: Astra: root + orient_bread_semantics + cycle_acceptance; Sol: cycle_build + cycle_client · Updated: 2026-09-19T18:43:13.546Z
 
-Compile the source-owned Mini birth, rule installation, invocation and delegation path into an executable shell/stdio interface with exact signed calls, committed-history clock and replay receipts.
+Compile and exercise the source-owned Mini birth, joint transaction, policy, delegation, scoped observation and explicit revocation path through the public host and Rust client, with semantic replay and exact retry receipts.
 
-**Next:** After the core/resource contract is agreed, review preserved WIP against it and reassign a concrete receiving path before resuming this implementation.
+**Next:** Finish public codec/prepare/assemble/submit/replay wiring, build the full umbrella and native executable in bounded lanes, then capture the signed persistent multi-resource acceptance journey.
 
 **Done when:** A real compiled host with operator-owned configuration accepts only source-authorized signed calls, preserves committed resources/receipts across restart and lost replies, and drives the same grant-preserving shared-resource journey through the programmable shell.
 
-**Evidence so far:** Paused after ember rejected the Python platform direction and requested deeper orientation. Existing WIP and earlier component evidence are preserved; no integrated acceptance is established. Previous assignment: Astra: resume_host + resume_genesis + resume_authority; Sol: host_json.
+**Evidence so far:** Cycle 1 actively integrates the public host, source-owned JSON and Rust client. Bounded component and build work is underway; no final whole-umbrella, linked-host journey or deployment result is recorded in this initial checkpoint.
 
-[Task brief](../sprints/2026-09-19/core-orientation.md)
+[Task brief](../sprints/2026-09-19/cycle-1.md)
 
 **Enables:**
 
@@ -629,20 +652,25 @@ Compile the source-owned Mini birth, rule installation, invocation and delegatio
 - [S-WIND-DOWN-0918 — User-requested wind-down, exact native passes and unfinished host, September 18](../sprints/2026-09-18/wind-down.md)
 - [S-GRAIN-IMPLEMENTATION-0919 — Historical, subsequently paused agent-grain implementation wave](../sprints/2026-09-19/implementation.md)
 - [S-CORE-ORIENTATION-0919 — Bread/Mini microswarm after implementation pause](../sprints/2026-09-19/core-orientation.md)
+- [S-CYCLE-1-0919 — Authorized Mini construction cycle 1: initial convergence record](../sprints/2026-09-19/cycle-1.md)
+
+**Write scope:** minidregg/Compiler/NativeHostCodec.lean; minidregg/Kernel/NativeHost*.lean; minidregg/Host/Main.lean and Host/Json.lean; minidregg/native/resource-client/; minidregg isolated native build and public journey harness
 
 ## W-POLICY-SOURCE
 
 **Store initial policies and use one runtime profile**
 
-Status: **backlog** · Owner: Unassigned · Updated: 2026-09-18T03:34:10-04:00
+Status: **active** · Owner: Astra: root + cycle_authority; review: cycle_adversarial · Updated: 2026-09-19T18:43:13.546Z
 
 Immutable internal policy-source cells and a common field/compiler/request profile make resource creation, invocation and policy replacement agree.
 
-**Next:** Recheck source-policy consumers under coordinated final Registry/profile and compiled-host integration.
+**Next:** Converge the shared source/runtime profile across birth, joint invocation, policy replacement, content, observation and revocation, then validate the full consumer closure.
 
 **Done when:** Policy source is created atomically and selected from the same durable directory; kind/domain/address mismatches refuse, and all consuming verbs share compatible source semantics.
 
-**Evidence so far:** Repeated native installation and joined birth/rules/delegation journey PASS; immutable source revision and retained grants work in the captured fixture. Later profile/Registry integration is pending. Work frozen at ember’s request; no agent is currently assigned.
+**Evidence so far:** Cycle 1 advances the source/profile epoch for the common native resource path, with typed content storage epoch 2 and command grammar version 1. The full shared consumer integration gate remains pending.
+
+[Task brief](../sprints/2026-09-19/cycle-1.md)
 
 **Enables:**
 
@@ -657,22 +685,25 @@ Immutable internal policy-source cells and a common field/compiler/request profi
 - [S-RESUMED-0250 — Resumed native runtime and pinned publication checks, September18](../sprints/2026-09-18/resumed-0250.md)
 - [S-RESUMED-0311 — Revision migration checks and host review, September18 03:11](../sprints/2026-09-18/resumed-0311.md)
 - [S-WIND-DOWN-0918 — User-requested wind-down, exact native passes and unfinished host, September 18](../sprints/2026-09-18/wind-down.md)
+- [S-CYCLE-1-0919 — Authorized Mini construction cycle 1: initial convergence record](../sprints/2026-09-19/cycle-1.md)
+
+**Write scope:** minidregg/Compiler/CanonicalRuntimeProfile.lean and coordinated policy/control source; minidregg/Compiler/NativeHostCodec.lean; minidregg shared umbrella imports
 
 ## W-PROGRAMMABLE-PATH
 
 **Implement and exercise the canonical authored-program-to-resource path**
 
-Status: **backlog** · Owner: Unassigned · Updated: 2026-09-19T17:59:03.858Z
+Status: **active** · Owner: Astra: orient_mini_semantics + cycle_content + cycle_acceptance; Sol: cycle_client; review: root · Updated: 2026-09-19T18:43:13.546Z
 
-Select the canonical rule/program representation and actual authority projection, then implement needed compiler/native/proof/durable support and shell/Hermes consumers. Existing guards are retired only by replacing their missing guarantees. Active source investigation is recorded in sprints/2026-09-17.md.
+Build and exercise the canonical Mini resource-programming path with installed laws, typed content, joint mutations and scoped observation, exposed through the source-owned host and Rust client.
 
-**Next:** After the core/resource contract is agreed, review preserved WIP against it and reassign a concrete receiving path before resuming this implementation.
+**Next:** Drive typed resource birth, laws, content edits, joint mutation and refusal through the actual compiled host/client, preserving exact source meaning and durable receipts.
 
 **Done when:** Author and install a rule under actual resource authority, invoke a permitted operation through the chosen shell/agent path, refuse a violating operation with correct state/outcome evidence, and recover accepted behavior/history through the chosen durable runtime. Complete all necessary core obligations, not merely a private demo.
 
-**Evidence so far:** Paused after ember rejected the Python platform direction and requested deeper orientation. Existing WIP and earlier component evidence are preserved; no integrated acceptance is established. Previous assignment: Astra: root + grain_kernel; Sol: grain_tools.
+**Evidence so far:** Cycle 1 implements the common resource path. Root reported content checkpoint 103735e and the content lane reported bounded per-file passes; source-owned JSON, client and native journey integration remain in progress. Complete hosted Hermes is not established.
 
-[Task brief](../sprints/2026-09-19/core-orientation.md)
+[Task brief](../sprints/2026-09-19/cycle-1.md)
 
 **Enables:**
 
@@ -689,6 +720,9 @@ Select the canonical rule/program representation and actual authority projection
 - [S-WIND-DOWN-0918 — User-requested wind-down, exact native passes and unfinished host, September 18](../sprints/2026-09-18/wind-down.md)
 - [S-GRAIN-IMPLEMENTATION-0919 — Historical, subsequently paused agent-grain implementation wave](../sprints/2026-09-19/implementation.md)
 - [S-CORE-ORIENTATION-0919 — Bread/Mini microswarm after implementation pause](../sprints/2026-09-19/core-orientation.md)
+- [S-CYCLE-1-0919 — Authorized Mini construction cycle 1: initial convergence record](../sprints/2026-09-19/cycle-1.md)
+
+**Write scope:** minidregg/Kernel/ResourceTransaction*.lean; minidregg/Kernel/ContentResource*.lean and canonical content materializers; minidregg/Host/Json.lean; minidregg/native/resource-client/; minidregg public native acceptance harness
 
 ## W-PROVIDER-PATH
 

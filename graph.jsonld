@@ -1145,7 +1145,8 @@
         "urn:dregg:assortia:I-DESIGN-MODE-0919",
         "urn:dregg:assortia:I-FOREGROUND-PAUSE",
         "urn:dregg:assortia:I-CORE-REORIENTATION-0919",
-        "urn:dregg:assortia:I-REBUILD-MINI"
+        "urn:dregg:assortia:I-REBUILD-MINI",
+        "urn:dregg:assortia:I-MINI-CYCLE-1"
       ],
       "related": [
         "urn:dregg:assortia:W-DOC-PERSIST",
@@ -1161,11 +1162,11 @@
       ],
       "closure": "Accepted nexus operations and consequential design decisions; selected semantic and receiving-runtime paths; an explicit owned-node participation path and selected Solana/resource outcome; linked implementation obligations and evidence. Selecting a contract does not close implementation or deployment.",
       "owner": "Astra: root",
-      "updatedAt": "2026-09-19T18:04:40.439Z",
+      "updatedAt": "2026-09-19T18:43:13.546Z",
       "advances": [
         "urn:dregg:assortia:E-WORLD"
       ],
-      "nextAction": "Define the Mini construction contract for typed resources, laws/programming, joint operations, authority, external attempts and hosted Hermes, with one integrated user journey.",
+      "nextAction": "Converge the owned Mini cycle through its public native resource journey, then record delivered behaviors, elapsed time and remaining critical-path construction.",
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
       "blockedBy": [],
@@ -1178,9 +1179,15 @@
         "urn:dregg:assortia:S-HERMES-BREAKER-0919",
         "urn:dregg:assortia:S-GRAIN-IMPLEMENTATION-0919",
         "urn:dregg:assortia:S-CORE-ORIENTATION-0919",
-        "urn:dregg:assortia:S-REBUILD-MINI-0919"
+        "urn:dregg:assortia:S-REBUILD-MINI-0919",
+        "urn:dregg:assortia:S-CYCLE-1-0919"
       ],
-      "progress": "Ember settled the direction after the microswarm: rebuild required capabilities into Mini. Bread supplies reference material; evaluating salvage options is not a prerequisite. The previous Python implementation wave remains paused."
+      "progress": "Ember authorized a substantial implementation minicycle after choosing Mini. The source contract and nine bounded lane assignments are recorded; this checkpoint is convergence, with no current-cycle native journey or deployment pass.",
+      "writeScope": [
+        "minidregg/docs/CYCLE-2026-09-19.md",
+        "dregg-assortia/sprints/2026-09-19/cycle-1.md and graph work records"
+      ],
+      "brief": "sprints/2026-09-19/cycle-1.md"
     },
     {
       "@id": "urn:dregg:assortia:S-NEXUS-INTERFACE",
@@ -1862,12 +1869,13 @@
       "@id": "urn:dregg:assortia:W-PROGRAMMABLE-PATH",
       "@type": "WorkItem",
       "label": "Implement and exercise the canonical authored-program-to-resource path",
-      "description": "Select the canonical rule/program representation and actual authority projection, then implement needed compiler/native/proof/durable support and shell/Hermes consumers. Existing guards are retired only by replacing their missing guarantees. Active source investigation is recorded in sprints/2026-09-17.md.",
-      "status": "backlog",
+      "description": "Build and exercise the canonical Mini resource-programming path with installed laws, typed content, joint mutations and scoped observation, exposed through the source-owned host and Rust client.",
+      "status": "active",
       "motivatedBy": [
         "urn:dregg:assortia:I-NEXUS",
         "urn:dregg:assortia:I-MIXED-PROGRAMMING",
-        "urn:dregg:assortia:I-CORE-SPRINT"
+        "urn:dregg:assortia:I-CORE-SPRINT",
+        "urn:dregg:assortia:I-MINI-CYCLE-1"
       ],
       "related": [
         "urn:dregg:assortia:C-CELL-PROGRAM-DATA",
@@ -1882,21 +1890,29 @@
         "urn:dregg:assortia:S-RESUMED-0311",
         "urn:dregg:assortia:S-WIND-DOWN-0918",
         "urn:dregg:assortia:S-GRAIN-IMPLEMENTATION-0919",
-        "urn:dregg:assortia:S-CORE-ORIENTATION-0919"
+        "urn:dregg:assortia:S-CORE-ORIENTATION-0919",
+        "urn:dregg:assortia:S-CYCLE-1-0919"
       ],
       "closure": "Author and install a rule under actual resource authority, invoke a permitted operation through the chosen shell/agent path, refuse a violating operation with correct state/outcome evidence, and recover accepted behavior/history through the chosen durable runtime. Complete all necessary core obligations, not merely a private demo.",
-      "owner": "",
-      "updatedAt": "2026-09-19T17:59:03.858Z",
+      "owner": "Astra: orient_mini_semantics + cycle_content + cycle_acceptance; Sol: cycle_client; review: root",
+      "updatedAt": "2026-09-19T18:43:13.546Z",
       "advances": [
         "urn:dregg:assortia:E-WORLD",
         "urn:dregg:assortia:E-KERNEL"
       ],
-      "nextAction": "After the core/resource contract is agreed, review preserved WIP against it and reassign a concrete receiving path before resuming this implementation.",
+      "nextAction": "Drive typed resource birth, laws, content edits, joint mutation and refusal through the actual compiled host/client, preserving exact source meaning and durable receipts.",
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
       "blockedBy": [],
-      "progress": "Paused after ember rejected the Python platform direction and requested deeper orientation. Existing WIP and earlier component evidence are preserved; no integrated acceptance is established. Previous assignment: Astra: root + grain_kernel; Sol: grain_tools.",
-      "brief": "sprints/2026-09-19/core-orientation.md"
+      "progress": "Cycle 1 implements the common resource path. Root reported content checkpoint 103735e and the content lane reported bounded per-file passes; source-owned JSON, client and native journey integration remain in progress. Complete hosted Hermes is not established.",
+      "brief": "sprints/2026-09-19/cycle-1.md",
+      "writeScope": [
+        "minidregg/Kernel/ResourceTransaction*.lean",
+        "minidregg/Kernel/ContentResource*.lean and canonical content materializers",
+        "minidregg/Host/Json.lean",
+        "minidregg/native/resource-client/",
+        "minidregg public native acceptance harness"
+      ]
     },
     {
       "@id": "urn:dregg:assortia:S-COMPUTE-PAYMENT",
@@ -2012,32 +2028,39 @@
       "@id": "urn:dregg:assortia:W-JOINT-POST",
       "@type": "WorkItem",
       "label": "Check composition against the actual joint post-state",
-      "description": "Actual-joint resource accounting and accepted field preservation now reject minted overlap and lost fees in targeted Lean witnesses. Source-policy validity on the joint post, including cross-field dependencies, is the next compulsory composition closure.",
-      "status": "backlog",
+      "description": "Implement the general Mini transaction receiver over scalar and typed-content resources, with one exact joint post and current-policy admission for every incidence. Singleton mutations use the same receiver.",
+      "status": "active",
       "sources": [
         "urn:dregg:assortia:S-IMPLEMENTATION-2300",
         "urn:dregg:assortia:S-IMPLEMENTATION-2330",
         "urn:dregg:assortia:S-IMPLEMENTATION-0045",
-        "urn:dregg:assortia:S-WIND-DOWN-0918"
+        "urn:dregg:assortia:S-WIND-DOWN-0918",
+        "urn:dregg:assortia:S-CYCLE-1-0919"
       ],
       "motivatedBy": [
         "urn:dregg:assortia:I-CORE-SPRINT",
-        "urn:dregg:assortia:I-MIXED-PROGRAMMING"
+        "urn:dregg:assortia:I-MIXED-PROGRAMMING",
+        "urn:dregg:assortia:I-MINI-CYCLE-1"
       ],
       "related": [
         "urn:dregg:assortia:W-RESOURCE-BIRTH"
       ],
       "closure": "Generic accepted composition preserves incidence outcomes, enforces resource laws and source-owned policy/postconditions on the actual joint result; hostile overlap/cross-field examples refuse, legitimate composition remains inhabited, and receiving constructors use the contract.",
-      "owner": null,
-      "updatedAt": "2026-09-18T03:34:10-04:00",
+      "owner": "Astra: orient_mini_semantics; review: cycle_adversarial + root",
+      "updatedAt": "2026-09-19T18:43:13.546Z",
       "advances": [
         "urn:dregg:assortia:E-KERNEL"
       ],
-      "nextAction": "Exercise concrete factory/invocation policies against the same actual final tuple.",
+      "nextAction": "Complete joint receiver/host integration and execute a valid task-plus-content transaction plus an invalid-second-leg refusal with no partial publication.",
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
-      "progress": "Mandatory general postcondition API and constructive cross-field refusal witnesses passed; concrete new consumers still need their joined checks. Work frozen at ember’s request; no agent is currently assigned.",
-      "blockedBy": []
+      "progress": "General transaction implementation and cross-resource policy projection are assigned in cycle 1. Historical component passes remain scoped; the new public native joint journey is still converging.",
+      "blockedBy": [],
+      "writeScope": [
+        "minidregg/Kernel/ResourceTransaction*.lean",
+        "minidregg/Kernel/DeclaredResourceController.lean and shared scalar projection"
+      ],
+      "brief": "sprints/2026-09-19/cycle-1.md"
     },
     {
       "@id": "urn:dregg:assortia:W-NATIVE-DATA-RECEIVER",
@@ -2151,13 +2174,13 @@
       "@type": "WorkItem",
       "label": "Bind native use to committed keys and complete authority",
       "description": "Persist exact signing keys/epochs; accept actual configured native verification of the exact request and capability against the complete same-snapshot authority.",
-      "status": "backlog",
-      "owner": "",
-      "updatedAt": "2026-09-19T17:59:03.858Z",
+      "status": "active",
+      "owner": "Astra: cycle_authority + orient_bread_semantics; review: cycle_adversarial + root",
+      "updatedAt": "2026-09-19T18:43:13.546Z",
       "advances": [
         "urn:dregg:assortia:E-KERNEL"
       ],
-      "nextAction": "After the core/resource contract is agreed, review preserved WIP against it and reassign a concrete receiving path before resuming this implementation.",
+      "nextAction": "Finish scoped observation and explicit revocation against exact old targets/authority, then test missing, excessive, stale, revoked and wrong-kind authority in the public journey.",
       "closure": "Actual installed verification plus complete committed authority checks feed accepted source operations; stale/altered/revoked credentials cannot authorize them.",
       "sources": [
         "urn:dregg:assortia:S-IMPLEMENTATION-0045",
@@ -2166,27 +2189,37 @@
         "urn:dregg:assortia:S-RESUMED-0311",
         "urn:dregg:assortia:S-WIND-DOWN-0918",
         "urn:dregg:assortia:S-GRAIN-IMPLEMENTATION-0919",
-        "urn:dregg:assortia:S-CORE-ORIENTATION-0919"
+        "urn:dregg:assortia:S-CORE-ORIENTATION-0919",
+        "urn:dregg:assortia:S-CYCLE-1-0919"
       ],
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
       "blockedBy": [],
-      "progress": "Paused after ember rejected the Python platform direction and requested deeper orientation. Existing WIP and earlier component evidence are preserved; no integrated acceptance is established. Previous assignment: Astra: resume_authority.",
-      "brief": "sprints/2026-09-19/core-orientation.md"
+      "progress": "Cycle 1 assigns native control/revocation and scoped observation integration. Old fixture evidence is retained; the current profile and compiled public receiver are still converging.",
+      "brief": "sprints/2026-09-19/cycle-1.md",
+      "writeScope": [
+        "minidregg/Kernel/CapabilityRevocation*.lean",
+        "minidregg/Kernel/NativeObservationController.lean",
+        "minidregg/Compiler/NativeObservationCodec.lean",
+        "minidregg/Assurance/CapabilityRevocationAudit.lean and NativeObservationAudit.lean"
+      ],
+      "motivatedBy": [
+        "urn:dregg:assortia:I-MINI-CYCLE-1"
+      ]
     },
     {
       "@id": "urn:dregg:assortia:W-POLICY-SOURCE",
       "@type": "WorkItem",
       "label": "Store initial policies and use one runtime profile",
       "description": "Immutable internal policy-source cells and a common field/compiler/request profile make resource creation, invocation and policy replacement agree.",
-      "status": "backlog",
-      "owner": null,
-      "updatedAt": "2026-09-18T03:34:10-04:00",
+      "status": "active",
+      "owner": "Astra: root + cycle_authority; review: cycle_adversarial",
+      "updatedAt": "2026-09-19T18:43:13.546Z",
       "advances": [
         "urn:dregg:assortia:E-KERNEL",
         "urn:dregg:assortia:E-WORLD"
       ],
-      "nextAction": "Recheck source-policy consumers under coordinated final Registry/profile and compiled-host integration.",
+      "nextAction": "Converge the shared source/runtime profile across birth, joint invocation, policy replacement, content, observation and revocation, then validate the full consumer closure.",
       "closure": "Policy source is created atomically and selected from the same durable directory; kind/domain/address mismatches refuse, and all consuming verbs share compatible source semantics.",
       "sources": [
         "urn:dregg:assortia:S-IMPLEMENTATION-0045",
@@ -2194,12 +2227,22 @@
         "urn:dregg:assortia:S-ACCOUNT-HANDOFF-0918",
         "urn:dregg:assortia:S-RESUMED-0250",
         "urn:dregg:assortia:S-RESUMED-0311",
-        "urn:dregg:assortia:S-WIND-DOWN-0918"
+        "urn:dregg:assortia:S-WIND-DOWN-0918",
+        "urn:dregg:assortia:S-CYCLE-1-0919"
       ],
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
       "blockedBy": [],
-      "progress": "Repeated native installation and joined birth/rules/delegation journey PASS; immutable source revision and retained grants work in the captured fixture. Later profile/Registry integration is pending. Work frozen at ember’s request; no agent is currently assigned."
+      "progress": "Cycle 1 advances the source/profile epoch for the common native resource path, with typed content storage epoch 2 and command grammar version 1. The full shared consumer integration gate remains pending.",
+      "writeScope": [
+        "minidregg/Compiler/CanonicalRuntimeProfile.lean and coordinated policy/control source",
+        "minidregg/Compiler/NativeHostCodec.lean",
+        "minidregg shared umbrella imports"
+      ],
+      "brief": "sprints/2026-09-19/cycle-1.md",
+      "motivatedBy": [
+        "urn:dregg:assortia:I-MINI-CYCLE-1"
+      ]
     },
     {
       "@id": "urn:dregg:assortia:W-DECLARED-INVOKE",
@@ -2233,26 +2276,36 @@
       "@type": "WorkItem",
       "label": "Give a friend a narrower usable right",
       "description": "Add an explicit authorized subject-to-subject delegation edge without weakening strict holder-narrowing or inventing bearer custody.",
-      "status": "backlog",
-      "owner": null,
-      "updatedAt": "2026-09-18T03:34:10-04:00",
+      "status": "active",
+      "owner": "Astra: cycle_authority + cycle_acceptance; review: root",
+      "updatedAt": "2026-09-19T18:43:13.546Z",
       "advances": [
         "urn:dregg:assortia:E-KERNEL",
         "urn:dregg:assortia:E-WORLD"
       ],
-      "nextAction": "Carry the measured delegation path into the compiled public host and complete actual revocation/current-generation receiving coverage.",
+      "nextAction": "Carry bounded owner-to-friend delegation through the compiled public transaction host; revoke it explicitly and demonstrate refusal without state publication.",
       "closure": "Owner delegates a bounded right; friend can use that right, cannot exceed it or replace policy, and revocation/current epochs remain enforced.",
       "sources": [
         "urn:dregg:assortia:S-IMPLEMENTATION-0045",
         "urn:dregg:assortia:S-ACCOUNT-HANDOFF-0918",
         "urn:dregg:assortia:S-RESUMED-0250",
         "urn:dregg:assortia:S-RESUMED-0311",
-        "urn:dregg:assortia:S-WIND-DOWN-0918"
+        "urn:dregg:assortia:S-WIND-DOWN-0918",
+        "urn:dregg:assortia:S-CYCLE-1-0919"
       ],
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
       "blockedBy": [],
-      "progress": "Native Alice-to-Bob source-created narrower delegation and real recipient invocation/reopen PASS, including amplification/identity/redelegation refusals. Public host and explicit revocation receiving work remain. Work frozen at ember’s request; no agent is currently assigned."
+      "progress": "Cycle 1 is integrating the prior delegation semantics with public-host scoped reads, joint use and explicit revocation. No current-cycle end-to-end pass is recorded yet.",
+      "writeScope": [
+        "minidregg/Kernel/CapabilityRevocationController.lean",
+        "minidregg/Kernel/CapabilityRevocationReceiver.lean",
+        "minidregg public native acceptance harness"
+      ],
+      "brief": "sprints/2026-09-19/cycle-1.md",
+      "motivatedBy": [
+        "urn:dregg:assortia:I-MINI-CYCLE-1"
+      ]
     },
     {
       "@id": "urn:dregg:assortia:W-HERMES-STARTUP",
@@ -2585,20 +2638,22 @@
       "@type": "WorkItem",
       "label": "Keep grants valid across policy source revisions",
       "description": "Separate immutable policy-source revision from grant revocation generation across the exact signed request, authority representation, compiled/source policies and every receiving consumer.",
-      "status": "backlog",
-      "owner": null,
-      "updatedAt": "2026-09-18T03:34:10-04:00",
+      "status": "active",
+      "owner": "Astra: cycle_authority + root + cycle_acceptance",
+      "updatedAt": "2026-09-19T18:43:13.546Z",
       "priority": 1,
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "sources": [
         "urn:dregg:assortia:S-ACCOUNT-HANDOFF-0918",
         "urn:dregg:assortia:S-RESUMED-0250",
         "urn:dregg:assortia:S-RESUMED-0311",
-        "urn:dregg:assortia:S-WIND-DOWN-0918"
+        "urn:dregg:assortia:S-WIND-DOWN-0918",
+        "urn:dregg:assortia:S-CYCLE-1-0919"
       ],
       "motivatedBy": [
         "urn:dregg:assortia:I-POLICY-GRANTS",
-        "urn:dregg:assortia:I-MANAGEMENT-SELF-GOVERNANCE"
+        "urn:dregg:assortia:I-MANAGEMENT-SELF-GOVERNANCE",
+        "urn:dregg:assortia:I-MINI-CYCLE-1"
       ],
       "advances": [
         "urn:dregg:assortia:E-KERNEL",
@@ -2610,9 +2665,15 @@
         "urn:dregg:assortia:W-AUTHORIZED-DELEGATION",
         "urn:dregg:assortia:W-PROGRAMMABLE-PATH"
       ],
-      "nextAction": "Finish authorized generation revocation and remaining consumers/profile/root integration; preserve deliberate resource management lockout.",
+      "nextAction": "Exercise grant-preserving policy replacement, current-rule refusal, deliberate management lockout and explicit revocation in the same compiled public journey.",
       "closure": "After two admitted rule replacements, previously issued owner/control and delegated grants remain usable exactly when their scope and new rules authorize the new request; stale revisions refuse, explicit generation revocation invalidates prior grants, and restart/retry preserves exact state and receipts. Resource policy can deliberately refuse further management, with no implicit owner bypass.",
-      "progress": "Repeated native rule changes preserve exact original grants/generation; current-rule refusal, intentional management lockout and expired retry PASS. Explicit revocation receiver remains unfinished. Work frozen at ember’s request; no agent is currently assigned."
+      "progress": "Cycle 1 preserves the settled distinction between source revision and grant generation while integrating explicit control/revocation and public-host checks. Historical fixture passes are not relabeled as current integration.",
+      "writeScope": [
+        "minidregg/Kernel/CapabilityRevocation*.lean",
+        "minidregg/Kernel/PolicyInstallController.lean and coordinated authority/control source",
+        "minidregg public native acceptance harness"
+      ],
+      "brief": "sprints/2026-09-19/cycle-1.md"
     },
     {
       "@id": "urn:dregg:assortia:S-RESUMED-0250",
@@ -2630,10 +2691,10 @@
       "@id": "urn:dregg:assortia:W-NATIVE-HOST",
       "@type": "WorkItem",
       "label": "Operate real resources through a compiled programmable host",
-      "description": "Compile the source-owned Mini birth, rule installation, invocation and delegation path into an executable shell/stdio interface with exact signed calls, committed-history clock and replay receipts.",
-      "status": "backlog",
-      "owner": "",
-      "updatedAt": "2026-09-19T17:59:03.858Z",
+      "description": "Compile and exercise the source-owned Mini birth, joint transaction, policy, delegation, scoped observation and explicit revocation path through the public host and Rust client, with semantic replay and exact retry receipts.",
+      "status": "active",
+      "owner": "Astra: root + orient_bread_semantics + cycle_acceptance; Sol: cycle_build + cycle_client",
+      "updatedAt": "2026-09-19T18:43:13.546Z",
       "priority": 1,
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "sources": [
@@ -2642,7 +2703,8 @@
         "urn:dregg:assortia:S-RESUMED-0311",
         "urn:dregg:assortia:S-WIND-DOWN-0918",
         "urn:dregg:assortia:S-GRAIN-IMPLEMENTATION-0919",
-        "urn:dregg:assortia:S-CORE-ORIENTATION-0919"
+        "urn:dregg:assortia:S-CORE-ORIENTATION-0919",
+        "urn:dregg:assortia:S-CYCLE-1-0919"
       ],
       "advances": [
         "urn:dregg:assortia:E-KERNEL",
@@ -2653,10 +2715,20 @@
         "urn:dregg:assortia:W-ANDROID-CONTRACT"
       ],
       "blockedBy": [],
-      "nextAction": "After the core/resource contract is agreed, review preserved WIP against it and reassign a concrete receiving path before resuming this implementation.",
+      "nextAction": "Finish public codec/prepare/assemble/submit/replay wiring, build the full umbrella and native executable in bounded lanes, then capture the signed persistent multi-resource acceptance journey.",
       "closure": "A real compiled host with operator-owned configuration accepts only source-authorized signed calls, preserves committed resources/receipts across restart and lost replies, and drives the same grant-preserving shared-resource journey through the programmable shell.",
-      "progress": "Paused after ember rejected the Python platform direction and requested deeper orientation. Existing WIP and earlier component evidence are preserved; no integrated acceptance is established. Previous assignment: Astra: resume_host + resume_genesis + resume_authority; Sol: host_json.",
-      "brief": "sprints/2026-09-19/core-orientation.md"
+      "progress": "Cycle 1 actively integrates the public host, source-owned JSON and Rust client. Bounded component and build work is underway; no final whole-umbrella, linked-host journey or deployment result is recorded in this initial checkpoint.",
+      "brief": "sprints/2026-09-19/cycle-1.md",
+      "writeScope": [
+        "minidregg/Compiler/NativeHostCodec.lean",
+        "minidregg/Kernel/NativeHost*.lean",
+        "minidregg/Host/Main.lean and Host/Json.lean",
+        "minidregg/native/resource-client/",
+        "minidregg isolated native build and public journey harness"
+      ],
+      "motivatedBy": [
+        "urn:dregg:assortia:I-MINI-CYCLE-1"
+      ]
     },
     {
       "@id": "urn:dregg:assortia:S-RESUMED-0311",
@@ -3069,10 +3141,11 @@
     {
       "@id": "urn:dregg:assortia:I-CORE-REORIENTATION-0919",
       "@type": "Intent",
-      "label": "Investigate Bread and Mini before resuming platform implementation",
-      "description": "Ember rejected Python as a new platform implementation language, asked for deeper grounding, reopened the receiving-kernel question, and required severe reevaluation of House. A bounded Bread/Mini microswarm is authorized; previous implementation assignments are paused.",
+      "label": "Historical pause and Bread/Mini investigation before renewed implementation",
+      "description": "Ember rejected Python as a new platform implementation language and required deeper Bread/Mini orientation and severe reevaluation of House. That investigation preceded the settled Mini rebuilding direction and newly authorized cycle 1; its investigation-only restriction is superseded for the new Mini work, while Python rejection remains in force.",
       "sources": [
-        "urn:dregg:assortia:S-CORE-INTENT-0919"
+        "urn:dregg:assortia:S-CORE-INTENT-0919",
+        "urn:dregg:assortia:S-CYCLE-1-0919"
       ]
     },
     {
@@ -3199,6 +3272,28 @@
       "description": "Mini is the implementation home. Build the capabilities the intended experience needs there; Bread is reference material. Reuse and legacy compatibility are not prerequisite work or reasons to retain incompatible architecture.",
       "sources": [
         "urn:dregg:assortia:S-REBUILD-MINI-0919"
+      ]
+    },
+    {
+      "@id": "urn:dregg:assortia:S-CYCLE-1-0919",
+      "@type": "Source",
+      "label": "Authorized Mini construction cycle 1: initial convergence record",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-19/cycle-1.md",
+      "lineStart": 1,
+      "lineEnd": 53,
+      "sha256": "f60fd4f1041c59facc1d89cd92834f8ea34e819c931c27e367405fd41d1c4a92",
+      "recordedDate": "2026-09-19",
+      "evidenceKind": "user-authorization-and-active-implementation-record",
+      "limitations": "Initial convergence record. Component checks and reported checkpoint are not current-cycle native integration evidence. Final runtime results require a later captured source record."
+    },
+    {
+      "@id": "urn:dregg:assortia:I-MINI-CYCLE-1",
+      "@type": "Intent",
+      "label": "Run a substantial Mini implementation and integration cycle",
+      "description": "After choosing Mini, ember explicitly authorized a HUGE implementation minicycle to measure what one coordinated cycle can deliver. The new Mini scope supersedes investigation-only mode; the rejected Python platform direction remains rejected.",
+      "sources": [
+        "urn:dregg:assortia:S-CYCLE-1-0919"
       ]
     }
   ]
