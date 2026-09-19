@@ -1,0 +1,2 @@
+e8e20eaaa966469d2c0b5ca682f0fd89fdff88833850128b8f708f7b9f126bbc  /Users/ember/dev/minidregg/scripts/build-native-host.sh
+c403b448a23afb0fe1d4ff9038bafd8bb9d47a18b73fd24d12013b75c3a3a02b  /Users/ember/dev/minidregg/scripts/build-native-acceptance-runner.sh

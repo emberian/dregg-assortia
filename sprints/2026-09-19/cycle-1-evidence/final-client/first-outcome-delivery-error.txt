@@ -1,0 +1,2 @@
+mini: /tmp/minidregg-client-final-combined-20260919T210700Z/drop-first-submit.sh exited exit status: 1: minidregg-host: no such file or directory (error code: 2)
+  file: /tmp/minidregg-client-final-combined-20260919T210700Z/nonexistent-output-parent/outcome.bin

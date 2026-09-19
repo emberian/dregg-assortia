@@ -1,0 +1,4 @@
+source_commit=12e66083e2d028133f236d62c24bfe02af3b861e
+manifest=/tmp/minidregg-cycle-20260919/build/final-warm-all-20260919T210500Z/source-sha256.txt
+checked=581
+result=PASS: every listed source byte matches the committed Git blob

@@ -1,0 +1,10 @@
+root=/private/tmp/minidregg-cycle-20260919/native-theta-birth-20260919T204600Z
+driver_source=/private/tmp/minidregg-cycle-20260919/native-theta-birth-20260919T204600Z/scripts/probe-native-host-cli.lean
+driver_source_sha256=cbe8f996d6ab6462d35bef27a659ee62eec32c7c74d1c02caaf8ea7589deaf6d
+host_response=/tmp/minidregg-cycle-20260919/build/native-theta-birth-order-20260919T205800Z/minidregg-host.rsp
+host_response_sha256=fe2e27a76b76cd5c4be7cd025aab7997b6075862ab421db33819a63bfb17da87
+package_namespace=unprefixed
+response_objects=3086
+usage_exit=1
+binary=/private/tmp/minidregg-cycle-20260919/build/native-theta-birth-order-20260919T205800Z/runner/native-acceptance-runner
+binary_sha256=dbd2539ac5a91eb4dec6f381f41fd2cba276214cc8ed637c1221fba7537a994e

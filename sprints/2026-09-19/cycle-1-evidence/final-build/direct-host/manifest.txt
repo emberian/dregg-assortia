@@ -1,0 +1,9 @@
+build_kind=direct_lean_transitive_reverse_closure
+base_snapshot=/tmp/minidregg-cycle-20260919/native-theta-birth-20260919T204600Z
+affected_modules=38
+host_source_modules=153
+response_objects=3086
+usage_exit=1
+elapsed_seconds=188
+binary=/tmp/minidregg-cycle-20260919/build/native-theta-birth-order-20260919T205800Z/minidregg-host
+binary_sha256=0da9f1392fad3913356e3a495f0d3ab4f1a247aec8988a9f90312666e9ccadc1

@@ -1,0 +1,17 @@
+end_utc=2026-09-19T21:09:26Z
+elapsed_seconds=242
+git_head=8305b6ef2cc1a904c1eb61f8ec8ec2bf73de2178
+root=/private/tmp/minidregg-cycle-20260919/final-20260919T190133Z
+lean=Lean (version 4.30.0, arm64-apple-darwin24.6.0, commit d024af099ca4bf2c86f649261ebf59565dc8c622, Release)
+toolchain=/Users/ember/.elan/toolchains/leanprover--lean4---v4.30.0
+umbrella=1
+lake_gate=lake build Minidregg
+max_concurrent_real_lean=1
+wrapper_invocations=54
+compiled_source_modules=581
+source_modules=153
+package_modules=2933
+response_objects=3086
+usage_exit=1
+binary=/private/tmp/minidregg-cycle-20260919/build/final-warm-all-20260919T210500Z/minidregg-host
+binary_sha256=fe68c5095882b80f1d9a55ab9d8f959c0b0c8662dee454b543160a17bb5c9906

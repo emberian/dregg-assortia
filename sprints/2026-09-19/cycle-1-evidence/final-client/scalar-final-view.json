@@ -1,0 +1,10 @@
+{"type": "resource",
+ "page":
+ {"shardNumber": "9",
+  "root":
+  "99531175795614049736667770654922207602950466799045221815496575947203546883519",
+  "entries":
+  [{"value": "0", "key": {"type": "object", "resource": "601", "field": "1"}},
+   {"value": "1", "key": {"type": "object", "resource": "601", "field": "0"}}],
+  "effectDomain": "8501"},
+ "balances": []}

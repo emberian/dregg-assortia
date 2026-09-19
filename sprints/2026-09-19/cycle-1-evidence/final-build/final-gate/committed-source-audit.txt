@@ -1,0 +1,7 @@
+other_compiled_sources=580/580 canonical_worktree_match
+Compiler.lean=f53d97efc77dd83108f53dda4fb0e8126e3cc73e91b30983880855ee30d4507b committed_HEAD_match
+tracked_lean_diff_from_HEAD:
+Compiler.lean
+untracked_lean_not_in_compiled_closure:
+Compiler/UwueavePreoProjectionV2.lean
+scripts/probe-authority-domain.lean

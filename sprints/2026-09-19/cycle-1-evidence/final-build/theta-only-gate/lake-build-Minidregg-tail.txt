@@ -1,0 +1,10 @@
+✔ [9098/9107] Built Assurance.CapabilityRevocationAudit (9.5s)
+✔ [9099/9107] Built Kernel.NativeHostContext (5.9s)
+✔ [9100/9107] Built Kernel.NativeHostReplay (3.7s)
+✔ [9101/9107] Built Kernel.NativeObservationController (9.8s)
+✔ [9102/9107] Built Assurance.NativeObservationAudit (2.7s)
+✔ [9103/9107] Built Kernel.NativeHost (5.0s)
+✔ [9104/9107] Built Assurance (21s)
+✔ [9105/9107] Built Kernel (21s)
+✔ [9106/9107] Built Minidregg (5.2s)
+Build completed successfully (9107 jobs).

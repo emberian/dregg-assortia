@@ -1,0 +1,31 @@
+{"type": "resource",
+ "page":
+ {"root":
+  "98543169130315656703196091397910455595264261391354312459164048508425065462344",
+  "pageNumber": "0",
+  "entries":
+  [{"type": "document",
+    "id": "600",
+    "canonical":
+    "005a02ffec03ff01ff07ff01ff3dffa5af8e7a6e8c458ed4fa8e024dad05c678ec6a7f35fb0d4bb67d87d425fe9848ff"},
+   {"type": "element",
+    "id": "1001",
+    "canonical":
+    "01ec03ff5a02ff00ffff07ff01ff3dffa5af8e7a6e8c458ed4fa8e024dad05c678ec6a7f35fb0d4bb67d87d425fe9848ff00"},
+   {"type": "atom",
+    "tombstonedAt": null,
+    "payload": "68656c6c6f",
+    "kind": {"type": "text"},
+    "id": "7001",
+    "document": "600",
+    "createdBy":
+    {"subject": "7", "capabilityKind": "object", "capability": "61"},
+    "createdAt":
+    "107666558200774138361197320219311980317728209725294377539125680694417954828236",
+    "canonical":
+    "03741bff5a02ffff05ff68656c6c6f07ff01ff3dffdd8f0ca56e006c1cfcee4c250a5370782e811f00f6097cfe2bd2975f2529bd0d01ff00"}],
+  "document": "600",
+  "contentDomain": "8501",
+  "canonicalPage":
+  "5621ff5a02ffff01005a02ffec03ff01ff07ff01ff3dffa5af8e7a6e8c458ed4fa8e024dad05c678ec6a7f35fb0d4bb67d87d425fe9848ff0101ec03ff5a02ff00ffff07ff01ff3dffa5af8e7a6e8c458ed4fa8e024dad05c678ec6a7f35fb0d4bb67d87d425fe9848ff000103741bff5a02ffff05ff68656c6c6f07ff01ff3dffdd8f0ca56e006c1cfcee4c250a5370782e811f00f6097cfe2bd2975f2529bd0d01ff0000ff"},
+ "balances": []}

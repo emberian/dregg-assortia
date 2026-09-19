@@ -1,0 +1,19 @@
+CARGO_BUILD_JOBS=2 cargo fmt --manifest-path native/resource-client/Cargo.toml -- --check
+PASS cargo fmt
+CARGO_BUILD_JOBS=2 cargo clippy --manifest-path native/resource-client/Cargo.toml --all-targets -- -D warnings
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
+PASS cargo clippy
+CARGO_BUILD_JOBS=2 cargo nextest run --manifest-path native/resource-client/Cargo.toml
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.02s
+────────────
+ Nextest run ID ff9f7fb9-e88c-4773-bed4-59967deee7d8 with nextest profile: default
+    Starting 4 tests across 1 binary
+        PASS [   0.008s] (1/4) minidregg-resource-client::bin/mini tests::plan_slots_reject_presentation_without_exact_header_strings
+        PASS [   0.009s] (2/4) minidregg-resource-client::bin/mini tests::inspected_headers_are_signed_as_exact_bytes_in_order
+        PASS [   0.012s] (3/4) minidregg-resource-client::bin/mini tests::key_generation_refuses_to_clobber_existing_custody_files
+        PASS [   0.314s] (4/4) minidregg-resource-client::bin/mini tests::retry_reuses_retained_call_and_never_replaces_prior_evidence
+────────────
+     Summary [   0.314s] 4 tests run: 4 passed, 0 skipped
+PASS cargo nextest 4/4
+shellcheck native/resource-client/acceptance.sh
+PASS shellcheck

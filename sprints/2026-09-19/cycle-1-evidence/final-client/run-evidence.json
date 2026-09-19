@@ -1,0 +1,22 @@
+{
+  "status": "pass",
+  "startedAt": "2026-09-19T21:02:25Z",
+  "endedAt": "2026-09-19T21:09:49Z",
+  "elapsedSeconds": 444,
+  "command": "native/resource-client/acceptance.sh /tmp/minidregg-cycle-20260919/build/native-theta-birth-order-20260919T205800Z/minidregg-host /tmp/minidregg-client-final-combined-20260919T210700Z",
+  "hostSha256": "0da9f1392fad3913356e3a495f0d3ab4f1a247aec8988a9f90312666e9ccadc1",
+  "acceptanceScriptSha256": "a4593c89e6c19cb7ce096139c08fd372b2ed9ec8fed55d26448b0ef27e802e42",
+  "contentCallSha256": "4f2493c27937c960da694d76b711a303d2b1961b0d4c314c5971e896c935162b",
+  "jointCallSha256": "d5fcd8417af2fd96221d3b7106a5dc47645a0a5d89861d0f6dd2d3cc1e66ab5e",
+  "checks": [
+    "fresh local signer and pinned genesis bootstrap",
+    "two-resource source-authored birth confirmed at accepted count 1",
+    "typed content singleton committed despite deliberately missing outcome delivery",
+    "exact retained singleton call submit and lookup recovered identical historical receipt at accepted count 2",
+    "mixed content/scalar joint transaction confirmed at accepted count 3 with signing roles 4,4,8,8,1",
+    "exact retained joint call replayed identical receipt",
+    "authorized content query shows document, element, and atom with exact payload 68656c6c6f",
+    "authorized scalar query shows newly created object601.field0=1 alongside birth sentinel field1=0",
+    "before and after joint replay challenges share height 13 and exact image boundary"
+  ]
+}

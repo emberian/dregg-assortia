@@ -1,0 +1,4 @@
+.lake/build/ir/Compiler/Sp800185Cshake256Core.c.o.export:       Mach-O 64-bit object arm64
+.lake/build/ir/Compiler/CanonicalPolicyAdmission.c.o.export:    Mach-O 64-bit object arm64
+.lake/build/ir/Kernel/ResourceBirthPolicyController.c.o.export: Mach-O 64-bit object arm64
+.lake/build/ir/Host/Main.c.o.export:                            Mach-O 64-bit object arm64
