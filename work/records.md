@@ -203,15 +203,15 @@ Connect the canonical source request and accepted joint state to actual artifact
 
 **Materialize admitted charges instead of recomputing their source**
 
-Status: **active** · Owner: Astra: cycle_authority; Sol: cycle_build; root integration/review · Updated: 2026-09-19T22:25:51.639Z
+Status: **done** · Owner: Astra: cycle_authority; Sol: cycle_build; root integration/review · Updated: 2026-09-19T22:33:11.191Z
 
 Preserve exact admitted charges and record bytes while removing repeated birth write/read-guard computation during historical serialization.
 
-**Next:** Complete and archive the matched eight-event replay measurement, including accepted query, exact output equality and unchanged whole logical store; assess actual performance and runtime scope without inferring a speedup from generated code.
+**Next:** Retain the exact proof/build/runtime evidence as a regression boundary. W-HOST-SESSION remains unimplemented and addresses repeated full-history verification; do not extrapolate the measured workload into a general speedup.
 
 **Done when:** The actual receiving/replay path retains materialized charge data; a general proof preserves every charge lane, complete intent/record identity and canonical bytes without changed bounds or tariffs. Generated-code and matched native operation evidence show repeated serialization does not reconstruct birth writes/read guards, and semantic replay, receipts, charges and refusal behavior remain unchanged.
 
-**Evidence so far:** Implemented at 66d74dd: first-order finite charge values, general complete-charge/intent/record/byte equality, actual materialized receiver and replay code. Full umbrella and native link passed with 581/581 committed source matches and identical direct/full-gate binaries. Initial one-event query and birth measurements do not establish a speedup; an identical signed query against frozen eight-event history is being measured against the immediate parent.
+**Evidence so far:** Implemented at 66d74dd: finite charge values and general complete-charge/intent/record/byte equalities; actual receiving and replay retain the values. Full umbrella/native link passed with exact 581-file committed source match. Matched eight-event signed query accepted with identical view and unchanged entire logical image: immediate parent105.51s versus charge91.66s (one trial, 13.13% reduction). Latest host also returns the exact original stale-worker refusal with unchanged whole image. Earlier one-event query and birth comparisons showed no gain and used different baseline hosts. The completed representation change does not make the host interactive or eliminate full-history replay.
 
 [Task brief](../sprints/2026-09-19/next-cycle-native-computation.md)
 
@@ -224,6 +224,8 @@ Preserve exact admitted charges and record bytes while removing repeated birth w
 
 - [S-NATIVE-COMPUTATION-0919 — Native query profile: repeated charge computation in reconstructed history](../sprints/2026-09-19/next-cycle-native-computation.md)
 - [S-CHARGE-BUILD-0919 — Exact 66d74dd full umbrella and native charge-materialization build](../sprints/2026-09-19/cycle-1-evidence/charge-build/README.md)
+- [S-CHARGE-HISTORY8-0919 — Matched charge-materialized query against eight-event history](../sprints/2026-09-19/cycle-1-evidence/charge-history8-benchmark/README.md)
+- [S-CHARGE-REFUSAL-0919 — Charge host replays eight events and refuses the stale worker unchanged](../sprints/2026-09-19/cycle-1-evidence/charge-stale-worker/README.md)
 
 **Write scope:** minidregg admitted charge and intent/record construction; minidregg/Kernel/ResourceBirthReceiver.lean; minidregg lower-layer finite-charge helper and serialization equality proofs
 

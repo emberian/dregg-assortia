@@ -2,7 +2,7 @@
 
 > Generated from `graph.jsonld` by `python3 hub.py render`. Edit the graph, not this file.
 
-Latest work-record update: **2026-09-19T22:25:51.639Z**. This is recorded project state, not a live process monitor.
+Latest work-record update: **2026-09-19T22:33:11.191Z**. This is recorded project state, not a live process monitor.
 
 [New contributor](contributing/README.md) · [Project map](MAP.md) · [Detailed work records](work/records.md)
 
@@ -14,7 +14,6 @@ Latest work-record update: **2026-09-19T22:25:51.639Z**. This is recorded projec
 |---|---|---|
 | [Bind native use to committed keys and complete authority](sprints/2026-09-19/cycle-1-integration-checkpoint.md) | Astra: root; component implementation/review lanes completed | Finish the complete signed missing/excess/stale/revoked/wrong-kind read and mutation checks on the combined candidate. |
 | [Give a friend a narrower usable right](sprints/2026-09-19/cycle-1-integration-checkpoint.md) | Astra: root; component implementation/review lanes completed | Complete the immutable New World task/content journey and archive its exact source/runtime result; retain separate binary scope for the later proved charge optimization. |
-| [Materialize admitted charges instead of recomputing their source](sprints/2026-09-19/next-cycle-native-computation.md) | Astra: cycle_authority; Sol: cycle_build; root integration/review | Complete and archive the matched eight-event replay measurement, including accepted query, exact output equality and unchanged whole logical store; assess actual performance and runtime scope without inferring a speedup from generated code. |
 | [Keep grants valid across policy source revisions](sprints/2026-09-19/cycle-1-integration-checkpoint.md) | Astra: root; component implementation/review lanes completed | Finish current combined acceptance, then implement and exercise explicit generation-wide revocation and the delegated-grant two-replacement case. |
 | [Check composition against the actual joint post-state](sprints/2026-09-19/cycle-1-integration-checkpoint.md) | Astra: root; component implementation/review lanes completed | Finish the combined native joint transaction and atomic-refusal checks; retain exact whole-image evidence. |
 | [Define the September 26 programmable nexus and its shared contracts](sprints/2026-09-19/cycle-1-integration-checkpoint.md) | Astra: root; component implementation/review lanes completed | Complete cycle acceptance and record the resulting core contracts and measured costs before assigning the next hosted experience cycle. |
@@ -47,6 +46,7 @@ Latest work-record update: **2026-09-19T22:25:51.639Z**. This is recorded projec
 | [Follow graph relationships in both directions](internal/tooling-candidates-2026-09-18.md) | Astra: core_durable_receiver / Astra | Use and maintain the tested hub tools during handoffs; the unassigned hosting-contract proposal remains in W-ANDROID-CONTRACT, while hosted-Hermes design continues in W-M26-DESIGN. |
 | [Make assortia usable for ongoing work and new contributors](work/records.md#w-hub-live) | Astra: root | Use and maintain the tested hub tools during handoffs; the unassigned hosting-contract proposal remains in W-ANDROID-CONTRACT, while hosted-Hermes design continues in W-M26-DESIGN. |
 | [Trace one canonical typed event through its real compiler and consumer](work/records.md#w-canonical-consumer) | Astra: kernel_carrier | Use the captured receiving evidence as a regression boundary while completing the linked resource journey. |
+| [Materialize admitted charges instead of recomputing their source](sprints/2026-09-19/next-cycle-native-computation.md) | Astra: cycle_authority; Sol: cycle_build; root integration/review | Retain the exact proof/build/runtime evidence as a regression boundary. W-HOST-SESSION remains unimplemented and addresses repeated full-history verification; do not extrapolate the measured workload into a general speedup. |
 | [Invoke a declared resource through the real kernel](work/records.md#w-declared-invoke) | Astra: localfirst | Retain the actual native born-owner journey as a regression boundary during generation/revision and delegation migration. |
 | [Keep embedded candidates atomic through durable publication](work/records.md#w-embedded-candidate) | Astra: root + resource_history | Use the captured receiving evidence as a regression boundary while completing the linked resource journey. |
 | [Connect canonical DataIntent execution to a real durable receiver](work/records.md#w-native-data-receiver) | Astra: core_durable_receiver + proof_integrity | Use the captured receiving evidence as a regression boundary while completing the linked resource journey. |

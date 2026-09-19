@@ -1,0 +1,9 @@
+start_utc=2026-09-19T22:15:35Z
+command=/tmp/minidregg-cycle-20260919/build/native-charge-20260919T220000Z/minidregg-host /tmp/minidregg-cycle-20260919/acceptance/charge-birth-benchmark/config.json submit /tmp/minidregg-cycle-20260919/acceptance/new-world-native-run1/artifacts/cycle-birth-call.bin /tmp/minidregg-cycle-20260919/acceptance/charge-birth-benchmark/outcome.bin
+3107faf3583e4c4926feb8931edee6e0aea4f800617bc0969d9d3c845caebe4d  /tmp/minidregg-cycle-20260919/build/native-charge-20260919T220000Z/minidregg-host
+b9aba6e61178cf4dd58f6c372d3dac1eb5e241bdbf0ee030bef01249b2535b0b  /tmp/minidregg-cycle-20260919/acceptance/new-world-native-run1/artifacts/cycle-birth-call.bin
+e564b9c406219590155f713996edab16679e5199b29bc4d125dd4231850ecbc4  /tmp/minidregg-cycle-20260919/acceptance/new-world-native-run1/artifacts/genesis.bin
+Exact signed birth and genesis from new-world-native-run1, independent fresh storage.
+end_utc=2026-09-19T22:16:39Z
+exit_code=0
+exact_previous_outcome_bytes=equal

@@ -1,0 +1,13 @@
+read_to_command=/Users/ember/dev/minidregg/native/hyperdocument-link-sqlite-store/target/debug/minidregg-link-sqlite-store read-to /tmp/minidregg-cycle-20260919/acceptance/charge-history8-fixture/store OUTPUT
+logical_before=5183efaa85c8e2248ae2b150ca439d803ab447d0ad08e13fb9f2299a5156e6db
+logical_after_old=5183efaa85c8e2248ae2b150ca439d803ab447d0ad08e13fb9f2299a5156e6db
+logical_after_new=5183efaa85c8e2248ae2b150ca439d803ab447d0ad08e13fb9f2299a5156e6db
+physical_before=1ef1b1b2872156fa501b4ffa712ca44f65ce1965e7027ac55e2a13e210eb0223
+physical_after=1ef1b1b2872156fa501b4ffa712ca44f65ce1965e7027ac55e2a13e210eb0223
+byte_compare_old_new_view=PASS
+byte_compare_before_after_old_image=PASS
+byte_compare_before_after_new_image=PASS
+canonical_decode_both_and_JSON_compare=PASS
+decoded_view_type=resource
+challenge_purpose={"type":"query","kind":"object","target":"1600","view":"resource"}
+challenge_height=18

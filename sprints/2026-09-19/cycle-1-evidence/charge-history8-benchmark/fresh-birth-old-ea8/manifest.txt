@@ -1,0 +1,9 @@
+start_utc=2026-09-19T20:55:13Z
+command=/tmp/minidregg-cycle-20260919/build/native-theta-birth-20260919T204600Z/minidregg-host-theta-birth /tmp/minidregg-cycle-20260919/acceptance/theta-birth-matched-benchmark/config.json submit /tmp/minidregg-cycle-20260919/acceptance/new-world-native-run1/artifacts/cycle-birth-call.bin /tmp/minidregg-cycle-20260919/acceptance/theta-birth-matched-benchmark/outcome.bin
+ea8d229fbb18980a9c0a56b00d86a16c79e5da72b94e51787fc6cec426835a0a  /tmp/minidregg-cycle-20260919/build/native-theta-birth-20260919T204600Z/minidregg-host-theta-birth
+b9aba6e61178cf4dd58f6c372d3dac1eb5e241bdbf0ee030bef01249b2535b0b  /tmp/minidregg-cycle-20260919/acceptance/new-world-native-run1/artifacts/cycle-birth-call.bin
+e564b9c406219590155f713996edab16679e5199b29bc4d125dd4231850ecbc4  /tmp/minidregg-cycle-20260919/acceptance/new-world-native-run1/artifacts/genesis.bin
+Exact signed birth and genesis from new-world-native-run1, independent fresh storage.
+end_utc=2026-09-19T20:56:03Z
+exit_code=0
+exact_previous_outcome_bytes=equal

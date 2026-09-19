@@ -1,0 +1,5 @@
+d516464ccb875daf9dd7d80fde123c72904a8b43d1907e18694e86f2e9938029  /tmp/minidregg-cycle-20260919/acceptance/charge-history8-fixture/pinned.json
+04f25d0c44990731e998c163e0b3198a94760d2565e7eb216599bec686749c01  /tmp/minidregg-cycle-20260919/acceptance/charge-history8-fixture/query.bin
+329984bd73c22977359b424d58f759873f025d70848defce744b71d203b0446e  /tmp/minidregg-cycle-20260919/acceptance/charge-history8-fixture/challenge.bin
+1ef1b1b2872156fa501b4ffa712ca44f65ce1965e7027ac55e2a13e210eb0223  /tmp/minidregg-cycle-20260919/acceptance/charge-history8-fixture/store/forward-link.sqlite3
+5183efaa85c8e2248ae2b150ca439d803ab447d0ad08e13fb9f2299a5156e6db  /tmp/minidregg-cycle-20260919/acceptance/charge-history8-benchmark-20260919T222500Z/image-before.bin

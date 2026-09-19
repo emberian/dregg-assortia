@@ -1,0 +1,7 @@
+real 91.66
+user 89.83
+sys 0.73
+           453459968  maximum resident set size
+       1691299222324  instructions retired
+        295573226674  cycles elapsed
+           413647784  peak memory footprint

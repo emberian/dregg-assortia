@@ -1,0 +1,7 @@
+start_utc=2026-09-19T22:15:32Z
+command=/tmp/minidregg-cycle-20260919/build/native-charge-20260919T220000Z/minidregg-host /tmp/minidregg-cycle-20260919/acceptance/new-world-fullgate-run1/artifacts/pinned.json query /tmp/minidregg-cycle-20260919/acceptance/new-world-fullgate-run1/artifacts/attach-task-observe-signed.bin /tmp/minidregg-cycle-20260919/acceptance/charge-task-query-benchmark/view.bin
+3107faf3583e4c4926feb8931edee6e0aea4f800617bc0969d9d3c845caebe4d  /tmp/minidregg-cycle-20260919/build/native-charge-20260919T220000Z/minidregg-host
+4f93a0dd4b865a5019c435f586ce7467d146222160d7092a6871c8887babb412  /tmp/minidregg-cycle-20260919/acceptance/new-world-fullgate-run1/artifacts/attach-task-observe-signed.bin
+Exact signed read from interrupted fullgate journey; unchanged one-event store. Read only.
+end_utc=2026-09-19T22:16:08Z
+exit_code=0

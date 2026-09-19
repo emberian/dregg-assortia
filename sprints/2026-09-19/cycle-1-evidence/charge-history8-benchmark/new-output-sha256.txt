@@ -1,0 +1,2 @@
+150eed7b0d582a748bf4008677e942a412091afaf334caf1452f2d541c6ed396  /tmp/minidregg-cycle-20260919/acceptance/charge-history8-benchmark-20260919T222500Z/new-view.bin
+5183efaa85c8e2248ae2b150ca439d803ab447d0ad08e13fb9f2299a5156e6db  /tmp/minidregg-cycle-20260919/acceptance/charge-history8-benchmark-20260919T222500Z/image-after-new.bin

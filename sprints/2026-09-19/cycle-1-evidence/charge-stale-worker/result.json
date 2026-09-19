@@ -1,0 +1,22 @@
+{
+  "status": "pass",
+  "submitExitCode": 0,
+  "submitStartUtc": "2026-09-19T22:28:46Z",
+  "submitEndUtc": "2026-09-19T22:30:02Z",
+  "submitRealSeconds": "76.46",
+  "newHostSha256": "3107faf3583e4c4926feb8931edee6e0aea4f800617bc0969d9d3c845caebe4d",
+  "originalHostSha256": "0da9f1392fad3913356e3a495f0d3ab4f1a247aec8988a9f90312666e9ccadc1",
+  "signedCallSha256": "136e78a9e71f8e051f3342ffa7137820ab83d7025e3c1600c3138e6ee14242ef",
+  "originalRefusalSha256": "cad60ad085bd57da8465cc0a556adaf35547ac11efba9191fbcc688d9c809b22",
+  "newRefusalSha256": "cad60ad085bd57da8465cc0a556adaf35547ac11efba9191fbcc688d9c809b22",
+  "exactCanonicalOutcomeBytesEqual": true,
+  "logicalImageBytes": 97386,
+  "logicalImageBeforeSha256": "5183efaa85c8e2248ae2b150ca439d803ab447d0ad08e13fb9f2299a5156e6db",
+  "logicalImageAfterSha256": "5183efaa85c8e2248ae2b150ca439d803ab447d0ad08e13fb9f2299a5156e6db",
+  "exactLogicalImageBytesEqual": true,
+  "originalFrozenSqliteBeforeAndAfterSha256": "1ef1b1b2872156fa501b4ffa712ca44f65ce1965e7027ac55e2a13e210eb0223",
+  "privateSqliteAfterSha256": "1ef1b1b2872156fa501b4ffa712ca44f65ce1965e7027ac55e2a13e210eb0223",
+  "frozenChallengeHeight": "18",
+  "frozenChallengeImageBoundary": "6085615693169735845370435641168840892423156656036815031554592485301048538885",
+  "frozenChallengeSemantics": "6456933337608925423598368074884932038023287379680363841814784262278780659180"
+}

@@ -3,15 +3,17 @@
 The full Mini umbrella and native builds are green. The legacy native scenario,
 Rust mixed-resource client scenario and complete Rust authority recipe have
 passed. The New World task/content scenario is still running. The latest
-charge-materialization source is proved and built; its performance measurement
-is being completed. Builds, source proofs, runtime cases and deployments
+charge-materialization source is proved, built and exercised against eight-event
+history; its measured improvement is scoped below. Builds, source proofs, runtime cases and deployments
 remain distinct claims.
 
 | Evidence | Captured result | Scope |
 |---|---|---|
 | [Rust authority client](final-client-authority/README.md) | Complete exit-0 PASS in 904.65 seconds: authored policy roundtrip, narrowed Alice-to-Bob delegation, permitted write, refused escalation, explicit revocation and exact historical retry. | Five installed events on host `5ec9755d…`; current public boundary/state unchanged by retry. Full physical-image checks belong to the separate New World run. |
 | [Charge build](charge-build/README.md) | Literal umbrella PASS in 585 seconds; 581/581 sources match `66d74dd`; direct and full-gate native hosts are byte-identical `3107faf3…`. | Build and source closure; no complete runtime journey on this binary yet. |
-| [Charge materialization](charge-materialization/README.md) | General charge, intent, record and byte equalities; generated receiver and replay retain evaluated charge values. | Matched later-history runtime measurement pending; no speedup inferred from code. |
+| [Charge materialization](charge-materialization/README.md) | General charge, intent, record and byte equalities; generated receiver and replay retain evaluated charge values. | Matched later-history runtime evidence is recorded below; code alone does not establish a speedup. |
+| [Eight-event charge comparison](charge-history8-benchmark/README.md) | Immediate parent105.51s → charge91.66s; accepted view bytes and full logical image identical. Earlier one-event/birth no-gain results are also retained. | One sequential trial under other system activity; 13.13% improvement for this workload, not a universal gain. |
+| [Charge host stale-worker refusal](charge-stale-worker/README.md) | Latest host replays eight accepted events, returns exact original current-law refusal and leaves whole image unchanged. | Independent copied fixture, 76.46s; no complete fresh journey on this later binary. |
 | [Client API build](final-client-api-build/README.md) | All 581 compiled source files match `b119f86`; umbrella and native link pass. | Exactly one source delta from the preceding build: `Host/Json.lean` exposes policy address and editable predicate. Completed authority recipe is recorded above. |
 | [Core committed-source build](final-build/README.md) | Umbrella passed in 177 seconds; native host and compiled runner linked. All 581 umbrella/Host files and 153 host-source files match `12e6608`. | Full-gate and runtime-tested executables have separate hashes/object namespaces, with matching source. |
 | [Legacy native journey](final-legacy/README.md) | Complete exit-0 PASS in 1,066 seconds: six mutations, two grant-preserving rule changes, Alice-to-Bob delegation, hostile-history refusals and original receipt recovery without changing final bytes. | Complete scalar/authority regression; New World remains separately gated. |
@@ -59,4 +61,4 @@ Waterfall's original README distinguishes lane-reported completion from exact pr
 
 Failure excerpts are line-numbered selections from the complete logs, whose SHA-256 values are retained. They omit repetitive proof states and compilation warnings. Snapshot manifests and overlay ledgers are copied without editing. The content round-4 before hashes were recovered from the initial snapshot manifest and independently confirmed by removing exactly the five added revision-witness lines in a read-only stream; the ledger was written after that overlay's direct check began.
 
-The archive includes completed native legacy, Rust mixed-resource and Rust authority journeys, plus the later proved charge change and source-matched full build. The New World result, matched later-history charge timings, concluding cycle narrative and graph completion links remain pending. No work item is closed by an archival update alone. `SHA256SUMS` was regenerated for these additions while preserving the bytes of every earlier evidence file except this index. Later additions require a new manifest or explicitly regenerated manifest.
+The archive includes completed native legacy, Rust mixed-resource and Rust authority journeys, plus the later proved charge change and source-matched full build. The New World result and concluding cycle narrative remain pending. The bounded charge-materialization work is closed with exact build, proof and matched runtime evidence; remaining full-history latency is tracked separately. No work item is closed by an archival update alone. `SHA256SUMS` was regenerated for these additions while preserving the bytes of every earlier evidence file except this index. Later additions require a new manifest or explicitly regenerated manifest.

@@ -1,0 +1,1 @@
+/tmp/minidregg-cycle-20260919/build/final-client-api-host-20260919T212000Z/minidregg-host /tmp/minidregg-cycle-20260919/acceptance/charge-history8-fixture/pinned.json query /tmp/minidregg-cycle-20260919/acceptance/charge-history8-fixture/query.bin /tmp/minidregg-cycle-20260919/acceptance/charge-history8-benchmark-20260919T222500Z/old-view.bin

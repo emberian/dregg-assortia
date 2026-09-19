@@ -3390,14 +3390,16 @@
       "@type": "WorkItem",
       "label": "Materialize admitted charges instead of recomputing their source",
       "description": "Preserve exact admitted charges and record bytes while removing repeated birth write/read-guard computation during historical serialization.",
-      "status": "active",
+      "status": "done",
       "owner": "Astra: cycle_authority; Sol: cycle_build; root integration/review",
       "priority": 1,
       "milestone": "urn:dregg:assortia:M-2026-09-26",
-      "updatedAt": "2026-09-19T22:25:51.639Z",
+      "updatedAt": "2026-09-19T22:33:11.191Z",
       "sources": [
         "urn:dregg:assortia:S-NATIVE-COMPUTATION-0919",
-        "urn:dregg:assortia:S-CHARGE-BUILD-0919"
+        "urn:dregg:assortia:S-CHARGE-BUILD-0919",
+        "urn:dregg:assortia:S-CHARGE-HISTORY8-0919",
+        "urn:dregg:assortia:S-CHARGE-REFUSAL-0919"
       ],
       "motivatedBy": [
         "urn:dregg:assortia:I-CORE-SPRINT",
@@ -3418,9 +3420,14 @@
         "minidregg/Kernel/ResourceBirthReceiver.lean",
         "minidregg lower-layer finite-charge helper and serialization equality proofs"
       ],
-      "progress": "Implemented at 66d74dd: first-order finite charge values, general complete-charge/intent/record/byte equality, actual materialized receiver and replay code. Full umbrella and native link passed with 581/581 committed source matches and identical direct/full-gate binaries. Initial one-event query and birth measurements do not establish a speedup; an identical signed query against frozen eight-event history is being measured against the immediate parent.",
-      "nextAction": "Complete and archive the matched eight-event replay measurement, including accepted query, exact output equality and unchanged whole logical store; assess actual performance and runtime scope without inferring a speedup from generated code.",
-      "closure": "The actual receiving/replay path retains materialized charge data; a general proof preserves every charge lane, complete intent/record identity and canonical bytes without changed bounds or tariffs. Generated-code and matched native operation evidence show repeated serialization does not reconstruct birth writes/read guards, and semantic replay, receipts, charges and refusal behavior remain unchanged."
+      "progress": "Implemented at 66d74dd: finite charge values and general complete-charge/intent/record/byte equalities; actual receiving and replay retain the values. Full umbrella/native link passed with exact 581-file committed source match. Matched eight-event signed query accepted with identical view and unchanged entire logical image: immediate parent105.51s versus charge91.66s (one trial, 13.13% reduction). Latest host also returns the exact original stale-worker refusal with unchanged whole image. Earlier one-event query and birth comparisons showed no gain and used different baseline hosts. The completed representation change does not make the host interactive or eliminate full-history replay.",
+      "nextAction": "Retain the exact proof/build/runtime evidence as a regression boundary. W-HOST-SESSION remains unimplemented and addresses repeated full-history verification; do not extrapolate the measured workload into a general speedup.",
+      "closure": "The actual receiving/replay path retains materialized charge data; a general proof preserves every charge lane, complete intent/record identity and canonical bytes without changed bounds or tariffs. Generated-code and matched native operation evidence show repeated serialization does not reconstruct birth writes/read guards, and semantic replay, receipts, charges and refusal behavior remain unchanged.",
+      "completionEvidence": [
+        "urn:dregg:assortia:S-CHARGE-BUILD-0919",
+        "urn:dregg:assortia:S-CHARGE-HISTORY8-0919",
+        "urn:dregg:assortia:S-CHARGE-REFUSAL-0919"
+      ]
     },
     {
       "@id": "urn:dregg:assortia:S-CLIENT-AUTHORITY-0919",
@@ -3447,6 +3454,32 @@
       "recordedDate": "2026-09-19",
       "evidenceKind": "captured-build-and-runtime-evidence",
       "limitations": "Proof/build/code-generation evidence. Complete native journey and measured performance remain separately gated."
+    },
+    {
+      "@id": "urn:dregg:assortia:S-CHARGE-HISTORY8-0919",
+      "@type": "Source",
+      "label": "Matched charge-materialized query against eight-event history",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-19/cycle-1-evidence/charge-history8-benchmark/README.md",
+      "lineStart": 1,
+      "lineEnd": 16,
+      "sha256": "469ab714f4b311ce31c1145ec42ade96c7daf53fe5e6c41db6ccec33f30e9a67",
+      "recordedDate": "2026-09-19",
+      "evidenceKind": "captured-native-runtime-and-exact-byte-comparison",
+      "limitations": "One sequential trial with other system activity; earlier one-event query and birth comparisons showed no gain and used other baselines. No universal speedup claim."
+    },
+    {
+      "@id": "urn:dregg:assortia:S-CHARGE-REFUSAL-0919",
+      "@type": "Source",
+      "label": "Charge host replays eight events and refuses the stale worker unchanged",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-19/cycle-1-evidence/charge-stale-worker/README.md",
+      "lineStart": 1,
+      "lineEnd": 40,
+      "sha256": "2f95a75d374eabe0ee9103414e64a2eedf4d414a15926b06c51b3ec8f8d08b6d",
+      "recordedDate": "2026-09-19",
+      "evidenceKind": "captured-native-runtime-and-exact-byte-comparison",
+      "limitations": "Focused copied-history replay and current-law refusal on latest binary, not a fresh complete New World journey."
     }
   ]
 }

@@ -1,0 +1,10 @@
+one_event_signed_query_input_same=PASS
+one_event_view_bytes_equal=PASS
+one_event_view_JSON_equal=PASS
+fresh_birth_signed_call_same=PASS
+fresh_birth_outcome_bytes_equal=PASS
+fresh_birth_outcome_JSON_equal=PASS
+b6e78ab626ba17a010441004a2f68544d7e243a39fdd8311c22d2a1ccafae088  /tmp/minidregg-cycle-20260919/acceptance/order-task-query-benchmark/view.bin
+b6e78ab626ba17a010441004a2f68544d7e243a39fdd8311c22d2a1ccafae088  /tmp/minidregg-cycle-20260919/acceptance/charge-task-query-benchmark/view.bin
+c29fd05c02c5803c146509aaccfb136fe3219e84a47afd70dc6c55a30f9a3f22  /tmp/minidregg-cycle-20260919/acceptance/theta-birth-matched-benchmark/outcome.bin
+c29fd05c02c5803c146509aaccfb136fe3219e84a47afd70dc6c55a30f9a3f22  /tmp/minidregg-cycle-20260919/acceptance/charge-birth-benchmark/outcome.bin
