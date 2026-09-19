@@ -1,0 +1,14 @@
+info: Assurance/ZkmlMatmulChecker.lean:225:0: @accepts_sound : ∀ {profile : ExpectedProfile} {bytes : List UInt8},
+  accepts profile bytes = true →
+    ∃ checked,
+      check profile bytes = Except.ok checked ∧
+        checked.candidate.output = contraction checked.candidate.left checked.candidate.right
+⚠ [9045/9058] Replayed Assurance.SpartanR1CS
+warning: Assurance/SpartanR1CS.lean:658:8: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+Build completed successfully (9058 jobs).

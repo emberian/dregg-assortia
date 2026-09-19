@@ -1,0 +1,1 @@
+/tmp/minidregg-cycle-20260919/build/final-client-api-host-20260919T212000Z/minidregg-host: Mach-O 64-bit executable arm64

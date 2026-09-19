@@ -1,37 +1,30 @@
-# Cycle 1 evidence — umbrella green, native integration pending
+# Cycle 1 evidence — final native integration in progress
 
-Archived September 19, 2026 by the content lane from `/tmp/minidregg-cycle-20260919`, with a later update for the completed 20:25–20:31 UTC gates. **The full `Minidregg` umbrella is green; complete native integration remains pending and slow.** A separately identified native host accepted one matched-input birth in 223.78 seconds. That result does not establish the complete multi-resource journey or a speedup. Earlier failed/interrupted evidence is preserved below.
+The full Mini umbrella and native builds are green. The legacy native scenario
+and Rust mixed-resource client scenario have completed successfully. The New
+World task/content scenario and an additional Rust authority recipe are still
+running or being completed. Builds, source proofs, runtime cases and deployments
+remain distinct claims.
 
-## September 19, 21:03 UTC component update: birth and order computation
-
-[Birth and order sharing](birth-and-order-sharing/README.md) preserves general
-equality proofs, standard axiom pins, exact source hashes, lane-reported
-successful empty compiler logs and bounded generated-C/profile facts. A later
-matched birth with theta plus birth sharing completed in **49.43 seconds**,
-versus the archived **223.78 seconds**, using identical signed-call/genesis
-inputs and returning identical 132-byte outcome files. This pair measures
-about 4.53× improvement; it does not isolate the component contributions.
-
-An independent authorized-query stall was traced to recursive bit extraction
-inside actual canonical policy-witness generation. The exact direct-bit
-compiler substitution passes its bounded source check and appears in the
-freshly generated `PredCompile` caller. **Its native query retry and the full
-journey remain pending in this component record.** No configuration, raw
-signed call, genesis/store contents or full process sample was archived.
-
-## September 19 update: completed gates
-
-Later component/runtime progress is recorded in the [integration checkpoint](../cycle-1-integration-checkpoint.md), including the [33.55-second task query](order-query-benchmark/README.md). The final combined umbrella and full native journeys remain separate pending integration checks at that checkpoint.
-
-| Evidence | Captured result | Limit |
+| Evidence | Captured result | Scope |
 |---|---|---|
-| [Final legacy native journey](final-legacy/README.md) | Complete exit-0 PASS in 1,066 seconds: six mutations, two grant-preserving rule changes, delegation, hostile-history refusals and every original receipt recovered after restart without changing final bytes. | Scalar/authority regression coverage; the New World task/content scenario remains separate. |
-| [Final committed-source build](final-build/README.md) | Final `lake build Minidregg` passed in 177 seconds; native link and runner build passed. All 581 compiled Lean files and all 153 native host source files match Git commit `12e6608`. | The full-gate and runtime-tested executables have separate hashes and object namespaces, with matching source. Complete New World and legacy acceptance remains separate. |
-| [Final Rust-client journey](final-client/README.md) | Complete 444-second PASS against combined host `0da9f139…`: actual lost-reply recovery, mixed resource transaction, exact retries and authorized post-state queries. Focused Rust tests 4/4 pass. | This completes the client scenario, not hosted Hermes or the broader New World/legacy kernel scenarios. Earlier fixture failures are not relabeled as passes. |
-| [Round 6 full gate](full-gate-green-20260919T202556Z/README.md) | `lake build Minidregg` completed successfully (9107 jobs); wrapper reports 59 seconds. `Host.Main:leanArts` also passed. Root's captured source recheck reports all 584 listed source files matching. | A successful compile and link do not prove native acceptance. The recorded snapshot Git head precedes its source overlays; use the exact source manifest. |
-| [Matched birth benchmark](birth-benchmark-20260919T202801Z/README.md) | Exit 0, public outcome `confirmed`/`installed`, accepted count 1, wall time 223.78 seconds. | Same signed birth and genesis as the preceding native run, using independent fresh storage. The benchmark binary differs from the full-gate binary. No comparable uninterrupted old timing is retained, so there is no measured speedup claim. |
+| [Client API build](final-client-api-build/README.md) | All 581 compiled source files match `b119f86`; umbrella and native link pass. | Exactly one source delta from the preceding build: `Host/Json.lean` exposes policy address and editable predicate. New Rust authority recipe pending. |
+| [Core committed-source build](final-build/README.md) | Umbrella passed in 177 seconds; native host and compiled runner linked. All 581 umbrella/Host files and 153 host-source files match `12e6608`. | Full-gate and runtime-tested executables have separate hashes/object namespaces, with matching source. |
+| [Legacy native journey](final-legacy/README.md) | Complete exit-0 PASS in 1,066 seconds: six mutations, two grant-preserving rule changes, Alice-to-Bob delegation, hostile-history refusals and original receipt recovery without changing final bytes. | Complete scalar/authority regression; New World remains separately gated. |
+| [Rust mixed-resource client](final-client/README.md) | Complete 444-second PASS on host `0da9f139…`; actual lost-reply recovery, mixed transaction, exact retries, final authorized queries; focused Rust tests 4/4. | Does not yet exercise policy installation, delegation and revocation through Rust JSON. |
+| [Birth and order sharing](birth-and-order-sharing/README.md) | Matched birth 223.78 s → 49.43 s, identical signed-call/genesis inputs and identical receipt bytes. General equalities and generated-code evidence are retained. | About 4.53× for this matched pair, combining changes; not an isolated contribution or all-operation speedup. |
+| [Task query](order-query-benchmark/README.md) | Formerly stalled exact signed query completes in 33.55 seconds after the proved direct-bit substitution. | Earlier attempt was interrupted; no exact speedup ratio is claimed. |
+| [Theta computation](theta-sharing/README.md) | Matched primitive median 4.147 s → 2.059 s, with general equality and existing conformance checks. | Primitive measurement, not native-host latency. |
+| [Earlier round-6 umbrella](full-gate-green-20260919T202556Z/README.md) | Full umbrella and Host.Main checks passed before subsequent performance fixes. | Historical snapshot includes preserved unrelated worktree imports; later committed-source builds identify the final source. |
+| [Earlier birth](birth-benchmark-20260919T202801Z/README.md) | Complete 223.78-second installed birth, accepted count 1. | Baseline for the later matched 49.43-second result. |
 
-No private signing keys, runtime deployment configuration, raw state/artifact stores, or full process samples are included. Paths retained in manifests identify source trees, public executable locations and evidence directories. Copied source inventories contain file names and hashes, not their contents. The initial `../cycle-1.md` and its graph Source/hash are unchanged.
+The [integration checkpoint](../cycle-1-integration-checkpoint.md) is an immutable,
+dated intermediate record. Component archives retain their original pending
+language; the completed results above supersede that status at their stated
+scope. Earlier failures and deliberate interruptions remain recorded as such.
+No private keys, deployment configurations, raw signed calls, stores or full
+process samples are archived. The initial `../cycle-1.md` and its graph Source
+hash remain unchanged.
 
 ## Contents and interpretation
 
@@ -62,4 +55,4 @@ Waterfall's original README distinguishes lane-reported completion from exact pr
 
 Failure excerpts are line-numbered selections from the complete logs, whose SHA-256 values are retained. They omit repetitive proof states and compilation warnings. Snapshot manifests and overlay ledgers are copied without editing. The content round-4 before hashes were recovered from the initial snapshot manifest and independently confirmed by removing exactly the five added revision-witness lines in a read-only stream; the ledger was written after that overlay's direct check began.
 
-The archive now includes the completed round-6 full gate, single-birth benchmark and bounded theta-sharing component evidence. It has not received a completed full native journey, concluding cycle narrative, or graph completion links. Root owns those updates; no graph work was closed by this archival task. `SHA256SUMS` was regenerated for these additions while preserving the bytes of every earlier evidence file except this index. Later additions require a new manifest or explicitly regenerated manifest.
+The archive now includes the completed native legacy and Rust mixed-resource journeys and both final source-matched builds. The New World and additional Rust authority results, concluding cycle narrative and graph completion links remain pending. No work item is closed by an archival update alone. `SHA256SUMS` was regenerated for these additions while preserving the bytes of every earlier evidence file except this index. Later additions require a new manifest or explicitly regenerated manifest.

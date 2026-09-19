@@ -535,6 +535,33 @@ SDK route discovery is lazy while actual cryptographic calls retain real Lean in
 - [S-WIND-DOWN-0918 — User-requested wind-down, exact native passes and unfinished host, September 18](../sprints/2026-09-18/wind-down.md)
 - [S-REBUILD-MINI-0919 — Ember chooses rebuilding the New World in Mini](../sprints/2026-09-19/rebuild-in-mini.md)
 
+## W-HOST-SESSION
+
+**Retain verified history across native host requests**
+
+Status: **backlog** · Owner: Unassigned · Updated: 2026-09-19T21:36:23.257Z
+
+Replace repeated whole-history semantic replay with a source-owned verified session, preserving exact history identity, current authorization and durable CAS/recovery behavior.
+
+**Next:** Agree and implement the verified-session and pinned-verifier contract, then exercise unchanged-image reuse and exact-prefix suffix replay through persistent stdio.
+
+**Done when:** Prove verified-prefix plus suffix replay agrees with full semantic replay under explicit verifier assumptions; run unchanged-image, external append/revocation, rewritten/rolled-back history, stale challenge, exact CAS, lost reply, restart and verifier-change cases through the real host. Preserve fresh authorization, exact original receipt boundaries and uncertainty. Measure physical reads, replay counts and latency; do not substitute height/hash/mtime for exact image identity.
+
+**Evidence so far:** Current native operations repeatedly verify retained original signed ingress. Matched birth and query measurements identify a concrete latency obstacle; a receiving contract and adversarial matrix are proposed, with no cache implementation claimed.
+
+[Task brief](../sprints/2026-09-19/next-cycle-host-session.md)
+
+**Enables:**
+
+- E-KERNEL — Canonical typed semantic kernel
+- E-WORLD — Programmable social resource world
+
+**Evidence / provenance:**
+
+- [S-HOST-SESSION-PROPOSAL-0919 — Proposed persistent verified host session, grounded in measured native replay cost](../sprints/2026-09-19/next-cycle-host-session.md)
+
+**Write scope:** minidregg/Kernel/NativeHost.lean and NativeHostReplay.lean; minidregg/Host/Main.lean persistent stdio loop; minidregg native public acceptance and measured replay counts
+
 ## W-JOINT-POST
 
 **Check composition against the actual joint post-state**

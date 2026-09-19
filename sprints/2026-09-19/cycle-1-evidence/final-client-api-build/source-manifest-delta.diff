@@ -1,0 +1,9 @@
+--- /tmp/minidregg-cycle-20260919/build/final-warm-all-20260919T210500Z/source-sha256.txt	2026-09-19 17:09:26
++++ /tmp/minidregg-cycle-20260919/build/final-client-api-host-20260919T212000Z/source-sha256.txt	2026-09-19 17:34:31
+@@ -577,5 +577,5 @@
+ a3846958c6fbb5bde15765d441c0e6aec53632b463633e3ee88fdd2a449d249f  Assurance/CredentialSourceAdmissionAudit.lean
+ 84e2e39f86c19a0f7a9594c411588553698bee1dab5d51b00a14dcc87067cb0a  Compiler/DistributiveLaw.lean
+ 564f9bf0cafd1e83be27f51ccb824573add602e9d0f683fd745744da1e45c60c  Minidregg.lean
+-b2b6de00be8f4daf85bed5b29bf6167432284a0a99a04eab5d865728e0e5d6be  Host/Json.lean
++a28fb3281c2c04409c14520757978abcabb38defb5ccd86776919befc35e03af  Host/Json.lean
+ f0f12583744ca8a57e6658c651880ecc387602541dd7e27c3850bb5901803aed  Host/Main.lean

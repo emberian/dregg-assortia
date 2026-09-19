@@ -1,0 +1,4 @@
+5ec9755d2013d136d22626ca6823ef324c75b1b65cd8e0ac829546ac8a1ed68c  /private/tmp/minidregg-cycle-20260919/build/final-client-api-host-20260919T212000Z/minidregg-host
+fe2e27a76b76cd5c4be7cd025aab7997b6075862ab421db33819a63bfb17da87  /private/tmp/minidregg-cycle-20260919/build/final-client-api-host-20260919T212000Z/minidregg-host.rsp
+0db6cdbcda05a50fe7346dfa1a4fd1e17d829c834af1e70c3da5002154d854ba  /private/tmp/minidregg-cycle-20260919/build/final-client-api-host-20260919T212000Z/transitive-imports.json
+977347fc6bfd244a8002549955f32f97f405432b2eaaf2bf3ec116f5059cdf75  /private/tmp/minidregg-cycle-20260919/build/final-client-api-host-20260919T212000Z/umbrella-transitive-imports.json

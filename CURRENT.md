@@ -2,7 +2,7 @@
 
 > Generated from `graph.jsonld` by `python3 hub.py render`. Edit the graph, not this file.
 
-Latest work-record update: **2026-09-19T21:07:36.798Z**. This is recorded project state, not a live process monitor.
+Latest work-record update: **2026-09-19T21:36:23.257Z**. This is recorded project state, not a live process monitor.
 
 [New contributor](contributing/README.md) · [Project map](MAP.md) · [Detailed work records](work/records.md)
 
@@ -35,6 +35,7 @@ Latest work-record update: **2026-09-19T21:07:36.798Z**. This is recorded projec
 | [Host upstream Hermes with persistent confined execution](sprints/2026-09-19/core-orientation.md) | Unassigned | After the core/resource contract is agreed, review preserved WIP against it and reassign a concrete receiving path before resuming this implementation. |
 | [Expose canonical resource programming to Hermes](sprints/2026-09-19/core-orientation.md) | Unassigned | After the core/resource contract is agreed, review preserved WIP against it and reassign a concrete receiving path before resuming this implementation. |
 | [Make actual Hermes/SDK startup avoid unused Lean initialization](work/records.md#w-hermes-startup) | Unassigned | Retain the unfinished Bread work and evidence as historical maintenance/reference; it is not a prerequisite for the New World implementation in Mini. |
+| [Retain verified history across native host requests](sprints/2026-09-19/next-cycle-host-session.md) | Unassigned | Agree and implement the verified-session and pinned-verifier contract, then exercise unchanged-image reuse and exact-prefix suffix replay through persistent stdio. |
 | [Inventory existing provider job and penalty machinery](work/records.md#w-provider-path) | Unassigned | Choose the eligible public job and its exact result checker, provider obligation and penalty-record consumer. |
 | [Choose and close one economic operation consumed by a nexus resource](work/records.md#w-solana-utility) | Unassigned | Choose exact economic operation, real asset/cluster, custody and exit terms before a live transaction. |
 

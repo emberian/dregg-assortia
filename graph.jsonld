@@ -3316,6 +3316,56 @@
       "recordedDate": "2026-09-19",
       "evidenceKind": "captured-runs-and-active-integration-record",
       "limitations": "Dated intermediate results. Earlier broad gates and completed birth/query are scoped to their exact source/binary; final combined umbrella and whole native journeys were still running. No hosted platform or deployment claim."
+    },
+    {
+      "@id": "urn:dregg:assortia:S-HOST-SESSION-PROPOSAL-0919",
+      "@type": "Source",
+      "label": "Proposed persistent verified host session, grounded in measured native replay cost",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-19/next-cycle-host-session.md",
+      "lineStart": 1,
+      "lineEnd": 29,
+      "sha256": "3289fa84c1a20130aa2cd5970999b28965e1c92683e75c778d362326c9b65ea0",
+      "recordedDate": "2026-09-19",
+      "evidenceKind": "source-investigation-and-design-proposal",
+      "limitations": "Proposal at Mini 12e6608; not implemented, assigned or measured as a persistent service. Full replay costs are captured separately. Stable verifier semantics and availability behavior require an explicit contract."
+    },
+    {
+      "@id": "urn:dregg:assortia:W-HOST-SESSION",
+      "@type": "WorkItem",
+      "label": "Retain verified history across native host requests",
+      "description": "Replace repeated whole-history semantic replay with a source-owned verified session, preserving exact history identity, current authorization and durable CAS/recovery behavior.",
+      "status": "backlog",
+      "owner": "Unassigned",
+      "priority": 1,
+      "milestone": "urn:dregg:assortia:M-2026-09-26",
+      "updatedAt": "2026-09-19T21:36:23.257Z",
+      "sources": [
+        "urn:dregg:assortia:S-HOST-SESSION-PROPOSAL-0919"
+      ],
+      "motivatedBy": [
+        "urn:dregg:assortia:I-CORE-SPRINT",
+        "urn:dregg:assortia:I-MINI-CYCLE-1"
+      ],
+      "advances": [
+        "urn:dregg:assortia:E-KERNEL",
+        "urn:dregg:assortia:E-WORLD"
+      ],
+      "related": [
+        "urn:dregg:assortia:W-NATIVE-HOST",
+        "urn:dregg:assortia:W-GRAIN-CONTROL",
+        "urn:dregg:assortia:W-GRAIN-RUNTIME"
+      ],
+      "blockedBy": [],
+      "brief": "sprints/2026-09-19/next-cycle-host-session.md",
+      "writeScope": [
+        "minidregg/Kernel/NativeHost.lean and NativeHostReplay.lean",
+        "minidregg/Host/Main.lean persistent stdio loop",
+        "minidregg native public acceptance and measured replay counts"
+      ],
+      "progress": "Current native operations repeatedly verify retained original signed ingress. Matched birth and query measurements identify a concrete latency obstacle; a receiving contract and adversarial matrix are proposed, with no cache implementation claimed.",
+      "nextAction": "Agree and implement the verified-session and pinned-verifier contract, then exercise unchanged-image reuse and exact-prefix suffix replay through persistent stdio.",
+      "closure": "Prove verified-prefix plus suffix replay agrees with full semantic replay under explicit verifier assumptions; run unchanged-image, external append/revocation, rewritten/rolled-back history, stale challenge, exact CAS, lost reply, restart and verifier-change cases through the real host. Preserve fresh authorization, exact original receipt boundaries and uncertainty. Measure physical reads, replay counts and latency; do not substitute height/hash/mtime for exact image identity."
     }
   ]
 }
