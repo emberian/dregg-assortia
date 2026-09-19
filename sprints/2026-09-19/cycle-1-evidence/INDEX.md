@@ -1,6 +1,13 @@
-# Cycle 1 component evidence — integration pending
+# Cycle 1 evidence — umbrella green, native integration pending
 
-Archived September 19, 2026 by the content lane from `/tmp/minidregg-cycle-20260919`. This archive is a bounded collection of completed component phases and failed/interrupted integration attempts. **No final full-umbrella or native acceptance PASS is recorded here.** The later integration result must be added separately by root.
+Archived September 19, 2026 by the content lane from `/tmp/minidregg-cycle-20260919`, with a later update for the completed 20:25–20:31 UTC gates. **The full `Minidregg` umbrella is green; complete native integration remains pending and slow.** A separately identified native host accepted one matched-input birth in 223.78 seconds. That result does not establish the complete multi-resource journey or a speedup. Earlier failed/interrupted evidence is preserved below.
+
+## September 19 update: completed gates
+
+| Evidence | Captured result | Limit |
+|---|---|---|
+| [Round 6 full gate](full-gate-green-20260919T202556Z/README.md) | `lake build Minidregg` completed successfully (9107 jobs); wrapper reports 59 seconds. `Host.Main:leanArts` also passed. Root's captured source recheck reports all 584 listed source files matching. | A successful compile and link do not prove native acceptance. The recorded snapshot Git head precedes its source overlays; use the exact source manifest. |
+| [Matched birth benchmark](birth-benchmark-20260919T202801Z/README.md) | Exit 0, public outcome `confirmed`/`installed`, accepted count 1, wall time 223.78 seconds. | Same signed birth and genesis as the preceding native run, using independent fresh storage. The benchmark binary differs from the full-gate binary. No comparable uninterrupted old timing is retained, so there is no measured speedup claim. |
 
 No private signing keys, runtime deployment configuration, raw state/artifact stores, or full process samples are included. Paths retained in manifests identify source trees, public executable locations and evidence directories. Copied source inventories contain file names and hashes, not their contents. The initial `../cycle-1.md` and its graph Source/hash are unchanged.
 
@@ -31,4 +38,4 @@ Waterfall's original README distinguishes lane-reported completion from exact pr
 
 Failure excerpts are line-numbered selections from the complete logs, whose SHA-256 values are retained. They omit repetitive proof states and compilation warnings. Snapshot manifests and overlay ledgers are copied without editing. The content round-4 before hashes were recovered from the initial snapshot manifest and independently confirmed by removing exactly the five added revision-witness lines in a read-only stream; the ledger was written after that overlay's direct check began.
 
-The archive has not yet received final native/full-gate evidence, a concluding cycle narrative, or graph completion links. Root owns those updates. Check `SHA256SUMS` to verify the files present at this handoff; later additions require a new manifest or explicitly regenerated manifest.
+The archive now includes the completed round-6 full gate and single-birth benchmark. It has not received a completed full native journey, concluding cycle narrative, or graph completion links. Root owns those updates; no graph work was closed by this archival task. `SHA256SUMS` was regenerated for the new dated directories while preserving the bytes of every earlier evidence file except this index. Later additions require a new manifest or explicitly regenerated manifest.

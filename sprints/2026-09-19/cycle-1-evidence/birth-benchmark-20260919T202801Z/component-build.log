@@ -1,0 +1,22 @@
+lean[1/11] Kernel.ResourceBirthPolicyController start
+lean[1/11] Kernel.ResourceBirthPolicyController PASS 6s
+lean[2/11] Kernel.ResourceBirthReceiver start
+lean[2/11] Kernel.ResourceBirthReceiver PASS 5s
+lean[3/11] Compiler.NativeHostCodec start
+lean[3/11] Compiler.NativeHostCodec PASS 5s
+lean[4/11] Kernel.NativeHostContext start
+lean[4/11] Kernel.NativeHostContext PASS 4s
+lean[5/11] Compiler.NativeObservationCodec start
+lean[5/11] Compiler.NativeObservationCodec PASS 5s
+lean[6/11] Kernel.NativeObservationController start
+lean[6/11] Kernel.NativeObservationController PASS 6s
+lean[7/11] Kernel.NativeHostReplay start
+lean[7/11] Kernel.NativeHostReplay PASS 5s
+lean[8/11] Kernel.NativeHost start
+lean[8/11] Kernel.NativeHost PASS 6s
+lean[9/11] Kernel.NativeHostGenesis start
+lean[9/11] Kernel.NativeHostGenesis PASS 7s
+lean[10/11] Host.Json start
+lean[10/11] Host.Json PASS 8s
+lean[11/11] Host.Main start
+lean[11/11] Host.Main PASS 4s

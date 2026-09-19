@@ -1,0 +1,10 @@
+build_kind=transitive-reverse-closure-relink
+origin=/tmp/minidregg-cycle-20260919/native-incremental-optimized-20260919T194500Z
+base_binary_sha256=688d277f7c1364ad5cdcca113d068cde884618b148b2b4e992d7f7a664a9987c
+compiled_affected_modules=50
+reused_unaffected_source_objects=103
+package_objects=2933
+response_objects=3086
+usage_exit=1
+binary=/tmp/minidregg-cycle-20260919/native-incremental-optimized-20260919T194500Z/.lake/build/bin/minidregg-host-optimized
+binary_sha256=6f9c56ee21d0e8e5b6b65e142710a48fa55005d42b764c65333e55d55435a330

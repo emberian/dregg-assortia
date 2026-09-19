@@ -1,0 +1,26 @@
+start_utc=2026-09-19T20:25:56Z
+root=/private/tmp/minidregg-cycle-20260919/final-20260919T190133Z
+lean_threads=2
+native_jobs=2
+seat=/private/tmp/minidregg-cycle-20260919/lean-seat-2
+lake-gate Minidregg start
+lake-gate Minidregg PASS 59s
+lake-gate Host.Main:leanArts start
+lake-gate Host.Main:leanArts PASS 12s
+end_utc=2026-09-19T20:28:16Z
+elapsed_seconds=140
+git_head=8305b6ef2cc1a904c1eb61f8ec8ec2bf73de2178
+root=/private/tmp/minidregg-cycle-20260919/final-20260919T190133Z
+lean=Lean (version 4.30.0, arm64-apple-darwin24.6.0, commit d024af099ca4bf2c86f649261ebf59565dc8c622, Release)
+toolchain=/Users/ember/.elan/toolchains/leanprover--lean4---v4.30.0
+umbrella=1
+lake_gate=lake build Minidregg
+max_concurrent_real_lean=1
+wrapper_invocations=17
+compiled_source_modules=584
+source_modules=153
+package_modules=2933
+response_objects=3086
+usage_exit=1
+binary=/private/tmp/minidregg-cycle-20260919/final-20260919T190133Z/.lake/build/bin/minidregg-host
+binary_sha256=f4c507ad39d625609dcd304e455d34944310ed336412d8b4f5f6a6878e3070e1
