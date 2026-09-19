@@ -1,0 +1,48 @@
+319:✖ [3068/3130] Building Kernel.HyperdocumentTwoParentWitness (9.2s)
+321:error: Kernel/HyperdocumentTwoParentWitness.lean:637:45: Fields missing: `policyRevisionExact`
+322:error: Kernel/HyperdocumentTwoParentWitness.lean:760:19: Fields missing: `policyRevisionExact`
+327:error: Kernel/HyperdocumentTwoParentWitness.lean:900:0: ❌️ Docstring on `#guard_msgs` does not match generated message:
+338:error: Kernel/HyperdocumentTwoParentWitness.lean:902:0: ❌️ Docstring on `#guard_msgs` does not match generated message:
+349:error: Kernel/HyperdocumentTwoParentWitness.lean:904:0: ❌️ Docstring on `#guard_msgs` does not match generated message:
+356:error: Lean exited with code 1
+622:✖ [3211/3231] Building Compiler.BoundedPageCellRegistry (6.2s)
+624:error: Compiler/BoundedPageCellRegistry.lean:254:6: Type mismatch
+634:error: Compiler/BoundedPageCellRegistry.lean:327:0: ❌️ Docstring on `#guard_msgs` does not match generated message:
+641:error: Lean exited with code 1
+2503:✖ [3529/3548] Building Assurance.HyperdocumentLinkPublicationWitness (5.6s)
+2505:error: Assurance/HyperdocumentLinkPublicationWitness.lean:201:42: Fields missing: `policyRevisionExact`
+2506:error: Assurance/HyperdocumentLinkPublicationWitness.lean:366:39: Fields missing: `policyRevisionExact`
+2507:error: Assurance/HyperdocumentLinkPublicationWitness.lean:661:45: Fields missing: `policyRevisionExact`
+2512:error: Assurance/HyperdocumentLinkPublicationWitness.lean:856:0: ❌️ Docstring on `#guard_msgs` does not match generated message:
+2523:error: Assurance/HyperdocumentLinkPublicationWitness.lean:858:0: ❌️ Docstring on `#guard_msgs` does not match generated message:
+2534:error: Assurance/HyperdocumentLinkPublicationWitness.lean:860:0: ❌️ Docstring on `#guard_msgs` does not match generated message:
+2545:error: Assurance/HyperdocumentLinkPublicationWitness.lean:862:0: ❌️ Docstring on `#guard_msgs` does not match generated message:
+2556:error: Assurance/HyperdocumentLinkPublicationWitness.lean:864:0: ❌️ Docstring on `#guard_msgs` does not match generated message:
+2563:error: Lean exited with code 1
+2588:✖ [3541/3554] Building Assurance.DeployedCredentialLifecycle (3.8s)
+2590:error: Assurance/DeployedCredentialLifecycle.lean:134:62: Fields missing: `policyRevision`
+2591:error: Assurance/DeployedCredentialLifecycle.lean:159:4: Fields missing: `policyRevision`
+2596:error: Assurance/DeployedCredentialLifecycle.lean:180:44: Fields missing: `policyRevisionExact`
+2597:error: Assurance/DeployedCredentialLifecycle.lean:186:24: Type mismatch
+2605:error: Assurance/DeployedCredentialLifecycle.lean:290:4: Tactic `rfl` failed: The left-hand side
+2681:error: Assurance/DeployedCredentialLifecycle.lean:323:4: Application type mismatch: The argument
+2696:error: Assurance/DeployedCredentialLifecycle.lean:365:83: Fields missing: `parentLineageAnchored`
+2697:error: Assurance/DeployedCredentialLifecycle.lean:372:4: 'change' tactic failed, pattern
+2701:error: Assurance/DeployedCredentialLifecycle.lean:479:4: Application type mismatch: The argument
+2718:error: Assurance/DeployedCredentialLifecycle.lean:631:17: Fields missing: `policyRevisionExact`
+2719:error: Assurance/DeployedCredentialLifecycle.lean:637:4: 'change' tactic failed, pattern
+2725:error: Assurance/DeployedCredentialLifecycle.lean:665:2: Type mismatch
+2733:error: Assurance/DeployedCredentialLifecycle.lean:711:4: Application type mismatch: The argument
+2749:error: Assurance/DeployedCredentialLifecycle.lean:794:4: Application type mismatch: The argument
+2764:error: Assurance/DeployedCredentialLifecycle.lean:910:39: Application type mismatch: The argument
+2776:error: Assurance/DeployedCredentialLifecycle.lean:1120:0: ❌️ Docstring on `#guard_msgs` does not match generated message:
+2787:error: Assurance/DeployedCredentialLifecycle.lean:1122:0: ❌️ Docstring on `#guard_msgs` does not match generated message:
+2798:error: Assurance/DeployedCredentialLifecycle.lean:1124:0: ❌️ Docstring on `#guard_msgs` does not match generated message:
+2809:error: Assurance/DeployedCredentialLifecycle.lean:1126:0: ❌️ Docstring on `#guard_msgs` does not match generated message:
+2816:error: Lean exited with code 1
+3092:✖ [5273/5439] Building Assurance.PrivateEscrowSettlementJoin (39s)
+3094:error: Assurance/PrivateEscrowSettlementJoin.lean:328:60: Fields missing: `policyRevisionExact`
+3099:error: Assurance/PrivateEscrowSettlementJoin.lean:434:0: ❌️ Docstring on `#guard_msgs` does not match generated message:
+3106:error: Lean exited with code 1
+3124:Some required targets logged failures:
+3130:error: build failed

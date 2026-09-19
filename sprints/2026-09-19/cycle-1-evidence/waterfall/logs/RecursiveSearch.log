@@ -1,0 +1,28 @@
+COMPACT success=true attempts=32 nodes=6 depth=1 rawHeartbeats=1623879 strength=1 moves=[simp,
+ assumption/rfl,
+ function induction]
+Try this:
+  [apply] (
+    expose_names
+    fun_induction bytesSlots stem offset bytes
+    expose_names
+    focus
+      (first
+        | assumption
+        | rfl
+        | contradiction)
+    expose_names
+    focus ((simp_all (config := { maxSteps := 100000, maxDischargeDepth := 2 }) [bytesSlots]; done)))
+'WaterfallStudy.bytesSlots_length' depends on axioms: [propext]
+COMPACT success=true attempts=47 nodes=8 depth=1 rawHeartbeats=3519159 strength=1 moves=[grind,
+ simp,
+ function induction]
+Try this:
+  [apply] (
+    expose_names
+    (revert ys; fun_induction bytesSlots stem offset xs)
+    expose_names
+    focus ((simp_all (config := { maxSteps := 100000, maxDischargeDepth := 2 }) [bytesSlots]; done))
+    expose_names
+    grind +lax [bytesSlots])
+'WaterfallStudy.bytesSlots_append' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,62 @@
+390:✖ [3112/3224] Building Compiler.TypedAuthorizationRequestCodec (5.7s)
+412:error: Compiler/TypedAuthorizationRequestCodec.lean:242:68: unsolved goals
+511:error: Lean exited with code 1
+537:✖ [3134/3226] Building Theory.DeployedTotalCarrierAudit (2.8s)
+539:error: Theory/DeployedTotalCarrierAudit.lean:53:2: Missing cases:
+545:error: Theory/DeployedTotalCarrierAudit.lean:169:0: ❌️ Docstring on `#guard_msgs` does not match generated message:
+555:error: Theory/DeployedTotalCarrierAudit.lean:172:0: ❌️ Docstring on `#guard_msgs` does not match generated message:
+562:error: Lean exited with code 1
+584:✖ [3146/3228] Building Kernel.DeclaredActionExecution (3.2s)
+586:error: Kernel/DeclaredActionExecution.lean:314:29: Fields missing: `policyRevision`
+587:error: Kernel/DeclaredActionExecution.lean:349:39: Fields missing: `policyRevisionExact`
+588:error: Kernel/DeclaredActionExecution.lean:416:34: Fields missing: `policyRevisionExact`
+589:error: Kernel/DeclaredActionExecution.lean:463:45: Fields missing: `policyRevisionExact`
+594:error: Kernel/DeclaredActionExecution.lean:733:0: ❌️ Docstring on `#guard_msgs` does not match generated message:
+605:error: Kernel/DeclaredActionExecution.lean:736:0: ❌️ Docstring on `#guard_msgs` does not match generated message:
+616:error: Kernel/DeclaredActionExecution.lean:739:0: ❌️ Docstring on `#guard_msgs` does not match generated message:
+623:error: Lean exited with code 1
+652:✖ [3160/3229] Building Theory.HyperdocumentCausalFamily (3.1s)
+654:error: Theory/HyperdocumentCausalFamily.lean:217:3: Insufficient number of fields for `⟨...⟩` constructor: Constructor `Minidregg.Theory.HyperdocumentOperations.RequestEnvelope.mk` has 7 explicit field, but only 6 were provided
+655:error: Theory/HyperdocumentCausalFamily.lean:235:3: Fields missing: `policyRevision`
+660:error: Theory/HyperdocumentCausalFamily.lean:302:62: Fields missing: `policyRevision`
+662:error: Theory/HyperdocumentCausalFamily.lean:408:35: Fields missing: `policyRevisionExact`
+667:error: Theory/HyperdocumentCausalFamily.lean:565:0: ❌️ Docstring on `#guard_msgs` does not match generated message:
+678:error: Theory/HyperdocumentCausalFamily.lean:567:0: ❌️ Docstring on `#guard_msgs` does not match generated message:
+689:error: Theory/HyperdocumentCausalFamily.lean:569:0: ❌️ Docstring on `#guard_msgs` does not match generated message:
+696:error: Lean exited with code 1
+697:✖ [3163/3230] Building Theory.HyperdocumentInterface (3.4s)
+699:error: Theory/HyperdocumentInterface.lean:217:55: Fields missing: `policyRevision`
+706:error: Theory/HyperdocumentInterface.lean:592:0: ❌️ Docstring on `#guard_msgs` does not match generated message:
+715:error: Theory/HyperdocumentInterface.lean:594:0: ❌️ Docstring on `#guard_msgs` does not match generated message:
+724:error: Theory/HyperdocumentInterface.lean:596:0: ❌️ Docstring on `#guard_msgs` does not match generated message:
+733:error: Theory/HyperdocumentInterface.lean:598:0: ❌️ Docstring on `#guard_msgs` does not match generated message:
+740:error: Theory/HyperdocumentInterface.lean:606:0: ❌️ Docstring on `#guard_msgs` does not match generated message:
+744:error: Lean exited with code 1
+2806:✖ [3554/3558] Building Assurance.MpcSealedCellExecution (3.4s)
+2808:error: Assurance/MpcSealedCellExecution.lean:368:42: Fields missing: `policyRevision`
+2809:error: Assurance/MpcSealedCellExecution.lean:511:73: Fields missing: `policyRevisionExact`
+2814:error: Assurance/MpcSealedCellExecution.lean:758:0: ❌️ Docstring on `#guard_msgs` does not match generated message:
+2825:error: Assurance/MpcSealedCellExecution.lean:760:0: ❌️ Docstring on `#guard_msgs` does not match generated message:
+2836:error: Assurance/MpcSealedCellExecution.lean:762:0: ❌️ Docstring on `#guard_msgs` does not match generated message:
+2847:error: Assurance/MpcSealedCellExecution.lean:764:0: ❌️ Docstring on `#guard_msgs` does not match generated message:
+2854:error: Lean exited with code 1
+3026:✖ [3567/3571] Building Assurance.DreggNetProviderConsumer (38s)
+3028:error: Assurance/DreggNetProviderConsumer.lean:451:61: Fields missing: `policyRevision`
+3029:error: Assurance/DreggNetProviderConsumer.lean:464:81: Fields missing: `policyRevisionExact`
+3030:error: Assurance/DreggNetProviderConsumer.lean:801:60: Fields missing: `policyRevision`
+3031:error: Assurance/DreggNetProviderConsumer.lean:814:24: Fields missing: `policyRevisionExact`
+3036:error: Assurance/DreggNetProviderConsumer.lean:971:0: ❌️ Docstring on `#guard_msgs` does not match generated message:
+3047:error: Assurance/DreggNetProviderConsumer.lean:973:0: ❌️ Docstring on `#guard_msgs` does not match generated message:
+3054:error: Lean exited with code 1
+3055:✖ [3568/3577] Building Assurance.QuotaGcSettlementWitness (2.9s)
+3057:error: Assurance/QuotaGcSettlementWitness.lean:107:72: Fields missing: `policyRevisionExact`
+3059:error: Assurance/QuotaGcSettlementWitness.lean:342:0: ❌️ Docstring on `#guard_msgs` does not match generated message:
+3063:error: Lean exited with code 1
+3159:✖ [9094/9101] Building Assurance.JointPostconditionWitness (2.8s)
+3161:error: Assurance/JointPostconditionWitness.lean:85:68: Fields missing: `policyRevisionExact`
+3166:error: Assurance/JointPostconditionWitness.lean:235:0: ❌️ Docstring on `#guard_msgs` does not match generated message:
+3177:error: Assurance/JointPostconditionWitness.lean:237:0: ❌️ Docstring on `#guard_msgs` does not match generated message:
+3188:error: Assurance/JointPostconditionWitness.lean:239:0: ❌️ Docstring on `#guard_msgs` does not match generated message:
+3195:error: Lean exited with code 1
+3202:Some required targets logged failures:
+3212:error: build failed

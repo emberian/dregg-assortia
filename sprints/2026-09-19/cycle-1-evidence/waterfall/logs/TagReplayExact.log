@@ -1,0 +1,10 @@
+/tmp/minidregg-cycle-20260919/waterfall-study/TagReplayExact.lean:35:91: warning: This simp argument is unused:
+  verbTag
+
+Hint: Omit it from the simp argument list.
+  simp_all (config := { maxSteps := 100000, maxDischargeDepth := 2 }) [decodeVerb,̵ ̵v̵e̵r̵b̵T̵a̵g̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/tmp/minidregg-cycle-20260919/waterfall-study/TagReplayExact.lean:35:101: warning: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`

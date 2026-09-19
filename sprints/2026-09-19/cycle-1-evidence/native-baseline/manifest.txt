@@ -1,0 +1,12 @@
+start_utc=2026-09-19T19:32:53Z
+78759809ed5aba9ed589874c08cc42f431e95112
+command=lake env lean --run scripts/probe-native-host-cli.lean --new-world /tmp/minidregg-cycle-20260919/native-round1-20260919T191823Z/.lake/build/bin/minidregg-host /Users/ember/dev/minidregg/native/credential-signature-verifier/target/debug/minidregg-credential-signature-verifier /Users/ember/dev/minidregg/native/hyperdocument-link-sqlite-store/target/debug/minidregg-link-sqlite-store /opt/homebrew/bin/openssl /tmp/minidregg-cycle-20260919/acceptance/new-world-run1/artifacts 
+Lean (version 4.30.0, arm64-apple-darwin24.6.0, commit d024af099ca4bf2c86f649261ebf59565dc8c622, Release)
+688d277f7c1364ad5cdcca113d068cde884618b148b2b4e992d7f7a664a9987c  /tmp/minidregg-cycle-20260919/native-round1-20260919T191823Z/.lake/build/bin/minidregg-host
+dd5273f30a999dc7594018dd57605aebf2f9f15c43010f31e8674d28f14aafd9  /Users/ember/dev/minidregg/native/credential-signature-verifier/target/debug/minidregg-credential-signature-verifier
+452908cb42070c57051fa7ccd65696541ec940f158c17db4f832a6355bc85e03  /Users/ember/dev/minidregg/native/hyperdocument-link-sqlite-store/target/debug/minidregg-link-sqlite-store
+67a83dd6d6d747d50c5d296dffb23e32bae9a2c588c93ae2d77e4c607b455c72  /opt/homebrew/bin/openssl
+aa1e46b3692f8860eea40ab6495a3f561ae0e5e857cf45e894b09f5b8af86a9e  scripts/probe-native-host-cli.lean
+end_utc=2026-09-19T19:37:13Z
+exit_code=1
+elapsed_seconds=258

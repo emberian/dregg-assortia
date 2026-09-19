@@ -1,0 +1,16 @@
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+✔ [9098/9107] Built Assurance.JointPostconditionWitness (3.1s)
+✔ [9101/9107] Built Assurance.NativeObservationAudit (5.7s)
+✔ [9105/9107] Built Assurance.CredentialSourceAdmissionAudit (5.5s)
+Some required targets logged failures:
+- Kernel.HyperdocumentTwoParentWitness
+- Compiler.BoundedPageCellRegistry
+- Assurance.HyperdocumentLinkPublicationWitness
+- Assurance.DeployedCredentialLifecycle
+- Assurance.PrivateEscrowSettlementJoin
+error: build failed

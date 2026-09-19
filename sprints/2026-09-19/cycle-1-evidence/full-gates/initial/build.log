@@ -1,0 +1,7 @@
+start_utc=2026-09-19T19:03:53Z
+root=/private/tmp/minidregg-cycle-20260919/final-20260919T190133Z
+lean_threads=2
+native_jobs=2
+seat=/private/tmp/minidregg-cycle-20260919/lean-seat-1
+lake-gate Minidregg start
+lake-gate Minidregg FAIL(1) log=/private/tmp/minidregg-cycle-20260919/build/final-native-20260919T190133Z/lake-build-Minidregg.log

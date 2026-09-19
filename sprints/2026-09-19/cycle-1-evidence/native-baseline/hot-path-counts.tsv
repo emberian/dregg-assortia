@@ -1,0 +1,9 @@
+sample_line	inclusive_count	selected_symbol
+45	1327	Minidregg.Kernel.NativeHost.prepare
+46	1327	Minidregg.Kernel.NativeObservationController.authorize
+48	1327	Minidregg.Kernel.NativeObservationController.checkGrant
+49	1327	Minidregg.Kernel.ResourceObservationAdmission.check
+50	1327	Minidregg.Compiler.CanonicalPolicyAdmission.admit
+51	1327	Minidregg.Compiler.CanonicalPolicyAdmission.CanonicalPolicyConfig.verifies
+54	1327	Minidregg.Compiler.instDecidableCastInjOnOfDecidableEq (outer callback)
+57	1313	Minidregg.Compiler.instDecidableCastInjOnOfDecidableEq (inner callback)

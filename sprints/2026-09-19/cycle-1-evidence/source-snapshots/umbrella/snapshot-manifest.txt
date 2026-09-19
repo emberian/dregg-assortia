@@ -1,0 +1,10 @@
+snapshot=/tmp/minidregg-cycle-20260919/final-20260919T190133Z
+evidence=/tmp/minidregg-cycle-20260919/build/final-snapshot-20260919T190133Z
+canonical_head=8305b6ef2cc1a904c1eb61f8ec8ec2bf73de2178
+dereferenced_packages=10
+package_symlinks=0
+source_files=613
+canonical_lakefile_inode=480644069
+snapshot_lakefile_inode=615104409
+canonical_mathlib_inode=402199328
+snapshot_mathlib_inode=615122762

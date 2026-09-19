@@ -1,0 +1,42 @@
+COMPACT success=true attempts=92 nodes=18 depth=1 rawHeartbeats=34133737 strength=1 moves=[simp,
+ grind,
+ grind,
+ grind,
+ grind,
+ grind,
+ grind,
+ grind,
+ grind,
+ grind,
+ grind,
+ grind,
+ function cases]
+Try this:
+  [apply] (
+    expose_names
+    fun_cases decodeVerb kind tag
+    expose_names
+    grind +lax [decodeVerb, verbTag]
+    expose_names
+    grind +lax [decodeVerb, verbTag]
+    expose_names
+    grind +lax [decodeVerb, verbTag]
+    expose_names
+    grind +lax [decodeVerb, verbTag]
+    expose_names
+    grind +lax [decodeVerb, verbTag]
+    expose_names
+    grind +lax [decodeVerb, verbTag]
+    expose_names
+    grind +lax [decodeVerb, verbTag]
+    expose_names
+    grind +lax [decodeVerb, verbTag]
+    expose_names
+    grind +lax [decodeVerb, verbTag]
+    expose_names
+    grind +lax [decodeVerb, verbTag]
+    expose_names
+    grind +lax [decodeVerb, verbTag]
+    expose_names
+    focus ((simp_all (config := { maxSteps := 100000, maxDischargeDepth := 2 }) [decodeVerb, verbTag]; done)))
+'WaterfallStudy.verbTag_of_decoded' depends on axioms: [propext, Classical.choice, Quot.sound]

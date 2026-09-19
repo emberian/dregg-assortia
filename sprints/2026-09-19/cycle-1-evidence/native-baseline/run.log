@@ -1,0 +1,8 @@
+PASS public host is a linked native executable, not an interpreter wrapper
+PASS acceptance artifact directory has no previous deployment
+PASS actual Ed25519 SPKI public key
+PASS actual Ed25519 SPKI public key
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+uncaught exception: FAIL process /tmp/minidregg-cycle-20260919/native-round1-20260919T191823Z/.lake/build/bin/minidregg-host: exit 143: 

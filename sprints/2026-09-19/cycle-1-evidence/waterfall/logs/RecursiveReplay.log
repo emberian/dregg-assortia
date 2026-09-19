@@ -1,0 +1,26 @@
+/tmp/minidregg-cycle-20260919/waterfall-study/RecursiveReplay.lean:20:79: warning: This simp argument is unused:
+  bytesSlots
+
+Hint: Omit it from the simp argument list.
+  simp_all (config := { maxSteps := 100000, maxDischargeDepth := 2 }) ̵[̵b̵y̵t̵e̵s̵S̵l̵o̵t̵s̵]̵
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/tmp/minidregg-cycle-20260919/waterfall-study/RecursiveReplay.lean:18:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/tmp/minidregg-cycle-20260919/waterfall-study/RecursiveReplay.lean:18:8: warning: 'contradiction' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/tmp/minidregg-cycle-20260919/waterfall-study/RecursiveReplay.lean:20:92: warning: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/tmp/minidregg-cycle-20260919/waterfall-study/RecursiveReplay.lean:31:79: warning: This simp argument is unused:
+  bytesSlots
+
+Hint: Omit it from the simp argument list.
+  simp_all (config := { maxSteps := 100000, maxDischargeDepth := 2 }) ̵[̵b̵y̵t̵e̵s̵S̵l̵o̵t̵s̵]̵
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/tmp/minidregg-cycle-20260919/waterfall-study/RecursiveReplay.lean:31:92: warning: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`

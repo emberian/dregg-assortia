@@ -1,0 +1,1 @@
+INTERRUPTED by root during initial birth preparation after repeated-cost sample. This is an incomplete performance run, not an admission rejection or successful acceptance run. Host PID56793 was terminated; parent captured actual failure and elapsed time. See native-prepare-sample.txt.

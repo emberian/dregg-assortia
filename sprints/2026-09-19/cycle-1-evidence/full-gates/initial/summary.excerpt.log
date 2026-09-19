@@ -1,0 +1,16 @@
+✔ [9097/9101] Built Assurance.ZkmlMatmulFramedWal (2.8s)
+✔ [9098/9104] Built Assurance.ZkmlMatmulSuccinctChecker (16s)
+✔ [9101/9107] Built Assurance.CredentialFoundationMigrationAudit (7.3s)
+✔ [9104/9107] Built Assurance.CredentialDelegationLineageWitness (5.3s)
+✔ [9105/9107] Built Assurance.CredentialDelegationLineageAudit (2.7s)
+Some required targets logged failures:
+- Compiler.TypedAuthorizationRequestCodec
+- Theory.DeployedTotalCarrierAudit
+- Kernel.DeclaredActionExecution
+- Theory.HyperdocumentCausalFamily
+- Theory.HyperdocumentInterface
+- Assurance.MpcSealedCellExecution
+- Assurance.DreggNetProviderConsumer
+- Assurance.QuotaGcSettlementWitness
+- Assurance.JointPostconditionWitness
+error: build failed

@@ -1,0 +1,5 @@
+snapshot=/tmp/minidregg-cycle-20260919/native-round1-20260919T191823Z
+evidence=/tmp/minidregg-cycle-20260919/build/native-round1-snapshot-20260919T191823Z
+canonical_head=78759809ed5aba9ed589874c08cc42f431e95112
+dereferenced_packages=9
+source_files=613

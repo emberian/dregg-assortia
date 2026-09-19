@@ -1,0 +1,1 @@
+LAKE_OVERRIDE_LEAN=true LEAN_SYSROOT=/private/tmp/minidregg-cycle-20260919/build/final-warm-optimized-20260919T194500Z/serialized-lean-toolchain LEAN_NUM_THREADS=2 lake build Minidregg
