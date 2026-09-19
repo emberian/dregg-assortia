@@ -1,4 +1,4 @@
-54295171d22279bec0c2ad4d26e166d6717e465b47954f79487bcecc6c6861ba  ./INDEX.md
+54fe78d4e3fc08fd905d152c1eb22c05f116ed0712c88698b8eb8a2c5d1a71a6  ./INDEX.md
 20e52c58703ad13c639deabacdc17ef2d9c584aa580312668210c16a0b6452e1  ./birth-benchmark-20260919T202801Z/README.md
 f43c1857c6a48845f3c364e2979fb2ac3da2d719b50e5877a5f5faf8572ce285  ./birth-benchmark-20260919T202801Z/base-optimized-affected-source.sha256
 bd70bfa8fdcb595dc032b91704e162b193438be5318b2d41e62509b6dd78bdea  ./birth-benchmark-20260919T202801Z/base-optimized-host-manifest.txt
@@ -61,6 +61,19 @@ d627deb8fe1335fc14078c3c303842c736825919a9a50641583a1fe5f8b1a444  ./source-snaps
 9d29023760c798edd52fb535dc95fa4c386a0f7d0b0ad623ba44a735d93f266a  ./source-snapshots/umbrella/overlay-round4-remaining.tsv
 02c8814960efe84a44f0544a7fe07688686c6c7eb6a052235ea81bf299d72e6b  ./source-snapshots/umbrella/snapshot-manifest.txt
 9f3b6f8421cb6e924a946a8e32168ac40211b7d00205626b58cf9caa37ad71cc  ./source-snapshots/umbrella/snapshot-source.sha256
+d5aa9c1f886d60b7ac4dfb454e30a0a8ca39bd44da6818dbfb48a44cac73f77a  ./theta-sharing/README.md
+6161463d3222c4d8116965d08b8cea5202df9a25cf71a5b89a6e3ad21e8e411e  ./theta-sharing/Sp800185Cshake256Core.source-excerpt.txt
+b50fb178e865d200146bab183152f4d7385c123c2dc77f8758e47c8712acf16d  ./theta-sharing/cshake-primitive-bench.lean
+aac7a57b990846470be114fa909ea096dc8c46bed780e0f9c612a7be540342de  ./theta-sharing/cshake-theta-baseline-2.log
+45641510ddb3c58c6b28047c725a18803002c33f4eb513e182c61a16465cc3ed  ./theta-sharing/cshake-theta-baseline-3.log
+bc3b8541a273164079793637ae7f392a62457f73665e406b41421cf68c5aa97b  ./theta-sharing/cshake-theta-baseline.log
+09caa7434ac6d693f76373b3943d31cf53409617146408dd629f332e8cada3d6  ./theta-sharing/cshake-theta-optimized-2.log
+e9b220265da9209df3e3c353d5f989bd8e8edc707da778f0174db980dd282c15  ./theta-sharing/cshake-theta-optimized-3.log
+90419fcca06cd2d9b759bb2cdc921f278849a60f0c7ac89dbd1c7bd13e1b6866  ./theta-sharing/cshake-theta-optimized.log
+ca1e1363868141cb260421735edab638dce9f8b22ea18d973b737e5b9b5f47b0  ./theta-sharing/original-record.md
+fd1aa1391089a937a9ebc4d5f3c428fcaf0e8adf5f912cbee858f76925d1affe  ./theta-sharing/source-identities.txt
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./theta-sharing/theta-conformance.log
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./theta-sharing/theta-proof-final.log
 d92a7e631f6775c4752320eda787354910353323f89ecf354bd86f93c7987840  ./waterfall/README.md
 29f1facfd20295110282e42fe7a94d16cd82fc9593d16d080b03c0bab5ce1d4d  ./waterfall/RecursiveReplay.lean
 a06d6eb9c0e445d91ec1acacc613f82b7c3af681e7ffa720d61401abe7ec1ed0  ./waterfall/RecursiveSearch.lean

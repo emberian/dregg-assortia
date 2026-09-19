@@ -1,0 +1,5 @@
+minidregg optimized source commit: 722a8bb (identified by root)
+Compiler/Sp800185Cshake256Core.lean baseline SHA256: 38dee253180ecf9fb9f19db741dff830102085a05364381d16fa0693023d6123
+Compiler/Sp800185Cshake256Core.lean optimized SHA256: dfad9ce72142d7f9d47fcb35253777eaf37256e2b5593347017ab986650497e6
+cshake-primitive-bench.lean SHA256: b50fb178e865d200146bab183152f4d7385c123c2dc77f8758e47c8712acf16d
+No full baseline source or native binary is included.
