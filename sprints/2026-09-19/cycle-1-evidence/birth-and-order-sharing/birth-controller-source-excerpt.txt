@@ -1,0 +1,111 @@
+/-- Executable exhaustive enumeration with no choice-based finite-set list. -/
+def policyBranches (allocations sources : Nat) : List (PolicyBranch allocations sources) :=
+  .factory :: .authority ::
+    (List.finRange allocations).map .allocation ++ (List.finRange sources).map .source
+
+theorem mem_policyBranches {allocations sources : Nat} (branch : PolicyBranch allocations sources) :
+    branch ∈ policyBranches allocations sources := by
+  cases branch <;> simp [policyBranches]
+
+theorem policyBranches_nodup (allocations sources : Nat) :
+    (policyBranches allocations sources).Nodup := by
+  have allocationNodup : ((List.finRange allocations).map
+      (PolicyBranch.allocation (sources := sources))).Nodup :=
+    (List.nodup_finRange allocations).map (by intro left right same; cases same; rfl)
+  have sourceNodup : ((List.finRange sources).map
+      (PolicyBranch.source (allocations := allocations))).Nodup :=
+    (List.nodup_finRange sources).map (by intro left right same; cases same; rfl)
+  simp [policyBranches, List.nodup_append, allocationNodup, sourceNodup]
+
+/-- Mapping each branch identity once preserves the original injectivity
+guard for every identity function; collisions remain exact refusals. -/
+theorem mapped_policyBranches_nodup_iff {allocations sources : Nat} {Value : Type}
+    (identity : PolicyBranch allocations sources → Value) :
+    ((policyBranches allocations sources).map identity).Nodup ↔ Function.Injective identity := by
+  rw [List.nodup_map_iff_inj_on (policyBranches_nodup allocations sources)]
+  simp only [mem_policyBranches, forall_const, Function.Injective]
+
+/-- info: 'Minidregg.Kernel.ResourceBirthPolicyController.Concrete.mapped_policyBranches_nodup_iff' depends on axioms: [propext, Classical.choice, Quot.sound] -/
+#guard_msgs (whitespace := lax) in #print axioms mapped_policyBranches_nodup_iff
+/-- Select the already prepared pre-cell without constructing an unrelated
+signed request merely to project `rawLeg.pre`. -/
+def policyPreCell
+    (prepared : PreparedBirth profile.compilerProfile deployment pins durable descriptor) :
+    (incidence : Legs descriptor) → Materialized ((layout prepared).materializer incidence)
+  | .factory => prepared.factory.payload
+  | .book => prepared.book.payload
+  | .authority => prepared.authority.snapshot.cell
+  | .allocation index => ResourceBirthController.allocationPre prepared.directory.directory
+      (creation descriptor index)
+
+/-- These are the same actual candidate posts, obtained without constructing
+the raw leg's request or its descriptor commitments. -/
+def policyPostState
+    (prepared : PreparedBirth profile.compilerProfile deployment pins durable descriptor) :
+    (incidence : Legs descriptor) → LogicalState ((layout prepared).schema incidence)
+  | .factory => prepared.factory.payload.logical
+  | .book => prepared.resources.post.logical
+  | .authority => (ResourceBirthAuthority.post prepared.authority.snapshot.cell descriptor).logical
+  | .allocation index => LifecycleSlot.state Registry (.live (creation descriptor index).cell)
+
+theorem Pending.policyPreCell_exact
+    {prepared : PreparedBirth profile.compilerProfile deployment pins durable descriptor}
+    {height : Height} (pending : Pending prepared height) (primary incidence : Legs descriptor) :
+    policyPreCell prepared incidence = (pending.tuple primary).pre incidence := by
+  cases incidence <;> rfl
+
+theorem Pending.policyPostState_exact
+    {prepared : PreparedBirth profile.compilerProfile deployment pins durable descriptor}
+    {height : Height} (pending : Pending prepared height) (primary incidence : Legs descriptor) :
+    policyPostState prepared incidence = (pending.tuple primary).logicalPost incidence := by
+  cases incidence with
+  | factory => rfl
+  | book => rfl
+  | authority => rfl
+  | allocation index =>
+      exact (ResourceBirthController.allocation_post_exact prepared.directory.directory
+        (creation descriptor index)).symm
+
+def Pending.branchStep
+    {prepared : PreparedBirth profile.compilerProfile deployment pins durable descriptor}
+    {height : Height} (pending : Pending prepared height) (branch : Branch descriptor) :
+    PolicyStepContext :=
+  let wanted := branchRequest prepared height branch
+  PolicyStepContext.ofPreparedTupleExact (projectForRequest prepared height wanted)
+    profile.semantics (pending.tuple (branchPrimary branch))
+    (policyPreCell prepared) (policyPostState prepared)
+    (pending.policyPreCell_exact (branchPrimary branch))
+    (pending.policyPostState_exact (branchPrimary branch))
+
+/-- The optimized selectors retain the complete original prepared-tuple
+context, including the exact old/post policy states, effects, and pre-root. -/
+theorem Pending.branchStep_prepared_exact
+    {prepared : PreparedBirth profile.compilerProfile deployment pins durable descriptor}
+    {height : Height} (pending : Pending prepared height) (branch : Branch descriptor) :
+    pending.branchStep branch =
+  PolicyStepContext.ofPreparedTuple
+    (projectForRequest prepared height (branchRequest prepared height branch))
+    profile.semantics (pending.tuple (branchPrimary branch)) := by
+  exact PolicyStepContext.ofPreparedTupleExact_eq _ _ _ _ _
+    (pending.policyPreCell_exact (branchPrimary branch))
+    (pending.policyPostState_exact (branchPrimary branch))
+
+/-- info: 'Minidregg.Kernel.ResourceBirthPolicyController.Concrete.Pending.branchStep_prepared_exact' depends on axioms: [propext, Classical.choice, Quot.sound] -/
+#guard_msgs (whitespace := lax) in #print axioms Pending.branchStep_prepared_exact
+def Pending.admitBranch [DecidableEq F]
+    {prepared : PreparedBirth profile.compilerProfile deployment pins durable descriptor}
+    {height : Height} (pending : Pending prepared height) (branch : Branch descriptor)
+    (credential : BranchCredential)
+    (receipt : CredentialSignatureAdmission.CheckedSignature prepared.authority.snapshot) :
+    Except Reject { accepted : BranchAccepted pending branch // accepted.credential = credential } := do
+  let envelopeExact ← require (receipt.envelopeBytes = credential.envelope) .credentialShape
+  let wanted := branchRequest prepared height branch
+  let step := pending.branchStep branch
+  let compiler := profile.compilerProfile
+  let config := CredentialAuthorityPolicyRegistry.config compiler prepared.authority.snapshot
+    (payloadStore prepared) (sourcePortal prepared.authority.snapshot descriptor.authorityNullifier) step
+  let old := oldAuthority prepared
+  let source ← match CanonicalCellRegistry.loadPolicySource deployment.domain
+      prepared.directory.directory (old.policyAddress wanted.2.policyId wanted.2.policyRevision) with
+    | none => .error .policySourceUnavailable
+    | some loaded => .ok loaded

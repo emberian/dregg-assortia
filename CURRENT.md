@@ -2,7 +2,7 @@
 
 > Generated from `graph.jsonld` by `python3 hub.py render`. Edit the graph, not this file.
 
-Latest work-record update: **2026-09-19T18:43:13.546Z**. This is recorded project state, not a live process monitor.
+Latest work-record update: **2026-09-19T21:07:36.798Z**. This is recorded project state, not a live process monitor.
 
 [New contributor](contributing/README.md) · [Project map](MAP.md) · [Detailed work records](work/records.md)
 
@@ -12,14 +12,14 @@ Latest work-record update: **2026-09-19T18:43:13.546Z**. This is recorded projec
 
 | Work | Owner / reviewer | Next action |
 |---|---|---|
-| [Bind native use to committed keys and complete authority](sprints/2026-09-19/cycle-1.md) | Astra: cycle_authority + orient_bread_semantics; review: cycle_adversarial + root | Finish scoped observation and explicit revocation against exact old targets/authority, then test missing, excessive, stale, revoked and wrong-kind authority in the public journey. |
-| [Give a friend a narrower usable right](sprints/2026-09-19/cycle-1.md) | Astra: cycle_authority + cycle_acceptance; review: root | Carry bounded owner-to-friend delegation through the compiled public transaction host; revoke it explicitly and demonstrate refusal without state publication. |
-| [Keep grants valid across policy source revisions](sprints/2026-09-19/cycle-1.md) | Astra: cycle_authority + root + cycle_acceptance | Exercise grant-preserving policy replacement, current-rule refusal, deliberate management lockout and explicit revocation in the same compiled public journey. |
-| [Check composition against the actual joint post-state](sprints/2026-09-19/cycle-1.md) | Astra: orient_mini_semantics; review: cycle_adversarial + root | Complete joint receiver/host integration and execute a valid task-plus-content transaction plus an invalid-second-leg refusal with no partial publication. |
-| [Define the September 26 programmable nexus and its shared contracts](sprints/2026-09-19/cycle-1.md) | Astra: root | Converge the owned Mini cycle through its public native resource journey, then record delivered behaviors, elapsed time and remaining critical-path construction. |
-| [Operate real resources through a compiled programmable host](sprints/2026-09-19/cycle-1.md) | Astra: root + orient_bread_semantics + cycle_acceptance; Sol: cycle_build + cycle_client | Finish public codec/prepare/assemble/submit/replay wiring, build the full umbrella and native executable in bounded lanes, then capture the signed persistent multi-resource acceptance journey. |
-| [Store initial policies and use one runtime profile](sprints/2026-09-19/cycle-1.md) | Astra: root + cycle_authority; review: cycle_adversarial | Converge the shared source/runtime profile across birth, joint invocation, policy replacement, content, observation and revocation, then validate the full consumer closure. |
-| [Implement and exercise the canonical authored-program-to-resource path](sprints/2026-09-19/cycle-1.md) | Astra: orient_mini_semantics + cycle_content + cycle_acceptance; Sol: cycle_client; review: root | Drive typed resource birth, laws, content edits, joint mutation and refusal through the actual compiled host/client, preserving exact source meaning and durable receipts. |
+| [Bind native use to committed keys and complete authority](sprints/2026-09-19/cycle-1-integration-checkpoint.md) | Astra: root; component implementation/review lanes completed | Finish the complete signed missing/excess/stale/revoked/wrong-kind read and mutation checks on the combined candidate. |
+| [Give a friend a narrower usable right](sprints/2026-09-19/cycle-1-integration-checkpoint.md) | Astra: root; component implementation/review lanes completed | Finish the full combined delegation/replay journey and explicit revocation refusal before closing this item. |
+| [Keep grants valid across policy source revisions](sprints/2026-09-19/cycle-1-integration-checkpoint.md) | Astra: root; component implementation/review lanes completed | Finish current combined acceptance, then implement and exercise explicit generation-wide revocation and the delegated-grant two-replacement case. |
+| [Check composition against the actual joint post-state](sprints/2026-09-19/cycle-1-integration-checkpoint.md) | Astra: root; component implementation/review lanes completed | Finish the combined native joint transaction and atomic-refusal checks; retain exact whole-image evidence. |
+| [Define the September 26 programmable nexus and its shared contracts](sprints/2026-09-19/cycle-1-integration-checkpoint.md) | Astra: root; component implementation/review lanes completed | Complete cycle acceptance and record the resulting core contracts and measured costs before assigning the next hosted experience cycle. |
+| [Operate real resources through a compiled programmable host](sprints/2026-09-19/cycle-1-integration-checkpoint.md) | Astra: root; Sol: cycle_build + cycle_client | Capture complete results on immutable host 0da9f139 and its matching runner; verify final committed-source umbrella, then record performance and hosting work still required. |
+| [Store initial policies and use one runtime profile](sprints/2026-09-19/cycle-1-integration-checkpoint.md) | Astra: root; component implementation/review lanes completed | Record final umbrella and actual native policy-source/current-rule checks together. |
+| [Implement and exercise the canonical authored-program-to-resource path](sprints/2026-09-19/cycle-1-integration-checkpoint.md) | Astra: root; Sol: cycle_build + cycle_client | Complete corrected Rust-client and native resource journeys on the same source-matched executable. |
 
 ## Backlog
 

@@ -1,0 +1,35 @@
+Recorded Lean arguments for completed component checks (lane-observed exit 0).
+No checks were rerun for archival. All compilation used LEAN_NUM_THREADS=2
+and an atomic fleet seat with an absolute EXIT cleanup trap.
+
+Stable dependency working directory for the final controller/receiver and
+order-gadget checks, and a normalized replay directory for the helper:
+/tmp/minidregg-cycle-20260919/native-incremental-optimized-20260919T194500Z
+
+Helper check arguments (its original shell working directory was not
+separately retained; the helper log and lane exit report are preserved):
+LEAN_NUM_THREADS=2 lake env lean -R /Users/ember/dev/minidregg /Users/ember/dev/minidregg/Compiler/CanonicalPolicyAdmission.lean -o /tmp/minidregg-cycle-20260919/birth-guard-overlay/Compiler/CanonicalPolicyAdmission.olean -c /tmp/minidregg-cycle-20260919/birth-guard-overlay/Compiler/CanonicalPolicyAdmission.c > /tmp/minidregg-cycle-20260919/birth-selectors-helper.log 2>&1
+
+Controller and receiver checks, in order, with the dependency overlay first:
+LEAN_NUM_THREADS=2 lake env bash -c 'export LEAN_PATH="/tmp/minidregg-cycle-20260919/birth-guard-overlay:$LEAN_PATH"; lean -R /Users/ember/dev/minidregg /Users/ember/dev/minidregg/Kernel/ResourceBirthPolicyController.lean -o /tmp/minidregg-cycle-20260919/birth-guard-overlay/Kernel/ResourceBirthPolicyController.olean -c /tmp/minidregg-cycle-20260919/birth-guard-overlay/Kernel/ResourceBirthPolicyController.c' > /tmp/minidregg-cycle-20260919/birth-selectors-controller.log 2>&1
+LEAN_NUM_THREADS=2 lake env bash -c 'export LEAN_PATH="/tmp/minidregg-cycle-20260919/birth-guard-overlay:$LEAN_PATH"; lean -R /Users/ember/dev/minidregg /Users/ember/dev/minidregg/Kernel/ResourceBirthReceiver.lean -o /tmp/minidregg-cycle-20260919/birth-guard-overlay/Kernel/ResourceBirthReceiver.olean -c /tmp/minidregg-cycle-20260919/birth-guard-overlay/Kernel/ResourceBirthReceiver.c' > /tmp/minidregg-cycle-20260919/birth-selectors-receiver.log 2>&1
+
+The private overlay's remaining Compiler/Kernel modules were links to the
+stable snapshot's .lake/build/lib/lean. Changed outputs were regular files,
+never writes through links into the shared snapshot. An earlier transient
+missing-DurableReceiverIO error came from a concurrently rebuilt dependency
+tree; the completed checks above use the stable dependency root instead.
+
+Order-gadget check:
+LEAN_NUM_THREADS=2 lake env lean -R /Users/ember/dev/minidregg /Users/ember/dev/minidregg/Compiler/PredOrderGadget.lean -o /tmp/minidregg-cycle-20260919/order-digit-overlay/Compiler/PredOrderGadget.olean -c /tmp/minidregg-cycle-20260919/order-digit-overlay/Compiler/PredOrderGadget.c > /tmp/minidregg-cycle-20260919/order-digit-direct.log 2>&1
+
+Read-only profile commands (full samples omitted from archive):
+sample 94636 2 -file /tmp/minidregg-cycle-20260919/native-fullgate-birth-submit-sample.txt
+sample 17838 2 -file /tmp/minidregg-cycle-20260919/native-fullgate-attach-query-sample.txt
+
+Archival exact receipt comparison, exit 0:
+cmp /tmp/minidregg-cycle-20260919/acceptance/guardcache-birth-benchmark/outcome.bin /tmp/minidregg-cycle-20260919/acceptance/theta-birth-matched-benchmark/outcome.bin
+
+The matched native submit command, timing and executable/input hashes are
+preserved in matched-birth/optimized-manifest.txt. Only paths and hashes to
+private runtime inputs are retained; no inputs or config contents are copied.

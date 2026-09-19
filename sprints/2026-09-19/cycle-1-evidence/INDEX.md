@@ -2,7 +2,26 @@
 
 Archived September 19, 2026 by the content lane from `/tmp/minidregg-cycle-20260919`, with a later update for the completed 20:25–20:31 UTC gates. **The full `Minidregg` umbrella is green; complete native integration remains pending and slow.** A separately identified native host accepted one matched-input birth in 223.78 seconds. That result does not establish the complete multi-resource journey or a speedup. Earlier failed/interrupted evidence is preserved below.
 
+## September 19, 21:03 UTC component update: birth and order computation
+
+[Birth and order sharing](birth-and-order-sharing/README.md) preserves general
+equality proofs, standard axiom pins, exact source hashes, lane-reported
+successful empty compiler logs and bounded generated-C/profile facts. A later
+matched birth with theta plus birth sharing completed in **49.43 seconds**,
+versus the archived **223.78 seconds**, using identical signed-call/genesis
+inputs and returning identical 132-byte outcome files. This pair measures
+about 4.53× improvement; it does not isolate the component contributions.
+
+An independent authorized-query stall was traced to recursive bit extraction
+inside actual canonical policy-witness generation. The exact direct-bit
+compiler substitution passes its bounded source check and appears in the
+freshly generated `PredCompile` caller. **Its native query retry and the full
+journey remain pending in this component record.** No configuration, raw
+signed call, genesis/store contents or full process sample was archived.
+
 ## September 19 update: completed gates
+
+Later component/runtime progress is recorded in the [integration checkpoint](../cycle-1-integration-checkpoint.md), including the [33.55-second task query](order-query-benchmark/README.md). The final combined umbrella and full native journeys remain separate pending integration checks at that checkpoint.
 
 | Evidence | Captured result | Limit |
 |---|---|---|
@@ -18,6 +37,7 @@ No private signing keys, runtime deployment configuration, raw state/artifact st
 | `waterfall/` | Original study record, search/replay source, bounded search logs, canonical codec log and command scripts | Three successful proof searches and independently compiled scripts with no Waterfall imports, as recorded by the completed lane. Canonical codec log retains transitive axiom reports. The optional tactic is not a new production dependency. |
 | `cast-injectivity/` | Empty original compiler log, exact source hash, theorem/axiom-pin excerpt, native source-overlay ledger and completed component-build lines | Root reports receiving the lane's successful direct tool exit. The empty log alone does not encode an exit status. The later native build explicitly records `Compiler.PredCompile PASS 32s`; this is one completed module, not the entire native build. |
 | [`theta-sharing/`](theta-sharing/README.md) | Original lane record, unchanged primitive fixture, six timing logs, source hashes and equality/axiom-pin excerpt; empty proof/conformance logs with lane-reported exit 0 | Proved theta compiler substitution; matched Lean `--run` primitive median 4.147 s → 2.059 s (about 2.01×). Component evidence only: no native-host speedup or complete operation-acceptance claim. Optimized source is identified by hash and root-reported commit `722a8bb`. |
+| [`birth-and-order-sharing/`](birth-and-order-sharing/README.md) | Selector/identity and bit-function equalities, standard pins, source hashes, bounded compiler/C/profile evidence and matched birth manifests/timings/outcome hashes | Matched birth 223.78 s → 49.43 s with identical receipts. Direct order-bit implementation is present in generated consumer C; no completed native query or complete-journey claim. |
 | `import-boundary/` | `final.log` | Captured Theory and Selvage import-boundary checks report `OK`. |
 | `source-snapshots/umbrella/` | Initial snapshot manifest, complete source-hash inventories, exact overlay ledgers 1–4 | Identifies source snapshots and subsequent source-only overlays. Round 4 is split between content and remaining consumers. These ledgers are not acceptance results. |
 | `source-snapshots/native-baseline/` | Baseline snapshot manifest and source-hash inventories | Identifies the separately built initial native host source. |

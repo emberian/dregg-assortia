@@ -1,0 +1,6 @@
+start_utc=2026-09-19T20:28:01Z
+02f3750a53a7620857273ef632fd6c9a41b02a511d7b76c4d0a5e918ad1ee855  /tmp/minidregg-cycle-20260919/native-incremental-optimized-20260919T194500Z/.lake/build/bin/minidregg-host-guardcache
+b9aba6e61178cf4dd58f6c372d3dac1eb5e241bdbf0ee030bef01249b2535b0b  /tmp/minidregg-cycle-20260919/acceptance/new-world-native-run1/artifacts/cycle-birth-call.bin
+e564b9c406219590155f713996edab16679e5199b29bc4d125dd4231850ecbc4  /tmp/minidregg-cycle-20260919/acceptance/new-world-native-run1/artifacts/genesis.bin
+Same signed birth and pinned genesis as preceding native acceptance run; independent fresh storage.
+exit_code=0

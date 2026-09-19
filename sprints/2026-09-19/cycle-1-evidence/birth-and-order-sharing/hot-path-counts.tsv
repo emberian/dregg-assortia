@@ -1,0 +1,16 @@
+sample	selected_symbol_fragment	inclusive_frame_count
+birth-submit-confirmation	NativeHost_confirmed	1351
+birth-submit-confirmation	NativeHostReplay_derive	1351
+birth-submit-confirmation	Sp800185Cshake256_cshake256Bytes	1315
+birth-submit-confirmation	ResourceBirthCodec_commitmentBytes	896
+birth-submit-confirmation	Pending_branchStep	660
+birth-submit-confirmation	projectForRequest	398
+authorized-query	NativeHost_query	1502
+authorized-query	NativeObservationController_authorize	1502
+authorized-query	ResourceObservationAdmission_check	1502
+authorized-query	CanonicalPolicyAdmission_admit	1502
+authorized-query	canonicalWitness	1502
+authorized-query	orderAux	1502
+authorized-query	PredOrder_binaryDigits	19210
+authorized-query	Fin_induction	17800
+authorized-query	Fin_cases	18237
