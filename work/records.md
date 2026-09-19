@@ -106,15 +106,15 @@ Graph-backed work ownership, concrete briefs, generated current views and an exp
 
 **Bind native use to committed keys and complete authority**
 
-Status: **backlog** · Owner: Unassigned · Updated: 2026-09-18T03:34:10-04:00
+Status: **active** · Owner: Astra: resume_authority · Updated: 2026-09-19T12:21:33-04:00
 
 Persist exact signing keys/epochs; accept actual configured native verification of the exact request and capability against the complete same-snapshot authority.
 
-**Next:** Finish remaining consumer checks, actual generated Rust emissions and full-root integration against coherent current source.
+**Next:** Complete current-source observation and Book enforcement audits and downstream receiving checks.
 
 **Done when:** Actual installed verification plus complete committed authority checks feed accepted source operations; stale/altered/revoked credentials cannot authorize them.
 
-**Evidence so far:** Native signatures, capability refusal and joined receiving journeys PASS. Source-only later codec/Registry edits and remaining generated/consumer gates cannot inherit those passes. Work frozen at ember’s request; no agent is currently assigned.
+**Evidence so far:** Registry law/profile pins refreshed; source and exact theorem audits converging with host integration.
 
 **Enables:**
 
@@ -127,6 +127,7 @@ Persist exact signing keys/epochs; accept actual configured native verification 
 - [S-RESUMED-0250 — Resumed native runtime and pinned publication checks, September18](../sprints/2026-09-18/resumed-0250.md)
 - [S-RESUMED-0311 — Revision migration checks and host review, September18 03:11](../sprints/2026-09-18/resumed-0311.md)
 - [S-WIND-DOWN-0918 — User-requested wind-down, exact native passes and unfinished host, September 18](../sprints/2026-09-18/wind-down.md)
+- [S-GRAIN-IMPLEMENTATION-0919 — User-authorized hosted agent grain implementation and acceptance contract](../sprints/2026-09-19/implementation.md)
 
 ## W-AUTHORIZED-DELEGATION
 
@@ -343,6 +344,126 @@ World deployment currently mutates volatile registries; historical paths either 
 - [S-RESUMED-0250 — Resumed native runtime and pinned publication checks, September18](../sprints/2026-09-18/resumed-0250.md)
 - [S-WIND-DOWN-0918 — User-requested wind-down, exact native passes and unfinished host, September 18](../sprints/2026-09-18/wind-down.md)
 
+## W-GRAIN-BROKER
+
+**Custody and meter scoped provider requests**
+
+Status: **active** · Owner: Astra: grain_broker + root · Updated: 2026-09-19T12:21:33-04:00
+
+Execute bounded streaming requests after canonical reservation, retain exact evidence, fence old epochs, reconcile uncertain work and demonstrate secret isolation.
+
+**Next:** Execute bounded streaming requests after canonical reservation, retain exact evidence, fence old epochs, reconcile uncertain work and demonstrate secret isolation.
+
+**Done when:** Execute bounded streaming requests after canonical reservation, retain exact evidence, fence old epochs, reconcile uncertain work and demonstrate secret isolation.
+
+**Evidence so far:** Implementation underway; component evidence does not yet close the integrated journey.
+
+[Task brief](../sprints/2026-09-19/implementation.md)
+
+**Enables:**
+
+- E-WORLD — Programmable social resource world
+
+**Evidence / provenance:**
+
+- [S-GRAIN-IMPLEMENTATION-0919 — User-authorized hosted agent grain implementation and acceptance contract](../sprints/2026-09-19/implementation.md)
+
+**Write scope:** breadstuffs/agent-platform/hosted/dregg_grain/{credentials,broker,broker_transport,broker_server,cost_policy}.py
+
+**Acceptance:**
+
+- Execute bounded streaming requests after canonical reservation, retain exact evidence, fence old epochs, reconcile uncertain work and demonstrate secret isolation.
+
+## W-GRAIN-CONTROL
+
+**Durable hosted grain control and authenticated entrance**
+
+Status: **active** · Owner: Astra: grain_control + root · Updated: 2026-09-19T12:21:33-04:00
+
+Execute authenticated provisioning, hard/soft attachment, retained operation lookup and recovery through actual kernel/runtime adapters.
+
+**Next:** Execute authenticated provisioning, hard/soft attachment, retained operation lookup and recovery through actual kernel/runtime adapters.
+
+**Done when:** Execute authenticated provisioning, hard/soft attachment, retained operation lookup and recovery through actual kernel/runtime adapters.
+
+**Evidence so far:** Implementation underway; component evidence does not yet close the integrated journey.
+
+[Task brief](../sprints/2026-09-19/implementation.md)
+
+**Enables:**
+
+- E-WORLD — Programmable social resource world
+
+**Evidence / provenance:**
+
+- [S-GRAIN-IMPLEMENTATION-0919 — User-authorized hosted agent grain implementation and acceptance contract](../sprints/2026-09-19/implementation.md)
+
+**Write scope:** breadstuffs/agent-platform/hosted/dregg_grain/{models,store,control,server,cli,service}.py
+
+**Acceptance:**
+
+- Execute authenticated provisioning, hard/soft attachment, retained operation lookup and recovery through actual kernel/runtime adapters.
+
+## W-GRAIN-RUNTIME
+
+**Host upstream Hermes with persistent confined execution**
+
+Status: **active** · Owner: Astra: grain_runtime · Updated: 2026-09-19T12:21:33-04:00
+
+Run real upstream Hermes in a confined Linux scope, preserve conversation/output, kill descendants on hard disconnect and retain exact scope on soft reconnect.
+
+**Next:** Run real upstream Hermes in a confined Linux scope, preserve conversation/output, kill descendants on hard disconnect and retain exact scope on soft reconnect.
+
+**Done when:** Run real upstream Hermes in a confined Linux scope, preserve conversation/output, kill descendants on hard disconnect and retain exact scope on soft reconnect.
+
+**Evidence so far:** Implementation underway; component evidence does not yet close the integrated journey.
+
+[Task brief](../sprints/2026-09-19/implementation.md)
+
+**Enables:**
+
+- E-WORLD — Programmable social resource world
+
+**Evidence / provenance:**
+
+- [S-GRAIN-IMPLEMENTATION-0919 — User-authorized hosted agent grain implementation and acceptance contract](../sprints/2026-09-19/implementation.md)
+
+**Write scope:** breadstuffs/agent-platform/hosted/dregg_grain/{runtime,hermes,confinement}.py
+
+**Acceptance:**
+
+- Run real upstream Hermes in a confined Linux scope, preserve conversation/output, kill descendants on hard disconnect and retain exact scope on soft reconnect.
+
+## W-GRAIN-TOOLS
+
+**Expose canonical resource programming to Hermes**
+
+Status: **active** · Owner: Sol: grain_tools + host_json; Astra: grain_kernel · Updated: 2026-09-19T12:21:33-04:00
+
+Drive real signed resource create/read/program/invoke/delegate/history operations through the source-owned host; reject stale generation authority without refreshing it.
+
+**Next:** Drive real signed resource create/read/program/invoke/delegate/history operations through the source-owned host; reject stale generation authority without refreshing it.
+
+**Done when:** Drive real signed resource create/read/program/invoke/delegate/history operations through the source-owned host; reject stale generation authority without refreshing it.
+
+**Evidence so far:** Implementation underway; component evidence does not yet close the integrated journey.
+
+[Task brief](../sprints/2026-09-19/implementation.md)
+
+**Enables:**
+
+- E-WORLD — Programmable social resource world
+
+**Evidence / provenance:**
+
+- [S-GRAIN-IMPLEMENTATION-0919 — User-authorized hosted agent grain implementation and acceptance contract](../sprints/2026-09-19/implementation.md)
+
+**Write scope:** breadstuffs/agent-platform/hosted/dregg_grain/{kernelclient,mcp}.py; minidregg/Host/Json.lean and Kernel/AgentGrain*.lean
+
+**Acceptance:**
+
+- Drive real signed resource create/read/program/invoke/delegate/history operations through the source-owned host; reject stale generation authority without refreshing it.
+
 ## W-GRANT-REVISION
 
 **Keep grants valid across policy source revisions**
@@ -424,15 +545,15 @@ Actual-joint resource accounting and accepted field preservation now reject mint
 
 **Define the September 26 programmable nexus and its shared contracts**
 
-Status: **backlog** · Owner: Unassigned · Updated: 2026-09-19T11:45:42-04:00
+Status: **active** · Owner: Astra: root · Updated: 2026-09-19T12:21:33-04:00
 
-Design the complete hosted Nous Hermes offering within the DREGG programmable nexus, including real resource authority, persistence, credential-use policy, metering and typed evidence. External unforked Hermes support is desirable. Protocols, receiving kernel and economic operation remain open.
+Implement the complete hosted Nous Hermes offering within the DREGG programmable nexus, using Mini canonical native resource authority, persistence, credential custody, metering and explicit evidence. External unforked Hermes support is desirable; the public economic operation remains to be selected.
 
-**Next:** Choose one receiving kernel and define durable execution scope, disconnect enforcement, reconnect reconciliation and credential-use semantics. Normal disconnect must interrupt ongoing work; explicit soft mode continues under existing authority and budget.
+**Next:** Join actual hosted Hermes, canonical resource operations, scoped broker and connection lifecycle; complete the retained user-journey acceptance.
 
 **Done when:** Accepted nexus operations and consequential design decisions; selected semantic and receiving-runtime paths; an explicit owned-node participation path and selected Solana/resource outcome; linked implementation obligations and evidence. Selecting a contract does not close implementation or deployment.
 
-**Evidence so far:** Source investigations preserved; no builds or implementation wave resumed. Current connection-mode intent is normal disconnect as circuit breaker and explicit soft continuation within unchanged authority/budget. Hermes cooperative interrupts, separate asynchronous children and queued work require actual host/controller enforcement and receiving tests.
+**Evidence so far:** Implementation explicitly resumed. Mini canonical native receiver selected by Astra; complete platform construction underway across nine coordinated lanes.
 
 **Enables:**
 
@@ -446,6 +567,7 @@ Design the complete hosted Nous Hermes offering within the DREGG programmable ne
 - [S-PROTOCOL-REVIEW-0919 — Astra review of three Sol source investigations and proposed protocol boundaries](../sprints/2026-09-19/protocol-review.md)
 - [S-CONNECTION-BREAKER-0919 — Disconnect as circuit breaker, explicit soft continuation and enforcement investigation](../sprints/2026-09-19/connection-breaker.md)
 - [S-HERMES-BREAKER-0919 — Sol review of actual Hermes cancellation, descendants and continuation](../sprints/2026-09-19/reports/hermes-circuit-breaker.md)
+- [S-GRAIN-IMPLEMENTATION-0919 — User-authorized hosted agent grain implementation and acceptance contract](../sprints/2026-09-19/implementation.md)
 
 ## W-NATIVE-DATA-RECEIVER
 
@@ -477,15 +599,15 @@ The existing Lean executor now crosses exact-byte SQLite CAS with crash/retry/co
 
 **Operate real resources through a compiled programmable host**
 
-Status: **backlog** · Owner: Unassigned · Updated: 2026-09-18T03:34:10-04:00
+Status: **active** · Owner: Astra: resume_host + resume_genesis + resume_authority; Sol: host_json · Updated: 2026-09-19T12:21:33-04:00
 
 Compile the source-owned Mini birth, rule installation, invocation and delegation path into an executable shell/stdio interface with exact signed calls, committed-history clock and replay receipts.
 
-**Next:** Repair saved codec/genesis failures, coordinate Book/observation profile pins, check downstream modules and root closure, then link bounded host and run public CLI acceptance.
+**Next:** Complete observation/replay/host closure, source-owned authoring, bounded native link and signed public CLI journey.
 
 **Done when:** A real compiled host with operator-owned configuration accepts only source-authorized signed calls, preserves committed resources/receipts across restart and lost replies, and drives the same grant-preserving shared-resource journey through the programmable shell.
 
-**Evidence so far:** Frozen source checkpoint: HostCodec and Genesis compile RED; observation, semantic history, Book enforcement and host/CLI integration uncompiled. Narrow profile and Book theory checks passed separately. Work frozen at ember’s request; no agent is currently assigned.
+**Evidence so far:** HostCodec and Genesis saved failures repaired with narrow checks reported; complete native host and integrated journey remain in progress.
 
 **Enables:**
 
@@ -498,6 +620,7 @@ Compile the source-owned Mini birth, rule installation, invocation and delegatio
 - [S-ACCOUNT-HANDOFF-0918 — September18 account handoff: native born-owner journey and next integration wave](../sprints/2026-09-18/account-handoff.md)
 - [S-RESUMED-0311 — Revision migration checks and host review, September18 03:11](../sprints/2026-09-18/resumed-0311.md)
 - [S-WIND-DOWN-0918 — User-requested wind-down, exact native passes and unfinished host, September 18](../sprints/2026-09-18/wind-down.md)
+- [S-GRAIN-IMPLEMENTATION-0919 — User-authorized hosted agent grain implementation and acceptance contract](../sprints/2026-09-19/implementation.md)
 
 ## W-POLICY-SOURCE
 
@@ -531,15 +654,15 @@ Immutable internal policy-source cells and a common field/compiler/request profi
 
 **Implement and exercise the canonical authored-program-to-resource path**
 
-Status: **backlog** · Owner: Unassigned · Updated: 2026-09-18T03:34:10-04:00
+Status: **active** · Owner: Astra: root + grain_kernel; Sol: grain_tools · Updated: 2026-09-19T12:21:33-04:00
 
 Select the canonical rule/program representation and actual authority projection, then implement needed compiler/native/proof/durable support and shell/Hermes consumers. Existing guards are retired only by replacing their missing guarantees. Active source investigation is recorded in sprints/2026-09-17.md.
 
-**Next:** Repair and check the preserved host stack, then drive the joined journey through signed public CLI preparation and submission.
+**Next:** Join source-owned grain rules and generic field projection to actual native CLI/MCP and hosted Hermes.
 
 **Done when:** Author and install a rule under actual resource authority, invoke a permitted operation through the chosen shell/agent path, refuse a violating operation with correct state/outcome evidence, and recover accepted behavior/history through the chosen durable runtime. Complete all necessary core obligations, not merely a private demo.
 
-**Evidence so far:** Actual native joined birth/rules/delegation/Bob/reopen/retry journey PASS at exact archived source. Public compiled host remains unfinished. Work frozen at ember’s request; no agent is currently assigned.
+**Evidence so far:** Native host selected as the receiving path; generic scalar transition projections and grain source policy under construction.
 
 **Enables:**
 
@@ -554,6 +677,7 @@ Select the canonical rule/program representation and actual authority projection
 - [S-RESUMED-0250 — Resumed native runtime and pinned publication checks, September18](../sprints/2026-09-18/resumed-0250.md)
 - [S-RESUMED-0311 — Revision migration checks and host review, September18 03:11](../sprints/2026-09-18/resumed-0311.md)
 - [S-WIND-DOWN-0918 — User-requested wind-down, exact native passes and unfinished host, September 18](../sprints/2026-09-18/wind-down.md)
+- [S-GRAIN-IMPLEMENTATION-0919 — User-authorized hosted agent grain implementation and acceptance contract](../sprints/2026-09-19/implementation.md)
 
 ## W-PROVIDER-PATH
 

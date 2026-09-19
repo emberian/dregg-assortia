@@ -1122,8 +1122,8 @@
       "@id": "urn:dregg:assortia:W-M26-DESIGN",
       "@type": "WorkItem",
       "label": "Define the September 26 programmable nexus and its shared contracts",
-      "description": "Design the complete hosted Nous Hermes offering within the DREGG programmable nexus, including real resource authority, persistence, credential-use policy, metering and typed evidence. External unforked Hermes support is desirable. Protocols, receiving kernel and economic operation remain open.",
-      "status": "backlog",
+      "description": "Implement the complete hosted Nous Hermes offering within the DREGG programmable nexus, using Mini canonical native resource authority, persistence, credential custody, metering and explicit evidence. External unforked Hermes support is desirable; the public economic operation remains to be selected.",
+      "status": "active",
       "evidenceKind": "assistant-proposal",
       "localPath": "/Users/ember/dev/dregg-assortia/milestones/2026-09-26.md",
       "motivatedBy": [
@@ -1156,12 +1156,12 @@
         "urn:dregg:assortia:W-PROGRAMMABLE-PATH"
       ],
       "closure": "Accepted nexus operations and consequential design decisions; selected semantic and receiving-runtime paths; an explicit owned-node participation path and selected Solana/resource outcome; linked implementation obligations and evidence. Selecting a contract does not close implementation or deployment.",
-      "owner": null,
-      "updatedAt": "2026-09-19T11:45:42-04:00",
+      "owner": "Astra: root",
+      "updatedAt": "2026-09-19T12:21:33-04:00",
       "advances": [
         "urn:dregg:assortia:E-WORLD"
       ],
-      "nextAction": "Choose one receiving kernel and define durable execution scope, disconnect enforcement, reconnect reconciliation and credential-use semantics. Normal disconnect must interrupt ongoing work; explicit soft mode continues under existing authority and budget.",
+      "nextAction": "Join actual hosted Hermes, canonical resource operations, scoped broker and connection lifecycle; complete the retained user-journey acceptance.",
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
       "blockedBy": [],
@@ -1171,9 +1171,10 @@
         "urn:dregg:assortia:S-DIRECTION-0919",
         "urn:dregg:assortia:S-PROTOCOL-REVIEW-0919",
         "urn:dregg:assortia:S-CONNECTION-BREAKER-0919",
-        "urn:dregg:assortia:S-HERMES-BREAKER-0919"
+        "urn:dregg:assortia:S-HERMES-BREAKER-0919",
+        "urn:dregg:assortia:S-GRAIN-IMPLEMENTATION-0919"
       ],
-      "progress": "Source investigations preserved; no builds or implementation wave resumed. Current connection-mode intent is normal disconnect as circuit breaker and explicit soft continuation within unchanged authority/budget. Hermes cooperative interrupts, separate asynchronous children and queued work require actual host/controller enforcement and receiving tests."
+      "progress": "Implementation explicitly resumed. Mini canonical native receiver selected by Astra; complete platform construction underway across nine coordinated lanes."
     },
     {
       "@id": "urn:dregg:assortia:S-NEXUS-INTERFACE",
@@ -1856,7 +1857,7 @@
       "@type": "WorkItem",
       "label": "Implement and exercise the canonical authored-program-to-resource path",
       "description": "Select the canonical rule/program representation and actual authority projection, then implement needed compiler/native/proof/durable support and shell/Hermes consumers. Existing guards are retired only by replacing their missing guarantees. Active source investigation is recorded in sprints/2026-09-17.md.",
-      "status": "backlog",
+      "status": "active",
       "motivatedBy": [
         "urn:dregg:assortia:I-NEXUS",
         "urn:dregg:assortia:I-MIXED-PROGRAMMING",
@@ -1873,20 +1874,21 @@
         "urn:dregg:assortia:S-ACCOUNT-HANDOFF-0918",
         "urn:dregg:assortia:S-RESUMED-0250",
         "urn:dregg:assortia:S-RESUMED-0311",
-        "urn:dregg:assortia:S-WIND-DOWN-0918"
+        "urn:dregg:assortia:S-WIND-DOWN-0918",
+        "urn:dregg:assortia:S-GRAIN-IMPLEMENTATION-0919"
       ],
       "closure": "Author and install a rule under actual resource authority, invoke a permitted operation through the chosen shell/agent path, refuse a violating operation with correct state/outcome evidence, and recover accepted behavior/history through the chosen durable runtime. Complete all necessary core obligations, not merely a private demo.",
-      "owner": null,
-      "updatedAt": "2026-09-18T03:34:10-04:00",
+      "owner": "Astra: root + grain_kernel; Sol: grain_tools",
+      "updatedAt": "2026-09-19T12:21:33-04:00",
       "advances": [
         "urn:dregg:assortia:E-WORLD",
         "urn:dregg:assortia:E-KERNEL"
       ],
-      "nextAction": "Repair and check the preserved host stack, then drive the joined journey through signed public CLI preparation and submission.",
+      "nextAction": "Join source-owned grain rules and generic field projection to actual native CLI/MCP and hosted Hermes.",
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
       "blockedBy": [],
-      "progress": "Actual native joined birth/rules/delegation/Bob/reopen/retry journey PASS at exact archived source. Public compiled host remains unfinished. Work frozen at ember’s request; no agent is currently assigned."
+      "progress": "Native host selected as the receiving path; generic scalar transition projections and grain source policy under construction."
     },
     {
       "@id": "urn:dregg:assortia:S-COMPUTE-PAYMENT",
@@ -2141,25 +2143,26 @@
       "@type": "WorkItem",
       "label": "Bind native use to committed keys and complete authority",
       "description": "Persist exact signing keys/epochs; accept actual configured native verification of the exact request and capability against the complete same-snapshot authority.",
-      "status": "backlog",
-      "owner": null,
-      "updatedAt": "2026-09-18T03:34:10-04:00",
+      "status": "active",
+      "owner": "Astra: resume_authority",
+      "updatedAt": "2026-09-19T12:21:33-04:00",
       "advances": [
         "urn:dregg:assortia:E-KERNEL"
       ],
-      "nextAction": "Finish remaining consumer checks, actual generated Rust emissions and full-root integration against coherent current source.",
+      "nextAction": "Complete current-source observation and Book enforcement audits and downstream receiving checks.",
       "closure": "Actual installed verification plus complete committed authority checks feed accepted source operations; stale/altered/revoked credentials cannot authorize them.",
       "sources": [
         "urn:dregg:assortia:S-IMPLEMENTATION-0045",
         "urn:dregg:assortia:S-IMPLEMENTATION-0130",
         "urn:dregg:assortia:S-RESUMED-0250",
         "urn:dregg:assortia:S-RESUMED-0311",
-        "urn:dregg:assortia:S-WIND-DOWN-0918"
+        "urn:dregg:assortia:S-WIND-DOWN-0918",
+        "urn:dregg:assortia:S-GRAIN-IMPLEMENTATION-0919"
       ],
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
       "blockedBy": [],
-      "progress": "Native signatures, capability refusal and joined receiving journeys PASS. Source-only later codec/Registry edits and remaining generated/consumer gates cannot inherit those passes. Work frozen at ember’s request; no agent is currently assigned."
+      "progress": "Registry law/profile pins refreshed; source and exact theorem audits converging with host integration."
     },
     {
       "@id": "urn:dregg:assortia:W-POLICY-SOURCE",
@@ -2613,16 +2616,17 @@
       "@type": "WorkItem",
       "label": "Operate real resources through a compiled programmable host",
       "description": "Compile the source-owned Mini birth, rule installation, invocation and delegation path into an executable shell/stdio interface with exact signed calls, committed-history clock and replay receipts.",
-      "status": "backlog",
-      "owner": null,
-      "updatedAt": "2026-09-18T03:34:10-04:00",
+      "status": "active",
+      "owner": "Astra: resume_host + resume_genesis + resume_authority; Sol: host_json",
+      "updatedAt": "2026-09-19T12:21:33-04:00",
       "priority": 1,
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "sources": [
         "urn:dregg:assortia:S-RESUMED-0250",
         "urn:dregg:assortia:S-ACCOUNT-HANDOFF-0918",
         "urn:dregg:assortia:S-RESUMED-0311",
-        "urn:dregg:assortia:S-WIND-DOWN-0918"
+        "urn:dregg:assortia:S-WIND-DOWN-0918",
+        "urn:dregg:assortia:S-GRAIN-IMPLEMENTATION-0919"
       ],
       "advances": [
         "urn:dregg:assortia:E-KERNEL",
@@ -2633,9 +2637,9 @@
         "urn:dregg:assortia:W-ANDROID-CONTRACT"
       ],
       "blockedBy": [],
-      "nextAction": "Repair saved codec/genesis failures, coordinate Book/observation profile pins, check downstream modules and root closure, then link bounded host and run public CLI acceptance.",
+      "nextAction": "Complete observation/replay/host closure, source-owned authoring, bounded native link and signed public CLI journey.",
       "closure": "A real compiled host with operator-owned configuration accepts only source-authorized signed calls, preserves committed resources/receipts across restart and lost replies, and drives the same grant-preserving shared-resource journey through the programmable shell.",
-      "progress": "Frozen source checkpoint: HostCodec and Genesis compile RED; observation, semantic history, Book enforcement and host/CLI integration uncompiled. Narrow profile and Book theory checks passed separately. Work frozen at ember’s request; no agent is currently assigned."
+      "progress": "HostCodec and Genesis saved failures repaired with narrow checks reported; complete native host and integrated journey remain in progress."
     },
     {
       "@id": "urn:dregg:assortia:S-RESUMED-0311",
@@ -2860,6 +2864,146 @@
       "scope": "Inspected upstream Hermes cancellation, tool and delegation paths; exact selected source hashes in circuit-breaker-inventory.json.",
       "limitations": "No runtime interruption or latency measurement; ACP SDK EOF behavior not inspected. Late-result and executor-wait consequences include explicitly labeled source inferences.",
       "status": "observed-in-source"
+    },
+    {
+      "@id": "urn:dregg:assortia:S-GRAIN-IMPLEMENTATION-0919",
+      "@type": "Source",
+      "label": "User-authorized hosted agent grain implementation and acceptance contract",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-19/implementation.md",
+      "lineStart": 1,
+      "lineEnd": 38,
+      "sha256": "767995e31ccba3416abd7c019a01e218f8fc646faa9d533faef96f1b44ff201f",
+      "recordedDate": "2026-09-19",
+      "evidenceKind": "user-authorization-and-agent-implementation-decision"
+    },
+    {
+      "@id": "urn:dregg:assortia:W-GRAIN-CONTROL",
+      "@type": "WorkItem",
+      "label": "Durable hosted grain control and authenticated entrance",
+      "description": "Execute authenticated provisioning, hard/soft attachment, retained operation lookup and recovery through actual kernel/runtime adapters.",
+      "status": "active",
+      "owner": "Astra: grain_control + root",
+      "updatedAt": "2026-09-19T12:21:33-04:00",
+      "priority": 1,
+      "milestone": "urn:dregg:assortia:M-2026-09-26",
+      "sources": [
+        "urn:dregg:assortia:S-GRAIN-IMPLEMENTATION-0919"
+      ],
+      "advances": [
+        "urn:dregg:assortia:E-WORLD"
+      ],
+      "related": [
+        "urn:dregg:assortia:W-NATIVE-HOST",
+        "urn:dregg:assortia:W-M26-DESIGN"
+      ],
+      "blockedBy": [],
+      "brief": "sprints/2026-09-19/implementation.md",
+      "writeScope": [
+        "breadstuffs/agent-platform/hosted/dregg_grain/{models,store,control,server,cli,service}.py"
+      ],
+      "acceptance": [
+        "Execute authenticated provisioning, hard/soft attachment, retained operation lookup and recovery through actual kernel/runtime adapters."
+      ],
+      "closure": "Execute authenticated provisioning, hard/soft attachment, retained operation lookup and recovery through actual kernel/runtime adapters.",
+      "nextAction": "Execute authenticated provisioning, hard/soft attachment, retained operation lookup and recovery through actual kernel/runtime adapters.",
+      "progress": "Implementation underway; component evidence does not yet close the integrated journey."
+    },
+    {
+      "@id": "urn:dregg:assortia:W-GRAIN-RUNTIME",
+      "@type": "WorkItem",
+      "label": "Host upstream Hermes with persistent confined execution",
+      "description": "Run real upstream Hermes in a confined Linux scope, preserve conversation/output, kill descendants on hard disconnect and retain exact scope on soft reconnect.",
+      "status": "active",
+      "owner": "Astra: grain_runtime",
+      "updatedAt": "2026-09-19T12:21:33-04:00",
+      "priority": 1,
+      "milestone": "urn:dregg:assortia:M-2026-09-26",
+      "sources": [
+        "urn:dregg:assortia:S-GRAIN-IMPLEMENTATION-0919"
+      ],
+      "advances": [
+        "urn:dregg:assortia:E-WORLD"
+      ],
+      "related": [
+        "urn:dregg:assortia:W-NATIVE-HOST",
+        "urn:dregg:assortia:W-M26-DESIGN"
+      ],
+      "blockedBy": [],
+      "brief": "sprints/2026-09-19/implementation.md",
+      "writeScope": [
+        "breadstuffs/agent-platform/hosted/dregg_grain/{runtime,hermes,confinement}.py"
+      ],
+      "acceptance": [
+        "Run real upstream Hermes in a confined Linux scope, preserve conversation/output, kill descendants on hard disconnect and retain exact scope on soft reconnect."
+      ],
+      "closure": "Run real upstream Hermes in a confined Linux scope, preserve conversation/output, kill descendants on hard disconnect and retain exact scope on soft reconnect.",
+      "nextAction": "Run real upstream Hermes in a confined Linux scope, preserve conversation/output, kill descendants on hard disconnect and retain exact scope on soft reconnect.",
+      "progress": "Implementation underway; component evidence does not yet close the integrated journey."
+    },
+    {
+      "@id": "urn:dregg:assortia:W-GRAIN-BROKER",
+      "@type": "WorkItem",
+      "label": "Custody and meter scoped provider requests",
+      "description": "Execute bounded streaming requests after canonical reservation, retain exact evidence, fence old epochs, reconcile uncertain work and demonstrate secret isolation.",
+      "status": "active",
+      "owner": "Astra: grain_broker + root",
+      "updatedAt": "2026-09-19T12:21:33-04:00",
+      "priority": 1,
+      "milestone": "urn:dregg:assortia:M-2026-09-26",
+      "sources": [
+        "urn:dregg:assortia:S-GRAIN-IMPLEMENTATION-0919"
+      ],
+      "advances": [
+        "urn:dregg:assortia:E-WORLD"
+      ],
+      "related": [
+        "urn:dregg:assortia:W-NATIVE-HOST",
+        "urn:dregg:assortia:W-M26-DESIGN"
+      ],
+      "blockedBy": [],
+      "brief": "sprints/2026-09-19/implementation.md",
+      "writeScope": [
+        "breadstuffs/agent-platform/hosted/dregg_grain/{credentials,broker,broker_transport,broker_server,cost_policy}.py"
+      ],
+      "acceptance": [
+        "Execute bounded streaming requests after canonical reservation, retain exact evidence, fence old epochs, reconcile uncertain work and demonstrate secret isolation."
+      ],
+      "closure": "Execute bounded streaming requests after canonical reservation, retain exact evidence, fence old epochs, reconcile uncertain work and demonstrate secret isolation.",
+      "nextAction": "Execute bounded streaming requests after canonical reservation, retain exact evidence, fence old epochs, reconcile uncertain work and demonstrate secret isolation.",
+      "progress": "Implementation underway; component evidence does not yet close the integrated journey."
+    },
+    {
+      "@id": "urn:dregg:assortia:W-GRAIN-TOOLS",
+      "@type": "WorkItem",
+      "label": "Expose canonical resource programming to Hermes",
+      "description": "Drive real signed resource create/read/program/invoke/delegate/history operations through the source-owned host; reject stale generation authority without refreshing it.",
+      "status": "active",
+      "owner": "Sol: grain_tools + host_json; Astra: grain_kernel",
+      "updatedAt": "2026-09-19T12:21:33-04:00",
+      "priority": 1,
+      "milestone": "urn:dregg:assortia:M-2026-09-26",
+      "sources": [
+        "urn:dregg:assortia:S-GRAIN-IMPLEMENTATION-0919"
+      ],
+      "advances": [
+        "urn:dregg:assortia:E-WORLD"
+      ],
+      "related": [
+        "urn:dregg:assortia:W-NATIVE-HOST",
+        "urn:dregg:assortia:W-M26-DESIGN"
+      ],
+      "blockedBy": [],
+      "brief": "sprints/2026-09-19/implementation.md",
+      "writeScope": [
+        "breadstuffs/agent-platform/hosted/dregg_grain/{kernelclient,mcp}.py; minidregg/Host/Json.lean and Kernel/AgentGrain*.lean"
+      ],
+      "acceptance": [
+        "Drive real signed resource create/read/program/invoke/delegate/history operations through the source-owned host; reject stale generation authority without refreshing it."
+      ],
+      "closure": "Drive real signed resource create/read/program/invoke/delegate/history operations through the source-owned host; reject stale generation authority without refreshing it.",
+      "nextAction": "Drive real signed resource create/read/program/invoke/delegate/history operations through the source-owned host; reject stale generation authority without refreshing it.",
+      "progress": "Implementation underway; component evidence does not yet close the integrated journey."
     }
   ]
 }
