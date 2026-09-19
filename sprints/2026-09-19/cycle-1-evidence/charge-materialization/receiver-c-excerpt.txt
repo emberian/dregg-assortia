@@ -1,0 +1,63 @@
+LEAN_EXPORT lean_object* l_Minidregg_Kernel_ResourceBirthReceiver_materializedIntent___redArg(lean_object* v_inst_298_, lean_object* v_profile_299_, lean_object* v_deployment_300_, lean_object* v_pins_301_, lean_object* v_durable_302_, lean_object* v_inst_303_, lean_object* v_height_304_, lean_object* v_accepted_305_){
+_start:
+{
+lean_object* v___x_306_; lean_object* v_ingress_307_; lean_object* v_transactionId_308_; lean_object* v_authorityNullifier_309_; lean_object* v_prepared_310_; lean_object* v_descriptor_311_; lean_object* v_domain_312_; lean_object* v___x_313_; lean_object* v___x_314_; lean_object* v___x_315_; lean_object* v___x_316_; lean_object* v___x_317_; lean_object* v___x_318_; lean_object* v___x_319_; lean_object* v___x_320_; lean_object* v___x_321_; lean_object* v___x_322_; 
+v___x_306_ = lp_minidregg_Minidregg_Kernel_ResourceBirthPolicyController_Concrete_AcceptedBirth_descriptor___redArg(v_accepted_305_);
+v_ingress_307_ = lean_ctor_get(v_accepted_305_, 0);
+lean_inc_ref(v_ingress_307_);
+v_transactionId_308_ = lean_ctor_get(v___x_306_, 2);
+lean_inc(v_transactionId_308_);
+v_authorityNullifier_309_ = lean_ctor_get(v___x_306_, 8);
+lean_inc(v_authorityNullifier_309_);
+lean_dec_ref(v___x_306_);
+v_prepared_310_ = lean_ctor_get(v_accepted_305_, 1);
+v_descriptor_311_ = lean_ctor_get(v_ingress_307_, 1);
+v_domain_312_ = lean_ctor_get(v_deployment_300_, 0);
+lean_inc_n(v_domain_312_, 2);
+lean_inc_ref(v_prepared_310_);
+lean_inc_ref(v_descriptor_311_);
+lean_inc_ref_n(v_durable_302_, 2);
+lean_inc_ref_n(v_deployment_300_, 2);
+v___x_313_ = lp_minidregg_Minidregg_Kernel_ResourceBirthController_Concrete_PreparedBirth_writes___redArg(v_deployment_300_, v_durable_302_, v_descriptor_311_, v_prepared_310_);
+lean_inc_ref(v_accepted_305_);
+v___x_314_ = l_Minidregg_Kernel_ResourceBirthReceiver_readGuards___redArg(v_deployment_300_, v_durable_302_, v_accepted_305_);
+v___x_315_ = lp_minidregg_Minidregg_Compiler_CredentialAuthorityReplay_nullifier(v_domain_312_, v_authorityNullifier_309_);
+v___x_316_ = lean_box(0);
+v___x_317_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_317_, 0, v___x_315_);
+lean_ctor_set(v___x_317_, 1, v___x_316_);
+v___x_318_ = lean_alloc_closure((void*)(l_Minidregg_Kernel_ResourceBirthReceiver_charge___boxed), 10, 9);
+lean_closure_set(v___x_318_, 0, lean_box(0));
+lean_closure_set(v___x_318_, 1, v_inst_298_);
+lean_closure_set(v___x_318_, 2, v_profile_299_);
+lean_closure_set(v___x_318_, 3, v_deployment_300_);
+lean_closure_set(v___x_318_, 4, v_pins_301_);
+lean_closure_set(v___x_318_, 5, v_durable_302_);
+lean_closure_set(v___x_318_, 6, v_inst_303_);
+lean_closure_set(v___x_318_, 7, v_height_304_);
+lean_closure_set(v___x_318_, 8, v_accepted_305_);
+v___x_319_ = l_Minidregg_Theory_ResourceCost_Charge_materialize(v___x_318_);
+v___x_320_ = lean_alloc_closure((void*)(l_Minidregg_Theory_ResourceCost_Charge_Values_toCharge___boxed), 2, 1);
+lean_closure_set(v___x_320_, 0, v___x_319_);
+v___x_321_ = l_Minidregg_Kernel_ResourceBirthReceiver_event(v_domain_312_, v_ingress_307_);
+v___x_322_ = lean_alloc_ctor(0, 6, 0);
+lean_ctor_set(v___x_322_, 0, v_transactionId_308_);
+lean_ctor_set(v___x_322_, 1, v___x_313_);
+lean_ctor_set(v___x_322_, 2, v___x_314_);
+lean_ctor_set(v___x_322_, 3, v___x_317_);
+lean_ctor_set(v___x_322_, 4, v___x_320_);
+lean_ctor_set(v___x_322_, 5, v___x_321_);
+return v___x_322_;
+}
+goto v_resetjp_668_;
+}
+v_resetjp_668_:
+{
+lean_object* v___x_671_; lean_object* v___x_672_; lean_object* v___x_673_; 
+v___x_671_ = ((lean_object*)(l_Minidregg_Kernel_ResourceBirthReceiver_receiveLoaded___redArg___closed__1));
+lean_inc_ref(v_durable_635_);
+v___x_672_ = l_Minidregg_Kernel_ResourceBirthReceiver_materializedIntent___redArg(v_inst_628_, v_profile_630_, v_deployment_631_, v_pins_632_, v_durable_635_, v_inst_629_, v_height_636_, v_a_667_);
+v___x_673_ = lp_minidregg_Minidregg_Compiler_DurableReceiverIO_receiveLoaded(v_transport_634_, v___x_671_, v_durable_635_, v___x_672_);
+if (lean_obj_tag(v___x_673_) == 0)
+{
+lean_object* v_a_674_; lean_object* v___x_676_; uint8_t v_isShared_677_; uint8_t v_isSharedCheck_731_; 

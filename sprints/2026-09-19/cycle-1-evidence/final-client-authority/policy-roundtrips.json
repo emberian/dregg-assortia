@@ -1,0 +1,14 @@
+{
+  "initial": {
+    "viewAddress": "44763520299233693012709245543783158249751233471266374183046654262332123787560",
+    "reauthoredBytesSha256": "c7606a71c4f17d7cde88944643178c07a5c6d6a0a651481d3a964b4174fe6916",
+    "bytes": "68",
+    "exactCanonicalByteMatch": true
+  },
+  "installed": {
+    "viewAddress": "860157034722928631774024668941487358158179188427214754222268922864773887038",
+    "reauthoredBytesSha256": "ea036e9632fdaa7d201f969a00a1afe05671f7719c6f6a25802609395ad8f2d2",
+    "bytes": "328",
+    "exactCanonicalByteMatch": true
+  }
+}

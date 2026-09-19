@@ -1,0 +1,4 @@
+f08311b9643d683f7450883083e516b342413851407f72bacadb0d31510e6d31  /private/tmp/minidregg-cycle-20260919/build/native-charge-runner-20260919T221500Z/native-acceptance-runner
+73227e837f2fdfa36db37c31d19f1139104ef32ed75db8f9677a2512f8d68058  /private/tmp/minidregg-cycle-20260919/build/native-charge-runner-20260919T221500Z/native-acceptance-runner.rsp
+8be5c6d18906880e4c89c5021d8c0d9baeb6f0ff36e4c7b1c90bc1f76740121b  .lake/build/ir/AcceptanceMain.c.o.export
+a9cb55147c611f54596d85c44167e01963a708f058944f66655d3e9f31d0877d  /private/tmp/minidregg-cycle-20260919/build/native-charge-runner-20260919T221500Z/AcceptanceMain.setup.json

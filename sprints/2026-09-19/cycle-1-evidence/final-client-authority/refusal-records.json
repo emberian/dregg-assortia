@@ -1,0 +1,34 @@
+{
+  "alicePolicyMutation": {
+    "outcome": {
+      "type": "refused",
+      "phase": "61646d697373696f6e",
+      "detail": "726571756573742072656675736564"
+    },
+    "signedCallRetained": true,
+    "boundaryUnchanged": true,
+    "heightUnchanged": true,
+    "resourceRootUnchanged": true
+  },
+  "bobPolicyManagement": {
+    "outcome": {
+      "type": "refused",
+      "phase": "61646d697373696f6e",
+      "detail": "726571756573742072656675736564"
+    },
+    "signedCallRetained": true,
+    "boundaryUnchanged": true,
+    "heightUnchanged": true
+  },
+  "afterRevocation": {
+    "signedReadObservation": true,
+    "readViewAbsent": true,
+    "signedMutationObservation": true,
+    "mutationPlanAbsent": true,
+    "mutationOutcomeAbsent": true,
+    "attemptedMutationField": "2",
+    "fieldAbsentInCurrentView": true,
+    "currentBoundaryEqualsRevocationReceipt": true,
+    "currentHeight": "15"
+  }
+}

@@ -1,0 +1,2 @@
+cbe8f996d6ab6462d35bef27a659ee62eec32c7c74d1c02caaf8ea7589deaf6d  /private/tmp/minidregg-cycle-20260919/native-charge-20260919T220000Z/scripts/probe-native-host-cli.lean
+cbe8f996d6ab6462d35bef27a659ee62eec32c7c74d1c02caaf8ea7589deaf6d  AcceptanceMain.lean

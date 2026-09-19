@@ -1,0 +1,43 @@
+LEAN_EXPORT lean_object* l_Minidregg_Theory_ResourceCost_Charge_materialize(lean_object* v_charge_455_, uint8_t v_lane_456_){
+_start:
+{
+uint8_t v___x_457_; lean_object* v___x_458_; lean_object* v_incidences_459_; uint8_t v___x_460_; lean_object* v___x_461_; lean_object* v_turnBytes_462_; uint8_t v___x_463_; lean_object* v___x_464_; lean_object* v_memoryTouches_465_; uint8_t v___x_466_; lean_object* v___x_467_; lean_object* v_witnessBytes_468_; uint8_t v___x_469_; lean_object* v___x_470_; lean_object* v_proofWork_471_; uint8_t v___x_472_; lean_object* v___x_473_; lean_object* v_storageBytes_474_; uint8_t v___x_475_; lean_object* v___x_476_; lean_object* v_networkBytes_477_; 
+v___x_457_ = 0;
+v___x_458_ = lean_box(v___x_457_);
+lean_inc_ref_n(v_charge_455_, 7);
+v_incidences_459_ = lean_apply_1(v_charge_455_, v___x_458_);
+v___x_460_ = 1;
+v___x_461_ = lean_box(v___x_460_);
+v_turnBytes_462_ = lean_apply_1(v_charge_455_, v___x_461_);
+v___x_463_ = 2;
+v___x_464_ = lean_box(v___x_463_);
+v_memoryTouches_465_ = lean_apply_1(v_charge_455_, v___x_464_);
+v___x_466_ = 3;
+v___x_467_ = lean_box(v___x_466_);
+v_witnessBytes_468_ = lean_apply_1(v_charge_455_, v___x_467_);
+v___x_469_ = 4;
+v___x_470_ = lean_box(v___x_469_);
+v_proofWork_471_ = lean_apply_1(v_charge_455_, v___x_470_);
+v___x_472_ = 5;
+v___x_473_ = lean_box(v___x_472_);
+v_storageBytes_474_ = lean_apply_1(v_charge_455_, v___x_473_);
+v___x_475_ = 6;
+v___x_476_ = lean_box(v___x_475_);
+v_networkBytes_477_ = lean_apply_1(v_charge_455_, v___x_476_);
+switch(v_lane_456_)
+{
+case 0:
+{
+lean_dec(v_networkBytes_477_);
+lean_dec(v_storageBytes_474_);
+lean_dec(v_proofWork_471_);
+lean_dec(v_witnessBytes_468_);
+lean_dec(v_memoryTouches_465_);
+lean_dec(v_turnBytes_462_);
+lean_dec_ref(v_charge_455_);
+return v_incidences_459_;
+}
+case 1:
+{
+lean_dec(v_networkBytes_477_);
+lean_dec(v_storageBytes_474_);

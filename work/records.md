@@ -141,15 +141,15 @@ Persist exact signing keys/epochs; accept actual configured native verification 
 
 **Give a friend a narrower usable right**
 
-Status: **active** · Owner: Astra: root; component implementation/review lanes completed · Updated: 2026-09-19T21:07:36.798Z
+Status: **active** · Owner: Astra: root; component implementation/review lanes completed · Updated: 2026-09-19T22:25:51.639Z
 
 Add an explicit authorized subject-to-subject delegation edge without weakening strict holder-narrowing or inventing bearer custody.
 
-**Next:** Finish the full combined delegation/replay journey and explicit revocation refusal before closing this item.
+**Next:** Complete the immutable New World task/content journey and archive its exact source/runtime result; retain separate binary scope for the later proved charge optimization.
 
 **Done when:** Owner delegates a bounded right; friend can use that right, cannot exceed it or replace policy, and revocation/current epochs remain enforced.
 
-**Evidence so far:** The earlier native candidate admitted Alice-to-Bob delegation and Bob invocation with exact narrow lineage, including historical verification after expiry. Its final replay loop was interrupted to move to the combined candidate.
+**Evidence so far:** The earlier native candidate admitted Alice-to-Bob delegation and Bob invocation with exact narrow lineage, including historical verification after expiry. Its final replay loop was interrupted to move to the combined candidate. Completed subsequent evidence: Rust authority recipe passed all five events, rule authoring roundtrip, narrowed delegation, escalation refusal, revocation and unchanged-boundary exact historical retry on source-matched b119f86 host. The earlier scalar legacy and mixed-resource client journeys also passed. Full New World combined acceptance remains running.
 
 [Task brief](../sprints/2026-09-19/cycle-1-integration-checkpoint.md)
 
@@ -167,6 +167,7 @@ Add an explicit authorized subject-to-subject delegation edge without weakening 
 - [S-WIND-DOWN-0918 — User-requested wind-down, exact native passes and unfinished host, September 18](../sprints/2026-09-18/wind-down.md)
 - [S-CYCLE-1-0919 — Authorized Mini construction cycle 1: initial convergence record](../sprints/2026-09-19/cycle-1.md)
 - [S-CYCLE-1-INTEGRATION-0919 — Mini cycle 1 integration checkpoint: builds, native bottlenecks and pending final journeys](../sprints/2026-09-19/cycle-1-integration-checkpoint.md)
+- [S-CLIENT-AUTHORITY-0919 — Completed Rust authority client journey on b119f86 host](../sprints/2026-09-19/cycle-1-evidence/final-client-authority/README.md)
 
 **Write scope:** minidregg/Kernel/CapabilityRevocationController.lean; minidregg/Kernel/CapabilityRevocationReceiver.lean; minidregg public native acceptance harness
 
@@ -202,15 +203,15 @@ Connect the canonical source request and accepted joint state to actual artifact
 
 **Materialize admitted charges instead of recomputing their source**
 
-Status: **backlog** · Owner: Unassigned · Updated: 2026-09-19T22:02:08.714Z
+Status: **active** · Owner: Astra: cycle_authority; Sol: cycle_build; root integration/review · Updated: 2026-09-19T22:25:51.639Z
 
 Preserve exact admitted charges and record bytes while removing repeated birth write/read-guard computation during historical serialization.
 
-**Next:** Materialize source-derived finite charges once at receiving construction, prove exact intent/record equality, inspect compiled sharing, then measure unchanged signed operations. Measure fresh admission separately before assigning the canonical-only admission proposal.
+**Next:** Complete and archive the matched eight-event replay measurement, including accepted query, exact output equality and unchanged whole logical store; assess actual performance and runtime scope without inferring a speedup from generated code.
 
 **Done when:** The actual receiving/replay path retains materialized charge data; a general proof preserves every charge lane, complete intent/record identity and canonical bytes without changed bounds or tariffs. Generated-code and matched native operation evidence show repeated serialization does not reconstruct birth writes/read guards, and semantic replay, receipts, charges and refusal behavior remain unchanged.
 
-**Evidence so far:** A live query sample found all active stacks in history replay and repeated source charge computation during encoding. Existing chargeOfTuple_tuple proves the representation equality; no receiving implementation or measured gain exists yet.
+**Evidence so far:** Implemented at 66d74dd: first-order finite charge values, general complete-charge/intent/record/byte equality, actual materialized receiver and replay code. Full umbrella and native link passed with 581/581 committed source matches and identical direct/full-gate binaries. Initial one-event query and birth measurements do not establish a speedup; an identical signed query against frozen eight-event history is being measured against the immediate parent.
 
 [Task brief](../sprints/2026-09-19/next-cycle-native-computation.md)
 
@@ -222,6 +223,7 @@ Preserve exact admitted charges and record bytes while removing repeated birth w
 **Evidence / provenance:**
 
 - [S-NATIVE-COMPUTATION-0919 — Native query profile: repeated charge computation in reconstructed history](../sprints/2026-09-19/next-cycle-native-computation.md)
+- [S-CHARGE-BUILD-0919 — Exact 66d74dd full umbrella and native charge-materialization build](../sprints/2026-09-19/cycle-1-evidence/charge-build/README.md)
 
 **Write scope:** minidregg admitted charge and intent/record construction; minidregg/Kernel/ResourceBirthReceiver.lean; minidregg lower-layer finite-charge helper and serialization equality proofs
 
@@ -687,15 +689,15 @@ The existing Lean executor now crosses exact-byte SQLite CAS with crash/retry/co
 
 **Operate real resources through a compiled programmable host**
 
-Status: **active** · Owner: Astra: root; Sol: cycle_build + cycle_client · Updated: 2026-09-19T21:07:36.798Z
+Status: **active** · Owner: Astra: root; Sol: cycle_build + cycle_client · Updated: 2026-09-19T22:25:51.639Z
 
 Compile and exercise the source-owned Mini birth, joint transaction, policy, delegation, scoped observation and explicit revocation path through the public host and Rust client, with semantic replay and exact retry receipts.
 
-**Next:** Capture complete results on immutable host 0da9f139 and its matching runner; verify final committed-source umbrella, then record performance and hosting work still required.
+**Next:** Complete the immutable New World task/content journey and archive its exact source/runtime result; retain separate binary scope for the later proved charge optimization.
 
 **Done when:** A real compiled host with operator-owned configuration accepts only source-authorized signed calls, preserves committed resources/receipts across restart and lost replies, and drives the same grant-preserving shared-resource journey through the programmable shell.
 
-**Evidence so far:** Compiled host and Rust client exist. Matched birth fell from 223.78s to 49.43s with identical receipt bytes; a formerly stalled task query now completes in 33.55s. Full combined umbrella and fresh New World, legacy and client journeys are running.
+**Evidence so far:** Compiled host and Rust client exist. Matched birth fell from 223.78s to 49.43s with identical receipt bytes; a formerly stalled task query now completes in 33.55s. Full combined umbrella and fresh New World, legacy and client journeys are running. Completed subsequent evidence: Rust authority recipe passed all five events, rule authoring roundtrip, narrowed delegation, escalation refusal, revocation and unchanged-boundary exact historical retry on source-matched b119f86 host. The earlier scalar legacy and mixed-resource client journeys also passed. Full New World combined acceptance remains running.
 
 [Task brief](../sprints/2026-09-19/cycle-1-integration-checkpoint.md)
 
@@ -714,6 +716,7 @@ Compile and exercise the source-owned Mini birth, joint transaction, policy, del
 - [S-CORE-ORIENTATION-0919 — Bread/Mini microswarm after implementation pause](../sprints/2026-09-19/core-orientation.md)
 - [S-CYCLE-1-0919 — Authorized Mini construction cycle 1: initial convergence record](../sprints/2026-09-19/cycle-1.md)
 - [S-CYCLE-1-INTEGRATION-0919 — Mini cycle 1 integration checkpoint: builds, native bottlenecks and pending final journeys](../sprints/2026-09-19/cycle-1-integration-checkpoint.md)
+- [S-CLIENT-AUTHORITY-0919 — Completed Rust authority client journey on b119f86 host](../sprints/2026-09-19/cycle-1-evidence/final-client-authority/README.md)
 
 **Write scope:** minidregg/Compiler/NativeHostCodec.lean; minidregg/Kernel/NativeHost*.lean; minidregg/Host/Main.lean and Host/Json.lean; minidregg/native/resource-client/; minidregg isolated native build and public journey harness
 
@@ -755,15 +758,15 @@ Immutable internal policy-source cells and a common field/compiler/request profi
 
 **Implement and exercise the canonical authored-program-to-resource path**
 
-Status: **active** · Owner: Astra: root; Sol: cycle_build + cycle_client · Updated: 2026-09-19T21:07:36.798Z
+Status: **active** · Owner: Astra: root; Sol: cycle_build + cycle_client · Updated: 2026-09-19T22:25:51.638Z
 
 Build and exercise the canonical Mini resource-programming path with installed laws, typed content, joint mutations and scoped observation, exposed through the source-owned host and Rust client.
 
-**Next:** Complete corrected Rust-client and native resource journeys on the same source-matched executable.
+**Next:** Complete the immutable New World task/content journey and archive its exact source/runtime result; retain separate binary scope for the later proved charge optimization.
 
 **Done when:** Author and install a rule under actual resource authority, invoke a permitted operation through the chosen shell/agent path, refuse a violating operation with correct state/outcome evidence, and recover accepted behavior/history through the chosen durable runtime. Complete all necessary core obligations, not merely a private demo.
 
-**Evidence so far:** Source-owned authoring, typed birth/content and mixed transactions are implemented. The client exercised real lost-response recovery; its neutral scalar fixture expectation was corrected. Fresh full client and kernel journeys are running.
+**Evidence so far:** Source-owned authoring, typed birth/content and mixed transactions are implemented. The client exercised real lost-response recovery; its neutral scalar fixture expectation was corrected. Fresh full client and kernel journeys are running. Completed subsequent evidence: Rust authority recipe passed all five events, rule authoring roundtrip, narrowed delegation, escalation refusal, revocation and unchanged-boundary exact historical retry on source-matched b119f86 host. The earlier scalar legacy and mixed-resource client journeys also passed. Full New World combined acceptance remains running.
 
 [Task brief](../sprints/2026-09-19/cycle-1-integration-checkpoint.md)
 
@@ -784,6 +787,7 @@ Build and exercise the canonical Mini resource-programming path with installed l
 - [S-CORE-ORIENTATION-0919 — Bread/Mini microswarm after implementation pause](../sprints/2026-09-19/core-orientation.md)
 - [S-CYCLE-1-0919 — Authorized Mini construction cycle 1: initial convergence record](../sprints/2026-09-19/cycle-1.md)
 - [S-CYCLE-1-INTEGRATION-0919 — Mini cycle 1 integration checkpoint: builds, native bottlenecks and pending final journeys](../sprints/2026-09-19/cycle-1-integration-checkpoint.md)
+- [S-CLIENT-AUTHORITY-0919 — Completed Rust authority client journey on b119f86 host](../sprints/2026-09-19/cycle-1-evidence/final-client-authority/README.md)
 
 **Write scope:** minidregg/Kernel/ResourceTransaction*.lean; minidregg/Kernel/ContentResource*.lean and canonical content materializers; minidregg/Host/Json.lean; minidregg/native/resource-client/; minidregg public native acceptance harness
 

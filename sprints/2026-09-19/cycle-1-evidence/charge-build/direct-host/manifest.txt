@@ -1,0 +1,10 @@
+build_kind=Lake-setup Host.Main transitive incremental closure
+parent_binary_sha256=5ec9755d2013d136d22626ca6823ef324c75b1b65cd8e0ac829546ac8a1ed68c
+snapshot=/tmp/minidregg-cycle-20260919/native-charge-20260919T220000Z
+affected_modules=43
+host_source_modules=153
+response_objects=3086
+usage_exit=1
+elapsed_seconds=285
+binary=/tmp/minidregg-cycle-20260919/build/native-charge-20260919T220000Z/minidregg-host
+binary_sha256=3107faf3583e4c4926feb8931edee6e0aea4f800617bc0969d9d3c845caebe4d

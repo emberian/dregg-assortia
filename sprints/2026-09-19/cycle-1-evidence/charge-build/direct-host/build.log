@@ -1,0 +1,6 @@
+start_utc=2026-09-19T22:10:18Z
+snapshot=/tmp/minidregg-cycle-20260919/native-charge-20260919T220000Z
+seat=/tmp/minidregg-cycle-20260919/lean-seat-1
+lake_host_PASS=261s
+wrapper_invocations=44
+max_concurrent_real_lean=1

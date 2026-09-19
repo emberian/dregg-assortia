@@ -1,0 +1,13 @@
+PASS sh -n authority-acceptance.sh
+PASS shellcheck authority-acceptance.sh
+PASS committed script bytes match immutable executed copy
+ff060ce20410c7c31539a855e0c17f1f9beb5b7e937c2089fe3129f809abff50  native/resource-client/authority-acceptance.sh
+a28fb3281c2c04409c14520757978abcabb38defb5ccd86776919befc35e03af  Host/Json.lean
+5ec9755d2013d136d22626ca6823ef324c75b1b65cd8e0ac829546ac8a1ed68c  /tmp/minidregg-cycle-20260919/build/final-client-api-host-20260919T212000Z/minidregg-host
+PASS final summary status and five-event height
+PASS five receipt shapes and accepted counts 1..5
+PASS two retained fully signed admission refusals
+PASS revoked-grant query/prepare refusal evidence
+PASS historical receipt exact and current public boundary/state unchanged
+PASS initial and installed policy canonical byte roundtrips
+PASS signed revoked mutation reaches observation and is denied before plan

@@ -1,0 +1,11 @@
+# Cycle 1 charge materialization build
+
+The frozen semantic change at commit `66d74dd0f1b27fadf26219af6d0db27588442e48` changes exactly `Theory/ResourceCost.lean` and `Kernel/ResourceBirthReceiver.lean` relative to the b119f86 host source. `provenance/parent-to-charge-source.diff` records both before/after hashes. An exact Git-blob comparison passed for all 581 Lean source files in both isolated build snapshots (`provenance/committed-source-match.txt`). The source manifest SHA256 is `62d656dae8038b7ed30dc6482d8c8fc980f463b1ff88b2f8931473a44b3361aa`.
+
+The direct Lake-setup incremental build rebuilt 43 reverse-dependent host modules, including `Kernel.NativeHostReplay`, `Kernel.NativeHost`, `Host.Json`, and `Host.Main`, then linked 153 local and 2,933 package modules as 3,086 objects. Its native arm64 host SHA256 is `3107faf3583e4c4926feb8931edee6e0aea4f800617bc0969d9d3c845caebe4d`. `direct-host/compiled-charge-callsite.txt` captures the generated C call from the receiver to `materializedIntent` and `Charge.materialize`.
+
+Separately, the literal serialized `lake build Minidregg` gate passed in 585 seconds, followed by `Host.Main:leanArts` in 11 seconds and a full native link; total build time was 661 seconds. At most one real Lean compiler ran in that full-gate build. Its host SHA256 is the same `3107faf3...caebe4d`, byte-identical to the direct candidate, and its response file SHA256 is the same `fe2e27a76b76cd5c4be7cd025aab7997b6075862ab421db33819a63bfb17da87`.
+
+The matching compiled native acceptance runner uses the exact committed probe source SHA256 `cbe8f996d6ab6462d35bef27a659ee62eec32c7c74d1c02caaf8ea7589deaf6d`, the host's Lake package ABI, and the same 3,086-object response with the main entry replaced. Runner SHA256 is `f08311b9643d683f7450883083e516b342413851407f72bacadb0d31510e6d31`. The runner was compiled and usage-smoke-tested here; runtime journey outcomes are recorded separately.
+
+Build outputs remain under `/tmp/minidregg-cycle-20260919/build/{native-charge-20260919T220000Z,final-charge-host-20260919T220000Z,native-charge-runner-20260919T221500Z}`. This archive contains manifests and bounded logs, not the executable bytes. The snapshot's inherited `.git` metadata names an older checkout commit in the build manifest; the exact source identity is established by the independent Git-blob audit above.

@@ -1,0 +1,8 @@
+{"subject":"8","nonce":"30023","purpose":{"type":"prepare","draft":{
+ "type":"invoke","command":{"subject":"8","expectedAuthorityRoot":"68430244279176189520138428804996807418652622239790383126737308181408720049770",
+ "nonce":"30024","targets":[{"kind":"object","target":"600",
+ "capability":"63","observeCapability":null,"schemaVersion":"1",
+ "expectedTargetRoot":"46113929046351538731049043389556114102471986416545290491095538838555482881875","payload":{"type":"scalar","actions":[
+   {"type":"create","key":{"type":"object","resource":"600","field":"2"},
+    "value":"2"}]}}]}}},
+ "grants":[{"kind":"object","target":"600","capability":"63"}]}

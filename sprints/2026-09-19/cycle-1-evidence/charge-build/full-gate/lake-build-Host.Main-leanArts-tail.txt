@@ -1,0 +1,12 @@
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Compiler/DeclaredHyperedgeArtifact.lean:125:8: automatically included section variable(s) unused in theorem `Minidregg.Compiler.DeclaredHyperedgeArtifact.ofDeclaration_leg_at`:
+  [Fintype Incidence]
+  [DecidableEq Incidence]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Incidence] [DecidableEq Incidence] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [3100/3101] Built Host.Json (4.7s)
+✔ [3101/3101] Built Host.Main (3.2s)
+Build completed successfully (3101 jobs).

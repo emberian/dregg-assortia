@@ -1,0 +1,25 @@
+Final successful bounded checks, observed by the authority lane:
+Theory.ResourceCost: exit 0, original log empty.
+Kernel.ResourceBirthReceiver: exit 0, original log empty.
+
+Working directory (immutable dependency snapshot):
+/tmp/minidregg-cycle-20260919/final-client-api-20260919T212000Z
+
+Private outputs and dependency overlay:
+/tmp/minidregg-cycle-20260919/charge-materialization-overlay
+
+Exact Lean command arguments:
+LEAN_NUM_THREADS=2 lake env bash -c 'export LEAN_PATH="/tmp/minidregg-cycle-20260919/charge-materialization-overlay:$LEAN_PATH"; lean -R /Users/ember/dev/minidregg /Users/ember/dev/minidregg/Theory/ResourceCost.lean -o /tmp/minidregg-cycle-20260919/charge-materialization-overlay/Theory/ResourceCost.olean -c /tmp/minidregg-cycle-20260919/charge-materialization-overlay/Theory/ResourceCost.c' > /tmp/minidregg-cycle-20260919/charge-materialization-helper.log 2>&1
+LEAN_NUM_THREADS=2 lake env bash -c 'export LEAN_PATH="/tmp/minidregg-cycle-20260919/charge-materialization-overlay:$LEAN_PATH"; lean -R /Users/ember/dev/minidregg /Users/ember/dev/minidregg/Kernel/ResourceBirthReceiver.lean -o /tmp/minidregg-cycle-20260919/charge-materialization-overlay/Kernel/ResourceBirthReceiver.olean -c /tmp/minidregg-cycle-20260919/charge-materialization-overlay/Kernel/ResourceBirthReceiver.c' > /tmp/minidregg-cycle-20260919/charge-materialization-receiver.log 2>&1
+
+An atomic mkdir claimed /tmp/minidregg-cycle-20260919/lean-seat-2 before each
+check sequence; an absolute EXIT trap released it. The final receiver-only
+check followed a proof-binder name cleanup and also exited 0. No seat remained.
+
+The overlay's unchanged Theory/Kernel olean files link to the immutable
+snapshot. The two changed outputs are regular private files, not writes
+through links. No snapshot source or shared build output was overwritten.
+
+Generated-C observations refer to full artifacts identified by
+generated-c.sha256. The source excerpts refer to source.sha256. No native
+runtime benchmark was executed by these commands.

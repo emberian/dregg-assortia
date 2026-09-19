@@ -1,0 +1,3 @@
+{"subject":"8","nonce":"30021",
+ "purpose":{"type":"query","kind":"object","target":"600","view":"resource"},
+ "grants":[{"kind":"object","target":"600","capability":"63"}]}

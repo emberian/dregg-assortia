@@ -1,0 +1,20 @@
+⚠ [9038/9047] Replayed Assurance.SpartanR1CS
+warning: Assurance/SpartanR1CS.lean:658:8: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+✔ [9039/9048] Built Kernel.NativeHostContext (5.6s)
+✔ [9040/9049] Built Assurance.ZkmlMatmulFramedWal (2.7s)
+✔ [9042/9049] Built Kernel.NativeHostReplay (3.4s)
+✔ [9043/9051] Built Kernel.NativeObservationController (12s)
+✔ [9046/9052] Built Assurance.ReleaseGateRouting (6.2s)
+✔ [9047/9054] Built Assurance.NativeObservationAudit (2.8s)
+✔ [9049/9055] Built Kernel.NativeHost (9.0s)
+✔ [9052/9058] Built Kernel (2.7s)
+✔ [9054/9058] Built Assurance.CredentialSourceAdmissionAudit (2.7s)
+✔ [9056/9058] Built Assurance (25s)
+✔ [9057/9058] Built Minidregg (5.2s)
+Build completed successfully (9058 jobs).

@@ -1,0 +1,27 @@
+{"version": "1",
+ "type": "policy",
+ "semantics":
+ "6456933337608925423598368074884932038023287379680363841814784262278780659180",
+ "previous":
+ "44763520299233693012709245543783158249751233471266374183046654262332123787560",
+ "predicate":
+ {"type": "any",
+  "predicates":
+  [{"type": "all",
+    "predicates":
+    [{"value": "1", "type": "eq", "slot": "request/verb"},
+     {"values": ["7", "8"], "type": "memberOf", "slot": "request/subject"}]},
+   {"type": "all",
+    "predicates":
+    [{"value": "2", "type": "eq", "slot": "request/verb"},
+     {"value": "8", "type": "eq", "slot": "request/subject"}]},
+   {"type": "all",
+    "predicates":
+    [{"values": ["3", "4", "5"], "type": "memberOf", "slot": "request/verb"},
+     {"value": "7", "type": "eq", "slot": "request/subject"}]}]},
+ "policyId": "600",
+ "domain": "8501",
+ "canonical":
+ "4c4f4f4d2f415554482f504f4c4943595245434f5244025a02ff01ff5621ff693cb03cb600996cd4671925d801d44dae1a7811dfa6909ffdc3c5387ccc1d10ff013cc34cd914003cf58c6c1bcdbf09aaebdea537bb9ad6d7b6b35a28d325baba6fff17ff000cff72ff65ff71ff75ff65ff73ff74ff2fff76ff65ff72ff62ff0001ff020fff72ff65ff71ff75ff65ff73ff74ff2fff73ff75ff62ff6aff65ff63ff74ff02ff0007ff0008ff090a0a07000cff72ff65ff71ff75ff65ff73ff74ff2fff76ff65ff72ff62ff0002ff000fff72ff65ff71ff75ff65ff73ff74ff2fff73ff75ff62ff6aff65ff63ff74ff0008ff090a0a07020cff72ff65ff71ff75ff65ff73ff74ff2fff76ff65ff72ff62ff03ff0003ff0004ff0005ff000fff72ff65ff71ff75ff65ff73ff74ff2fff73ff75ff62ff6aff65ff63ff74ff0007ff090a0a07090a0a0a08",
+ "address":
+ "860157034722928631774024668941487358158179188427214754222268922864773887038"}

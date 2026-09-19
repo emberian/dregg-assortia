@@ -1,0 +1,20 @@
+--- /tmp/minidregg-cycle-20260919/build/final-client-api-host-20260919T212000Z/source-sha256.txt	2026-09-19 17:34:31
++++ /tmp/minidregg-cycle-20260919/build/final-charge-host-20260919T220000Z/source-sha256-prebuild.txt	2026-09-19 18:11:12
+@@ -19,7 +19,7 @@
+ bdb308366a71fd90bd7c39d7f473ecf8d87487adc5f117f906084616d7dbce58  Theory/AcceptedCellEffect.lean
+ 107b494f0a928e2f28c36ae8dc2be4651137bc34164e46cb4dc603fa1ec3ea75  Theory/AcceptedCellEffectWitness.lean
+ 90137ae37b09245dcb0ca2de0559b1fd97c43de869a78698c3ae2050259b6b4d  Theory/CanonicalTransitionWitness.lean
+-9463d64ae56055a422a41eb8be88e0fc96558201ac449549f96c77c95f1b1852  Theory/ResourceCost.lean
++92102c05812416385f0dfc22941158dee7c3f0fdc205f1d461d296e8831075f7  Theory/ResourceCost.lean
+ bafabe5335bf1ac227f665afbd30cde52700e685baf2b8530193421d0ed9a810  Theory/CanonicalResourceKernel.lean
+ b74fa235dd1f96a1195fd022098a587396ffba7e29285aa9e2229b06e4f39767  Theory/CausalVersionDag.lean
+ 92110d1550c1298cce3ad7eceeb899b7352240791893d43688af97b84d1d7574  Theory/CredentialAuthorityFamily.lean
+@@ -209,7 +209,7 @@
+ aa967d1de89d9b6c80706e8c601e99a4833663be9222f87b075a9bc0a056663d  Kernel/PolicyInstallController.lean
+ bad9205811909d96444c47935b48233ebb6183d76ae4cd7eb801de8267bd3c45  Kernel/PolicyInstallReceiver.lean
+ b5d5e1592e51739bbce4d5a7b0c13f582f62f5d9dd8358969e1fdca93c3335d6  Kernel/ResourceBirthPolicyController.lean
+-ecda43944f736cde8f25ffd3143bd9413847a74e93a5063d19ae96562ad0d862  Kernel/ResourceBirthReceiver.lean
++675bc737295d6a0d7db121a93f035c994cb452528e9d0622ada812ab903d0917  Kernel/ResourceBirthReceiver.lean
+ 11aab022dde581005674a69c4f4983be56ee6c7e65e4a20fbb823e0d4e617a6e  Kernel/CapabilityDelegationController.lean
+ dba2c574c1428efaaae1d8a2c57a61eeadec9d03c528ce080b7686c154b9f158  Kernel/CapabilityDelegationReceiver.lean
+ 8fedaecca2316109aab7fe796dcb870c15f8b4e2323a583242c732888e99ac52  Kernel/CapabilityRevocationController.lean

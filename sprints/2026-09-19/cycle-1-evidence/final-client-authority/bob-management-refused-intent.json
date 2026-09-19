@@ -1,0 +1,8 @@
+{"subject":"8","nonce":"30016","purpose":{"type":"prepare","draft":{
+ "type":"install-source","subject":"8","control":"63","declaration":{
+   "expectedPreRoot":"63472027847284300847103338070912714155621989531665925799188840960741501262384",
+   "expected":{"version":"1","address":"860157034722928631774024668941487358158179188427214754222268922864773887038"},
+   "nonce":"30017","source":{"policyId":"600","version":"2",
+     "domain":"8501","semantics":"6456933337608925423598368074884932038023287379680363841814784262278780659180","previous":"860157034722928631774024668941487358158179188427214754222268922864773887038",
+     "predicate":{"type":"all","predicates":[]}}}}},
+ "grants":[{"kind":"object","target":"600","capability":"63"}]}

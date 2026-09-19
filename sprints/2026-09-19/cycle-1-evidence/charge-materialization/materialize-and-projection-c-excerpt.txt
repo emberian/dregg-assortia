@@ -1,0 +1,127 @@
+LEAN_EXPORT lean_object* l_Minidregg_Theory_ResourceCost_Charge_materialize(lean_object* v_charge_455_){
+_start:
+{
+uint8_t v___x_456_; lean_object* v___x_457_; lean_object* v___x_458_; uint8_t v___x_459_; lean_object* v___x_460_; lean_object* v___x_461_; uint8_t v___x_462_; lean_object* v___x_463_; lean_object* v___x_464_; uint8_t v___x_465_; lean_object* v___x_466_; lean_object* v___x_467_; uint8_t v___x_468_; lean_object* v___x_469_; lean_object* v___x_470_; uint8_t v___x_471_; lean_object* v___x_472_; lean_object* v___x_473_; uint8_t v___x_474_; lean_object* v___x_475_; lean_object* v___x_476_; uint8_t v___x_477_; lean_object* v___x_478_; lean_object* v___x_479_; uint8_t v___x_480_; lean_object* v___x_481_; lean_object* v___x_482_; uint8_t v___x_483_; lean_object* v___x_484_; lean_object* v___x_485_; lean_object* v___x_486_; 
+v___x_456_ = 0;
+v___x_457_ = lean_box(v___x_456_);
+lean_inc_ref_n(v_charge_455_, 9);
+v___x_458_ = lean_apply_1(v_charge_455_, v___x_457_);
+v___x_459_ = 1;
+v___x_460_ = lean_box(v___x_459_);
+v___x_461_ = lean_apply_1(v_charge_455_, v___x_460_);
+v___x_462_ = 2;
+v___x_463_ = lean_box(v___x_462_);
+v___x_464_ = lean_apply_1(v_charge_455_, v___x_463_);
+v___x_465_ = 3;
+v___x_466_ = lean_box(v___x_465_);
+v___x_467_ = lean_apply_1(v_charge_455_, v___x_466_);
+v___x_468_ = 4;
+v___x_469_ = lean_box(v___x_468_);
+v___x_470_ = lean_apply_1(v_charge_455_, v___x_469_);
+v___x_471_ = 5;
+v___x_472_ = lean_box(v___x_471_);
+v___x_473_ = lean_apply_1(v_charge_455_, v___x_472_);
+v___x_474_ = 6;
+v___x_475_ = lean_box(v___x_474_);
+v___x_476_ = lean_apply_1(v_charge_455_, v___x_475_);
+v___x_477_ = 7;
+v___x_478_ = lean_box(v___x_477_);
+v___x_479_ = lean_apply_1(v_charge_455_, v___x_478_);
+v___x_480_ = 8;
+v___x_481_ = lean_box(v___x_480_);
+v___x_482_ = lean_apply_1(v_charge_455_, v___x_481_);
+v___x_483_ = 9;
+v___x_484_ = lean_box(v___x_483_);
+v___x_485_ = lean_apply_1(v_charge_455_, v___x_484_);
+v___x_486_ = lean_alloc_ctor(0, 10, 0);
+lean_ctor_set(v___x_486_, 0, v___x_458_);
+lean_ctor_set(v___x_486_, 1, v___x_461_);
+lean_ctor_set(v___x_486_, 2, v___x_464_);
+lean_ctor_set(v___x_486_, 3, v___x_467_);
+lean_ctor_set(v___x_486_, 4, v___x_470_);
+lean_ctor_set(v___x_486_, 5, v___x_473_);
+lean_ctor_set(v___x_486_, 6, v___x_476_);
+lean_ctor_set(v___x_486_, 7, v___x_479_);
+lean_ctor_set(v___x_486_, 8, v___x_482_);
+lean_ctor_set(v___x_486_, 9, v___x_485_);
+return v___x_486_;
+}
+}
+LEAN_EXPORT lean_object* l_Minidregg_Theory_ResourceCost_Charge_Values_toCharge(lean_object* v_values_487_, uint8_t v_x_488_){
+_start:
+{
+switch(v_x_488_)
+{
+case 0:
+{
+lean_object* v_incidences_489_; 
+v_incidences_489_ = lean_ctor_get(v_values_487_, 0);
+lean_inc(v_incidences_489_);
+return v_incidences_489_;
+}
+case 1:
+{
+lean_object* v_turnBytes_490_; 
+v_turnBytes_490_ = lean_ctor_get(v_values_487_, 1);
+lean_inc(v_turnBytes_490_);
+return v_turnBytes_490_;
+}
+case 2:
+{
+lean_object* v_memoryTouches_491_; 
+v_memoryTouches_491_ = lean_ctor_get(v_values_487_, 2);
+lean_inc(v_memoryTouches_491_);
+return v_memoryTouches_491_;
+}
+case 3:
+{
+lean_object* v_witnessBytes_492_; 
+v_witnessBytes_492_ = lean_ctor_get(v_values_487_, 3);
+lean_inc(v_witnessBytes_492_);
+return v_witnessBytes_492_;
+}
+case 4:
+{
+lean_object* v_proofWork_493_; 
+v_proofWork_493_ = lean_ctor_get(v_values_487_, 4);
+lean_inc(v_proofWork_493_);
+return v_proofWork_493_;
+}
+case 5:
+{
+lean_object* v_storageBytes_494_; 
+v_storageBytes_494_ = lean_ctor_get(v_values_487_, 5);
+lean_inc(v_storageBytes_494_);
+return v_storageBytes_494_;
+}
+case 6:
+{
+lean_object* v_networkBytes_495_; 
+v_networkBytes_495_ = lean_ctor_get(v_values_487_, 6);
+lean_inc(v_networkBytes_495_);
+return v_networkBytes_495_;
+}
+case 7:
+{
+lean_object* v_sideEffectCount_496_; 
+v_sideEffectCount_496_ = lean_ctor_get(v_values_487_, 7);
+lean_inc(v_sideEffectCount_496_);
+return v_sideEffectCount_496_;
+}
+case 8:
+{
+lean_object* v_feeDebit_497_; 
+v_feeDebit_497_ = lean_ctor_get(v_values_487_, 8);
+lean_inc(v_feeDebit_497_);
+return v_feeDebit_497_;
+}
+default: 
+{
+lean_object* v_leaseByteBlocks_498_; 
+v_leaseByteBlocks_498_ = lean_ctor_get(v_values_487_, 9);
+lean_inc(v_leaseByteBlocks_498_);
+return v_leaseByteBlocks_498_;
+}
+}
+}
+}
