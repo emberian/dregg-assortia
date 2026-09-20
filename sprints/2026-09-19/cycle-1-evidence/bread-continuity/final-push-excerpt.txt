@@ -1,0 +1,11 @@
+1: 8:02PM INF 1 commits scanned.
+2: 8:02PM INF scanned ~1968 bytes (1.97 KB) in 22.3ms
+3: 8:02PM INF no leaks found
+93: check-doc-refs: SUBJECT = working tree at /Users/ember/dev/breadstuffs
+94: check-doc-refs: scanned 16768 resolvable refs — 12006 across 728 markdown files, 4762 in 3570 lean files
+95: check-doc-refs: 262 dead reference site(s): 89 GATING (73 markdown + 16 new lean), 173 KNOWN (baselined lean) — re-run with --show-known to list them
+96: check-doc-refs: 38 WARN (line past EOF)
+97: check-doc-refs: FAIL — 15 NEW dead reference(s) in lean comments:
+99: pre-push: ALLOWED — dead doc references, permitted by DREGG_ALLOW_DEAD_DOC_REFS=1
+101: To github.com:emberian/dregg.git
+102:    9a9fa1236..bca445bad  main -> main

@@ -1,4 +1,4 @@
-9064ce93e23501ff126ea4c97b930192658ea55b526c294fcae88ad747c64a6d  ./INDEX.md
+b686aa29c1d2f4d524a479869a414191c99ee7a3f1b5a48ba6b1647c0bd9a503  ./INDEX.md
 933ff44c72aeebddde8e84d5ca18b9d5d32de0cf8557b6adaeaa47b002085eef  ./birth-and-order-sharing/README.md
 bc906a70dfbf390b272945bfb849e26c465f7e9a09949ba2d5242d0a2d17edbd  ./birth-and-order-sharing/birth-controller-source-excerpt.txt
 26d92d8fc82d4c1c9df6b0bfbb8f7171b7a056f1892bbb7c57f6b59105eb0a7e  ./birth-and-order-sharing/commands.txt
@@ -33,6 +33,8 @@ a9a98d6056a6cd49e44e1a992505db7a6444bb2494a782cb855de2b4fbd618cf  ./birth-benchm
 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./birth-benchmark-20260919T202801Z/stdout.log
 3cd8403454f980c767fadddd9ecc303328022bfa6059cc64b53901ec5f1f5b73  ./birth-benchmark-20260919T202801Z/time.log
 16a2b63b36e2099eeae2f42bd4202d82d5f3ddaef1af7b72f6b46543349a3d3e  ./bread-continuity/README.md
+c51b0f51ee38e75acf04308d9a48258b0a2add35d1407d7408eb86a546d34775  ./bread-continuity/final-push-excerpt.txt
+c7c2858166f29a8167e52d6486e8e3d78eff0caf44dd0f5c374804a61274911f  ./bread-continuity/final-push.md
 6e27f561fb2c7e90840edc5b4564bde975f82f6777dfc21089a2bb2fa68a25f0  ./bread-continuity/original-log.sha256
 5c226ed3814595527b46ba432351cd7af5e64a41436febec9cf78a1b00e7973f  ./bread-continuity/push-summary.txt
 8e02271131c99acc1026a9e1bf46d3b72ce0aceaf851a2ac42fd7f940e050dbd  ./cast-injectivity/PredCompile.source-excerpt.txt
