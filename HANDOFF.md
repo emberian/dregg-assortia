@@ -103,3 +103,7 @@ The recorded build was macOS arm64. The current shell builders contain macOS-spe
 - `ssh persvati` and `ssh hbox` are available to authorized local work; check capacity and leases, use `/tank` on hbox, and follow repository build instructions. Machine access and secrets are not prerequisites for reading this public record.
 
 When handing on again, follow [WORKFLOW.md](WORKFLOW.md): update graph-owned work, add dated evidence without rewriting old source hashes, regenerate views, and update this entry point if the stopping point changes. Preserve unresolved questions as questions. Link to the evidence rather than copying another divergent status ledger.
+
+## Handoff refresh checks
+
+This documentation refresh validated all 30 hub work records and current generated views, resolved 59 local Markdown links across the new/updated entry pages, rechecked all 305 archived cycle checksums, and rehashed the installed host against the identity above. It did not rerun native acceptance or start another implementation cycle. The Bread push again encountered 89 existing gating documentation references, with none reported in the two changed files (`AGENTS.md`, `HORIZONLOG.md`); its documented dead-reference exception was used while retaining the other push checks.
