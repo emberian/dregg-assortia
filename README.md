@@ -2,7 +2,7 @@
 
 The living knowledge index and project hub for DREGG: what we are building, how the pieces connect, who owns current work, and what evidence supports each claim.
 
-**[Current work](CURRENT.md) · [Project map](MAP.md) · [Contributor entry](contributing/README.md)**
+**[Start here / handoff](HANDOFF.md) · [Current work](CURRENT.md) · [Project map](MAP.md) · [Contributor entry](contributing/README.md)**
 
 The intended offering is a complete hosted Nous Hermes experience within the September 26 programmable nexus: friends and agents author, govern, share and run DREGG-native resources. Hosted OpenRouter-key custody is acceptable initially; external unforked Hermes access is also desirable. **Build the New World in Mini:** ember settled the construction direction after the [Bread/Mini microswarm](sprints/2026-09-19/core-orientation.md) and has now authorized a substantial [Mini implementation cycle](sprints/2026-09-19/cycle-1.md). The [first core cycle passed](sprints/2026-09-19/cycle-1-result.md): joint resources, typed content, scoped authority, current-law grants, revocation, exact recovery, the native host and Rust client. Native latency and the real hosted Hermes lifecycle are the next implementation work. Bread is reference material, and reuse is optional rather than a prerequisite. Read the [decision](sprints/2026-09-19/rebuild-in-mini.md) and [ember's intentions](intent.md). The rejected earlier Python [implementation wave](sprints/2026-09-19/implementation.md) is not resumed.
 

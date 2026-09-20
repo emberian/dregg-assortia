@@ -117,7 +117,7 @@ Persist exact signing keys/epochs; accept actual configured native verification 
 
 **Evidence so far:** Complete native receiving exercised actual detached signatures, exact observation roles, wrong-kind/internal/excess/missing/reordered read refusals, current-law direct-submit checks, per-capability revocation and stale-worker generation fencing. Refusals preserve the entire durable image. The separate Rust authority recipe also passed ordinary authored delegation/escalation/revocation/retry.
 
-[Task brief](../sprints/2026-09-19/cycle-1-integration-checkpoint.md)
+[Task brief](../sprints/2026-09-19/cycle-1-result.md)
 
 **Enables:**
 
@@ -153,7 +153,7 @@ Add an explicit authorized subject-to-subject delegation edge without weakening 
 
 **Evidence so far:** Native and ordinary Rust-client journeys passed Alice-to-Bob narrower delegation, permitted use, prohibited policy escalation, explicit revocation and exact historical recovery. The complete joint task/content scenario also preserves the worker grants through a rule revision and fences a freshly signed old worker under the current generation rule.
 
-[Task brief](../sprints/2026-09-19/cycle-1-integration-checkpoint.md)
+[Task brief](../sprints/2026-09-19/cycle-1-result.md)
 
 **Enables:**
 
@@ -614,7 +614,7 @@ Implement the general Mini transaction receiver over scalar and typed-content re
 
 **Evidence so far:** General mixed scalar/content receiving and joint final-post policy enforcement are implemented and compiled. The complete native journey exercised an accepted atomic reservation/content change, accepted settlement/result publication, and an invalid second task leg that left the entire durable image unchanged. Current read authority was rechecked on direct submission.
 
-[Task brief](../sprints/2026-09-19/cycle-1-integration-checkpoint.md)
+[Task brief](../sprints/2026-09-19/cycle-1-result.md)
 
 **Enables:**
 
@@ -711,7 +711,7 @@ Compile and exercise the source-owned Mini birth, joint transaction, policy, del
 
 **Evidence so far:** The source-owned compiled host and Rust client passed complete native New World and legacy journeys plus mixed-resource and authority-client recipes. Exact retries recover original receipts across fresh processes and a real lost reply, preserving durable state and charges. Latest66d74dd has full581-source build closure plus focused exact-byte birth, eight-event replay/query/refusal and eleven-event accepted-policy-query/owner-lockout evidence. Whole-history latency and actual hosted agent process lifecycle remain separate implementation work.
 
-[Task brief](../sprints/2026-09-19/cycle-1-integration-checkpoint.md)
+[Task brief](../sprints/2026-09-19/cycle-1-result.md)
 
 **Enables:**
 
@@ -750,7 +750,7 @@ Immutable internal policy-source cells and a common field/compiler/request profi
 
 **Evidence so far:** Shared source/runtime semantics for birth, joint invocation, typed content, source policy replacement, observation and per-capability revocation passed full source closure and native integration. The actual receiving path checks source kind/domain/address and current rules. Complete native acceptance confirms grant-preserving revision, current-law observation denial and deliberate management lockout.
 
-[Task brief](../sprints/2026-09-19/cycle-1-integration-checkpoint.md)
+[Task brief](../sprints/2026-09-19/cycle-1-result.md)
 
 **Enables:**
 
@@ -786,7 +786,7 @@ Build and exercise the canonical Mini resource-programming path with installed l
 
 **Evidence so far:** Source-owned JSON authoring, installed rules, scalar/typed-content resources, mixed transactions, scoped queries and retained signed calls are exercised through the real native host and Rust mini. The authority recipe roundtrips initial/installed policy JSON to exact canonical bytes, performs a permitted Bob operation, refuses violations, and recovers the historical receipt after revocation.
 
-[Task brief](../sprints/2026-09-19/cycle-1-integration-checkpoint.md)
+[Task brief](../sprints/2026-09-19/cycle-1-result.md)
 
 **Enables:**
 

@@ -71,7 +71,10 @@
       "branch": "main",
       "lastCommit": "2026-09-06 assurance: the release gate that leaks by routing, the gate that binds, and the Stage-0 receipt as bound evidence",
       "workingTreeEntries": 13,
-      "role": "Implementation home for the New World: build required resource, kernel, node and hosting capabilities here. Canonical typed semantics and native receiver foundations exist; public linked-host acceptance and substantive core expansion remain work."
+      "role": "Implementation home for the New World. Cycle 1 completed native signed task/content resources, joint transactions, current-law authority and exact recovery through the Lean host and Rust client. Persistent interactive hosting and real Hermes/tool supervision remain work; see the completed cycle result for executed source scope.",
+      "sources": [
+        "urn:dregg:assortia:S-CYCLE-1-RESULT-0919"
+      ]
     },
     {
       "@id": "urn:dregg:assortia:R-degg-research",
@@ -1912,7 +1915,7 @@
       "priority": 1,
       "blockedBy": [],
       "progress": "Source-owned JSON authoring, installed rules, scalar/typed-content resources, mixed transactions, scoped queries and retained signed calls are exercised through the real native host and Rust mini. The authority recipe roundtrips initial/installed policy JSON to exact canonical bytes, performs a permitted Bob operation, refuses violations, and recovers the historical receipt after revocation.",
-      "brief": "sprints/2026-09-19/cycle-1-integration-checkpoint.md",
+      "brief": "sprints/2026-09-19/cycle-1-result.md",
       "writeScope": [
         "minidregg/Kernel/ResourceTransaction*.lean",
         "minidregg/Kernel/ContentResource*.lean and canonical content materializers",
@@ -2075,7 +2078,7 @@
         "minidregg/Kernel/ResourceTransaction*.lean",
         "minidregg/Kernel/DeclaredResourceController.lean and shared scalar projection"
       ],
-      "brief": "sprints/2026-09-19/cycle-1-integration-checkpoint.md",
+      "brief": "sprints/2026-09-19/cycle-1-result.md",
       "completionEvidence": [
         "urn:dregg:assortia:S-NEW-WORLD-0919",
         "urn:dregg:assortia:S-CLIENT-AUTHORITY-0919",
@@ -2219,7 +2222,7 @@
       "priority": 1,
       "blockedBy": [],
       "progress": "Complete native receiving exercised actual detached signatures, exact observation roles, wrong-kind/internal/excess/missing/reordered read refusals, current-law direct-submit checks, per-capability revocation and stale-worker generation fencing. Refusals preserve the entire durable image. The separate Rust authority recipe also passed ordinary authored delegation/escalation/revocation/retry.",
-      "brief": "sprints/2026-09-19/cycle-1-integration-checkpoint.md",
+      "brief": "sprints/2026-09-19/cycle-1-result.md",
       "writeScope": [
         "minidregg/Kernel/CapabilityRevocation*.lean",
         "minidregg/Kernel/NativeObservationController.lean",
@@ -2270,7 +2273,7 @@
         "minidregg/Compiler/NativeHostCodec.lean",
         "minidregg shared umbrella imports"
       ],
-      "brief": "sprints/2026-09-19/cycle-1-integration-checkpoint.md",
+      "brief": "sprints/2026-09-19/cycle-1-result.md",
       "motivatedBy": [
         "urn:dregg:assortia:I-MINI-CYCLE-1"
       ],
@@ -2342,7 +2345,7 @@
         "minidregg/Kernel/CapabilityRevocationReceiver.lean",
         "minidregg public native acceptance harness"
       ],
-      "brief": "sprints/2026-09-19/cycle-1-integration-checkpoint.md",
+      "brief": "sprints/2026-09-19/cycle-1-result.md",
       "motivatedBy": [
         "urn:dregg:assortia:I-MINI-CYCLE-1"
       ],
@@ -2772,7 +2775,7 @@
       "nextAction": "Retain the source-matched native and Rust-client evidence as regression boundaries while building the persistent host and real agent lifecycle. This closure does not claim a deployed hosted platform.",
       "closure": "A real compiled host with operator-owned configuration accepts only source-authorized signed calls, preserves committed resources/receipts across restart and lost replies, and drives the same grant-preserving shared-resource journey through the programmable shell.",
       "progress": "The source-owned compiled host and Rust client passed complete native New World and legacy journeys plus mixed-resource and authority-client recipes. Exact retries recover original receipts across fresh processes and a real lost reply, preserving durable state and charges. Latest66d74dd has full581-source build closure plus focused exact-byte birth, eight-event replay/query/refusal and eleven-event accepted-policy-query/owner-lockout evidence. Whole-history latency and actual hosted agent process lifecycle remain separate implementation work.",
-      "brief": "sprints/2026-09-19/cycle-1-integration-checkpoint.md",
+      "brief": "sprints/2026-09-19/cycle-1-result.md",
       "writeScope": [
         "minidregg/Compiler/NativeHostCodec.lean",
         "minidregg/Kernel/NativeHost*.lean",

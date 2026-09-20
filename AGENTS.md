@@ -1,6 +1,6 @@
 # Working in dregg-assortia
 
-Read README.md, CURRENT.md, intent.md, the latest checkpoint, and the relevant dated orientation before making project-wide recommendations.
+Read HANDOFF.md, README.md, CURRENT.md, intent.md, the latest completed result, and the relevant dated orientation before making project-wide recommendations. HANDOFF.md is the entry point for a successor; graph.jsonld remains the owner of work status.
 
 - Git is the primary VCS. Fossil is an undecided issues/discussion candidate.
 - Ember permits unsigned commits when unavailable for the configured 1Password signer (September 19). Use a per-commit signing override when needed; do not block authorized checkpoints or change global signing settings.

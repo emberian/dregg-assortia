@@ -1,5 +1,7 @@
 # Contributing to DREGG
 
+New to the project or taking over a session? Start with the [current handoff](../HANDOFF.md): settled decisions, executed results, remaining work and concrete run instructions. A feature assignment still needs an agreed owner and interface boundary.
+
 Contributors should be able to own a substantial part of the product, with a clear interface to the rest of the system. Assortia supplies the architecture, contracts, decisions, ownership and acceptance evidence needed to do that.
 
 DREGG is a programmable resource world. People and agents create and operate resources under explicit authority; accepted changes and their history should survive restart and be usable by other authorized participants. The September 26 sprint is connecting the kernel, policies, durable runtime and user/agent surfaces. [The project map](../MAP.md) identifies the repositories; [the board](../CURRENT.md) identifies current owners.
