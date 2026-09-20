@@ -1,4 +1,4 @@
-62c0a383c13ebdf4f3e56c4b641078186c73d2b79b998238e12562bc6deacdf0  ./INDEX.md
+9064ce93e23501ff126ea4c97b930192658ea55b526c294fcae88ad747c64a6d  ./INDEX.md
 933ff44c72aeebddde8e84d5ca18b9d5d32de0cf8557b6adaeaa47b002085eef  ./birth-and-order-sharing/README.md
 bc906a70dfbf390b272945bfb849e26c465f7e9a09949ba2d5242d0a2d17edbd  ./birth-and-order-sharing/birth-controller-source-excerpt.txt
 26d92d8fc82d4c1c9df6b0bfbb8f7171b7a056f1892bbb7c57f6b59105eb0a7e  ./birth-and-order-sharing/commands.txt
@@ -68,6 +68,13 @@ f8ed9059f4e56480774fe3938a3c667825e33452c5ebf6e828cb84d16360fcb1  ./charge-build
 768bae5c56c3a8c2cf596615db10d95c97984653076984641c4d870d041319c4  ./charge-build/runner/driver-abi.txt
 607a8d22225b2159ddf919720d8c072f5b6eb36c5076e3fd31a6f967d01ba400  ./charge-build/runner/driver-source-sha256.txt
 f8adc9b48e1f1f47efd027f3abf0ef05f3858ba9cb051bcdcaa9894531193a15  ./charge-build/runner/manifest.txt
+4a862bddca07f5da3bc7065de81d3b8181e1b90da526d3da92945e6aabf8e988  ./charge-final-lockout/README.md
+a623f2346dd1e9f115611c9b3f0aecb2956111ef5b735d5c0773b7844f6763c6  ./charge-final-lockout/original-summary-projection.json
+4a8e43d04905bf140c91fb655e5e3e87976ceadc30bff21ae70669336bed6003  ./charge-final-lockout/public-policy-view.json
+cdaae7a4b97fdceb906de9d0b5a45dfc4223a1a403d9bf6f9e71afa4fed3eb06  ./charge-final-lockout/public-refusal.json
+8b3278a2253bbf0012570e2884b7301852c93ee13621551d0d9956bfef411359  ./charge-final-lockout/query-time.log
+5041ae7cba31c64aa8c55fc3a71908a27cf03c6e8821ccc744010d7bcf634a23  ./charge-final-lockout/result.json
+9339122485379aacaed41b81331d80ba774674e511cd590e07669b0252daad43  ./charge-final-lockout/submit-time.log
 469ab714f4b311ce31c1145ec42ade96c7daf53fe5e6c41db6ccec33f30e9a67  ./charge-history8-benchmark/README.md
 29aaf3fd153482b19c37e1e7c7e1610b40412c1f8544b69739c44e9d0c66eba8  ./charge-history8-benchmark/fresh-birth-new-310/manifest.txt
 27c74290deca2f5ec0c08e37e85897c9fa0788990398293bca864ddc21d5eb92  ./charge-history8-benchmark/fresh-birth-new-310/outcome.json
@@ -211,6 +218,13 @@ d5741d35739984c45f4138062e0f0d5997d450df9824ed1b4375ab3c3110435b  ./final-client
 9a332676a569f6a5756a9ca1eb64ad66f84599e39c5d6391a35bdd4539c4c314  ./final-legacy/README.md
 23a13af3ce3c559c1bd454008f2e7fa0a36d7a7526609743b7090c4f9e31702d  ./final-legacy/manifest.txt
 1c8f7172ff0605b06fcf0b019f55e7b146011cf648bdb6ef82b5ed3416041e8d  ./final-legacy/run.log
+3fe3941875a3a3738d98a7e5aac357a6cbd84d533d369c255258882f46454d28  ./final-new-world/README.md
+978b65deccac940006a720078c69d66dc6cee99c3cd241ef88954ef122c71c40  ./final-new-world/completion-checks.txt
+6eecf624acb74fd1133cb323ecba077d97a5d79929b5acf5a05e0013f7d7474c  ./final-new-world/final-image-hash-and-length.txt
+a440b9d3abf3f43876c5a9b802462a6d91f6b35bd9997c14211402854fb823bc  ./final-new-world/manifest.txt
+400385f3461654c3961fc7913050c692f585ab8bf3519ba39eaba5409257dca4  ./final-new-world/run.log
+85a9bcead88a8732a78d66dc736478986ef0f1efd215e7abbb71359d8a215f3d  ./final-new-world/runtime-artifact-rehash.tsv
+f02fb1070e988157ea11691b977d38f5b242eda9c2cfd2e4223c021593efe117  ./final-new-world/summary.json
 4b333655198b965f33c0daace997aeff1f2a1b412afb54029da4da703f9ac1e1  ./full-gate-green-20260919T202556Z/README.md
 62bd2d6fa99ffff749f9cb38266b184bc4c7d73d51ef5954b102f0517ad48003  ./full-gate-green-20260919T202556Z/artifact-sha256.txt
 0c7d01f0505a2262b0754b4c58ffb0d2103372e53b8fd70da3c006a99bbb523f  ./full-gate-green-20260919T202556Z/build.log

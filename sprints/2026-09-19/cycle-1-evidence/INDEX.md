@@ -1,22 +1,25 @@
-# Cycle 1 evidence — final native integration in progress
+# Cycle 1 evidence — completed native core integration
 
-The full Mini umbrella and native builds are green. The legacy native scenario,
-Rust mixed-resource client scenario and complete Rust authority recipe have
-passed. The New World task/content scenario is still running. The latest
-charge-materialization source is proved, built and exercised against eight-event
-history; its measured improvement is scoped below. Builds, source proofs, runtime cases and deployments
-remain distinct claims.
+The full Mini umbrella and native builds, complete eleven-event New World and
+legacy native journeys, and both Rust-client recipes passed. The later proved
+charge implementation also replayed the completed eleven-event history with an
+identical accepted policy view, identical owner-lockout refusal and unchanged
+whole stored image. The [cycle result](../cycle-1-result.md) records the completed
+core scope and remaining hosted-runtime work. Builds, proofs, runtime cases and
+deployments remain distinct claims.
 
 | Evidence | Captured result | Scope |
 |---|---|---|
+| [Complete New World journey](final-new-world/README.md) | Exit-0 PASS, eleven accepted events, 10,380 seconds: atomic task/content operations, lost reply, current-law observation, revocation, all historical retries and deliberate owner management lockout. | Fixed source `12e6608`, host `0da9f139…`; full logical stored-image comparisons. Local synthetic genesis, not a hosted service or deployed succinct assurance. |
+| [Latest host final-history replay](charge-final-lockout/README.md) | Host `3107faf3…` accepted the same signed locked-policy read and refused the same signed owner repair on a copy of the completed eleven-event image; exact output bytes and whole image preserved. | Query 127.08s; refused submit 129.25s. Targeted replay, not a second fresh complete journey. |
 | [Rust authority client](final-client-authority/README.md) | Complete exit-0 PASS in 904.65 seconds: authored policy roundtrip, narrowed Alice-to-Bob delegation, permitted write, refused escalation, explicit revocation and exact historical retry. | Five installed events on host `5ec9755d…`; current public boundary/state unchanged by retry. Full physical-image checks belong to the separate New World run. |
-| [Charge build](charge-build/README.md) | Literal umbrella PASS in 585 seconds; 581/581 sources match `66d74dd`; direct and full-gate native hosts are byte-identical `3107faf3…`. | Build and source closure; no complete runtime journey on this binary yet. |
+| [Charge build](charge-build/README.md) | Literal umbrella PASS in 585 seconds; 581/581 sources match `66d74dd`; direct and full-gate native hosts are byte-identical `3107faf3…`. | Build/source closure plus the focused runtime evidence above; the fresh complete journey used the predecessor. |
 | [Charge materialization](charge-materialization/README.md) | General charge, intent, record and byte equalities; generated receiver and replay retain evaluated charge values. | Matched later-history runtime evidence is recorded below; code alone does not establish a speedup. |
 | [Eight-event charge comparison](charge-history8-benchmark/README.md) | Immediate parent105.51s → charge91.66s; accepted view bytes and full logical image identical. Earlier one-event/birth no-gain results are also retained. | One sequential trial under other system activity; 13.13% improvement for this workload, not a universal gain. |
 | [Charge host stale-worker refusal](charge-stale-worker/README.md) | Latest host replays eight accepted events, returns exact original current-law refusal and leaves whole image unchanged. | Independent copied fixture, 76.46s; no complete fresh journey on this later binary. |
 | [Client API build](final-client-api-build/README.md) | All 581 compiled source files match `b119f86`; umbrella and native link pass. | Exactly one source delta from the preceding build: `Host/Json.lean` exposes policy address and editable predicate. Completed authority recipe is recorded above. |
 | [Core committed-source build](final-build/README.md) | Umbrella passed in 177 seconds; native host and compiled runner linked. All 581 umbrella/Host files and 153 host-source files match `12e6608`. | Full-gate and runtime-tested executables have separate hashes/object namespaces, with matching source. |
-| [Legacy native journey](final-legacy/README.md) | Complete exit-0 PASS in 1,066 seconds: six mutations, two grant-preserving rule changes, Alice-to-Bob delegation, hostile-history refusals and original receipt recovery without changing final bytes. | Complete scalar/authority regression; New World remains separately gated. |
+| [Legacy native journey](final-legacy/README.md) | Complete exit-0 PASS in 1,066 seconds: six mutations, two grant-preserving rule changes, Alice-to-Bob delegation, hostile-history refusals and original receipt recovery without changing final bytes. | Complete scalar/authority regression; New World has its own completed record above. |
 | [Rust mixed-resource client](final-client/README.md) | Complete 444-second PASS on host `0da9f139…`; actual lost-reply recovery, mixed transaction, exact retries, final authorized queries; focused Rust tests 4/4. | Does not yet exercise policy installation, delegation and revocation through Rust JSON. |
 | [Birth and order sharing](birth-and-order-sharing/README.md) | Matched birth 223.78 s → 49.43 s, identical signed-call/genesis inputs and identical receipt bytes. General equalities and generated-code evidence are retained. | About 4.53× for this matched pair, combining changes; not an isolated contribution or all-operation speedup. |
 | [Task query](order-query-benchmark/README.md) | Formerly stalled exact signed query completes in 33.55 seconds after the proved direct-bit substitution. | Earlier attempt was interrupted; no exact speedup ratio is claimed. |
@@ -61,4 +64,4 @@ Waterfall's original README distinguishes lane-reported completion from exact pr
 
 Failure excerpts are line-numbered selections from the complete logs, whose SHA-256 values are retained. They omit repetitive proof states and compilation warnings. Snapshot manifests and overlay ledgers are copied without editing. The content round-4 before hashes were recovered from the initial snapshot manifest and independently confirmed by removing exactly the five added revision-witness lines in a read-only stream; the ledger was written after that overlay's direct check began.
 
-The archive includes completed native legacy, Rust mixed-resource and Rust authority journeys, plus the later proved charge change and source-matched full build. The New World result and concluding cycle narrative remain pending. The bounded charge-materialization work is closed with exact build, proof and matched runtime evidence; remaining full-history latency is tracked separately. No work item is closed by an archival update alone. `SHA256SUMS` was regenerated for these additions while preserving the bytes of every earlier evidence file except this index. Later additions require a new manifest or explicitly regenerated manifest.
+The archive includes completed native legacy, Rust mixed-resource and Rust authority journeys, plus the later proved charge change and source-matched full build. The complete New World result and concluding cycle narrative are now captured. The bounded charge-materialization work is closed with exact build, proof and matched runtime evidence; remaining full-history latency is tracked separately. No work item is closed by an archival update alone. `SHA256SUMS` was regenerated for these additions while preserving the bytes of every earlier evidence file except this index. Later additions require a new manifest or explicitly regenerated manifest.

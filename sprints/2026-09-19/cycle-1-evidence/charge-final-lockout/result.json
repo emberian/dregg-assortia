@@ -1,0 +1,39 @@
+{
+  "status": "pass",
+  "scope": "latest host replay of original completed 11-event image; accepted query and current-law owner lockout refusal only",
+  "latestHostSha256": "3107faf3583e4c4926feb8931edee6e0aea4f800617bc0969d9d3c845caebe4d",
+  "originalHostSha256": "0da9f1392fad3913356e3a495f0d3ab4f1a247aec8988a9f90312666e9ccadc1",
+  "originalSummarySha256": "f02fb1070e988157ea11691b977d38f5b242eda9c2cfd2e4223c021593efe117",
+  "originalSummaryResult": "PASS",
+  "originalSummaryAcceptedEvents": 11,
+  "originalFinalImageSha256": "6b4173721a134c5658c6f7e7843cd409b2fd34e563b6328399ddaeafb9cd20f3",
+  "privateBackupLogicalImageEqualsOriginalFinalImage": true,
+  "privateBackupSqliteSha256": "12c4c1d87d4fb0a38e24cf40aafdda4e9c06b7d1b1098d56aae6bb04c3cb16ec",
+  "logicalImageBytes": 115541,
+  "logicalImageBeforeSha256": "6b4173721a134c5658c6f7e7843cd409b2fd34e563b6328399ddaeafb9cd20f3",
+  "logicalImageAfterQuerySha256": "6b4173721a134c5658c6f7e7843cd409b2fd34e563b6328399ddaeafb9cd20f3",
+  "logicalImageAfterSubmitSha256": "6b4173721a134c5658c6f7e7843cd409b2fd34e563b6328399ddaeafb9cd20f3",
+  "exactLogicalImageBytesUnchangedAfterBoth": true,
+  "positiveQuery": {
+    "signedObservationSha256": "5029605f64fe86c114be1a9054457c2afa431736e3598e85c719f20eb90f2d42",
+    "originalViewSha256": "8797e8346505e8f446655a904a5dc8874720f0f0377000c0c5572ad367402b38",
+    "latestViewSha256": "8797e8346505e8f446655a904a5dc8874720f0f0377000c0c5572ad367402b38",
+    "viewBytes": 130,
+    "exactViewBytesEqual": true,
+    "exitCode": 0,
+    "startUtc": "2026-09-19T23:49:00Z",
+    "endUtc": "2026-09-19T23:51:07Z",
+    "realSeconds": "127.08"
+  },
+  "ownerLockout": {
+    "signedCallSha256": "b62f7f506bbb1125850c2eda3562a2a4fddc0e13de96aa92238264196b00a3e3",
+    "originalRefusalSha256": "cad60ad085bd57da8465cc0a556adaf35547ac11efba9191fbcc688d9c809b22",
+    "latestRefusalSha256": "cad60ad085bd57da8465cc0a556adaf35547ac11efba9191fbcc688d9c809b22",
+    "refusalBytes": 58,
+    "exactRefusalBytesEqual": true,
+    "exitCode": 0,
+    "startUtc": "2026-09-19T23:52:57Z",
+    "endUtc": "2026-09-19T23:55:06Z",
+    "realSeconds": "129.25"
+  }
+}

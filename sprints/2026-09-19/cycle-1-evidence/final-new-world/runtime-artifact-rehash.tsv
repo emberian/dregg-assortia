@@ -1,0 +1,6 @@
+/tmp/minidregg-cycle-20260919/build/native-theta-birth-order-20260919T205800Z/runner/native-acceptance-runner	dbd2539ac5a91eb4dec6f381f41fd2cba276214cc8ed637c1221fba7537a994e	PASS
+/tmp/minidregg-cycle-20260919/build/native-theta-birth-order-20260919T205800Z/minidregg-host	0da9f1392fad3913356e3a495f0d3ab4f1a247aec8988a9f90312666e9ccadc1	PASS
+/Users/ember/dev/minidregg/native/credential-signature-verifier/target/debug/minidregg-credential-signature-verifier	dd5273f30a999dc7594018dd57605aebf2f9f15c43010f31e8674d28f14aafd9	PASS
+/Users/ember/dev/minidregg/native/hyperdocument-link-sqlite-store/target/debug/minidregg-link-sqlite-store	452908cb42070c57051fa7ccd65696541ec940f158c17db4f832a6355bc85e03	PASS
+/opt/homebrew/bin/openssl	67a83dd6d6d747d50c5d296dffb23e32bae9a2c588c93ae2d77e4c607b455c72	PASS
+scripts/probe-native-host-cli.lean	cbe8f996d6ab6462d35bef27a659ee62eec32c7c74d1c02caaf8ea7589deaf6d	PASS

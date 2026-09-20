@@ -1,0 +1,263 @@
+PASS public host is a linked native executable, not an interpreter wrapper
+PASS acceptance artifact directory has no previous deployment
+PASS actual Ed25519 SPKI public key
+PASS actual Ed25519 SPKI public key
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS host selects actual profile and deployment
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS installed event 1: task and content birth
+PASS content-wrong-kind-Minidregg.Theory.TypedAuthorization.ResourceKind.account
+PASS content-wrong-kind-Minidregg.Theory.TypedAuthorization.ResourceKind.program
+PASS internal-role-11
+PASS internal-role-12
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS joint authoring observes one exact image
+PASS object view has no account balances
+PASS task/content view has no hidden balances
+PASS task/content view has no hidden balances
+PASS task/content view has no hidden balances
+PASS missing-joint-observation
+PASS excess-joint-observation
+PASS duplicate-joint-observation
+PASS reordered-joint-observation
+PASS wrong kinds, internal roles and footprint refusals never change image
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS host selects actual profile and deployment
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS installed event 2: atomic attach and typed content creation
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS delegation observes one exact image
+PASS task/content view has no hidden balances
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS host selects actual profile and deployment
+PASS actual detached Ed25519 signature
+PASS installed event 3: task worker delegation
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS delegation observes one exact image
+PASS task/content view has no hidden balances
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS host selects actual profile and deployment
+PASS actual detached Ed25519 signature
+PASS installed event 4: content participant delegation
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS host selects actual profile and deployment
+PASS actual detached Ed25519 signature
+PASS installed event 5: task law revision preserves grants
+PASS task revision leaves grant generation unchanged
+PASS original owner and control grants survive replacement
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS joint authoring observes one exact image
+PASS object view has no account balances
+PASS task/content view has no hidden balances
+PASS task/content view has no hidden balances
+PASS task/content view has no hidden balances
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS host selects actual profile and deployment
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS real joint signing plan includes both source-bound read witnesses
+PASS refusal: direct submit without joint read witnesses is refused; canonical outcome [68, 82, 69, 71, 71, 47, 78, 65, 84, 73, 86, 69, 45, 72, 79, 83, 84, 47, 79, 85, 84, 67, 79, 77, 69, 47, 118, 49, 1, 0,
+ 9, 255, 97, 100, 109, 105, 115, 115, 105, 111, 110, 15, 255, 114, 101, 113, 117, 101, 115, 116, 32, 114, 101, 102, 117,
+ 115, 101, 100]
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS host selects actual profile and deployment
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS refusal: direct submit cannot use Alice's content read grant as Bob; canonical outcome [68, 82, 69, 71, 71, 47, 78, 65, 84, 73, 86, 69, 45, 72, 79, 83, 84, 47, 79, 85, 84, 67, 79, 77, 69, 47, 118, 49, 1, 0,
+ 9, 255, 97, 100, 109, 105, 115, 115, 105, 111, 110, 15, 255, 114, 101, 113, 117, 101, 115, 116, 32, 114, 101, 102, 117,
+ 115, 101, 100]
+PASS both direct read-authority attacks preserve complete physical image
+PASS lost-reply fixture output parent is absent
+PASS caller receives failure and no outcome after submission
+PASS actual durable commit occurred before reply delivery failed
+PASS retry after undelivered reply returns recovered original receipt
+PASS lost-reply recovery never republishes or recharges
+PASS committed event 6: recovered after undelivered reply
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS joint authoring observes one exact image
+PASS object view has no account balances
+PASS task/content view has no hidden balances
+PASS task/content view has no hidden balances
+PASS task/content view has no hidden balances
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS host selects actual profile and deployment
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS refusal: invalid second task leg rejects otherwise valid first content edit; canonical outcome [68, 82, 69, 71, 71, 47, 78, 65, 84, 73, 86, 69, 45, 72, 79, 83, 84, 47, 79, 85, 84, 67, 79, 77, 69, 47, 118, 49, 1, 0,
+ 9, 255, 97, 100, 109, 105, 115, 115, 105, 111, 110, 15, 255, 114, 101, 113, 117, 101, 115, 116, 32, 114, 101, 102, 117,
+ 115, 101, 100]
+PASS joint refusal preserves whole durable image
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS joint authoring observes one exact image
+PASS object view has no account balances
+PASS task/content view has no hidden balances
+PASS task/content view has no hidden balances
+PASS task/content view has no hidden balances
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS host selects actual profile and deployment
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS installed event 7: participant atomically settles and publishes result
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS object view has no account balances
+PASS task/content view has no hidden balances
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS host selects actual profile and deployment
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS installed event 8: hard disconnect advances task execution generation
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS object view has no account balances
+PASS task/content view has no hidden balances
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS host selects actual profile and deployment
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS refusal: freshly signed old worker is fenced by current task law; canonical outcome [68, 82, 69, 71, 71, 47, 78, 65, 84, 73, 86, 69, 45, 72, 79, 83, 84, 47, 79, 85, 84, 67, 79, 77, 69, 47, 118, 49, 1, 0,
+ 9, 255, 97, 100, 109, 105, 115, 115, 105, 111, 110, 15, 255, 114, 101, 113, 117, 101, 115, 116, 32, 114, 101, 102, 117,
+ 115, 101, 100]
+PASS fenced worker creates no durable event
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS task/content view has no hidden balances
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS host selects actual profile and deployment
+PASS actual detached Ed25519 signature
+PASS installed event 9: actual source-owned participant revocation
+PASS revocation is recorded in the canonical authority plane
+PASS nine accepted events before lock; failed operations have no history
+PASS two-resource birth is charged once with conserved synthetic supply
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS revoked participant cannot freshly observe content
+PASS revoked fresh request leaves image unchanged
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS object view has no account balances
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS task/content view has no hidden balances
+PASS paused task retains exact settled budget at the new generation
+PASS exact participant result bytes are committed
+PASS restarted lookup after revocation returns historical receipt
+PASS restarted exact retry after revocation returns original receipt
+PASS restarted lookup after revocation returns historical receipt
+PASS restarted exact retry after revocation returns original receipt
+PASS restarted lookup after revocation returns historical receipt
+PASS restarted exact retry after revocation returns original receipt
+PASS restarted lookup after revocation returns historical receipt
+PASS restarted exact retry after revocation returns original receipt
+PASS restarted lookup after revocation returns historical receipt
+PASS restarted exact retry after revocation returns original receipt
+PASS historical retries never republish or recharge
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS host selects actual profile and deployment
+PASS actual detached Ed25519 signature
+PASS installed event 10: content law allows mutation but deliberately denies observation
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS current resource law denies a grant that still contains observe scope
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS actual detached Ed25519 signature
+PASS refusal: direct submit cannot expose content denied by its current observation law; canonical outcome [68, 82, 69, 71, 71, 47, 78, 65, 84, 73, 86, 69, 45, 72, 79, 83, 84, 47, 79, 85, 84, 67, 79, 77, 69, 47, 118, 49, 1, 0,
+ 9, 255, 97, 100, 109, 105, 115, 115, 105, 111, 110, 15, 255, 114, 101, 113, 117, 101, 115, 116, 32, 114, 101, 102, 117,
+ 115, 101, 100]
+PASS refusal: direct guessed expected-content record is refused; canonical outcome [68, 82, 69, 71, 71, 47, 78, 65, 84, 73, 86, 69, 45, 72, 79, 83, 84, 47, 79, 85, 84, 67, 79, 77, 69, 47, 118, 49, 1, 0,
+ 9, 255, 97, 100, 109, 105, 115, 115, 105, 111, 110, 15, 255, 114, 101, 113, 117, 101, 115, 116, 32, 114, 101, 102, 117,
+ 115, 101, 100]
+PASS public refusal bytes do not distinguish guessed state from denied current observation
+PASS bypassing prepare does not bypass read laws or commit a foreign-policy probe
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS host selects actual profile and deployment
+PASS actual detached Ed25519 signature
+PASS installed event 11: resource deliberately locks its own management
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS challenge binds exact client intent/profile/domain
+PASS actual detached Ed25519 signature
+PASS host selects actual profile and deployment
+PASS actual detached Ed25519 signature
+PASS refusal: owner cannot bypass deliberately locked management; canonical outcome [68, 82, 69, 71, 71, 47, 78, 65, 84, 73, 86, 69, 45, 72, 79, 83, 84, 47, 79, 85, 84, 67, 79, 77, 69, 47, 118, 49, 1, 0,
+ 9, 255, 97, 100, 109, 105, 115, 115, 105, 111, 110, 15, 255, 114, 101, 113, 117, 101, 115, 116, 32, 114, 101, 102, 117,
+ 115, 101, 100]
+PASS denied owner repair preserves exact durable image
+PASS eleven accepted events; no refusal or retry adds history
+PASS NEW WORLD CYCLE: fresh keys, BabyBear/scalar29, compiled public host, SQLite; task+typed content birth; atomic task/content mutation; participant grants survive rule revision; invalid leg rollback; exact result; hard-disconnect generation fence; real revocation; restarted historical retries; deliberate management lockout. Worker generation is an authored per-subject resource law, not a native Pred grant caveat. No provider dispatch, physical interruption, succinct proof, or real asset claim.

@@ -1162,11 +1162,11 @@
       ],
       "closure": "Accepted nexus operations and consequential design decisions; selected semantic and receiving-runtime paths; an explicit owned-node participation path and selected Solana/resource outcome; linked implementation obligations and evidence. Selecting a contract does not close implementation or deployment.",
       "owner": "Astra: root; component implementation/review lanes completed",
-      "updatedAt": "2026-09-19T21:07:36.798Z",
+      "updatedAt": "2026-09-20T00:00:01.955Z",
       "advances": [
         "urn:dregg:assortia:E-WORLD"
       ],
-      "nextAction": "Complete cycle acceptance and record the resulting core contracts and measured costs before assigning the next hosted experience cycle.",
+      "nextAction": "Choose the next concrete hosted experience cycle around the measured core latency and real process lifecycle: persistent verified host, hosted Hermes/tool supervisor, credential service and metering through the same DREGG resource authority. Keep owned-node participation and a selected Solana outcome explicit.",
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
       "blockedBy": [],
@@ -1181,9 +1181,11 @@
         "urn:dregg:assortia:S-CORE-ORIENTATION-0919",
         "urn:dregg:assortia:S-REBUILD-MINI-0919",
         "urn:dregg:assortia:S-CYCLE-1-0919",
-        "urn:dregg:assortia:S-CYCLE-1-INTEGRATION-0919"
+        "urn:dregg:assortia:S-CYCLE-1-INTEGRATION-0919",
+        "urn:dregg:assortia:S-NEW-WORLD-0919",
+        "urn:dregg:assortia:S-CYCLE-1-RESULT-0919"
       ],
-      "progress": "Mini construction is committed through 12e6608. A real birth and task query execute; full combined native journeys remain pending. Hosted Hermes, physical interruption, contributed-node hosting and a selected Solana operation remain unfinished.",
+      "progress": "Mini cycle1 completed the native programmable resource core and Rust client, with eleven-event task/content/authority acceptance and complete legacy/client recipes. Interactive latency, hosted Hermes and actual interruption, contributed-node hosting and a selected Solana operation remain unfinished.",
       "writeScope": [
         "minidregg/docs/CYCLE-2026-09-19.md",
         "dregg-assortia/sprints/2026-09-19/cycle-1.md and graph work records"
@@ -1871,7 +1873,7 @@
       "@type": "WorkItem",
       "label": "Implement and exercise the canonical authored-program-to-resource path",
       "description": "Build and exercise the canonical Mini resource-programming path with installed laws, typed content, joint mutations and scoped observation, exposed through the source-owned host and Rust client.",
-      "status": "active",
+      "status": "done",
       "motivatedBy": [
         "urn:dregg:assortia:I-NEXUS",
         "urn:dregg:assortia:I-MIXED-PROGRAMMING",
@@ -1894,20 +1896,22 @@
         "urn:dregg:assortia:S-CORE-ORIENTATION-0919",
         "urn:dregg:assortia:S-CYCLE-1-0919",
         "urn:dregg:assortia:S-CYCLE-1-INTEGRATION-0919",
-        "urn:dregg:assortia:S-CLIENT-AUTHORITY-0919"
+        "urn:dregg:assortia:S-CLIENT-AUTHORITY-0919",
+        "urn:dregg:assortia:S-NEW-WORLD-0919",
+        "urn:dregg:assortia:S-CYCLE-1-RESULT-0919"
       ],
       "closure": "Author and install a rule under actual resource authority, invoke a permitted operation through the chosen shell/agent path, refuse a violating operation with correct state/outcome evidence, and recover accepted behavior/history through the chosen durable runtime. Complete all necessary core obligations, not merely a private demo.",
       "owner": "Astra: root; Sol: cycle_build + cycle_client",
-      "updatedAt": "2026-09-19T22:25:51.638Z",
+      "updatedAt": "2026-09-20T00:00:01.955Z",
       "advances": [
         "urn:dregg:assortia:E-WORLD",
         "urn:dregg:assortia:E-KERNEL"
       ],
-      "nextAction": "Complete the immutable New World task/content journey and archive its exact source/runtime result; retain separate binary scope for the later proved charge optimization.",
+      "nextAction": "Retain the source-matched native and Rust-client evidence as regression boundaries while building the persistent host and real agent lifecycle. This closure does not claim a deployed hosted platform.",
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
       "blockedBy": [],
-      "progress": "Source-owned authoring, typed birth/content and mixed transactions are implemented. The client exercised real lost-response recovery; its neutral scalar fixture expectation was corrected. Fresh full client and kernel journeys are running. Completed subsequent evidence: Rust authority recipe passed all five events, rule authoring roundtrip, narrowed delegation, escalation refusal, revocation and unchanged-boundary exact historical retry on source-matched b119f86 host. The earlier scalar legacy and mixed-resource client journeys also passed. Full New World combined acceptance remains running.",
+      "progress": "Source-owned JSON authoring, installed rules, scalar/typed-content resources, mixed transactions, scoped queries and retained signed calls are exercised through the real native host and Rust mini. The authority recipe roundtrips initial/installed policy JSON to exact canonical bytes, performs a permitted Bob operation, refuses violations, and recovers the historical receipt after revocation.",
       "brief": "sprints/2026-09-19/cycle-1-integration-checkpoint.md",
       "writeScope": [
         "minidregg/Kernel/ResourceTransaction*.lean",
@@ -1915,6 +1919,11 @@
         "minidregg/Host/Json.lean",
         "minidregg/native/resource-client/",
         "minidregg public native acceptance harness"
+      ],
+      "completionEvidence": [
+        "urn:dregg:assortia:S-NEW-WORLD-0919",
+        "urn:dregg:assortia:S-CLIENT-AUTHORITY-0919",
+        "urn:dregg:assortia:S-CYCLE-1-RESULT-0919"
       ]
     },
     {
@@ -2032,14 +2041,16 @@
       "@type": "WorkItem",
       "label": "Check composition against the actual joint post-state",
       "description": "Implement the general Mini transaction receiver over scalar and typed-content resources, with one exact joint post and current-policy admission for every incidence. Singleton mutations use the same receiver.",
-      "status": "active",
+      "status": "done",
       "sources": [
         "urn:dregg:assortia:S-IMPLEMENTATION-2300",
         "urn:dregg:assortia:S-IMPLEMENTATION-2330",
         "urn:dregg:assortia:S-IMPLEMENTATION-0045",
         "urn:dregg:assortia:S-WIND-DOWN-0918",
         "urn:dregg:assortia:S-CYCLE-1-0919",
-        "urn:dregg:assortia:S-CYCLE-1-INTEGRATION-0919"
+        "urn:dregg:assortia:S-CYCLE-1-INTEGRATION-0919",
+        "urn:dregg:assortia:S-NEW-WORLD-0919",
+        "urn:dregg:assortia:S-CYCLE-1-RESULT-0919"
       ],
       "motivatedBy": [
         "urn:dregg:assortia:I-CORE-SPRINT",
@@ -2051,20 +2062,25 @@
       ],
       "closure": "Generic accepted composition preserves incidence outcomes, enforces resource laws and source-owned policy/postconditions on the actual joint result; hostile overlap/cross-field examples refuse, legitimate composition remains inhabited, and receiving constructors use the contract.",
       "owner": "Astra: root; component implementation/review lanes completed",
-      "updatedAt": "2026-09-19T21:07:36.798Z",
+      "updatedAt": "2026-09-20T00:00:01.954Z",
       "advances": [
         "urn:dregg:assortia:E-KERNEL"
       ],
-      "nextAction": "Finish the combined native joint transaction and atomic-refusal checks; retain exact whole-image evidence.",
+      "nextAction": "Retain the source-matched native and Rust-client evidence as regression boundaries while building the persistent host and real agent lifecycle. This closure does not claim a deployed hosted platform.",
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
-      "progress": "General mixed scalar/content receiver and exact joint policy projections are implemented and compiled. The final signed task/content journey and invalid-second-leg rollback check are running.",
+      "progress": "General mixed scalar/content receiving and joint final-post policy enforcement are implemented and compiled. The complete native journey exercised an accepted atomic reservation/content change, accepted settlement/result publication, and an invalid second task leg that left the entire durable image unchanged. Current read authority was rechecked on direct submission.",
       "blockedBy": [],
       "writeScope": [
         "minidregg/Kernel/ResourceTransaction*.lean",
         "minidregg/Kernel/DeclaredResourceController.lean and shared scalar projection"
       ],
-      "brief": "sprints/2026-09-19/cycle-1-integration-checkpoint.md"
+      "brief": "sprints/2026-09-19/cycle-1-integration-checkpoint.md",
+      "completionEvidence": [
+        "urn:dregg:assortia:S-NEW-WORLD-0919",
+        "urn:dregg:assortia:S-CLIENT-AUTHORITY-0919",
+        "urn:dregg:assortia:S-CYCLE-1-RESULT-0919"
+      ]
     },
     {
       "@id": "urn:dregg:assortia:W-NATIVE-DATA-RECEIVER",
@@ -2178,13 +2194,13 @@
       "@type": "WorkItem",
       "label": "Bind native use to committed keys and complete authority",
       "description": "Persist exact signing keys/epochs; accept actual configured native verification of the exact request and capability against the complete same-snapshot authority.",
-      "status": "active",
+      "status": "done",
       "owner": "Astra: root; component implementation/review lanes completed",
-      "updatedAt": "2026-09-19T21:07:36.798Z",
+      "updatedAt": "2026-09-20T00:00:01.955Z",
       "advances": [
         "urn:dregg:assortia:E-KERNEL"
       ],
-      "nextAction": "Finish the complete signed missing/excess/stale/revoked/wrong-kind read and mutation checks on the combined candidate.",
+      "nextAction": "Retain the source-matched native and Rust-client evidence as regression boundaries while building the persistent host and real agent lifecycle. This closure does not claim a deployed hosted platform.",
       "closure": "Actual installed verification plus complete committed authority checks feed accepted source operations; stale/altered/revoked credentials cannot authorize them.",
       "sources": [
         "urn:dregg:assortia:S-IMPLEMENTATION-0045",
@@ -2195,12 +2211,14 @@
         "urn:dregg:assortia:S-GRAIN-IMPLEMENTATION-0919",
         "urn:dregg:assortia:S-CORE-ORIENTATION-0919",
         "urn:dregg:assortia:S-CYCLE-1-0919",
-        "urn:dregg:assortia:S-CYCLE-1-INTEGRATION-0919"
+        "urn:dregg:assortia:S-CYCLE-1-INTEGRATION-0919",
+        "urn:dregg:assortia:S-NEW-WORLD-0919",
+        "urn:dregg:assortia:S-CYCLE-1-RESULT-0919"
       ],
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
       "blockedBy": [],
-      "progress": "Native signed current-state observation, exact preparation footprint and explicit per-capability revocation are implemented. Earlier native checks refused wrong-kind/internal-role reads; final complete authority journey is running.",
+      "progress": "Complete native receiving exercised actual detached signatures, exact observation roles, wrong-kind/internal/excess/missing/reordered read refusals, current-law direct-submit checks, per-capability revocation and stale-worker generation fencing. Refusals preserve the entire durable image. The separate Rust authority recipe also passed ordinary authored delegation/escalation/revocation/retry.",
       "brief": "sprints/2026-09-19/cycle-1-integration-checkpoint.md",
       "writeScope": [
         "minidregg/Kernel/CapabilityRevocation*.lean",
@@ -2210,6 +2228,11 @@
       ],
       "motivatedBy": [
         "urn:dregg:assortia:I-MINI-CYCLE-1"
+      ],
+      "completionEvidence": [
+        "urn:dregg:assortia:S-NEW-WORLD-0919",
+        "urn:dregg:assortia:S-CLIENT-AUTHORITY-0919",
+        "urn:dregg:assortia:S-CYCLE-1-RESULT-0919"
       ]
     },
     {
@@ -2217,14 +2240,14 @@
       "@type": "WorkItem",
       "label": "Store initial policies and use one runtime profile",
       "description": "Immutable internal policy-source cells and a common field/compiler/request profile make resource creation, invocation and policy replacement agree.",
-      "status": "active",
+      "status": "done",
       "owner": "Astra: root; component implementation/review lanes completed",
-      "updatedAt": "2026-09-19T21:07:36.798Z",
+      "updatedAt": "2026-09-20T00:00:01.955Z",
       "advances": [
         "urn:dregg:assortia:E-KERNEL",
         "urn:dregg:assortia:E-WORLD"
       ],
-      "nextAction": "Record final umbrella and actual native policy-source/current-rule checks together.",
+      "nextAction": "Retain the source-matched native and Rust-client evidence as regression boundaries while building the persistent host and real agent lifecycle. This closure does not claim a deployed hosted platform.",
       "closure": "Policy source is created atomically and selected from the same durable directory; kind/domain/address mismatches refuse, and all consuming verbs share compatible source semantics.",
       "sources": [
         "urn:dregg:assortia:S-IMPLEMENTATION-0045",
@@ -2234,12 +2257,14 @@
         "urn:dregg:assortia:S-RESUMED-0311",
         "urn:dregg:assortia:S-WIND-DOWN-0918",
         "urn:dregg:assortia:S-CYCLE-1-0919",
-        "urn:dregg:assortia:S-CYCLE-1-INTEGRATION-0919"
+        "urn:dregg:assortia:S-CYCLE-1-INTEGRATION-0919",
+        "urn:dregg:assortia:S-NEW-WORLD-0919",
+        "urn:dregg:assortia:S-CYCLE-1-RESULT-0919"
       ],
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
       "blockedBy": [],
-      "progress": "One source/runtime profile now covers birth, content, joint invocation, policy replacement, observation and revocation. Consumer migration passed broad gates; final proved performance changes are undergoing the committed-source gate.",
+      "progress": "Shared source/runtime semantics for birth, joint invocation, typed content, source policy replacement, observation and per-capability revocation passed full source closure and native integration. The actual receiving path checks source kind/domain/address and current rules. Complete native acceptance confirms grant-preserving revision, current-law observation denial and deliberate management lockout.",
       "writeScope": [
         "minidregg/Compiler/CanonicalRuntimeProfile.lean and coordinated policy/control source",
         "minidregg/Compiler/NativeHostCodec.lean",
@@ -2248,6 +2273,11 @@
       "brief": "sprints/2026-09-19/cycle-1-integration-checkpoint.md",
       "motivatedBy": [
         "urn:dregg:assortia:I-MINI-CYCLE-1"
+      ],
+      "completionEvidence": [
+        "urn:dregg:assortia:S-NEW-WORLD-0919",
+        "urn:dregg:assortia:S-CLIENT-AUTHORITY-0919",
+        "urn:dregg:assortia:S-CYCLE-1-RESULT-0919"
       ]
     },
     {
@@ -2282,14 +2312,14 @@
       "@type": "WorkItem",
       "label": "Give a friend a narrower usable right",
       "description": "Add an explicit authorized subject-to-subject delegation edge without weakening strict holder-narrowing or inventing bearer custody.",
-      "status": "active",
+      "status": "done",
       "owner": "Astra: root; component implementation/review lanes completed",
-      "updatedAt": "2026-09-19T22:25:51.639Z",
+      "updatedAt": "2026-09-20T00:00:01.955Z",
       "advances": [
         "urn:dregg:assortia:E-KERNEL",
         "urn:dregg:assortia:E-WORLD"
       ],
-      "nextAction": "Complete the immutable New World task/content journey and archive its exact source/runtime result; retain separate binary scope for the later proved charge optimization.",
+      "nextAction": "Retain the source-matched native and Rust-client evidence as regression boundaries while building the persistent host and real agent lifecycle. This closure does not claim a deployed hosted platform.",
       "closure": "Owner delegates a bounded right; friend can use that right, cannot exceed it or replace policy, and revocation/current epochs remain enforced.",
       "sources": [
         "urn:dregg:assortia:S-IMPLEMENTATION-0045",
@@ -2299,12 +2329,14 @@
         "urn:dregg:assortia:S-WIND-DOWN-0918",
         "urn:dregg:assortia:S-CYCLE-1-0919",
         "urn:dregg:assortia:S-CYCLE-1-INTEGRATION-0919",
-        "urn:dregg:assortia:S-CLIENT-AUTHORITY-0919"
+        "urn:dregg:assortia:S-CLIENT-AUTHORITY-0919",
+        "urn:dregg:assortia:S-NEW-WORLD-0919",
+        "urn:dregg:assortia:S-CYCLE-1-RESULT-0919"
       ],
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
       "blockedBy": [],
-      "progress": "The earlier native candidate admitted Alice-to-Bob delegation and Bob invocation with exact narrow lineage, including historical verification after expiry. Its final replay loop was interrupted to move to the combined candidate. Completed subsequent evidence: Rust authority recipe passed all five events, rule authoring roundtrip, narrowed delegation, escalation refusal, revocation and unchanged-boundary exact historical retry on source-matched b119f86 host. The earlier scalar legacy and mixed-resource client journeys also passed. Full New World combined acceptance remains running.",
+      "progress": "Native and ordinary Rust-client journeys passed Alice-to-Bob narrower delegation, permitted use, prohibited policy escalation, explicit revocation and exact historical recovery. The complete joint task/content scenario also preserves the worker grants through a rule revision and fences a freshly signed old worker under the current generation rule.",
       "writeScope": [
         "minidregg/Kernel/CapabilityRevocationController.lean",
         "minidregg/Kernel/CapabilityRevocationReceiver.lean",
@@ -2313,6 +2345,11 @@
       "brief": "sprints/2026-09-19/cycle-1-integration-checkpoint.md",
       "motivatedBy": [
         "urn:dregg:assortia:I-MINI-CYCLE-1"
+      ],
+      "completionEvidence": [
+        "urn:dregg:assortia:S-NEW-WORLD-0919",
+        "urn:dregg:assortia:S-CLIENT-AUTHORITY-0919",
+        "urn:dregg:assortia:S-CYCLE-1-RESULT-0919"
       ]
     },
     {
@@ -2648,7 +2685,7 @@
       "description": "Separate immutable policy-source revision from grant revocation generation across the exact signed request, authority representation, compiled/source policies and every receiving consumer.",
       "status": "active",
       "owner": "Astra: root; component implementation/review lanes completed",
-      "updatedAt": "2026-09-19T21:07:36.798Z",
+      "updatedAt": "2026-09-20T00:00:01.955Z",
       "priority": 1,
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "sources": [
@@ -2657,7 +2694,9 @@
         "urn:dregg:assortia:S-RESUMED-0311",
         "urn:dregg:assortia:S-WIND-DOWN-0918",
         "urn:dregg:assortia:S-CYCLE-1-0919",
-        "urn:dregg:assortia:S-CYCLE-1-INTEGRATION-0919"
+        "urn:dregg:assortia:S-CYCLE-1-INTEGRATION-0919",
+        "urn:dregg:assortia:S-NEW-WORLD-0919",
+        "urn:dregg:assortia:S-CYCLE-1-RESULT-0919"
       ],
       "motivatedBy": [
         "urn:dregg:assortia:I-POLICY-GRANTS",
@@ -2674,9 +2713,9 @@
         "urn:dregg:assortia:W-AUTHORIZED-DELEGATION",
         "urn:dregg:assortia:W-PROGRAMMABLE-PATH"
       ],
-      "nextAction": "Finish current combined acceptance, then implement and exercise explicit generation-wide revocation and the delegated-grant two-replacement case.",
+      "nextAction": "Implement and exercise generation-wide native revocation and the delegated-grant two-replacement case against the same source-owned receiving path; preserve the completed per-capability/current-law regressions.",
       "closure": "After two admitted rule replacements, previously issued owner/control and delegated grants remain usable exactly when their scope and new rules authorize the new request; stale revisions refuse, explicit generation revocation invalidates prior grants, and restart/retry preserves exact state and receipts. Resource policy can deliberately refuse further management, with no implicit owner bypass.",
-      "progress": "Revision/generation separation is implemented. The earlier native candidate preserved original owner/control grants through two updates and enforced the new rule. Full combined runs remain pending; generation-wide native revocation and a delegated grant surviving two replacements remain separate closure obligations.",
+      "progress": "Revision/generation separation and per-capability revocation passed full native integration. Original owner/control grants survive two policy replacements in the legacy scenario; delegated worker grants survive one replacement in the New World scenario, with current-law enforcement and deliberate owner management lockout. Explicit generation-wide native revocation and a delegated grant surviving two replacements remain uncompleted closure obligations.",
       "writeScope": [
         "minidregg/Kernel/CapabilityRevocation*.lean",
         "minidregg/Kernel/PolicyInstallController.lean and coordinated authority/control source",
@@ -2701,9 +2740,9 @@
       "@type": "WorkItem",
       "label": "Operate real resources through a compiled programmable host",
       "description": "Compile and exercise the source-owned Mini birth, joint transaction, policy, delegation, scoped observation and explicit revocation path through the public host and Rust client, with semantic replay and exact retry receipts.",
-      "status": "active",
+      "status": "done",
       "owner": "Astra: root; Sol: cycle_build + cycle_client",
-      "updatedAt": "2026-09-19T22:25:51.639Z",
+      "updatedAt": "2026-09-20T00:00:01.955Z",
       "priority": 1,
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "sources": [
@@ -2715,7 +2754,11 @@
         "urn:dregg:assortia:S-CORE-ORIENTATION-0919",
         "urn:dregg:assortia:S-CYCLE-1-0919",
         "urn:dregg:assortia:S-CYCLE-1-INTEGRATION-0919",
-        "urn:dregg:assortia:S-CLIENT-AUTHORITY-0919"
+        "urn:dregg:assortia:S-CLIENT-AUTHORITY-0919",
+        "urn:dregg:assortia:S-NEW-WORLD-0919",
+        "urn:dregg:assortia:S-CYCLE-1-RESULT-0919",
+        "urn:dregg:assortia:S-CHARGE-BUILD-0919",
+        "urn:dregg:assortia:S-CHARGE-FINAL-LOCKOUT-0919"
       ],
       "advances": [
         "urn:dregg:assortia:E-KERNEL",
@@ -2726,9 +2769,9 @@
         "urn:dregg:assortia:W-ANDROID-CONTRACT"
       ],
       "blockedBy": [],
-      "nextAction": "Complete the immutable New World task/content journey and archive its exact source/runtime result; retain separate binary scope for the later proved charge optimization.",
+      "nextAction": "Retain the source-matched native and Rust-client evidence as regression boundaries while building the persistent host and real agent lifecycle. This closure does not claim a deployed hosted platform.",
       "closure": "A real compiled host with operator-owned configuration accepts only source-authorized signed calls, preserves committed resources/receipts across restart and lost replies, and drives the same grant-preserving shared-resource journey through the programmable shell.",
-      "progress": "Compiled host and Rust client exist. Matched birth fell from 223.78s to 49.43s with identical receipt bytes; a formerly stalled task query now completes in 33.55s. Full combined umbrella and fresh New World, legacy and client journeys are running. Completed subsequent evidence: Rust authority recipe passed all five events, rule authoring roundtrip, narrowed delegation, escalation refusal, revocation and unchanged-boundary exact historical retry on source-matched b119f86 host. The earlier scalar legacy and mixed-resource client journeys also passed. Full New World combined acceptance remains running.",
+      "progress": "The source-owned compiled host and Rust client passed complete native New World and legacy journeys plus mixed-resource and authority-client recipes. Exact retries recover original receipts across fresh processes and a real lost reply, preserving durable state and charges. Latest66d74dd has full581-source build closure plus focused exact-byte birth, eight-event replay/query/refusal and eleven-event accepted-policy-query/owner-lockout evidence. Whole-history latency and actual hosted agent process lifecycle remain separate implementation work.",
       "brief": "sprints/2026-09-19/cycle-1-integration-checkpoint.md",
       "writeScope": [
         "minidregg/Compiler/NativeHostCodec.lean",
@@ -2739,6 +2782,13 @@
       ],
       "motivatedBy": [
         "urn:dregg:assortia:I-MINI-CYCLE-1"
+      ],
+      "completionEvidence": [
+        "urn:dregg:assortia:S-NEW-WORLD-0919",
+        "urn:dregg:assortia:S-CLIENT-AUTHORITY-0919",
+        "urn:dregg:assortia:S-CYCLE-1-RESULT-0919",
+        "urn:dregg:assortia:S-CHARGE-BUILD-0919",
+        "urn:dregg:assortia:S-CHARGE-FINAL-LOCKOUT-0919"
       ]
     },
     {
@@ -3480,6 +3530,45 @@
       "recordedDate": "2026-09-19",
       "evidenceKind": "captured-native-runtime-and-exact-byte-comparison",
       "limitations": "Focused copied-history replay and current-law refusal on latest binary, not a fresh complete New World journey."
+    },
+    {
+      "@id": "urn:dregg:assortia:S-NEW-WORLD-0919",
+      "@type": "Source",
+      "label": "Completed eleven-event native task/content/authority journey",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-19/cycle-1-evidence/final-new-world/README.md",
+      "lineStart": 1,
+      "lineEnd": 9,
+      "sha256": "3fe3941875a3a3738d98a7e5aac357a6cbd84d533d369c255258882f46454d28",
+      "recordedDate": "2026-09-19",
+      "evidenceKind": "captured-native-runs-and-cycle-result",
+      "limitations": "Exact source12e6608 and host0da9f139. Local fresh fixture keys and synthetic genesis; no physical process interruption, hosted Hermes, real assets or deployed succinct assurance."
+    },
+    {
+      "@id": "urn:dregg:assortia:S-CYCLE-1-RESULT-0919",
+      "@type": "Source",
+      "label": "Mini cycle 1 completed core result and exact remaining construction",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-19/cycle-1-result.md",
+      "lineStart": 1,
+      "lineEnd": 42,
+      "sha256": "9a8aa825e69ba7bcb4777f6760fc3e20db2b1248904414fb5f2136c9f757066b",
+      "recordedDate": "2026-09-19",
+      "evidenceKind": "captured-native-runs-and-cycle-result",
+      "limitations": "Each proof/build/runtime result is scoped to its stated source/binary. Core completion does not close hosted runtime, interactive latency, generation-wide native revocation or September26 design."
+    },
+    {
+      "@id": "urn:dregg:assortia:S-CHARGE-FINAL-LOCKOUT-0919",
+      "@type": "Source",
+      "label": "Latest host replays eleven events and enforces owner management lockout",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-19/cycle-1-evidence/charge-final-lockout/README.md",
+      "lineStart": 1,
+      "lineEnd": 56,
+      "sha256": "4a862bddca07f5da3bc7065de81d3b8181e1b90da526d3da92945e6aabf8e988",
+      "recordedDate": "2026-09-19",
+      "evidenceKind": "captured-native-runs-and-cycle-result",
+      "limitations": "Accepted signed policy query and refused signed owner repair on an independent copied final history, with exact original outputs and unchanged whole image. This is targeted replay evidence, not a second fresh complete journey."
     }
   ]
 }

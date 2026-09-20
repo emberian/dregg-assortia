@@ -1,0 +1,9 @@
+manifest_exact_copy=PASS
+manifest_exit_code=0
+manifest_elapsed_seconds=10380
+summary_result=PASS
+summary_accepted_events=11
+final_run_marker=1
+final_image_unchanged_assertion=1
+eleven_events_assertion=1
+runtime_artifacts_rehashed=6
