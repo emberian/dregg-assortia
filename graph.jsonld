@@ -3077,14 +3077,15 @@
       "label": "Host upstream Hermes with persistent confined execution",
       "description": "Run real upstream Hermes in a confined Linux scope, preserve conversation/output, kill descendants on hard disconnect and retain exact scope on soft reconnect.",
       "status": "active",
-      "owner": "Sol: hermes_path; Astra: root",
-      "updatedAt": "2026-09-26T07:11:13.586Z",
+      "owner": "Sol: hermes_path, replay_session, linux_hosting; review runtime_review; Astra: root",
+      "updatedAt": "2026-09-26T07:30:20.175Z",
       "priority": 1,
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "sources": [
         "urn:dregg:assortia:S-GRAIN-IMPLEMENTATION-0919",
         "urn:dregg:assortia:S-CORE-ORIENTATION-0919",
-        "urn:dregg:assortia:S-OVERNIGHT-0926"
+        "urn:dregg:assortia:S-OVERNIGHT-0926",
+        "urn:dregg:assortia:S-CHECKPOINT1-0926"
       ],
       "advances": [
         "urn:dregg:assortia:E-WORLD"
@@ -3099,13 +3100,16 @@
         "Run real upstream Hermes in a confined Linux scope, preserve conversation/output, kill descendants on hard disconnect and retain exact scope on soft reconnect."
       ],
       "closure": "Run real upstream Hermes in a confined Linux scope, preserve conversation/output, kill descendants on hard disconnect and retain exact scope on soft reconnect.",
-      "nextAction": "Integrate real Hermes/process supervision with Lean-authored AgentGrain reserve/settle/fence; demonstrate interruption and durable recovery.",
-      "progress": "September26 overnight implementation authorized and lanes active. Existing Sept19 core and Sept24 fn exchange are construction inputs; new integrated native acceptance remains to run.",
+      "nextAction": "Converge source-owned grain birth, native runtime acceptance and cgroup/sandbox launch with hard/soft disconnect and restart recovery.",
+      "progress": "Rust supervisor and ACP source compile; normal same-group descendant stop tested. Atomic grain bootstrap, durable completion recovery and actual Linux containment integration are active.",
       "historicalWriteScope": [
         "breadstuffs/agent-platform/hosted/dregg_grain/{runtime,hermes,confinement}.py"
       ],
       "writeScope": [
-        "minidregg/native/grain-runtime/"
+        "minidregg/native/grain-runtime/",
+        "minidregg/Kernel/AgentGrain.lean",
+        "minidregg/Host/Json.lean",
+        "minidregg/deploy/grain-host/"
       ]
     },
     {
@@ -3146,14 +3150,15 @@
       "@type": "WorkItem",
       "label": "Expose canonical resource programming to Hermes",
       "description": "Drive real signed resource create/read/program/invoke/delegate/history operations through the source-owned host; reject stale generation authority without refreshing it.",
-      "status": "backlog",
-      "owner": "",
-      "updatedAt": "2026-09-19T17:59:03.858Z",
+      "status": "active",
+      "owner": "Sol: hermes_path, replay_session; review runtime_review; Astra: root",
+      "updatedAt": "2026-09-26T07:30:20.175Z",
       "priority": 1,
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "sources": [
         "urn:dregg:assortia:S-GRAIN-IMPLEMENTATION-0919",
-        "urn:dregg:assortia:S-CORE-ORIENTATION-0919"
+        "urn:dregg:assortia:S-CORE-ORIENTATION-0919",
+        "urn:dregg:assortia:S-CHECKPOINT1-0926"
       ],
       "advances": [
         "urn:dregg:assortia:E-WORLD"
@@ -3163,15 +3168,20 @@
         "urn:dregg:assortia:W-M26-DESIGN"
       ],
       "blockedBy": [],
-      "brief": "sprints/2026-09-19/core-orientation.md",
+      "brief": "sprints/2026-09-26/checkpoint-1.md",
       "acceptance": [
         "Drive real signed resource create/read/program/invoke/delegate/history operations through the source-owned host; reject stale generation authority without refreshing it."
       ],
       "closure": "Drive real signed resource create/read/program/invoke/delegate/history operations through the source-owned host; reject stale generation authority without refreshing it.",
-      "nextAction": "After the core/resource contract is agreed, review preserved WIP against it and reassign a concrete receiving path before resuming this implementation.",
-      "progress": "Paused after ember rejected the Python platform direction and requested deeper orientation. Existing WIP and earlier component evidence are preserved; no integrated acceptance is established. Previous assignment: Sol: grain_tools + host_json; Astra: grain_kernel.",
+      "nextAction": "Compile and exercise source-owned parent witness and generation-scoped worker law, reconcile interrupted tool phases, and run real Hermes-to-Mini tool acceptance.",
+      "progress": "Building controller-side Hermes MCP, separate tool-task allowance, delegated publication targets and atomic parent witness; parent hard fence must govern joint publication.",
       "historicalWriteScope": [
         "breadstuffs/agent-platform/hosted/dregg_grain/{kernelclient,mcp}.py; minidregg/Host/Json.lean and Kernel/AgentGrain*.lean"
+      ],
+      "writeScope": [
+        "minidregg/native/grain-runtime/",
+        "minidregg/Kernel/AgentGrain.lean",
+        "minidregg/Host/Json.lean"
       ]
     },
     {
@@ -3405,11 +3415,12 @@
       "owner": "Sol: mini_receiver, replay_session, client_session; Astra: root",
       "priority": 1,
       "milestone": "urn:dregg:assortia:M-2026-09-26",
-      "updatedAt": "2026-09-26T07:11:13.586Z",
+      "updatedAt": "2026-09-26T07:30:20.174Z",
       "sources": [
         "urn:dregg:assortia:S-HOST-SESSION-PROPOSAL-0919",
         "urn:dregg:assortia:S-NATIVE-COMPUTATION-0919",
-        "urn:dregg:assortia:S-OVERNIGHT-0926"
+        "urn:dregg:assortia:S-OVERNIGHT-0926",
+        "urn:dregg:assortia:S-CHECKPOINT1-0926"
       ],
       "motivatedBy": [
         "urn:dregg:assortia:I-CORE-SPRINT",
@@ -3432,8 +3443,8 @@
         "minidregg/Host/Main.lean",
         "minidregg/native/resource-client/"
       ],
-      "progress": "September26 overnight implementation authorized and lanes active. Existing Sept19 core and Sept24 fn exchange are construction inputs; new integrated native acceptance remains to run.",
-      "nextAction": "Implement exact-prefix session and reusable client transport, then native authority/recovery/verifier-replacement tests.",
+      "progress": "Published replay trace, refreshed session and bounded client transport through Mini 791a6d2; narrow Lean and nine Rust tests passed. Integrated native build running.",
+      "nextAction": "Exercise actual persistent client/host, rollback/replacement poisoning, authority changes and exact receipt recovery on the rebuilt image.",
       "closure": "Prove verified-prefix plus suffix replay agrees with full semantic replay under explicit verifier assumptions; run unchanged-image, external append/revocation, rewritten/rolled-back history, stale challenge, exact CAS, lost reply, restart and verifier-change cases through the real host. Preserve fresh authorization, exact original receipt boundaries and uncertainty. Measure physical reads, replay counts and latency; do not substitute height/hash/mtime for exact image identity."
     },
     {
@@ -3609,10 +3620,11 @@
       "description": "Converge existing fn consumer lineage and improve its authority, fresh setup, general reply profiles and distributed hosted receiving path.",
       "status": "active",
       "owner": "Sol: fn_contracts, fn_mini_review, fn_reply_profile; Astra: root",
-      "updatedAt": "2026-09-26T07:11:13.586Z",
+      "updatedAt": "2026-09-26T07:30:20.175Z",
       "priority": 1,
       "sources": [
-        "urn:dregg:assortia:S-OVERNIGHT-0926"
+        "urn:dregg:assortia:S-OVERNIGHT-0926",
+        "urn:dregg:assortia:S-CHECKPOINT1-0926"
       ],
       "advances": [
         "urn:dregg:assortia:E-WORLD",
@@ -3629,9 +3641,20 @@
         "minidregg/Host/Json.lean",
         "minidregg/scripts/fn-e1e2/"
       ],
-      "progress": "Existing54commit fn lineage received into main; qualified fn two-store evidence recovered. Fresh setup, pinned gateway admission and operator-selected replies being implemented.",
-      "nextAction": "Exercise clean-checkout inputs against isolated qualified fn nodes, enforce dedicated gateway authority, then demonstrate separate identities and real hosted operations with restart/uncertainty.",
+      "progress": "Gateway pin and contextual reply profile published. Fresh B operation/ACK passed after explicit budget correction; A exposed variable-length Message-ID bug, now fixed. Distinct A/B harness adaptation and larger bounded evidence profile in progress.",
+      "nextAction": "Rerun complete exchange on repaired native host using distinct A/B gateway keys; execute direct non-gateway signed-submit refusal and multi-event evidence checks.",
       "closure": "Real Mini-resource operation and reply travel through independently configured fn nodes with separately pinned application authorities; durable Mini processing precedes fn ACK, direct forged consumer input is refused, exact retries and uncertain outcomes reconcile, and a documented user entrance uses this path."
+    },
+    {
+      "@id": "urn:dregg:assortia:S-CHECKPOINT1-0926",
+      "@type": "Source",
+      "label": "Overnight published core checkpoints and fresh integration failures",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-26/checkpoint-1.md",
+      "sha256": "8cc13f7bae3fb4c7daebb904449c4bcbaac0c5990e7fbb89e494343050f1b5b1",
+      "recordedDate": "2026-09-26",
+      "evidenceKind": "implementation-checkpoints-and-scoped-test-reports",
+      "limitations": "Intermediate checkpoint. Narrow proof/Rust checks and partial native exchanges do not establish completed hosted acceptance; full source-matched native build and receiving probes remain underway."
     }
   ]
 }

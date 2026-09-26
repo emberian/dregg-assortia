@@ -399,15 +399,15 @@ World deployment currently mutates volatile registries; historical paths either 
 
 **Operate actual Mini resources through fn correspondence and separate gateways**
 
-Status: **active** · Owner: Sol: fn_contracts, fn_mini_review, fn_reply_profile; Astra: root · Updated: 2026-09-26T07:11:13.586Z
+Status: **active** · Owner: Sol: fn_contracts, fn_mini_review, fn_reply_profile; Astra: root · Updated: 2026-09-26T07:30:20.175Z
 
 Converge existing fn consumer lineage and improve its authority, fresh setup, general reply profiles and distributed hosted receiving path.
 
-**Next:** Exercise clean-checkout inputs against isolated qualified fn nodes, enforce dedicated gateway authority, then demonstrate separate identities and real hosted operations with restart/uncertainty.
+**Next:** Rerun complete exchange on repaired native host using distinct A/B gateway keys; execute direct non-gateway signed-submit refusal and multi-event evidence checks.
 
 **Done when:** Real Mini-resource operation and reply travel through independently configured fn nodes with separately pinned application authorities; durable Mini processing precedes fn ACK, direct forged consumer input is refused, exact retries and uncertain outcomes reconcile, and a documented user entrance uses this path.
 
-**Evidence so far:** Existing54commit fn lineage received into main; qualified fn two-store evidence recovered. Fresh setup, pinned gateway admission and operator-selected replies being implemented.
+**Evidence so far:** Gateway pin and contextual reply profile published. Fresh B operation/ACK passed after explicit budget correction; A exposed variable-length Message-ID bug, now fixed. Distinct A/B harness adaptation and larger bounded evidence profile in progress.
 
 [Task brief](../sprints/2026-09-26/overnight.md)
 
@@ -419,6 +419,7 @@ Converge existing fn consumer lineage and improve its authority, fresh setup, ge
 **Evidence / provenance:**
 
 - [S-OVERNIGHT-0926 — September 26 overnight actual fn/Mini construction authorization and lane plan](../sprints/2026-09-26/overnight.md)
+- [S-CHECKPOINT1-0926 — Overnight published core checkpoints and fresh integration failures](../sprints/2026-09-26/checkpoint-1.md)
 
 **Write scope:** minidregg/Kernel/Fn*.lean; minidregg/Host/Json.lean; minidregg/scripts/fn-e1e2/
 
@@ -487,15 +488,15 @@ Execute authenticated provisioning, hard/soft attachment, retained operation loo
 
 **Host upstream Hermes with persistent confined execution**
 
-Status: **active** · Owner: Sol: hermes_path; Astra: root · Updated: 2026-09-26T07:11:13.586Z
+Status: **active** · Owner: Sol: hermes_path, replay_session, linux_hosting; review runtime_review; Astra: root · Updated: 2026-09-26T07:30:20.175Z
 
 Run real upstream Hermes in a confined Linux scope, preserve conversation/output, kill descendants on hard disconnect and retain exact scope on soft reconnect.
 
-**Next:** Integrate real Hermes/process supervision with Lean-authored AgentGrain reserve/settle/fence; demonstrate interruption and durable recovery.
+**Next:** Converge source-owned grain birth, native runtime acceptance and cgroup/sandbox launch with hard/soft disconnect and restart recovery.
 
 **Done when:** Run real upstream Hermes in a confined Linux scope, preserve conversation/output, kill descendants on hard disconnect and retain exact scope on soft reconnect.
 
-**Evidence so far:** September26 overnight implementation authorized and lanes active. Existing Sept19 core and Sept24 fn exchange are construction inputs; new integrated native acceptance remains to run.
+**Evidence so far:** Rust supervisor and ACP source compile; normal same-group descendant stop tested. Atomic grain bootstrap, durable completion recovery and actual Linux containment integration are active.
 
 [Task brief](../sprints/2026-09-26/overnight.md)
 
@@ -508,8 +509,9 @@ Run real upstream Hermes in a confined Linux scope, preserve conversation/output
 - [S-GRAIN-IMPLEMENTATION-0919 — Historical, subsequently paused agent-grain implementation wave](../sprints/2026-09-19/implementation.md)
 - [S-CORE-ORIENTATION-0919 — Bread/Mini microswarm after implementation pause](../sprints/2026-09-19/core-orientation.md)
 - [S-OVERNIGHT-0926 — September 26 overnight actual fn/Mini construction authorization and lane plan](../sprints/2026-09-26/overnight.md)
+- [S-CHECKPOINT1-0926 — Overnight published core checkpoints and fresh integration failures](../sprints/2026-09-26/checkpoint-1.md)
 
-**Write scope:** minidregg/native/grain-runtime/
+**Write scope:** minidregg/native/grain-runtime/; minidregg/Kernel/AgentGrain.lean; minidregg/Host/Json.lean; minidregg/deploy/grain-host/
 
 **Acceptance:**
 
@@ -519,17 +521,17 @@ Run real upstream Hermes in a confined Linux scope, preserve conversation/output
 
 **Expose canonical resource programming to Hermes**
 
-Status: **backlog** · Owner: Unassigned · Updated: 2026-09-19T17:59:03.858Z
+Status: **active** · Owner: Sol: hermes_path, replay_session; review runtime_review; Astra: root · Updated: 2026-09-26T07:30:20.175Z
 
 Drive real signed resource create/read/program/invoke/delegate/history operations through the source-owned host; reject stale generation authority without refreshing it.
 
-**Next:** After the core/resource contract is agreed, review preserved WIP against it and reassign a concrete receiving path before resuming this implementation.
+**Next:** Compile and exercise source-owned parent witness and generation-scoped worker law, reconcile interrupted tool phases, and run real Hermes-to-Mini tool acceptance.
 
 **Done when:** Drive real signed resource create/read/program/invoke/delegate/history operations through the source-owned host; reject stale generation authority without refreshing it.
 
-**Evidence so far:** Paused after ember rejected the Python platform direction and requested deeper orientation. Existing WIP and earlier component evidence are preserved; no integrated acceptance is established. Previous assignment: Sol: grain_tools + host_json; Astra: grain_kernel.
+**Evidence so far:** Building controller-side Hermes MCP, separate tool-task allowance, delegated publication targets and atomic parent witness; parent hard fence must govern joint publication.
 
-[Task brief](../sprints/2026-09-19/core-orientation.md)
+[Task brief](../sprints/2026-09-26/checkpoint-1.md)
 
 **Enables:**
 
@@ -539,6 +541,9 @@ Drive real signed resource create/read/program/invoke/delegate/history operation
 
 - [S-GRAIN-IMPLEMENTATION-0919 — Historical, subsequently paused agent-grain implementation wave](../sprints/2026-09-19/implementation.md)
 - [S-CORE-ORIENTATION-0919 — Bread/Mini microswarm after implementation pause](../sprints/2026-09-19/core-orientation.md)
+- [S-CHECKPOINT1-0926 — Overnight published core checkpoints and fresh integration failures](../sprints/2026-09-26/checkpoint-1.md)
+
+**Write scope:** minidregg/native/grain-runtime/; minidregg/Kernel/AgentGrain.lean; minidregg/Host/Json.lean
 
 **Acceptance:**
 
@@ -609,15 +614,15 @@ SDK route discovery is lazy while actual cryptographic calls retain real Lean in
 
 **Retain verified history across native host requests**
 
-Status: **active** · Owner: Sol: mini_receiver, replay_session, client_session; Astra: root · Updated: 2026-09-26T07:11:13.586Z
+Status: **active** · Owner: Sol: mini_receiver, replay_session, client_session; Astra: root · Updated: 2026-09-26T07:30:20.174Z
 
 Replace repeated whole-history semantic replay with a source-owned verified session, preserving exact history identity, current authorization and durable CAS/recovery behavior.
 
-**Next:** Implement exact-prefix session and reusable client transport, then native authority/recovery/verifier-replacement tests.
+**Next:** Exercise actual persistent client/host, rollback/replacement poisoning, authority changes and exact receipt recovery on the rebuilt image.
 
 **Done when:** Prove verified-prefix plus suffix replay agrees with full semantic replay under explicit verifier assumptions; run unchanged-image, external append/revocation, rewritten/rolled-back history, stale challenge, exact CAS, lost reply, restart and verifier-change cases through the real host. Preserve fresh authorization, exact original receipt boundaries and uncertainty. Measure physical reads, replay counts and latency; do not substitute height/hash/mtime for exact image identity.
 
-**Evidence so far:** September26 overnight implementation authorized and lanes active. Existing Sept19 core and Sept24 fn exchange are construction inputs; new integrated native acceptance remains to run.
+**Evidence so far:** Published replay trace, refreshed session and bounded client transport through Mini 791a6d2; narrow Lean and nine Rust tests passed. Integrated native build running.
 
 [Task brief](../sprints/2026-09-26/overnight.md)
 
@@ -631,6 +636,7 @@ Replace repeated whole-history semantic replay with a source-owned verified sess
 - [S-HOST-SESSION-PROPOSAL-0919 — Proposed persistent verified host session, grounded in measured native replay cost](../sprints/2026-09-19/next-cycle-host-session.md)
 - [S-NATIVE-COMPUTATION-0919 — Native query profile: repeated charge computation in reconstructed history](../sprints/2026-09-19/next-cycle-native-computation.md)
 - [S-OVERNIGHT-0926 — September 26 overnight actual fn/Mini construction authorization and lane plan](../sprints/2026-09-26/overnight.md)
+- [S-CHECKPOINT1-0926 — Overnight published core checkpoints and fresh integration failures](../sprints/2026-09-26/checkpoint-1.md)
 
 **Write scope:** minidregg/Kernel/NativeHost*.lean; minidregg/Host/Main.lean; minidregg/native/resource-client/
 
