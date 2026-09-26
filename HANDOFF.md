@@ -1,6 +1,6 @@
 # Start here: DREGG handoff
 
-**September 26 continuation:** [overnight fn / Mini construction](sprints/2026-09-26/overnight.md) is active. It supersedes the September 19 stopping point below for current assignments. The intervening fn/Mini branch and its two-store evidence have been recovered; current work develops the actual receiving system and hosted grain lifecycle with fn. Read that continuation and the graph board first.
+**September 26 continuation:** [overnight fn / Mini construction](sprints/2026-09-26/overnight.md) is active. It supersedes the September 19 stopping point below for current assignments. The intervening fn/Mini branch and its two-store evidence have been recovered; current work develops the actual receiving system and hosted grain lifecycle with fn. Read that continuation, the [latest native receiving checkpoint](sprints/2026-09-26/checkpoint-2.md), and the graph board first. [Checkpoint 1](sprints/2026-09-26/checkpoint-1.md) preserves the earlier state.
 
 Prepared September 19, 2026 (final cycle evidence extends into September 20 UTC), for a person or agent who has not followed the conversation. This is a navigation and restart guide; [graph.jsonld](graph.jsonld) owns work status, and dated evidence owns measured results. No private chat history or access to ember's machine is required to understand the handoff.
 
