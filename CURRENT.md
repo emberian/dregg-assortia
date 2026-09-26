@@ -2,7 +2,7 @@
 
 > Generated from `graph.jsonld` by `python3 hub.py render`. Edit the graph, not this file.
 
-Latest work-record update: **2026-09-26T10:15:00Z**. This is recorded project state, not a live process monitor.
+Latest work-record update: **2026-09-26T10:57:00Z**. This is recorded project state, not a live process monitor.
 
 [New contributor](contributing/README.md) · [Project map](MAP.md) · [Detailed work records](work/records.md)
 
@@ -12,13 +12,13 @@ Latest work-record update: **2026-09-26T10:15:00Z**. This is recorded project st
 
 | Work | Owner / reviewer | Next action |
 |---|---|---|
-| [Operate actual Mini resources through fn correspondence and separate gateways](sprints/2026-09-26/checkpoint-6.md) | Sol: fn_contracts, fn_mini_review, fn_reply_profile; Astra: root | Derive coherent full fn reader/frame profile, rebuild and complete grain R/Q receiving; qualify equal-current skip retry, two-origin catalog and second worker wake. |
-| [Custody and meter scoped provider requests](sprints/2026-09-26/checkpoint-6.md) | Sol: runtime_review, hermes_path; Astra: root | Finish native reserve/refusal/fence and local gateway Hermes acceptance; qualify exact reservation continuity before replacing conservative send fence. |
-| [Durable hosted grain control and authenticated entrance](sprints/2026-09-26/checkpoint-6.md) | Sol: client_session, hermes_path, fn_reply_profile; Astra: root | Finish actual SSH hard/soft/reconnect with retained signed state; publish tested onboarding commands. |
-| [Host upstream Hermes with persistent confined execution](sprints/2026-09-26/checkpoint-6.md) | Sol: hermes_path, replay_session, linux_hosting; review runtime_review; Astra: root | Recover exact interrupted prompt outcome, present receipt-aware recovery context, and validate resumed user journey on faster native host. |
-| [Expose canonical resource programming to Hermes](sprints/2026-09-26/checkpoint-6.md) | Sol: hermes_path, replay_session, codec_stack, shared_resource_tools; Astra: root | Finish actual content create/edit/read via Hermes and recover timed-out tool receipts without repeating accepted effects. |
+| [Operate actual Mini resources through fn correspondence and separate gateways](sprints/2026-09-26/checkpoint-7.md) | Sol: fn_contracts, fn_mini_review, fn_reply_profile; Astra: root | Complete real grain B admission/ACK/Q, qualify outbox publisher and second-origin worker wake, then connect meaningful content publications. |
+| [Custody and meter scoped provider requests](sprints/2026-09-26/checkpoint-7.md) | Sol: runtime_review, hermes_path; Astra: root | Finish complete gateway prompt evidence, then interruption/recovery and native continuity integration without overstating external-send authority. |
+| [Durable hosted grain control and authenticated entrance](sprints/2026-09-26/checkpoint-7.md) | Sol: client_session, hermes_path, fn_reply_profile; Astra: root | Qualify controller death/restart and improved receipt recovery, then converge one documented hosted image. |
+| [Host upstream Hermes with persistent confined execution](sprints/2026-09-26/checkpoint-7.md) | Sol: hermes_path, replay_session, linux_hosting; review runtime_review; Astra: root | Run lost-reply native receipt reporting and controller restart on source-matched runtime; finish stable two-prompt user journey. |
+| [Expose canonical resource programming to Hermes](sprints/2026-09-26/checkpoint-7.md) | Sol: hermes_path, replay_session, codec_stack, shared_resource_tools; Astra: root | Complete hosted content create/reconnect/edit, source-owned fn export/readable receiving, and exact late-effect recovery acceptance. |
 | [Keep grants valid across policy source revisions](sprints/2026-09-19/cycle-1-integration-checkpoint.md) | Astra: root; component implementation/review lanes completed | Implement and exercise generation-wide native revocation and the delegated-grant two-replacement case against the same source-owned receiving path; preserve the completed per-capability/current-law regressions. |
-| [Retain verified history across native host requests](sprints/2026-09-26/checkpoint-6.md) | Sol: mini_receiver, replay_session, client_session; Astra: root | Fix real fn report profile bounds and verify receiving; reduce repeated boundary hashing with proofs and paired native timings; preserve exact replay/current-authority gates. |
+| [Retain verified history across native host requests](sprints/2026-09-26/checkpoint-7.md) | Sol: mini_receiver, fn_mini_review, fn_reply_profile, build_native; review runtime_review; Astra: root | Build and measure optimized native host on exact copied Stores and large fn call; preserve replay/current-authority equivalence. |
 | [Define the September 26 programmable nexus and its shared contracts](sprints/2026-09-19/cycle-1-integration-checkpoint.md) | Astra: root; component implementation/review lanes completed | Choose the next concrete hosted experience cycle around the measured core latency and real process lifecycle: persistent verified host, hosted Hermes/tool supervisor, credential service and metering through the same DREGG resource authority. Keep owned-node participation and a selected Solana outcome explicit. |
 
 ## Backlog
