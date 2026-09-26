@@ -399,17 +399,17 @@ World deployment currently mutates volatile registries; historical paths either 
 
 **Operate actual Mini resources through fn correspondence and separate gateways**
 
-Status: **active** · Owner: Sol: fn_contracts, fn_mini_review, fn_reply_profile; Astra: root · Updated: 2026-09-26T10:57:00Z
+Status: **active** · Owner: Sol: fn_contracts, fn_mini_review, fn_reply_profile; Astra: root · Updated: 2026-09-26T21:35:00Z
 
 Converge existing fn consumer lineage and improve its authority, fresh setup, general reply profiles and distributed hosted receiving path.
 
-**Next:** Complete real grain B admission/ACK/Q, qualify outbox publisher and second-origin worker wake, then connect meaningful content publications.
+**Next:** Qualify historical outbox readback and durable publisher, source-owned independently verified rendering, repeated worker wake, and explicit disclosure authority before automatic public release.
 
 **Done when:** Real Mini-resource operation and reply travel through independently configured fn nodes with separately pinned application authorities; durable Mini processing precedes fn ACK, direct forged consumer input is refused, exact retries and uncertain outcomes reconcile, and a documented user entrance uses this path.
 
-**Evidence so far:** Actual391022-byte grain report now passes typed Mini B op12; signed717KiB B submit confirms after about9min. Equal-current skip ACK exact retry passes. Historical outbox op18 and durable Rust publisher have scoped source gates; native link/journey pending.
+**Evidence so far:** Actual Hermes-origin grain R completed79/79 fn A→Mini B→Q→Mini A steps on selected-bbf; both Mini admissions precede durable fn ACK. Reusable R renderer exact-byte gate passes. Full original Store prefix disclosure is now explicitly documented; automatic selective sharing absent.
 
-[Task brief](../sprints/2026-09-26/checkpoint-7.md)
+[Task brief](../sprints/2026-09-26/checkpoint-8.md)
 
 **Enables:**
 
@@ -426,24 +426,25 @@ Converge existing fn consumer lineage and improve its authority, fresh setup, ge
 - [S-CHECKPOINT5-0926 — Actual Hermes publication, native hard fence, faster observations and durable fn worker](../sprints/2026-09-26/checkpoint-5.md)
 - [S-CHECKPOINT6-0926 — Real Hermes reconnect, committed missing reply, signed grain fn transport and reader-profile gap](../sprints/2026-09-26/checkpoint-6.md)
 - [S-CHECKPOINT7-0926 — Actual SSH grain, provider custody, late-effect reporting and core hash repair](../sprints/2026-09-26/checkpoint-7.md)
+- [S-CHECKPOINT8-0926 — Complete real grain fn exchange, hosted provider and crash recovery; resumed construction](../sprints/2026-09-26/checkpoint-8.md)
 
-**Write scope:** minidregg/Kernel/Fn*.lean; minidregg/Host/Json.lean; minidregg/scripts/fn-e1e2/; minidregg/Compiler/FnEvidenceCodec.lean; minidregg/Host/Main.lean; minidregg/Host/GrainOriginSource.lean; minidregg/native/resource-client/
+**Write scope:** minidregg/Kernel/Fn*.lean; minidregg/Host/Json.lean; minidregg/scripts/fn-e1e2/; minidregg/Compiler/FnEvidenceCodec.lean; minidregg/Host/Main.lean; minidregg/Host/GrainOriginSource.lean; minidregg/native/resource-client/; minidregg/Host/GrainOriginPreparation.lean; minidregg/docs/FN-PUBLICATION-DISCLOSURE.md
 
 ## W-GRAIN-BROKER
 
 **Custody and meter scoped provider requests**
 
-Status: **active** · Owner: Sol: runtime_review, hermes_path; Astra: root · Updated: 2026-09-26T10:57:00Z
+Status: **active** · Owner: Sol: runtime_review, hermes_path; Astra: root · Updated: 2026-09-26T21:35:00Z
 
 Execute bounded streaming requests after canonical reservation, retain exact evidence, fence old epochs, reconcile uncertain work and demonstrate secret isolation.
 
-**Next:** Finish complete gateway prompt evidence, then interruption/recovery and native continuity integration without overstating external-send authority.
+**Next:** Complete native reservation-continuity counterexamples and integrate exact accepted anchor into provider send checks.
 
 **Done when:** Execute bounded streaming requests after canonical reservation, retain exact evidence, fence old epochs, reconcile uncertain work and demonstrate secret isolation.
 
-**Evidence so far:** Direct native provider reserve/overbudget/stale-witness gates pass. Exact same-prompt response replay repair committede475072. Fresh actual Hermes gateway has two signed model exchanges and confirmed publication; final response/settlement in flight.
+**Evidence so far:** Actual unmodified Hermes gateway completes three fixture model exchanges with signed reserves, publication delivery and clean parent/tool/provider settlement; no live provider spend/TLSNotary claim. Exact same-prompt response replay implementation retained.
 
-[Task brief](../sprints/2026-09-26/checkpoint-7.md)
+[Task brief](../sprints/2026-09-26/checkpoint-8.md)
 
 **Enables:**
 
@@ -457,6 +458,7 @@ Execute bounded streaming requests after canonical reservation, retain exact evi
 - [S-CHECKPOINT5-0926 — Actual Hermes publication, native hard fence, faster observations and durable fn worker](../sprints/2026-09-26/checkpoint-5.md)
 - [S-CHECKPOINT6-0926 — Real Hermes reconnect, committed missing reply, signed grain fn transport and reader-profile gap](../sprints/2026-09-26/checkpoint-6.md)
 - [S-CHECKPOINT7-0926 — Actual SSH grain, provider custody, late-effect reporting and core hash repair](../sprints/2026-09-26/checkpoint-7.md)
+- [S-CHECKPOINT8-0926 — Complete real grain fn exchange, hosted provider and crash recovery; resumed construction](../sprints/2026-09-26/checkpoint-8.md)
 
 **Write scope:** minidregg/native/grain-runtime/src/provider.rs; minidregg/native/grain-runtime/src/main.rs; minidregg/deploy/grain-host/
 
@@ -468,17 +470,17 @@ Execute bounded streaming requests after canonical reservation, retain exact evi
 
 **Durable hosted grain control and authenticated entrance**
 
-Status: **active** · Owner: Sol: client_session, hermes_path, fn_reply_profile; Astra: root · Updated: 2026-09-26T10:57:00Z
+Status: **active** · Owner: Sol: client_session, hermes_path, fn_reply_profile; Astra: root · Updated: 2026-09-26T21:35:00Z
 
 Execute authenticated provisioning, hard/soft attachment, retained operation lookup and recovery through actual kernel/runtime adapters.
 
-**Next:** Qualify controller death/restart and improved receipt recovery, then converge one documented hosted image.
+**Next:** Bring up an owner-only persistent entrance after retained fixture recovery; converge hosted config and authenticated user journey.
 
 **Done when:** Execute authenticated provisioning, hard/soft attachment, retained operation lookup and recovery through actual kernel/runtime adapters.
 
-**Evidence so far:** Actual forced-command SSH soft completion, hard physical stop/signed fence and audited reconciliation pass; first hosted Hermes publication passes. Second same-session prompt exposed late committed effect after timeout.
+**Evidence so far:** Actual SSH hard/soft paths and first Hermes publication pass; separate controller SIGKILL/restart/audited recovery passes. Artifact-pinned instance installer committed581574d with actual manager load-path checks.
 
-[Task brief](../sprints/2026-09-26/checkpoint-7.md)
+[Task brief](../sprints/2026-09-26/checkpoint-8.md)
 
 **Enables:**
 
@@ -493,6 +495,7 @@ Execute authenticated provisioning, hard/soft attachment, retained operation loo
 - [S-CHECKPOINT5-0926 — Actual Hermes publication, native hard fence, faster observations and durable fn worker](../sprints/2026-09-26/checkpoint-5.md)
 - [S-CHECKPOINT6-0926 — Real Hermes reconnect, committed missing reply, signed grain fn transport and reader-profile gap](../sprints/2026-09-26/checkpoint-6.md)
 - [S-CHECKPOINT7-0926 — Actual SSH grain, provider custody, late-effect reporting and core hash repair](../sprints/2026-09-26/checkpoint-7.md)
+- [S-CHECKPOINT8-0926 — Complete real grain fn exchange, hosted provider and crash recovery; resumed construction](../sprints/2026-09-26/checkpoint-8.md)
 
 **Write scope:** minidregg/native/resource-client/; minidregg/native/grain-runtime/; minidregg/Host/Json.lean
 
@@ -504,17 +507,17 @@ Execute authenticated provisioning, hard/soft attachment, retained operation loo
 
 **Host upstream Hermes with persistent confined execution**
 
-Status: **active** · Owner: Sol: hermes_path, replay_session, linux_hosting; review runtime_review; Astra: root · Updated: 2026-09-26T10:57:00Z
+Status: **active** · Owner: Sol: hermes_path, replay_session, linux_hosting; review runtime_review; Astra: root · Updated: 2026-09-26T21:35:00Z
 
 Run real upstream Hermes in a confined Linux scope, preserve conversation/output, kill descendants on hard disconnect and retain exact scope on soft reconnect.
 
-**Next:** Run lost-reply native receipt reporting and controller restart on source-matched runtime; finish stable two-prompt user journey.
+**Next:** Implement and prove controller interrupt distinct from terminal cancel, consume it on abnormal worker loss, then run native soft fault/reconnect/receipt recovery and upstream timeout validation.
 
 **Done when:** Run real upstream Hermes in a confined Linux scope, preserve conversation/output, kill descendants on hard disconnect and retain exact scope on soft reconnect.
 
-**Evidence so far:** Actual SSH upstream Hermes first prompt passes; second session/load succeeds but broker300s deadline returns failure before native commit. New deadline and cross-conversation historical receipt report committed1b478d9; native recovery fixture pending.
+**Evidence so far:** Actual gateway Hermes prompt settles cleanly; controller crash recovery passes. Same-session content edit commits but upstream Hermes MCP still times out300s. Config-consumption repair and fresh lost-reply fixture resume after usage pause. Recovered soft ACP-fault test confirms indexed publication but cannot reattach after cancel/settle reaches terminal6; explicit resumable interruption assigned.
 
-[Task brief](../sprints/2026-09-26/checkpoint-7.md)
+[Task brief](../sprints/2026-09-26/checkpoint-8.md)
 
 **Enables:**
 
@@ -532,6 +535,7 @@ Run real upstream Hermes in a confined Linux scope, preserve conversation/output
 - [S-CHECKPOINT5-0926 — Actual Hermes publication, native hard fence, faster observations and durable fn worker](../sprints/2026-09-26/checkpoint-5.md)
 - [S-CHECKPOINT6-0926 — Real Hermes reconnect, committed missing reply, signed grain fn transport and reader-profile gap](../sprints/2026-09-26/checkpoint-6.md)
 - [S-CHECKPOINT7-0926 — Actual SSH grain, provider custody, late-effect reporting and core hash repair](../sprints/2026-09-26/checkpoint-7.md)
+- [S-CHECKPOINT8-0926 — Complete real grain fn exchange, hosted provider and crash recovery; resumed construction](../sprints/2026-09-26/checkpoint-8.md)
 
 **Write scope:** minidregg/native/grain-runtime/; minidregg/Kernel/AgentGrain.lean; minidregg/Host/Json.lean; minidregg/deploy/grain-host/
 
@@ -543,17 +547,17 @@ Run real upstream Hermes in a confined Linux scope, preserve conversation/output
 
 **Expose canonical resource programming to Hermes**
 
-Status: **active** · Owner: Sol: hermes_path, replay_session, codec_stack, shared_resource_tools; Astra: root · Updated: 2026-09-26T10:57:00Z
+Status: **active** · Owner: Sol: hermes_path, replay_session, codec_stack, shared_resource_tools; Astra: root · Updated: 2026-09-26T21:35:00Z
 
 Drive real signed resource create/read/program/invoke/delegate/history operations through the source-owned host; reject stale generation authority without refreshing it.
 
-**Next:** Complete hosted content create/reconnect/edit, source-owned fn export/readable receiving, and exact late-effect recovery acceptance.
+**Next:** Finish recovered receipt delivery and two independent hosted controller/tool pairs sharing one authorized workroom.
 
 **Done when:** Drive real signed resource create/read/program/invoke/delegate/history operations through the source-owned host; reject stale generation authority without refreshing it.
 
-**Evidence so far:** Native content8001 create/edit/read passes; fresh7301/7302 actual Hermes content journey underway. Late successful publications now indexed for exact lookup and historical reporting.
+**Evidence so far:** Direct native content create/edit/read evidence committed4aabc38. Actual7301 same-session edit confirms but MCP delivery fails at300s; historical receipt reporting and two-member native collaborative page admission under test.
 
-[Task brief](../sprints/2026-09-26/checkpoint-7.md)
+[Task brief](../sprints/2026-09-26/checkpoint-8.md)
 
 **Enables:**
 
@@ -570,8 +574,9 @@ Drive real signed resource create/read/program/invoke/delegate/history operation
 - [S-CHECKPOINT5-0926 — Actual Hermes publication, native hard fence, faster observations and durable fn worker](../sprints/2026-09-26/checkpoint-5.md)
 - [S-CHECKPOINT6-0926 — Real Hermes reconnect, committed missing reply, signed grain fn transport and reader-profile gap](../sprints/2026-09-26/checkpoint-6.md)
 - [S-CHECKPOINT7-0926 — Actual SSH grain, provider custody, late-effect reporting and core hash repair](../sprints/2026-09-26/checkpoint-7.md)
+- [S-CHECKPOINT8-0926 — Complete real grain fn exchange, hosted provider and crash recovery; resumed construction](../sprints/2026-09-26/checkpoint-8.md)
 
-**Write scope:** minidregg/native/grain-runtime/; minidregg/Kernel/AgentGrain.lean; minidregg/Host/Json.lean
+**Write scope:** minidregg/native/grain-runtime/; minidregg/Kernel/AgentGrain.lean; minidregg/Host/Json.lean; minidregg/scripts/workroom/
 
 **Acceptance:**
 
@@ -642,17 +647,17 @@ SDK route discovery is lazy while actual cryptographic calls retain real Lean in
 
 **Retain verified history across native host requests**
 
-Status: **active** · Owner: Sol: mini_receiver, fn_mini_review, fn_reply_profile, build_native; review runtime_review; Astra: root · Updated: 2026-09-26T10:57:00Z
+Status: **active** · Owner: Sol: mini_receiver, fn_mini_review, fn_reply_profile, build_native; review runtime_review; Astra: root · Updated: 2026-09-26T21:35:00Z
 
 Replace repeated whole-history semantic replay with a source-owned verified session, preserving exact history identity, current authorization and durable CAS/recovery behavior.
 
-**Next:** Build and measure optimized native host on exact copied Stores and large fn call; preserve replay/current-authority equivalence.
+**Next:** Recover private large-call profile results, identify dominant admission cost, and qualify optimized host against exact captured calls/images.
 
 **Done when:** Prove verified-prefix plus suffix replay agrees with full semantic replay under explicit verifier assumptions; run unchanged-image, external append/revocation, rewritten/rolled-back history, stale challenge, exact CAS, lost reply, restart and verifier-change cases through the real host. Preserve fresh authorization, exact original receipt boundaries and uncertainty. Measure physical reads, replay counts and latency; do not substitute height/hash/mtime for exact image identity.
 
-**Evidence so far:** Coherent Mac/Linux fn profile builds and maximal11.57MB serialized frame pass. Matched accepted22 warm queries improve24.8–33.7s to7.1–8.4s; cold replay near170s. Linear cSHAKE general output-equivalence proof committed7941bcd; boundary-sharing optimization underway.
+**Evidence so far:** Linked native op17/18 endpoints pass source/build gates. Matched linear-hash accepted22 queries6.36–7.41s, cold166.5s with byte-identical responses. Loaded-byte combined image built via196s provenance-checked suffix route; large B admission profiling unfinished.
 
-[Task brief](../sprints/2026-09-26/checkpoint-7.md)
+[Task brief](../sprints/2026-09-26/checkpoint-8.md)
 
 **Enables:**
 
@@ -671,8 +676,9 @@ Replace repeated whole-history semantic replay with a source-owned verified sess
 - [S-CHECKPOINT5-0926 — Actual Hermes publication, native hard fence, faster observations and durable fn worker](../sprints/2026-09-26/checkpoint-5.md)
 - [S-CHECKPOINT6-0926 — Real Hermes reconnect, committed missing reply, signed grain fn transport and reader-profile gap](../sprints/2026-09-26/checkpoint-6.md)
 - [S-CHECKPOINT7-0926 — Actual SSH grain, provider custody, late-effect reporting and core hash repair](../sprints/2026-09-26/checkpoint-7.md)
+- [S-CHECKPOINT8-0926 — Complete real grain fn exchange, hosted provider and crash recovery; resumed construction](../sprints/2026-09-26/checkpoint-8.md)
 
-**Write scope:** minidregg/Kernel/NativeHost*.lean; minidregg/Host/Main.lean; minidregg/native/resource-client/; minidregg/Compiler/Sp800185Cshake256Core.lean; minidregg/Kernel/NativeObservationController.lean
+**Write scope:** minidregg/Kernel/NativeHost*.lean; minidregg/Host/Main.lean; minidregg/native/resource-client/; minidregg/Compiler/Sp800185Cshake256Core.lean; minidregg/Kernel/NativeObservationController.lean; minidregg/scripts/build-native-host.sh
 
 ## W-JOINT-POST
 

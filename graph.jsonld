@@ -3039,7 +3039,7 @@
       "description": "Execute authenticated provisioning, hard/soft attachment, retained operation lookup and recovery through actual kernel/runtime adapters.",
       "status": "active",
       "owner": "Sol: client_session, hermes_path, fn_reply_profile; Astra: root",
-      "updatedAt": "2026-09-26T10:57:00Z",
+      "updatedAt": "2026-09-26T21:35:00Z",
       "priority": 1,
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "sources": [
@@ -3049,7 +3049,8 @@
         "urn:dregg:assortia:S-CHECKPOINT4-0926",
         "urn:dregg:assortia:S-CHECKPOINT5-0926",
         "urn:dregg:assortia:S-CHECKPOINT6-0926",
-        "urn:dregg:assortia:S-CHECKPOINT7-0926"
+        "urn:dregg:assortia:S-CHECKPOINT7-0926",
+        "urn:dregg:assortia:S-CHECKPOINT8-0926"
       ],
       "advances": [
         "urn:dregg:assortia:E-WORLD"
@@ -3059,13 +3060,13 @@
         "urn:dregg:assortia:W-M26-DESIGN"
       ],
       "blockedBy": [],
-      "brief": "sprints/2026-09-26/checkpoint-7.md",
+      "brief": "sprints/2026-09-26/checkpoint-8.md",
       "acceptance": [
         "Execute authenticated provisioning, hard/soft attachment, retained operation lookup and recovery through actual kernel/runtime adapters."
       ],
       "closure": "Execute authenticated provisioning, hard/soft attachment, retained operation lookup and recovery through actual kernel/runtime adapters.",
-      "nextAction": "Qualify controller death/restart and improved receipt recovery, then converge one documented hosted image.",
-      "progress": "Actual forced-command SSH soft completion, hard physical stop/signed fence and audited reconciliation pass; first hosted Hermes publication passes. Second same-session prompt exposed late committed effect after timeout.",
+      "nextAction": "Bring up an owner-only persistent entrance after retained fixture recovery; converge hosted config and authenticated user journey.",
+      "progress": "Actual SSH hard/soft paths and first Hermes publication pass; separate controller SIGKILL/restart/audited recovery passes. Artifact-pinned instance installer committed581574d with actual manager load-path checks.",
       "historicalWriteScope": [
         "breadstuffs/agent-platform/hosted/dregg_grain/{models,store,control,server,cli,service}.py"
       ],
@@ -3082,7 +3083,7 @@
       "description": "Run real upstream Hermes in a confined Linux scope, preserve conversation/output, kill descendants on hard disconnect and retain exact scope on soft reconnect.",
       "status": "active",
       "owner": "Sol: hermes_path, replay_session, linux_hosting; review runtime_review; Astra: root",
-      "updatedAt": "2026-09-26T10:57:00Z",
+      "updatedAt": "2026-09-26T21:35:00Z",
       "priority": 1,
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "sources": [
@@ -3095,7 +3096,8 @@
         "urn:dregg:assortia:S-CHECKPOINT4-0926",
         "urn:dregg:assortia:S-CHECKPOINT5-0926",
         "urn:dregg:assortia:S-CHECKPOINT6-0926",
-        "urn:dregg:assortia:S-CHECKPOINT7-0926"
+        "urn:dregg:assortia:S-CHECKPOINT7-0926",
+        "urn:dregg:assortia:S-CHECKPOINT8-0926"
       ],
       "advances": [
         "urn:dregg:assortia:E-WORLD"
@@ -3105,13 +3107,13 @@
         "urn:dregg:assortia:W-M26-DESIGN"
       ],
       "blockedBy": [],
-      "brief": "sprints/2026-09-26/checkpoint-7.md",
+      "brief": "sprints/2026-09-26/checkpoint-8.md",
       "acceptance": [
         "Run real upstream Hermes in a confined Linux scope, preserve conversation/output, kill descendants on hard disconnect and retain exact scope on soft reconnect."
       ],
       "closure": "Run real upstream Hermes in a confined Linux scope, preserve conversation/output, kill descendants on hard disconnect and retain exact scope on soft reconnect.",
-      "nextAction": "Run lost-reply native receipt reporting and controller restart on source-matched runtime; finish stable two-prompt user journey.",
-      "progress": "Actual SSH upstream Hermes first prompt passes; second session/load succeeds but broker300s deadline returns failure before native commit. New deadline and cross-conversation historical receipt report committed1b478d9; native recovery fixture pending.",
+      "nextAction": "Implement and prove controller interrupt distinct from terminal cancel, consume it on abnormal worker loss, then run native soft fault/reconnect/receipt recovery and upstream timeout validation.",
+      "progress": "Actual gateway Hermes prompt settles cleanly; controller crash recovery passes. Same-session content edit commits but upstream Hermes MCP still times out300s. Config-consumption repair and fresh lost-reply fixture resume after usage pause. Recovered soft ACP-fault test confirms indexed publication but cannot reattach after cancel/settle reaches terminal6; explicit resumable interruption assigned.",
       "historicalWriteScope": [
         "breadstuffs/agent-platform/hosted/dregg_grain/{runtime,hermes,confinement}.py"
       ],
@@ -3129,7 +3131,7 @@
       "description": "Execute bounded streaming requests after canonical reservation, retain exact evidence, fence old epochs, reconcile uncertain work and demonstrate secret isolation.",
       "status": "active",
       "owner": "Sol: runtime_review, hermes_path; Astra: root",
-      "updatedAt": "2026-09-26T10:57:00Z",
+      "updatedAt": "2026-09-26T21:35:00Z",
       "priority": 1,
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "sources": [
@@ -3138,7 +3140,8 @@
         "urn:dregg:assortia:S-CHECKPOINT4-0926",
         "urn:dregg:assortia:S-CHECKPOINT5-0926",
         "urn:dregg:assortia:S-CHECKPOINT6-0926",
-        "urn:dregg:assortia:S-CHECKPOINT7-0926"
+        "urn:dregg:assortia:S-CHECKPOINT7-0926",
+        "urn:dregg:assortia:S-CHECKPOINT8-0926"
       ],
       "advances": [
         "urn:dregg:assortia:E-WORLD"
@@ -3148,13 +3151,13 @@
         "urn:dregg:assortia:W-M26-DESIGN"
       ],
       "blockedBy": [],
-      "brief": "sprints/2026-09-26/checkpoint-7.md",
+      "brief": "sprints/2026-09-26/checkpoint-8.md",
       "acceptance": [
         "Execute bounded streaming requests after canonical reservation, retain exact evidence, fence old epochs, reconcile uncertain work and demonstrate secret isolation."
       ],
       "closure": "Execute bounded streaming requests after canonical reservation, retain exact evidence, fence old epochs, reconcile uncertain work and demonstrate secret isolation.",
-      "nextAction": "Finish complete gateway prompt evidence, then interruption/recovery and native continuity integration without overstating external-send authority.",
-      "progress": "Direct native provider reserve/overbudget/stale-witness gates pass. Exact same-prompt response replay repair committede475072. Fresh actual Hermes gateway has two signed model exchanges and confirmed publication; final response/settlement in flight.",
+      "nextAction": "Complete native reservation-continuity counterexamples and integrate exact accepted anchor into provider send checks.",
+      "progress": "Actual unmodified Hermes gateway completes three fixture model exchanges with signed reserves, publication delivery and clean parent/tool/provider settlement; no live provider spend/TLSNotary claim. Exact same-prompt response replay implementation retained.",
       "historicalWriteScope": [
         "breadstuffs/agent-platform/hosted/dregg_grain/{credentials,broker,broker_transport,broker_server,cost_policy}.py"
       ],
@@ -3171,7 +3174,7 @@
       "description": "Drive real signed resource create/read/program/invoke/delegate/history operations through the source-owned host; reject stale generation authority without refreshing it.",
       "status": "active",
       "owner": "Sol: hermes_path, replay_session, codec_stack, shared_resource_tools; Astra: root",
-      "updatedAt": "2026-09-26T10:57:00Z",
+      "updatedAt": "2026-09-26T21:35:00Z",
       "priority": 1,
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "sources": [
@@ -3183,7 +3186,8 @@
         "urn:dregg:assortia:S-CHECKPOINT4-0926",
         "urn:dregg:assortia:S-CHECKPOINT5-0926",
         "urn:dregg:assortia:S-CHECKPOINT6-0926",
-        "urn:dregg:assortia:S-CHECKPOINT7-0926"
+        "urn:dregg:assortia:S-CHECKPOINT7-0926",
+        "urn:dregg:assortia:S-CHECKPOINT8-0926"
       ],
       "advances": [
         "urn:dregg:assortia:E-WORLD"
@@ -3193,20 +3197,21 @@
         "urn:dregg:assortia:W-M26-DESIGN"
       ],
       "blockedBy": [],
-      "brief": "sprints/2026-09-26/checkpoint-7.md",
+      "brief": "sprints/2026-09-26/checkpoint-8.md",
       "acceptance": [
         "Drive real signed resource create/read/program/invoke/delegate/history operations through the source-owned host; reject stale generation authority without refreshing it."
       ],
       "closure": "Drive real signed resource create/read/program/invoke/delegate/history operations through the source-owned host; reject stale generation authority without refreshing it.",
-      "nextAction": "Complete hosted content create/reconnect/edit, source-owned fn export/readable receiving, and exact late-effect recovery acceptance.",
-      "progress": "Native content8001 create/edit/read passes; fresh7301/7302 actual Hermes content journey underway. Late successful publications now indexed for exact lookup and historical reporting.",
+      "nextAction": "Finish recovered receipt delivery and two independent hosted controller/tool pairs sharing one authorized workroom.",
+      "progress": "Direct native content create/edit/read evidence committed4aabc38. Actual7301 same-session edit confirms but MCP delivery fails at300s; historical receipt reporting and two-member native collaborative page admission under test.",
       "historicalWriteScope": [
         "breadstuffs/agent-platform/hosted/dregg_grain/{kernelclient,mcp}.py; minidregg/Host/Json.lean and Kernel/AgentGrain*.lean"
       ],
       "writeScope": [
         "minidregg/native/grain-runtime/",
         "minidregg/Kernel/AgentGrain.lean",
-        "minidregg/Host/Json.lean"
+        "minidregg/Host/Json.lean",
+        "minidregg/scripts/workroom/"
       ]
     },
     {
@@ -3440,7 +3445,7 @@
       "owner": "Sol: mini_receiver, fn_mini_review, fn_reply_profile, build_native; review runtime_review; Astra: root",
       "priority": 1,
       "milestone": "urn:dregg:assortia:M-2026-09-26",
-      "updatedAt": "2026-09-26T10:57:00Z",
+      "updatedAt": "2026-09-26T21:35:00Z",
       "sources": [
         "urn:dregg:assortia:S-HOST-SESSION-PROPOSAL-0919",
         "urn:dregg:assortia:S-NATIVE-COMPUTATION-0919",
@@ -3451,7 +3456,8 @@
         "urn:dregg:assortia:S-CHECKPOINT4-0926",
         "urn:dregg:assortia:S-CHECKPOINT5-0926",
         "urn:dregg:assortia:S-CHECKPOINT6-0926",
-        "urn:dregg:assortia:S-CHECKPOINT7-0926"
+        "urn:dregg:assortia:S-CHECKPOINT7-0926",
+        "urn:dregg:assortia:S-CHECKPOINT8-0926"
       ],
       "motivatedBy": [
         "urn:dregg:assortia:I-CORE-SPRINT",
@@ -3468,16 +3474,17 @@
         "urn:dregg:assortia:W-CHARGE-MATERIALIZATION"
       ],
       "blockedBy": [],
-      "brief": "sprints/2026-09-26/checkpoint-7.md",
+      "brief": "sprints/2026-09-26/checkpoint-8.md",
       "writeScope": [
         "minidregg/Kernel/NativeHost*.lean",
         "minidregg/Host/Main.lean",
         "minidregg/native/resource-client/",
         "minidregg/Compiler/Sp800185Cshake256Core.lean",
-        "minidregg/Kernel/NativeObservationController.lean"
+        "minidregg/Kernel/NativeObservationController.lean",
+        "minidregg/scripts/build-native-host.sh"
       ],
-      "progress": "Coherent Mac/Linux fn profile builds and maximal11.57MB serialized frame pass. Matched accepted22 warm queries improve24.8–33.7s to7.1–8.4s; cold replay near170s. Linear cSHAKE general output-equivalence proof committed7941bcd; boundary-sharing optimization underway.",
-      "nextAction": "Build and measure optimized native host on exact copied Stores and large fn call; preserve replay/current-authority equivalence.",
+      "progress": "Linked native op17/18 endpoints pass source/build gates. Matched linear-hash accepted22 queries6.36–7.41s, cold166.5s with byte-identical responses. Loaded-byte combined image built via196s provenance-checked suffix route; large B admission profiling unfinished.",
+      "nextAction": "Recover private large-call profile results, identify dominant admission cost, and qualify optimized host against exact captured calls/images.",
       "closure": "Prove verified-prefix plus suffix replay agrees with full semantic replay under explicit verifier assumptions; run unchanged-image, external append/revocation, rewritten/rolled-back history, stale challenge, exact CAS, lost reply, restart and verifier-change cases through the real host. Preserve fresh authorization, exact original receipt boundaries and uncertainty. Measure physical reads, replay counts and latency; do not substitute height/hash/mtime for exact image identity."
     },
     {
@@ -3653,7 +3660,7 @@
       "description": "Converge existing fn consumer lineage and improve its authority, fresh setup, general reply profiles and distributed hosted receiving path.",
       "status": "active",
       "owner": "Sol: fn_contracts, fn_mini_review, fn_reply_profile; Astra: root",
-      "updatedAt": "2026-09-26T10:57:00Z",
+      "updatedAt": "2026-09-26T21:35:00Z",
       "priority": 1,
       "sources": [
         "urn:dregg:assortia:S-OVERNIGHT-0926",
@@ -3663,7 +3670,8 @@
         "urn:dregg:assortia:S-CHECKPOINT4-0926",
         "urn:dregg:assortia:S-CHECKPOINT5-0926",
         "urn:dregg:assortia:S-CHECKPOINT6-0926",
-        "urn:dregg:assortia:S-CHECKPOINT7-0926"
+        "urn:dregg:assortia:S-CHECKPOINT7-0926",
+        "urn:dregg:assortia:S-CHECKPOINT8-0926"
       ],
       "advances": [
         "urn:dregg:assortia:E-WORLD",
@@ -3674,7 +3682,7 @@
         "urn:dregg:assortia:W-GRAIN-RUNTIME"
       ],
       "blockedBy": [],
-      "brief": "sprints/2026-09-26/checkpoint-7.md",
+      "brief": "sprints/2026-09-26/checkpoint-8.md",
       "writeScope": [
         "minidregg/Kernel/Fn*.lean",
         "minidregg/Host/Json.lean",
@@ -3682,10 +3690,12 @@
         "minidregg/Compiler/FnEvidenceCodec.lean",
         "minidregg/Host/Main.lean",
         "minidregg/Host/GrainOriginSource.lean",
-        "minidregg/native/resource-client/"
+        "minidregg/native/resource-client/",
+        "minidregg/Host/GrainOriginPreparation.lean",
+        "minidregg/docs/FN-PUBLICATION-DISCLOSURE.md"
       ],
-      "progress": "Actual391022-byte grain report now passes typed Mini B op12; signed717KiB B submit confirms after about9min. Equal-current skip ACK exact retry passes. Historical outbox op18 and durable Rust publisher have scoped source gates; native link/journey pending.",
-      "nextAction": "Complete real grain B admission/ACK/Q, qualify outbox publisher and second-origin worker wake, then connect meaningful content publications.",
+      "progress": "Actual Hermes-origin grain R completed79/79 fn A→Mini B→Q→Mini A steps on selected-bbf; both Mini admissions precede durable fn ACK. Reusable R renderer exact-byte gate passes. Full original Store prefix disclosure is now explicitly documented; automatic selective sharing absent.",
+      "nextAction": "Qualify historical outbox readback and durable publisher, source-owned independently verified rendering, repeated worker wake, and explicit disclosure authority before automatic public release.",
       "closure": "Real Mini-resource operation and reply travel through independently configured fn nodes with separately pinned application authorities; durable Mini processing precedes fn ACK, direct forged consumer input is refused, exact retries and uncertain outcomes reconcile, and a documented user entrance uses this path."
     },
     {
@@ -3764,6 +3774,17 @@
       "recordedDate": "2026-09-26",
       "evidenceKind": "native-receiving-results-and-active-implementation",
       "limitations": "First SSH Hermes publication and native provider gates pass. Later SSH prompt timed out despite committed effect; recovery receiving is pending. Actual large fn typed poll and signed B admission pass; ACK and Q remain in flight. Core hash equivalence proves unchanged outputs; native speed not measured yet."
+    },
+    {
+      "@id": "urn:dregg:assortia:S-CHECKPOINT8-0926",
+      "@type": "Source",
+      "label": "Complete real grain fn exchange, hosted provider and crash recovery; resumed construction",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-26/checkpoint-8.md",
+      "sha256": "30c49a14a871da1ab7ab58a7e47d3ae6db19eba741f73740081e1429ec29f7a4",
+      "recordedDate": "2026-09-26",
+      "evidenceKind": "native-receiving-results-and-active-implementation",
+      "limitations": "Real grain fn roundtrip, hosted fixture provider and controller recovery pass at scoped sources. Actual content edits commit but upstream MCP timeout still loses reply. Two-member hosted service, native publisher and fresh receipt recovery remain unfinished. Usage exhaustion interrupted lanes; resumed at21:35UTC."
     }
   ]
 }
