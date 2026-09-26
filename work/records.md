@@ -395,6 +395,33 @@ World deployment currently mutates volatile registries; historical paths either 
 - [S-WIND-DOWN-0918 — User-requested wind-down, exact native passes and unfinished host, September 18](../sprints/2026-09-18/wind-down.md)
 - [S-REBUILD-MINI-0919 — Ember chooses rebuilding the New World in Mini](../sprints/2026-09-19/rebuild-in-mini.md)
 
+## W-FN-INTEGRATION
+
+**Operate actual Mini resources through fn correspondence and separate gateways**
+
+Status: **active** · Owner: Sol: fn_contracts, fn_mini_review, fn_reply_profile; Astra: root · Updated: 2026-09-26T07:11:13.586Z
+
+Converge existing fn consumer lineage and improve its authority, fresh setup, general reply profiles and distributed hosted receiving path.
+
+**Next:** Exercise clean-checkout inputs against isolated qualified fn nodes, enforce dedicated gateway authority, then demonstrate separate identities and real hosted operations with restart/uncertainty.
+
+**Done when:** Real Mini-resource operation and reply travel through independently configured fn nodes with separately pinned application authorities; durable Mini processing precedes fn ACK, direct forged consumer input is refused, exact retries and uncertain outcomes reconcile, and a documented user entrance uses this path.
+
+**Evidence so far:** Existing54commit fn lineage received into main; qualified fn two-store evidence recovered. Fresh setup, pinned gateway admission and operator-selected replies being implemented.
+
+[Task brief](../sprints/2026-09-26/overnight.md)
+
+**Enables:**
+
+- E-WORLD — Programmable social resource world
+- E-KERNEL — Canonical typed semantic kernel
+
+**Evidence / provenance:**
+
+- [S-OVERNIGHT-0926 — September 26 overnight actual fn/Mini construction authorization and lane plan](../sprints/2026-09-26/overnight.md)
+
+**Write scope:** minidregg/Kernel/Fn*.lean; minidregg/Host/Json.lean; minidregg/scripts/fn-e1e2/
+
 ## W-GRAIN-BROKER
 
 **Custody and meter scoped provider requests**
@@ -428,17 +455,17 @@ Execute bounded streaming requests after canonical reservation, retain exact evi
 
 **Durable hosted grain control and authenticated entrance**
 
-Status: **backlog** · Owner: Unassigned · Updated: 2026-09-19T17:59:03.858Z
+Status: **active** · Owner: Sol: client_session, hermes_path, fn_reply_profile; Astra: root · Updated: 2026-09-26T07:11:13.586Z
 
 Execute authenticated provisioning, hard/soft attachment, retained operation lookup and recovery through actual kernel/runtime adapters.
 
-**Next:** After the core/resource contract is agreed, review preserved WIP against it and reassign a concrete receiving path before resuming this implementation.
+**Next:** Build actual authenticated local entrance and source-owned grain-intent operations through persistent Mini receiver.
 
 **Done when:** Execute authenticated provisioning, hard/soft attachment, retained operation lookup and recovery through actual kernel/runtime adapters.
 
-**Evidence so far:** Paused after ember rejected the Python platform direction and requested deeper orientation. Existing WIP and earlier component evidence are preserved; no integrated acceptance is established. Previous assignment: Astra: grain_control + root.
+**Evidence so far:** September26 overnight implementation authorized and lanes active. Existing Sept19 core and Sept24 fn exchange are construction inputs; new integrated native acceptance remains to run.
 
-[Task brief](../sprints/2026-09-19/core-orientation.md)
+[Task brief](../sprints/2026-09-26/overnight.md)
 
 **Enables:**
 
@@ -448,6 +475,9 @@ Execute authenticated provisioning, hard/soft attachment, retained operation loo
 
 - [S-GRAIN-IMPLEMENTATION-0919 — Historical, subsequently paused agent-grain implementation wave](../sprints/2026-09-19/implementation.md)
 - [S-CORE-ORIENTATION-0919 — Bread/Mini microswarm after implementation pause](../sprints/2026-09-19/core-orientation.md)
+- [S-OVERNIGHT-0926 — September 26 overnight actual fn/Mini construction authorization and lane plan](../sprints/2026-09-26/overnight.md)
+
+**Write scope:** minidregg/native/resource-client/; minidregg/native/grain-runtime/; minidregg/Host/Json.lean
 
 **Acceptance:**
 
@@ -457,17 +487,17 @@ Execute authenticated provisioning, hard/soft attachment, retained operation loo
 
 **Host upstream Hermes with persistent confined execution**
 
-Status: **backlog** · Owner: Unassigned · Updated: 2026-09-19T17:59:03.858Z
+Status: **active** · Owner: Sol: hermes_path; Astra: root · Updated: 2026-09-26T07:11:13.586Z
 
 Run real upstream Hermes in a confined Linux scope, preserve conversation/output, kill descendants on hard disconnect and retain exact scope on soft reconnect.
 
-**Next:** After the core/resource contract is agreed, review preserved WIP against it and reassign a concrete receiving path before resuming this implementation.
+**Next:** Integrate real Hermes/process supervision with Lean-authored AgentGrain reserve/settle/fence; demonstrate interruption and durable recovery.
 
 **Done when:** Run real upstream Hermes in a confined Linux scope, preserve conversation/output, kill descendants on hard disconnect and retain exact scope on soft reconnect.
 
-**Evidence so far:** Paused after ember rejected the Python platform direction and requested deeper orientation. Existing WIP and earlier component evidence are preserved; no integrated acceptance is established. Previous assignment: Astra: grain_runtime.
+**Evidence so far:** September26 overnight implementation authorized and lanes active. Existing Sept19 core and Sept24 fn exchange are construction inputs; new integrated native acceptance remains to run.
 
-[Task brief](../sprints/2026-09-19/core-orientation.md)
+[Task brief](../sprints/2026-09-26/overnight.md)
 
 **Enables:**
 
@@ -477,6 +507,9 @@ Run real upstream Hermes in a confined Linux scope, preserve conversation/output
 
 - [S-GRAIN-IMPLEMENTATION-0919 — Historical, subsequently paused agent-grain implementation wave](../sprints/2026-09-19/implementation.md)
 - [S-CORE-ORIENTATION-0919 — Bread/Mini microswarm after implementation pause](../sprints/2026-09-19/core-orientation.md)
+- [S-OVERNIGHT-0926 — September 26 overnight actual fn/Mini construction authorization and lane plan](../sprints/2026-09-26/overnight.md)
+
+**Write scope:** minidregg/native/grain-runtime/
 
 **Acceptance:**
 
@@ -576,17 +609,17 @@ SDK route discovery is lazy while actual cryptographic calls retain real Lean in
 
 **Retain verified history across native host requests**
 
-Status: **backlog** · Owner: Unassigned · Updated: 2026-09-19T22:02:08.713Z
+Status: **active** · Owner: Sol: mini_receiver, replay_session, client_session; Astra: root · Updated: 2026-09-26T07:11:13.586Z
 
 Replace repeated whole-history semantic replay with a source-owned verified session, preserving exact history identity, current authorization and durable CAS/recovery behavior.
 
-**Next:** Agree and implement the verified-session and pinned-verifier contract, then exercise unchanged-image reuse and exact-prefix suffix replay through persistent stdio.
+**Next:** Implement exact-prefix session and reusable client transport, then native authority/recovery/verifier-replacement tests.
 
 **Done when:** Prove verified-prefix plus suffix replay agrees with full semantic replay under explicit verifier assumptions; run unchanged-image, external append/revocation, rewritten/rolled-back history, stale challenge, exact CAS, lost reply, restart and verifier-change cases through the real host. Preserve fresh authorization, exact original receipt boundaries and uncertainty. Measure physical reads, replay counts and latency; do not substitute height/hash/mtime for exact image identity.
 
-**Evidence so far:** Current native operations repeatedly verify retained original signed ingress. Matched birth and query measurements identify a concrete latency obstacle; a receiving contract and adversarial matrix are proposed, with no cache implementation claimed. A later bounded profile shows reconstructed history retains expensive charge functions; a cache alone would retain that recomputation. Charge materialization is tracked separately.
+**Evidence so far:** September26 overnight implementation authorized and lanes active. Existing Sept19 core and Sept24 fn exchange are construction inputs; new integrated native acceptance remains to run.
 
-[Task brief](../sprints/2026-09-19/next-cycle-host-session.md)
+[Task brief](../sprints/2026-09-26/overnight.md)
 
 **Enables:**
 
@@ -597,8 +630,9 @@ Replace repeated whole-history semantic replay with a source-owned verified sess
 
 - [S-HOST-SESSION-PROPOSAL-0919 — Proposed persistent verified host session, grounded in measured native replay cost](../sprints/2026-09-19/next-cycle-host-session.md)
 - [S-NATIVE-COMPUTATION-0919 — Native query profile: repeated charge computation in reconstructed history](../sprints/2026-09-19/next-cycle-native-computation.md)
+- [S-OVERNIGHT-0926 — September 26 overnight actual fn/Mini construction authorization and lane plan](../sprints/2026-09-26/overnight.md)
 
-**Write scope:** minidregg/Kernel/NativeHost.lean and NativeHostReplay.lean; minidregg/Host/Main.lean persistent stdio loop; minidregg native public acceptance and measured replay counts
+**Write scope:** minidregg/Kernel/NativeHost*.lean; minidregg/Host/Main.lean; minidregg/native/resource-client/
 
 ## W-JOINT-POST
 

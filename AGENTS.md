@@ -1,5 +1,7 @@
 # Working in dregg-assortia
 
+Current authorization: September 26 autonomous overnight construction, mostly Sol agents, actual Mini/Bread integration with fn; see sprints/2026-09-26/overnight.md. Claude owns fn's active development. Do not revive the rejected Python platform or substitute a disconnected demo. Ember will decide release compromises on returning.
+
 Read HANDOFF.md, README.md, CURRENT.md, intent.md, the latest completed result, and the relevant dated orientation before making project-wide recommendations. HANDOFF.md is the entry point for a successor; graph.jsonld remains the owner of work status.
 
 - Git is the primary VCS. Fossil is an undecided issues/discussion candidate.

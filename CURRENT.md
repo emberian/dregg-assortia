@@ -2,7 +2,7 @@
 
 > Generated from `graph.jsonld` by `python3 hub.py render`. Edit the graph, not this file.
 
-Latest work-record update: **2026-09-20T00:00:01.955Z**. This is recorded project state, not a live process monitor.
+Latest work-record update: **2026-09-26T07:11:13.586Z**. This is recorded project state, not a live process monitor.
 
 [New contributor](contributing/README.md) · [Project map](MAP.md) · [Detailed work records](work/records.md)
 
@@ -12,7 +12,11 @@ Latest work-record update: **2026-09-20T00:00:01.955Z**. This is recorded projec
 
 | Work | Owner / reviewer | Next action |
 |---|---|---|
+| [Operate actual Mini resources through fn correspondence and separate gateways](sprints/2026-09-26/overnight.md) | Sol: fn_contracts, fn_mini_review, fn_reply_profile; Astra: root | Exercise clean-checkout inputs against isolated qualified fn nodes, enforce dedicated gateway authority, then demonstrate separate identities and real hosted operations with restart/uncertainty. |
+| [Durable hosted grain control and authenticated entrance](sprints/2026-09-26/overnight.md) | Sol: client_session, hermes_path, fn_reply_profile; Astra: root | Build actual authenticated local entrance and source-owned grain-intent operations through persistent Mini receiver. |
+| [Host upstream Hermes with persistent confined execution](sprints/2026-09-26/overnight.md) | Sol: hermes_path; Astra: root | Integrate real Hermes/process supervision with Lean-authored AgentGrain reserve/settle/fence; demonstrate interruption and durable recovery. |
 | [Keep grants valid across policy source revisions](sprints/2026-09-19/cycle-1-integration-checkpoint.md) | Astra: root; component implementation/review lanes completed | Implement and exercise generation-wide native revocation and the delegated-grant two-replacement case against the same source-owned receiving path; preserve the completed per-capability/current-law regressions. |
+| [Retain verified history across native host requests](sprints/2026-09-26/overnight.md) | Sol: mini_receiver, replay_session, client_session; Astra: root | Implement exact-prefix session and reusable client transport, then native authority/recovery/verifier-replacement tests. |
 | [Define the September 26 programmable nexus and its shared contracts](sprints/2026-09-19/cycle-1-integration-checkpoint.md) | Astra: root; component implementation/review lanes completed | Choose the next concrete hosted experience cycle around the measured core latency and real process lifecycle: persistent verified host, hosted Hermes/tool supervisor, credential service and metering through the same DREGG resource authority. Keep owned-node participation and a selected Solana outcome explicit. |
 
 ## Backlog
@@ -25,11 +29,8 @@ Latest work-record update: **2026-09-20T00:00:01.955Z**. This is recorded projec
 | [Make full request and actual-pre binding mandatory for generic effects](work/records.md#w-effect-admission) | Unassigned | Finish pending consumer modules and full-root checks without weakening the mandatory exact-parent/request/source contract. |
 | [Retain factory deployment at its actual history boundary](work/records.md#w-factory-history) | Unassigned | Retain the unfinished Bread work and evidence as historical maintenance/reference; it is not a prerequisite for the New World implementation in Mini. |
 | [Custody and meter scoped provider requests](sprints/2026-09-19/core-orientation.md) | Unassigned | After the core/resource contract is agreed, review preserved WIP against it and reassign a concrete receiving path before resuming this implementation. |
-| [Durable hosted grain control and authenticated entrance](sprints/2026-09-19/core-orientation.md) | Unassigned | After the core/resource contract is agreed, review preserved WIP against it and reassign a concrete receiving path before resuming this implementation. |
-| [Host upstream Hermes with persistent confined execution](sprints/2026-09-19/core-orientation.md) | Unassigned | After the core/resource contract is agreed, review preserved WIP against it and reassign a concrete receiving path before resuming this implementation. |
 | [Expose canonical resource programming to Hermes](sprints/2026-09-19/core-orientation.md) | Unassigned | After the core/resource contract is agreed, review preserved WIP against it and reassign a concrete receiving path before resuming this implementation. |
 | [Make actual Hermes/SDK startup avoid unused Lean initialization](work/records.md#w-hermes-startup) | Unassigned | Retain the unfinished Bread work and evidence as historical maintenance/reference; it is not a prerequisite for the New World implementation in Mini. |
-| [Retain verified history across native host requests](sprints/2026-09-19/next-cycle-host-session.md) | Unassigned | Agree and implement the verified-session and pinned-verifier contract, then exercise unchanged-image reuse and exact-prefix suffix replay through persistent stdio. |
 | [Inventory existing provider job and penalty machinery](work/records.md#w-provider-path) | Unassigned | Choose the eligible public job and its exact result checker, provider obligation and penalty-record consumer. |
 | [Choose and close one economic operation consumed by a nexus resource](work/records.md#w-solana-utility) | Unassigned | Choose exact economic operation, real asset/cluster, custody and exit terms before a live transaction. |
 
