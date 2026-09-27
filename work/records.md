@@ -1048,15 +1048,15 @@ Report which claims/work items need reinspection when source bytes change, with 
 
 **Run shared SPK applications through Mini, browsers, agents and fn**
 
-Status: **active** · Owner: Astra: root; Sol: spk_compatibility, linux_hosting, client_session, mini_app_contract, fn_mini_review, codec_stack, hermes_path · Updated: 2026-09-27T03:20:15.324Z
+Status: **active** · Owner: Astra: root; Sol: spk_compatibility, linux_hosting, client_session, mini_app_contract, fn_mini_review, codec_stack, hermes_path · Updated: 2026-09-27T03:23:06.758Z
 
 Integrate real third-party packaged app execution and persistent state with Mini lifecycle/current grants, hosted Hermes, direct commands, and selected version publication over semi-untrusted fn.
 
-**Next:** Qualify bounded SPK parser and private real app launch; repair composite birth lookup against copied Store; finish Mini application/session admission, then connect physical host/RPC and selected fn release.
+**Next:** Qualify cgroup-bounded SPK ingestion and private real app launch; repair composite birth lookup against copied Store; finish Mini application/session admission, then connect physical host/RPC and selected fn release.
 
 **Done when:** A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.
 
-**Evidence so far:** Bread028bc0271 leaf parser and Mini c6c13ca typed RPC adapter pushed; Mini7c2fa64 app lifecycle/birth source compiles. Hosted unforked Hermes deterministic9301 created/read/published a Mini resource; restart lookup refused composite birth and is under source-matched repair. Linux sandbox/quota/typed extraction passed isolated probes; no packaged executable, real model or joined browser/API journey yet.
+**Evidence so far:** Bread581911535 bounded leaf parser and Mini c6c13ca typed RPC adapter pushed; Mini7c2fa64 app lifecycle/birth source compiles. Hosted unforked Hermes deterministic9301 created/read/published a Mini resource; restart lookup refused composite birth and is under source-matched repair. Linux sandbox/quota/typed extraction passed isolated probes; no packaged executable, real model or joined browser/API journey yet.
 
 [Task brief](../sprints/2026-09-26/spk-platform-cycle.md)
 

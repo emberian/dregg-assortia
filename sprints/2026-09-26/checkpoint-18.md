@@ -36,8 +36,9 @@ path.
 The package-parser audit found concrete untrusted-input gaps: a tiny composite
 list can request very many zero-width descriptors, directory pointers can
 cycle through recursive archive decoding, and the XZ library buffers a whole
-decoded block before the parser's output limit applies. Bread's parser lane is
-repairing the structural bounds. Physical package ingestion needs a bounded
+decoded block before the parser's output limit applies. Bread `581911535`
+repaired the structural bounds; 20 focused tests and both real signed packages
+passed. Physical package ingestion still needs a bounded
 process memory and time budget even after that repair. The reproducer and line
 references are in `/tmp/spk-parser-audit/EVIDENCE.md` locally. Mini's new
 `native/spk-host` and `deploy/spk-host` source is under review, with an
