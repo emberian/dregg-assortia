@@ -3975,7 +3975,7 @@
       "status": "active",
       "owner": "Astra: root; Sol: build_native, hermes_path, linux_hosting, fn_mini_review, codec_stack, runtime_review, mini_app_contract, client_session, spk_compatibility, fn_contracts, shared_resource_tools",
       "reviewer": "Astra: root",
-      "updatedAt": "2026-09-27T09:42:32Z",
+      "updatedAt": "2026-09-27T09:54:07Z",
       "priority": 1,
       "sources": [
         "urn:dregg:assortia:S-SPK-CYCLE-0927",
@@ -4001,7 +4001,8 @@
         "urn:dregg:assortia:S-SPK-CHECKPOINT34-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT35-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT36-0927",
-        "urn:dregg:assortia:S-SPK-CHECKPOINT37-0927"
+        "urn:dregg:assortia:S-SPK-CHECKPOINT37-0927",
+        "urn:dregg:assortia:S-SPK-CHECKPOINT38-0927"
       ],
       "advances": [
         "urn:dregg:assortia:E-WORLD",
@@ -4040,8 +4041,8 @@
         "Selected app or data versions travel through fn with explicit publication and separate receiver install/import authority, without private-prefix disclosure."
       ],
       "closure": "A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.",
-      "nextAction": "Qualify24ecf8a Host and aed69d2 client; complete sharing and fresh interrupted-birth recovery. Finish source-owned BEGIN-v2 authoring and actual GitWeb install/start/completion; join independently pinned entrances, two controllers and asynchronous metered Hermes dispatch with event21. Then exercise restart, revocation, selected fn publication and real-model deployment.",
-      "progress": "Qualified589b62c Linux Host16610414 passed268 Lean modules, native link and exact artifact readback; evidence committed902864c. Private namespace/completion authoring40–45 and broker restrictions committed24ecf8a, next native build pending. Shared-resource controller catalog/session selection committeddb3b187 with focused tests; actual second-controller acceptance pending. Positive-rate sharing found source-codec/operator-socket routing bug, fixedaed69d2 with isolated regression; no share submission occurred. Resident completion source join is reviewed/tested but no integrated INSTALL/START or HTTP service yet. Fresh actual interrupted-birth fixture is being bootstrapped. Fixed fnGateway remains required; complete shared service and real-model run remain outstanding."
+      "nextAction": "Diagnose exact sharing admissionrefusal; finish coherent interrupted-birth bootstrap. Qualify complete lifecycle authoring includingclaim52/53 and revisedfn43; run actualINSTALL/START/completion, multiple participant entrances and source-admitted event21 agentAPI. Then exercise restart/revocation/selectedfn and real-model deployedjourneys.",
+      "progress": "Qualified24ecf8a Linux Host5c31583b passed272 Lean modules, link and exact readback; compatibleaed69d2 client passed65 tests, evidencef42984e. Resident completion-before-HTTP source committedd34abc4; current BEGIN plans/routescfca520+d874de7 and claimpland1e308d narrow-green but later nativecut/physicaljourney pending. Recipient-only issue lookup3761f74 avoids owner custody copy. Positive-fee sharingr4 reachedop28 and received definite admissionrefusal; no ticketissued, exactfailure under diagnosis. Two-controller installedapp, actual recovery and real-model deployment remain incomplete."
     },
     {
       "@id": "urn:dregg:assortia:S-SPK-GROUNDING1-0927",
@@ -4295,6 +4296,17 @@
       "recordedDate": "2026-09-27",
       "evidenceKind": "qualified-native-build-committed-source-and-integration-findings",
       "limitations": "Private-route native build, shared app deployment, actual recovery and real-model acceptance remain pending."
+    },
+    {
+      "@id": "urn:dregg:assortia:S-SPK-CHECKPOINT38-0927",
+      "@type": "Source",
+      "label": "Operator Host qualified and sharing reaches admission",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-26/checkpoint-38.md",
+      "sha256": "0b9b455cee038384129fd458489e28519c8ebdce1e9e6d31dff05560aedf33bb",
+      "recordedDate": "2026-09-27",
+      "evidenceKind": "qualified-native-build-source-and-admission-refusal",
+      "limitations": "Sharing refused; later lifecycle routes, integrated resident service and real-model journey remain pending."
     }
   ]
 }

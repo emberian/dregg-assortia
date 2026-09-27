@@ -2,7 +2,7 @@
 
 > Generated from `graph.jsonld` by `python3 hub.py render`. Edit the graph, not this file.
 
-Latest work-record update: **2026-09-27T09:42:32Z**. This is recorded project state, not a live process monitor.
+Latest work-record update: **2026-09-27T09:54:07Z**. This is recorded project state, not a live process monitor.
 
 [New contributor](contributing/README.md) · [Project map](MAP.md) · [Detailed work records](work/records.md)
 
@@ -20,7 +20,7 @@ Latest work-record update: **2026-09-27T09:42:32Z**. This is recorded project st
 | [Keep grants valid across policy source revisions](sprints/2026-09-19/cycle-1-integration-checkpoint.md) | Astra: root; component implementation/review lanes completed | Implement and exercise generation-wide native revocation and the delegated-grant two-replacement case against the same source-owned receiving path; preserve the completed per-capability/current-law regressions. |
 | [Retain verified history across native host requests](sprints/2026-09-26/checkpoint-17.md) | Sol: mini_receiver, fn_mini_review, fn_reply_profile, build_native; review runtime_review; Astra: root | Implement exact shared-command-byte optimization, prove generalized equality, benchmark source-matched native image; preserve current authority and post-CAS readback. |
 | [Define the September 26 programmable nexus and its shared contracts](sprints/2026-09-19/cycle-1-integration-checkpoint.md) | Astra: root; component implementation/review lanes completed | Converge the SPK platform cycle: packaged apps provide shared human views and agent APIs under Mini authority; retain separate contributed-hosting and Solana obligations. |
-| [Run shared SPK applications through Mini, browsers, agents and fn](sprints/2026-09-26/spk-platform-cycle.md) | Astra: root; Sol: build_native, hermes_path, linux_hosting, fn_mini_review, codec_stack, runtime_review, mini_app_contract, client_session, spk_compatibility, fn_contracts, shared_resource_tools / Astra: root | Qualify24ecf8a Host and aed69d2 client; complete sharing and fresh interrupted-birth recovery. Finish source-owned BEGIN-v2 authoring and actual GitWeb install/start/completion; join independently pinned entrances, two controllers and asynchronous metered Hermes dispatch with event21. Then exercise restart, revocation, selected fn publication and real-model deployment. |
+| [Run shared SPK applications through Mini, browsers, agents and fn](sprints/2026-09-26/spk-platform-cycle.md) | Astra: root; Sol: build_native, hermes_path, linux_hosting, fn_mini_review, codec_stack, runtime_review, mini_app_contract, client_session, spk_compatibility, fn_contracts, shared_resource_tools / Astra: root | Diagnose exact sharing admissionrefusal; finish coherent interrupted-birth bootstrap. Qualify complete lifecycle authoring includingclaim52/53 and revisedfn43; run actualINSTALL/START/completion, multiple participant entrances and source-admitted event21 agentAPI. Then exercise restart/revocation/selectedfn and real-model deployedjourneys. |
 
 ## Backlog
 
