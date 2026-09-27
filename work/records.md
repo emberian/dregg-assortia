@@ -1051,15 +1051,15 @@ Report which claims/work items need reinspection when source bytes change, with 
 
 **Run shared SPK applications through Mini, browsers, agents and fn**
 
-Status: **active** · Owner: Astra: root; Sol: client_session, agent_api_host, fn_mini_review, fn_contracts, runtime_review, mini_app_contract, build_native · Updated: 2026-09-27T15:38:16.195Z
+Status: **active** · Owner: Astra: root; Sol: client_session, agent_api_host, fn_mini_review, fn_contracts, runtime_review, mini_app_contract, build_native · Updated: 2026-09-27T15:50:58.174Z
 
 Integrate real third-party packaged app execution and persistent state with Mini lifecycle/current grants, hosted Hermes, direct commands, and selected version publication over semi-untrusted fn.
 
-**Next:** Qualify2649 Host and exactd38c782 SPK ELF, then run same-Store integrated INSTALL/create START. Resolve retained event22 fee inspection without repeating reserve/preparation. Finish STOP BEGIN/assembly plus under-lock fence and source Continue; finish detached-signature op79 paid dispatch and same-Store app-observe grants. Preserve failed run evidence. Audit private replay timing before selecting a semantics-preserving optimization; keep two Lean seats maximum.
+**Next:** Run fresh integrated base/INSTALL/create with certified2649 Mini and bba0a7a SPK host. Observe existing event22 continuation handle; never repeat marked submit. Finish and qualify next Host containing capability and paid-ingress inspectors, then issue same-Store observe grants and paid agent dispatch. Review STOP BEGIN/assembly and implement Fenced-only recovery under lock plus native STOP→Continue. Trace measured replay derivation costs before optimizing; preserve full two-user/Hermes/fn journey scope.
 
 **Done when:** A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.
 
-**Evidence so far:** Checkpoint62: callable source-bound START committed d38c782 with 34/34 Linux tests and strict Clippy; fresh STOP claim025bffa and resident-config helperdc2272c reviewed. Native2649 has351/351 Lean passes; link remains active. Event22r3 terminal before submission; exact prepared ingress retained, corrected fee inspector under bounded investigation. Detached payer signing is required for the controller/resident custody split. No integrated GitWeb or actual-model journey yet.
+**Evidence so far:** Checkpoint63: exact2649 native Host certified; bba0a7a SPK ELF reaches resident-run after missing CLI registration fixed. Fresh STOP fence committed5af52bd. Source capability inspection and observe-only delegation continuation543e85a pass source/component checks but await successor Host and native run. Exact retained event22 fee517 decoded; one-shot continuation unit active, no ticket outcome yet. Detached payer/controller work has component greens; strict paid-ingress source inspector and resident delivery still under construction.
 
 [Task brief](../sprints/2026-09-26/spk-platform-cycle.md)
 
@@ -1119,6 +1119,7 @@ Integrate real third-party packaged app execution and persistent state with Mini
 - [S-SPK-CHECKPOINT60-0927 — Deployed birth profile repair and native dispatch convergence](../sprints/2026-09-26/checkpoint-60.md)
 - [S-SPK-CHECKPOINT61-0927 — Measured warm reads and same-Store integration work](../sprints/2026-09-26/checkpoint-61.md)
 - [S-SPK-CHECKPOINT62-0927 — Callable START, fresh STOP custody and integration repairs](../sprints/2026-09-26/checkpoint-62.md)
+- [S-SPK-CHECKPOINT63-0927 — Native binaries and source-derived delegation](../sprints/2026-09-26/checkpoint-63.md)
 
 **Write scope:** minidregg/Kernel/ApplicationLifecycle* and ApplicationSpkLaunchDescriptor.lean (mini_app_contract); minidregg/native/spk-host resident/RPC and dedicated physical evidence (agent_api_host); minidregg/native/spk-host agent custody/server (agent_api_host); minidregg/native/grain-runtime and dedicated controller evidence (runtime_review); isolated source-matched native Host builds and explicit proof repairs (build_native); minidregg/Kernel/Fn* receiving and Host/FnConsumerFrontierPlan.lean (fn_mini_review); persistent agent-route authorization design (runtime_review); coordinated Host/Main.lean and NativeHostReplay.lean hooks; root owns integration order and Git; minidregg/scripts/spk-platform source-authored fixture enrollment/birth continuations (spk_compatibility); minidregg/Host/ApplicationLifecycleLaunchAuthoring*.lean and coordinated Main ops66–71 after lower API freeze (fn_mini_review); minidregg/Kernel/NativeHostContext.lean canonical image-boundary byte reuse and general equivalence proof (client_session); actual Replay consumers coordinated with mini_app_contract
 
