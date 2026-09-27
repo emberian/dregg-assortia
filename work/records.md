@@ -399,7 +399,7 @@ World deployment currently mutates volatile registries; historical paths either 
 
 **Operate actual Mini resources through fn correspondence and separate gateways**
 
-Status: **active** · Owner: Sol: fn_contracts; Astra: root · Updated: 2026-09-27T04:55:50.887Z
+Status: **active** · Owner: Sol: fn_contracts; Astra: root · Updated: 2026-09-27T05:00:44.143Z
 
 Converge existing fn consumer lineage and improve its authority, fresh setup, general reply profiles and distributed hosted receiving path.
 
@@ -407,7 +407,7 @@ Converge existing fn consumer lineage and improve its authority, fresh setup, ge
 
 **Done when:** Real Mini-resource operation and reply travel through independently configured fn nodes with separately pinned application authorities; durable Mini processing precedes fn ACK, direct forged consumer input is refused, exact retries and uncertain outcomes reconcile, and a documented user entrance uses this path.
 
-**Evidence so far:** Native own-R accept/restart/repeat/ACK and equal-position no-op passed on fresh private Store. Exact owner-release codec and current-key signature component narrowly checked; receiving/replay remains construction. Selected-release Signature/Ingress/Admission have narrow source checks; new durable receiver is under construction. No native route or selected-release transport run is claimed.
+**Evidence so far:** Native own-R accept/restart/repeat/ACK and equal-position no-op passed on fresh private Store. Exact owner-release codec and current-key signature component narrowly checked; receiving/replay remains construction. Selected-release Signature/Ingress/Admission have narrow source checks; new durable receiver is under construction. No native route or selected-release transport run is claimed. Mini b6373d7 now commits narrow-checked selected-release admission/receiver; dedicated native routing and replay are being integrated.
 
 [Task brief](../sprints/2026-09-26/checkpoint-17.md)
 
@@ -438,6 +438,7 @@ Converge existing fn consumer lineage and improve its authority, fresh setup, ge
 - [S-CHECKPOINT16-0926 — Native provider settlement, own-R restart failure and continued kernel/hosting construction](../sprints/2026-09-26/checkpoint-16.md)
 - [S-CHECKPOINT17-0926 — Native restart, terminal, sequential metering and resource birth progress](../sprints/2026-09-26/checkpoint-17.md)
 - [S-PARALLEL-JOURNEYS-0927 — Parallel platform journeys and independent app-issued authority requirement](../sprints/2026-09-26/parallel-journeys.md)
+- [S-SPK-CHECKPOINT20-0927 — Parallel journeys and checked receiving core checkpoint](../sprints/2026-09-26/checkpoint-20.md)
 
 **Write scope:** minidregg/Kernel/Fn*.lean; minidregg/Host/Json.lean; minidregg/scripts/fn-e1e2/; minidregg/Compiler/FnEvidenceCodec.lean; minidregg/Host/Main.lean; minidregg/Host/GrainOriginSource.lean; minidregg/native/resource-client/; minidregg/Host/GrainOriginPreparation.lean; minidregg/docs/FN-PUBLICATION-DISCLOSURE.md
 
@@ -1049,7 +1050,7 @@ Report which claims/work items need reinspection when source bytes change, with 
 
 **Run shared SPK applications through Mini, browsers, agents and fn**
 
-Status: **active** · Owner: Astra: root; Sol: build_native, hermes_path, linux_hosting, client_session, fn_mini_review, codec_stack, runtime_review · Updated: 2026-09-27T04:55:50.887Z
+Status: **active** · Owner: Astra: root; Sol: build_native, hermes_path, linux_hosting, client_session, fn_mini_review, codec_stack, runtime_review · Updated: 2026-09-27T05:00:44.142Z
 
 Integrate real third-party packaged app execution and persistent state with Mini lifecycle/current grants, hosted Hermes, direct commands, and selected version publication over semi-untrusted fn.
 
@@ -1057,7 +1058,7 @@ Integrate real third-party packaged app execution and persistent state with Mini
 
 **Done when:** A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.
 
-**Evidence so far:** Bread581911535 parser and Mini f70aa4d SPK host/RPC qualified an actual signed Simple Todos create plus persisted continueCommand HTTP200 in isolated bounded Linux units. Mini95ee02c repaired historical composite birth lookup on a copied Store; Mini42e5705 and 1808b0b add narrow-compiled session/enrollment and candidate dispatch source; Mini6f945ab exposes bounded raw Sandstorm ViewInfo roles. Dispatch remains unauthorized; installed role resolution, native special receiver, public browser/API, real-model Hermes and selected fn release remain open. Mini2c34802 corrects dispatch witness separation; Mini2e60a9c typed application/session authoring passes a narrow executable check; Mini60f0b76 preserves signed GitWeb selection evidence. Native build/private acceptance and GitWeb runtime qualification remain in progress. Self-owned enrollment cannot establish permission ceilings: app-issued authority is required.
+**Evidence so far:** Bread581911535 parser and Mini f70aa4d SPK host/RPC qualified an actual signed Simple Todos create plus persisted continueCommand HTTP200 in isolated bounded Linux units. Mini95ee02c repaired historical composite birth lookup on a copied Store; Mini42e5705 and 1808b0b add narrow-compiled session/enrollment and candidate dispatch source; Mini6f945ab exposes bounded raw Sandstorm ViewInfo roles. Dispatch remains unauthorized; installed role resolution, native special receiver, public browser/API, real-model Hermes and selected fn release remain open. Mini2c34802 corrects dispatch witness separation; Mini2e60a9c typed application/session authoring passes a narrow executable check; Mini60f0b76 preserves signed GitWeb selection evidence. Native build/private acceptance and GitWeb runtime qualification remain in progress. Self-owned enrollment cannot establish permission ceilings: app-issued authority is required. Checkpoint20 pins committed permission schema, application fixture, bounded provider iterations and terminal probe; app shares will survive normal wake/rebind while requests retain current generation fences.
 
 [Task brief](../sprints/2026-09-26/spk-platform-cycle.md)
 
@@ -1073,6 +1074,7 @@ Integrate real third-party packaged app execution and persistent state with Mini
 - [S-SPK-CHECKPOINT18-0927 — SPK package, RPC, Mini lifecycle and hosted birth checkpoint](../sprints/2026-09-26/checkpoint-18.md)
 - [S-SPK-CHECKPOINT19-0927 — Real Simple Todos create/wake and Mini application-contract checkpoint](../sprints/2026-09-26/checkpoint-19.md)
 - [S-PARALLEL-JOURNEYS-0927 — Parallel platform journeys and independent app-issued authority requirement](../sprints/2026-09-26/parallel-journeys.md)
+- [S-SPK-CHECKPOINT20-0927 — Parallel journeys and checked receiving core checkpoint](../sprints/2026-09-26/checkpoint-20.md)
 
 **Write scope:** minidregg/native/spk-host and dedicated GitWeb qualification evidence (linux_hosting); minidregg/Kernel/ApplicationPermissionSchema.lean (client_session); minidregg/Kernel/ApplicationDispatchAuthority*.lean (fn_mini_review); minidregg/Kernel/ApplicationLifecycle*.lean (codec_stack); minidregg/native/resource-client/application-acceptance.sh and dedicated evidence (hermes_path); isolated source-matched native Host and helper build (build_native); minidregg/native/grain-runtime bounded provider profile and coordinated caller (runtime_review); shared NativeHost/Replay/Host convergence and dregg-assortia graph/handoff (root); root commits all lanes
 
