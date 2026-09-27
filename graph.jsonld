@@ -3975,7 +3975,7 @@
       "status": "active",
       "owner": "Astra: root; Sol: client_session, agent_api_host, fn_mini_review, fn_contracts, runtime_review, mini_app_contract, build_native",
       "reviewer": "Astra: root",
-      "updatedAt": "2026-09-27T15:25:13.519Z",
+      "updatedAt": "2026-09-27T15:38:16.195Z",
       "priority": 1,
       "sources": [
         "urn:dregg:assortia:S-SPK-CYCLE-0927",
@@ -4025,7 +4025,8 @@
         "urn:dregg:assortia:S-SPK-CHECKPOINT58-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT59-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT60-0927",
-        "urn:dregg:assortia:S-SPK-CHECKPOINT61-0927"
+        "urn:dregg:assortia:S-SPK-CHECKPOINT61-0927",
+        "urn:dregg:assortia:S-SPK-CHECKPOINT62-0927"
       ],
       "advances": [
         "urn:dregg:assortia:E-WORLD",
@@ -4060,8 +4061,8 @@
         "Selected app or data versions travel through fn with explicit publication and separate receiver install/import authority, without private-prefix disclosure."
       ],
       "closure": "A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.",
-      "nextAction": "Qualify exact2649 Host and retry fresh integrated GitWeb base; finish event22 ticket before native event27/reserve/paid chain. Complete resident START recovery, typed fresh STOP, and causal v3 controller/resident wiring. Persvati build r2 is terminal environment failure: package re-cloning removed Mathlib OLeans; matching package sources/revisions and copied independent build artifacts were verified, then full r3 launched: minidregg-2649f49-host-r3.service, invocation b16899141d5f43b696d9c8ff51aa89a4, log /home/ember/build/minidregg-2649f49-evidence/run-r3.log. Preserve failed r1/r2 evidence. Event22 hbox unit mini-event22-r3-client-session.service remains active with reserve17 accepted, no ticket yet. Measure warm-session queries separately and avoid redundant cold replay in future fixture routine reads without removing cold restart gates.",
-      "progress": "Checkpoint61: exact2649 successor build compiling after verified dependency-cache repair. Unmodified f461 persistent signed query measured86.62s first request,0.73/0.96s same-image repeats with identical output and unchanged copied Store. Future fixture9ccdea4 reuses sessions while retaining restart gates. Event22 r3 has reserve17 and source request; no ticket yet. Source-bound START/recovery and causal controller/resident v3 wiring remain in progress; integrated agent app-observe delegation gap is being addressed."
+      "nextAction": "Qualify2649 Host and exactd38c782 SPK ELF, then run same-Store integrated INSTALL/create START. Resolve retained event22 fee inspection without repeating reserve/preparation. Finish STOP BEGIN/assembly plus under-lock fence and source Continue; finish detached-signature op79 paid dispatch and same-Store app-observe grants. Preserve failed run evidence. Audit private replay timing before selecting a semantics-preserving optimization; keep two Lean seats maximum.",
+      "progress": "Checkpoint62: callable source-bound START committed d38c782 with 34/34 Linux tests and strict Clippy; fresh STOP claim025bffa and resident-config helperdc2272c reviewed. Native2649 has351/351 Lean passes; link remains active. Event22r3 terminal before submission; exact prepared ingress retained, corrected fee inspector under bounded investigation. Detached payer signing is required for the controller/resident custody split. No integrated GitWeb or actual-model journey yet."
     },
     {
       "@id": "urn:dregg:assortia:S-SPK-GROUNDING1-0927",
@@ -4579,6 +4580,17 @@
       "recordedDate": "2026-09-27",
       "evidenceKind": "measured-persistent-query-and-reviewed-fixture-source",
       "limitations": "No integrated deployment; first verification remains expensive, exact successor build and physical/app/agent journeys remain incomplete."
+    },
+    {
+      "@id": "urn:dregg:assortia:S-SPK-CHECKPOINT62-0927",
+      "@type": "Source",
+      "label": "Callable START, fresh STOP custody and integration repairs",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-26/checkpoint-62.md",
+      "sha256": "08cf11b6c174463817bd87816528fb534e716c6f3df8611f49ef04f8c837a6ff",
+      "recordedDate": "2026-09-27",
+      "evidenceKind": "reviewed-source-linux-component-checks-and-live-native-build-observation",
+      "limitations": "No integrated START execution, paid agent dispatch or actual-model Hermes. Native successor linking remains pending; sharing fee inspector unresolved; private replay timing provisional."
     }
   ]
 }
