@@ -3970,14 +3970,15 @@
       "label": "Run shared SPK applications through Mini, browsers, agents and fn",
       "description": "Integrate real third-party packaged app execution and persistent state with Mini lifecycle/current grants, hosted Hermes, direct commands, and selected version publication over semi-untrusted fn.",
       "status": "active",
-      "owner": "Astra: root; Sol: spk_compatibility, linux_hosting, client_session, mini_app_contract, fn_mini_review, codec_stack, hermes_path",
+      "owner": "Astra: root; Sol: spk_compatibility, spk_app_probe, linux_hosting, client_session, mini_app_contract, fn_mini_review, codec_stack, hermes_path",
       "reviewer": "Astra: root",
-      "updatedAt": "2026-09-27T03:23:06.758Z",
+      "updatedAt": "2026-09-27T04:30:39Z",
       "priority": 1,
       "sources": [
         "urn:dregg:assortia:S-SPK-CYCLE-0927",
         "urn:dregg:assortia:S-SPK-GROUNDING1-0927",
-        "urn:dregg:assortia:S-SPK-CHECKPOINT18-0927"
+        "urn:dregg:assortia:S-SPK-CHECKPOINT18-0927",
+        "urn:dregg:assortia:S-SPK-CHECKPOINT19-0927"
       ],
       "advances": [
         "urn:dregg:assortia:E-WORLD",
@@ -4008,8 +4009,8 @@
         "Selected app or data versions travel through fn with explicit publication and separate receiver install/import authority, without private-prefix disclosure."
       ],
       "closure": "A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.",
-      "nextAction": "Qualify cgroup-bounded SPK ingestion and private real app launch; repair composite birth lookup against copied Store; finish Mini application/session admission, then connect physical host/RPC and selected fn release.",
-      "progress": "Bread581911535 bounded leaf parser and Mini c6c13ca typed RPC adapter pushed; Mini7c2fa64 app lifecycle/birth source compiles. Hosted unforked Hermes deterministic9301 created/read/published a Mini resource; restart lookup refused composite birth and is under source-matched repair. Linux sandbox/quota/typed extraction passed isolated probes; no packaged executable, real model or joined browser/API journey yet."
+      "nextAction": "Finish source-matched typed app/session birth and a two-participant private Store; implement current-read-guarded Mini dispatch and exact roles, then join the qualified SPK process/RPC to browser, Hermes and selected fn release.",
+      "progress": "Bread581911535 parser and Mini f70aa4d SPK host/RPC qualified an actual signed Simple Todos create plus persisted continueCommand HTTP200 in isolated bounded Linux units. Mini95ee02c repaired historical composite birth lookup on a copied Store; Mini42e5705 and 1808b0b add narrow-compiled session/enrollment and candidate dispatch source; Mini6f945ab exposes bounded raw Sandstorm ViewInfo roles. Dispatch remains unauthorized; installed role resolution, native special receiver, public browser/API, real-model Hermes and selected fn release remain open."
     },
     {
       "@id": "urn:dregg:assortia:S-SPK-GROUNDING1-0927",
@@ -4032,6 +4033,17 @@
       "recordedDate": "2026-09-27",
       "evidenceKind": "component-source-and-isolated-physical-hosted-run-with-restart-failure",
       "limitations": "No real SPK process or real model; separate fixtures do not prove integrated application platform. Hosted birth restart lookup currently refuses."
+    },
+    {
+      "@id": "urn:dregg:assortia:S-SPK-CHECKPOINT19-0927",
+      "@type": "Source",
+      "label": "Real Simple Todos create/wake and Mini application-contract checkpoint",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-26/checkpoint-19.md",
+      "sha256": "785dcc19314a31bce6eee7e2fd3a1e495af791cef8db3b4ee19f174af9a98c58",
+      "recordedDate": "2026-09-27",
+      "evidenceKind": "bounded-real-spk-process-and-candidate-mini-kernel-source",
+      "limitations": "No Mini app admission, public listener, role-resolved dispatch, joined browser/Hermes path, selected fn release or real-model run."
     }
   ]
 }
