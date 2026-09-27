@@ -1051,7 +1051,7 @@ Report which claims/work items need reinspection when source bytes change, with 
 
 **Run shared SPK applications through Mini, browsers, agents and fn**
 
-Status: **active** · Owner: Astra: root; Sol: build_native, hermes_path, linux_hosting, agent_api_host, fn_mini_review, runtime_review, mini_app_contract · Updated: 2026-09-27T12:48:40Z
+Status: **active** · Owner: Astra: root; Sol: build_native, hermes_path, agent_api_host, fn_mini_review, runtime_review, mini_app_contract · Updated: 2026-09-27T12:55:38Z
 
 Integrate real third-party packaged app execution and persistent state with Mini lifecycle/current grants, hosted Hermes, direct commands, and selected version publication over semi-untrusted fn.
 
@@ -1059,7 +1059,7 @@ Integrate real third-party packaged app execution and persistent state with Mini
 
 **Done when:** A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.
 
-**Evidence so far:** Checkpoint48: event27 replay3529f70, fn frontier receiving bd9d984, Host JSON v2 routes6f1163b and resident identity pinsc2f8bce committed. Native r5 completed Lean then failed object-index sorting; reviewed recoveryea67b95 is running as r6. Integrated lifecycle, persistent dispatch, actual fixture births and deployed journeys remain unfinished.
+**Evidence so far:** Checkpoint49: reviewed lower lifecycle37db8f7, fresh participant bootstrapf8bc6bf and grant observerdeba6e4 pushed. Native recoveryr8 active after preserved guard/PATH refusals. Upper Verified/receivers, physical integration and actual same-app journeys remain active.
 
 [Task brief](../sprints/2026-09-26/spk-platform-cycle.md)
 
@@ -1105,8 +1105,9 @@ Integrate real third-party packaged app execution and persistent state with Mini
 - [S-SPK-CHECKPOINT46-0927 — Compiled source contracts and launch authorization review](../sprints/2026-09-26/checkpoint-46.md)
 - [S-SPK-CHECKPOINT47-0927 — Persistent volume custody and grant admission components](../sprints/2026-09-26/checkpoint-47.md)
 - [S-SPK-CHECKPOINT48-0927 — Receiving routes and guarded native build recovery](../sprints/2026-09-26/checkpoint-48.md)
+- [S-SPK-CHECKPOINT49-0927 — Launch lifecycle lower source and fresh participant bootstrap](../sprints/2026-09-26/checkpoint-49.md)
 
-**Write scope:** minidregg/Kernel/ApplicationLifecycle* and ApplicationSpkLaunchDescriptor.lean (mini_app_contract); minidregg/native/spk-host resident/RPC and dedicated physical evidence (linux_hosting); minidregg/native/spk-host agent custody/server (agent_api_host); minidregg/native/grain-runtime and dedicated controller evidence (hermes_path); isolated source-matched native Host builds and explicit proof repairs (build_native); minidregg/Kernel/Fn* receiving and Host/FnConsumerFrontierPlan.lean (fn_mini_review); persistent agent-route authorization design (runtime_review); coordinated Host/Main.lean and NativeHostReplay.lean hooks; root owns integration order and Git; minidregg/scripts/spk-platform source-authored fixture enrollment/birth continuations (spk_compatibility); minidregg/Host/ApplicationLifecycleLaunchAuthoring*.lean and coordinated Main ops66–71 after lower API freeze (fn_mini_review); minidregg/Kernel/NativeHostContext.lean canonical image-boundary byte reuse and general equivalence proof (client_session); actual Replay consumers coordinated with mini_app_contract
+**Write scope:** minidregg/Kernel/ApplicationLifecycle* and ApplicationSpkLaunchDescriptor.lean (mini_app_contract); minidregg/native/spk-host resident/RPC and dedicated physical evidence (agent_api_host); minidregg/native/spk-host agent custody/server (agent_api_host); minidregg/native/grain-runtime and dedicated controller evidence (hermes_path); isolated source-matched native Host builds and explicit proof repairs (build_native); minidregg/Kernel/Fn* receiving and Host/FnConsumerFrontierPlan.lean (fn_mini_review); persistent agent-route authorization design (runtime_review); coordinated Host/Main.lean and NativeHostReplay.lean hooks; root owns integration order and Git; minidregg/scripts/spk-platform source-authored fixture enrollment/birth continuations (spk_compatibility); minidregg/Host/ApplicationLifecycleLaunchAuthoring*.lean and coordinated Main ops66–71 after lower API freeze (fn_mini_review); minidregg/Kernel/NativeHostContext.lean canonical image-boundary byte reuse and general equivalence proof (client_session); actual Replay consumers coordinated with mini_app_contract
 
 **Acceptance:**
 
