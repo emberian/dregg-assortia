@@ -3975,7 +3975,7 @@
       "status": "active",
       "owner": "Astra: root; Sol: build_native, hermes_path, linux_hosting, fn_mini_review, codec_stack, runtime_review, mini_app_contract, client_session, spk_compatibility, fn_contracts, shared_resource_tools",
       "reviewer": "Astra: root",
-      "updatedAt": "2026-09-27T10:29:13.814Z",
+      "updatedAt": "2026-09-27T10:45:41.111Z",
       "priority": 1,
       "sources": [
         "urn:dregg:assortia:S-SPK-CYCLE-0927",
@@ -4004,7 +4004,8 @@
         "urn:dregg:assortia:S-SPK-CHECKPOINT37-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT38-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT39-0927",
-        "urn:dregg:assortia:S-SPK-CHECKPOINT40-0927"
+        "urn:dregg:assortia:S-SPK-CHECKPOINT40-0927",
+        "urn:dregg:assortia:S-SPK-CHECKPOINT41-0927"
       ],
       "advances": [
         "urn:dregg:assortia:E-WORLD",
@@ -4043,8 +4044,8 @@
         "Selected app or data versions travel through fn with explicit publication and separate receiver install/import authority, without private-prefix disclosure."
       ],
       "closure": "A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.",
-      "nextAction": "Complete source-owned reserve call wrapping and native qualification; join actual SPK INSTALL/START, event22 sharing, human/agent entrances and reviewed fn event-only durability.",
-      "progress": "Checkpoint 40: same-session hard-EOF birth recovery evidenced; grain-backed share source committed; native fn registration exposed zero-write durable preflight gap. Paid API and lifecycle receiving integration remain active."
+      "nextAction": "Qualify exact9746c47 native closure on bounded infrastructure; run INSTALL/START, native sharing and fn claims, then join controller-owned signing and two-participant app delivery.",
+      "progress": "Checkpoint41: guarded claim-only durable repair, event22 replay/Host54–57 and paid-agent reserve client committed; exact9746c47 selected for full native build. Hosted API source tests Linux110/Mac107 passed; physical shared delivery remains pending."
     },
     {
       "@id": "urn:dregg:assortia:S-SPK-GROUNDING1-0927",
@@ -4331,6 +4332,17 @@
       "recordedDate": "2026-09-27",
       "evidenceKind": "native-recovery-source-review-and-durable-refusal-diagnosis",
       "limitations": "Synthetic provider; shared deployed SPK, event22 native admission, fn durability repair and real-model journey remain incomplete."
+    },
+    {
+      "@id": "urn:dregg:assortia:S-SPK-CHECKPOINT41-0927",
+      "@type": "Source",
+      "label": "Coherent native integration build selected",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-26/checkpoint-41.md",
+      "sha256": "78b45a7bc56e1461e69fc041b7fa81fb1c90b9e59c90cc8c881c9b17b0eaa8a6",
+      "recordedDate": "2026-09-27",
+      "evidenceKind": "reviewed-core-and-client-source-with-qualified-component-tests",
+      "limitations": "Selected9746c47 full build and joined native acceptance pending; no deployed shared service or real-model journey."
     }
   ]
 }
