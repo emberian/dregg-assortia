@@ -4023,7 +4023,8 @@
         "urn:dregg:assortia:S-SPK-CHECKPOINT56-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT57-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT58-0927",
-        "urn:dregg:assortia:S-SPK-CHECKPOINT59-0927"
+        "urn:dregg:assortia:S-SPK-CHECKPOINT59-0927",
+        "urn:dregg:assortia:S-SPK-CHECKPOINT60-0927"
       ],
       "advances": [
         "urn:dregg:assortia:E-WORLD",
@@ -4555,6 +4556,17 @@
       "recordedDate": "2026-09-27",
       "evidenceKind": "reviewed-source-component-checks-terminal-fixture-diagnosis-and-live-build-observation",
       "limitations": "No successful concrete base Store or physical INSTALL; successor linking and integrated journeys remain incomplete."
+    },
+    {
+      "@id": "urn:dregg:assortia:S-SPK-CHECKPOINT60-0927",
+      "@type": "Source",
+      "label": "Deployed birth profile repair and native dispatch convergence",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-26/checkpoint-60.md",
+      "sha256": "9099eaf2c8885bab962c407832ecadb670797b10ac035e8db786c0e644c0864f",
+      "recordedDate": "2026-09-27",
+      "evidenceKind": "reviewed-core-fix-executable-source-checks-qualified-client-and-native-timing-evidence",
+      "limitations": "No integrated deployed journey. Exact successor Host and native grant/dispatch, physical lifecycle and actual-model Hermes remain incomplete."
     }
   ]
 }
