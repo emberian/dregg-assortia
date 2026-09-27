@@ -3972,10 +3972,11 @@
       "status": "active",
       "owner": "Astra: root; Sol: spk_compatibility, spk_app_probe, mini_app_contract",
       "reviewer": "Astra: root",
-      "updatedAt": "2026-09-27T02:38:13.220Z",
+      "updatedAt": "2026-09-27T02:44:11.462Z",
       "priority": 1,
       "sources": [
-        "urn:dregg:assortia:S-SPK-CYCLE-0927"
+        "urn:dregg:assortia:S-SPK-CYCLE-0927",
+        "urn:dregg:assortia:S-SPK-GROUNDING1-0927"
       ],
       "advances": [
         "urn:dregg:assortia:E-WORLD",
@@ -3991,7 +3992,7 @@
       "blockedBy": [],
       "brief": "sprints/2026-09-26/spk-platform-cycle.md",
       "writeScope": [
-        "minidregg application resource and physical SPK host (specific files assigned after contract)",
+        "minidregg/Kernel/ApplicationGrain.lean and ApplicationGrainLaws.lean (mini_app_contract); native integration coordinated by root",
         "breadstuffs/sandstorm-bridge/src/manifest.rs (spk_compatibility)",
         "dregg-assortia cycle brief and graph (root)"
       ],
@@ -4003,7 +4004,18 @@
       ],
       "closure": "A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.",
       "nextAction": "Inspect the real Simple Todos package and Wekan UI/API requirements; preserve manifest fidelity; finalize fd3 Cap’n Proto execution and Mini app lifecycle/request contract, then implement and integrate the actual app.",
-      "progress": "Read source: real SPK parser/custody exists. Bread serving has no packaged process; old DreggNet-pub executor substitutes hardcoded notes. Manifest command environment, API metadata, transport fidelity and zero-bit role semantics need work. No app launched."
+      "progress": "Real Simple Todos SPK signature/archive inspected: browser/DDP app, no declared HTTP/powerbox API. Bread48166150e preserves command environments and legacy executable prefix; eight isolated tests pass against an official-schema fixture. Wekan artifact/API inspection and Mini ApplicationGrain core are in progress; no app launched."
+    },
+    {
+      "@id": "urn:dregg:assortia:S-SPK-GROUNDING1-0927",
+      "@type": "Source",
+      "label": "Actual Simple Todos package inspection and official-schema manifest repair",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-26/spk-grounding-01.md",
+      "sha256": "23396c64db29721d0effda5783c8b83ff8f6bea3e0690ba3cbc6c559d6910211",
+      "recordedDate": "2026-09-27",
+      "evidenceKind": "real-signed-package-inspection-official-schema-tests-and-repaired-parser-artifact-check",
+      "limitations": "No application execution; Simple Todos lacks declared external HTTP API. New Mini app law and checked dispatch path remain unfinished."
     }
   ]
 }

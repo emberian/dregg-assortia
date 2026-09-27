@@ -1048,7 +1048,7 @@ Report which claims/work items need reinspection when source bytes change, with 
 
 **Run shared SPK applications through Mini, browsers, agents and fn**
 
-Status: **active** · Owner: Astra: root; Sol: spk_compatibility, spk_app_probe, mini_app_contract · Updated: 2026-09-27T02:38:13.220Z
+Status: **active** · Owner: Astra: root; Sol: spk_compatibility, spk_app_probe, mini_app_contract · Updated: 2026-09-27T02:44:11.462Z
 
 Integrate real third-party packaged app execution and persistent state with Mini lifecycle/current grants, hosted Hermes, direct commands, and selected version publication over semi-untrusted fn.
 
@@ -1056,7 +1056,7 @@ Integrate real third-party packaged app execution and persistent state with Mini
 
 **Done when:** A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.
 
-**Evidence so far:** Read source: real SPK parser/custody exists. Bread serving has no packaged process; old DreggNet-pub executor substitutes hardcoded notes. Manifest command environment, API metadata, transport fidelity and zero-bit role semantics need work. No app launched.
+**Evidence so far:** Real Simple Todos SPK signature/archive inspected: browser/DDP app, no declared HTTP/powerbox API. Bread48166150e preserves command environments and legacy executable prefix; eight isolated tests pass against an official-schema fixture. Wekan artifact/API inspection and Mini ApplicationGrain core are in progress; no app launched.
 
 [Task brief](../sprints/2026-09-26/spk-platform-cycle.md)
 
@@ -1068,8 +1068,9 @@ Integrate real third-party packaged app execution and persistent state with Mini
 **Evidence / provenance:**
 
 - [S-SPK-CYCLE-0927 — SPK application platform goal and grounded integration contract](../sprints/2026-09-26/spk-platform-cycle.md)
+- [S-SPK-GROUNDING1-0927 — Actual Simple Todos package inspection and official-schema manifest repair](../sprints/2026-09-26/spk-grounding-01.md)
 
-**Write scope:** minidregg application resource and physical SPK host (specific files assigned after contract); breadstuffs/sandstorm-bridge/src/manifest.rs (spk_compatibility); dregg-assortia cycle brief and graph (root)
+**Write scope:** minidregg/Kernel/ApplicationGrain.lean and ApplicationGrainLaws.lean (mini_app_contract); native integration coordinated by root; breadstuffs/sandstorm-bridge/src/manifest.rs (spk_compatibility); dregg-assortia cycle brief and graph (root)
 
 **Acceptance:**
 
