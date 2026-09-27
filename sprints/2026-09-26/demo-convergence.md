@@ -38,7 +38,7 @@ runnable acceptance step, not merely a new author/inspect helper.
 
 ## Immediate assignments
 
-- `fn_mini_review`: actual grain-birth latency, measured on the retained r3
+- `fn_mini_review`: actual ordinary resource-birth latency, measured on the retained r3
   request in a private Store copy; repair the dominant source cost with required
   general equivalence and qualify native creation/reopen. No blind live retry.
 - `client_session`: one resumable GitWeb driver using the retained Store and

@@ -3483,7 +3483,7 @@
       "owner": "Astra: root; Sol: fn_mini_review",
       "priority": 1,
       "milestone": "urn:dregg:assortia:M-2026-09-26",
-      "updatedAt": "2026-09-27T21:14:49.080Z",
+      "updatedAt": "2026-09-27T21:59:21.763Z",
       "sources": [
         "urn:dregg:assortia:S-HOST-SESSION-PROPOSAL-0919",
         "urn:dregg:assortia:S-NATIVE-COMPUTATION-0919",
@@ -3507,7 +3507,9 @@
         "urn:dregg:assortia:S-CHECKPOINT17-0926",
         "urn:dregg:assortia:S-SPK-CHECKPOINT65-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT66-0927",
-        "urn:dregg:assortia:S-DEMO-CONVERGENCE-RESUME"
+        "urn:dregg:assortia:S-DEMO-CONVERGENCE-RESUME",
+        "urn:dregg:assortia:S-SPK-CHECKPOINT67-0927",
+        "urn:dregg:assortia:S-SPK-CHECKPOINT67-0927"
       ],
       "motivatedBy": [
         "urn:dregg:assortia:I-CORE-SPRINT",
@@ -3533,8 +3535,8 @@
         "minidregg/Kernel/NativeObservationController.lean",
         "minidregg/scripts/build-native-host.sh"
       ],
-      "progress": "Resumed by user; frozen source hashes revalidated. Identical warm query is subsecond to1s, cold query about87s. Private profiling shows hot special branches rather than generic directory reload dominate. Integrated composite birth exceeded600s client deadline before accepted state; exact lookup absent.",
-      "nextAction": "Profile actual retained composite grain birth on private copy, repair dominant source cost with equivalence and source-matched native creation/reopen measurements.",
+      "progress": "Mini b988513 resident v3 and d4d18d0 controller adopted/pushed; focused gates 27/27 and 129/129 plus strict Clippy. c9ba45f same-Store continuation source adopted. Integrated ordinary birth still unaccepted; private diagnostic isolates admitDecodedNative. No combined service.",
+      "nextAction": "Finish private ordinary ResourceBirthPolicyController admission diagnostic; repair measured dominant cost with equivalence and source-matched creation/reopen evidence.",
       "closure": "Prove verified-prefix plus suffix replay agrees with full semantic replay under explicit verifier assumptions; run unchanged-image, external append/revocation, rewritten/rolled-back history, stale challenge, exact CAS, lost reply, restart and verifier-change cases through the real host. Preserve fresh authorization, exact original receipt boundaries and uncertainty. Measure physical reads, replay counts and latency; do not substitute height/hash/mtime for exact image identity."
     },
     {
@@ -3978,7 +3980,7 @@
       "status": "active",
       "owner": "Astra: root; Sol: client_session, agent_api_host, runtime_review, fn_mini_review, fn_contracts",
       "reviewer": "Astra: root",
-      "updatedAt": "2026-09-27T21:14:49.078Z",
+      "updatedAt": "2026-09-27T21:59:21.763Z",
       "priority": 1,
       "sources": [
         "urn:dregg:assortia:S-SPK-CYCLE-0927",
@@ -4034,7 +4036,8 @@
         "urn:dregg:assortia:S-SPK-CHECKPOINT64-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT65-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT66-0927",
-        "urn:dregg:assortia:S-DEMO-CONVERGENCE-RESUME"
+        "urn:dregg:assortia:S-DEMO-CONVERGENCE-RESUME",
+        "urn:dregg:assortia:S-SPK-CHECKPOINT67-0927"
       ],
       "advances": [
         "urn:dregg:assortia:E-WORLD",
@@ -4070,7 +4073,7 @@
       ],
       "closure": "A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.",
       "nextAction": "Execute demo-convergence batches with one retained GitWeb journey: practical creation and browser app, hosted real-model Hermes on the same resources, selective fn version transfer. Finish actual receiving callers and native evidence.",
-      "progress": "Resumed by user; frozen source hashes revalidated. Native component sharing/reopen evidence committed83dde30; certified353-module f450 Host evidence477e2e6; exact three-slot detached payer fa581ae and Fenced-only STOP recovery1ec2fc0. Integrated GitWeb first birth exceeded600s deadline; exact lookup absent, Store unchanged. No combined service."
+      "progress": "Mini b988513 resident v3 and d4d18d0 controller adopted/pushed; focused gates 27/27 and 129/129 plus strict Clippy. c9ba45f same-Store continuation source adopted. Integrated ordinary birth still unaccepted; private diagnostic isolates admitDecodedNative. No combined service."
     },
     {
       "@id": "urn:dregg:assortia:S-SPK-GROUNDING1-0927",
@@ -4650,10 +4653,21 @@
       "label": "Resumed construction around complete demo journeys",
       "repository": "urn:dregg:assortia:R-assortia",
       "path": "sprints/2026-09-26/demo-convergence.md",
-      "sha256": "03f0d7ea5ce246a939a10dd676ddc4d0fc0251304f52966e138a9e6d8657891b",
+      "sha256": "05610a873fc2749950068a4df888864b42e71ef73f316ef06d61614347b69071",
       "recordedDate": "2026-09-27",
       "evidenceKind": "user-directed-execution-plan-and-frozen-source-revalidation",
       "limitations": "Plan and ownership, not deployed acceptance. Full platform objective unchanged."
+    },
+    {
+      "@id": "urn:dregg:assortia:S-SPK-CHECKPOINT67-0927",
+      "@type": "Source",
+      "label": "Resident/controller batch adopted; ordinary birth bottleneck isolated",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-26/checkpoint-67.md",
+      "sha256": "445bd7bb0a4c9eb826b6ebe51cfa985c5c6e8e1c7ae17958d4e126266a5805dc",
+      "recordedDate": "2026-09-27",
+      "evidenceKind": "reviewed-source-component-gates-and-private-native-diagnostic",
+      "limitations": "No accepted integrated app lineage or deployed service; deeper private diagnostic still running at checkpoint."
     }
   ]
 }

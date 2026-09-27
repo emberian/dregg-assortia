@@ -1,5 +1,7 @@
 # Start here: DREGG handoff
 
+**Latest reviewed batch:** [checkpoint 67](sprints/2026-09-26/checkpoint-67.md) records committed resident/controller integration, its test evidence, the ordinary-birth admission bottleneck, and the one remaining private diagnostic. Source completion does not establish a deployed service.
+
 **Resumed by Ember:** work now follows [complete demo journeys](sprints/2026-09-26/demo-convergence.md). Checkpoint 66 preserves the wind-down state; the 13 frozen source hashes were revalidated before restarting lanes. The long direct birth retry remains unlaunched.
 
 **Current goal, September 27 UTC:** deliver the [SPK application platform](sprints/2026-09-26/spk-platform-cycle.md). Start with [checkpoint 66](sprints/2026-09-26/checkpoint-66.md) for the latest reviewed commits, actual native results, live-job handles and next integration work. Follow its predecessor links for earlier evidence. The [parallel journey requirements](sprints/2026-09-26/parallel-journeys.md) define completion; the graph owns work status. Independent fixture results do not establish a deployed shared service.
