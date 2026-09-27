@@ -3707,7 +3707,7 @@
       "description": "Converge existing fn consumer lineage and improve its authority, fresh setup, general reply profiles and distributed hosted receiving path.",
       "status": "active",
       "owner": "Sol: fn_contracts; Astra: root",
-      "updatedAt": "2026-09-27T05:00:44.143Z",
+      "updatedAt": "2026-09-27T05:18:14.567Z",
       "priority": 1,
       "sources": [
         "urn:dregg:assortia:S-OVERNIGHT-0926",
@@ -3730,7 +3730,8 @@
         "urn:dregg:assortia:S-CHECKPOINT16-0926",
         "urn:dregg:assortia:S-CHECKPOINT17-0926",
         "urn:dregg:assortia:S-PARALLEL-JOURNEYS-0927",
-        "urn:dregg:assortia:S-SPK-CHECKPOINT20-0927"
+        "urn:dregg:assortia:S-SPK-CHECKPOINT20-0927",
+        "urn:dregg:assortia:S-SPK-CHECKPOINT21-0927"
       ],
       "advances": [
         "urn:dregg:assortia:E-WORLD",
@@ -3753,7 +3754,7 @@
         "minidregg/Host/GrainOriginPreparation.lean",
         "minidregg/docs/FN-PUBLICATION-DISCLOSURE.md"
       ],
-      "progress": "Native own-R accept/restart/repeat/ACK and equal-position no-op passed on fresh private Store. Exact owner-release codec and current-key signature component narrowly checked; receiving/replay remains construction. Selected-release Signature/Ingress/Admission have narrow source checks; new durable receiver is under construction. No native route or selected-release transport run is claimed. Mini b6373d7 now commits narrow-checked selected-release admission/receiver; dedicated native routing and replay are being integrated.",
+      "progress": "Native own-R accept/restart/repeat/ACK and equal-position no-op passed on fresh private Store. Exact owner-release codec and current-key signature component narrowly checked; receiving/replay remains construction. Selected-release Signature/Ingress/Admission have narrow source checks; new durable receiver is under construction. No native route or selected-release transport run is claimed. Mini b6373d7 now commits narrow-checked selected-release admission/receiver; dedicated native routing and replay are being integrated. Mini9a128b4 article framing, b9b9869 exact-attempt CLI, and e1bbf2d native submit/lookup/replay source are checked and committed. Separate source publication authority is being built; no end-to-end selected release run yet.",
       "nextAction": "Finish selected-release durable receiver and exact historical retry checks, integrate native Host/Replay/CLI route, then exercise authorized selected public bytes through actual fn without private-prefix disclosure. Receiver import/install remains separate authority.",
       "closure": "Real Mini-resource operation and reply travel through independently configured fn nodes with separately pinned application authorities; durable Mini processing precedes fn ACK, direct forged consumer input is refused, exact retries and uncertain outcomes reconcile, and a documented user entrance uses this path."
     },
@@ -3974,7 +3975,7 @@
       "status": "active",
       "owner": "Astra: root; Sol: build_native, hermes_path, linux_hosting, client_session, fn_mini_review, codec_stack, runtime_review",
       "reviewer": "Astra: root",
-      "updatedAt": "2026-09-27T05:00:44.142Z",
+      "updatedAt": "2026-09-27T05:18:14.566Z",
       "priority": 1,
       "sources": [
         "urn:dregg:assortia:S-SPK-CYCLE-0927",
@@ -3982,7 +3983,8 @@
         "urn:dregg:assortia:S-SPK-CHECKPOINT18-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT19-0927",
         "urn:dregg:assortia:S-PARALLEL-JOURNEYS-0927",
-        "urn:dregg:assortia:S-SPK-CHECKPOINT20-0927"
+        "urn:dregg:assortia:S-SPK-CHECKPOINT20-0927",
+        "urn:dregg:assortia:S-SPK-CHECKPOINT21-0927"
       ],
       "advances": [
         "urn:dregg:assortia:E-WORLD",
@@ -4015,7 +4017,7 @@
       ],
       "closure": "A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.",
       "nextAction": "Advance all five parallel journeys: native two-participant birth and exact recovery; GitWeb real write/fetch/browser/wake; app-issued permission ceilings and special dispatch; lifecycle admission and process claims; real-model readiness and selected fn release receiving. Join them under current Mini authority.",
-      "progress": "Bread581911535 parser and Mini f70aa4d SPK host/RPC qualified an actual signed Simple Todos create plus persisted continueCommand HTTP200 in isolated bounded Linux units. Mini95ee02c repaired historical composite birth lookup on a copied Store; Mini42e5705 and 1808b0b add narrow-compiled session/enrollment and candidate dispatch source; Mini6f945ab exposes bounded raw Sandstorm ViewInfo roles. Dispatch remains unauthorized; installed role resolution, native special receiver, public browser/API, real-model Hermes and selected fn release remain open. Mini2c34802 corrects dispatch witness separation; Mini2e60a9c typed application/session authoring passes a narrow executable check; Mini60f0b76 preserves signed GitWeb selection evidence. Native build/private acceptance and GitWeb runtime qualification remain in progress. Self-owned enrollment cannot establish permission ceilings: app-issued authority is required. Checkpoint20 pins committed permission schema, application fixture, bounded provider iterations and terminal probe; app shares will survive normal wake/rebind while requests retain current generation fences."
+      "progress": "Bread581911535 parser and Mini f70aa4d SPK host/RPC qualified an actual signed Simple Todos create plus persisted continueCommand HTTP200 in isolated bounded Linux units. Mini95ee02c repaired historical composite birth lookup on a copied Store; Mini42e5705 and 1808b0b add narrow-compiled session/enrollment and candidate dispatch source; Mini6f945ab exposes bounded raw Sandstorm ViewInfo roles. Dispatch remains unauthorized; installed role resolution, native special receiver, public browser/API, real-model Hermes and selected fn release remain open. Mini2c34802 corrects dispatch witness separation; Mini2e60a9c typed application/session authoring passes a narrow executable check; Mini60f0b76 preserves signed GitWeb selection evidence. Native build/private acceptance and GitWeb runtime qualification remain in progress. Self-owned enrollment cannot establish permission ceilings: app-issued authority is required. Checkpoint20 pins committed permission schema, application fixture, bounded provider iterations and terminal probe; app shares will survive normal wake/rebind while requests retain current generation fences. Mini6efd0b9/c8dedb2 qualify real GitWeb push/exact fetch/browser/persisted wake in private units. f82368b connects captured ViewInfo metadata to canonical schema; b0cc99e adds tested physical journal/status component, no launch admission yet. App-birth Host rebuild includes proof-only bfb6b8b patch; native fixture pending."
     },
     {
       "@id": "urn:dregg:assortia:S-SPK-GROUNDING1-0927",
@@ -4071,6 +4073,17 @@
       "recordedDate": "2026-09-27",
       "evidenceKind": "committed-source-and-narrow-component-checks",
       "limitations": "Native application acceptance, joined dispatch, GitWeb runtime, selected fn transport and real-model deployment remain unestablished."
+    },
+    {
+      "@id": "urn:dregg:assortia:S-SPK-CHECKPOINT21-0927",
+      "@type": "Source",
+      "label": "Real GitWeb work and connected receiving paths",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-26/checkpoint-21.md",
+      "sha256": "c1f04b048b005136366133d1be6429b72118a8de0a3f87a9c877019eec9911cc",
+      "recordedDate": "2026-09-27",
+      "evidenceKind": "physical-package-run-and-scoped-source-integration",
+      "limitations": "Separate component results; native app birth, Mini-authorized app dispatch, source publication, real-model and combined service acceptance remain incomplete."
     }
   ]
 }
