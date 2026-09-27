@@ -3975,7 +3975,7 @@
       "status": "active",
       "owner": "Astra: root; Sol: client_session, agent_api_host, fn_mini_review, fn_contracts, runtime_review, mini_app_contract, build_native",
       "reviewer": "Astra: root",
-      "updatedAt": "2026-09-27T15:50:58.174Z",
+      "updatedAt": "2026-09-27T15:57:11.053Z",
       "priority": 1,
       "sources": [
         "urn:dregg:assortia:S-SPK-CYCLE-0927",
@@ -4027,7 +4027,8 @@
         "urn:dregg:assortia:S-SPK-CHECKPOINT60-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT61-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT62-0927",
-        "urn:dregg:assortia:S-SPK-CHECKPOINT63-0927"
+        "urn:dregg:assortia:S-SPK-CHECKPOINT63-0927",
+        "urn:dregg:assortia:S-SPK-CHECKPOINT64-0927"
       ],
       "advances": [
         "urn:dregg:assortia:E-WORLD",
@@ -4062,8 +4063,8 @@
         "Selected app or data versions travel through fn with explicit publication and separate receiver install/import authority, without private-prefix disclosure."
       ],
       "closure": "A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.",
-      "nextAction": "Run fresh integrated base/INSTALL/create with certified2649 Mini and bba0a7a SPK host. Observe existing event22 continuation handle; never repeat marked submit. Finish and qualify next Host containing capability and paid-ingress inspectors, then issue same-Store observe grants and paid agent dispatch. Review STOP BEGIN/assembly and implement Fenced-only recovery under lock plus native STOP→Continue. Trace measured replay derivation costs before optimizing; preserve full two-user/Hermes/fn journey scope.",
-      "progress": "Checkpoint63: exact2649 native Host certified; bba0a7a SPK ELF reaches resident-run after missing CLI registration fixed. Fresh STOP fence committed5af52bd. Source capability inspection and observe-only delegation continuation543e85a pass source/component checks but await successor Host and native run. Exact retained event22 fee517 decoded; one-shot continuation unit active, no ticket outcome yet. Detached payer/controller work has component greens; strict paid-ingress source inspector and resident delivery still under construction."
+      "nextAction": "Collect terminal event22 artifacts, then extend retained ticket through native event27/reserve/paid. Observe integrated r3 runbase to completion before same-Store INSTALL/create. Qualify f450a57 successor and run source-derived app-observe delegation plus controller source inspection. Finish callable STOP/recovery/Continue and v3 resident dispatch, then execute full two-user real-model and fn journeys. Measure event3 prepare subphases before proposing core optimization.",
+      "progress": "Checkpoint64: exact prepared synthetic event22 accepted count18; one-shot continuation terminal exit0 after fee517/ticket/read-only reopened receipt checks, portable result collection pending. Integrated GitWeb r3 independently passed offline SPK qualification and entered bootstrap. f450a57 strict paid-ingress Host CLI source checks pass; guarded successor native build active. STOP authoring, finite v3 wire and under-lock Fenced-only recovery committed908c267; physical integration and controller/resident paid delivery remain unfinished. Root review found payer-only helper incorrectly required one slot; actual source invocation has target/observation/authority slots. Uncommitted helper reopened for correction and multislot tests."
     },
     {
       "@id": "urn:dregg:assortia:S-SPK-GROUNDING1-0927",
@@ -4603,6 +4604,17 @@
       "recordedDate": "2026-09-27",
       "evidenceKind": "certified-native-builds-source-checks-and-observed-one-shot-continuation",
       "limitations": "No integrated native START, ticket outcome or actual-model Hermes. Delegation needs successor Host. STOP recovery and paid dispatch incomplete."
+    },
+    {
+      "@id": "urn:dregg:assortia:S-SPK-CHECKPOINT64-0927",
+      "@type": "Source",
+      "label": "Native sharing accepted and paid-inspection successor",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-26/checkpoint-64.md",
+      "sha256": "8fbdc34b7ad0ecad08b0ffee16c4e4459f0c8ad035467d16ba01768346c60cb7",
+      "recordedDate": "2026-09-27",
+      "evidenceKind": "native-component-acceptance-reviewed-source-and-live-successor-build",
+      "limitations": "Event22 fixture is separate from final GitWeb Store. Integrated app execution, new Host ELF, paid dispatch, physical STOP/restart and real-model Hermes remain incomplete."
     }
   ]
 }

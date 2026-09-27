@@ -2,7 +2,7 @@
 
 > Generated from `graph.jsonld` by `python3 hub.py render`. Edit the graph, not this file.
 
-Latest work-record update: **2026-09-27T15:50:58.174Z**. This is recorded project state, not a live process monitor.
+Latest work-record update: **2026-09-27T15:57:11.053Z**. This is recorded project state, not a live process monitor.
 
 [New contributor](contributing/README.md) · [Project map](MAP.md) · [Detailed work records](work/records.md)
 
@@ -20,7 +20,7 @@ Latest work-record update: **2026-09-27T15:50:58.174Z**. This is recorded projec
 | [Keep grants valid across policy source revisions](sprints/2026-09-19/cycle-1-integration-checkpoint.md) | Astra: root; component implementation/review lanes completed | Implement and exercise generation-wide native revocation and the delegated-grant two-replacement case against the same source-owned receiving path; preserve the completed per-capability/current-law regressions. |
 | [Retain verified history across native host requests](sprints/2026-09-26/checkpoint-17.md) | Sol: mini_receiver, fn_mini_review, fn_reply_profile, build_native; review runtime_review; Astra: root | Implement exact shared-command-byte optimization, prove generalized equality, benchmark source-matched native image; preserve current authority and post-CAS readback. |
 | [Define the September 26 programmable nexus and its shared contracts](sprints/2026-09-19/cycle-1-integration-checkpoint.md) | Astra: root; component implementation/review lanes completed | Converge the SPK platform cycle: packaged apps provide shared human views and agent APIs under Mini authority; retain separate contributed-hosting and Solana obligations. |
-| [Run shared SPK applications through Mini, browsers, agents and fn](sprints/2026-09-26/spk-platform-cycle.md) | Astra: root; Sol: client_session, agent_api_host, fn_mini_review, fn_contracts, runtime_review, mini_app_contract, build_native / Astra: root | Run fresh integrated base/INSTALL/create with certified2649 Mini and bba0a7a SPK host. Observe existing event22 continuation handle; never repeat marked submit. Finish and qualify next Host containing capability and paid-ingress inspectors, then issue same-Store observe grants and paid agent dispatch. Review STOP BEGIN/assembly and implement Fenced-only recovery under lock plus native STOP→Continue. Trace measured replay derivation costs before optimizing; preserve full two-user/Hermes/fn journey scope. |
+| [Run shared SPK applications through Mini, browsers, agents and fn](sprints/2026-09-26/spk-platform-cycle.md) | Astra: root; Sol: client_session, agent_api_host, fn_mini_review, fn_contracts, runtime_review, mini_app_contract, build_native / Astra: root | Collect terminal event22 artifacts, then extend retained ticket through native event27/reserve/paid. Observe integrated r3 runbase to completion before same-Store INSTALL/create. Qualify f450a57 successor and run source-derived app-observe delegation plus controller source inspection. Finish callable STOP/recovery/Continue and v3 resident dispatch, then execute full two-user real-model and fn journeys. Measure event3 prepare subphases before proposing core optimization. |
 
 ## Backlog
 
