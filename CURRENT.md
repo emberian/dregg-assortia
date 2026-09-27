@@ -2,7 +2,7 @@
 
 > Generated from `graph.jsonld` by `python3 hub.py render`. Edit the graph, not this file.
 
-Latest work-record update: **2026-09-27T01:40:00Z**. This is recorded project state, not a live process monitor.
+Latest work-record update: **2026-09-27T02:10:00Z**. This is recorded project state, not a live process monitor.
 
 [New contributor](contributing/README.md) · [Project map](MAP.md) · [Detailed work records](work/records.md)
 
@@ -12,13 +12,13 @@ Latest work-record update: **2026-09-27T01:40:00Z**. This is recorded project st
 
 | Work | Owner / reviewer | Next action |
 |---|---|---|
-| [Operate actual Mini resources through fn correspondence and separate gateways](sprints/2026-09-26/checkpoint-16.md) | Sol: fn_contracts, fn_mini_review, fn_reply_profile; Astra: root | Rebuild stable-binding Host, fresh accept/restart/repeat/ACK gate and bounded worker drain. Develop distinct resource-owner release and historical evidence relations under semi-untrusted fn; do not expose unrelated private history. |
-| [Custody and meter scoped provider requests](sprints/2026-09-26/checkpoint-16.md) | Sol: runtime_review, hermes_path; Astra: root | Qualify sequential requests with independent reserves/quotes/settlements, explicit auxiliary purpose policy, HTTP422 and interruption/crash recovery. |
-| [Durable hosted grain control and authenticated entrance](sprints/2026-09-26/checkpoint-16.md) | Sol: client_session, hermes_path, fn_reply_profile; Astra: root | Complete actual socket/read readiness and signed-root operator restart, then native terminal prompt/reconnect/hard-soft acceptance. Boot ordering remains separate. |
-| [Host upstream Hermes with persistent confined execution](sprints/2026-09-26/checkpoint-16.md) | Sol: hermes_path, replay_session, linux_hosting; review runtime_review; Astra: root | Finish audited B44 zero-settlement crash ordering, controller source convergence and actual terminal/Hermes multi-request tests. |
-| [Expose canonical resource programming to Hermes](sprints/2026-09-26/checkpoint-16.md) | Sol: hermes_path, replay_session, codec_stack, shared_resource_tools; Astra: root | Pass composite birth plus owner bare control and exact worker-policy refusal; wire durable MCP allocation/recovery and issued-capability reads/mutations, then actual Hermes creation. |
+| [Operate actual Mini resources through fn correspondence and separate gateways](sprints/2026-09-26/checkpoint-17.md) | Sol: fn_contracts, fn_mini_review, fn_reply_profile; Astra: root | Exercise actual A-worker own-R then queued-Q drain; integrate special current-capability owner-release admission and replay, then private workroom R→B→Q→A. |
+| [Custody and meter scoped provider requests](sprints/2026-09-26/checkpoint-17.md) | Sol: runtime_review, hermes_path; Astra: root | Gate interruption during quote and post-settle restart; preserve no-resend/exact-response custody while integrating real-provider configuration. |
+| [Durable hosted grain control and authenticated entrance](sprints/2026-09-26/checkpoint-17.md) | Sol: client_session, hermes_path, fn_reply_profile; Astra: root | Complete short spawn/cancel critical section and custody ownership without blocking immediate worker stop; preserve uncertainty and exact-call recovery. |
+| [Host upstream Hermes with persistent confined execution](sprints/2026-09-26/checkpoint-17.md) | Sol: hermes_path, replay_session, linux_hosting; review runtime_review; Astra: root | Finish birth charge crash recovery and dispatch cancellation; exercise soft EOF and usable hard-stop reconnect/recovery. |
+| [Expose canonical resource programming to Hermes](sprints/2026-09-26/checkpoint-17.md) | Sol: hermes_path, replay_session, codec_stack, shared_resource_tools; Astra: root | Fix durable pre-reserve birth intent and refusal zero-phase recovery, final dispatch cancellation, then exercise created-resource tools through Hermes and exact restart. |
 | [Keep grants valid across policy source revisions](sprints/2026-09-19/cycle-1-integration-checkpoint.md) | Astra: root; component implementation/review lanes completed | Implement and exercise generation-wide native revocation and the delegated-grant two-replacement case against the same source-owned receiving path; preserve the completed per-capability/current-law regressions. |
-| [Retain verified history across native host requests](sprints/2026-09-26/checkpoint-16.md) | Sol: mini_receiver, fn_mini_review, fn_reply_profile, build_native; review runtime_review; Astra: root | Complete source-qualified composite birth and stable fn restart acceptance, preserve separate image/Store scopes and validate live operator restart. |
+| [Retain verified history across native host requests](sprints/2026-09-26/checkpoint-17.md) | Sol: mini_receiver, fn_mini_review, fn_reply_profile, build_native; review runtime_review; Astra: root | Implement exact shared-command-byte optimization, prove generalized equality, benchmark source-matched native image; preserve current authority and post-CAS readback. |
 | [Define the September 26 programmable nexus and its shared contracts](sprints/2026-09-19/cycle-1-integration-checkpoint.md) | Astra: root; component implementation/review lanes completed | Choose the next concrete hosted experience cycle around the measured core latency and real process lifecycle: persistent verified host, hosted Hermes/tool supervisor, credential service and metering through the same DREGG resource authority. Keep owned-node participation and a selected Solana outcome explicit. |
 
 ## Backlog
