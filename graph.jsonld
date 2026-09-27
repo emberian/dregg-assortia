@@ -3975,7 +3975,7 @@
       "status": "active",
       "owner": "Astra: root; Sol: build_native, hermes_path, linux_hosting, agent_api_host, fn_mini_review, runtime_review, mini_app_contract",
       "reviewer": "Astra: root",
-      "updatedAt": "2026-09-27T12:31:32Z",
+      "updatedAt": "2026-09-27T12:48:40Z",
       "priority": 1,
       "sources": [
         "urn:dregg:assortia:S-SPK-CYCLE-0927",
@@ -4011,7 +4011,8 @@
         "urn:dregg:assortia:S-SPK-CHECKPOINT44-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT45-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT46-0927",
-        "urn:dregg:assortia:S-SPK-CHECKPOINT47-0927"
+        "urn:dregg:assortia:S-SPK-CHECKPOINT47-0927",
+        "urn:dregg:assortia:S-SPK-CHECKPOINT48-0927"
       ],
       "advances": [
         "urn:dregg:assortia:E-WORLD",
@@ -4047,7 +4048,7 @@
       ],
       "closure": "A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.",
       "nextAction": "Finish linked v2 author/inspect, source-bound INSTALL/START and persistent grant receiving; birth actual allocated identities in the fresh Store, then exercise shared app through browsers, Hermes and direct CLI with restart/disconnect and selected fn acceptance.",
-      "progress": "Checkpoint47: lower grant admission81e3874, stable volume custody43099d1 and canonical-boundary equality3711804 pushed. Concurrent create and systemd handoff lifecycle checked. Native baseline progresses through Host.Json; upper receiving, signed v3 lifecycle and actual Replay optimization consumers remain pending."
+      "progress": "Checkpoint48: event27 replay3529f70, fn frontier receiving bd9d984, Host JSON v2 routes6f1163b and resident identity pinsc2f8bce committed. Native r5 completed Lean then failed object-index sorting; reviewed recoveryea67b95 is running as r6. Integrated lifecycle, persistent dispatch, actual fixture births and deployed journeys remain unfinished."
     },
     {
       "@id": "urn:dregg:assortia:S-SPK-GROUNDING1-0927",
@@ -4411,6 +4412,17 @@
       "recordedDate": "2026-09-27",
       "evidenceKind": "reviewed-source-narrow-proofs-physical-tests-and-live-build-observation",
       "limitations": "No integrated resident START, upper grant receiving or deployed shared journey yet."
+    },
+    {
+      "@id": "urn:dregg:assortia:S-SPK-CHECKPOINT48-0927",
+      "@type": "Source",
+      "label": "Receiving routes and guarded native build recovery",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-26/checkpoint-48.md",
+      "sha256": "5de8a96af6cbc88d28d685ef5ad35edae24a44bb8a8101bc96faa90faccada3c",
+      "recordedDate": "2026-09-27",
+      "evidenceKind": "reviewed-source-narrow-compilation-and-live-build-observation",
+      "limitations": "No new linked v2 executable or deployed integrated application journey yet."
     }
   ]
 }
