@@ -2,7 +2,7 @@
 
 > Generated from `graph.jsonld` by `python3 hub.py render`. Edit the graph, not this file.
 
-Latest work-record update: **2026-09-27T15:57:11.053Z**. This is recorded project state, not a live process monitor.
+Latest work-record update: **2026-09-27T16:09:01.491Z**. This is recorded project state, not a live process monitor.
 
 [New contributor](contributing/README.md) · [Project map](MAP.md) · [Detailed work records](work/records.md)
 
@@ -18,9 +18,9 @@ Latest work-record update: **2026-09-27T15:57:11.053Z**. This is recorded projec
 | [Host upstream Hermes with persistent confined execution](sprints/2026-09-26/checkpoint-17.md) | Sol: hermes_path, replay_session, linux_hosting; review runtime_review; Astra: root | Finish birth charge crash recovery and dispatch cancellation; exercise soft EOF and usable hard-stop reconnect/recovery. |
 | [Expose canonical resource programming to Hermes](sprints/2026-09-26/checkpoint-17.md) | Sol: hermes_path, replay_session, codec_stack, shared_resource_tools; Astra: root | Fix durable pre-reserve birth intent and refusal zero-phase recovery, final dispatch cancellation, then exercise created-resource tools through Hermes and exact restart. |
 | [Keep grants valid across policy source revisions](sprints/2026-09-19/cycle-1-integration-checkpoint.md) | Astra: root; component implementation/review lanes completed | Implement and exercise generation-wide native revocation and the delegated-grant two-replacement case against the same source-owned receiving path; preserve the completed per-capability/current-law regressions. |
-| [Retain verified history across native host requests](sprints/2026-09-26/checkpoint-17.md) | Sol: mini_receiver, fn_mini_review, fn_reply_profile, build_native; review runtime_review; Astra: root | Implement exact shared-command-byte optimization, prove generalized equality, benchmark source-matched native image; preserve current authority and post-CAS readback. |
+| [Retain verified history across native host requests](sprints/2026-09-26/checkpoint-17.md) | Sol: fn_mini_review, client_session; Astra: root | Profile exact retained integrated composite birth on private copied genesis and identify dominant special-path computations. Require semantics-preserving source change and source-matched native measurement; continue exact live request only under bounded recovery protocol. |
 | [Define the September 26 programmable nexus and its shared contracts](sprints/2026-09-19/cycle-1-integration-checkpoint.md) | Astra: root; component implementation/review lanes completed | Converge the SPK platform cycle: packaged apps provide shared human views and agent APIs under Mini authority; retain separate contributed-hosting and Solana obligations. |
-| [Run shared SPK applications through Mini, browsers, agents and fn](sprints/2026-09-26/spk-platform-cycle.md) | Astra: root; Sol: client_session, agent_api_host, fn_mini_review, fn_contracts, runtime_review, mini_app_contract, build_native / Astra: root | Collect terminal event22 artifacts, then extend retained ticket through native event27/reserve/paid. Observe integrated r3 runbase to completion before same-Store INSTALL/create. Qualify f450a57 successor and run source-derived app-observe delegation plus controller source inspection. Finish callable STOP/recovery/Continue and v3 resident dispatch, then execute full two-user real-model and fn journeys. Measure event3 prepare subphases before proposing core optimization. |
+| [Run shared SPK applications through Mini, browsers, agents and fn](sprints/2026-09-26/spk-platform-cycle.md) | Astra: root; Sol: client_session, agent_api_host, fn_mini_review, fn_contracts, runtime_review, mini_app_contract, build_native / Astra: root | Recover the exact retained birth with a bounded once-only direct continuation after absence/pin checks while profiling the same call on a private copy. Finish resident/controller paid dispatch and physical lifecycle, then joined browser/agent/restart/fn journeys. |
 
 ## Backlog
 
