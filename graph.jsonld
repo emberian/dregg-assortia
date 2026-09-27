@@ -3975,7 +3975,7 @@
       "status": "active",
       "owner": "Astra: root; Sol: build_native, hermes_path, linux_hosting, agent_api_host, fn_mini_review, runtime_review, mini_app_contract",
       "reviewer": "Astra: root",
-      "updatedAt": "2026-09-27T12:18:25Z",
+      "updatedAt": "2026-09-27T12:23:16Z",
       "priority": 1,
       "sources": [
         "urn:dregg:assortia:S-SPK-CYCLE-0927",
@@ -4009,7 +4009,8 @@
         "urn:dregg:assortia:S-SPK-CHECKPOINT42-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT43-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT44-0927",
-        "urn:dregg:assortia:S-SPK-CHECKPOINT45-0927"
+        "urn:dregg:assortia:S-SPK-CHECKPOINT45-0927",
+        "urn:dregg:assortia:S-SPK-CHECKPOINT46-0927"
       ],
       "advances": [
         "urn:dregg:assortia:E-WORLD",
@@ -4033,7 +4034,9 @@
         "minidregg/Kernel/Fn* receiving and Host/FnConsumerFrontierPlan.lean (fn_mini_review)",
         "persistent agent-route authorization design (runtime_review)",
         "coordinated Host/Main.lean and NativeHostReplay.lean hooks; root owns integration order and Git",
-        "minidregg/scripts/spk-platform source-authored fixture enrollment/birth continuations (spk_compatibility)"
+        "minidregg/scripts/spk-platform source-authored fixture enrollment/birth continuations (spk_compatibility)",
+        "minidregg/Host/ApplicationLifecycleLaunchAuthoring*.lean and coordinated Main ops66–71 after lower API freeze (fn_mini_review)",
+        "minidregg/Kernel/NativeHostContext.lean canonical image-boundary byte reuse and general equivalence proof (client_session); actual Replay consumers coordinated with mini_app_contract"
       ],
       "acceptance": [
         "Two distinct participants use the same real third-party SPK app through browser and hosted real-model Hermes API access under Mini grants.",
@@ -4043,7 +4046,7 @@
       ],
       "closure": "A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.",
       "nextAction": "Finish linked v2 author/inspect, source-bound INSTALL/START and persistent grant receiving; birth actual allocated identities in the fresh Store, then exercise shared app through browsers, Hermes and direct CLI with restart/disconnect and selected fn acceptance.",
-      "progress": "Checkpoint45: d0869ec pre-Store gate and d513bfa offline signed-SPK qualifier committed/pushed; four focused Linux tests and strict Clippy passed. Native55d3868 remains live past module201. Source-bound lifecycle, persistent grants, fresh participant bootstrap and direct foreground CLI remain active implementation."
+      "progress": "Checkpoint46: persistent grant source9cdf401 and pure signed launch descriptor7ba5bcb compiled narrowly and pushed. Root found draft START action-signature binding and volume-create concurrency gaps; owners are fixing them before integration. Full native closure and real shared service remain pending."
     },
     {
       "@id": "urn:dregg:assortia:S-SPK-GROUNDING1-0927",
@@ -4385,6 +4388,17 @@
       "recordedDate": "2026-09-27",
       "evidenceKind": "reviewed-source-component-tests-and-live-build-observation",
       "limitations": "No linked v2 Host qualifier, new lifecycle acceptance or deployed integrated journey yet."
+    },
+    {
+      "@id": "urn:dregg:assortia:S-SPK-CHECKPOINT46-0927",
+      "@type": "Source",
+      "label": "Compiled source contracts and launch authorization review",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-26/checkpoint-46.md",
+      "sha256": "04e602f14adc328218e8c5bb0fc17189c68df4bbc5749d8342e397abe432db56",
+      "recordedDate": "2026-09-27",
+      "evidenceKind": "reviewed-source-narrow-compilation-and-integration-findings",
+      "limitations": "New receiving paths and deployed application acceptance remain incomplete."
     }
   ]
 }
