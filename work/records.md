@@ -399,17 +399,17 @@ World deployment currently mutates volatile registries; historical paths either 
 
 **Operate actual Mini resources through fn correspondence and separate gateways**
 
-Status: **active** · Owner: Sol: fn_contracts, fn_mini_review, fn_reply_profile; Astra: root · Updated: 2026-09-27T00:15:00Z
+Status: **active** · Owner: Sol: fn_contracts, fn_mini_review, fn_reply_profile; Astra: root · Updated: 2026-09-27T00:40:00Z
 
 Converge existing fn consumer lineage and improve its authority, fresh setup, general reply profiles and distributed hosted receiving path.
 
-**Next:** Complete Q→A through the pinned standalone bridge without reposting R; retain exact B ACK/read evidence, then address broader hosted agent sharing only after its authority design is selected.
+**Next:** Make A own-R skip a source-owned crash-safe progress decision, link typed A view and exercise unattended reply recovery; retain operator-assisted roundtrip as a scoped regression result.
 
 **Done when:** Real Mini-resource operation and reply travel through independently configured fn nodes with separately pinned application authorities; durable Mini processing precedes fn ACK, direct forged consumer input is refused, exact retries and uncertain outcomes reconcile, and a documented user entrance uses this path.
 
-**Evidence so far:** The retained fn R2 B call was reconfirmed with all four Mini receipt fields on a separately qualified Host, op13 returned durable fn ACK at sequence/transaction3/3, and signed B inbox view matched A edit43 target8001/atom7401. Q→A remains pending. Full-prefix agent release remains an unselected design proposal.
+**Evidence so far:** One accepted Mini workroom content edit traveled through R, B, Q and A with native fn signature/identity checks, B and A durable ACKs, and signed A result/inbox correspondence. Own-R cursor at A required direct operator ACK without an accepted Mini tag-9 skip; typed A view is source-only, not linked. No second R was posted.
 
-[Task brief](../sprints/2026-09-26/checkpoint-13.md)
+[Task brief](../sprints/2026-09-26/checkpoint-14.md)
 
 **Enables:**
 
@@ -432,6 +432,7 @@ Converge existing fn consumer lineage and improve its authority, fresh setup, ge
 - [S-CHECKPOINT11-0926 — Proved native hash speedup, exact-readback integration, hosted peer publications and recovered fn receive](../sprints/2026-09-26/checkpoint-11.md)
 - [S-CHECKPOINT12-0926 — Combined native speed and adversaries, fresh law recovery, scoped hosted peer and receipt progress](../sprints/2026-09-26/checkpoint-12.md)
 - [S-CHECKPOINT13-0926 — Exact hosted Hermes receipt, held fn B ACK/read completion and scoped next-source construction](../sprints/2026-09-26/checkpoint-13.md)
+- [S-CHECKPOINT14-0926 — Signed cross-UID resources, fresh stale-root cleanup and operator-assisted workroom fn reply](../sprints/2026-09-26/checkpoint-14.md)
 
 **Write scope:** minidregg/Kernel/Fn*.lean; minidregg/Host/Json.lean; minidregg/scripts/fn-e1e2/; minidregg/Compiler/FnEvidenceCodec.lean; minidregg/Host/Main.lean; minidregg/Host/GrainOriginSource.lean; minidregg/native/resource-client/; minidregg/Host/GrainOriginPreparation.lean; minidregg/docs/FN-PUBLICATION-DISCLOSURE.md
 
@@ -439,17 +440,17 @@ Converge existing fn consumer lineage and improve its authority, fresh setup, ge
 
 **Custody and meter scoped provider requests**
 
-Status: **active** · Owner: Sol: runtime_review, hermes_path; Astra: root · Updated: 2026-09-27T00:15:00Z
+Status: **active** · Owner: Sol: runtime_review, hermes_path; Astra: root · Updated: 2026-09-27T00:40:00Z
 
 Execute bounded streaming requests after canonical reservation, retain exact evidence, fence old epochs, reconcile uncertain work and demonstrate secret isolation.
 
-**Next:** Build and exercise source-matched op19 with exact retained provider response and allowance; then qualify hosted settlement, uncertainty, billing evidence and crash recovery without claiming invoice authentication.
+**Next:** Publish source-matched native provider build evidence, then run op19 with exact retained response and allowance; qualify hosted settlement, uncertainty and billing evidence without treating provider counts as an invoice.
 
 **Done when:** Execute bounded streaming requests after canonical reservation, retain exact evidence, fence old epochs, reconcile uncertain work and demonstrate secret isolation.
 
-**Evidence so far:** Provider continuity retains scoped native local gates. 567fa58 adds Lean-owned arithmetic and strict parsing of provider-reported usage with an op19 Host source seam; narrow checks pass, native op19 and hosted settlement pending. No invoice attestation or paid-provider completion.
+**Evidence so far:** Committed 567fa58 source parses provider-reported usage and proves bounded quote arithmetic. A new linked provider Host has only local profile smoke and no published native receiving evidence here; op19 settlement, invoice authentication and paid-provider use remain unestablished.
 
-[Task brief](../sprints/2026-09-26/checkpoint-13.md)
+[Task brief](../sprints/2026-09-26/checkpoint-14.md)
 
 **Enables:**
 
@@ -468,6 +469,7 @@ Execute bounded streaming requests after canonical reservation, retain exact evi
 - [S-CHECKPOINT10-0926 — Combined Mini builds, corrected native members, scoped recovery, workroom R2 fn publication and provider continuity](../sprints/2026-09-26/checkpoint-10.md)
 - [S-CHECKPOINT12-0926 — Combined native speed and adversaries, fresh law recovery, scoped hosted peer and receipt progress](../sprints/2026-09-26/checkpoint-12.md)
 - [S-CHECKPOINT13-0926 — Exact hosted Hermes receipt, held fn B ACK/read completion and scoped next-source construction](../sprints/2026-09-26/checkpoint-13.md)
+- [S-CHECKPOINT14-0926 — Signed cross-UID resources, fresh stale-root cleanup and operator-assisted workroom fn reply](../sprints/2026-09-26/checkpoint-14.md)
 
 **Write scope:** minidregg/native/grain-runtime/src/provider.rs; minidregg/native/grain-runtime/src/main.rs; minidregg/deploy/grain-host/
 
@@ -479,17 +481,17 @@ Execute bounded streaming requests after canonical reservation, retain exact evi
 
 **Durable hosted grain control and authenticated entrance**
 
-Status: **active** · Owner: Sol: client_session, hermes_path, fn_reply_profile; Astra: root · Updated: 2026-09-27T00:15:00Z
+Status: **active** · Owner: Sol: client_session, hermes_path, fn_reply_profile; Astra: root · Updated: 2026-09-27T00:40:00Z
 
 Execute authenticated provisioning, hard/soft attachment, retained operation lookup and recovery through actual kernel/runtime adapters.
 
-**Next:** Wire ordinary client v2 pinned envelope and complete signed two-UID resource operations; keep publication receipt delivery distinct from remote model acknowledgement and old held-work recovery.
+**Next:** Run actual controller/Hermes sessions through the dedicated account frontends, then test reconnect, physical interruption and recovery under their separately pinned custody.
 
 **Done when:** Execute authenticated provisioning, hard/soft attachment, retained operation lookup and recovery through actual kernel/runtime adapters.
 
-**Evidence so far:** Fresh 8801 unforked Hermes run delivered a same-tool publication receipt whose four historical fields match the accepted Mini outcome and journal; reported:false keeps recovery. Earlier 7715 policy-crash acceptance remains separate. Cross-UID transport/ACL and fresh four-principal provision passed privately, but the first ordinary signed query was refused pre-forward on v1/v2 socket envelope mismatch.
+**Evidence so far:** Fresh cross-UID native gate signed-created and edited one content atom through UID65534/UID1 frontends; wrong-subject capabilities were refused, private custody remained separate. Dedicated miniworka26/miniworkb26 accounts are provisioned, but no controller/Hermes gate has passed on them.
 
-[Task brief](../sprints/2026-09-26/checkpoint-13.md)
+[Task brief](../sprints/2026-09-26/checkpoint-14.md)
 
 **Enables:**
 
@@ -510,6 +512,7 @@ Execute authenticated provisioning, hard/soft attachment, retained operation loo
 - [S-CHECKPOINT11-0926 — Proved native hash speedup, exact-readback integration, hosted peer publications and recovered fn receive](../sprints/2026-09-26/checkpoint-11.md)
 - [S-CHECKPOINT12-0926 — Combined native speed and adversaries, fresh law recovery, scoped hosted peer and receipt progress](../sprints/2026-09-26/checkpoint-12.md)
 - [S-CHECKPOINT13-0926 — Exact hosted Hermes receipt, held fn B ACK/read completion and scoped next-source construction](../sprints/2026-09-26/checkpoint-13.md)
+- [S-CHECKPOINT14-0926 — Signed cross-UID resources, fresh stale-root cleanup and operator-assisted workroom fn reply](../sprints/2026-09-26/checkpoint-14.md)
 
 **Write scope:** minidregg/native/resource-client/; minidregg/native/grain-runtime/; minidregg/Host/Json.lean
 
@@ -521,17 +524,17 @@ Execute authenticated provisioning, hard/soft attachment, retained operation loo
 
 **Host upstream Hermes with persistent confined execution**
 
-Status: **active** · Owner: Sol: hermes_path, replay_session, linux_hosting; review runtime_review; Astra: root · Updated: 2026-09-27T00:15:00Z
+Status: **active** · Owner: Sol: hermes_path, replay_session, linux_hosting; review runtime_review; Astra: root · Updated: 2026-09-27T00:40:00Z
 
 Run real upstream Hermes in a confined Linux scope, preserve conversation/output, kill descendants on hard disconnect and retain exact scope on soft reconnect.
 
-**Next:** Run fresh 8901 typed pre-submit refusal/recovery gate, resolve old hosted B hold separately, then exercise signed cross-UID use after client v2 envelope wiring and peer revocation.
+**Next:** Qualify dedicated-account controller/Hermes publication and recovery; separately reconcile old hosted B attempt44 and continue peer revocation and lifecycle gates.
 
 **Done when:** Run real upstream Hermes in a confined Linux scope, preserve conversation/output, kill descendants on hard disconnect and retain exact scope on soft reconnect.
 
-**Evidence so far:** Fresh 8801 actual Hermes fixture received exact four-field Mini publication receipt; local deterministic provider consumption, not remote model delivery. Hosted B7803/7804 old stale attempt still retains uncertain hold. Durable pre-submit refusal classification/retention is wired in source, fresh 8901 gate pending. Cross-UID ordinary signed query refused before native forwarding because client sent v1 envelope.
+**Evidence so far:** Fresh 8901 Hermes run retained exact Lean pre-submit stale-root refusal and signed zero-charge settlement/disconnect with no held tool allowance. It does not resolve earlier hosted peer B attempt44, which remains held. Two-account native resource use passes without hosted controllers.
 
-[Task brief](../sprints/2026-09-26/checkpoint-13.md)
+[Task brief](../sprints/2026-09-26/checkpoint-14.md)
 
 **Enables:**
 
@@ -555,6 +558,7 @@ Run real upstream Hermes in a confined Linux scope, preserve conversation/output
 - [S-CHECKPOINT11-0926 — Proved native hash speedup, exact-readback integration, hosted peer publications and recovered fn receive](../sprints/2026-09-26/checkpoint-11.md)
 - [S-CHECKPOINT12-0926 — Combined native speed and adversaries, fresh law recovery, scoped hosted peer and receipt progress](../sprints/2026-09-26/checkpoint-12.md)
 - [S-CHECKPOINT13-0926 — Exact hosted Hermes receipt, held fn B ACK/read completion and scoped next-source construction](../sprints/2026-09-26/checkpoint-13.md)
+- [S-CHECKPOINT14-0926 — Signed cross-UID resources, fresh stale-root cleanup and operator-assisted workroom fn reply](../sprints/2026-09-26/checkpoint-14.md)
 
 **Write scope:** minidregg/native/grain-runtime/; minidregg/Kernel/AgentGrain.lean; minidregg/Host/Json.lean; minidregg/deploy/grain-host/
 
@@ -566,17 +570,17 @@ Run real upstream Hermes in a confined Linux scope, preserve conversation/output
 
 **Expose canonical resource programming to Hermes**
 
-Status: **active** · Owner: Sol: hermes_path, replay_session, codec_stack, shared_resource_tools; Astra: root · Updated: 2026-09-27T00:15:00Z
+Status: **active** · Owner: Sol: hermes_path, replay_session, codec_stack, shared_resource_tools; Astra: root · Updated: 2026-09-27T00:40:00Z
 
 Drive real signed resource create/read/program/invoke/delegate/history operations through the source-owned host; reject stale generation authority without refreshing it.
 
-**Next:** Run native composite birth with exact signed tool settlement, parent witness, current law and one durable receipt; derive new target access only from that accepted result.
+**Next:** Run native composite birth and its exact durable receipt, then expose new target access through a hosted Hermes tool under current parent authority.
 
 **Done when:** Drive real signed resource create/read/program/invoke/delegate/history operations through the source-owned host; reject stale generation authority without refreshing it.
 
-**Evidence so far:** Actual fresh 8801 Hermes tool result carried the exact Mini publication receipt to a strict local provider. Composite birth now has canonical signed ingress and general combined-authority preservation/marker proofs; no native composite admission or Hermes tool exists.
+**Evidence so far:** Signed native cross-UID subjects created/read/edited shared content with wrong-capability refusals. This is no hosted Hermes entrance. Composite birth has canonical ingress and authority proofs but still no accepted joint birth/settlement/witness call or agent tool.
 
-[Task brief](../sprints/2026-09-26/checkpoint-13.md)
+[Task brief](../sprints/2026-09-26/checkpoint-14.md)
 
 **Enables:**
 
@@ -599,6 +603,7 @@ Drive real signed resource create/read/program/invoke/delegate/history operation
 - [S-CHECKPOINT11-0926 — Proved native hash speedup, exact-readback integration, hosted peer publications and recovered fn receive](../sprints/2026-09-26/checkpoint-11.md)
 - [S-CHECKPOINT12-0926 — Combined native speed and adversaries, fresh law recovery, scoped hosted peer and receipt progress](../sprints/2026-09-26/checkpoint-12.md)
 - [S-CHECKPOINT13-0926 — Exact hosted Hermes receipt, held fn B ACK/read completion and scoped next-source construction](../sprints/2026-09-26/checkpoint-13.md)
+- [S-CHECKPOINT14-0926 — Signed cross-UID resources, fresh stale-root cleanup and operator-assisted workroom fn reply](../sprints/2026-09-26/checkpoint-14.md)
 
 **Write scope:** minidregg/native/grain-runtime/; minidregg/Kernel/AgentGrain.lean; minidregg/Host/Json.lean; minidregg/scripts/workroom/; minidregg/Compiler/GrainResourceBirthController.lean
 
@@ -671,17 +676,17 @@ SDK route discovery is lazy while actual cryptographic calls retain real Lean in
 
 **Retain verified history across native host requests**
 
-Status: **active** · Owner: Sol: mini_receiver, fn_mini_review, fn_reply_profile, build_native; review runtime_review; Astra: root · Updated: 2026-09-27T00:15:00Z
+Status: **active** · Owner: Sol: mini_receiver, fn_mini_review, fn_reply_profile, build_native; review runtime_review; Astra: root · Updated: 2026-09-27T00:40:00Z
 
 Replace repeated whole-history semantic replay with a source-owned verified session, preserving exact history identity, current authorization and durable CAS/recovery behavior.
 
-**Next:** Carry exact fn R2 B receipt/ACK and signed read as regression evidence, then finish source-matched host integration and remaining history/uncertainty gates; do not substitute the combined timing Host for the qualified B image.
+**Next:** Link and qualify typed A reply provenance in a source-matched Host; preserve exact historical receipts and finish automatic own-R cursor progress without borrowing component/source-only evidence.
 
 **Done when:** Prove verified-prefix plus suffix replay agrees with full semantic replay under explicit verifier assumptions; run unchanged-image, external append/revocation, rewritten/rolled-back history, stale challenge, exact CAS, lost reply, restart and verifier-change cases through the real host. Preserve fresh authorization, exact original receipt boundaries and uncertainty. Measure physical reads, replay counts and latency; do not substitute height/hash/mtime for exact image identity.
 
-**Evidence so far:** Combined Mac/Linux UInt64+exact hosts retain checkpoint12 physical and matched timing gates. Separately qualified core-only Mac Host recovered the original fn R2 B four-field receipt, then accepted durable fn ACK; signed B inbox read matches A edit43. The first ACK refusal remains a separate attempt.
+**Evidence so far:** The separately qualified core-only Host carried the same accepted workroom edit through B ACK and operator-assisted Q→A at Mini A count4/fn Store5/5. Current linked generic A view remains B-oriented; typed A provenance exists as a module-only source probe. Combined-host timing and physical gates remain separate checkpoint12 evidence.
 
-[Task brief](../sprints/2026-09-26/checkpoint-13.md)
+[Task brief](../sprints/2026-09-26/checkpoint-14.md)
 
 **Enables:**
 
@@ -706,6 +711,7 @@ Replace repeated whole-history semantic replay with a source-owned verified sess
 - [S-CHECKPOINT11-0926 — Proved native hash speedup, exact-readback integration, hosted peer publications and recovered fn receive](../sprints/2026-09-26/checkpoint-11.md)
 - [S-CHECKPOINT12-0926 — Combined native speed and adversaries, fresh law recovery, scoped hosted peer and receipt progress](../sprints/2026-09-26/checkpoint-12.md)
 - [S-CHECKPOINT13-0926 — Exact hosted Hermes receipt, held fn B ACK/read completion and scoped next-source construction](../sprints/2026-09-26/checkpoint-13.md)
+- [S-CHECKPOINT14-0926 — Signed cross-UID resources, fresh stale-root cleanup and operator-assisted workroom fn reply](../sprints/2026-09-26/checkpoint-14.md)
 
 **Write scope:** minidregg/Kernel/NativeHost*.lean; minidregg/Host/Main.lean; minidregg/native/resource-client/; minidregg/Compiler/Sp800185Cshake256Core.lean; minidregg/Kernel/NativeObservationController.lean; minidregg/scripts/build-native-host.sh
 
