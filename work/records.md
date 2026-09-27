@@ -695,15 +695,15 @@ SDK route discovery is lazy while actual cryptographic calls retain real Lean in
 
 **Retain verified history across native host requests**
 
-Status: **active** · Owner: Astra: root; Sol: fn_mini_review · Updated: 2026-09-27T22:51:06.167Z
+Status: **active** · Owner: Astra: root; Sol: fn_mini_review · Updated: 2026-09-27T23:24:29.498Z
 
 Replace repeated whole-history semantic replay with a source-owned verified session, preserving exact history identity, current authorization and durable CAS/recovery behavior.
 
-**Next:** Integrate proved direct finite-index repair into coherent Host cut; reduce measured remaining admission/cold-replay cost while preserving exact semantics and cold recovery.
+**Next:** Recover retained base workroom launcher using short private socket, preserving failed phase; complete same-Store app handoff then installation and actual browser/agent journey.
 
 **Done when:** Prove verified-prefix plus suffix replay agrees with full semantic replay under explicit verifier assumptions; run unchanged-image, external append/revocation, rewritten/rolled-back history, stale challenge, exact CAS, lost reply, restart and verifier-change cases through the real host. Preserve fresh authorization, exact original receipt boundaries and uncertainty. Measure physical reads, replay counts and latency; do not substitute height/hash/mtime for exact image identity.
 
-**Evidence so far:** Private exact retained birth and cold reopen PASS on2649+6d34efd; e52995f preserves four committed Linux artifacts;9e03806 separates original/successor Host pins. Live r3 untouched; no integrated service.
+**Evidence so far:** Live retained r3 birth installed344.57s and cold exactlookup replayed110.53s; Store acceptedcount1. Coherent9cd Host qualified353/353. Base continuation stoppedpre-native on UDS path length; explicit recovery underreview.
 
 [Task brief](../sprints/2026-09-26/checkpoint-17.md)
 
@@ -741,6 +741,7 @@ Replace repeated whole-history semantic replay with a source-owned verified sess
 - [S-SPK-CHECKPOINT67-0927 — Resident/controller batch adopted; ordinary birth bottleneck isolated](../sprints/2026-09-26/checkpoint-67.md)
 - [S-SPK-CHECKPOINT68-0927 — Exact retained birth and cold reopen pass on repaired native Host](../sprints/2026-09-26/checkpoint-68.md)
 - [S-SPK-CHECKPOINT68-0927 — Exact retained birth and cold reopen pass on repaired native Host](../sprints/2026-09-26/checkpoint-68.md)
+- [S-SPK-CHECKPOINT69-0927 — Live retained birth and qualified coherent Host; base socket recovery pending](../sprints/2026-09-26/checkpoint-69.md)
 
 **Write scope:** minidregg/Kernel/NativeHost*.lean; minidregg/Host/Main.lean; minidregg/native/resource-client/; minidregg/Compiler/Sp800185Cshake256Core.lean; minidregg/Kernel/NativeObservationController.lean; minidregg/scripts/build-native-host.sh
 
@@ -1058,15 +1059,15 @@ Report which claims/work items need reinspection when source bytes change, with 
 
 **Run shared SPK applications through Mini, browsers, agents and fn**
 
-Status: **active** · Owner: Astra: root; Sol: client_session, agent_api_host, runtime_review, fn_mini_review, fn_contracts · Updated: 2026-09-27T22:51:06.167Z
+Status: **active** · Owner: Astra: root; Sol: client_session, agent_api_host, runtime_review, fn_mini_review, fn_contracts · Updated: 2026-09-27T23:24:29.498Z
 
 Integrate real third-party packaged app execution and persistent state with Mini lifecycle/current grants, hosted Hermes, direct commands, and selected version publication over semi-untrusted fn.
 
-**Next:** Execute demo-convergence batches with one retained GitWeb journey: practical creation and browser app, hosted real-model Hermes on the same resources, selective fn version transfer. Finish actual receiving callers and native evidence.
+**Next:** Recover retained base workroom launcher using short private socket, preserving failed phase; complete same-Store app handoff then installation and actual browser/agent journey.
 
 **Done when:** A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.
 
-**Evidence so far:** Private exact retained birth and cold reopen PASS on2649+6d34efd; e52995f preserves four committed Linux artifacts;9e03806 separates original/successor Host pins. Live r3 untouched; no integrated service.
+**Evidence so far:** Live retained r3 birth installed344.57s and cold exactlookup replayed110.53s; Store acceptedcount1. Coherent9cd Host qualified353/353. Base continuation stoppedpre-native on UDS path length; explicit recovery underreview.
 
 [Task brief](../sprints/2026-09-26/spk-platform-cycle.md)
 
@@ -1133,6 +1134,7 @@ Integrate real third-party packaged app execution and persistent state with Mini
 - [S-DEMO-CONVERGENCE-RESUME — Resumed construction around complete demo journeys](../sprints/2026-09-26/demo-convergence.md)
 - [S-SPK-CHECKPOINT67-0927 — Resident/controller batch adopted; ordinary birth bottleneck isolated](../sprints/2026-09-26/checkpoint-67.md)
 - [S-SPK-CHECKPOINT68-0927 — Exact retained birth and cold reopen pass on repaired native Host](../sprints/2026-09-26/checkpoint-68.md)
+- [S-SPK-CHECKPOINT69-0927 — Live retained birth and qualified coherent Host; base socket recovery pending](../sprints/2026-09-26/checkpoint-69.md)
 
 **Write scope:** minidregg/Kernel/ApplicationLifecycle* and ApplicationSpkLaunchDescriptor.lean (mini_app_contract); minidregg/native/spk-host resident/RPC and dedicated physical evidence (agent_api_host); minidregg/native/spk-host agent custody/server (agent_api_host); minidregg/native/grain-runtime and dedicated controller evidence (runtime_review); isolated source-matched native Host builds and explicit proof repairs (build_native); minidregg/Kernel/Fn* receiving and Host/FnConsumerFrontierPlan.lean (fn_mini_review); persistent agent-route authorization design (runtime_review); coordinated Host/Main.lean and NativeHostReplay.lean hooks; root owns integration order and Git; minidregg/scripts/spk-platform source-authored fixture enrollment/birth continuations (spk_compatibility); minidregg/Host/ApplicationLifecycleLaunchAuthoring*.lean and coordinated Main ops66–71 after lower API freeze (fn_mini_review); minidregg/Kernel/NativeHostContext.lean canonical image-boundary byte reuse and general equivalence proof (client_session); actual Replay consumers coordinated with mini_app_contract
 

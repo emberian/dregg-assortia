@@ -1,5 +1,7 @@
 # Start here: DREGG handoff
 
+**Current live boundary:** [checkpoint 69](sprints/2026-09-26/checkpoint-69.md): retained r3 birth and exact lookup passed; coherent Host artifact qualified. Base continuation then stopped before native work on an overlong Unix socket path; preserve its failed phase for explicit recovery.
+
 **Latest native result:** [checkpoint 68](sprints/2026-09-26/checkpoint-68.md) records the repaired exact birth and cold reopen passing on a private copy, ready Linux artifacts, and the reviewed Host transition. Live deployment and practical latency remain open.
 
 **Latest reviewed batch:** [checkpoint 67](sprints/2026-09-26/checkpoint-67.md) records committed resident/controller integration, its test evidence, the ordinary-birth admission bottleneck, and the one remaining private diagnostic. Source completion does not establish a deployed service.
