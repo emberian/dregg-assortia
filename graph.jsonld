@@ -3706,8 +3706,8 @@
       "label": "Operate actual Mini resources through fn correspondence and separate gateways",
       "description": "Converge existing fn consumer lineage and improve its authority, fresh setup, general reply profiles and distributed hosted receiving path.",
       "status": "active",
-      "owner": "Sol: fn_contracts, fn_mini_review, fn_reply_profile; Astra: root",
-      "updatedAt": "2026-09-27T02:10:00Z",
+      "owner": "Sol: fn_contracts; Astra: root",
+      "updatedAt": "2026-09-27T04:55:50.887Z",
       "priority": 1,
       "sources": [
         "urn:dregg:assortia:S-OVERNIGHT-0926",
@@ -3728,7 +3728,8 @@
         "urn:dregg:assortia:S-CHECKPOINT15-0926",
         "urn:dregg:assortia:S-FN-DISCLOSURE-0927",
         "urn:dregg:assortia:S-CHECKPOINT16-0926",
-        "urn:dregg:assortia:S-CHECKPOINT17-0926"
+        "urn:dregg:assortia:S-CHECKPOINT17-0926",
+        "urn:dregg:assortia:S-PARALLEL-JOURNEYS-0927"
       ],
       "advances": [
         "urn:dregg:assortia:E-WORLD",
@@ -3751,8 +3752,8 @@
         "minidregg/Host/GrainOriginPreparation.lean",
         "minidregg/docs/FN-PUBLICATION-DISCLOSURE.md"
       ],
-      "progress": "Native own-R accept/restart/repeat/ACK and equal-position no-op passed on fresh private Store. Exact owner-release codec and current-key signature component narrowly checked; receiving/replay remains construction.",
-      "nextAction": "Exercise actual A-worker own-R then queued-Q drain; integrate special current-capability owner-release admission and replay, then private workroom R→B→Q→A.",
+      "progress": "Native own-R accept/restart/repeat/ACK and equal-position no-op passed on fresh private Store. Exact owner-release codec and current-key signature component narrowly checked; receiving/replay remains construction. Selected-release Signature/Ingress/Admission have narrow source checks; new durable receiver is under construction. No native route or selected-release transport run is claimed.",
+      "nextAction": "Finish selected-release durable receiver and exact historical retry checks, integrate native Host/Replay/CLI route, then exercise authorized selected public bytes through actual fn without private-prefix disclosure. Receiver import/install remains separate authority.",
       "closure": "Real Mini-resource operation and reply travel through independently configured fn nodes with separately pinned application authorities; durable Mini processing precedes fn ACK, direct forged consumer input is refused, exact retries and uncertain outcomes reconcile, and a documented user entrance uses this path."
     },
     {
@@ -3970,15 +3971,16 @@
       "label": "Run shared SPK applications through Mini, browsers, agents and fn",
       "description": "Integrate real third-party packaged app execution and persistent state with Mini lifecycle/current grants, hosted Hermes, direct commands, and selected version publication over semi-untrusted fn.",
       "status": "active",
-      "owner": "Astra: root; Sol: spk_compatibility, spk_app_probe, linux_hosting, client_session, mini_app_contract, fn_mini_review, codec_stack, hermes_path",
+      "owner": "Astra: root; Sol: build_native, hermes_path, linux_hosting, client_session, fn_mini_review, codec_stack, runtime_review",
       "reviewer": "Astra: root",
-      "updatedAt": "2026-09-27T04:30:39Z",
+      "updatedAt": "2026-09-27T04:55:50.887Z",
       "priority": 1,
       "sources": [
         "urn:dregg:assortia:S-SPK-CYCLE-0927",
         "urn:dregg:assortia:S-SPK-GROUNDING1-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT18-0927",
-        "urn:dregg:assortia:S-SPK-CHECKPOINT19-0927"
+        "urn:dregg:assortia:S-SPK-CHECKPOINT19-0927",
+        "urn:dregg:assortia:S-PARALLEL-JOURNEYS-0927"
       ],
       "advances": [
         "urn:dregg:assortia:E-WORLD",
@@ -3994,13 +3996,14 @@
       "blockedBy": [],
       "brief": "sprints/2026-09-26/spk-platform-cycle.md",
       "writeScope": [
-        "breadstuffs/sandstorm-package parser hardening and sandstorm-bridge facade (spk_compatibility; root commits)",
-        "minidregg/native/spk-host and deploy/spk-host (linux_hosting; root commits)",
-        "minidregg/native/spk-rpc (client_session; root commits)",
-        "minidregg/Kernel/ApplicationGrainSession*.lean (mini_app_contract; root commits)",
-        "minidregg/Kernel/ApplicationDispatch*.lean (fn_mini_review; root commits)",
-        "minidregg/Kernel/NativeHost.lean composite birth lookup (codec_stack; root commits)",
-        "isolated hosted9301 recovery and evidence (hermes_path); dregg-assortia graph/handoff (root)"
+        "minidregg/native/spk-host and dedicated GitWeb qualification evidence (linux_hosting)",
+        "minidregg/Kernel/ApplicationPermissionSchema.lean (client_session)",
+        "minidregg/Kernel/ApplicationDispatchAuthority*.lean (fn_mini_review)",
+        "minidregg/Kernel/ApplicationLifecycle*.lean (codec_stack)",
+        "minidregg/native/resource-client/application-acceptance.sh and dedicated evidence (hermes_path)",
+        "isolated source-matched native Host and helper build (build_native)",
+        "minidregg/native/grain-runtime bounded provider profile and coordinated caller (runtime_review)",
+        "shared NativeHost/Replay/Host convergence and dregg-assortia graph/handoff (root); root commits all lanes"
       ],
       "acceptance": [
         "Two distinct participants use the same real third-party SPK app through browser and hosted real-model Hermes API access under Mini grants.",
@@ -4009,8 +4012,8 @@
         "Selected app or data versions travel through fn with explicit publication and separate receiver install/import authority, without private-prefix disclosure."
       ],
       "closure": "A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.",
-      "nextAction": "Finish source-matched typed app/session birth and a two-participant private Store; implement current-read-guarded Mini dispatch and exact roles, then join the qualified SPK process/RPC to browser, Hermes and selected fn release.",
-      "progress": "Bread581911535 parser and Mini f70aa4d SPK host/RPC qualified an actual signed Simple Todos create plus persisted continueCommand HTTP200 in isolated bounded Linux units. Mini95ee02c repaired historical composite birth lookup on a copied Store; Mini42e5705 and 1808b0b add narrow-compiled session/enrollment and candidate dispatch source; Mini6f945ab exposes bounded raw Sandstorm ViewInfo roles. Dispatch remains unauthorized; installed role resolution, native special receiver, public browser/API, real-model Hermes and selected fn release remain open."
+      "nextAction": "Advance all five parallel journeys: native two-participant birth and exact recovery; GitWeb real write/fetch/browser/wake; app-issued permission ceilings and special dispatch; lifecycle admission and process claims; real-model readiness and selected fn release receiving. Join them under current Mini authority.",
+      "progress": "Bread581911535 parser and Mini f70aa4d SPK host/RPC qualified an actual signed Simple Todos create plus persisted continueCommand HTTP200 in isolated bounded Linux units. Mini95ee02c repaired historical composite birth lookup on a copied Store; Mini42e5705 and 1808b0b add narrow-compiled session/enrollment and candidate dispatch source; Mini6f945ab exposes bounded raw Sandstorm ViewInfo roles. Dispatch remains unauthorized; installed role resolution, native special receiver, public browser/API, real-model Hermes and selected fn release remain open. Mini2c34802 corrects dispatch witness separation; Mini2e60a9c typed application/session authoring passes a narrow executable check; Mini60f0b76 preserves signed GitWeb selection evidence. Native build/private acceptance and GitWeb runtime qualification remain in progress. Self-owned enrollment cannot establish permission ceilings: app-issued authority is required."
     },
     {
       "@id": "urn:dregg:assortia:S-SPK-GROUNDING1-0927",
@@ -4044,6 +4047,17 @@
       "recordedDate": "2026-09-27",
       "evidenceKind": "bounded-real-spk-process-and-candidate-mini-kernel-source",
       "limitations": "No Mini app admission, public listener, role-resolved dispatch, joined browser/Hermes path, selected fn release or real-model run."
+    },
+    {
+      "@id": "urn:dregg:assortia:S-PARALLEL-JOURNEYS-0927",
+      "@type": "Source",
+      "label": "Parallel platform journeys and independent app-issued authority requirement",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-26/parallel-journeys.md",
+      "sha256": "fc2ba82c4640bbebfa88a5f3ab9d32dafbcbcc41af9a4dac8ecf17f9a7f4be8f",
+      "recordedDate": "2026-09-27",
+      "evidenceKind": "user-direction-and-scoped-source-review",
+      "limitations": "Acceptance structure and current construction direction; not integrated deployment evidence."
     }
   ]
 }

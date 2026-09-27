@@ -2,7 +2,7 @@
 
 > Generated from `graph.jsonld` by `python3 hub.py render`. Edit the graph, not this file.
 
-Latest work-record update: **2026-09-27T04:30:39Z**. This is recorded project state, not a live process monitor.
+Latest work-record update: **2026-09-27T04:55:50.887Z**. This is recorded project state, not a live process monitor.
 
 [New contributor](contributing/README.md) · [Project map](MAP.md) · [Detailed work records](work/records.md)
 
@@ -12,7 +12,7 @@ Latest work-record update: **2026-09-27T04:30:39Z**. This is recorded project st
 
 | Work | Owner / reviewer | Next action |
 |---|---|---|
-| [Operate actual Mini resources through fn correspondence and separate gateways](sprints/2026-09-26/checkpoint-17.md) | Sol: fn_contracts, fn_mini_review, fn_reply_profile; Astra: root | Exercise actual A-worker own-R then queued-Q drain; integrate special current-capability owner-release admission and replay, then private workroom R→B→Q→A. |
+| [Operate actual Mini resources through fn correspondence and separate gateways](sprints/2026-09-26/checkpoint-17.md) | Sol: fn_contracts; Astra: root | Finish selected-release durable receiver and exact historical retry checks, integrate native Host/Replay/CLI route, then exercise authorized selected public bytes through actual fn without private-prefix disclosure. Receiver import/install remains separate authority. |
 | [Custody and meter scoped provider requests](sprints/2026-09-26/checkpoint-17.md) | Sol: runtime_review, hermes_path; Astra: root | Gate interruption during quote and post-settle restart; preserve no-resend/exact-response custody while integrating real-provider configuration. |
 | [Durable hosted grain control and authenticated entrance](sprints/2026-09-26/checkpoint-17.md) | Sol: client_session, hermes_path, fn_reply_profile; Astra: root | Complete short spawn/cancel critical section and custody ownership without blocking immediate worker stop; preserve uncertainty and exact-call recovery. |
 | [Host upstream Hermes with persistent confined execution](sprints/2026-09-26/checkpoint-17.md) | Sol: hermes_path, replay_session, linux_hosting; review runtime_review; Astra: root | Finish birth charge crash recovery and dispatch cancellation; exercise soft EOF and usable hard-stop reconnect/recovery. |
@@ -20,7 +20,7 @@ Latest work-record update: **2026-09-27T04:30:39Z**. This is recorded project st
 | [Keep grants valid across policy source revisions](sprints/2026-09-19/cycle-1-integration-checkpoint.md) | Astra: root; component implementation/review lanes completed | Implement and exercise generation-wide native revocation and the delegated-grant two-replacement case against the same source-owned receiving path; preserve the completed per-capability/current-law regressions. |
 | [Retain verified history across native host requests](sprints/2026-09-26/checkpoint-17.md) | Sol: mini_receiver, fn_mini_review, fn_reply_profile, build_native; review runtime_review; Astra: root | Implement exact shared-command-byte optimization, prove generalized equality, benchmark source-matched native image; preserve current authority and post-CAS readback. |
 | [Define the September 26 programmable nexus and its shared contracts](sprints/2026-09-19/cycle-1-integration-checkpoint.md) | Astra: root; component implementation/review lanes completed | Converge the SPK platform cycle: packaged apps provide shared human views and agent APIs under Mini authority; retain separate contributed-hosting and Solana obligations. |
-| [Run shared SPK applications through Mini, browsers, agents and fn](sprints/2026-09-26/spk-platform-cycle.md) | Astra: root; Sol: spk_compatibility, spk_app_probe, linux_hosting, client_session, mini_app_contract, fn_mini_review, codec_stack, hermes_path / Astra: root | Finish source-matched typed app/session birth and a two-participant private Store; implement current-read-guarded Mini dispatch and exact roles, then join the qualified SPK process/RPC to browser, Hermes and selected fn release. |
+| [Run shared SPK applications through Mini, browsers, agents and fn](sprints/2026-09-26/spk-platform-cycle.md) | Astra: root; Sol: build_native, hermes_path, linux_hosting, client_session, fn_mini_review, codec_stack, runtime_review / Astra: root | Advance all five parallel journeys: native two-participant birth and exact recovery; GitWeb real write/fetch/browser/wake; app-issued permission ceilings and special dispatch; lifecycle admission and process claims; real-model readiness and selected fn release receiving. Join them under current Mini authority. |
 
 ## Backlog
 
