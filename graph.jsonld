@@ -3973,9 +3973,9 @@
       "label": "Run shared SPK applications through Mini, browsers, agents and fn",
       "description": "Integrate real third-party packaged app execution and persistent state with Mini lifecycle/current grants, hosted Hermes, direct commands, and selected version publication over semi-untrusted fn.",
       "status": "active",
-      "owner": "Astra: root; Sol: build_native, hermes_path, linux_hosting, fn_mini_review, codec_stack, runtime_review, client_session, spk_compatibility, fn_contracts, shared_resource_tools",
+      "owner": "Astra: root; Sol: build_native, hermes_path, linux_hosting, fn_mini_review, codec_stack, runtime_review, mini_app_contract, client_session, spk_compatibility, fn_contracts, shared_resource_tools",
       "reviewer": "Astra: root",
-      "updatedAt": "2026-09-27T05:49:53.214Z",
+      "updatedAt": "2026-09-27T06:06:46.279Z",
       "priority": 1,
       "sources": [
         "urn:dregg:assortia:S-SPK-CYCLE-0927",
@@ -3986,7 +3986,8 @@
         "urn:dregg:assortia:S-SPK-CHECKPOINT20-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT21-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT22-0927",
-        "urn:dregg:assortia:S-SPK-CHECKPOINT23-0927"
+        "urn:dregg:assortia:S-SPK-CHECKPOINT23-0927",
+        "urn:dregg:assortia:S-SPK-CHECKPOINT24-0927"
       ],
       "advances": [
         "urn:dregg:assortia:E-WORLD",
@@ -4015,7 +4016,8 @@
         "minidregg/native/resource-client selected release and schema inspect (shared_resource_tools)",
         "dregg-assortia graph/handoff and all scoped commits (root)",
         "minidregg/Host/Json.lean typed composite app/session birth and native/grain-runtime application tools (client_session)",
-        "minidregg/native/resource-client/src/selected_publisher.rs and coordinated restricted source signer (fn_contracts)"
+        "minidregg/native/resource-client/src/selected_publisher.rs and coordinated restricted source signer (fn_contracts)",
+        "minidregg/Kernel/ApplicationGrainBirth.lean, ApplicationGrainSessionBirth.lean and new loaded current-authority authoring helper (mini_app_contract; Host.Json coordinated client_session)"
       ],
       "acceptance": [
         "Two distinct participants use the same real third-party SPK app through browser and hosted real-model Hermes API access under Mini grants.",
@@ -4024,8 +4026,8 @@
         "Selected app or data versions travel through fn with explicit publication and separate receiver install/import authority, without private-prefix disclosure."
       ],
       "closure": "A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.",
-      "nextAction": "Join app-issued sharing and original-prefix issuance verification to current dispatch authority; connect native lifecycle/current claim to bounded hosting and typed SPK browser/API transport. Run the same real app through two Mini subjects and hosted Hermes, and connect selected source-authorized fn publication.",
-      "progress": "Mini4199096 records fresh native application birth, two independently signed session births, separate app observe grants, cross-session native refusals and exact logical-image/receipt continuity after reopen. Executed Host6635b356 is source2e60a9c plus proof-only bfb6b8b; b19c127 preserves qualified build evidence. Independent GitWeb push/fetch/browser/persisted wake remains qualified by6efd0b9/c8dedb2. Complete schema/manifests and corrected informational deniedPermissions semantics are committed4c50fe8/fb910d8. Provider isolation component is committeddc03198/ec5d270; fresh native provider integration is underway. Share issuance, authenticated historical provenance, principal binding, current physical lifecycle claims, browser/API adapter, source publication and real-model acceptance remain open. Mini776ba59 commits native lifecycle/source-publication routes and historical replay; source-qualified native build is underway, not accepted yet. Checkpoint23 preserves current grant epoch repair, historical policy compatibility, authenticated issuance witness and native hard-interruption recovery obligations."
+      "nextAction": "Finish exact776ba59 native build and recipient receiving fixture while qualifying next source overlay. Join current-authority app/session birth, finalized share issue plus real ticket delegation, verified-prefix dispatch/claim, and typed SPK session lifecycle. Run actual fn poll-to-recipient and source-authorized publication, then real-model/two-person deployed journey.",
+      "progress": "Native two-subject application/session foundation remains qualified by4199096; separate real GitWeb execution by6efd0b9/c8dedb2. Native Hermes fixture23cdfc7 completed metered read/publish/finish through isolated Unix provider gateway. Same-Store recovery88b8bec confirms generation fence then audited settlement with all holds cleared; no paid-model claim. Publication sender3685c6c passes53 client tests but native fn run is pending. Lifecycle policy2b0d37b preserves v1 replay and adds claim phases; verified claim/dispatch/issue history and physical integration remain open. Checkpoint24 records exact776ba59 rebuild after stale warm-source failure, current-authority birth and auxiliary allocation repairs, and provider pre-send budget work."
     },
     {
       "@id": "urn:dregg:assortia:S-SPK-GROUNDING1-0927",
@@ -4114,6 +4116,17 @@
       "recordedDate": "2026-09-27",
       "evidenceKind": "committed-source-and-scoped-integration-review",
       "limitations": "Native route binary acceptance and complete deployed journey outstanding; provider run is deterministic and native hard-interruption recovery remains unqualified."
+    },
+    {
+      "@id": "urn:dregg:assortia:S-SPK-CHECKPOINT24-0927",
+      "@type": "Source",
+      "label": "Hosted recovery, publication custody and current integration frontier",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-26/checkpoint-24.md",
+      "sha256": "c1697b06a2b8ddf8047267f28b0f637ffadeccf8b1d808975b4c51e4c3a04f86",
+      "recordedDate": "2026-09-27",
+      "evidenceKind": "native-runtime-recovery-and-scoped-source-checkpoints",
+      "limitations": "Deterministic provider; audited recovery. Shared-app dispatch, fn selected-publication native journey, real-model and combined deployed service remain incomplete."
     }
   ]
 }
