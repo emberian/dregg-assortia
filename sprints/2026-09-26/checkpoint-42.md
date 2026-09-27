@@ -14,11 +14,13 @@ The resident is being extended to up to eight distinct agent routes alongside se
 
 Review found two global locks after an interrupted app request. The implementation now supplies a non-cloneable, exact-dispatch fence only when no RPC was queued or the worker has acknowledged release. With that fence, hostd can retain the operation's durable uncertain tombstone while freeing the shared slot. A two-second cancellation-acknowledgement timeout remains fail-closed. A successful RPC followed by response formatting or retention failure also needs this fence; the staged caller handles that case.
 
-The separate native-submit marker also blocked subsequent agents. Its staged release now requires an already committed exact op46 permit and successful fenced hostd release, and checks marker inode and bytes before removal. The original attempt, permit, tombstone and controller budget hold remain. This does not establish that the application's effect was absent or rolled back, and never authorizes replay of the interrupted operation.
+An initial review incorrectly inferred that the separate native-submit marker blocked other agents. Following its actual directory construction and the resident's distinct per-route directories corrected this: the marker is per agent route. Its removal on uncertain worker release is therefore being withdrawn; the interrupted agent retains its hold pending reconciliation. Other participants proceed through the released hostd shared slot and their own native markers. Exact inode/byte checks remain appropriate for normal definite marker removal. Worker release does not establish that the application's effect was absent or rolled back, and never authorizes replay of the interrupted operation.
 
 Exact retained HTTP reply recovery, historical read-only inspection, and reverse reserve inspection are also being joined. A mere `definite.json` filename cannot establish a verified retained result: digest/binding failures must remain terminal without a recovered result. The controller and resident must agree on this distinction.
 
 The combined hbox Rust check r6 reached compilation but failed on a pointer type inference error in `agent_api_native.rs`; no tests ran. The owner is correcting that error and an unused-mut warning. Earlier component greens do not qualify this combined cut. A real A/B application-loop test still needs source-qualified op46 fixtures.
+
+The subsequent r7 snapshot compiled and ran 102 library tests: 100 passed and two failed (agent saved-binding recovery and the preexisting spawn-gate handshake test). The owner reported the hostd/RPC component cancellation and invalid-response-to-second-participant cases passing. This is not a green combined suite or a native two-agent journey. The per-route marker correction above follows that snapshot and requires its own check.
 
 ## Next deployment and transport gates
 
