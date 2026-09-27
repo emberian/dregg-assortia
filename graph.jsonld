@@ -3973,9 +3973,9 @@
       "label": "Run shared SPK applications through Mini, browsers, agents and fn",
       "description": "Integrate real third-party packaged app execution and persistent state with Mini lifecycle/current grants, hosted Hermes, direct commands, and selected version publication over semi-untrusted fn.",
       "status": "active",
-      "owner": "Astra: root; Sol: build_native, hermes_path, agent_api_host, fn_mini_review, runtime_review, mini_app_contract",
+      "owner": "Astra: root; Sol: client_session, agent_api_host, fn_mini_review, runtime_review, mini_app_contract",
       "reviewer": "Astra: root",
-      "updatedAt": "2026-09-27T13:25:41Z",
+      "updatedAt": "2026-09-27T13:38:31.255Z",
       "priority": 1,
       "sources": [
         "urn:dregg:assortia:S-SPK-CYCLE-0927",
@@ -4016,7 +4016,8 @@
         "urn:dregg:assortia:S-SPK-CHECKPOINT49-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT50-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT51-0927",
-        "urn:dregg:assortia:S-SPK-CHECKPOINT52-0927"
+        "urn:dregg:assortia:S-SPK-CHECKPOINT52-0927",
+        "urn:dregg:assortia:S-SPK-CHECKPOINT53-0927"
       ],
       "advances": [
         "urn:dregg:assortia:E-WORLD",
@@ -4052,7 +4053,7 @@
       ],
       "closure": "A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.",
       "nextAction": "Finish source-qualified claim/completion and continue Host routes plus exact receipt recovery; qualify signed GitWeb with separate v2 binary, then execute fresh identities/bootstrap and source-bound physical INSTALL/START. Complete grant-bound persistent agent dispatch and actual web/API/CLI, Hermes, hard/soft/restart, selected fn and measured latency acceptance.",
-      "progress": "Checkpoint52: typed lifecycle Replay a2cce78, exact receivers c79923d and physical BEGIN consumer0db73c5 reviewed/pushed. Native event22 and separate v2 build active. Claim receipt binding, grant-bound reserve, receiving routes, physical launch and full shared-app journeys remain active."
+      "progress": "Checkpoint53: v2 native descriptor Host qualified (ed62c68), foreground preparation78fd9f8 and guarded Rust claimffeda2a pushed. Event22 fixture assertion corrected a590a73; fresh run next. Root found installed/alreadyPresent conflation at physical handoff; repair active. No combined deployed journey."
     },
     {
       "@id": "urn:dregg:assortia:S-SPK-GROUNDING1-0927",
@@ -4471,6 +4472,17 @@
       "recordedDate": "2026-09-27",
       "evidenceKind": "reviewed-source-component-checks-and-live-native-job-observation",
       "limitations": "No integrated physical launch; native fixture and separate v2 build remain active."
+    },
+    {
+      "@id": "urn:dregg:assortia:S-SPK-CHECKPOINT53-0927",
+      "@type": "Source",
+      "label": "Native descriptor Host and physical claim handoff review",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-26/checkpoint-53.md",
+      "sha256": "6e6626e7929587db25530abd86b6d8cadddc587d9bbfcfc3247dba8c907fd54d",
+      "recordedDate": "2026-09-27",
+      "evidenceKind": "reviewed-source-component-checks-and-native-artifact-observation",
+      "limitations": "No integrated deployment; fresh physical handoff distinction and native journeys remain unfinished."
     }
   ]
 }
