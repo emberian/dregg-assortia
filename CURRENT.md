@@ -2,7 +2,7 @@
 
 > Generated from `graph.jsonld` by `python3 hub.py render`. Edit the graph, not this file.
 
-Latest work-record update: **2026-09-27T01:00:00Z**. This is recorded project state, not a live process monitor.
+Latest work-record update: **2026-09-27T01:28:22Z**. This is recorded project state, not a live process monitor.
 
 [New contributor](contributing/README.md) · [Project map](MAP.md) · [Detailed work records](work/records.md)
 
@@ -12,7 +12,7 @@ Latest work-record update: **2026-09-27T01:00:00Z**. This is recorded project st
 
 | Work | Owner / reviewer | Next action |
 |---|---|---|
-| [Operate actual Mini resources through fn correspondence and separate gateways](sprints/2026-09-26/checkpoint-15.md) | Sol: fn_contracts, fn_mini_review, fn_reply_profile; Astra: root | Native-gate source-owned own-R skip with accepted Mini tag-9 before fn ACK, then exercise unattended reply recovery; keep the earlier operator-assisted result separate. |
+| [Operate actual Mini resources through fn correspondence and separate gateways](sprints/2026-09-26/checkpoint-15.md) | Sol: fn_contracts, fn_mini_review, fn_reply_profile; Astra: root | Native-gate source-owned own-R skip with accepted Mini tag-9 before fn ACK, then exercise unattended reply recovery; keep the earlier operator-assisted result separate. Treat fn as semi-untrusted; develop selective origin evidence and exact release authority without exposing unrelated private history. Encryption and key governance remain design proposals. |
 | [Custody and meter scoped provider requests](sprints/2026-09-26/checkpoint-15.md) | Sol: runtime_review, hermes_path; Astra: root | Bind exact request/response/header bytes, tariff/model, signed provider hold and parent witness in runtime, then test ordinary Mini settlement and uncertain-effect recovery without treating reported usage as an invoice. |
 | [Durable hosted grain control and authenticated entrance](sprints/2026-09-26/checkpoint-15.md) | Sol: client_session, hermes_path, fn_reply_profile; Astra: root | Continue physical interruption/reconnect and uncertainty gates with the two account controllers; test new source upgrades against their existing private custody without assuming a second backend tenant. |
 | [Host upstream Hermes with persistent confined execution](sprints/2026-09-26/checkpoint-15.md) | Sol: hermes_path, replay_session, linux_hosting; review runtime_review; Astra: root | Reconcile old hosted B attempt44 separately; continue metered-provider signed settlement and interruption/recovery under exact retained receipts. |

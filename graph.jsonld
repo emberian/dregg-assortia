@@ -3695,7 +3695,7 @@
       "description": "Converge existing fn consumer lineage and improve its authority, fresh setup, general reply profiles and distributed hosted receiving path.",
       "status": "active",
       "owner": "Sol: fn_contracts, fn_mini_review, fn_reply_profile; Astra: root",
-      "updatedAt": "2026-09-27T01:00:00Z",
+      "updatedAt": "2026-09-27T01:28:22Z",
       "priority": 1,
       "sources": [
         "urn:dregg:assortia:S-OVERNIGHT-0926",
@@ -3713,7 +3713,8 @@
         "urn:dregg:assortia:S-CHECKPOINT12-0926",
         "urn:dregg:assortia:S-CHECKPOINT13-0926",
         "urn:dregg:assortia:S-CHECKPOINT14-0926",
-        "urn:dregg:assortia:S-CHECKPOINT15-0926"
+        "urn:dregg:assortia:S-CHECKPOINT15-0926",
+        "urn:dregg:assortia:S-FN-DISCLOSURE-0927"
       ],
       "advances": [
         "urn:dregg:assortia:E-WORLD",
@@ -3737,7 +3738,7 @@
         "minidregg/docs/FN-PUBLICATION-DISCLOSURE.md"
       ],
       "progress": "Workroom R→B→Q→A remains the operator-assisted native fn roundtrip; a certified typed-view Host now read-only renders the retained signed A view as origin outbox, reply result and inbox, with matching receipt/identity/Q source. No new A admission occurred, and automatic own-R cursor skip is only source/build work pending native gate.",
-      "nextAction": "Native-gate source-owned own-R skip with accepted Mini tag-9 before fn ACK, then exercise unattended reply recovery; keep the earlier operator-assisted result separate.",
+      "nextAction": "Native-gate source-owned own-R skip with accepted Mini tag-9 before fn ACK, then exercise unattended reply recovery; keep the earlier operator-assisted result separate. Treat fn as semi-untrusted; develop selective origin evidence and exact release authority without exposing unrelated private history. Encryption and key governance remain design proposals.",
       "closure": "Real Mini-resource operation and reply travel through independently configured fn nodes with separately pinned application authorities; durable Mini processing precedes fn ACK, direct forged consumer input is refused, exact retries and uncertain outcomes reconcile, and a documented user entrance uses this path."
     },
     {
@@ -3904,6 +3905,17 @@
       "recordedDate": "2026-09-27",
       "evidenceKind": "scoped-hosted-native-readonly-provider-and-linked-view-results",
       "limitations": "Dedicated-account Hermes A→B→A uses deterministic loopback provider and does not establish fn carriage or remote model behavior. Provider op19 is a read-only quote over reported usage without signing or settlement. Typed A view is a read-only suffix over existing signed bytes; automatic own-R skip and broader source closure remain pending."
+    },
+    {
+      "@id": "urn:dregg:assortia:S-FN-DISCLOSURE-0927",
+      "@type": "Source",
+      "label": "Semi-untrusted fn principle and source-grounded publication disclosure investigation",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-26/fn-publication-disclosure-contract.md",
+      "sha256": "d6c9bf15216f06a5fd805e0c9d5d531c9d126652cd07b3b54f8a7d559d181008",
+      "recordedDate": "2026-09-27",
+      "evidenceKind": "user-principle-and-proposed-security-contract",
+      "limitations": "Ember settled semi-untrusted transport; release capabilities, encryption suite, recipient key governance and selective evidence are proposals, not implemented or separately approved mechanisms. Private synthetic fixture exchanges may continue."
     }
   ]
 }

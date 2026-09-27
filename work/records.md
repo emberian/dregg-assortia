@@ -399,11 +399,11 @@ World deployment currently mutates volatile registries; historical paths either 
 
 **Operate actual Mini resources through fn correspondence and separate gateways**
 
-Status: **active** · Owner: Sol: fn_contracts, fn_mini_review, fn_reply_profile; Astra: root · Updated: 2026-09-27T01:00:00Z
+Status: **active** · Owner: Sol: fn_contracts, fn_mini_review, fn_reply_profile; Astra: root · Updated: 2026-09-27T01:28:22Z
 
 Converge existing fn consumer lineage and improve its authority, fresh setup, general reply profiles and distributed hosted receiving path.
 
-**Next:** Native-gate source-owned own-R skip with accepted Mini tag-9 before fn ACK, then exercise unattended reply recovery; keep the earlier operator-assisted result separate.
+**Next:** Native-gate source-owned own-R skip with accepted Mini tag-9 before fn ACK, then exercise unattended reply recovery; keep the earlier operator-assisted result separate. Treat fn as semi-untrusted; develop selective origin evidence and exact release authority without exposing unrelated private history. Encryption and key governance remain design proposals.
 
 **Done when:** Real Mini-resource operation and reply travel through independently configured fn nodes with separately pinned application authorities; durable Mini processing precedes fn ACK, direct forged consumer input is refused, exact retries and uncertain outcomes reconcile, and a documented user entrance uses this path.
 
@@ -434,6 +434,7 @@ Converge existing fn consumer lineage and improve its authority, fresh setup, ge
 - [S-CHECKPOINT13-0926 — Exact hosted Hermes receipt, held fn B ACK/read completion and scoped next-source construction](../sprints/2026-09-26/checkpoint-13.md)
 - [S-CHECKPOINT14-0926 — Signed cross-UID resources, fresh stale-root cleanup and operator-assisted workroom fn reply](../sprints/2026-09-26/checkpoint-14.md)
 - [S-CHECKPOINT15-0926 — Dedicated-account Hermes shared workroom, read-only provider quote and linked typed A view](../sprints/2026-09-26/checkpoint-15.md)
+- [S-FN-DISCLOSURE-0927 — Semi-untrusted fn principle and source-grounded publication disclosure investigation](../sprints/2026-09-26/fn-publication-disclosure-contract.md)
 
 **Write scope:** minidregg/Kernel/Fn*.lean; minidregg/Host/Json.lean; minidregg/scripts/fn-e1e2/; minidregg/Compiler/FnEvidenceCodec.lean; minidregg/Host/Main.lean; minidregg/Host/GrainOriginSource.lean; minidregg/native/resource-client/; minidregg/Host/GrainOriginPreparation.lean; minidregg/docs/FN-PUBLICATION-DISCLOSURE.md
 
