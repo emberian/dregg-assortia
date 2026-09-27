@@ -3975,7 +3975,7 @@
       "status": "active",
       "owner": "Astra: root; Sol: client_session, agent_api_host, fn_mini_review, fn_contracts, runtime_review, mini_app_contract, build_native",
       "reviewer": "Astra: root",
-      "updatedAt": "2026-09-27T14:36:44.250Z",
+      "updatedAt": "2026-09-27T14:43:21.314Z",
       "priority": 1,
       "sources": [
         "urn:dregg:assortia:S-SPK-CYCLE-0927",
@@ -4022,7 +4022,8 @@
         "urn:dregg:assortia:S-SPK-CHECKPOINT55-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT56-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT57-0927",
-        "urn:dregg:assortia:S-SPK-CHECKPOINT58-0927"
+        "urn:dregg:assortia:S-SPK-CHECKPOINT58-0927",
+        "urn:dregg:assortia:S-SPK-CHECKPOINT59-0927"
       ],
       "advances": [
         "urn:dregg:assortia:E-WORLD",
@@ -4057,8 +4058,8 @@
         "Selected app or data versions travel through fn with explicit publication and separate receiver install/import authority, without private-prefix disclosure."
       ],
       "closure": "A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.",
-      "nextAction": "Certify successor and linked canonical inspection; finish concrete base Store and qualified Host upgrade, then actual INSTALL/create. Complete STOP/recovery, lifetime dispatch/controller and grant custody, followed by full shared platform journeys.",
-      "progress": "Checkpoint58: exact f461f39 successor build active on Persvati and concrete GitWeb base Store creation active on hbox, both directly polled. STOP-only witness planfa6f4dd committed; interrupted INSTALL authoring recovery and private lifetime custody integration under construction. No integrated deployment."
+      "nextAction": "Certify Host and Rust SPK images; run corrected fresh base, qualified Host upgrade and actual INSTALL/create. Connect event26 controller/reverse/paid custody and event27 native grants; complete all shared platform journeys.",
+      "progress": "Checkpoint59: f461 Lean closure passes343 modules (85 rebuilt/258 validated), native link active. GitWeb base r1 failed pre-Store; exact guard/pin repairsfe86895/6dacab3 committed. Callable INSTALL7614a6a and Verified STOP joina660b26 source-qualified, native physical acceptance pending."
     },
     {
       "@id": "urn:dregg:assortia:S-SPK-GROUNDING1-0927",
@@ -4543,6 +4544,17 @@
       "recordedDate": "2026-09-27",
       "evidenceKind": "direct-live-job-observation-reviewed-source-and-integration-defect-review",
       "limitations": "Jobs active at observation; no successful base Store, successor artifact, physical launch or integrated shared service claimed."
+    },
+    {
+      "@id": "urn:dregg:assortia:S-SPK-CHECKPOINT59-0927",
+      "@type": "Source",
+      "label": "Callable source-bound INSTALL and repaired concrete app fixture",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-26/checkpoint-59.md",
+      "sha256": "8e5949ff9635bc62648f62ec7e7d505edac8455efc13dedff6124085ea1f8f1c",
+      "recordedDate": "2026-09-27",
+      "evidenceKind": "reviewed-source-component-checks-terminal-fixture-diagnosis-and-live-build-observation",
+      "limitations": "No successful concrete base Store or physical INSTALL; successor linking and integrated journeys remain incomplete."
     }
   ]
 }
