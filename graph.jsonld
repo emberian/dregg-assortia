@@ -3973,9 +3973,9 @@
       "label": "Run shared SPK applications through Mini, browsers, agents and fn",
       "description": "Integrate real third-party packaged app execution and persistent state with Mini lifecycle/current grants, hosted Hermes, direct commands, and selected version publication over semi-untrusted fn.",
       "status": "active",
-      "owner": "Astra: root; Sol: build_native, hermes_path, linux_hosting, client_session, fn_mini_review, codec_stack, runtime_review",
+      "owner": "Astra: root; Sol: build_native, hermes_path, linux_hosting, fn_mini_review, codec_stack, runtime_review, mini_app_contract, spk_compatibility, fn_contracts, shared_resource_tools",
       "reviewer": "Astra: root",
-      "updatedAt": "2026-09-27T05:18:14.566Z",
+      "updatedAt": "2026-09-27T05:32:59.345Z",
       "priority": 1,
       "sources": [
         "urn:dregg:assortia:S-SPK-CYCLE-0927",
@@ -3984,7 +3984,8 @@
         "urn:dregg:assortia:S-SPK-CHECKPOINT19-0927",
         "urn:dregg:assortia:S-PARALLEL-JOURNEYS-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT20-0927",
-        "urn:dregg:assortia:S-SPK-CHECKPOINT21-0927"
+        "urn:dregg:assortia:S-SPK-CHECKPOINT21-0927",
+        "urn:dregg:assortia:S-SPK-CHECKPOINT22-0927"
       ],
       "advances": [
         "urn:dregg:assortia:E-WORLD",
@@ -4001,13 +4002,17 @@
       "brief": "sprints/2026-09-26/spk-platform-cycle.md",
       "writeScope": [
         "minidregg/native/spk-host and dedicated GitWeb qualification evidence (linux_hosting)",
-        "minidregg/Kernel/ApplicationPermissionSchema.lean (client_session)",
         "minidregg/Kernel/ApplicationDispatchAuthority*.lean (fn_mini_review)",
         "minidregg/Kernel/ApplicationLifecycle*.lean (codec_stack)",
         "minidregg/native/resource-client/application-acceptance.sh and dedicated evidence (hermes_path)",
         "isolated source-matched native Host and helper build (build_native)",
         "minidregg/native/grain-runtime bounded provider profile and coordinated caller (runtime_review)",
-        "shared NativeHost/Replay/Host convergence and dregg-assortia graph/handoff (root); root commits all lanes"
+        "minidregg/Host/Main.lean and Kernel/NativeHostReplay.lean native routing/replay (mini_app_contract)",
+        "minidregg/Kernel/ApplicationDispatchAdmission*.lean and principal binding (spk_compatibility)",
+        "minidregg/Kernel/ApplicationShareIssue*.lean and dispatch authority (fn_mini_review)",
+        "minidregg/Kernel/FnSelectiveRelease* and Host/FnSelectiveReleaseAuthoring.lean (fn_contracts)",
+        "minidregg/native/resource-client selected release and schema inspect (shared_resource_tools)",
+        "dregg-assortia graph/handoff and all scoped commits (root)"
       ],
       "acceptance": [
         "Two distinct participants use the same real third-party SPK app through browser and hosted real-model Hermes API access under Mini grants.",
@@ -4016,8 +4021,8 @@
         "Selected app or data versions travel through fn with explicit publication and separate receiver install/import authority, without private-prefix disclosure."
       ],
       "closure": "A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.",
-      "nextAction": "Advance all five parallel journeys: native two-participant birth and exact recovery; GitWeb real write/fetch/browser/wake; app-issued permission ceilings and special dispatch; lifecycle admission and process claims; real-model readiness and selected fn release receiving. Join them under current Mini authority.",
-      "progress": "Bread581911535 parser and Mini f70aa4d SPK host/RPC qualified an actual signed Simple Todos create plus persisted continueCommand HTTP200 in isolated bounded Linux units. Mini95ee02c repaired historical composite birth lookup on a copied Store; Mini42e5705 and 1808b0b add narrow-compiled session/enrollment and candidate dispatch source; Mini6f945ab exposes bounded raw Sandstorm ViewInfo roles. Dispatch remains unauthorized; installed role resolution, native special receiver, public browser/API, real-model Hermes and selected fn release remain open. Mini2c34802 corrects dispatch witness separation; Mini2e60a9c typed application/session authoring passes a narrow executable check; Mini60f0b76 preserves signed GitWeb selection evidence. Native build/private acceptance and GitWeb runtime qualification remain in progress. Self-owned enrollment cannot establish permission ceilings: app-issued authority is required. Checkpoint20 pins committed permission schema, application fixture, bounded provider iterations and terminal probe; app shares will survive normal wake/rebind while requests retain current generation fences. Mini6efd0b9/c8dedb2 qualify real GitWeb push/exact fetch/browser/persisted wake in private units. f82368b connects captured ViewInfo metadata to canonical schema; b0cc99e adds tested physical journal/status component, no launch admission yet. App-birth Host rebuild includes proof-only bfb6b8b patch; native fixture pending."
+      "nextAction": "Join app-issued sharing and original-prefix issuance verification to current dispatch authority; connect native lifecycle/current claim to bounded hosting and typed SPK browser/API transport. Run the same real app through two Mini subjects and hosted Hermes, and connect selected source-authorized fn publication.",
+      "progress": "Mini4199096 records fresh native application birth, two independently signed session births, separate app observe grants, cross-session native refusals and exact logical-image/receipt continuity after reopen. Executed Host6635b356 is source2e60a9c plus proof-only bfb6b8b; b19c127 preserves qualified build evidence. Independent GitWeb push/fetch/browser/persisted wake remains qualified by6efd0b9/c8dedb2. Complete schema/manifests and corrected informational deniedPermissions semantics are committed4c50fe8/fb910d8. Provider isolation component is committeddc03198/ec5d270; fresh native provider integration is underway. Share issuance, authenticated historical provenance, principal binding, current physical lifecycle claims, browser/API adapter, source publication and real-model acceptance remain open."
     },
     {
       "@id": "urn:dregg:assortia:S-SPK-GROUNDING1-0927",
@@ -4084,6 +4089,17 @@
       "recordedDate": "2026-09-27",
       "evidenceKind": "physical-package-run-and-scoped-source-integration",
       "limitations": "Separate component results; native app birth, Mini-authorized app dispatch, source publication, real-model and combined service acceptance remain incomplete."
+    },
+    {
+      "@id": "urn:dregg:assortia:S-SPK-CHECKPOINT22-0927",
+      "@type": "Source",
+      "label": "Native shared application and session foundation",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-26/checkpoint-22.md",
+      "sha256": "7bac4c1dbf9c30489ecc45afbdf6127f87067e18d04d95358cf92709996da033",
+      "recordedDate": "2026-09-27",
+      "evidenceKind": "native-acceptance-and-scoped-source-checks",
+      "limitations": "Two-subject birth/read/reopen passed; native app dispatch, source publication, real-model and integrated deployed acceptance remain incomplete."
     }
   ]
 }
