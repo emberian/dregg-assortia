@@ -771,11 +771,11 @@ Implement the general Mini transaction receiver over scalar and typed-content re
 
 **Define the September 26 programmable nexus and its shared contracts**
 
-Status: **active** · Owner: Astra: root; component implementation/review lanes completed · Updated: 2026-09-20T00:00:01.955Z
+Status: **active** · Owner: Astra: root; component implementation/review lanes completed · Updated: 2026-09-27T02:38:13.221Z
 
 Specify the coherent Mini resource/program and hosting contracts for the New World and complete hosted Nous Hermes experience. The construction home is settled; exact shared activity and economic operation remain open.
 
-**Next:** Choose the next concrete hosted experience cycle around the measured core latency and real process lifecycle: persistent verified host, hosted Hermes/tool supervisor, credential service and metering through the same DREGG resource authority. Keep owned-node participation and a selected Solana outcome explicit.
+**Next:** Converge the SPK platform cycle: packaged apps provide shared human views and agent APIs under Mini authority; retain separate contributed-hosting and Solana obligations.
 
 **Done when:** Accepted nexus operations and consequential design decisions; selected semantic and receiving-runtime paths; an explicit owned-node participation path and selected Solana/resource outcome; linked implementation obligations and evidence. Selecting a contract does not close implementation or deployment.
 
@@ -802,6 +802,7 @@ Specify the coherent Mini resource/program and hosting contracts for the New Wor
 - [S-CYCLE-1-INTEGRATION-0919 — Mini cycle 1 integration checkpoint: builds, native bottlenecks and pending final journeys](../sprints/2026-09-19/cycle-1-integration-checkpoint.md)
 - [S-NEW-WORLD-0919 — Completed eleven-event native task/content/authority journey](../sprints/2026-09-19/cycle-1-evidence/final-new-world/README.md)
 - [S-CYCLE-1-RESULT-0919 — Mini cycle 1 completed core result and exact remaining construction](../sprints/2026-09-19/cycle-1-result.md)
+- [S-SPK-CYCLE-0927 — SPK application platform goal and grounded integration contract](../sprints/2026-09-26/spk-platform-cycle.md)
 
 **Write scope:** minidregg/docs/CYCLE-2026-09-19.md; dregg-assortia/sprints/2026-09-19/cycle-1.md and graph work records
 
@@ -1042,3 +1043,37 @@ Report which claims/work items need reinspection when source bytes change, with 
 - [S-IMPLEMENTATION-0130 — Durable native invocation and repaired runtime history, September 18 01:30](../sprints/2026-09-18/checkpoint-0130.md)
 - [S-HUB-TOOLS-0145 — Graph navigation/source-impact tooling and captured tests](../sprints/2026-09-18/hub-tools-0145.md)
 - [S-DIRECTION-0919 — September 19 hosted Hermes direction, superseded Wisper plan and revised disconnect preference](../sprints/2026-09-19/direction.md)
+
+## W-SPK-PLATFORM
+
+**Run shared SPK applications through Mini, browsers, agents and fn**
+
+Status: **active** · Owner: Astra: root; Sol: spk_compatibility, spk_app_probe, mini_app_contract · Updated: 2026-09-27T02:38:13.220Z
+
+Integrate real third-party packaged app execution and persistent state with Mini lifecycle/current grants, hosted Hermes, direct commands, and selected version publication over semi-untrusted fn.
+
+**Next:** Inspect the real Simple Todos package and Wekan UI/API requirements; preserve manifest fidelity; finalize fd3 Cap’n Proto execution and Mini app lifecycle/request contract, then implement and integrate the actual app.
+
+**Done when:** A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.
+
+**Evidence so far:** Read source: real SPK parser/custody exists. Bread serving has no packaged process; old DreggNet-pub executor substitutes hardcoded notes. Manifest command environment, API metadata, transport fidelity and zero-bit role semantics need work. No app launched.
+
+[Task brief](../sprints/2026-09-26/spk-platform-cycle.md)
+
+**Enables:**
+
+- E-WORLD — Programmable social resource world
+- E-KERNEL — Canonical typed semantic kernel
+
+**Evidence / provenance:**
+
+- [S-SPK-CYCLE-0927 — SPK application platform goal and grounded integration contract](../sprints/2026-09-26/spk-platform-cycle.md)
+
+**Write scope:** minidregg application resource and physical SPK host (specific files assigned after contract); breadstuffs/sandstorm-bridge/src/manifest.rs (spk_compatibility); dregg-assortia cycle brief and graph (root)
+
+**Acceptance:**
+
+- Two distinct participants use the same real third-party SPK app through browser and hosted real-model Hermes API access under Mini grants.
+- Direct commands discover and operate the same resources; delegation/revocation and session fences are enforced without stopping another user’s shared app.
+- Actual durable app state survives restart; uncertain requests are reconciled without blind repeat.
+- Selected app or data versions travel through fn with explicit publication and separate receiver install/import authority, without private-prefix disclosure.

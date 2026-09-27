@@ -1161,15 +1161,16 @@
         "urn:dregg:assortia:C-NEXUS-INTERFACE",
         "urn:dregg:assortia:C-HYPERDOC-TOOL-SCOPE",
         "urn:dregg:assortia:Q-PARTICIPANT-HOSTING",
-        "urn:dregg:assortia:W-PROGRAMMABLE-PATH"
+        "urn:dregg:assortia:W-PROGRAMMABLE-PATH",
+        "urn:dregg:assortia:W-SPK-PLATFORM"
       ],
       "closure": "Accepted nexus operations and consequential design decisions; selected semantic and receiving-runtime paths; an explicit owned-node participation path and selected Solana/resource outcome; linked implementation obligations and evidence. Selecting a contract does not close implementation or deployment.",
       "owner": "Astra: root; component implementation/review lanes completed",
-      "updatedAt": "2026-09-20T00:00:01.955Z",
+      "updatedAt": "2026-09-27T02:38:13.221Z",
       "advances": [
         "urn:dregg:assortia:E-WORLD"
       ],
-      "nextAction": "Choose the next concrete hosted experience cycle around the measured core latency and real process lifecycle: persistent verified host, hosted Hermes/tool supervisor, credential service and metering through the same DREGG resource authority. Keep owned-node participation and a selected Solana outcome explicit.",
+      "nextAction": "Converge the SPK platform cycle: packaged apps provide shared human views and agent APIs under Mini authority; retain separate contributed-hosting and Solana obligations.",
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
       "blockedBy": [],
@@ -1186,7 +1187,8 @@
         "urn:dregg:assortia:S-CYCLE-1-0919",
         "urn:dregg:assortia:S-CYCLE-1-INTEGRATION-0919",
         "urn:dregg:assortia:S-NEW-WORLD-0919",
-        "urn:dregg:assortia:S-CYCLE-1-RESULT-0919"
+        "urn:dregg:assortia:S-CYCLE-1-RESULT-0919",
+        "urn:dregg:assortia:S-SPK-CYCLE-0927"
       ],
       "progress": "Mini cycle1 completed the native programmable resource core and Rust client, with eleven-event task/content/authority acceptance and complete legacy/client recipes. Interactive latency, hosted Hermes and actual interruption, contributed-node hosting and a selected Solana operation remain unfinished.",
       "writeScope": [
@@ -3950,6 +3952,58 @@
       "recordedDate": "2026-09-27",
       "evidenceKind": "scoped-native-results-component-proofs-and-active-repairs",
       "limitations": "Separate private synthetic Stores/images; actual worker drain, release receiving, creation crash recovery and reconnect still active. No public service or private-history disclosure authority."
+    },
+    {
+      "@id": "urn:dregg:assortia:S-SPK-CYCLE-0927",
+      "@type": "Source",
+      "label": "SPK application platform goal and grounded integration contract",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-26/spk-platform-cycle.md",
+      "sha256": "3024ec07f2a86ce467125b946ee711045f1767b442a41560661851fc56ef0cd2",
+      "recordedDate": "2026-09-27",
+      "evidenceKind": "user-direction-and-source-inspection-with-proposed-integration-contract",
+      "limitations": "No fresh packaged-app execution. Historical executor substitutes notes handler. Actual package and upstream protocol inspection in progress."
+    },
+    {
+      "@id": "urn:dregg:assortia:W-SPK-PLATFORM",
+      "@type": "WorkItem",
+      "label": "Run shared SPK applications through Mini, browsers, agents and fn",
+      "description": "Integrate real third-party packaged app execution and persistent state with Mini lifecycle/current grants, hosted Hermes, direct commands, and selected version publication over semi-untrusted fn.",
+      "status": "active",
+      "owner": "Astra: root; Sol: spk_compatibility, spk_app_probe, mini_app_contract",
+      "reviewer": "Astra: root",
+      "updatedAt": "2026-09-27T02:38:13.220Z",
+      "priority": 1,
+      "sources": [
+        "urn:dregg:assortia:S-SPK-CYCLE-0927"
+      ],
+      "advances": [
+        "urn:dregg:assortia:E-WORLD",
+        "urn:dregg:assortia:E-KERNEL"
+      ],
+      "related": [
+        "urn:dregg:assortia:W-GRAIN-RUNTIME",
+        "urn:dregg:assortia:W-GRAIN-CONTROL",
+        "urn:dregg:assortia:W-GRAIN-TOOLS",
+        "urn:dregg:assortia:W-GRAIN-BROKER",
+        "urn:dregg:assortia:W-M26-DESIGN"
+      ],
+      "blockedBy": [],
+      "brief": "sprints/2026-09-26/spk-platform-cycle.md",
+      "writeScope": [
+        "minidregg application resource and physical SPK host (specific files assigned after contract)",
+        "breadstuffs/sandstorm-bridge/src/manifest.rs (spk_compatibility)",
+        "dregg-assortia cycle brief and graph (root)"
+      ],
+      "acceptance": [
+        "Two distinct participants use the same real third-party SPK app through browser and hosted real-model Hermes API access under Mini grants.",
+        "Direct commands discover and operate the same resources; delegation/revocation and session fences are enforced without stopping another user’s shared app.",
+        "Actual durable app state survives restart; uncertain requests are reconciled without blind repeat.",
+        "Selected app or data versions travel through fn with explicit publication and separate receiver install/import authority, without private-prefix disclosure."
+      ],
+      "closure": "A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.",
+      "nextAction": "Inspect the real Simple Todos package and Wekan UI/API requirements; preserve manifest fidelity; finalize fd3 Cap’n Proto execution and Mini app lifecycle/request contract, then implement and integrate the actual app.",
+      "progress": "Read source: real SPK parser/custody exists. Bread serving has no packaged process; old DreggNet-pub executor substitutes hardcoded notes. Manifest command environment, API metadata, transport fidelity and zero-bit role semantics need work. No app launched."
     }
   ]
 }

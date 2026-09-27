@@ -1,5 +1,7 @@
 # dregg-assortia
 
+**Current cycle:** [Real SPK applications, Mini, hosted agents and fn](sprints/2026-09-26/spk-platform-cycle.md). This supersedes the older next-cycle statements below; historical results remain scoped to their evidence.
+
 The living knowledge index and project hub for DREGG: what we are building, how the pieces connect, who owns current work, and what evidence supports each claim.
 
 **[Start here / handoff](HANDOFF.md) · [Current work](CURRENT.md) · [Project map](MAP.md) · [Contributor entry](contributing/README.md)**
