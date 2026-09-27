@@ -1051,7 +1051,7 @@ Report which claims/work items need reinspection when source bytes change, with 
 
 **Run shared SPK applications through Mini, browsers, agents and fn**
 
-Status: **active** · Owner: Astra: root; Sol: client_session, agent_api_host, fn_mini_review, runtime_review, mini_app_contract · Updated: 2026-09-27T14:02:06.658Z
+Status: **active** · Owner: Astra: root; Sol: client_session, agent_api_host, fn_mini_review, fn_contracts, runtime_review, mini_app_contract, build_native · Updated: 2026-09-27T14:14:25.505Z
 
 Integrate real third-party packaged app execution and persistent state with Mini lifecycle/current grants, hosted Hermes, direct commands, and selected version publication over semi-untrusted fn.
 
@@ -1059,7 +1059,7 @@ Integrate real third-party packaged app execution and persistent state with Mini
 
 **Done when:** A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.
 
-**Evidence so far:** Checkpoint55: STOP author0332202, guarded continue/claim4bedbce, lifetime receiverce91492 and completion Hostcacc4ae reviewed. Found full-width operation ID rejection and STOP wrong-incarnation defects; owners repairing. Combined exact-commit build requested; event22r2 remains active.
+**Evidence so far:** Checkpoint56: full-width physical identityc3b8996, report helper/routesa76aa55/bd50dd6, lifetime grantc5cb973 and dispatch author8ac5b85 reviewed/pushed. Exactcacc4ae Host build active on Persvati; event22r2 active on hbox. STOP prior-incarnation closure, native routes and physical/controller consumers remain.
 
 [Task brief](../sprints/2026-09-26/spk-platform-cycle.md)
 
@@ -1112,6 +1112,7 @@ Integrate real third-party packaged app execution and persistent state with Mini
 - [S-SPK-CHECKPOINT53-0927 — Native descriptor Host and physical claim handoff review](../sprints/2026-09-26/checkpoint-53.md)
 - [S-SPK-CHECKPOINT54-0927 — Native package qualification and CAS-winner lifecycle routing](../sprints/2026-09-26/checkpoint-54.md)
 - [S-SPK-CHECKPOINT55-0927 — Lifecycle completion routes and cross-layer integration defects](../sprints/2026-09-26/checkpoint-55.md)
+- [S-SPK-CHECKPOINT56-0927 — Lifetime client convergence and pinned Persvati build](../sprints/2026-09-26/checkpoint-56.md)
 
 **Write scope:** minidregg/Kernel/ApplicationLifecycle* and ApplicationSpkLaunchDescriptor.lean (mini_app_contract); minidregg/native/spk-host resident/RPC and dedicated physical evidence (agent_api_host); minidregg/native/spk-host agent custody/server (agent_api_host); minidregg/native/grain-runtime and dedicated controller evidence (hermes_path); isolated source-matched native Host builds and explicit proof repairs (build_native); minidregg/Kernel/Fn* receiving and Host/FnConsumerFrontierPlan.lean (fn_mini_review); persistent agent-route authorization design (runtime_review); coordinated Host/Main.lean and NativeHostReplay.lean hooks; root owns integration order and Git; minidregg/scripts/spk-platform source-authored fixture enrollment/birth continuations (spk_compatibility); minidregg/Host/ApplicationLifecycleLaunchAuthoring*.lean and coordinated Main ops66–71 after lower API freeze (fn_mini_review); minidregg/Kernel/NativeHostContext.lean canonical image-boundary byte reuse and general equivalence proof (client_session); actual Replay consumers coordinated with mini_app_contract
 

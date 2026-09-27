@@ -3973,9 +3973,9 @@
       "label": "Run shared SPK applications through Mini, browsers, agents and fn",
       "description": "Integrate real third-party packaged app execution and persistent state with Mini lifecycle/current grants, hosted Hermes, direct commands, and selected version publication over semi-untrusted fn.",
       "status": "active",
-      "owner": "Astra: root; Sol: client_session, agent_api_host, fn_mini_review, runtime_review, mini_app_contract",
+      "owner": "Astra: root; Sol: client_session, agent_api_host, fn_mini_review, fn_contracts, runtime_review, mini_app_contract, build_native",
       "reviewer": "Astra: root",
-      "updatedAt": "2026-09-27T14:02:06.658Z",
+      "updatedAt": "2026-09-27T14:14:25.505Z",
       "priority": 1,
       "sources": [
         "urn:dregg:assortia:S-SPK-CYCLE-0927",
@@ -4019,7 +4019,8 @@
         "urn:dregg:assortia:S-SPK-CHECKPOINT52-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT53-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT54-0927",
-        "urn:dregg:assortia:S-SPK-CHECKPOINT55-0927"
+        "urn:dregg:assortia:S-SPK-CHECKPOINT55-0927",
+        "urn:dregg:assortia:S-SPK-CHECKPOINT56-0927"
       ],
       "advances": [
         "urn:dregg:assortia:E-WORLD",
@@ -4055,7 +4056,7 @@
       ],
       "closure": "A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.",
       "nextAction": "Repair physical operation identity and receiver-enforced STOP incarnation; finish v2 report author and physical completion/custody joins; build pinned combined Host and execute real INSTALL/create/STOP/continue. Finish lifetime grant/dispatch routes and controller; complete shared web/API/CLI, real-model Hermes, recovery, selected fn and latency journeys.",
-      "progress": "Checkpoint55: STOP author0332202, guarded continue/claim4bedbce, lifetime receiverce91492 and completion Hostcacc4ae reviewed. Found full-width operation ID rejection and STOP wrong-incarnation defects; owners repairing. Combined exact-commit build requested; event22r2 remains active."
+      "progress": "Checkpoint56: full-width physical identityc3b8996, report helper/routesa76aa55/bd50dd6, lifetime grantc5cb973 and dispatch author8ac5b85 reviewed/pushed. Exactcacc4ae Host build active on Persvati; event22r2 active on hbox. STOP prior-incarnation closure, native routes and physical/controller consumers remain."
     },
     {
       "@id": "urn:dregg:assortia:S-SPK-GROUNDING1-0927",
@@ -4507,6 +4508,17 @@
       "recordedDate": "2026-09-27",
       "evidenceKind": "reviewed-source-and-component-qualification",
       "limitations": "No integrated deployment; full-width physical identity and STOP incarnation repair pending, combined native build requested."
+    },
+    {
+      "@id": "urn:dregg:assortia:S-SPK-CHECKPOINT56-0927",
+      "@type": "Source",
+      "label": "Lifetime client convergence and pinned Persvati build",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-26/checkpoint-56.md",
+      "sha256": "277d478ae5ff5fae485a86e8f823e052e97601cdb0c08bb31df90c3ffb8fb385",
+      "recordedDate": "2026-09-27",
+      "evidenceKind": "reviewed-source-and-live-build-observation",
+      "limitations": "Native combined build active at pinned older cut; final STOP/routes/physical/controller integration and deployed journeys incomplete."
     }
   ]
 }
