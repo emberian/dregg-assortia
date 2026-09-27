@@ -1051,15 +1051,15 @@ Report which claims/work items need reinspection when source bytes change, with 
 
 **Run shared SPK applications through Mini, browsers, agents and fn**
 
-Status: **active** · Owner: Astra: root; Sol: client_session, agent_api_host, fn_mini_review, fn_contracts, runtime_review, mini_app_contract, build_native · Updated: 2026-09-27T15:12:42.948Z
+Status: **active** · Owner: Astra: root; Sol: client_session, agent_api_host, fn_mini_review, fn_contracts, runtime_review, mini_app_contract, build_native · Updated: 2026-09-27T15:16:26.873Z
 
 Integrate real third-party packaged app execution and persistent state with Mini lifecycle/current grants, hosted Hermes, direct commands, and selected version publication over semi-untrusted fn.
 
-**Next:** Qualify exact2649 Host and retry fresh integrated GitWeb base; finish event22 ticket before native event27/reserve/paid chain. Complete resident START recovery, typed fresh STOP, and per-dispatch lifetime controller/resident wiring; then run all shared platform journeys. Persvati build r1 stopped before compilation for missing Git metadata; r2 verified active under minidregg-2649f49-host-r2.service (invocation a8cc41b3382c4d6f875346f52bcb7f5b), log /home/ember/build/minidregg-2649f49-evidence/run-r2.log. Event22 hbox unit mini-event22-r3-client-session.service remains active; preserve its Store.
+**Next:** Qualify exact2649 Host and retry fresh integrated GitWeb base; finish event22 ticket before native event27/reserve/paid chain. Complete resident START recovery, typed fresh STOP, and causal v3 controller/resident wiring. Persvati build r2 is terminal environment failure: package re-cloning removed Mathlib OLeans; build-native is restoring matching independent dependency artifacts before a named successor, preserving r1/r2 logs in /home/ember/build/minidregg-2649f49-evidence. Event22 hbox unit mini-event22-r3-client-session.service remains active with reserve17 accepted, no ticket yet. Measure warm-session queries separately and avoid redundant cold replay in future fixture routine reads without removing cold restart gates.
 
 **Done when:** A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.
 
-**Evidence so far:** Checkpoint60: f461 Host qualified; integrated GitWeb base r2 exposed missing custodian in birth profile. Core fix2649f49 passes serial Lean and all configured birth regression checks. Paid client d752df7 Linux build qualified; STOP/component cuts540fbfa/e5615b3/1693c08 committed. Native event22 r3 has accepted reserve17 but no ticket yet. Cold CLI query timing is81–83s for f461; warm persistent latency is under investigation.
+**Evidence so far:** Checkpoint60: f461 Host qualified; integrated GitWeb base r2 exposed missing custodian in birth profile. Core fix2649f49 passes serial Lean and all configured birth regression checks. Paid client d752df7 Linux build qualified; STOP/component cuts540fbfa/e5615b3/1693c08 committed. Native event22 r3 has accepted reserve17 but no ticket yet. Cold CLI query timing is81–83s for f461; warm persistent latency is under investigation. Stable lifetime Hello/per-dispatch claim separation e8c3bca and durable STOP attempt marker06fe2c3 committed. Cold query evidence clarified in ca068b1: direct client challenge/query can replay twice; this is not warm-session latency.
 
 [Task brief](../sprints/2026-09-26/spk-platform-cycle.md)
 
