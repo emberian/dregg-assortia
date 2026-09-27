@@ -1,6 +1,6 @@
 # Start here: DREGG handoff
 
-**User-requested pause, September 27:** all construction lanes wound down. The long direct birth retry was not launched. Resume from checkpoint 66; unfinished source is preserved as verified reconstructible patches, with working-tree edits still present.
+**Resumed by Ember:** work now follows [complete demo journeys](sprints/2026-09-26/demo-convergence.md). Checkpoint 66 preserves the wind-down state; the 13 frozen source hashes were revalidated before restarting lanes. The long direct birth retry remains unlaunched.
 
 **Current goal, September 27 UTC:** deliver the [SPK application platform](sprints/2026-09-26/spk-platform-cycle.md). Start with [checkpoint 66](sprints/2026-09-26/checkpoint-66.md) for the latest reviewed commits, actual native results, live-job handles and next integration work. Follow its predecessor links for earlier evidence. The [parallel journey requirements](sprints/2026-09-26/parallel-journeys.md) define completion; the graph owns work status. Independent fixture results do not establish a deployed shared service.
 
