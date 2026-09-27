@@ -1051,7 +1051,7 @@ Report which claims/work items need reinspection when source bytes change, with 
 
 **Run shared SPK applications through Mini, browsers, agents and fn**
 
-Status: **active** · Owner: Astra: root; Sol: client_session, agent_api_host, fn_mini_review, fn_contracts, runtime_review, mini_app_contract, build_native · Updated: 2026-09-27T15:16:57.275Z
+Status: **active** · Owner: Astra: root; Sol: client_session, agent_api_host, fn_mini_review, fn_contracts, runtime_review, mini_app_contract, build_native · Updated: 2026-09-27T15:25:13.519Z
 
 Integrate real third-party packaged app execution and persistent state with Mini lifecycle/current grants, hosted Hermes, direct commands, and selected version publication over semi-untrusted fn.
 
@@ -1059,7 +1059,7 @@ Integrate real third-party packaged app execution and persistent state with Mini
 
 **Done when:** A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.
 
-**Evidence so far:** Checkpoint60: f461 Host qualified; integrated GitWeb base r2 exposed missing custodian in birth profile. Core fix2649f49 passes serial Lean and all configured birth regression checks. Paid client d752df7 Linux build qualified; STOP/component cuts540fbfa/e5615b3/1693c08 committed. Native event22 r3 has accepted reserve17 but no ticket yet. Cold CLI query timing is81–83s for f461; warm persistent latency is under investigation. Stable lifetime Hello/per-dispatch claim separation e8c3bca and durable STOP attempt marker06fe2c3 committed. Cold query evidence clarified in ca068b1: direct client challenge/query can replay twice; this is not warm-session latency.
+**Evidence so far:** Checkpoint61: exact2649 successor build compiling after verified dependency-cache repair. Unmodified f461 persistent signed query measured86.62s first request,0.73/0.96s same-image repeats with identical output and unchanged copied Store. Future fixture9ccdea4 reuses sessions while retaining restart gates. Event22 r3 has reserve17 and source request; no ticket yet. Source-bound START/recovery and causal controller/resident v3 wiring remain in progress; integrated agent app-observe delegation gap is being addressed.
 
 [Task brief](../sprints/2026-09-26/spk-platform-cycle.md)
 
@@ -1117,6 +1117,7 @@ Integrate real third-party packaged app execution and persistent state with Mini
 - [S-SPK-CHECKPOINT58-0927 — Live exact successor build and concrete GitWeb base Store](../sprints/2026-09-26/checkpoint-58.md)
 - [S-SPK-CHECKPOINT59-0927 — Callable source-bound INSTALL and repaired concrete app fixture](../sprints/2026-09-26/checkpoint-59.md)
 - [S-SPK-CHECKPOINT60-0927 — Deployed birth profile repair and native dispatch convergence](../sprints/2026-09-26/checkpoint-60.md)
+- [S-SPK-CHECKPOINT61-0927 — Measured warm reads and same-Store integration work](../sprints/2026-09-26/checkpoint-61.md)
 
 **Write scope:** minidregg/Kernel/ApplicationLifecycle* and ApplicationSpkLaunchDescriptor.lean (mini_app_contract); minidregg/native/spk-host resident/RPC and dedicated physical evidence (agent_api_host); minidregg/native/spk-host agent custody/server (agent_api_host); minidregg/native/grain-runtime and dedicated controller evidence (runtime_review); isolated source-matched native Host builds and explicit proof repairs (build_native); minidregg/Kernel/Fn* receiving and Host/FnConsumerFrontierPlan.lean (fn_mini_review); persistent agent-route authorization design (runtime_review); coordinated Host/Main.lean and NativeHostReplay.lean hooks; root owns integration order and Git; minidregg/scripts/spk-platform source-authored fixture enrollment/birth continuations (spk_compatibility); minidregg/Host/ApplicationLifecycleLaunchAuthoring*.lean and coordinated Main ops66–71 after lower API freeze (fn_mini_review); minidregg/Kernel/NativeHostContext.lean canonical image-boundary byte reuse and general equivalence proof (client_session); actual Replay consumers coordinated with mini_app_contract
 
