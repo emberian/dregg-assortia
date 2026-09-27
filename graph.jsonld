@@ -3975,7 +3975,7 @@
       "status": "active",
       "owner": "Astra: root; Sol: build_native, hermes_path, linux_hosting, fn_mini_review, codec_stack, runtime_review, mini_app_contract, client_session, spk_compatibility, fn_contracts, shared_resource_tools",
       "reviewer": "Astra: root",
-      "updatedAt": "2026-09-27T06:06:46.279Z",
+      "updatedAt": "2026-09-27T06:21:52Z",
       "priority": 1,
       "sources": [
         "urn:dregg:assortia:S-SPK-CYCLE-0927",
@@ -3987,7 +3987,8 @@
         "urn:dregg:assortia:S-SPK-CHECKPOINT21-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT22-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT23-0927",
-        "urn:dregg:assortia:S-SPK-CHECKPOINT24-0927"
+        "urn:dregg:assortia:S-SPK-CHECKPOINT24-0927",
+        "urn:dregg:assortia:S-SPK-CHECKPOINT25-0927"
       ],
       "advances": [
         "urn:dregg:assortia:E-WORLD",
@@ -4026,8 +4027,8 @@
         "Selected app or data versions travel through fn with explicit publication and separate receiver install/import authority, without private-prefix disclosure."
       ],
       "closure": "A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.",
-      "nextAction": "Finish exact776ba59 native build and recipient receiving fixture while qualifying next source overlay. Join current-authority app/session birth, finalized share issue plus real ticket delegation, verified-prefix dispatch/claim, and typed SPK session lifecycle. Run actual fn poll-to-recipient and source-authorized publication, then real-model/two-person deployed journey.",
-      "progress": "Native two-subject application/session foundation remains qualified by4199096; separate real GitWeb execution by6efd0b9/c8dedb2. Native Hermes fixture23cdfc7 completed metered read/publish/finish through isolated Unix provider gateway. Same-Store recovery88b8bec confirms generation fence then audited settlement with all holds cleared; no paid-model claim. Publication sender3685c6c passes53 client tests but native fn run is pending. Lifecycle policy2b0d37b preserves v1 replay and adds claim phases; verified claim/dispatch/issue history and physical integration remain open. Checkpoint24 records exact776ba59 rebuild after stale warm-source failure, current-authority birth and auxiliary allocation repairs, and provider pre-send budget work."
+      "nextAction": "Run corrected native selected-recipient fixture; link bounded share-issuance and current-birth routes. Establish executable verified-history selection for dispatch and lifecycle claims, then join physical GitWeb/browser/agent use and source-authorized fn publication/receiving.",
+      "progress": "Native two-subject application/session foundation remains qualified by4199096; separate real GitWeb execution by6efd0b9/c8dedb2. Native Hermes fixture23cdfc7 completed metered read/publish/finish through isolated Unix provider gateway. Same-Store recovery88b8bec confirms generation fence then audited settlement with all holds cleared; no paid-model claim. Publication sender3685c6c passes53 client tests but native fn run is pending. Lifecycle policy2b0d37b preserves v1 replay and adds claim phases; verified claim/dispatch/issue history and physical integration remain open. Checkpoint24 records exact776ba59 rebuild after stale warm-source failure, current-authority birth and auxiliary allocation repairs, and provider pre-send budget work. Checkpoint25: exact776ba59 Linux Host built and all204 source hashes checked against Git; current authoring/client bd883d8 committed; real GitWeb permission attenuation f162990 remains synthetic-projection component evidence. First native recipient run found harness selectors, fixed b15f7a0/1d89d0e; fresh run pending. Historical authority needs an executable selector tied to actual admitted replay prefix, not an unchecked reconstructed prefix."
     },
     {
       "@id": "urn:dregg:assortia:S-SPK-GROUNDING1-0927",
@@ -4127,6 +4128,17 @@
       "recordedDate": "2026-09-27",
       "evidenceKind": "native-runtime-recovery-and-scoped-source-checkpoints",
       "limitations": "Deterministic provider; audited recovery. Shared-app dispatch, fn selected-publication native journey, real-model and combined deployed service remain incomplete."
+    },
+    {
+      "@id": "urn:dregg:assortia:S-SPK-CHECKPOINT25-0927",
+      "@type": "Source",
+      "label": "Current authoring, exact native build and verified-history integration",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-26/checkpoint-25.md",
+      "sha256": "ca1b9f2e1d9a68640f21c39003ed6b90bb8120992a800d50a43f14514bd49aa1",
+      "recordedDate": "2026-09-27",
+      "evidenceKind": "source-matched-build-component-runtime-and-integration-review",
+      "limitations": "No combined deployed service; native receiving rerun, verified historical claim/dispatch, and real-model journey remain pending."
     }
   ]
 }

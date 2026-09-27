@@ -2,7 +2,7 @@
 
 > Generated from `graph.jsonld` by `python3 hub.py render`. Edit the graph, not this file.
 
-Latest work-record update: **2026-09-27T06:06:46.279Z**. This is recorded project state, not a live process monitor.
+Latest work-record update: **2026-09-27T06:21:52Z**. This is recorded project state, not a live process monitor.
 
 [New contributor](contributing/README.md) · [Project map](MAP.md) · [Detailed work records](work/records.md)
 
@@ -20,7 +20,7 @@ Latest work-record update: **2026-09-27T06:06:46.279Z**. This is recorded projec
 | [Keep grants valid across policy source revisions](sprints/2026-09-19/cycle-1-integration-checkpoint.md) | Astra: root; component implementation/review lanes completed | Implement and exercise generation-wide native revocation and the delegated-grant two-replacement case against the same source-owned receiving path; preserve the completed per-capability/current-law regressions. |
 | [Retain verified history across native host requests](sprints/2026-09-26/checkpoint-17.md) | Sol: mini_receiver, fn_mini_review, fn_reply_profile, build_native; review runtime_review; Astra: root | Implement exact shared-command-byte optimization, prove generalized equality, benchmark source-matched native image; preserve current authority and post-CAS readback. |
 | [Define the September 26 programmable nexus and its shared contracts](sprints/2026-09-19/cycle-1-integration-checkpoint.md) | Astra: root; component implementation/review lanes completed | Converge the SPK platform cycle: packaged apps provide shared human views and agent APIs under Mini authority; retain separate contributed-hosting and Solana obligations. |
-| [Run shared SPK applications through Mini, browsers, agents and fn](sprints/2026-09-26/spk-platform-cycle.md) | Astra: root; Sol: build_native, hermes_path, linux_hosting, fn_mini_review, codec_stack, runtime_review, mini_app_contract, client_session, spk_compatibility, fn_contracts, shared_resource_tools / Astra: root | Finish exact776ba59 native build and recipient receiving fixture while qualifying next source overlay. Join current-authority app/session birth, finalized share issue plus real ticket delegation, verified-prefix dispatch/claim, and typed SPK session lifecycle. Run actual fn poll-to-recipient and source-authorized publication, then real-model/two-person deployed journey. |
+| [Run shared SPK applications through Mini, browsers, agents and fn](sprints/2026-09-26/spk-platform-cycle.md) | Astra: root; Sol: build_native, hermes_path, linux_hosting, fn_mini_review, codec_stack, runtime_review, mini_app_contract, client_session, spk_compatibility, fn_contracts, shared_resource_tools / Astra: root | Run corrected native selected-recipient fixture; link bounded share-issuance and current-birth routes. Establish executable verified-history selection for dispatch and lifecycle claims, then join physical GitWeb/browser/agent use and source-authorized fn publication/receiving. |
 
 ## Backlog
 
