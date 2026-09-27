@@ -1051,15 +1051,15 @@ Report which claims/work items need reinspection when source bytes change, with 
 
 **Run shared SPK applications through Mini, browsers, agents and fn**
 
-Status: **active** · Owner: Astra: root; Sol: build_native, hermes_path, linux_hosting, fn_mini_review, codec_stack, runtime_review, mini_app_contract, client_session, spk_compatibility, fn_contracts, shared_resource_tools · Updated: 2026-09-27T09:54:07Z
+Status: **active** · Owner: Astra: root; Sol: build_native, hermes_path, linux_hosting, fn_mini_review, codec_stack, runtime_review, mini_app_contract, client_session, spk_compatibility, fn_contracts, shared_resource_tools · Updated: 2026-09-27T10:09:21Z
 
 Integrate real third-party packaged app execution and persistent state with Mini lifecycle/current grants, hosted Hermes, direct commands, and selected version publication over semi-untrusted fn.
 
-**Next:** Diagnose exact sharing admissionrefusal; finish coherent interrupted-birth bootstrap. Qualify complete lifecycle authoring includingclaim52/53 and revisedfn43; run actualINSTALL/START/completion, multiple participant entrances and source-admitted event21 agentAPI. Then exercise restart/revocation/selectedfn and real-model deployedjourneys.
+**Next:** Implement grain-backed sharing without loosening factory policy; finish lifecycle allocator and API connection fixes. Run source-matched INSTALL/START, shared ticket issuance and event21 agent delivery, then joined recovery, revocation, selected fn and real-model journeys.
 
 **Done when:** A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.
 
-**Evidence so far:** Qualified24ecf8a Linux Host5c31583b passed272 Lean modules, link and exact readback; compatibleaed69d2 client passed65 tests, evidencef42984e. Resident completion-before-HTTP source committedd34abc4; current BEGIN plans/routescfca520+d874de7 and claimpland1e308d narrow-green but later nativecut/physicaljourney pending. Recipient-only issue lookup3761f74 avoids owner custody copy. Positive-fee sharingr4 reachedop28 and received definite admissionrefusal; no ticketissued, exactfailure under diagnosis. Two-controller installedapp, actual recovery and real-model deployment remain incomplete.
+**Evidence so far:** Qualified bf04c29 Host passed 274 Lean modules, link and readback in 309s; matching client passed 68 tests (Mini 3d44571). Recipient historical call lookup abc44a4 passed focused tests. Source/fixture diagnosis 81558bb identifies sharing factory-law mismatch; additive grain-backed issue event22/54–57 reserved in d0d031a. Physical installation, event21 API integration and joined deployment remain incomplete.
 
 [Task brief](../sprints/2026-09-26/spk-platform-cycle.md)
 
@@ -1095,6 +1095,7 @@ Integrate real third-party packaged app execution and persistent state with Mini
 - [S-SPK-CHECKPOINT36-0927 — Receiving closure and physical integration gaps](../sprints/2026-09-26/checkpoint-36.md)
 - [S-SPK-CHECKPOINT37-0927 — Qualified completion Host and private authoring routes](../sprints/2026-09-26/checkpoint-37.md)
 - [S-SPK-CHECKPOINT38-0927 — Operator Host qualified and sharing reaches admission](../sprints/2026-09-26/checkpoint-38.md)
+- [S-SPK-CHECKPOINT39-0927 — Lifecycle native build and grain-backed sharing diagnosis](../sprints/2026-09-26/checkpoint-39.md)
 
 **Write scope:** minidregg/native/spk-host and dedicated GitWeb qualification evidence (linux_hosting); minidregg/Kernel/ApplicationDispatchAuthority*.lean (fn_mini_review); minidregg/Kernel/ApplicationLifecycle*.lean (codec_stack); minidregg/native/resource-client/application-acceptance.sh and dedicated evidence (hermes_path); isolated source-matched native Host and helper build (build_native); minidregg/Compiler/Sp800185Cshake256 lane IO proofs and isolated latency evidence (runtime_review); minidregg/Host/Main.lean and Kernel/NativeHostReplay.lean native routing/replay (fn_mini_review; coordinate claim seam with codec_stack); minidregg/Kernel/ApplicationDispatchAdmission*.lean and principal binding (spk_compatibility); minidregg/Kernel/ApplicationShareIssue*.lean atomic issue repair (mini_app_contract); minidregg/Kernel/FnSelectiveRelease* and Host/FnSelectiveReleaseAuthoring.lean (fn_contracts); minidregg/native/resource-client selected release and schema inspect (shared_resource_tools); dregg-assortia graph/handoff and all scoped commits (root); minidregg/Host/Json.lean typed composite app/session birth and native/grain-runtime application tools (client_session); minidregg/native/resource-client/src/selected_publisher.rs and coordinated restricted source signer (fn_contracts); minidregg/Kernel/ApplicationGrainBirth.lean, ApplicationGrainSessionBirth.lean and new loaded current-authority authoring helper (mini_app_contract; Host.Json coordinated client_session)
 
