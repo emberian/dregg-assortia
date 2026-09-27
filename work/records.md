@@ -1051,11 +1051,11 @@ Report which claims/work items need reinspection when source bytes change, with 
 
 **Run shared SPK applications through Mini, browsers, agents and fn**
 
-Status: **active** · Owner: Astra: root; Sol: client_session, agent_api_host, fn_mini_review, fn_contracts, runtime_review, mini_app_contract, build_native · Updated: 2026-09-27T15:16:26.873Z
+Status: **active** · Owner: Astra: root; Sol: client_session, agent_api_host, fn_mini_review, fn_contracts, runtime_review, mini_app_contract, build_native · Updated: 2026-09-27T15:16:57.275Z
 
 Integrate real third-party packaged app execution and persistent state with Mini lifecycle/current grants, hosted Hermes, direct commands, and selected version publication over semi-untrusted fn.
 
-**Next:** Qualify exact2649 Host and retry fresh integrated GitWeb base; finish event22 ticket before native event27/reserve/paid chain. Complete resident START recovery, typed fresh STOP, and causal v3 controller/resident wiring. Persvati build r2 is terminal environment failure: package re-cloning removed Mathlib OLeans; build-native is restoring matching independent dependency artifacts before a named successor, preserving r1/r2 logs in /home/ember/build/minidregg-2649f49-evidence. Event22 hbox unit mini-event22-r3-client-session.service remains active with reserve17 accepted, no ticket yet. Measure warm-session queries separately and avoid redundant cold replay in future fixture routine reads without removing cold restart gates.
+**Next:** Qualify exact2649 Host and retry fresh integrated GitWeb base; finish event22 ticket before native event27/reserve/paid chain. Complete resident START recovery, typed fresh STOP, and causal v3 controller/resident wiring. Persvati build r2 is terminal environment failure: package re-cloning removed Mathlib OLeans; matching package sources/revisions and copied independent build artifacts were verified, then full r3 launched: minidregg-2649f49-host-r3.service, invocation b16899141d5f43b696d9c8ff51aa89a4, log /home/ember/build/minidregg-2649f49-evidence/run-r3.log. Preserve failed r1/r2 evidence. Event22 hbox unit mini-event22-r3-client-session.service remains active with reserve17 accepted, no ticket yet. Measure warm-session queries separately and avoid redundant cold replay in future fixture routine reads without removing cold restart gates.
 
 **Done when:** A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.
 
