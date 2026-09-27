@@ -3975,7 +3975,7 @@
       "status": "active",
       "owner": "Astra: root; Sol: build_native, hermes_path, linux_hosting, agent_api_host, fn_mini_review, runtime_review, mini_app_contract",
       "reviewer": "Astra: root",
-      "updatedAt": "2026-09-27T11:47:34.760Z",
+      "updatedAt": "2026-09-27T12:01:33.852Z",
       "priority": 1,
       "sources": [
         "urn:dregg:assortia:S-SPK-CYCLE-0927",
@@ -4007,7 +4007,8 @@
         "urn:dregg:assortia:S-SPK-CHECKPOINT40-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT41-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT42-0927",
-        "urn:dregg:assortia:S-SPK-CHECKPOINT43-0927"
+        "urn:dregg:assortia:S-SPK-CHECKPOINT43-0927",
+        "urn:dregg:assortia:S-SPK-CHECKPOINT44-0927"
       ],
       "advances": [
         "urn:dregg:assortia:E-WORLD",
@@ -4039,8 +4040,8 @@
         "Selected app or data versions travel through fn with explicit publication and separate receiver install/import authority, without private-prefix disclosure."
       ],
       "closure": "A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.",
-      "nextAction": "Qualify native55d3868 closure; complete source-bound launch admission/replay and physical consumer; define authorized persistent agent route renewal; join fresh app hosting, event22 receipt lookup, paid agent dispatch and selective fn receiving before deployed acceptance.",
-      "progress": "Checkpoint43: resident f3968f8 Linux104 and controller50334e0 Linux116/Darwin112 committed with scoped evidence. Native55d3868 rebuild follows two checked proof-only repairs; no linked Host yet. Source-bound first-create/volume and persistent agent authorization across prompt generations remain core integration work."
+      "nextAction": "Qualify native closure and new lifecycle/grant modules from verified prefix copies; connect offline signed descriptor qualification, fresh Store bootstrap and physical custody; run same-app human/agent, recovery and selected fn acceptance.",
+      "progress": "Checkpoint44: prequeue recovery7e22f27, participant/payer separation1e6581e and public event22 recipient5a87e6e committed with scoped checks. Native55d3868 continues past AgentGrain; source-bound launch, historical persistent-grant issuance/current dispatch and offline descriptor gate under construction."
     },
     {
       "@id": "urn:dregg:assortia:S-SPK-GROUNDING1-0927",
@@ -4360,6 +4361,17 @@
       "recordedDate": "2026-09-27",
       "evidenceKind": "source-review-component-tests-and-scoped-build-evidence",
       "limitations": "Native integrated deployment, persistent route renewal, selected fn exchange and real-model journey remain incomplete."
+    },
+    {
+      "@id": "urn:dregg:assortia:S-SPK-CHECKPOINT44-0927",
+      "@type": "Source",
+      "label": "Prequeue recovery, participant separation and persistent grant contract",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-26/checkpoint-44.md",
+      "sha256": "e308b413e3dca80c0d945ac22f64cde4dbbb0fd148e98914bb5672b67c524649",
+      "recordedDate": "2026-09-27",
+      "evidenceKind": "reviewed-component-source-tests-and-core-contract-findings",
+      "limitations": "New lifecycle and lifetime grant source unqualified; full native build and deployed integrated journey pending."
     }
   ]
 }

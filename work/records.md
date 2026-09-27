@@ -1051,15 +1051,15 @@ Report which claims/work items need reinspection when source bytes change, with 
 
 **Run shared SPK applications through Mini, browsers, agents and fn**
 
-Status: **active** · Owner: Astra: root; Sol: build_native, hermes_path, linux_hosting, agent_api_host, fn_mini_review, runtime_review, mini_app_contract · Updated: 2026-09-27T11:47:34.760Z
+Status: **active** · Owner: Astra: root; Sol: build_native, hermes_path, linux_hosting, agent_api_host, fn_mini_review, runtime_review, mini_app_contract · Updated: 2026-09-27T12:01:33.852Z
 
 Integrate real third-party packaged app execution and persistent state with Mini lifecycle/current grants, hosted Hermes, direct commands, and selected version publication over semi-untrusted fn.
 
-**Next:** Qualify native55d3868 closure; complete source-bound launch admission/replay and physical consumer; define authorized persistent agent route renewal; join fresh app hosting, event22 receipt lookup, paid agent dispatch and selective fn receiving before deployed acceptance.
+**Next:** Qualify native closure and new lifecycle/grant modules from verified prefix copies; connect offline signed descriptor qualification, fresh Store bootstrap and physical custody; run same-app human/agent, recovery and selected fn acceptance.
 
 **Done when:** A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.
 
-**Evidence so far:** Checkpoint43: resident f3968f8 Linux104 and controller50334e0 Linux116/Darwin112 committed with scoped evidence. Native55d3868 rebuild follows two checked proof-only repairs; no linked Host yet. Source-bound first-create/volume and persistent agent authorization across prompt generations remain core integration work.
+**Evidence so far:** Checkpoint44: prequeue recovery7e22f27, participant/payer separation1e6581e and public event22 recipient5a87e6e committed with scoped checks. Native55d3868 continues past AgentGrain; source-bound launch, historical persistent-grant issuance/current dispatch and offline descriptor gate under construction.
 
 [Task brief](../sprints/2026-09-26/spk-platform-cycle.md)
 
@@ -1100,6 +1100,7 @@ Integrate real third-party packaged app execution and persistent state with Mini
 - [S-SPK-CHECKPOINT41-0927 — Coherent native integration build selected](../sprints/2026-09-26/checkpoint-41.md)
 - [S-SPK-CHECKPOINT42-0927 — Shared-app recovery and first-launch findings](../sprints/2026-09-26/checkpoint-42.md)
 - [S-SPK-CHECKPOINT43-0927 — Committed resident/controller custody and native proof repair](../sprints/2026-09-26/checkpoint-43.md)
+- [S-SPK-CHECKPOINT44-0927 — Prequeue recovery, participant separation and persistent grant contract](../sprints/2026-09-26/checkpoint-44.md)
 
 **Write scope:** minidregg/Kernel/ApplicationLifecycle* and ApplicationSpkLaunchDescriptor.lean (mini_app_contract); minidregg/native/spk-host resident/RPC and dedicated physical evidence (linux_hosting); minidregg/native/spk-host agent custody/server (agent_api_host); minidregg/native/grain-runtime and dedicated controller evidence (hermes_path); isolated source-matched native Host builds and explicit proof repairs (build_native); minidregg/Kernel/Fn* receiving and Host/FnConsumerFrontierPlan.lean (fn_mini_review); persistent agent-route authorization design (runtime_review); coordinated Host/Main.lean and NativeHostReplay.lean hooks; root owns integration order and Git
 
