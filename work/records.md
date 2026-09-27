@@ -1051,15 +1051,15 @@ Report which claims/work items need reinspection when source bytes change, with 
 
 **Run shared SPK applications through Mini, browsers, agents and fn**
 
-Status: **active** · Owner: Astra: root; Sol: build_native, hermes_path, linux_hosting, fn_mini_review, codec_stack, runtime_review, mini_app_contract, client_session, spk_compatibility, fn_contracts, shared_resource_tools · Updated: 2026-09-27T10:45:41.111Z
+Status: **active** · Owner: Astra: root; Sol: build_native, hermes_path, linux_hosting, agent_api_host, fn_mini_review, runtime_review, mini_app_contract · Updated: 2026-09-27T11:47:34.760Z
 
 Integrate real third-party packaged app execution and persistent state with Mini lifecycle/current grants, hosted Hermes, direct commands, and selected version publication over semi-untrusted fn.
 
-**Next:** Qualify exact9746c47 native closure on bounded infrastructure; run INSTALL/START, native sharing and fn claims, then join controller-owned signing and two-participant app delivery.
+**Next:** Qualify native55d3868 closure; complete source-bound launch admission/replay and physical consumer; define authorized persistent agent route renewal; join fresh app hosting, event22 receipt lookup, paid agent dispatch and selective fn receiving before deployed acceptance.
 
 **Done when:** A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.
 
-**Evidence so far:** Checkpoint41: guarded claim-only durable repair, event22 replay/Host54–57 and paid-agent reserve client committed; exact9746c47 selected for full native build. Hosted API source tests Linux110/Mac107 passed; physical shared delivery remains pending.
+**Evidence so far:** Checkpoint43: resident f3968f8 Linux104 and controller50334e0 Linux116/Darwin112 committed with scoped evidence. Native55d3868 rebuild follows two checked proof-only repairs; no linked Host yet. Source-bound first-create/volume and persistent agent authorization across prompt generations remain core integration work.
 
 [Task brief](../sprints/2026-09-26/spk-platform-cycle.md)
 
@@ -1098,8 +1098,10 @@ Integrate real third-party packaged app execution and persistent state with Mini
 - [S-SPK-CHECKPOINT39-0927 — Lifecycle native build and grain-backed sharing diagnosis](../sprints/2026-09-26/checkpoint-39.md)
 - [S-SPK-CHECKPOINT40-0927 — Hosted recovery and core integration findings](../sprints/2026-09-26/checkpoint-40.md)
 - [S-SPK-CHECKPOINT41-0927 — Coherent native integration build selected](../sprints/2026-09-26/checkpoint-41.md)
+- [S-SPK-CHECKPOINT42-0927 — Shared-app recovery and first-launch findings](../sprints/2026-09-26/checkpoint-42.md)
+- [S-SPK-CHECKPOINT43-0927 — Committed resident/controller custody and native proof repair](../sprints/2026-09-26/checkpoint-43.md)
 
-**Write scope:** minidregg/native/spk-host and dedicated GitWeb qualification evidence (linux_hosting); minidregg/Kernel/ApplicationDispatchAuthority*.lean (fn_mini_review); minidregg/Kernel/ApplicationLifecycle*.lean (codec_stack); minidregg/native/resource-client/application-acceptance.sh and dedicated evidence (hermes_path); isolated source-matched native Host and helper build (build_native); minidregg/Compiler/Sp800185Cshake256 lane IO proofs and isolated latency evidence (runtime_review); minidregg/Host/Main.lean and Kernel/NativeHostReplay.lean native routing/replay (fn_mini_review; coordinate claim seam with codec_stack); minidregg/Kernel/ApplicationDispatchAdmission*.lean and principal binding (spk_compatibility); minidregg/Kernel/ApplicationShareIssue*.lean atomic issue repair (mini_app_contract); minidregg/Kernel/FnSelectiveRelease* and Host/FnSelectiveReleaseAuthoring.lean (fn_contracts); minidregg/native/resource-client selected release and schema inspect (shared_resource_tools); dregg-assortia graph/handoff and all scoped commits (root); minidregg/Host/Json.lean typed composite app/session birth and native/grain-runtime application tools (client_session); minidregg/native/resource-client/src/selected_publisher.rs and coordinated restricted source signer (fn_contracts); minidregg/Kernel/ApplicationGrainBirth.lean, ApplicationGrainSessionBirth.lean and new loaded current-authority authoring helper (mini_app_contract; Host.Json coordinated client_session)
+**Write scope:** minidregg/Kernel/ApplicationLifecycle* and ApplicationSpkLaunchDescriptor.lean (mini_app_contract); minidregg/native/spk-host resident/RPC and dedicated physical evidence (linux_hosting); minidregg/native/spk-host agent custody/server (agent_api_host); minidregg/native/grain-runtime and dedicated controller evidence (hermes_path); isolated source-matched native Host builds and explicit proof repairs (build_native); minidregg/Kernel/Fn* receiving and Host/FnConsumerFrontierPlan.lean (fn_mini_review); persistent agent-route authorization design (runtime_review); coordinated Host/Main.lean and NativeHostReplay.lean hooks; root owns integration order and Git
 
 **Acceptance:**
 
