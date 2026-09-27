@@ -1051,15 +1051,15 @@ Report which claims/work items need reinspection when source bytes change, with 
 
 **Run shared SPK applications through Mini, browsers, agents and fn**
 
-Status: **active** · Owner: Astra: root; Sol: client_session, agent_api_host, fn_mini_review, runtime_review, mini_app_contract · Updated: 2026-09-27T13:48:58.852Z
+Status: **active** · Owner: Astra: root; Sol: client_session, agent_api_host, fn_mini_review, runtime_review, mini_app_contract · Updated: 2026-09-27T14:02:06.658Z
 
 Integrate real third-party packaged app execution and persistent state with Mini lifecycle/current grants, hosted Hermes, direct commands, and selected version publication over semi-untrusted fn.
 
-**Next:** Finish source-qualified claim/completion and continue Host routes plus exact receipt recovery; qualify signed GitWeb with separate v2 binary, then execute fresh identities/bootstrap and source-bound physical INSTALL/START. Complete grant-bound persistent agent dispatch and actual web/API/CLI, Hermes, hard/soft/restart, selected fn and measured latency acceptance.
+**Next:** Repair physical operation identity and receiver-enforced STOP incarnation; finish v2 report author and physical completion/custody joins; build pinned combined Host and execute real INSTALL/create/STOP/continue. Finish lifetime grant/dispatch routes and controller; complete shared web/API/CLI, real-model Hermes, recovery, selected fn and latency journeys.
 
 **Done when:** A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.
 
-**Evidence so far:** Checkpoint54: native signed GitWeb qualification1cad3e9, CAS-winner handoff4db02ad, Host lifecycle routingfdcb74d and lifetime Replay20998dd reviewed/pushed. Separate event22r2 active; integrated protected fixture prepared but base queued. Completion/physical and lifetime controller consumers plus combined native build remain.
+**Evidence so far:** Checkpoint55: STOP author0332202, guarded continue/claim4bedbce, lifetime receiverce91492 and completion Hostcacc4ae reviewed. Found full-width operation ID rejection and STOP wrong-incarnation defects; owners repairing. Combined exact-commit build requested; event22r2 remains active.
 
 [Task brief](../sprints/2026-09-26/spk-platform-cycle.md)
 
@@ -1111,6 +1111,7 @@ Integrate real third-party packaged app execution and persistent state with Mini
 - [S-SPK-CHECKPOINT52-0927 — Typed lifecycle history, exact receivers and physical BEGIN consumer](../sprints/2026-09-26/checkpoint-52.md)
 - [S-SPK-CHECKPOINT53-0927 — Native descriptor Host and physical claim handoff review](../sprints/2026-09-26/checkpoint-53.md)
 - [S-SPK-CHECKPOINT54-0927 — Native package qualification and CAS-winner lifecycle routing](../sprints/2026-09-26/checkpoint-54.md)
+- [S-SPK-CHECKPOINT55-0927 — Lifecycle completion routes and cross-layer integration defects](../sprints/2026-09-26/checkpoint-55.md)
 
 **Write scope:** minidregg/Kernel/ApplicationLifecycle* and ApplicationSpkLaunchDescriptor.lean (mini_app_contract); minidregg/native/spk-host resident/RPC and dedicated physical evidence (agent_api_host); minidregg/native/spk-host agent custody/server (agent_api_host); minidregg/native/grain-runtime and dedicated controller evidence (hermes_path); isolated source-matched native Host builds and explicit proof repairs (build_native); minidregg/Kernel/Fn* receiving and Host/FnConsumerFrontierPlan.lean (fn_mini_review); persistent agent-route authorization design (runtime_review); coordinated Host/Main.lean and NativeHostReplay.lean hooks; root owns integration order and Git; minidregg/scripts/spk-platform source-authored fixture enrollment/birth continuations (spk_compatibility); minidregg/Host/ApplicationLifecycleLaunchAuthoring*.lean and coordinated Main ops66–71 after lower API freeze (fn_mini_review); minidregg/Kernel/NativeHostContext.lean canonical image-boundary byte reuse and general equivalence proof (client_session); actual Replay consumers coordinated with mini_app_contract
 

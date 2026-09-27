@@ -3975,7 +3975,7 @@
       "status": "active",
       "owner": "Astra: root; Sol: client_session, agent_api_host, fn_mini_review, runtime_review, mini_app_contract",
       "reviewer": "Astra: root",
-      "updatedAt": "2026-09-27T13:48:58.852Z",
+      "updatedAt": "2026-09-27T14:02:06.658Z",
       "priority": 1,
       "sources": [
         "urn:dregg:assortia:S-SPK-CYCLE-0927",
@@ -4018,7 +4018,8 @@
         "urn:dregg:assortia:S-SPK-CHECKPOINT51-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT52-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT53-0927",
-        "urn:dregg:assortia:S-SPK-CHECKPOINT54-0927"
+        "urn:dregg:assortia:S-SPK-CHECKPOINT54-0927",
+        "urn:dregg:assortia:S-SPK-CHECKPOINT55-0927"
       ],
       "advances": [
         "urn:dregg:assortia:E-WORLD",
@@ -4053,8 +4054,8 @@
         "Selected app or data versions travel through fn with explicit publication and separate receiver install/import authority, without private-prefix disclosure."
       ],
       "closure": "A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.",
-      "nextAction": "Finish source-qualified claim/completion and continue Host routes plus exact receipt recovery; qualify signed GitWeb with separate v2 binary, then execute fresh identities/bootstrap and source-bound physical INSTALL/START. Complete grant-bound persistent agent dispatch and actual web/API/CLI, Hermes, hard/soft/restart, selected fn and measured latency acceptance.",
-      "progress": "Checkpoint54: native signed GitWeb qualification1cad3e9, CAS-winner handoff4db02ad, Host lifecycle routingfdcb74d and lifetime Replay20998dd reviewed/pushed. Separate event22r2 active; integrated protected fixture prepared but base queued. Completion/physical and lifetime controller consumers plus combined native build remain."
+      "nextAction": "Repair physical operation identity and receiver-enforced STOP incarnation; finish v2 report author and physical completion/custody joins; build pinned combined Host and execute real INSTALL/create/STOP/continue. Finish lifetime grant/dispatch routes and controller; complete shared web/API/CLI, real-model Hermes, recovery, selected fn and latency journeys.",
+      "progress": "Checkpoint55: STOP author0332202, guarded continue/claim4bedbce, lifetime receiverce91492 and completion Hostcacc4ae reviewed. Found full-width operation ID rejection and STOP wrong-incarnation defects; owners repairing. Combined exact-commit build requested; event22r2 remains active."
     },
     {
       "@id": "urn:dregg:assortia:S-SPK-GROUNDING1-0927",
@@ -4495,6 +4496,17 @@
       "recordedDate": "2026-09-27",
       "evidenceKind": "reviewed-source-native-package-and-storage-component-evidence",
       "limitations": "No integrated deployment or actual real-model journey; next combined Host and physical integration pending."
+    },
+    {
+      "@id": "urn:dregg:assortia:S-SPK-CHECKPOINT55-0927",
+      "@type": "Source",
+      "label": "Lifecycle completion routes and cross-layer integration defects",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-26/checkpoint-55.md",
+      "sha256": "bc30ae09ffc5592d78ae8e0428f4e3fc56e1275794b34278945265aabae6ed51",
+      "recordedDate": "2026-09-27",
+      "evidenceKind": "reviewed-source-and-component-qualification",
+      "limitations": "No integrated deployment; full-width physical identity and STOP incarnation repair pending, combined native build requested."
     }
   ]
 }
