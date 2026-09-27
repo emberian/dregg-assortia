@@ -1,5 +1,7 @@
 # Start here: DREGG handoff
 
+**Latest native result:** [checkpoint 68](sprints/2026-09-26/checkpoint-68.md) records the repaired exact birth and cold reopen passing on a private copy, ready Linux artifacts, and the reviewed Host transition. Live deployment and practical latency remain open.
+
 **Latest reviewed batch:** [checkpoint 67](sprints/2026-09-26/checkpoint-67.md) records committed resident/controller integration, its test evidence, the ordinary-birth admission bottleneck, and the one remaining private diagnostic. Source completion does not establish a deployed service.
 
 **Resumed by Ember:** work now follows [complete demo journeys](sprints/2026-09-26/demo-convergence.md). Checkpoint 66 preserves the wind-down state; the 13 frozen source hashes were revalidated before restarting lanes. The long direct birth retry remains unlaunched.
