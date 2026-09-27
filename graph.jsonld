@@ -3480,10 +3480,10 @@
       "label": "Retain verified history across native host requests",
       "description": "Replace repeated whole-history semantic replay with a source-owned verified session, preserving exact history identity, current authorization and durable CAS/recovery behavior.",
       "status": "active",
-      "owner": "Sol: fn_mini_review, client_session; Astra: root",
+      "owner": "Astra: root (user-requested wind-down; prior lanes stopped)",
       "priority": 1,
       "milestone": "urn:dregg:assortia:M-2026-09-26",
-      "updatedAt": "2026-09-27T16:09:01.491Z",
+      "updatedAt": "2026-09-27T16:15:43.554Z",
       "sources": [
         "urn:dregg:assortia:S-HOST-SESSION-PROPOSAL-0919",
         "urn:dregg:assortia:S-NATIVE-COMPUTATION-0919",
@@ -3505,7 +3505,8 @@
         "urn:dregg:assortia:S-CHECKPOINT15-0926",
         "urn:dregg:assortia:S-CHECKPOINT16-0926",
         "urn:dregg:assortia:S-CHECKPOINT17-0926",
-        "urn:dregg:assortia:S-SPK-CHECKPOINT65-0927"
+        "urn:dregg:assortia:S-SPK-CHECKPOINT65-0927",
+        "urn:dregg:assortia:S-SPK-CHECKPOINT66-0927"
       ],
       "motivatedBy": [
         "urn:dregg:assortia:I-CORE-SPRINT",
@@ -3531,8 +3532,8 @@
         "minidregg/Kernel/NativeObservationController.lean",
         "minidregg/scripts/build-native-host.sh"
       ],
-      "progress": "Identical warm query is subsecond to1s, cold query about87s. Private profiling shows hot special branches rather than generic directory reload dominate. Integrated composite birth exceeded600s client deadline before accepted state; exact lookup absent.",
-      "nextAction": "Profile exact retained integrated composite birth on private copied genesis and identify dominant special-path computations. Require semantics-preserving source change and source-matched native measurement; continue exact live request only under bounded recovery protocol.",
+      "progress": "User requested wind-down at10% usage. Identical warm query is subsecond to1s, cold query about87s. Private profiling shows hot special branches rather than generic directory reload dominate. Integrated composite birth exceeded600s client deadline before accepted state; exact lookup absent.",
+      "nextAction": "On explicit resume: Profile exact retained integrated composite birth on private copied genesis and identify dominant special-path computations. Require semantics-preserving source change and source-matched native measurement; continue exact live request only under bounded recovery protocol.",
       "closure": "Prove verified-prefix plus suffix replay agrees with full semantic replay under explicit verifier assumptions; run unchanged-image, external append/revocation, rewritten/rolled-back history, stale challenge, exact CAS, lost reply, restart and verifier-change cases through the real host. Preserve fresh authorization, exact original receipt boundaries and uncertainty. Measure physical reads, replay counts and latency; do not substitute height/hash/mtime for exact image identity."
     },
     {
@@ -3974,9 +3975,9 @@
       "label": "Run shared SPK applications through Mini, browsers, agents and fn",
       "description": "Integrate real third-party packaged app execution and persistent state with Mini lifecycle/current grants, hosted Hermes, direct commands, and selected version publication over semi-untrusted fn.",
       "status": "active",
-      "owner": "Astra: root; Sol: client_session, agent_api_host, fn_mini_review, fn_contracts, runtime_review, mini_app_contract, build_native",
+      "owner": "Astra: root (user-requested wind-down; prior lanes stopped)",
       "reviewer": "Astra: root",
-      "updatedAt": "2026-09-27T16:09:01.491Z",
+      "updatedAt": "2026-09-27T16:15:43.553Z",
       "priority": 1,
       "sources": [
         "urn:dregg:assortia:S-SPK-CYCLE-0927",
@@ -4030,7 +4031,8 @@
         "urn:dregg:assortia:S-SPK-CHECKPOINT62-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT63-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT64-0927",
-        "urn:dregg:assortia:S-SPK-CHECKPOINT65-0927"
+        "urn:dregg:assortia:S-SPK-CHECKPOINT65-0927",
+        "urn:dregg:assortia:S-SPK-CHECKPOINT66-0927"
       ],
       "advances": [
         "urn:dregg:assortia:E-WORLD",
@@ -4065,8 +4067,8 @@
         "Selected app or data versions travel through fn with explicit publication and separate receiver install/import authority, without private-prefix disclosure."
       ],
       "closure": "A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.",
-      "nextAction": "Recover the exact retained birth with a bounded once-only direct continuation after absence/pin checks while profiling the same call on a private copy. Finish resident/controller paid dispatch and physical lifecycle, then joined browser/agent/restart/fn journeys.",
-      "progress": "Native component sharing/reopen evidence committed83dde30; certified353-module f450 Host evidence477e2e6; exact three-slot detached payer fa581ae and Fenced-only STOP recovery1ec2fc0. Integrated GitWeb first birth exceeded600s deadline; exact lookup absent, Store unchanged. No combined service."
+      "nextAction": "On explicit resume: Recover the exact retained birth with a bounded once-only direct continuation after absence/pin checks while profiling the same call on a private copy. Finish resident/controller paid dispatch and physical lifecycle, then joined browser/agent/restart/fn journeys.",
+      "progress": "User requested wind-down at10% usage. Native component sharing/reopen evidence committed83dde30; certified353-module f450 Host evidence477e2e6; exact three-slot detached payer fa581ae and Fenced-only STOP recovery1ec2fc0. Integrated GitWeb first birth exceeded600s deadline; exact lookup absent, Store unchanged. No combined service."
     },
     {
       "@id": "urn:dregg:assortia:S-SPK-GROUNDING1-0927",
@@ -4628,6 +4630,17 @@
       "recordedDate": "2026-09-27",
       "evidenceKind": "native-build-and-component-evidence-reviewed-source-and-exact-failed-creation-lookup",
       "limitations": "No integrated app service, paid dispatch, physical STOP/Continue or actual-model Hermes; first integrated birth timed out and exact lookup was absent."
+    },
+    {
+      "@id": "urn:dregg:assortia:S-SPK-CHECKPOINT66-0927",
+      "@type": "Source",
+      "label": "User-requested wind-down and portable unfinished source",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-26/checkpoint-66.md",
+      "sha256": "d2bf6b575dee2f596b97586a61d79b43d8059507b3de3f02dd22f750dcddf2c1",
+      "recordedDate": "2026-09-27",
+      "evidenceKind": "frozen-source-reconstruction-component-evidence-and-stopped-lane-handoff",
+      "limitations": "User-requested pause. Full platform incomplete; patches preserve WIP without adoption. Direct birth retry not launched; no integrated service."
     }
   ]
 }
