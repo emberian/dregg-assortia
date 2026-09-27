@@ -1048,15 +1048,15 @@ Report which claims/work items need reinspection when source bytes change, with 
 
 **Run shared SPK applications through Mini, browsers, agents and fn**
 
-Status: **active** · Owner: Astra: root; Sol: spk_compatibility, spk_app_probe, mini_app_contract · Updated: 2026-09-27T02:44:11.462Z
+Status: **active** · Owner: Astra: root; Sol: spk_compatibility, linux_hosting, client_session, mini_app_contract, fn_mini_review, codec_stack, hermes_path · Updated: 2026-09-27T03:20:15.324Z
 
 Integrate real third-party packaged app execution and persistent state with Mini lifecycle/current grants, hosted Hermes, direct commands, and selected version publication over semi-untrusted fn.
 
-**Next:** Inspect the real Simple Todos package and Wekan UI/API requirements; preserve manifest fidelity; finalize fd3 Cap’n Proto execution and Mini app lifecycle/request contract, then implement and integrate the actual app.
+**Next:** Qualify bounded SPK parser and private real app launch; repair composite birth lookup against copied Store; finish Mini application/session admission, then connect physical host/RPC and selected fn release.
 
 **Done when:** A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.
 
-**Evidence so far:** Real Simple Todos SPK signature/archive inspected: browser/DDP app, no declared HTTP/powerbox API. Bread48166150e preserves command environments and legacy executable prefix; eight isolated tests pass against an official-schema fixture. Wekan artifact/API inspection and Mini ApplicationGrain core are in progress; no app launched.
+**Evidence so far:** Bread028bc0271 leaf parser and Mini c6c13ca typed RPC adapter pushed; Mini7c2fa64 app lifecycle/birth source compiles. Hosted unforked Hermes deterministic9301 created/read/published a Mini resource; restart lookup refused composite birth and is under source-matched repair. Linux sandbox/quota/typed extraction passed isolated probes; no packaged executable, real model or joined browser/API journey yet.
 
 [Task brief](../sprints/2026-09-26/spk-platform-cycle.md)
 
@@ -1069,8 +1069,9 @@ Integrate real third-party packaged app execution and persistent state with Mini
 
 - [S-SPK-CYCLE-0927 — SPK application platform goal and grounded integration contract](../sprints/2026-09-26/spk-platform-cycle.md)
 - [S-SPK-GROUNDING1-0927 — Actual Simple Todos package inspection and official-schema manifest repair](../sprints/2026-09-26/spk-grounding-01.md)
+- [S-SPK-CHECKPOINT18-0927 — SPK package, RPC, Mini lifecycle and hosted birth checkpoint](../sprints/2026-09-26/checkpoint-18.md)
 
-**Write scope:** minidregg/Kernel/ApplicationGrain.lean and ApplicationGrainLaws.lean (mini_app_contract); native integration coordinated by root; breadstuffs/sandstorm-bridge/src/manifest.rs (spk_compatibility); dregg-assortia cycle brief and graph (root)
+**Write scope:** breadstuffs/sandstorm-package parser hardening and sandstorm-bridge facade (spk_compatibility; root commits); minidregg/native/spk-host and deploy/spk-host (linux_hosting; root commits); minidregg/native/spk-rpc (client_session; root commits); minidregg/Kernel/ApplicationGrainSession*.lean (mini_app_contract; root commits); minidregg/Kernel/ApplicationDispatch*.lean (fn_mini_review; root commits); minidregg/Kernel/NativeHost.lean composite birth lookup (codec_stack; root commits); isolated hosted9301 recovery and evidence (hermes_path); dregg-assortia graph/handoff (root)
 
 **Acceptance:**
 

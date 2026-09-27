@@ -2,7 +2,7 @@
 
 > Generated from `graph.jsonld` by `python3 hub.py render`. Edit the graph, not this file.
 
-Latest work-record update: **2026-09-27T02:44:11.462Z**. This is recorded project state, not a live process monitor.
+Latest work-record update: **2026-09-27T03:20:15.324Z**. This is recorded project state, not a live process monitor.
 
 [New contributor](contributing/README.md) · [Project map](MAP.md) · [Detailed work records](work/records.md)
 
@@ -20,7 +20,7 @@ Latest work-record update: **2026-09-27T02:44:11.462Z**. This is recorded projec
 | [Keep grants valid across policy source revisions](sprints/2026-09-19/cycle-1-integration-checkpoint.md) | Astra: root; component implementation/review lanes completed | Implement and exercise generation-wide native revocation and the delegated-grant two-replacement case against the same source-owned receiving path; preserve the completed per-capability/current-law regressions. |
 | [Retain verified history across native host requests](sprints/2026-09-26/checkpoint-17.md) | Sol: mini_receiver, fn_mini_review, fn_reply_profile, build_native; review runtime_review; Astra: root | Implement exact shared-command-byte optimization, prove generalized equality, benchmark source-matched native image; preserve current authority and post-CAS readback. |
 | [Define the September 26 programmable nexus and its shared contracts](sprints/2026-09-19/cycle-1-integration-checkpoint.md) | Astra: root; component implementation/review lanes completed | Converge the SPK platform cycle: packaged apps provide shared human views and agent APIs under Mini authority; retain separate contributed-hosting and Solana obligations. |
-| [Run shared SPK applications through Mini, browsers, agents and fn](sprints/2026-09-26/spk-platform-cycle.md) | Astra: root; Sol: spk_compatibility, spk_app_probe, mini_app_contract / Astra: root | Inspect the real Simple Todos package and Wekan UI/API requirements; preserve manifest fidelity; finalize fd3 Cap’n Proto execution and Mini app lifecycle/request contract, then implement and integrate the actual app. |
+| [Run shared SPK applications through Mini, browsers, agents and fn](sprints/2026-09-26/spk-platform-cycle.md) | Astra: root; Sol: spk_compatibility, linux_hosting, client_session, mini_app_contract, fn_mini_review, codec_stack, hermes_path / Astra: root | Qualify bounded SPK parser and private real app launch; repair composite birth lookup against copied Store; finish Mini application/session admission, then connect physical host/RPC and selected fn release. |
 
 ## Backlog
 
