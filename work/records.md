@@ -1051,7 +1051,7 @@ Report which claims/work items need reinspection when source bytes change, with 
 
 **Run shared SPK applications through Mini, browsers, agents and fn**
 
-Status: **active** · Owner: Astra: root; Sol: build_native, hermes_path, linux_hosting, agent_api_host, fn_mini_review, runtime_review, mini_app_contract · Updated: 2026-09-27T12:23:16Z
+Status: **active** · Owner: Astra: root; Sol: build_native, hermes_path, linux_hosting, agent_api_host, fn_mini_review, runtime_review, mini_app_contract · Updated: 2026-09-27T12:31:32Z
 
 Integrate real third-party packaged app execution and persistent state with Mini lifecycle/current grants, hosted Hermes, direct commands, and selected version publication over semi-untrusted fn.
 
@@ -1059,7 +1059,7 @@ Integrate real third-party packaged app execution and persistent state with Mini
 
 **Done when:** A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.
 
-**Evidence so far:** Checkpoint46: persistent grant source9cdf401 and pure signed launch descriptor7ba5bcb compiled narrowly and pushed. Root found draft START action-signature binding and volume-create concurrency gaps; owners are fixing them before integration. Full native closure and real shared service remain pending.
+**Evidence so far:** Checkpoint47: lower grant admission81e3874, stable volume custody43099d1 and canonical-boundary equality3711804 pushed. Concurrent create and systemd handoff lifecycle checked. Native baseline progresses through Host.Json; upper receiving, signed v3 lifecycle and actual Replay optimization consumers remain pending.
 
 [Task brief](../sprints/2026-09-26/spk-platform-cycle.md)
 
@@ -1103,6 +1103,7 @@ Integrate real third-party packaged app execution and persistent state with Mini
 - [S-SPK-CHECKPOINT44-0927 — Prequeue recovery, participant separation and persistent grant contract](../sprints/2026-09-26/checkpoint-44.md)
 - [S-SPK-CHECKPOINT45-0927 — Offline signed-package launch qualification and integration continuation](../sprints/2026-09-26/checkpoint-45.md)
 - [S-SPK-CHECKPOINT46-0927 — Compiled source contracts and launch authorization review](../sprints/2026-09-26/checkpoint-46.md)
+- [S-SPK-CHECKPOINT47-0927 — Persistent volume custody and grant admission components](../sprints/2026-09-26/checkpoint-47.md)
 
 **Write scope:** minidregg/Kernel/ApplicationLifecycle* and ApplicationSpkLaunchDescriptor.lean (mini_app_contract); minidregg/native/spk-host resident/RPC and dedicated physical evidence (linux_hosting); minidregg/native/spk-host agent custody/server (agent_api_host); minidregg/native/grain-runtime and dedicated controller evidence (hermes_path); isolated source-matched native Host builds and explicit proof repairs (build_native); minidregg/Kernel/Fn* receiving and Host/FnConsumerFrontierPlan.lean (fn_mini_review); persistent agent-route authorization design (runtime_review); coordinated Host/Main.lean and NativeHostReplay.lean hooks; root owns integration order and Git; minidregg/scripts/spk-platform source-authored fixture enrollment/birth continuations (spk_compatibility); minidregg/Host/ApplicationLifecycleLaunchAuthoring*.lean and coordinated Main ops66–71 after lower API freeze (fn_mini_review); minidregg/Kernel/NativeHostContext.lean canonical image-boundary byte reuse and general equivalence proof (client_session); actual Replay consumers coordinated with mini_app_contract
 
