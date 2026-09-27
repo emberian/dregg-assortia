@@ -3975,7 +3975,7 @@
       "status": "active",
       "owner": "Astra: root; Sol: client_session, agent_api_host, fn_mini_review, fn_contracts, runtime_review, mini_app_contract, build_native",
       "reviewer": "Astra: root",
-      "updatedAt": "2026-09-27T14:33:07.467Z",
+      "updatedAt": "2026-09-27T14:36:44.250Z",
       "priority": 1,
       "sources": [
         "urn:dregg:assortia:S-SPK-CYCLE-0927",
@@ -4021,7 +4021,8 @@
         "urn:dregg:assortia:S-SPK-CHECKPOINT54-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT55-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT56-0927",
-        "urn:dregg:assortia:S-SPK-CHECKPOINT57-0927"
+        "urn:dregg:assortia:S-SPK-CHECKPOINT57-0927",
+        "urn:dregg:assortia:S-SPK-CHECKPOINT58-0927"
       ],
       "advances": [
         "urn:dregg:assortia:E-WORLD",
@@ -4056,8 +4057,8 @@
         "Selected app or data versions travel through fn with explicit publication and separate receiver install/import authority, without private-prefix disclosure."
       ],
       "closure": "A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.",
-      "nextAction": "Build exact f461f39 successor; run real INSTALL/create and event22 issue against admitted Store. Finish STOP witness/physical consumer, lifetime dispatch/controller and grant custody; execute shared web/API/CLI, recovery, selected fn, real-model Hermes and measured latency journeys.",
-      "progress": "Checkpoint57: cacc4ae Linux Host build completed and preserved in Mini6edffd9. Event22r2 failed before submission on missing canonical signing field; source repairf461f39 passes retained-plan inspection and defines the next build cutoff. Physical report/completion recovery36e5a7e and private lifetime-grant Host routes4f06854 committed; integrated native journeys remain incomplete."
+      "nextAction": "Certify successor and linked canonical inspection; finish concrete base Store and qualified Host upgrade, then actual INSTALL/create. Complete STOP/recovery, lifetime dispatch/controller and grant custody, followed by full shared platform journeys.",
+      "progress": "Checkpoint58: exact f461f39 successor build active on Persvati and concrete GitWeb base Store creation active on hbox, both directly polled. STOP-only witness planfa6f4dd committed; interrupted INSTALL authoring recovery and private lifetime custody integration under construction. No integrated deployment."
     },
     {
       "@id": "urn:dregg:assortia:S-SPK-GROUNDING1-0927",
@@ -4531,6 +4532,17 @@
       "recordedDate": "2026-09-27",
       "evidenceKind": "qualified-native-build-failed-fixture-diagnosis-and-reviewed-source-components",
       "limitations": "No integrated shared deployment; canonical repair requires linked successor and native issue, physical launch and requested journeys remain incomplete."
+    },
+    {
+      "@id": "urn:dregg:assortia:S-SPK-CHECKPOINT58-0927",
+      "@type": "Source",
+      "label": "Live exact successor build and concrete GitWeb base Store",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-26/checkpoint-58.md",
+      "sha256": "e67fb26b18e396f7d1d25399cb31fabb11cce9baa559eb57721ac547215dbe24",
+      "recordedDate": "2026-09-27",
+      "evidenceKind": "direct-live-job-observation-reviewed-source-and-integration-defect-review",
+      "limitations": "Jobs active at observation; no successful base Store, successor artifact, physical launch or integrated shared service claimed."
     }
   ]
 }
