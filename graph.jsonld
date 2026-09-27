@@ -3975,7 +3975,7 @@
       "status": "active",
       "owner": "Astra: root; Sol: build_native, hermes_path, agent_api_host, fn_mini_review, runtime_review, mini_app_contract",
       "reviewer": "Astra: root",
-      "updatedAt": "2026-09-27T13:10:41Z",
+      "updatedAt": "2026-09-27T13:16:18Z",
       "priority": 1,
       "sources": [
         "urn:dregg:assortia:S-SPK-CYCLE-0927",
@@ -4014,7 +4014,8 @@
         "urn:dregg:assortia:S-SPK-CHECKPOINT47-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT48-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT49-0927",
-        "urn:dregg:assortia:S-SPK-CHECKPOINT50-0927"
+        "urn:dregg:assortia:S-SPK-CHECKPOINT50-0927",
+        "urn:dregg:assortia:S-SPK-CHECKPOINT51-0927"
       ],
       "advances": [
         "urn:dregg:assortia:E-WORLD",
@@ -4050,7 +4051,7 @@
       ],
       "closure": "A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.",
       "nextAction": "Finish linked v2 author/inspect, source-bound INSTALL/START and persistent grant receiving; birth actual allocated identities in the fresh Store, then exercise shared app through browsers, Hermes and direct CLI with restart/disconnect and selected fn acceptance.",
-      "progress": "Checkpoint50: exact55d3868 native Host r8 qualified; fresh event22 acceptance running. Reviewed lifetime-dispatch lower679e2c0 and private launch authoring a9d85cf pushed. New v2/v3 native paths and integrated same-app journeys remain active."
+      "progress": "Checkpoint51: foreground CLI eae4520 pushed with source-matched macOS117/Linux122 controller tests; native build evidence2c07cb8 retained. Review requires typed prior-create admission and exact lifetime-grant payer reserve before integrating new routes."
     },
     {
       "@id": "urn:dregg:assortia:S-SPK-GROUNDING1-0927",
@@ -4447,6 +4448,17 @@
       "recordedDate": "2026-09-27",
       "evidenceKind": "reviewed-source-component-checks-native-build-and-live-acceptance-observation",
       "limitations": "Event22 acceptance still running; newer routes source-qualified only, integrated service incomplete."
+    },
+    {
+      "@id": "urn:dregg:assortia:S-SPK-CHECKPOINT51-0927",
+      "@type": "Source",
+      "label": "Foreground shell source and reviewed lifecycle/payer binding gaps",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-26/checkpoint-51.md",
+      "sha256": "4535054012681b59b92e5f1f48c008ae87cbfdb8dfc5fab254eb8602852c0999",
+      "recordedDate": "2026-09-27",
+      "evidenceKind": "reviewed-source-controller-tests-and-integration-contract",
+      "limitations": "Controller tests do not establish native app delivery; continue and exact-grant reserve changes pending."
     }
   ]
 }
