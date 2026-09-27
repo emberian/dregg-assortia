@@ -3975,7 +3975,7 @@
       "status": "active",
       "owner": "Astra: root; Sol: client_session, agent_api_host, fn_mini_review, fn_contracts, runtime_review, mini_app_contract, build_native",
       "reviewer": "Astra: root",
-      "updatedAt": "2026-09-27T14:14:25.505Z",
+      "updatedAt": "2026-09-27T14:33:07.467Z",
       "priority": 1,
       "sources": [
         "urn:dregg:assortia:S-SPK-CYCLE-0927",
@@ -4020,7 +4020,8 @@
         "urn:dregg:assortia:S-SPK-CHECKPOINT53-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT54-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT55-0927",
-        "urn:dregg:assortia:S-SPK-CHECKPOINT56-0927"
+        "urn:dregg:assortia:S-SPK-CHECKPOINT56-0927",
+        "urn:dregg:assortia:S-SPK-CHECKPOINT57-0927"
       ],
       "advances": [
         "urn:dregg:assortia:E-WORLD",
@@ -4039,7 +4040,7 @@
         "minidregg/Kernel/ApplicationLifecycle* and ApplicationSpkLaunchDescriptor.lean (mini_app_contract)",
         "minidregg/native/spk-host resident/RPC and dedicated physical evidence (agent_api_host)",
         "minidregg/native/spk-host agent custody/server (agent_api_host)",
-        "minidregg/native/grain-runtime and dedicated controller evidence (hermes_path)",
+        "minidregg/native/grain-runtime and dedicated controller evidence (runtime_review)",
         "isolated source-matched native Host builds and explicit proof repairs (build_native)",
         "minidregg/Kernel/Fn* receiving and Host/FnConsumerFrontierPlan.lean (fn_mini_review)",
         "persistent agent-route authorization design (runtime_review)",
@@ -4055,8 +4056,8 @@
         "Selected app or data versions travel through fn with explicit publication and separate receiver install/import authority, without private-prefix disclosure."
       ],
       "closure": "A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.",
-      "nextAction": "Repair physical operation identity and receiver-enforced STOP incarnation; finish v2 report author and physical completion/custody joins; build pinned combined Host and execute real INSTALL/create/STOP/continue. Finish lifetime grant/dispatch routes and controller; complete shared web/API/CLI, real-model Hermes, recovery, selected fn and latency journeys.",
-      "progress": "Checkpoint56: full-width physical identityc3b8996, report helper/routesa76aa55/bd50dd6, lifetime grantc5cb973 and dispatch author8ac5b85 reviewed/pushed. Exactcacc4ae Host build active on Persvati; event22r2 active on hbox. STOP prior-incarnation closure, native routes and physical/controller consumers remain."
+      "nextAction": "Build exact f461f39 successor; run real INSTALL/create and event22 issue against admitted Store. Finish STOP witness/physical consumer, lifetime dispatch/controller and grant custody; execute shared web/API/CLI, recovery, selected fn, real-model Hermes and measured latency journeys.",
+      "progress": "Checkpoint57: cacc4ae Linux Host build completed and preserved in Mini6edffd9. Event22r2 failed before submission on missing canonical signing field; source repairf461f39 passes retained-plan inspection and defines the next build cutoff. Physical report/completion recovery36e5a7e and private lifetime-grant Host routes4f06854 committed; integrated native journeys remain incomplete."
     },
     {
       "@id": "urn:dregg:assortia:S-SPK-GROUNDING1-0927",
@@ -4519,6 +4520,17 @@
       "recordedDate": "2026-09-27",
       "evidenceKind": "reviewed-source-and-live-build-observation",
       "limitations": "Native combined build active at pinned older cut; final STOP/routes/physical/controller integration and deployed journeys incomplete."
+    },
+    {
+      "@id": "urn:dregg:assortia:S-SPK-CHECKPOINT57-0927",
+      "@type": "Source",
+      "label": "Completed combined Host build and native integration repair",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-26/checkpoint-57.md",
+      "sha256": "f24d74e12b6e127ebf4a6e5793d6e5f3bd03756bbc15e57397a59859c5193985",
+      "recordedDate": "2026-09-27",
+      "evidenceKind": "qualified-native-build-failed-fixture-diagnosis-and-reviewed-source-components",
+      "limitations": "No integrated shared deployment; canonical repair requires linked successor and native issue, physical launch and requested journeys remain incomplete."
     }
   ]
 }
