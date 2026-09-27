@@ -1051,11 +1051,11 @@ Report which claims/work items need reinspection when source bytes change, with 
 
 **Run shared SPK applications through Mini, browsers, agents and fn**
 
-Status: **active** · Owner: Astra: root; Sol: build_native, hermes_path, linux_hosting, fn_mini_review, codec_stack, runtime_review, mini_app_contract, client_session, spk_compatibility, fn_contracts, shared_resource_tools · Updated: 2026-09-27T07:39:41Z
+Status: **active** · Owner: Astra: root; Sol: build_native, hermes_path, linux_hosting, fn_mini_review, codec_stack, runtime_review, mini_app_contract, client_session, spk_compatibility, fn_contracts, shared_resource_tools · Updated: 2026-09-27T07:49:38Z
 
 Integrate real third-party packaged app execution and persistent state with Mini lifecycle/current grants, hosted Hermes, direct commands, and selected version publication over semi-untrusted fn.
 
-**Next:** Finish fresh native sharing and selected source publication/receiving with qualified Host47e09c55. Join source-owned dispatch authoring/inspection to participant custody, exact signed package identity and real SPK delivery in one finite combined native cut. Complete hosted current births, cancellable authoring, cross-controller sharing and real-model shared-app/recovery journey.
+**Next:** Finish fresh native sharing and selected source publication/receiving with qualified Host47e09c55. Join source-owned dispatch authoring/inspection to participant custody, exact signed package identity and real SPK delivery in one finite combined native cut. Complete hosted current births, cancellable authoring, cross-controller sharing and real-model shared-app/recovery journey. Qualify unified empty/selected consumer progress and gateway-signed bounded local coverage before selected fn ACK.
 
 **Done when:** A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.
 
@@ -1086,6 +1086,7 @@ Integrate real third-party packaged app execution and persistent state with Mini
 - [S-SPK-CHECKPOINT28-0927 — Physical root repairs and complete sharing approval](../sprints/2026-09-26/checkpoint-28.md)
 - [S-SPK-CHECKPOINT29-0927 — Native current births, private browser entry and operator share custody](../sprints/2026-09-26/checkpoint-29.md)
 - [S-SPK-CHECKPOINT30-0927 — Dispatch and lifecycle source integration, provider interruption and native convergence](../sprints/2026-09-26/checkpoint-30.md)
+- [S-FN-CONSUMER-CONTINUITY-0927 — Unified empty and selected fn consumer progress requirement](../sprints/2026-09-26/fn-consumer-progress-continuity.md)
 
 **Write scope:** minidregg/native/spk-host and dedicated GitWeb qualification evidence (linux_hosting); minidregg/Kernel/ApplicationDispatchAuthority*.lean (fn_mini_review); minidregg/Kernel/ApplicationLifecycle*.lean (codec_stack); minidregg/native/resource-client/application-acceptance.sh and dedicated evidence (hermes_path); isolated source-matched native Host and helper build (build_native); minidregg/native/grain-runtime bounded provider profile and coordinated caller (runtime_review); minidregg/Host/Main.lean and Kernel/NativeHostReplay.lean native routing/replay (fn_mini_review; coordinate claim seam with codec_stack); minidregg/Kernel/ApplicationDispatchAdmission*.lean and principal binding (spk_compatibility); minidregg/Kernel/ApplicationShareIssue*.lean and dispatch authority (fn_mini_review); minidregg/Kernel/FnSelectiveRelease* and Host/FnSelectiveReleaseAuthoring.lean (fn_contracts); minidregg/native/resource-client selected release and schema inspect (shared_resource_tools); dregg-assortia graph/handoff and all scoped commits (root); minidregg/Host/Json.lean typed composite app/session birth and native/grain-runtime application tools (client_session); minidregg/native/resource-client/src/selected_publisher.rs and coordinated restricted source signer (fn_contracts); minidregg/Kernel/ApplicationGrainBirth.lean, ApplicationGrainSessionBirth.lean and new loaded current-authority authoring helper (mini_app_contract; Host.Json coordinated client_session)
 
