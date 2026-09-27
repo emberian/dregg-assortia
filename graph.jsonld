@@ -3975,7 +3975,7 @@
       "status": "active",
       "owner": "Astra: root; Sol: build_native, hermes_path, linux_hosting, fn_mini_review, codec_stack, runtime_review, mini_app_contract, client_session, spk_compatibility, fn_contracts, shared_resource_tools",
       "reviewer": "Astra: root",
-      "updatedAt": "2026-09-27T10:09:21Z",
+      "updatedAt": "2026-09-27T10:29:13.814Z",
       "priority": 1,
       "sources": [
         "urn:dregg:assortia:S-SPK-CYCLE-0927",
@@ -4003,7 +4003,8 @@
         "urn:dregg:assortia:S-SPK-CHECKPOINT36-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT37-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT38-0927",
-        "urn:dregg:assortia:S-SPK-CHECKPOINT39-0927"
+        "urn:dregg:assortia:S-SPK-CHECKPOINT39-0927",
+        "urn:dregg:assortia:S-SPK-CHECKPOINT40-0927"
       ],
       "advances": [
         "urn:dregg:assortia:E-WORLD",
@@ -4042,8 +4043,8 @@
         "Selected app or data versions travel through fn with explicit publication and separate receiver install/import authority, without private-prefix disclosure."
       ],
       "closure": "A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.",
-      "nextAction": "Implement grain-backed sharing without loosening factory policy; finish lifecycle allocator and API connection fixes. Run source-matched INSTALL/START, shared ticket issuance and event21 agent delivery, then joined recovery, revocation, selected fn and real-model journeys.",
-      "progress": "Qualified bf04c29 Host passed 274 Lean modules, link and readback in 309s; matching client passed 68 tests (Mini 3d44571). Recipient historical call lookup abc44a4 passed focused tests. Source/fixture diagnosis 81558bb identifies sharing factory-law mismatch; additive grain-backed issue event22/54–57 reserved in d0d031a. Physical installation, event21 API integration and joined deployment remain incomplete."
+      "nextAction": "Complete source-owned reserve call wrapping and native qualification; join actual SPK INSTALL/START, event22 sharing, human/agent entrances and reviewed fn event-only durability.",
+      "progress": "Checkpoint 40: same-session hard-EOF birth recovery evidenced; grain-backed share source committed; native fn registration exposed zero-write durable preflight gap. Paid API and lifecycle receiving integration remain active."
     },
     {
       "@id": "urn:dregg:assortia:S-SPK-GROUNDING1-0927",
@@ -4319,6 +4320,17 @@
       "recordedDate": "2026-09-27",
       "evidenceKind": "qualified-native-build-and-source-fixture-diagnosis",
       "limitations": "New-route native acceptance, joined service, recovery and real-model journey remain incomplete."
+    },
+    {
+      "@id": "urn:dregg:assortia:S-SPK-CHECKPOINT40-0927",
+      "@type": "Source",
+      "label": "Hosted recovery and core integration findings",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-26/checkpoint-40.md",
+      "sha256": "ac3a894ac14a2ede4be3b14dcaff9ca953e532ee5fd79c8a129875bb31fe3269",
+      "recordedDate": "2026-09-27",
+      "evidenceKind": "native-recovery-source-review-and-durable-refusal-diagnosis",
+      "limitations": "Synthetic provider; shared deployed SPK, event22 native admission, fn durability repair and real-model journey remain incomplete."
     }
   ]
 }
