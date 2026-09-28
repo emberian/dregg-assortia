@@ -162,3 +162,22 @@ After that investigation, ember clarified the direction: rebuild into Mini what 
 ## Substantial Mini implementation cycle (September 19)
 
 Ember accepted that direction and explicitly requested: “Make a minicycle(not microswarm) to do a HUGE step of iteration on it, as far as possible, so that we understand what we can get done once per cycle.” This authorizes coordinated implementation and integration in Mini, superseding the investigation-only restriction for the new cycle. The rejection of Python as a new platform implementation language remains in force; this does not resume the old Bread/Python architecture. The [cycle record](sprints/2026-09-19/cycle-1.md) links the source contract, actual owners and acceptance target. Its initial checkpoint records convergence, not a completed native journey or deployment.
+
+## Local inference and a $DREGG-paid provider offering (September 27)
+
+Asked to select an OpenRouter model and test spend, ember instead selected a
+locally hosted **Ternary Bonsai 2 27B**, hoping it would fit hbox's GPU. This is
+the current real-model preview target; it does not authorize paid OpenRouter
+tests or establish hardware/runtime compatibility. Model qualification and
+actual hosted Hermes execution remain separate evidence.
+
+Ember also wants to reuse dregg-pay and extract suitable Discord bot code to
+support **Chonga models paid only in $DREGG**, while updating or replacing the
+bot as an interface. Shared inference/payment services usable by Discord,
+Hermes, and shell are the proposed integration boundary. The provider API,
+model/pricing contract and implementation are not yet established. The
+[dated source audit](research/payment-inference-2026-09-27.md) records existing
+payment and provider machinery, its transactional/recovery gaps, and its
+relationship to Mini's existing provider custody. This provider option is
+additional to the local-model preview, not a replacement for the integrated
+grain-platform objective or permission to spend from an unspecified account.

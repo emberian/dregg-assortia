@@ -1564,19 +1564,20 @@
       ],
       "closure": "A selected user-visible economic function with exact mint/program/cluster, custody and release policy where applicable, external evidence acceptance and resource-result binding; required source/consumer changes and acceptance checks identified, then exercised at an explicitly authorized deployment scope.",
       "owner": null,
-      "updatedAt": "2026-09-18T00:45:00-04:00",
+      "updatedAt": "2026-09-27T23:59:51.217Z",
       "advances": [
         "urn:dregg:assortia:E-SOLANA",
         "urn:dregg:assortia:E-CLUTCH",
         "urn:dregg:assortia:E-PROVIDERS"
       ],
-      "nextAction": "Choose exact economic operation, real asset/cluster, custody and exit terms before a live transaction.",
+      "nextAction": "Confirm Chonga API/model/price contract; connect transactional DREGG service credits to existing Mini provider custody and a shared inference operation before adding the Discord client.",
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
-      "progress": "Accepted intent: real stake locked, penalties recorded only. Token-2022/legacy-token compatibility and nexus result consumption are unresolved.",
+      "progress": "Ember selected an additional DREGG-only inference offering through existing payment infrastructure and a Discord interface. Source audit finds a selected DREGG signature watcher and reusable provider code, but bot SQLite credit/dedup writes are not transactional. No paid request or transaction performed; provider bonds remain a separate obligation.",
       "blockedBy": [],
       "sources": [
-        "urn:dregg:assortia:S-IMPLEMENTATION-0045"
+        "urn:dregg:assortia:S-IMPLEMENTATION-0045",
+        "urn:dregg:assortia:S-PAYMENT-INFERENCE-0927"
       ]
     },
     {
@@ -3150,8 +3151,8 @@
       "label": "Custody and meter scoped provider requests",
       "description": "Execute bounded streaming requests after canonical reservation, retain exact evidence, fence old epochs, reconcile uncertain work and demonstrate secret isolation.",
       "status": "active",
-      "owner": "Sol: runtime_review, hermes_path; Astra: root",
-      "updatedAt": "2026-09-27T02:10:00Z",
+      "owner": "Sol: runtime_review, build_native; Astra: root",
+      "updatedAt": "2026-09-27T23:59:51.217Z",
       "priority": 1,
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "sources": [
@@ -3169,7 +3170,8 @@
         "urn:dregg:assortia:S-CHECKPOINT14-0926",
         "urn:dregg:assortia:S-CHECKPOINT15-0926",
         "urn:dregg:assortia:S-CHECKPOINT16-0926",
-        "urn:dregg:assortia:S-CHECKPOINT17-0926"
+        "urn:dregg:assortia:S-CHECKPOINT17-0926",
+        "urn:dregg:assortia:S-PAYMENT-INFERENCE-0927"
       ],
       "advances": [
         "urn:dregg:assortia:E-WORLD"
@@ -3184,7 +3186,7 @@
         "Execute bounded streaming requests after canonical reservation, retain exact evidence, fence old epochs, reconcile uncertain work and demonstrate secret isolation."
       ],
       "closure": "Execute bounded streaming requests after canonical reservation, retain exact evidence, fence old epochs, reconcile uncertain work and demonstrate secret isolation.",
-      "nextAction": "Gate interruption during quote and post-settle restart; preserve no-resend/exact-response custody while integrating real-provider configuration.",
+      "nextAction": "Qualify local Ternary Bonsai 2 27B on hbox and run actual hosted Hermes through current Mini provider custody; integrate DREGG-paid provider access as an additional route after its API and accounting contract are established.",
       "progress": "Three sequential Hermes requests separately quoted/settled at counts11/15/23; provider reserve zero. Missing usage and HTTP422 retain held uncertain responses.",
       "historicalWriteScope": [
         "breadstuffs/agent-platform/hosted/dregg_grain/{credentials,broker,broker_transport,broker_server,cost_policy}.py"
@@ -4695,6 +4697,17 @@
       "recordedDate": "2026-09-27",
       "evidenceKind": "live-native-birth-reopen-build-qualification-and-pre-native-failure",
       "limitations": "Acceptedcount1 only; no application installed/started. Base workroom phase failed on Unix socket length before native work; explicit recovery pending."
+    },
+    {
+      "@id": "urn:dregg:assortia:S-PAYMENT-INFERENCE-0927",
+      "@type": "Source",
+      "label": "DREGG-only inference direction and payment/provider source audit",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "research/payment-inference-2026-09-27.md",
+      "sha256": "9aa144b1cfae4dcaa2da9df70ce082a562345030f928bb3c1deb76dc03df754f",
+      "recordedDate": "2026-09-27",
+      "evidenceKind": "source-inspection-and-user-directed-integration",
+      "limitations": "No provider call, payment, bot message, or deployment. Chonga API contract unspecified; transactional crediting and durable inference integration remain work."
     }
   ]
 }

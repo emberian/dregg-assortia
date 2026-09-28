@@ -447,11 +447,11 @@ Converge existing fn consumer lineage and improve its authority, fresh setup, ge
 
 **Custody and meter scoped provider requests**
 
-Status: **active** · Owner: Sol: runtime_review, hermes_path; Astra: root · Updated: 2026-09-27T02:10:00Z
+Status: **active** · Owner: Sol: runtime_review, build_native; Astra: root · Updated: 2026-09-27T23:59:51.217Z
 
 Execute bounded streaming requests after canonical reservation, retain exact evidence, fence old epochs, reconcile uncertain work and demonstrate secret isolation.
 
-**Next:** Gate interruption during quote and post-settle restart; preserve no-resend/exact-response custody while integrating real-provider configuration.
+**Next:** Qualify local Ternary Bonsai 2 27B on hbox and run actual hosted Hermes through current Mini provider custody; integrate DREGG-paid provider access as an additional route after its API and accounting contract are established.
 
 **Done when:** Execute bounded streaming requests after canonical reservation, retain exact evidence, fence old epochs, reconcile uncertain work and demonstrate secret isolation.
 
@@ -480,6 +480,7 @@ Execute bounded streaming requests after canonical reservation, retain exact evi
 - [S-CHECKPOINT15-0926 — Dedicated-account Hermes shared workroom, read-only provider quote and linked typed A view](../sprints/2026-09-26/checkpoint-15.md)
 - [S-CHECKPOINT16-0926 — Native provider settlement, own-R restart failure and continued kernel/hosting construction](../sprints/2026-09-26/checkpoint-16.md)
 - [S-CHECKPOINT17-0926 — Native restart, terminal, sequential metering and resource birth progress](../sprints/2026-09-26/checkpoint-17.md)
+- [S-PAYMENT-INFERENCE-0927 — DREGG-only inference direction and payment/provider source audit](../research/payment-inference-2026-09-27.md)
 
 **Write scope:** minidregg/native/grain-runtime/src/provider.rs; minidregg/native/grain-runtime/src/main.rs; minidregg/deploy/grain-host/
 
@@ -1010,15 +1011,15 @@ Reuse canonical CellRegistry, authority pages, ordered resource Book batches, Mu
 
 **Choose and close one economic operation consumed by a nexus resource**
 
-Status: **backlog** · Owner: Unassigned · Updated: 2026-09-18T00:45:00-04:00
+Status: **backlog** · Owner: Unassigned · Updated: 2026-09-27T23:59:51.217Z
 
 Compare provider bonds, resource payments and Clutch claim/settlement operations. Holder admission is useful existing material but does not alone perform an on-chain mutation. Specify the real asset/cluster and the DREGG receiver of the external result.
 
-**Next:** Choose exact economic operation, real asset/cluster, custody and exit terms before a live transaction.
+**Next:** Confirm Chonga API/model/price contract; connect transactional DREGG service credits to existing Mini provider custody and a shared inference operation before adding the Discord client.
 
 **Done when:** A selected user-visible economic function with exact mint/program/cluster, custody and release policy where applicable, external evidence acceptance and resource-result binding; required source/consumer changes and acceptance checks identified, then exercised at an explicitly authorized deployment scope.
 
-**Evidence so far:** Accepted intent: real stake locked, penalties recorded only. Token-2022/legacy-token compatibility and nexus result consumption are unresolved.
+**Evidence so far:** Ember selected an additional DREGG-only inference offering through existing payment infrastructure and a Discord interface. Source audit finds a selected DREGG signature watcher and reusable provider code, but bot SQLite credit/dedup writes are not transactional. No paid request or transaction performed; provider bonds remain a separate obligation.
 
 **Enables:**
 
@@ -1029,6 +1030,7 @@ Compare provider bonds, resource payments and Clutch claim/settlement operations
 **Evidence / provenance:**
 
 - [S-IMPLEMENTATION-0045 — September 18 implementation and contributor checkpoint](../sprints/2026-09-18/checkpoint-0045.md)
+- [S-PAYMENT-INFERENCE-0927 — DREGG-only inference direction and payment/provider source audit](../research/payment-inference-2026-09-27.md)
 
 ## W-SOURCE-IMPACT
 

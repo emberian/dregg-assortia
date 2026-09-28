@@ -2,7 +2,7 @@
 
 > Generated from `graph.jsonld` by `python3 hub.py render`. Edit the graph, not this file.
 
-Latest work-record update: **2026-09-27T23:24:29.498Z**. This is recorded project state, not a live process monitor.
+Latest work-record update: **2026-09-27T23:59:51.217Z**. This is recorded project state, not a live process monitor.
 
 [New contributor](contributing/README.md) · [Project map](MAP.md) · [Detailed work records](work/records.md)
 
@@ -13,7 +13,7 @@ Latest work-record update: **2026-09-27T23:24:29.498Z**. This is recorded projec
 | Work | Owner / reviewer | Next action |
 |---|---|---|
 | [Operate actual Mini resources through fn correspondence and separate gateways](sprints/2026-09-26/checkpoint-17.md) | Sol: fn_contracts; Astra: root | Finish selected-release durable receiver and exact historical retry checks, integrate native Host/Replay/CLI route, then exercise authorized selected public bytes through actual fn without private-prefix disclosure. Receiver import/install remains separate authority. |
-| [Custody and meter scoped provider requests](sprints/2026-09-26/checkpoint-17.md) | Sol: runtime_review, hermes_path; Astra: root | Gate interruption during quote and post-settle restart; preserve no-resend/exact-response custody while integrating real-provider configuration. |
+| [Custody and meter scoped provider requests](sprints/2026-09-26/checkpoint-17.md) | Sol: runtime_review, build_native; Astra: root | Qualify local Ternary Bonsai 2 27B on hbox and run actual hosted Hermes through current Mini provider custody; integrate DREGG-paid provider access as an additional route after its API and accounting contract are established. |
 | [Durable hosted grain control and authenticated entrance](sprints/2026-09-26/checkpoint-17.md) | Sol: client_session, hermes_path, fn_reply_profile; Astra: root | Complete short spawn/cancel critical section and custody ownership without blocking immediate worker stop; preserve uncertainty and exact-call recovery. |
 | [Host upstream Hermes with persistent confined execution](sprints/2026-09-26/checkpoint-17.md) | Sol: hermes_path, replay_session, linux_hosting; review runtime_review; Astra: root | Finish birth charge crash recovery and dispatch cancellation; exercise soft EOF and usable hard-stop reconnect/recovery. |
 | [Expose canonical resource programming to Hermes](sprints/2026-09-26/checkpoint-17.md) | Sol: hermes_path, replay_session, codec_stack, shared_resource_tools; Astra: root | Fix durable pre-reserve birth intent and refusal zero-phase recovery, final dispatch cancellation, then exercise created-resource tools through Hermes and exact restart. |
@@ -33,7 +33,7 @@ Latest work-record update: **2026-09-27T23:24:29.498Z**. This is recorded projec
 | [Retain factory deployment at its actual history boundary](work/records.md#w-factory-history) | Unassigned | Retain the unfinished Bread work and evidence as historical maintenance/reference; it is not a prerequisite for the New World implementation in Mini. |
 | [Make actual Hermes/SDK startup avoid unused Lean initialization](work/records.md#w-hermes-startup) | Unassigned | Retain the unfinished Bread work and evidence as historical maintenance/reference; it is not a prerequisite for the New World implementation in Mini. |
 | [Inventory existing provider job and penalty machinery](work/records.md#w-provider-path) | Unassigned | Choose the eligible public job and its exact result checker, provider obligation and penalty-record consumer. |
-| [Choose and close one economic operation consumed by a nexus resource](work/records.md#w-solana-utility) | Unassigned | Choose exact economic operation, real asset/cluster, custody and exit terms before a live transaction. |
+| [Choose and close one economic operation consumed by a nexus resource](work/records.md#w-solana-utility) | Unassigned | Confirm Chonga API/model/price contract; connect transactional DREGG service credits to existing Mini provider custody and a shared inference operation before adding the Discord client. |
 
 ## Done
 
