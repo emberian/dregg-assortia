@@ -1166,15 +1166,15 @@
       ],
       "closure": "Accepted nexus operations and consequential design decisions; selected semantic and receiving-runtime paths; an explicit owned-node participation path and selected Solana/resource outcome; linked implementation obligations and evidence. Selecting a contract does not close implementation or deployment.",
       "owner": null,
-      "updatedAt": "2026-09-28T20:33:38Z",
+      "updatedAt": "2026-09-28T22:40:00Z",
       "advances": [
         "urn:dregg:assortia:E-WORLD"
       ],
-      "nextAction": "Await recovery contract review, then reassess scope and ownership before construction. Preserve current WIP and evidence.",
+      "nextAction": "Reassess this historical assignment against the current recovery candidate before resuming its old next action; receiving work is owned by W-RECOVERY-CONSTRUCTION-0928.",
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
       "blockedBy": [
-        "urn:dregg:assortia:W-RECOVERY-REVIEW-0928"
+        "urn:dregg:assortia:W-RECOVERY-CONSTRUCTION-0928"
       ],
       "sources": [
         "urn:dregg:assortia:S-IMPLEMENTATION-0045",
@@ -2696,7 +2696,7 @@
       "description": "Separate immutable policy-source revision from grant revocation generation across the exact signed request, authority representation, compiled/source policies and every receiving consumer.",
       "status": "blocked",
       "owner": null,
-      "updatedAt": "2026-09-28T20:33:38Z",
+      "updatedAt": "2026-09-28T22:40:00Z",
       "priority": 1,
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "sources": [
@@ -2720,14 +2720,14 @@
         "urn:dregg:assortia:E-WORLD"
       ],
       "blockedBy": [
-        "urn:dregg:assortia:W-RECOVERY-REVIEW-0928"
+        "urn:dregg:assortia:W-RECOVERY-CONSTRUCTION-0928"
       ],
       "related": [
         "urn:dregg:assortia:W-POLICY-SOURCE",
         "urn:dregg:assortia:W-AUTHORIZED-DELEGATION",
         "urn:dregg:assortia:W-PROGRAMMABLE-PATH"
       ],
-      "nextAction": "Await recovery contract review, then reassess scope and ownership before construction. Preserve current WIP and evidence.",
+      "nextAction": "Reassess this historical assignment against the current recovery candidate before resuming its old next action; receiving work is owned by W-RECOVERY-CONSTRUCTION-0928.",
       "closure": "After two admitted rule replacements, previously issued owner/control and delegated grants remain usable exactly when their scope and new rules authorize the new request; stale revisions refuse, explicit generation revocation invalidates prior grants, and restart/retry preserves exact state and receipts. Resource policy can deliberately refuse further management, with no implicit owner bypass.",
       "progress": "Revision/generation separation and per-capability revocation passed full native integration. Original owner/control grants survive two policy replacements in the legacy scenario; delegated worker grants survive one replacement in the New World scenario, with current-law enforcement and deliberate owner management lockout. Explicit generation-wide native revocation and a delegated grant surviving two replacements remain uncompleted closure obligations.",
       "writeScope": [
@@ -3052,7 +3052,7 @@
       "description": "Execute authenticated provisioning, hard/soft attachment, retained operation lookup and recovery through actual kernel/runtime adapters.",
       "status": "blocked",
       "owner": null,
-      "updatedAt": "2026-09-28T20:33:38Z",
+      "updatedAt": "2026-09-28T22:40:00Z",
       "priority": 1,
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "sources": [
@@ -3083,14 +3083,14 @@
         "urn:dregg:assortia:W-M26-DESIGN"
       ],
       "blockedBy": [
-        "urn:dregg:assortia:W-RECOVERY-REVIEW-0928"
+        "urn:dregg:assortia:W-RECOVERY-CONSTRUCTION-0928"
       ],
       "brief": "sprints/2026-09-26/checkpoint-17.md",
       "acceptance": [
         "Execute authenticated provisioning, hard/soft attachment, retained operation lookup and recovery through actual kernel/runtime adapters."
       ],
       "closure": "Execute authenticated provisioning, hard/soft attachment, retained operation lookup and recovery through actual kernel/runtime adapters.",
-      "nextAction": "Await recovery contract review, then reassess scope and ownership before construction. Preserve current WIP and evidence.",
+      "nextAction": "Reassess this historical assignment against the current recovery candidate before resuming its old next action; receiving work is owned by W-RECOVERY-CONSTRUCTION-0928.",
       "progress": "Dedicated operator stack installed and explicitly restarted with stable signed root; terminal source and actual worker controls exercised on fresh fixture.",
       "historicalWriteScope": [
         "breadstuffs/agent-platform/hosted/dregg_grain/{models,store,control,server,cli,service}.py"
@@ -3110,7 +3110,7 @@
       "description": "Run real upstream Hermes in a confined Linux scope, preserve conversation/output, kill descendants on hard disconnect and retain exact scope on soft reconnect.",
       "status": "blocked",
       "owner": null,
-      "updatedAt": "2026-09-28T20:33:38Z",
+      "updatedAt": "2026-09-28T22:40:00Z",
       "priority": 1,
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "sources": [
@@ -3144,14 +3144,14 @@
         "urn:dregg:assortia:W-M26-DESIGN"
       ],
       "blockedBy": [
-        "urn:dregg:assortia:W-RECOVERY-REVIEW-0928"
+        "urn:dregg:assortia:W-RECOVERY-CONSTRUCTION-0928"
       ],
       "brief": "sprints/2026-09-26/checkpoint-17.md",
       "acceptance": [
         "Run real upstream Hermes in a confined Linux scope, preserve conversation/output, kill descendants on hard disconnect and retain exact scope on soft reconnect."
       ],
       "closure": "Run real upstream Hermes in a confined Linux scope, preserve conversation/output, kill descendants on hard disconnect and retain exact scope on soft reconnect.",
-      "nextAction": "Await recovery contract review, then reassess scope and ownership before construction. Preserve current WIP and evidence.",
+      "nextAction": "Reassess this historical assignment against the current recovery candidate before resuming its old next action; receiving work is owned by W-RECOVERY-CONSTRUCTION-0928.",
       "progress": "Installed runtime e213b4f passed 50 tests/clippy. Terminal publication and hard EOF physically exercised. Old same-UID B44 recovered through explicit audit and native zero settlement.",
       "historicalWriteScope": [
         "breadstuffs/agent-platform/hosted/dregg_grain/{runtime,hermes,confinement}.py"
@@ -3172,7 +3172,7 @@
       "description": "Execute bounded streaming requests after canonical reservation, retain exact evidence, fence old epochs, reconcile uncertain work and demonstrate secret isolation.",
       "status": "blocked",
       "owner": null,
-      "updatedAt": "2026-09-28T20:33:38Z",
+      "updatedAt": "2026-09-28T22:40:00Z",
       "priority": 1,
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "sources": [
@@ -3202,14 +3202,14 @@
         "urn:dregg:assortia:W-M26-DESIGN"
       ],
       "blockedBy": [
-        "urn:dregg:assortia:W-RECOVERY-REVIEW-0928"
+        "urn:dregg:assortia:W-RECOVERY-CONSTRUCTION-0928"
       ],
       "brief": "sprints/2026-09-26/checkpoint-17.md",
       "acceptance": [
         "Execute bounded streaming requests after canonical reservation, retain exact evidence, fence old epochs, reconcile uncertain work and demonstrate secret isolation."
       ],
       "closure": "Execute bounded streaming requests after canonical reservation, retain exact evidence, fence old epochs, reconcile uncertain work and demonstrate secret isolation.",
-      "nextAction": "Await recovery contract review, then reassess scope and ownership before construction. Preserve current WIP and evidence.",
+      "nextAction": "Reassess this historical assignment against the current recovery candidate before resuming its old next action; receiving work is owned by W-RECOVERY-CONSTRUCTION-0928.",
       "progress": "Three sequential Hermes requests separately quoted/settled at counts11/15/23; provider reserve zero. Missing usage and HTTP422 retain held uncertain responses.",
       "historicalWriteScope": [
         "breadstuffs/agent-platform/hosted/dregg_grain/{credentials,broker,broker_transport,broker_server,cost_policy}.py"
@@ -3229,7 +3229,7 @@
       "description": "Drive real signed resource create/read/program/invoke/delegate/history operations through the source-owned host; reject stale generation authority without refreshing it.",
       "status": "blocked",
       "owner": null,
-      "updatedAt": "2026-09-28T20:33:38Z",
+      "updatedAt": "2026-09-28T22:40:00Z",
       "priority": 1,
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "sources": [
@@ -3262,14 +3262,14 @@
         "urn:dregg:assortia:W-M26-DESIGN"
       ],
       "blockedBy": [
-        "urn:dregg:assortia:W-RECOVERY-REVIEW-0928"
+        "urn:dregg:assortia:W-RECOVERY-CONSTRUCTION-0928"
       ],
       "brief": "sprints/2026-09-26/checkpoint-17.md",
       "acceptance": [
         "Drive real signed resource create/read/program/invoke/delegate/history operations through the source-owned host; reject stale generation authority without refreshing it."
       ],
       "closure": "Drive real signed resource create/read/program/invoke/delegate/history operations through the source-owned host; reject stale generation authority without refreshing it.",
-      "nextAction": "Await recovery contract review, then reassess scope and ownership before construction. Preserve current WIP and evidence.",
+      "nextAction": "Reassess this historical assignment against the current recovery candidate before resuming its old next action; receiving work is owned by W-RECOVERY-CONSTRUCTION-0928.",
       "progress": "Native composite created8301/count11 and owner bare8303/count12. Worker bare refused uniformly; runner expected wrong private reason. Controller birth lifecycle review found crash/charge windows.",
       "historicalWriteScope": [
         "breadstuffs/agent-platform/hosted/dregg_grain/{kernelclient,mcp}.py; minidregg/Host/Json.lean and Kernel/AgentGrain*.lean"
@@ -3515,7 +3515,7 @@
       "owner": null,
       "priority": 1,
       "milestone": "urn:dregg:assortia:M-2026-09-26",
-      "updatedAt": "2026-09-28T20:33:38Z",
+      "updatedAt": "2026-09-28T22:40:00Z",
       "sources": [
         "urn:dregg:assortia:S-HOST-SESSION-PROPOSAL-0919",
         "urn:dregg:assortia:S-NATIVE-COMPUTATION-0919",
@@ -3561,7 +3561,7 @@
         "urn:dregg:assortia:W-CHARGE-MATERIALIZATION"
       ],
       "blockedBy": [
-        "urn:dregg:assortia:W-RECOVERY-REVIEW-0928"
+        "urn:dregg:assortia:W-RECOVERY-CONSTRUCTION-0928"
       ],
       "brief": "sprints/2026-09-26/checkpoint-17.md",
       "writeScope": [
@@ -3573,7 +3573,7 @@
         "minidregg/scripts/build-native-host.sh"
       ],
       "progress": "Retained workroom recovery passed eight signed views and six parent delegations; next app reserve explicitly refused with tool7902 detached, Store unchanged. Mixed-route config committed/tested; accepted-grant inspector passed narrow Lean; real local model qualification and source integration ongoing.",
-      "nextAction": "Await recovery contract review, then reassess scope and ownership before construction. Preserve current WIP and evidence.",
+      "nextAction": "Reassess this historical assignment against the current recovery candidate before resuming its old next action; receiving work is owned by W-RECOVERY-CONSTRUCTION-0928.",
       "closure": "Prove verified-prefix plus suffix replay agrees with full semantic replay under explicit verifier assumptions; run unchanged-image, external append/revocation, rewritten/rolled-back history, stale challenge, exact CAS, lost reply, restart and verifier-change cases through the real host. Preserve fresh authorization, exact original receipt boundaries and uncertainty. Measure physical reads, replay counts and latency; do not substitute height/hash/mtime for exact image identity.",
       "deferredNextAction": "Recover app bootstrap with separately authorized tool attach, fresh read/reserve and retained refused attempt; finish actual app admission then INSTALL/START, shared human/agent use and fn receiving.",
       "previousOwner": "Astra: root; Sol: fn_mini_review"
@@ -3751,7 +3751,7 @@
       "description": "Converge existing fn consumer lineage and improve its authority, fresh setup, general reply profiles and distributed hosted receiving path.",
       "status": "blocked",
       "owner": null,
-      "updatedAt": "2026-09-28T20:33:38Z",
+      "updatedAt": "2026-09-28T22:40:00Z",
       "priority": 1,
       "sources": [
         "urn:dregg:assortia:S-OVERNIGHT-0926",
@@ -3787,7 +3787,7 @@
         "urn:dregg:assortia:W-GRAIN-RUNTIME"
       ],
       "blockedBy": [
-        "urn:dregg:assortia:W-RECOVERY-REVIEW-0928"
+        "urn:dregg:assortia:W-RECOVERY-CONSTRUCTION-0928"
       ],
       "brief": "sprints/2026-09-26/checkpoint-17.md",
       "writeScope": [
@@ -3802,7 +3802,7 @@
         "minidregg/docs/FN-PUBLICATION-DISCLOSURE.md"
       ],
       "progress": "Native own-R accept/restart/repeat/ACK and equal-position no-op passed on fresh private Store. Exact owner-release codec and current-key signature component narrowly checked; receiving/replay remains construction. Selected-release Signature/Ingress/Admission have narrow source checks; new durable receiver is under construction. No native route or selected-release transport run is claimed. Mini b6373d7 now commits narrow-checked selected-release admission/receiver; dedicated native routing and replay are being integrated. Mini9a128b4 article framing, b9b9869 exact-attempt CLI, and e1bbf2d native submit/lookup/replay source are checked and committed. Separate source publication authority is being built; no end-to-end selected release run yet.",
-      "nextAction": "Await recovery contract review, then reassess scope and ownership before construction. Preserve current WIP and evidence.",
+      "nextAction": "Reassess this historical assignment against the current recovery candidate before resuming its old next action; receiving work is owned by W-RECOVERY-CONSTRUCTION-0928.",
       "closure": "Real Mini-resource operation and reply travel through independently configured fn nodes with separately pinned application authorities; durable Mini processing precedes fn ACK, direct forged consumer input is refused, exact retries and uncertain outcomes reconcile, and a documented user entrance uses this path.",
       "deferredNextAction": "Finish selected-release durable receiver and exact historical retry checks, integrate native Host/Replay/CLI route, then exercise authorized selected public bytes through actual fn without private-prefix disclosure. Receiver import/install remains separate authority.",
       "previousOwner": "Sol: fn_contracts; Astra: root"
@@ -4024,7 +4024,7 @@
       "status": "blocked",
       "owner": null,
       "reviewer": "Astra: root",
-      "updatedAt": "2026-09-28T20:33:38Z",
+      "updatedAt": "2026-09-28T22:40:00Z",
       "priority": 1,
       "sources": [
         "urn:dregg:assortia:S-SPK-CYCLE-0927",
@@ -4104,7 +4104,7 @@
         "urn:dregg:assortia:W-M26-DESIGN"
       ],
       "blockedBy": [
-        "urn:dregg:assortia:W-RECOVERY-REVIEW-0928"
+        "urn:dregg:assortia:W-RECOVERY-CONSTRUCTION-0928"
       ],
       "brief": "sprints/2026-09-26/spk-platform-cycle.md",
       "writeScope": [
@@ -4127,7 +4127,7 @@
         "Selected app or data versions travel through fn with explicit publication and separate receiver install/import authority, without private-prefix disclosure."
       ],
       "closure": "A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.",
-      "nextAction": "Await recovery contract review, then reassess scope and ownership before construction. Preserve current WIP and evidence.",
+      "nextAction": "Reassess this historical assignment against the current recovery candidate before resuming its old next action; receiving work is owned by W-RECOVERY-CONSTRUCTION-0928.",
       "progress": "Real signed GitWeb image materialized; native INSTALL BEGIN and claim admitted at counts28/29. Completion definitively refused and original receipt lookup absent; exact attempt retained for source-level diagnosis. Typed warm ticket preview and real Git lost-reply component qualified. App START, five enrollments, shared human/Hermes use and selected fn journey remain open.",
       "deferredNextAction": "Diagnose the precise INSTALL admission refusal without duplicate submission; repair and qualify the underlying contract, then complete volume custody, ticket issuance, START, enrollment and the real shared journey.",
       "previousOwner": "Astra: root; Sol: mini_app_contract, agent_api_host, runtime_review, fn_mini_review, shared_resource_tools, build_native"
@@ -4810,7 +4810,7 @@
       "status": "blocked",
       "owner": null,
       "reviewer": "Astra: root",
-      "updatedAt": "2026-09-28T20:33:38Z",
+      "updatedAt": "2026-09-28T22:40:00Z",
       "priority": 1,
       "sources": [
         "urn:dregg:assortia:S-SPK-CHECKPOINT76-0928",
@@ -4826,7 +4826,7 @@
         "urn:dregg:assortia:E-WORLD"
       ],
       "blockedBy": [
-        "urn:dregg:assortia:W-RECOVERY-REVIEW-0928"
+        "urn:dregg:assortia:W-RECOVERY-CONSTRUCTION-0928"
       ],
       "brief": "sprints/2026-09-26/checkpoint-76.md",
       "writeScope": [
@@ -4842,7 +4842,7 @@
         "All five r3 sessions become usable through actual native enrollment after START; restart/renewal preserves the intended authority rules."
       ],
       "closure": "The source-owned authoring, custody, native admission, replay and five-session deployed consumer path are qualified with scoped positive and refusal/recovery evidence.",
-      "nextAction": "Await recovery contract review, then reassess scope and ownership before construction. Preserve current WIP and evidence.",
+      "nextAction": "Reassess this historical assignment against the current recovery candidate before resuming its old next action; receiving work is owned by W-RECOVERY-CONSTRUCTION-0928.",
       "progress": "Mini e06b2fa commits source construction, signed joint admission, three physical read guards, same-walk event22 replay and inspector ABI; seven direct Lean checks pass. Receiving/routes/client remain in progress. Allocated app/ticket capabilities are not admitted grants; Bob/Hermes also need participant-owned manifest observe grants. No live enrollment.",
       "deferredNextAction": "Finish native receiving and client qualification; issue tickets and explicitly delegate narrow app/manifest/ticket read rights under sole-writer coordination, then enroll against actual post-START generation.",
       "previousOwner": "Sol: fn_mini_review; client integration: runtime_review and agent_api_host"
@@ -4884,11 +4884,11 @@
       "@id": "urn:dregg:assortia:W-RECOVERY-REVIEW-0928",
       "@type": "WorkItem",
       "label": "Review recovery contracts for the programmable resource world",
-      "status": "active",
-      "owner": "Astra: root; Sol/Luna source review completed",
+      "status": "done",
+      "owner": "Astra: root",
       "reviewer": "Ember",
       "priority": 0,
-      "updatedAt": "2026-09-28T20:33:38Z",
+      "updatedAt": "2026-09-28T22:40:00Z",
       "advances": [
         "urn:dregg:assortia:E-WORLD"
       ],
@@ -4896,11 +4896,51 @@
         "urn:dregg:assortia:S-RECOVERY-MINISWARM-0928"
       ],
       "brief": "research/recovery-miniswarm-2026-09-28.md",
-      "nextAction": "Discuss the miniswarm recommendations with Ember; settle the common operation/reference/namespace boundary and the next coherent construction batch. No live retry or deployment follows from the brief.",
+      "nextAction": "Use the authorized construction mandate; this closes review, not platform acceptance Gates A-C.",
       "closure": "Recovery contracts and construction scope are explicitly accepted or revised with Ember; affected implementation records are reassessed and reassigned. This closes review only, not Gates A-C.",
-      "progress": "Five source-review lanes completed. Existing native client, operation custody, hosting journals and selected fn publication are the proposed receiving paths.",
+      "progress": "Source miniswarm completed; Ember authorized another 90 minutes of work. Common contracts are the implementation basis; old fixture tasks remain deferred for explicit reassessment.",
       "writeScope": [
         "dregg-assortia current records, review synthesis and navigation"
+      ],
+      "blockedBy": [],
+      "completionEvidence": [
+        "urn:dregg:assortia:S-RECOVERY-CONSTRUCTION-0928"
+      ]
+    },
+    {
+      "@id": "urn:dregg:assortia:S-RECOVERY-CONSTRUCTION-0928",
+      "@type": "Source",
+      "label": "Ember-authorized bounded recovery construction",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-28/recovery-construction.md",
+      "sha256": "70bce9e3d9c24f3b8c49ad86077f249487c17851eedd46f3942af38bf86da1c0",
+      "recordedDate": "2026-09-28",
+      "evidenceKind": "user-authorization-and-owned-construction-contract",
+      "limitations": "Plan and authorization, not proof of native acceptance or deployment."
+    },
+    {
+      "@id": "urn:dregg:assortia:W-RECOVERY-CONSTRUCTION-0928",
+      "@type": "WorkItem",
+      "label": "Connect common Mini participant operations and actual receiving consumers",
+      "status": "active",
+      "owner": "Astra integration; Sol implementation lanes; Luna contributor handoff",
+      "reviewer": "Ember",
+      "priority": 0,
+      "updatedAt": "2026-09-28T22:40:00Z",
+      "advances": [
+        "urn:dregg:assortia:E-WORLD"
+      ],
+      "sources": [
+        "urn:dregg:assortia:S-RECOVERY-CONSTRUCTION-0928",
+        "urn:dregg:assortia:S-RECOVERY-MINISWARM-0928"
+      ],
+      "brief": "sprints/2026-09-28/recovery-construction.md",
+      "nextAction": "Converge workspace/create/enroll, delegated Hermes, checked non-Git routing and actual selected fn exchange into a pinned candidate; qualify actual journeys and publish remaining gaps by 00:10 UTC.",
+      "closure": "Common mechanisms have actual receiving consumers and exact candidate evidence; bounded batch handoff lists integrated runs and remaining failures. This task does not itself close full Gates A-C.",
+      "writeScope": [
+        "Named Mini source/client/host files by coordinated lane ownership",
+        "Assortia mandate, contributor handoff and evidence",
+        "Isolated qualification Stores and bounded build roots; no preserved live fixture writes"
       ],
       "blockedBy": []
     }

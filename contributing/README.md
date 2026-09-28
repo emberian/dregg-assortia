@@ -6,6 +6,10 @@ Contributors should be able to own a substantial part of the product, with a cle
 
 DREGG is a programmable resource world. People and agents create and operate resources under explicit authority; accepted changes and their history should survive restart and be usable by other authorized participants. The September 26 sprint is connecting the kernel, policies, durable runtime and user/agent surfaces. [The project map](../MAP.md) identifies the repositories; [the board](../CURRENT.md) identifies current owners.
 
+## Homelab deployment discussion
+
+[Pug/Wisper homelab handoff](homelab-preview.md) describes the intended service, authority and state boundaries, candidate machine roles, and questions still open. It distinguishes current construction from deployment and does not assign either contributor new work.
+
 ## The next product work package
 
 The preserved proposal is **[persistent DREGG resource hosting](resource-host-lifecycle.md)**: a substantial platform subsystem covering provider reconciliation, native-host recovery, supervision, custody, owner commands, operation status and resumable events. It is unassigned. The brief names inspected source interfaces, missing exports and crash/restart acceptance scenarios; its September 18 owner references are historical.

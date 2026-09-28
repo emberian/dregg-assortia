@@ -2,7 +2,7 @@
 
 > Generated from `graph.jsonld` by `python3 hub.py render`. Edit the graph, not this file.
 
-Latest work-record update: **2026-09-28T20:33:38Z**. This is recorded project state, not a live process monitor.
+Latest work-record update: **2026-09-28T22:40:00Z**. This is recorded project state, not a live process monitor.
 
 [New contributor](contributing/README.md) · [Project map](MAP.md) · [Detailed work records](work/records.md)
 
@@ -12,22 +12,22 @@ Latest work-record update: **2026-09-28T20:33:38Z**. This is recorded project st
 
 | Work | Owner / reviewer | Next action |
 |---|---|---|
-| [Review recovery contracts for the programmable resource world](research/recovery-miniswarm-2026-09-28.md) | Astra: root; Sol/Luna source review completed / Ember | Discuss the miniswarm recommendations with Ember; settle the common operation/reference/namespace boundary and the next coherent construction batch. No live retry or deployment follows from the brief. |
+| [Connect common Mini participant operations and actual receiving consumers](sprints/2026-09-28/recovery-construction.md) | Astra integration; Sol implementation lanes; Luna contributor handoff / Ember | Converge workspace/create/enroll, delegated Hermes, checked non-Git routing and actual selected fn exchange into a pinned candidate; qualify actual journeys and publish remaining gaps by 00:10 UTC. |
 
 ## Blocked
 
 | Work | Owner / reviewer | Next action |
 |---|---|---|
-| [Enroll human and agent app sessions through native authority](sprints/2026-09-26/checkpoint-76.md) | Unassigned / Astra: root | Await recovery contract review, then reassess scope and ownership before construction. Preserve current WIP and evidence. |
-| [Operate actual Mini resources through fn correspondence and separate gateways](sprints/2026-09-26/checkpoint-17.md) | Unassigned | Await recovery contract review, then reassess scope and ownership before construction. Preserve current WIP and evidence. |
-| [Custody and meter scoped provider requests](sprints/2026-09-26/checkpoint-17.md) | Unassigned | Await recovery contract review, then reassess scope and ownership before construction. Preserve current WIP and evidence. |
-| [Durable hosted grain control and authenticated entrance](sprints/2026-09-26/checkpoint-17.md) | Unassigned | Await recovery contract review, then reassess scope and ownership before construction. Preserve current WIP and evidence. |
-| [Host upstream Hermes with persistent confined execution](sprints/2026-09-26/checkpoint-17.md) | Unassigned | Await recovery contract review, then reassess scope and ownership before construction. Preserve current WIP and evidence. |
-| [Expose canonical resource programming to Hermes](sprints/2026-09-26/checkpoint-17.md) | Unassigned | Await recovery contract review, then reassess scope and ownership before construction. Preserve current WIP and evidence. |
-| [Keep grants valid across policy source revisions](sprints/2026-09-19/cycle-1-integration-checkpoint.md) | Unassigned | Await recovery contract review, then reassess scope and ownership before construction. Preserve current WIP and evidence. |
-| [Retain verified history across native host requests](sprints/2026-09-26/checkpoint-17.md) | Unassigned | Await recovery contract review, then reassess scope and ownership before construction. Preserve current WIP and evidence. |
-| [Define the September 26 programmable nexus and its shared contracts](sprints/2026-09-19/cycle-1-integration-checkpoint.md) | Unassigned | Await recovery contract review, then reassess scope and ownership before construction. Preserve current WIP and evidence. |
-| [Run shared SPK applications through Mini, browsers, agents and fn](sprints/2026-09-26/spk-platform-cycle.md) | Unassigned / Astra: root | Await recovery contract review, then reassess scope and ownership before construction. Preserve current WIP and evidence. |
+| [Enroll human and agent app sessions through native authority](sprints/2026-09-26/checkpoint-76.md) | Unassigned / Astra: root | Reassess this historical assignment against the current recovery candidate before resuming its old next action; receiving work is owned by W-RECOVERY-CONSTRUCTION-0928. |
+| [Operate actual Mini resources through fn correspondence and separate gateways](sprints/2026-09-26/checkpoint-17.md) | Unassigned | Reassess this historical assignment against the current recovery candidate before resuming its old next action; receiving work is owned by W-RECOVERY-CONSTRUCTION-0928. |
+| [Custody and meter scoped provider requests](sprints/2026-09-26/checkpoint-17.md) | Unassigned | Reassess this historical assignment against the current recovery candidate before resuming its old next action; receiving work is owned by W-RECOVERY-CONSTRUCTION-0928. |
+| [Durable hosted grain control and authenticated entrance](sprints/2026-09-26/checkpoint-17.md) | Unassigned | Reassess this historical assignment against the current recovery candidate before resuming its old next action; receiving work is owned by W-RECOVERY-CONSTRUCTION-0928. |
+| [Host upstream Hermes with persistent confined execution](sprints/2026-09-26/checkpoint-17.md) | Unassigned | Reassess this historical assignment against the current recovery candidate before resuming its old next action; receiving work is owned by W-RECOVERY-CONSTRUCTION-0928. |
+| [Expose canonical resource programming to Hermes](sprints/2026-09-26/checkpoint-17.md) | Unassigned | Reassess this historical assignment against the current recovery candidate before resuming its old next action; receiving work is owned by W-RECOVERY-CONSTRUCTION-0928. |
+| [Keep grants valid across policy source revisions](sprints/2026-09-19/cycle-1-integration-checkpoint.md) | Unassigned | Reassess this historical assignment against the current recovery candidate before resuming its old next action; receiving work is owned by W-RECOVERY-CONSTRUCTION-0928. |
+| [Retain verified history across native host requests](sprints/2026-09-26/checkpoint-17.md) | Unassigned | Reassess this historical assignment against the current recovery candidate before resuming its old next action; receiving work is owned by W-RECOVERY-CONSTRUCTION-0928. |
+| [Define the September 26 programmable nexus and its shared contracts](sprints/2026-09-19/cycle-1-integration-checkpoint.md) | Unassigned | Reassess this historical assignment against the current recovery candidate before resuming its old next action; receiving work is owned by W-RECOVERY-CONSTRUCTION-0928. |
+| [Run shared SPK applications through Mini, browsers, agents and fn](sprints/2026-09-26/spk-platform-cycle.md) | Unassigned / Astra: root | Reassess this historical assignment against the current recovery candidate before resuming its old next action; receiving work is owned by W-RECOVERY-CONSTRUCTION-0928. |
 
 ## Backlog
 
@@ -48,6 +48,7 @@ Latest work-record update: **2026-09-28T20:33:38Z**. This is recorded project st
 |---|---|---|
 | [Follow graph relationships in both directions](internal/tooling-candidates-2026-09-18.md) | Astra: core_durable_receiver / Astra | Use and maintain the tested hub tools during handoffs; the unassigned hosting-contract proposal remains in W-ANDROID-CONTRACT, while hosted-Hermes design continues in W-M26-DESIGN. |
 | [Make assortia usable for ongoing work and new contributors](work/records.md#w-hub-live) | Astra: root | Use and maintain the tested hub tools during handoffs; the unassigned hosting-contract proposal remains in W-ANDROID-CONTRACT, while hosted-Hermes design continues in W-M26-DESIGN. |
+| [Review recovery contracts for the programmable resource world](research/recovery-miniswarm-2026-09-28.md) | Astra: root / Ember | Use the authorized construction mandate; this closes review, not platform acceptance Gates A-C. |
 | [Bind native use to committed keys and complete authority](sprints/2026-09-19/cycle-1-result.md) | Astra: root; component implementation/review lanes completed | Retain the source-matched native and Rust-client evidence as regression boundaries while building the persistent host and real agent lifecycle. This closure does not claim a deployed hosted platform. |
 | [Give a friend a narrower usable right](sprints/2026-09-19/cycle-1-result.md) | Astra: root; component implementation/review lanes completed | Retain the source-matched native and Rust-client evidence as regression boundaries while building the persistent host and real agent lifecycle. This closure does not claim a deployed hosted platform. |
 | [Trace one canonical typed event through its real compiler and consumer](work/records.md#w-canonical-consumer) | Astra: kernel_carrier | Use the captured receiving evidence as a regression boundary while completing the linked resource journey. |
