@@ -1,6 +1,6 @@
 # Start here: DREGG handoff
 
-**Current live boundary:** [checkpoint 75](sprints/2026-09-26/checkpoint-75.md): actual local Bonsai now has enough context for unforked Hermes; first INSTALL preparation refused an unprotected helper path before Store replay. Exact helper relocation is in progress. App and all five participant sessions remain admitted through count27. Actual INSTALL/START and integrated shared use remain open; independent fn is ready at ACK2 without a selected article.
+**Current live boundary:** [checkpoint 76](sprints/2026-09-26/checkpoint-76.md): the second INSTALL preparation is checking exact receipts after both Host identity checks passed. App and five session births are admitted through count27, but their descriptors still need authorized enrollment. That missing native path is now assigned. Real local Bonsai is qualified separately; actual START/shared use and selected fn publication remain open.
 
 **Latest native result:** [checkpoint 68](sprints/2026-09-26/checkpoint-68.md) records the repaired exact birth and cold reopen passing on a private copy, ready Linux artifacts, and the reviewed Host transition. Live deployment and practical latency remain open.
 

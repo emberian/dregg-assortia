@@ -103,6 +103,41 @@ Graph-backed work ownership, concrete briefs, generated current views and an exp
 - [S-HUB-TOOLS-0145 — Graph navigation/source-impact tooling and captured tests](../sprints/2026-09-18/hub-tools-0145.md)
 - [S-DIRECTION-0919 — September 19 hosted Hermes direction, superseded Wisper plan and revised disconnect preference](../sprints/2026-09-19/direction.md)
 
+## W-APP-ENROLLMENT
+
+**Enroll human and agent app sessions through native authority**
+
+Status: **active** · Owner: Sol: fn_mini_review; client integration: runtime_review and agent_api_host · Updated: 2026-09-28T01:48:01Z
+
+
+
+**Next:** Implement and qualify event28 admission and authoring with private plan/assembly and submit/lookup operations; join the actual post-START serving app and tickets.
+
+**Done when:** The source-owned authoring, custody, native admission, replay and five-session deployed consumer path are qualified with scoped positive and refusal/recovery evidence.
+
+**Evidence so far:** Existing kernel enrollment codec/actions/laws are present, but operator receiving path is missing. Protocol allocation approved; current app-observe grants rule out an app-mutate shortcut.
+
+[Task brief](../sprints/2026-09-26/checkpoint-76.md)
+
+**Enables:**
+
+- E-KERNEL — Canonical typed semantic kernel
+- E-WORLD — Programmable social resource world
+
+**Evidence / provenance:**
+
+- [S-SPK-CHECKPOINT76-0928 — Enrollment source gap, independent ticket roles and retained installation check](../sprints/2026-09-26/checkpoint-76.md)
+
+**Write scope:** minidregg/Kernel and Host session enrollment modules, coordinated NativeHostReplay and Host/Main/Json wiring (fn_mini_review); minidregg/docs/APPLICATION-PROTOCOL-ALLOCATIONS.md event28 and private operations82–85 (fn_mini_review); native/resource-client custody and scripts/spk-platform receiving integration, coordinated with their current owners
+
+**Acceptance:**
+
+- Initial enrollment and renewal reuse the existing session/content laws and exact stable atom preimage.
+- Source derives participant and origin from admitted ticket evidence and validates signed package schema and role ceiling.
+- Native admission atomically binds the serving app generation with authorized observation and a read guard, without expanding participant app-mutation rights.
+- Exact receipt recovery and original-prefix replay agree; stale app state, wrong ticket, excessive role and stale renewal preimage refuse.
+- All five r3 sessions become usable through actual native enrollment after START; restart/renewal preserves the intended authority rules.
+
 ## W-AUTHORITY-NATIVE
 
 **Bind native use to committed keys and complete authority**
@@ -1062,15 +1097,15 @@ Report which claims/work items need reinspection when source bytes change, with 
 
 **Run shared SPK applications through Mini, browsers, agents and fn**
 
-Status: **active** · Owner: Astra: root; Sol: client_session, agent_api_host, runtime_review, fn_mini_review, fn_contracts · Updated: 2026-09-28T00:39:39.774Z
+Status: **active** · Owner: Astra: root; Sol: mini_app_contract, agent_api_host, runtime_review, fn_mini_review, shared_resource_tools, build_native · Updated: 2026-09-28T01:48:01Z
 
 Integrate real third-party packaged app execution and persistent state with Mini lifecycle/current grants, hosted Hermes, direct commands, and selected version publication over semi-untrusted fn.
 
-**Next:** Finish participant birth handoff; qualify shared-host service lists; materialize signed package and volume under source INSTALL; issue human/agent tickets, then run START/shared Hermes/browser/CLI and selected fn journey.
+**Next:** Finish the retained second INSTALL preparation and physical package/volume installation; issue tickets and prepare entrances, then START and source-author session enrollment at the actual serving app generation. Complete shared human/Hermes use, recovery and selected fn publication.
 
 **Done when:** A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.
 
-**Evidence so far:** Retained r3 app admitted count17 and exact replay confirmed; Alice Web session birth count19, base recovery still active. Confined upstream Hermes startup and native grant Host qualified; STOP and source-derived agent issuers committed. Shared-host provider/dispatch lists, physical materialization and human ticket seams under construction; no combined preview yet.
+**Evidence so far:** App and five session births accepted through count27; descriptors remain unenrolled. Same-Store installation comparison is active under the sole installation owner. Real local 65536-context Bonsai and distinct unforked Hermes roots are qualified separately. Event28 enrollment with app-observe read guard is assigned; ticket issuer/recipient confusion corrected. Ordinary-birth paired runtime and recovery gates pass on private Stores. No combined preview yet.
 
 [Task brief](../sprints/2026-09-26/spk-platform-cycle.md)
 
@@ -1141,6 +1176,7 @@ Integrate real third-party packaged app execution and persistent state with Mini
 - [S-SPK-CHECKPOINT70-0927 — Workroom recovered; detached app tool reserve refused; source integrations progressing](../sprints/2026-09-26/checkpoint-70.md)
 - [S-SPK-CHECKPOINT71-0927 — App recovery running; qualified model and fn components with committed integration](../sprints/2026-09-26/checkpoint-71.md)
 - [S-SPK-CHECKPOINT72-0927 — App admission and confined Hermes startup; shared-host integration gaps](../sprints/2026-09-26/checkpoint-72.md)
+- [S-SPK-CHECKPOINT76-0928 — Enrollment source gap, independent ticket roles and retained installation check](../sprints/2026-09-26/checkpoint-76.md)
 
 **Write scope:** minidregg/Kernel/ApplicationLifecycle* and ApplicationSpkLaunchDescriptor.lean (mini_app_contract); minidregg/native/spk-host resident/RPC and dedicated physical evidence (agent_api_host); minidregg/native/spk-host agent custody/server (agent_api_host); minidregg/native/grain-runtime and dedicated controller evidence (runtime_review); isolated source-matched native Host builds and explicit proof repairs (build_native); minidregg/Kernel/Fn* receiving and Host/FnConsumerFrontierPlan.lean (fn_mini_review); persistent agent-route authorization design (runtime_review); coordinated Host/Main.lean and NativeHostReplay.lean hooks; root owns integration order and Git; minidregg/scripts/spk-platform source-authored fixture enrollment/birth continuations (spk_compatibility); minidregg/Host/ApplicationLifecycleLaunchAuthoring*.lean and coordinated Main ops66–71 after lower API freeze (fn_mini_review); minidregg/Kernel/NativeHostContext.lean canonical image-boundary byte reuse and general equivalence proof (client_session); actual Replay consumers coordinated with mini_app_contract
 

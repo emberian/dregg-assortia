@@ -2,7 +2,7 @@
 
 > Generated from `graph.jsonld` by `python3 hub.py render`. Edit the graph, not this file.
 
-Latest work-record update: **2026-09-28T00:39:39.774Z**. This is recorded project state, not a live process monitor.
+Latest work-record update: **2026-09-28T01:48:01Z**. This is recorded project state, not a live process monitor.
 
 [New contributor](contributing/README.md) · [Project map](MAP.md) · [Detailed work records](work/records.md)
 
@@ -12,6 +12,7 @@ Latest work-record update: **2026-09-28T00:39:39.774Z**. This is recorded projec
 
 | Work | Owner / reviewer | Next action |
 |---|---|---|
+| [Enroll human and agent app sessions through native authority](sprints/2026-09-26/checkpoint-76.md) | Sol: fn_mini_review; client integration: runtime_review and agent_api_host / Astra: root | Implement and qualify event28 admission and authoring with private plan/assembly and submit/lookup operations; join the actual post-START serving app and tickets. |
 | [Operate actual Mini resources through fn correspondence and separate gateways](sprints/2026-09-26/checkpoint-17.md) | Sol: fn_contracts; Astra: root | Finish selected-release durable receiver and exact historical retry checks, integrate native Host/Replay/CLI route, then exercise authorized selected public bytes through actual fn without private-prefix disclosure. Receiver import/install remains separate authority. |
 | [Custody and meter scoped provider requests](sprints/2026-09-26/checkpoint-17.md) | Sol: runtime_review, build_native; Astra: root | Qualify local Ternary Bonsai 2 27B on hbox and run actual hosted Hermes through current Mini provider custody; integrate DREGG-paid provider access as an additional route after its API and accounting contract are established. |
 | [Durable hosted grain control and authenticated entrance](sprints/2026-09-26/checkpoint-17.md) | Sol: client_session, hermes_path, fn_reply_profile; Astra: root | Complete short spawn/cancel critical section and custody ownership without blocking immediate worker stop; preserve uncertainty and exact-call recovery. |
@@ -20,7 +21,7 @@ Latest work-record update: **2026-09-28T00:39:39.774Z**. This is recorded projec
 | [Keep grants valid across policy source revisions](sprints/2026-09-19/cycle-1-integration-checkpoint.md) | Astra: root; component implementation/review lanes completed | Implement and exercise generation-wide native revocation and the delegated-grant two-replacement case against the same source-owned receiving path; preserve the completed per-capability/current-law regressions. |
 | [Retain verified history across native host requests](sprints/2026-09-26/checkpoint-17.md) | Astra: root; Sol: fn_mini_review | Recover app bootstrap with separately authorized tool attach, fresh read/reserve and retained refused attempt; finish actual app admission then INSTALL/START, shared human/agent use and fn receiving. |
 | [Define the September 26 programmable nexus and its shared contracts](sprints/2026-09-19/cycle-1-integration-checkpoint.md) | Astra: root; component implementation/review lanes completed | Converge the SPK platform cycle: packaged apps provide shared human views and agent APIs under Mini authority; retain separate contributed-hosting and Solana obligations. |
-| [Run shared SPK applications through Mini, browsers, agents and fn](sprints/2026-09-26/spk-platform-cycle.md) | Astra: root; Sol: client_session, agent_api_host, runtime_review, fn_mini_review, fn_contracts / Astra: root | Finish participant birth handoff; qualify shared-host service lists; materialize signed package and volume under source INSTALL; issue human/agent tickets, then run START/shared Hermes/browser/CLI and selected fn journey. |
+| [Run shared SPK applications through Mini, browsers, agents and fn](sprints/2026-09-26/spk-platform-cycle.md) | Astra: root; Sol: mini_app_contract, agent_api_host, runtime_review, fn_mini_review, shared_resource_tools, build_native / Astra: root | Finish the retained second INSTALL preparation and physical package/volume installation; issue tickets and prepare entrances, then START and source-author session enrollment at the actual serving app generation. Complete shared human/Hermes use, recovery and selected fn publication. |
 
 ## Backlog
 
