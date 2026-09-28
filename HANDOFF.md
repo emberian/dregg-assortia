@@ -1,6 +1,6 @@
 # Start here: DREGG handoff
 
-**Current live boundary:** [checkpoint 73](sprints/2026-09-26/checkpoint-73.md): retained r3 app and human sessions admitted; Hermes session recovery continues. Independent fn registration/empty progress reached ACK2. Physical installation handoff is committed and the shared-host native build is qualified; actual INSTALL/START and integrated shared use remain open.
+**Current live boundary:** [checkpoint 74](sprints/2026-09-26/checkpoint-74.md): app and all five participant sessions admitted through count27; reconciled Store handed to the installation owner. Shared Host/runtime and separate Hermes roots are qualified. Actual INSTALL/START and integrated shared use remain open; independent fn is ready at ACK2 without a selected article.
 
 **Latest native result:** [checkpoint 68](sprints/2026-09-26/checkpoint-68.md) records the repaired exact birth and cold reopen passing on a private copy, ready Linux artifacts, and the reviewed Host transition. Live deployment and practical latency remain open.
 
