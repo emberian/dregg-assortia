@@ -1,6 +1,6 @@
 # Start here: DREGG handoff
 
-**Current live boundary:** [checkpoint 77](sprints/2026-09-26/checkpoint-77.md): real signed GitWeb package materialization passed; Mini admitted INSTALL BEGIN/claim through count29 but refused completion, and original receipt lookup is absent. The retained attempt is under source-level diagnosis. Five born sessions still need native enrollment; that path is being implemented. Real local Bonsai and private Git recovery are qualified separately; actual START/shared use and selected fn publication remain open.
+**Current live boundary:** [checkpoint 78](sprints/2026-09-26/checkpoint-78.md): real signed GitWeb package materialization passed; INSTALL completion remains refused at claimed count29 and is under read-only source diagnosis. The native enrollment core is committed and source-checked; receiving/client integration and actual narrow read delegations remain work. Allocated capability IDs are not admitted grants. Real local Bonsai and private Git recovery are qualified separately; actual START/shared use and selected fn publication remain open.
 
 **Latest native result:** [checkpoint 68](sprints/2026-09-26/checkpoint-68.md) records the repaired exact birth and cold reopen passing on a private copy, ready Linux artifacts, and the reviewed Host transition. Live deployment and practical latency remain open.
 

@@ -107,15 +107,15 @@ Graph-backed work ownership, concrete briefs, generated current views and an exp
 
 **Enroll human and agent app sessions through native authority**
 
-Status: **active** · Owner: Sol: fn_mini_review; client integration: runtime_review and agent_api_host · Updated: 2026-09-28T02:04:00Z
+Status: **active** · Owner: Sol: fn_mini_review; client integration: runtime_review and agent_api_host · Updated: 2026-09-28T02:14:00Z
 
 
 
-**Next:** Implement and qualify event28 admission and authoring with private plan/assembly and submit/lookup operations; join the actual post-START serving app and tickets.
+**Next:** Finish native receiving and client qualification; issue tickets and explicitly delegate narrow app/manifest/ticket read rights under sole-writer coordination, then enroll against actual post-START generation.
 
 **Done when:** The source-owned authoring, custody, native admission, replay and five-session deployed consumer path are qualified with scoped positive and refusal/recovery evidence.
 
-**Evidence so far:** Cycle-safe source construction and native admission modules pass direct Lean checks in a private overlay; signed app/manifest/ticket observations and physical read guards preserve least authority. Same-walk replay, native receiving, JSON routes and Rust custody integration remain unfinished; no deployed enrollment.
+**Evidence so far:** Mini e06b2fa commits source construction, signed joint admission, three physical read guards, same-walk event22 replay and inspector ABI; seven direct Lean checks pass. Receiving/routes/client remain in progress. Allocated app/ticket capabilities are not admitted grants; Bob/Hermes also need participant-owned manifest observe grants. No live enrollment.
 
 [Task brief](../sprints/2026-09-26/checkpoint-76.md)
 
@@ -128,6 +128,7 @@ Status: **active** · Owner: Sol: fn_mini_review; client integration: runtime_re
 
 - [S-SPK-CHECKPOINT76-0928 — Enrollment source gap, independent ticket roles and retained installation check](../sprints/2026-09-26/checkpoint-76.md)
 - [S-SPK-CHECKPOINT77-0928 — Real GitWeb image with refused INSTALL completion and absent original receipt](../sprints/2026-09-26/checkpoint-77.md)
+- [S-SPK-CHECKPOINT78-0928 — Committed enrollment source and corrected delegation prerequisites](../sprints/2026-09-26/checkpoint-78.md)
 
 **Write scope:** minidregg/Kernel and Host session enrollment modules, coordinated NativeHostReplay and Host/Main/Json wiring (fn_mini_review); minidregg/docs/APPLICATION-PROTOCOL-ALLOCATIONS.md event28 and private operations82–85 (fn_mini_review); native/resource-client custody and scripts/spk-platform receiving integration, coordinated with their current owners
 
@@ -1098,7 +1099,7 @@ Report which claims/work items need reinspection when source bytes change, with 
 
 **Run shared SPK applications through Mini, browsers, agents and fn**
 
-Status: **active** · Owner: Astra: root; Sol: mini_app_contract, agent_api_host, runtime_review, fn_mini_review, shared_resource_tools, build_native · Updated: 2026-09-28T02:04:00Z
+Status: **active** · Owner: Astra: root; Sol: mini_app_contract, agent_api_host, runtime_review, fn_mini_review, shared_resource_tools, build_native · Updated: 2026-09-28T02:14:00Z
 
 Integrate real third-party packaged app execution and persistent state with Mini lifecycle/current grants, hosted Hermes, direct commands, and selected version publication over semi-untrusted fn.
 
@@ -1179,6 +1180,7 @@ Integrate real third-party packaged app execution and persistent state with Mini
 - [S-SPK-CHECKPOINT72-0927 — App admission and confined Hermes startup; shared-host integration gaps](../sprints/2026-09-26/checkpoint-72.md)
 - [S-SPK-CHECKPOINT76-0928 — Enrollment source gap, independent ticket roles and retained installation check](../sprints/2026-09-26/checkpoint-76.md)
 - [S-SPK-CHECKPOINT77-0928 — Real GitWeb image with refused INSTALL completion and absent original receipt](../sprints/2026-09-26/checkpoint-77.md)
+- [S-SPK-CHECKPOINT78-0928 — Committed enrollment source and corrected delegation prerequisites](../sprints/2026-09-26/checkpoint-78.md)
 
 **Write scope:** minidregg/Kernel/ApplicationLifecycle* and ApplicationSpkLaunchDescriptor.lean (mini_app_contract); minidregg/native/spk-host resident/RPC and dedicated physical evidence (agent_api_host); minidregg/native/spk-host agent custody/server (agent_api_host); minidregg/native/grain-runtime and dedicated controller evidence (runtime_review); isolated source-matched native Host builds and explicit proof repairs (build_native); minidregg/Kernel/Fn* receiving and Host/FnConsumerFrontierPlan.lean (fn_mini_review); persistent agent-route authorization design (runtime_review); coordinated Host/Main.lean and NativeHostReplay.lean hooks; root owns integration order and Git; minidregg/scripts/spk-platform source-authored fixture enrollment/birth continuations (spk_compatibility); minidregg/Host/ApplicationLifecycleLaunchAuthoring*.lean and coordinated Main ops66–71 after lower API freeze (fn_mini_review); minidregg/Kernel/NativeHostContext.lean canonical image-boundary byte reuse and general equivalence proof (client_session); actual Replay consumers coordinated with mini_app_contract
 

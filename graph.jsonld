@@ -3986,7 +3986,7 @@
       "status": "active",
       "owner": "Astra: root; Sol: mini_app_contract, agent_api_host, runtime_review, fn_mini_review, shared_resource_tools, build_native",
       "reviewer": "Astra: root",
-      "updatedAt": "2026-09-28T02:04:00Z",
+      "updatedAt": "2026-09-28T02:14:00Z",
       "priority": 1,
       "sources": [
         "urn:dregg:assortia:S-SPK-CYCLE-0927",
@@ -4050,7 +4050,8 @@
         "urn:dregg:assortia:S-SPK-CHECKPOINT71-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT72-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT76-0928",
-        "urn:dregg:assortia:S-SPK-CHECKPOINT77-0928"
+        "urn:dregg:assortia:S-SPK-CHECKPOINT77-0928",
+        "urn:dregg:assortia:S-SPK-CHECKPOINT78-0928"
       ],
       "advances": [
         "urn:dregg:assortia:E-WORLD",
@@ -4766,11 +4767,12 @@
       "status": "active",
       "owner": "Sol: fn_mini_review; client integration: runtime_review and agent_api_host",
       "reviewer": "Astra: root",
-      "updatedAt": "2026-09-28T02:04:00Z",
+      "updatedAt": "2026-09-28T02:14:00Z",
       "priority": 1,
       "sources": [
         "urn:dregg:assortia:S-SPK-CHECKPOINT76-0928",
-        "urn:dregg:assortia:S-SPK-CHECKPOINT77-0928"
+        "urn:dregg:assortia:S-SPK-CHECKPOINT77-0928",
+        "urn:dregg:assortia:S-SPK-CHECKPOINT78-0928"
       ],
       "related": [
         "urn:dregg:assortia:W-SPK-PLATFORM"
@@ -4794,8 +4796,8 @@
         "All five r3 sessions become usable through actual native enrollment after START; restart/renewal preserves the intended authority rules."
       ],
       "closure": "The source-owned authoring, custody, native admission, replay and five-session deployed consumer path are qualified with scoped positive and refusal/recovery evidence.",
-      "nextAction": "Implement and qualify event28 admission and authoring with private plan/assembly and submit/lookup operations; join the actual post-START serving app and tickets.",
-      "progress": "Cycle-safe source construction and native admission modules pass direct Lean checks in a private overlay; signed app/manifest/ticket observations and physical read guards preserve least authority. Same-walk replay, native receiving, JSON routes and Rust custody integration remain unfinished; no deployed enrollment."
+      "nextAction": "Finish native receiving and client qualification; issue tickets and explicitly delegate narrow app/manifest/ticket read rights under sole-writer coordination, then enroll against actual post-START generation.",
+      "progress": "Mini e06b2fa commits source construction, signed joint admission, three physical read guards, same-walk event22 replay and inspector ABI; seven direct Lean checks pass. Receiving/routes/client remain in progress. Allocated app/ticket capabilities are not admitted grants; Bob/Hermes also need participant-owned manifest observe grants. No live enrollment."
     },
     {
       "@id": "urn:dregg:assortia:S-SPK-CHECKPOINT77-0928",
@@ -4807,6 +4809,17 @@
       "recordedDate": "2026-09-28",
       "evidenceKind": "retained-native-receipts-physical-ingestion-owner-observations-and-qualified-component-artifacts",
       "limitations": "INSTALL completion refused; source diagnosis active. No app START, session enrollment, combined Hermes or selected fn publication."
+    },
+    {
+      "@id": "urn:dregg:assortia:S-SPK-CHECKPOINT78-0928",
+      "@type": "Source",
+      "label": "Committed enrollment source and corrected delegation prerequisites",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-26/checkpoint-78.md",
+      "sha256": "212502345e96207e74ee6b626da223e28455d98ee3ad5de269682877dd60a6ea",
+      "recordedDate": "2026-09-28",
+      "evidenceKind": "reviewed-source-direct-Lean-checks-authority-audit-and-live-diagnostic-observation",
+      "limitations": "No native enrollment acceptance; observe delegations not admitted; INSTALL diagnostic ongoing."
     }
   ]
 }

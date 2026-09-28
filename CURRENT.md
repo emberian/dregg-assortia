@@ -2,7 +2,7 @@
 
 > Generated from `graph.jsonld` by `python3 hub.py render`. Edit the graph, not this file.
 
-Latest work-record update: **2026-09-28T02:04:00Z**. This is recorded project state, not a live process monitor.
+Latest work-record update: **2026-09-28T02:14:00Z**. This is recorded project state, not a live process monitor.
 
 [New contributor](contributing/README.md) · [Project map](MAP.md) · [Detailed work records](work/records.md)
 
@@ -12,7 +12,7 @@ Latest work-record update: **2026-09-28T02:04:00Z**. This is recorded project st
 
 | Work | Owner / reviewer | Next action |
 |---|---|---|
-| [Enroll human and agent app sessions through native authority](sprints/2026-09-26/checkpoint-76.md) | Sol: fn_mini_review; client integration: runtime_review and agent_api_host / Astra: root | Implement and qualify event28 admission and authoring with private plan/assembly and submit/lookup operations; join the actual post-START serving app and tickets. |
+| [Enroll human and agent app sessions through native authority](sprints/2026-09-26/checkpoint-76.md) | Sol: fn_mini_review; client integration: runtime_review and agent_api_host / Astra: root | Finish native receiving and client qualification; issue tickets and explicitly delegate narrow app/manifest/ticket read rights under sole-writer coordination, then enroll against actual post-START generation. |
 | [Operate actual Mini resources through fn correspondence and separate gateways](sprints/2026-09-26/checkpoint-17.md) | Sol: fn_contracts; Astra: root | Finish selected-release durable receiver and exact historical retry checks, integrate native Host/Replay/CLI route, then exercise authorized selected public bytes through actual fn without private-prefix disclosure. Receiver import/install remains separate authority. |
 | [Custody and meter scoped provider requests](sprints/2026-09-26/checkpoint-17.md) | Sol: runtime_review, build_native; Astra: root | Qualify local Ternary Bonsai 2 27B on hbox and run actual hosted Hermes through current Mini provider custody; integrate DREGG-paid provider access as an additional route after its API and accounting contract are established. |
 | [Durable hosted grain control and authenticated entrance](sprints/2026-09-26/checkpoint-17.md) | Sol: client_session, hermes_path, fn_reply_profile; Astra: root | Complete short spawn/cancel critical section and custody ownership without blocking immediate worker stop; preserve uncertainty and exact-call recovery. |
