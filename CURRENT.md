@@ -2,7 +2,7 @@
 
 > Generated from `graph.jsonld` by `python3 hub.py render`. Edit the graph, not this file.
 
-Latest work-record update: **2026-09-28T00:25:37.116Z**. This is recorded project state, not a live process monitor.
+Latest work-record update: **2026-09-28T00:39:39.774Z**. This is recorded project state, not a live process monitor.
 
 [New contributor](contributing/README.md) · [Project map](MAP.md) · [Detailed work records](work/records.md)
 
@@ -20,7 +20,7 @@ Latest work-record update: **2026-09-28T00:25:37.116Z**. This is recorded projec
 | [Keep grants valid across policy source revisions](sprints/2026-09-19/cycle-1-integration-checkpoint.md) | Astra: root; component implementation/review lanes completed | Implement and exercise generation-wide native revocation and the delegated-grant two-replacement case against the same source-owned receiving path; preserve the completed per-capability/current-law regressions. |
 | [Retain verified history across native host requests](sprints/2026-09-26/checkpoint-17.md) | Astra: root; Sol: fn_mini_review | Recover app bootstrap with separately authorized tool attach, fresh read/reserve and retained refused attempt; finish actual app admission then INSTALL/START, shared human/agent use and fn receiving. |
 | [Define the September 26 programmable nexus and its shared contracts](sprints/2026-09-19/cycle-1-integration-checkpoint.md) | Astra: root; component implementation/review lanes completed | Converge the SPK platform cycle: packaged apps provide shared human views and agent APIs under Mini authority; retain separate contributed-hosting and Solana obligations. |
-| [Run shared SPK applications through Mini, browsers, agents and fn](sprints/2026-09-26/spk-platform-cycle.md) | Astra: root; Sol: client_session, agent_api_host, runtime_review, fn_mini_review, fn_contracts / Astra: root | Collect exact live app/session outcome, complete INSTALL/START and event22/27 route issuance, resolve isolated Hermes launch, then run shared use and selected fn publication/readback. |
+| [Run shared SPK applications through Mini, browsers, agents and fn](sprints/2026-09-26/spk-platform-cycle.md) | Astra: root; Sol: client_session, agent_api_host, runtime_review, fn_mini_review, fn_contracts / Astra: root | Finish participant birth handoff; qualify shared-host service lists; materialize signed package and volume under source INSTALL; issue human/agent tickets, then run START/shared Hermes/browser/CLI and selected fn journey. |
 
 ## Backlog
 

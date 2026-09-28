@@ -3986,7 +3986,7 @@
       "status": "active",
       "owner": "Astra: root; Sol: client_session, agent_api_host, runtime_review, fn_mini_review, fn_contracts",
       "reviewer": "Astra: root",
-      "updatedAt": "2026-09-28T00:25:37.116Z",
+      "updatedAt": "2026-09-28T00:39:39.774Z",
       "priority": 1,
       "sources": [
         "urn:dregg:assortia:S-SPK-CYCLE-0927",
@@ -4047,7 +4047,8 @@
         "urn:dregg:assortia:S-SPK-CHECKPOINT68-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT69-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT70-0927",
-        "urn:dregg:assortia:S-SPK-CHECKPOINT71-0927"
+        "urn:dregg:assortia:S-SPK-CHECKPOINT71-0927",
+        "urn:dregg:assortia:S-SPK-CHECKPOINT72-0927"
       ],
       "advances": [
         "urn:dregg:assortia:E-WORLD",
@@ -4082,8 +4083,8 @@
         "Selected app or data versions travel through fn with explicit publication and separate receiver install/import authority, without private-prefix disclosure."
       ],
       "closure": "A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.",
-      "nextAction": "Collect exact live app/session outcome, complete INSTALL/START and event22/27 route issuance, resolve isolated Hermes launch, then run shared use and selected fn publication/readback.",
-      "progress": "Signed parent/tool prerequisite recovery reviewed, committed and running once on retained r3. Real local model and isolated fn node qualified separately; GitWeb tools, explicit content import and fn join committed with scoped tests. Full shared app/Hermes/fn journey remains unproven."
+      "nextAction": "Finish participant birth handoff; qualify shared-host service lists; materialize signed package and volume under source INSTALL; issue human/agent tickets, then run START/shared Hermes/browser/CLI and selected fn journey.",
+      "progress": "Retained r3 app admitted count17 and exact replay confirmed; Alice Web session birth count19, base recovery still active. Confined upstream Hermes startup and native grant Host qualified; STOP and source-derived agent issuers committed. Shared-host provider/dispatch lists, physical materialization and human ticket seams under construction; no combined preview yet."
     },
     {
       "@id": "urn:dregg:assortia:S-SPK-GROUNDING1-0927",
@@ -4733,6 +4734,17 @@
       "recordedDate": "2026-09-27",
       "evidenceKind": "live-process-observation-component-qualification-and-reviewed-source",
       "limitations": "No combined hosted preview or actual selected app publication; running recovery is not accepted app birth."
+    },
+    {
+      "@id": "urn:dregg:assortia:S-SPK-CHECKPOINT72-0927",
+      "@type": "Source",
+      "label": "App admission and confined Hermes startup; shared-host integration gaps",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-26/checkpoint-72.md",
+      "sha256": "60374cfcd5725d1cdab19f0bf2055635d722f32529d00f6ed04be975871217f7",
+      "recordedDate": "2026-09-27",
+      "evidenceKind": "live-app-admission-confined-upstream-startup-and-reviewed-source",
+      "limitations": "Application-resource birth is not physical INSTALL/START; no combined real-model/shared-app/fn journey. Shared-host native qualification and participant births remain pending."
     }
   ]
 }

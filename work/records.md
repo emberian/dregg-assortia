@@ -1062,15 +1062,15 @@ Report which claims/work items need reinspection when source bytes change, with 
 
 **Run shared SPK applications through Mini, browsers, agents and fn**
 
-Status: **active** · Owner: Astra: root; Sol: client_session, agent_api_host, runtime_review, fn_mini_review, fn_contracts · Updated: 2026-09-28T00:25:37.116Z
+Status: **active** · Owner: Astra: root; Sol: client_session, agent_api_host, runtime_review, fn_mini_review, fn_contracts · Updated: 2026-09-28T00:39:39.774Z
 
 Integrate real third-party packaged app execution and persistent state with Mini lifecycle/current grants, hosted Hermes, direct commands, and selected version publication over semi-untrusted fn.
 
-**Next:** Collect exact live app/session outcome, complete INSTALL/START and event22/27 route issuance, resolve isolated Hermes launch, then run shared use and selected fn publication/readback.
+**Next:** Finish participant birth handoff; qualify shared-host service lists; materialize signed package and volume under source INSTALL; issue human/agent tickets, then run START/shared Hermes/browser/CLI and selected fn journey.
 
 **Done when:** A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.
 
-**Evidence so far:** Signed parent/tool prerequisite recovery reviewed, committed and running once on retained r3. Real local model and isolated fn node qualified separately; GitWeb tools, explicit content import and fn join committed with scoped tests. Full shared app/Hermes/fn journey remains unproven.
+**Evidence so far:** Retained r3 app admitted count17 and exact replay confirmed; Alice Web session birth count19, base recovery still active. Confined upstream Hermes startup and native grant Host qualified; STOP and source-derived agent issuers committed. Shared-host provider/dispatch lists, physical materialization and human ticket seams under construction; no combined preview yet.
 
 [Task brief](../sprints/2026-09-26/spk-platform-cycle.md)
 
@@ -1140,6 +1140,7 @@ Integrate real third-party packaged app execution and persistent state with Mini
 - [S-SPK-CHECKPOINT69-0927 — Live retained birth and qualified coherent Host; base socket recovery pending](../sprints/2026-09-26/checkpoint-69.md)
 - [S-SPK-CHECKPOINT70-0927 — Workroom recovered; detached app tool reserve refused; source integrations progressing](../sprints/2026-09-26/checkpoint-70.md)
 - [S-SPK-CHECKPOINT71-0927 — App recovery running; qualified model and fn components with committed integration](../sprints/2026-09-26/checkpoint-71.md)
+- [S-SPK-CHECKPOINT72-0927 — App admission and confined Hermes startup; shared-host integration gaps](../sprints/2026-09-26/checkpoint-72.md)
 
 **Write scope:** minidregg/Kernel/ApplicationLifecycle* and ApplicationSpkLaunchDescriptor.lean (mini_app_contract); minidregg/native/spk-host resident/RPC and dedicated physical evidence (agent_api_host); minidregg/native/spk-host agent custody/server (agent_api_host); minidregg/native/grain-runtime and dedicated controller evidence (runtime_review); isolated source-matched native Host builds and explicit proof repairs (build_native); minidregg/Kernel/Fn* receiving and Host/FnConsumerFrontierPlan.lean (fn_mini_review); persistent agent-route authorization design (runtime_review); coordinated Host/Main.lean and NativeHostReplay.lean hooks; root owns integration order and Git; minidregg/scripts/spk-platform source-authored fixture enrollment/birth continuations (spk_compatibility); minidregg/Host/ApplicationLifecycleLaunchAuthoring*.lean and coordinated Main ops66–71 after lower API freeze (fn_mini_review); minidregg/Kernel/NativeHostContext.lean canonical image-boundary byte reuse and general equivalence proof (client_session); actual Replay consumers coordinated with mini_app_contract
 
