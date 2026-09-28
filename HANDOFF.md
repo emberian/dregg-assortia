@@ -1,5 +1,7 @@
 # Start here: DREGG handoff
 
+**Direction reset after checkpoint 78:** Ember requested a new goal for the programmable infrastructure itself, then code-tree exploration before another implementation swarm. Start with the [September 27 platform reorientation](research/platform-reorientation-2026-09-27.md). Application grains are instances of the platform; fixture completion is not the organizing objective. The current step is evidence review with Ember. The construction instructions below retain historical context and do not override this reset; existing WIP and live state are preserved.
+
 **Current live boundary:** [checkpoint 78](sprints/2026-09-26/checkpoint-78.md): real signed GitWeb package materialization passed; INSTALL completion remains refused at claimed count29 and is under read-only source diagnosis. The native enrollment core is committed and source-checked; receiving/client integration and actual narrow read delegations remain work. Allocated capability IDs are not admitted grants. Real local Bonsai and private Git recovery are qualified separately; actual START/shared use and selected fn publication remain open.
 
 **Latest native result:** [checkpoint 68](sprints/2026-09-26/checkpoint-68.md) records the repaired exact birth and cold reopen passing on a private copy, ready Linux artifacts, and the reviewed Host transition. Live deployment and practical latency remain open.

@@ -1,5 +1,7 @@
 # Bounded research notes
 
+The [September 27 platform reorientation](platform-reorientation-2026-09-27.md) follows Ember's rejection of fixture-centered scope. It maps current Mini programming, hosted Hermes exposure, reusable hosting, fn publication and Bread interface precedents, distinguishing actual progress since September 17 from unconnected components. This is the current evidence review before another implementation cycle.
+
 The latest [Bread/Mini microswarm](../sprints/2026-09-19/core-orientation.md) follows the implementation pause and rejection of a new Python platform. It distinguishes executable resource semantics, source-only foundations, retained runtime evidence and proposed core work. No new builds or tests ran.
 
 The original notes below are source/history inspections from 2026-09-17. No new project builds, tests, proof replays or live-service probes were run for those inspections. Recommendations are attributed agent proposals, not accepted architecture decisions. Later implementation results have their own dated sprint evidence.
