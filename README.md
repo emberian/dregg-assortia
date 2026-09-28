@@ -1,6 +1,6 @@
 # dregg-assortia
 
-**Current step:** [Recovery construction](sprints/2026-09-28/recovery-construction.md), authorized by Ember for 22:40–00:10 UTC. Common Mini resource operations, participant enrollment, Hermes, checked application routing and selected fn exchange share one integration candidate. Earlier fixture assignments remain deferred. [Homelab handoff for Pug/Wisper](contributing/homelab-preview.md).
+**Current step:** [Recovery construction](sprints/2026-09-28/recovery-construction.md), authorized by Ember for 22:40–00:10 UTC. Common Mini resource operations, participant enrollment, Hermes, checked application routing and selected fn exchange share one integration candidate. Earlier fixture assignments remain deferred.
 
 The living knowledge index and project hub for DREGG: what we are building, how the pieces connect, who owns current work, and what evidence supports each claim.
 

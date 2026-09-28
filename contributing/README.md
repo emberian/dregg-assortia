@@ -8,7 +8,7 @@ DREGG is a programmable resource world. People and agents create and operate res
 
 ## Homelab deployment discussion
 
-[Pug/Wisper homelab handoff](homelab-preview.md) describes the intended service, authority and state boundaries, candidate machine roles, and questions still open. It distinguishes current construction from deployment and does not assign either contributor new work.
+Recipient-specific handoffs and team communications are maintained outside this repository. The hub records reusable interfaces and technical evidence.
 
 ## The next product work package
 

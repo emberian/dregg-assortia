@@ -1,11 +1,12 @@
 # Working in dregg-assortia
 
-**Current authorization (September 28):** [Recovery construction](sprints/2026-09-28/recovery-construction.md), authorized by Ember for 22:40–00:10 UTC. Common Mini resource operations, participant enrollment, Hermes, checked application routing and selected fn exchange share one integration candidate. Earlier fixture assignments remain deferred. [Homelab handoff for Pug/Wisper](contributing/homelab-preview.md).
+**Current authorization (September 28):** [Recovery construction](sprints/2026-09-28/recovery-construction.md), authorized by Ember for 22:40–00:10 UTC. Common Mini resource operations, participant enrollment, Hermes, checked application routing and selected fn exchange share one integration candidate. Earlier fixture assignments remain deferred.
 
 Prior authorization: September 26 autonomous overnight construction, mostly Sol agents, actual Mini/Bread integration with fn; see sprints/2026-09-26/overnight.md. Claude owns fn's active development. Do not revive the rejected Python platform or substitute a disconnected demo. Ember will decide release compromises on returning.
 
 Read HANDOFF.md, README.md, CURRENT.md, intent.md, the latest completed result, and the relevant dated orientation before making project-wide recommendations. HANDOFF.md is the entry point for a successor; graph.jsonld remains the owner of work status.
 
+- Team communications and recipient-specific handoffs belong outside Git (Ember uses `~/workbox`), not in this hub. Keep reusable technical decisions/evidence here. Persvati and hbox are development/build machines, not Pug's homelab; homelab placement requires its actual inventory.
 - Git is the primary VCS. Fossil is an undecided issues/discussion candidate.
 - Ember permits unsigned commits when unavailable for the configured 1Password signer (September 19). Use a per-commit signing override when needed; do not block authorized checkpoints or change global signing settings.
 - This is the living knowledge index and project-management hub. A graph record is an assertion with provenance, not authority over a sibling repository.

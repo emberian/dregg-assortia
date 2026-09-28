@@ -1,16 +1,18 @@
 # Start here: DREGG handoff
 
-**Current step:** [Recovery construction](sprints/2026-09-28/recovery-construction.md), authorized by Ember for 22:40–00:10 UTC. Common Mini resource operations, participant enrollment, Hermes, checked application routing and selected fn exchange share one integration candidate. Earlier fixture assignments remain deferred. [Homelab handoff for Pug/Wisper](contributing/homelab-preview.md).
+**Current step:** [Recovery construction](sprints/2026-09-28/recovery-construction.md), authorized by Ember for 22:40–00:10 UTC. Common Mini resource operations, participant enrollment, Hermes, checked application routing and selected fn exchange share one integration candidate. Earlier fixture assignments remain deferred.
 
 **Build storage, September 28:** [Persvati cleanup](research/persvati-cleanup-2026-09-28.md) reclaimed approximately 370 GiB of duplicate Lean compilation caches. Sources, evidence and service binaries remain; two warm build trees are named in the record. Old source snapshots will otherwise need recompilation.
 
 **Direction reset after checkpoint 78:** Ember requested a new goal for the programmable infrastructure itself, then code-tree exploration before another implementation swarm. Start with the [September 27 platform reorientation](research/platform-reorientation-2026-09-27.md). Application grains are instances of the platform; fixture completion is not the organizing objective. The current step is the bounded recovery construction batch linked above. The construction instructions below retain historical context and do not override this reset; existing WIP and live state are preserved.
 
-**Current live boundary:** [checkpoint 78](sprints/2026-09-26/checkpoint-78.md): real signed GitWeb package materialization passed; INSTALL completion remains refused at claimed count29 and is under read-only source diagnosis. The native enrollment core is committed and source-checked; receiving/client integration and actual narrow read delegations remain work. Allocated capability IDs are not admitted grants. Real local Bonsai and private Git recovery are qualified separately; actual START/shared use and selected fn publication remain open.
+**Current construction evidence:** [September 28 recovery result](sprints/2026-09-28/recovery-result.md) records the common participant/client/Hermes changes, candidate pins and pending native qualification. The key-enrollment receiving path is implemented; independent participant creation still requires factory and payer provisioning. Allocated capability IDs are not admitted grants.
 
-**Latest native result:** [checkpoint 68](sprints/2026-09-26/checkpoint-68.md) records the repaired exact birth and cold reopen passing on a private copy, ready Linux artifacts, and the reviewed Host transition. Live deployment and practical latency remain open.
+**Preserved live boundary:** [checkpoint 78](sprints/2026-09-26/checkpoint-78.md): real signed GitWeb package materialization passed; INSTALL completion remains refused at claimed count29. No retry or live repair was performed in the recovery batch. Real local Bonsai and private Git recovery were qualified separately; they do not establish a combined preview.
 
-**Latest reviewed batch:** [checkpoint 67](sprints/2026-09-26/checkpoint-67.md) records committed resident/controller integration, its test evidence, the ordinary-birth admission bottleneck, and the one remaining private diagnostic. Source completion does not establish a deployed service.
+**Historical native result:** [checkpoint 68](sprints/2026-09-26/checkpoint-68.md) records the repaired exact birth and cold reopen passing on a private copy, ready Linux artifacts, and the reviewed Host transition. Live deployment and practical latency remain open.
+
+**Historical reviewed batch:** [checkpoint 67](sprints/2026-09-26/checkpoint-67.md) records committed resident/controller integration, its test evidence, the ordinary-birth admission bottleneck, and the one remaining private diagnostic. Source completion does not establish a deployed service.
 
 **Historical construction direction:** [Complete demo journeys](sprints/2026-09-26/demo-convergence.md) preceded the reset. Its assignments and launch instructions are not current authority.
 

@@ -27,7 +27,7 @@ SPK fixture instructions remain deferred rather than automatically reactivated.
 | Non-Git application routing | Sol: recovery_host_contract + source_api_paths | Existing host/controller paths consume checked signed prefixes; Lean profile versions preserve historical Git bytes. Qualify source and physical mapping separately. |
 | Selected exchange | Sol: recovery_operation_contract | Current selected atom passes through actual fn transport to independent local admission; retain exact source/client/transport pins and uncertainty. |
 | Native integration | Sol: build_native; root integration owner | One coherent source snapshot and bounded native build, with source/artifact manifests. Reuse retained warm caches; do not recreate the reclaimed cache forest. |
-| Continuity and homelab review | Root; Luna: recovery_navigation | Graph/navigation, integration evidence and [Pug/Wisper handoff](../../contributing/homelab-preview.md). |
+| Continuity | Root; Luna: recovery_navigation | Graph/navigation and integration evidence. Recipient-specific communications are kept outside Git. |
 
 All lanes share the Mini working tree. File ownership is coordinated explicitly;
 root alone commits and pushes named changes. Existing compiler/prover, licensing,
