@@ -1564,13 +1564,13 @@
       ],
       "closure": "A selected user-visible economic function with exact mint/program/cluster, custody and release policy where applicable, external evidence acceptance and resource-result binding; required source/consumer changes and acceptance checks identified, then exercised at an explicitly authorized deployment scope.",
       "owner": null,
-      "updatedAt": "2026-09-27T23:59:51.217Z",
+      "updatedAt": "2026-09-28T00:01:07.304Z",
       "advances": [
         "urn:dregg:assortia:E-SOLANA",
         "urn:dregg:assortia:E-CLUTCH",
         "urn:dregg:assortia:E-PROVIDERS"
       ],
-      "nextAction": "Confirm Chonga API/model/price contract; connect transactional DREGG service credits to existing Mini provider custody and a shared inference operation before adding the Discord client.",
+      "nextAction": "Pin OpenRouter models, prices and operator custody; connect transactional DREGG service credits to existing Mini provider custody and a shared inference operation before adding the Discord client.",
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
       "progress": "Ember selected an additional DREGG-only inference offering through existing payment infrastructure and a Discord interface. Source audit finds a selected DREGG signature watcher and reusable provider code, but bot SQLite credit/dedup writes are not transactional. No paid request or transaction performed; provider bonds remain a separate obligation.",
@@ -4704,10 +4704,10 @@
       "label": "DREGG-only inference direction and payment/provider source audit",
       "repository": "urn:dregg:assortia:R-assortia",
       "path": "research/payment-inference-2026-09-27.md",
-      "sha256": "9aa144b1cfae4dcaa2da9df70ce082a562345030f928bb3c1deb76dc03df754f",
+      "sha256": "3bc6d95246c01888f4a9b0cc10c1815cb7c8a75f55a2c969b18808daa38a519c",
       "recordedDate": "2026-09-27",
       "evidenceKind": "source-inspection-and-user-directed-integration",
-      "limitations": "No provider call, payment, bot message, or deployment. Chonga API contract unspecified; transactional crediting and durable inference integration remain work."
+      "limitations": "No provider call, payment, bot message, or deployment. User clarified that chonga was slang: target is OpenRouter plus homelab inference. Model/pricing/credential pins, transactional crediting and durable inference integration remain work."
     }
   ]
 }

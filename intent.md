@@ -172,10 +172,11 @@ tests or establish hardware/runtime compatibility. Model qualification and
 actual hosted Hermes execution remain separate evidence.
 
 Ember also wants to reuse dregg-pay and extract suitable Discord bot code to
-support **Chonga models paid only in $DREGG**, while updating or replacing the
+support **OpenRouter models paid only in $DREGG**, while updating or replacing the
 bot as an interface. Shared inference/payment services usable by Discord,
-Hermes, and shell are the proposed integration boundary. The provider API,
-model/pricing contract and implementation are not yet established. The
+Hermes, and shell are the proposed integration boundary. “Chonga” was informal language, not a provider name. The paid target is
+OpenRouter; model choices, prices, credentials and implementation still need
+to be pinned. The
 [dated source audit](research/payment-inference-2026-09-27.md) records existing
 payment and provider machinery, its transactional/recovery gaps, and its
 relationship to Mini's existing provider custody. This provider option is

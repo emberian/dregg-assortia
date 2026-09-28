@@ -2,7 +2,7 @@
 
 > Generated from `graph.jsonld` by `python3 hub.py render`. Edit the graph, not this file.
 
-Latest work-record update: **2026-09-27T23:59:51.217Z**. This is recorded project state, not a live process monitor.
+Latest work-record update: **2026-09-28T00:01:07.304Z**. This is recorded project state, not a live process monitor.
 
 [New contributor](contributing/README.md) · [Project map](MAP.md) · [Detailed work records](work/records.md)
 
@@ -33,7 +33,7 @@ Latest work-record update: **2026-09-27T23:59:51.217Z**. This is recorded projec
 | [Retain factory deployment at its actual history boundary](work/records.md#w-factory-history) | Unassigned | Retain the unfinished Bread work and evidence as historical maintenance/reference; it is not a prerequisite for the New World implementation in Mini. |
 | [Make actual Hermes/SDK startup avoid unused Lean initialization](work/records.md#w-hermes-startup) | Unassigned | Retain the unfinished Bread work and evidence as historical maintenance/reference; it is not a prerequisite for the New World implementation in Mini. |
 | [Inventory existing provider job and penalty machinery](work/records.md#w-provider-path) | Unassigned | Choose the eligible public job and its exact result checker, provider obligation and penalty-record consumer. |
-| [Choose and close one economic operation consumed by a nexus resource](work/records.md#w-solana-utility) | Unassigned | Confirm Chonga API/model/price contract; connect transactional DREGG service credits to existing Mini provider custody and a shared inference operation before adding the Discord client. |
+| [Choose and close one economic operation consumed by a nexus resource](work/records.md#w-solana-utility) | Unassigned | Pin OpenRouter models, prices and operator custody; connect transactional DREGG service credits to existing Mini provider custody and a shared inference operation before adding the Discord client. |
 
 ## Done
 

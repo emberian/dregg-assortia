@@ -1011,11 +1011,11 @@ Reuse canonical CellRegistry, authority pages, ordered resource Book batches, Mu
 
 **Choose and close one economic operation consumed by a nexus resource**
 
-Status: **backlog** · Owner: Unassigned · Updated: 2026-09-27T23:59:51.217Z
+Status: **backlog** · Owner: Unassigned · Updated: 2026-09-28T00:01:07.304Z
 
 Compare provider bonds, resource payments and Clutch claim/settlement operations. Holder admission is useful existing material but does not alone perform an on-chain mutation. Specify the real asset/cluster and the DREGG receiver of the external result.
 
-**Next:** Confirm Chonga API/model/price contract; connect transactional DREGG service credits to existing Mini provider custody and a shared inference operation before adding the Discord client.
+**Next:** Pin OpenRouter models, prices and operator custody; connect transactional DREGG service credits to existing Mini provider custody and a shared inference operation before adding the Discord client.
 
 **Done when:** A selected user-visible economic function with exact mint/program/cluster, custody and release policy where applicable, external evidence acceptance and resource-result binding; required source/consumer changes and acceptance checks identified, then exercised at an explicitly authorized deployment scope.
 
