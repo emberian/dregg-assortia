@@ -2,7 +2,7 @@
 
 > Generated from `graph.jsonld` by `python3 hub.py render`. Edit the graph, not this file.
 
-Latest work-record update: **2026-09-28T02:14:00Z**. This is recorded project state, not a live process monitor.
+Latest work-record update: **2026-09-28T20:33:38Z**. This is recorded project state, not a live process monitor.
 
 [New contributor](contributing/README.md) · [Project map](MAP.md) · [Detailed work records](work/records.md)
 
@@ -12,16 +12,22 @@ Latest work-record update: **2026-09-28T02:14:00Z**. This is recorded project st
 
 | Work | Owner / reviewer | Next action |
 |---|---|---|
-| [Enroll human and agent app sessions through native authority](sprints/2026-09-26/checkpoint-76.md) | Sol: fn_mini_review; client integration: runtime_review and agent_api_host / Astra: root | Finish native receiving and client qualification; issue tickets and explicitly delegate narrow app/manifest/ticket read rights under sole-writer coordination, then enroll against actual post-START generation. |
-| [Operate actual Mini resources through fn correspondence and separate gateways](sprints/2026-09-26/checkpoint-17.md) | Sol: fn_contracts; Astra: root | Finish selected-release durable receiver and exact historical retry checks, integrate native Host/Replay/CLI route, then exercise authorized selected public bytes through actual fn without private-prefix disclosure. Receiver import/install remains separate authority. |
-| [Custody and meter scoped provider requests](sprints/2026-09-26/checkpoint-17.md) | Sol: runtime_review, build_native; Astra: root | Qualify local Ternary Bonsai 2 27B on hbox and run actual hosted Hermes through current Mini provider custody; integrate DREGG-paid provider access as an additional route after its API and accounting contract are established. |
-| [Durable hosted grain control and authenticated entrance](sprints/2026-09-26/checkpoint-17.md) | Sol: client_session, hermes_path, fn_reply_profile; Astra: root | Complete short spawn/cancel critical section and custody ownership without blocking immediate worker stop; preserve uncertainty and exact-call recovery. |
-| [Host upstream Hermes with persistent confined execution](sprints/2026-09-26/checkpoint-17.md) | Sol: hermes_path, replay_session, linux_hosting; review runtime_review; Astra: root | Finish birth charge crash recovery and dispatch cancellation; exercise soft EOF and usable hard-stop reconnect/recovery. |
-| [Expose canonical resource programming to Hermes](sprints/2026-09-26/checkpoint-17.md) | Sol: hermes_path, replay_session, codec_stack, shared_resource_tools; Astra: root | Fix durable pre-reserve birth intent and refusal zero-phase recovery, final dispatch cancellation, then exercise created-resource tools through Hermes and exact restart. |
-| [Keep grants valid across policy source revisions](sprints/2026-09-19/cycle-1-integration-checkpoint.md) | Astra: root; component implementation/review lanes completed | Implement and exercise generation-wide native revocation and the delegated-grant two-replacement case against the same source-owned receiving path; preserve the completed per-capability/current-law regressions. |
-| [Retain verified history across native host requests](sprints/2026-09-26/checkpoint-17.md) | Astra: root; Sol: fn_mini_review | Recover app bootstrap with separately authorized tool attach, fresh read/reserve and retained refused attempt; finish actual app admission then INSTALL/START, shared human/agent use and fn receiving. |
-| [Define the September 26 programmable nexus and its shared contracts](sprints/2026-09-19/cycle-1-integration-checkpoint.md) | Astra: root; component implementation/review lanes completed | Converge the SPK platform cycle: packaged apps provide shared human views and agent APIs under Mini authority; retain separate contributed-hosting and Solana obligations. |
-| [Run shared SPK applications through Mini, browsers, agents and fn](sprints/2026-09-26/spk-platform-cycle.md) | Astra: root; Sol: mini_app_contract, agent_api_host, runtime_review, fn_mini_review, shared_resource_tools, build_native / Astra: root | Diagnose the precise INSTALL admission refusal without duplicate submission; repair and qualify the underlying contract, then complete volume custody, ticket issuance, START, enrollment and the real shared journey. |
+| [Review recovery contracts for the programmable resource world](research/recovery-miniswarm-2026-09-28.md) | Astra: root; Sol/Luna source review completed / Ember | Discuss the miniswarm recommendations with Ember; settle the common operation/reference/namespace boundary and the next coherent construction batch. No live retry or deployment follows from the brief. |
+
+## Blocked
+
+| Work | Owner / reviewer | Next action |
+|---|---|---|
+| [Enroll human and agent app sessions through native authority](sprints/2026-09-26/checkpoint-76.md) | Unassigned / Astra: root | Await recovery contract review, then reassess scope and ownership before construction. Preserve current WIP and evidence. |
+| [Operate actual Mini resources through fn correspondence and separate gateways](sprints/2026-09-26/checkpoint-17.md) | Unassigned | Await recovery contract review, then reassess scope and ownership before construction. Preserve current WIP and evidence. |
+| [Custody and meter scoped provider requests](sprints/2026-09-26/checkpoint-17.md) | Unassigned | Await recovery contract review, then reassess scope and ownership before construction. Preserve current WIP and evidence. |
+| [Durable hosted grain control and authenticated entrance](sprints/2026-09-26/checkpoint-17.md) | Unassigned | Await recovery contract review, then reassess scope and ownership before construction. Preserve current WIP and evidence. |
+| [Host upstream Hermes with persistent confined execution](sprints/2026-09-26/checkpoint-17.md) | Unassigned | Await recovery contract review, then reassess scope and ownership before construction. Preserve current WIP and evidence. |
+| [Expose canonical resource programming to Hermes](sprints/2026-09-26/checkpoint-17.md) | Unassigned | Await recovery contract review, then reassess scope and ownership before construction. Preserve current WIP and evidence. |
+| [Keep grants valid across policy source revisions](sprints/2026-09-19/cycle-1-integration-checkpoint.md) | Unassigned | Await recovery contract review, then reassess scope and ownership before construction. Preserve current WIP and evidence. |
+| [Retain verified history across native host requests](sprints/2026-09-26/checkpoint-17.md) | Unassigned | Await recovery contract review, then reassess scope and ownership before construction. Preserve current WIP and evidence. |
+| [Define the September 26 programmable nexus and its shared contracts](sprints/2026-09-19/cycle-1-integration-checkpoint.md) | Unassigned | Await recovery contract review, then reassess scope and ownership before construction. Preserve current WIP and evidence. |
+| [Run shared SPK applications through Mini, browsers, agents and fn](sprints/2026-09-26/spk-platform-cycle.md) | Unassigned / Astra: root | Await recovery contract review, then reassess scope and ownership before construction. Preserve current WIP and evidence. |
 
 ## Backlog
 

@@ -103,15 +103,41 @@ Graph-backed work ownership, concrete briefs, generated current views and an exp
 - [S-HUB-TOOLS-0145 — Graph navigation/source-impact tooling and captured tests](../sprints/2026-09-18/hub-tools-0145.md)
 - [S-DIRECTION-0919 — September 19 hosted Hermes direction, superseded Wisper plan and revised disconnect preference](../sprints/2026-09-19/direction.md)
 
+## W-RECOVERY-REVIEW-0928
+
+**Review recovery contracts for the programmable resource world**
+
+Status: **active** · Owner: Astra: root; Sol/Luna source review completed · Updated: 2026-09-28T20:33:38Z
+
+
+
+**Next:** Discuss the miniswarm recommendations with Ember; settle the common operation/reference/namespace boundary and the next coherent construction batch. No live retry or deployment follows from the brief.
+
+**Done when:** Recovery contracts and construction scope are explicitly accepted or revised with Ember; affected implementation records are reassessed and reassigned. This closes review only, not Gates A-C.
+
+**Evidence so far:** Five source-review lanes completed. Existing native client, operation custody, hosting journals and selected fn publication are the proposed receiving paths.
+
+[Task brief](../research/recovery-miniswarm-2026-09-28.md)
+
+**Enables:**
+
+- E-WORLD — Programmable social resource world
+
+**Evidence / provenance:**
+
+- [S-RECOVERY-MINISWARM-0928 — Recovery brief miniswarm and current review scope](../research/recovery-miniswarm-2026-09-28.md)
+
+**Write scope:** dregg-assortia current records, review synthesis and navigation
+
 ## W-APP-ENROLLMENT
 
 **Enroll human and agent app sessions through native authority**
 
-Status: **active** · Owner: Sol: fn_mini_review; client integration: runtime_review and agent_api_host · Updated: 2026-09-28T02:14:00Z
+Status: **blocked** · Owner: Unassigned · Updated: 2026-09-28T20:33:38Z
 
 
 
-**Next:** Finish native receiving and client qualification; issue tickets and explicitly delegate narrow app/manifest/ticket read rights under sole-writer coordination, then enroll against actual post-START generation.
+**Next:** Await recovery contract review, then reassess scope and ownership before construction. Preserve current WIP and evidence.
 
 **Done when:** The source-owned authoring, custody, native admission, replay and five-session deployed consumer path are qualified with scoped positive and refusal/recovery evidence.
 
@@ -124,11 +150,16 @@ Status: **active** · Owner: Sol: fn_mini_review; client integration: runtime_re
 - E-KERNEL — Canonical typed semantic kernel
 - E-WORLD — Programmable social resource world
 
+**Waiting for:**
+
+- W-RECOVERY-REVIEW-0928 — Review recovery contracts for the programmable resource world
+
 **Evidence / provenance:**
 
 - [S-SPK-CHECKPOINT76-0928 — Enrollment source gap, independent ticket roles and retained installation check](../sprints/2026-09-26/checkpoint-76.md)
 - [S-SPK-CHECKPOINT77-0928 — Real GitWeb image with refused INSTALL completion and absent original receipt](../sprints/2026-09-26/checkpoint-77.md)
 - [S-SPK-CHECKPOINT78-0928 — Committed enrollment source and corrected delegation prerequisites](../sprints/2026-09-26/checkpoint-78.md)
+- [S-RECOVERY-MINISWARM-0928 — Recovery brief miniswarm and current review scope](../research/recovery-miniswarm-2026-09-28.md)
 
 **Write scope:** minidregg/Kernel and Host session enrollment modules, coordinated NativeHostReplay and Host/Main/Json wiring (fn_mini_review); minidregg/docs/APPLICATION-PROTOCOL-ALLOCATIONS.md event28 and private operations82–85 (fn_mini_review); native/resource-client custody and scripts/spk-platform receiving integration, coordinated with their current owners
 
@@ -436,11 +467,11 @@ World deployment currently mutates volatile registries; historical paths either 
 
 **Operate actual Mini resources through fn correspondence and separate gateways**
 
-Status: **active** · Owner: Sol: fn_contracts; Astra: root · Updated: 2026-09-27T05:18:14.567Z
+Status: **blocked** · Owner: Unassigned · Updated: 2026-09-28T20:33:38Z
 
 Converge existing fn consumer lineage and improve its authority, fresh setup, general reply profiles and distributed hosted receiving path.
 
-**Next:** Finish selected-release durable receiver and exact historical retry checks, integrate native Host/Replay/CLI route, then exercise authorized selected public bytes through actual fn without private-prefix disclosure. Receiver import/install remains separate authority.
+**Next:** Await recovery contract review, then reassess scope and ownership before construction. Preserve current WIP and evidence.
 
 **Done when:** Real Mini-resource operation and reply travel through independently configured fn nodes with separately pinned application authorities; durable Mini processing precedes fn ACK, direct forged consumer input is refused, exact retries and uncertain outcomes reconcile, and a documented user entrance uses this path.
 
@@ -452,6 +483,10 @@ Converge existing fn consumer lineage and improve its authority, fresh setup, ge
 
 - E-WORLD — Programmable social resource world
 - E-KERNEL — Canonical typed semantic kernel
+
+**Waiting for:**
+
+- W-RECOVERY-REVIEW-0928 — Review recovery contracts for the programmable resource world
 
 **Evidence / provenance:**
 
@@ -477,6 +512,7 @@ Converge existing fn consumer lineage and improve its authority, fresh setup, ge
 - [S-PARALLEL-JOURNEYS-0927 — Parallel platform journeys and independent app-issued authority requirement](../sprints/2026-09-26/parallel-journeys.md)
 - [S-SPK-CHECKPOINT20-0927 — Parallel journeys and checked receiving core checkpoint](../sprints/2026-09-26/checkpoint-20.md)
 - [S-SPK-CHECKPOINT21-0927 — Real GitWeb work and connected receiving paths](../sprints/2026-09-26/checkpoint-21.md)
+- [S-RECOVERY-MINISWARM-0928 — Recovery brief miniswarm and current review scope](../research/recovery-miniswarm-2026-09-28.md)
 
 **Write scope:** minidregg/Kernel/Fn*.lean; minidregg/Host/Json.lean; minidregg/scripts/fn-e1e2/; minidregg/Compiler/FnEvidenceCodec.lean; minidregg/Host/Main.lean; minidregg/Host/GrainOriginSource.lean; minidregg/native/resource-client/; minidregg/Host/GrainOriginPreparation.lean; minidregg/docs/FN-PUBLICATION-DISCLOSURE.md
 
@@ -484,11 +520,11 @@ Converge existing fn consumer lineage and improve its authority, fresh setup, ge
 
 **Custody and meter scoped provider requests**
 
-Status: **active** · Owner: Sol: runtime_review, build_native; Astra: root · Updated: 2026-09-27T23:59:51.217Z
+Status: **blocked** · Owner: Unassigned · Updated: 2026-09-28T20:33:38Z
 
 Execute bounded streaming requests after canonical reservation, retain exact evidence, fence old epochs, reconcile uncertain work and demonstrate secret isolation.
 
-**Next:** Qualify local Ternary Bonsai 2 27B on hbox and run actual hosted Hermes through current Mini provider custody; integrate DREGG-paid provider access as an additional route after its API and accounting contract are established.
+**Next:** Await recovery contract review, then reassess scope and ownership before construction. Preserve current WIP and evidence.
 
 **Done when:** Execute bounded streaming requests after canonical reservation, retain exact evidence, fence old epochs, reconcile uncertain work and demonstrate secret isolation.
 
@@ -499,6 +535,10 @@ Execute bounded streaming requests after canonical reservation, retain exact evi
 **Enables:**
 
 - E-WORLD — Programmable social resource world
+
+**Waiting for:**
+
+- W-RECOVERY-REVIEW-0928 — Review recovery contracts for the programmable resource world
 
 **Evidence / provenance:**
 
@@ -518,6 +558,7 @@ Execute bounded streaming requests after canonical reservation, retain exact evi
 - [S-CHECKPOINT16-0926 — Native provider settlement, own-R restart failure and continued kernel/hosting construction](../sprints/2026-09-26/checkpoint-16.md)
 - [S-CHECKPOINT17-0926 — Native restart, terminal, sequential metering and resource birth progress](../sprints/2026-09-26/checkpoint-17.md)
 - [S-PAYMENT-INFERENCE-0927 — DREGG-only inference direction and payment/provider source audit](../research/payment-inference-2026-09-27.md)
+- [S-RECOVERY-MINISWARM-0928 — Recovery brief miniswarm and current review scope](../research/recovery-miniswarm-2026-09-28.md)
 
 **Write scope:** minidregg/native/grain-runtime/src/provider.rs; minidregg/native/grain-runtime/src/main.rs; minidregg/deploy/grain-host/
 
@@ -529,11 +570,11 @@ Execute bounded streaming requests after canonical reservation, retain exact evi
 
 **Durable hosted grain control and authenticated entrance**
 
-Status: **active** · Owner: Sol: client_session, hermes_path, fn_reply_profile; Astra: root · Updated: 2026-09-27T02:10:00Z
+Status: **blocked** · Owner: Unassigned · Updated: 2026-09-28T20:33:38Z
 
 Execute authenticated provisioning, hard/soft attachment, retained operation lookup and recovery through actual kernel/runtime adapters.
 
-**Next:** Complete short spawn/cancel critical section and custody ownership without blocking immediate worker stop; preserve uncertainty and exact-call recovery.
+**Next:** Await recovery contract review, then reassess scope and ownership before construction. Preserve current WIP and evidence.
 
 **Done when:** Execute authenticated provisioning, hard/soft attachment, retained operation lookup and recovery through actual kernel/runtime adapters.
 
@@ -545,6 +586,10 @@ Execute authenticated provisioning, hard/soft attachment, retained operation loo
 
 - E-WORLD — Programmable social resource world
 
+**Waiting for:**
+
+- W-RECOVERY-REVIEW-0928 — Review recovery contracts for the programmable resource world
+
 **Evidence / provenance:**
 
 - [S-GRAIN-IMPLEMENTATION-0919 — Historical, subsequently paused agent-grain implementation wave](../sprints/2026-09-19/implementation.md)
@@ -564,6 +609,7 @@ Execute authenticated provisioning, hard/soft attachment, retained operation loo
 - [S-CHECKPOINT15-0926 — Dedicated-account Hermes shared workroom, read-only provider quote and linked typed A view](../sprints/2026-09-26/checkpoint-15.md)
 - [S-CHECKPOINT16-0926 — Native provider settlement, own-R restart failure and continued kernel/hosting construction](../sprints/2026-09-26/checkpoint-16.md)
 - [S-CHECKPOINT17-0926 — Native restart, terminal, sequential metering and resource birth progress](../sprints/2026-09-26/checkpoint-17.md)
+- [S-RECOVERY-MINISWARM-0928 — Recovery brief miniswarm and current review scope](../research/recovery-miniswarm-2026-09-28.md)
 
 **Write scope:** minidregg/native/resource-client/; minidregg/native/grain-runtime/; minidregg/Host/Json.lean
 
@@ -575,11 +621,11 @@ Execute authenticated provisioning, hard/soft attachment, retained operation loo
 
 **Host upstream Hermes with persistent confined execution**
 
-Status: **active** · Owner: Sol: hermes_path, replay_session, linux_hosting; review runtime_review; Astra: root · Updated: 2026-09-27T02:10:00Z
+Status: **blocked** · Owner: Unassigned · Updated: 2026-09-28T20:33:38Z
 
 Run real upstream Hermes in a confined Linux scope, preserve conversation/output, kill descendants on hard disconnect and retain exact scope on soft reconnect.
 
-**Next:** Finish birth charge crash recovery and dispatch cancellation; exercise soft EOF and usable hard-stop reconnect/recovery.
+**Next:** Await recovery contract review, then reassess scope and ownership before construction. Preserve current WIP and evidence.
 
 **Done when:** Run real upstream Hermes in a confined Linux scope, preserve conversation/output, kill descendants on hard disconnect and retain exact scope on soft reconnect.
 
@@ -590,6 +636,10 @@ Run real upstream Hermes in a confined Linux scope, preserve conversation/output
 **Enables:**
 
 - E-WORLD — Programmable social resource world
+
+**Waiting for:**
+
+- W-RECOVERY-REVIEW-0928 — Review recovery contracts for the programmable resource world
 
 **Evidence / provenance:**
 
@@ -613,6 +663,7 @@ Run real upstream Hermes in a confined Linux scope, preserve conversation/output
 - [S-CHECKPOINT15-0926 — Dedicated-account Hermes shared workroom, read-only provider quote and linked typed A view](../sprints/2026-09-26/checkpoint-15.md)
 - [S-CHECKPOINT16-0926 — Native provider settlement, own-R restart failure and continued kernel/hosting construction](../sprints/2026-09-26/checkpoint-16.md)
 - [S-CHECKPOINT17-0926 — Native restart, terminal, sequential metering and resource birth progress](../sprints/2026-09-26/checkpoint-17.md)
+- [S-RECOVERY-MINISWARM-0928 — Recovery brief miniswarm and current review scope](../research/recovery-miniswarm-2026-09-28.md)
 
 **Write scope:** minidregg/native/grain-runtime/; minidregg/Kernel/AgentGrain.lean; minidregg/Host/Json.lean; minidregg/deploy/grain-host/
 
@@ -624,11 +675,11 @@ Run real upstream Hermes in a confined Linux scope, preserve conversation/output
 
 **Expose canonical resource programming to Hermes**
 
-Status: **active** · Owner: Sol: hermes_path, replay_session, codec_stack, shared_resource_tools; Astra: root · Updated: 2026-09-27T02:10:00Z
+Status: **blocked** · Owner: Unassigned · Updated: 2026-09-28T20:33:38Z
 
 Drive real signed resource create/read/program/invoke/delegate/history operations through the source-owned host; reject stale generation authority without refreshing it.
 
-**Next:** Fix durable pre-reserve birth intent and refusal zero-phase recovery, final dispatch cancellation, then exercise created-resource tools through Hermes and exact restart.
+**Next:** Await recovery contract review, then reassess scope and ownership before construction. Preserve current WIP and evidence.
 
 **Done when:** Drive real signed resource create/read/program/invoke/delegate/history operations through the source-owned host; reject stale generation authority without refreshing it.
 
@@ -639,6 +690,10 @@ Drive real signed resource create/read/program/invoke/delegate/history operation
 **Enables:**
 
 - E-WORLD — Programmable social resource world
+
+**Waiting for:**
+
+- W-RECOVERY-REVIEW-0928 — Review recovery contracts for the programmable resource world
 
 **Evidence / provenance:**
 
@@ -661,6 +716,7 @@ Drive real signed resource create/read/program/invoke/delegate/history operation
 - [S-CHECKPOINT15-0926 — Dedicated-account Hermes shared workroom, read-only provider quote and linked typed A view](../sprints/2026-09-26/checkpoint-15.md)
 - [S-CHECKPOINT16-0926 — Native provider settlement, own-R restart failure and continued kernel/hosting construction](../sprints/2026-09-26/checkpoint-16.md)
 - [S-CHECKPOINT17-0926 — Native restart, terminal, sequential metering and resource birth progress](../sprints/2026-09-26/checkpoint-17.md)
+- [S-RECOVERY-MINISWARM-0928 — Recovery brief miniswarm and current review scope](../research/recovery-miniswarm-2026-09-28.md)
 
 **Write scope:** minidregg/native/grain-runtime/; minidregg/Kernel/AgentGrain.lean; minidregg/Host/Json.lean; minidregg/scripts/workroom/; minidregg/Compiler/GrainResourceBirthController.lean
 
@@ -672,11 +728,11 @@ Drive real signed resource create/read/program/invoke/delegate/history operation
 
 **Keep grants valid across policy source revisions**
 
-Status: **active** · Owner: Astra: root; component implementation/review lanes completed · Updated: 2026-09-20T00:00:01.955Z
+Status: **blocked** · Owner: Unassigned · Updated: 2026-09-28T20:33:38Z
 
 Separate immutable policy-source revision from grant revocation generation across the exact signed request, authority representation, compiled/source policies and every receiving consumer.
 
-**Next:** Implement and exercise generation-wide native revocation and the delegated-grant two-replacement case against the same source-owned receiving path; preserve the completed per-capability/current-law regressions.
+**Next:** Await recovery contract review, then reassess scope and ownership before construction. Preserve current WIP and evidence.
 
 **Done when:** After two admitted rule replacements, previously issued owner/control and delegated grants remain usable exactly when their scope and new rules authorize the new request; stale revisions refuse, explicit generation revocation invalidates prior grants, and restart/retry preserves exact state and receipts. Resource policy can deliberately refuse further management, with no implicit owner bypass.
 
@@ -689,6 +745,10 @@ Separate immutable policy-source revision from grant revocation generation acros
 - E-KERNEL — Canonical typed semantic kernel
 - E-WORLD — Programmable social resource world
 
+**Waiting for:**
+
+- W-RECOVERY-REVIEW-0928 — Review recovery contracts for the programmable resource world
+
 **Evidence / provenance:**
 
 - [S-ACCOUNT-HANDOFF-0918 — September18 account handoff: native born-owner journey and next integration wave](../sprints/2026-09-18/account-handoff.md)
@@ -699,6 +759,7 @@ Separate immutable policy-source revision from grant revocation generation acros
 - [S-CYCLE-1-INTEGRATION-0919 — Mini cycle 1 integration checkpoint: builds, native bottlenecks and pending final journeys](../sprints/2026-09-19/cycle-1-integration-checkpoint.md)
 - [S-NEW-WORLD-0919 — Completed eleven-event native task/content/authority journey](../sprints/2026-09-19/cycle-1-evidence/final-new-world/README.md)
 - [S-CYCLE-1-RESULT-0919 — Mini cycle 1 completed core result and exact remaining construction](../sprints/2026-09-19/cycle-1-result.md)
+- [S-RECOVERY-MINISWARM-0928 — Recovery brief miniswarm and current review scope](../research/recovery-miniswarm-2026-09-28.md)
 
 **Write scope:** minidregg/Kernel/CapabilityRevocation*.lean; minidregg/Kernel/PolicyInstallController.lean and coordinated authority/control source; minidregg public native acceptance harness
 
@@ -733,11 +794,11 @@ SDK route discovery is lazy while actual cryptographic calls retain real Lean in
 
 **Retain verified history across native host requests**
 
-Status: **active** · Owner: Astra: root; Sol: fn_mini_review · Updated: 2026-09-28T00:05:41.042Z
+Status: **blocked** · Owner: Unassigned · Updated: 2026-09-28T20:33:38Z
 
 Replace repeated whole-history semantic replay with a source-owned verified session, preserving exact history identity, current authorization and durable CAS/recovery behavior.
 
-**Next:** Recover app bootstrap with separately authorized tool attach, fresh read/reserve and retained refused attempt; finish actual app admission then INSTALL/START, shared human/agent use and fn receiving.
+**Next:** Await recovery contract review, then reassess scope and ownership before construction. Preserve current WIP and evidence.
 
 **Done when:** Prove verified-prefix plus suffix replay agrees with full semantic replay under explicit verifier assumptions; run unchanged-image, external append/revocation, rewritten/rolled-back history, stale challenge, exact CAS, lost reply, restart and verifier-change cases through the real host. Preserve fresh authorization, exact original receipt boundaries and uncertainty. Measure physical reads, replay counts and latency; do not substitute height/hash/mtime for exact image identity.
 
@@ -749,6 +810,10 @@ Replace repeated whole-history semantic replay with a source-owned verified sess
 
 - E-KERNEL — Canonical typed semantic kernel
 - E-WORLD — Programmable social resource world
+
+**Waiting for:**
+
+- W-RECOVERY-REVIEW-0928 — Review recovery contracts for the programmable resource world
 
 **Evidence / provenance:**
 
@@ -776,11 +841,10 @@ Replace repeated whole-history semantic replay with a source-owned verified sess
 - [S-SPK-CHECKPOINT66-0927 — User-requested wind-down and portable unfinished source](../sprints/2026-09-26/checkpoint-66.md)
 - [S-DEMO-CONVERGENCE-RESUME — Resumed construction around complete demo journeys](../sprints/2026-09-26/demo-convergence.md)
 - [S-SPK-CHECKPOINT67-0927 — Resident/controller batch adopted; ordinary birth bottleneck isolated](../sprints/2026-09-26/checkpoint-67.md)
-- [S-SPK-CHECKPOINT67-0927 — Resident/controller batch adopted; ordinary birth bottleneck isolated](../sprints/2026-09-26/checkpoint-67.md)
-- [S-SPK-CHECKPOINT68-0927 — Exact retained birth and cold reopen pass on repaired native Host](../sprints/2026-09-26/checkpoint-68.md)
 - [S-SPK-CHECKPOINT68-0927 — Exact retained birth and cold reopen pass on repaired native Host](../sprints/2026-09-26/checkpoint-68.md)
 - [S-SPK-CHECKPOINT69-0927 — Live retained birth and qualified coherent Host; base socket recovery pending](../sprints/2026-09-26/checkpoint-69.md)
 - [S-SPK-CHECKPOINT70-0927 — Workroom recovered; detached app tool reserve refused; source integrations progressing](../sprints/2026-09-26/checkpoint-70.md)
+- [S-RECOVERY-MINISWARM-0928 — Recovery brief miniswarm and current review scope](../research/recovery-miniswarm-2026-09-28.md)
 
 **Write scope:** minidregg/Kernel/NativeHost*.lean; minidregg/Host/Main.lean; minidregg/native/resource-client/; minidregg/Compiler/Sp800185Cshake256Core.lean; minidregg/Kernel/NativeObservationController.lean; minidregg/scripts/build-native-host.sh
 
@@ -821,11 +885,11 @@ Implement the general Mini transaction receiver over scalar and typed-content re
 
 **Define the September 26 programmable nexus and its shared contracts**
 
-Status: **active** · Owner: Astra: root; component implementation/review lanes completed · Updated: 2026-09-27T02:38:13.221Z
+Status: **blocked** · Owner: Unassigned · Updated: 2026-09-28T20:33:38Z
 
 Specify the coherent Mini resource/program and hosting contracts for the New World and complete hosted Nous Hermes experience. The construction home is settled; exact shared activity and economic operation remain open.
 
-**Next:** Converge the SPK platform cycle: packaged apps provide shared human views and agent APIs under Mini authority; retain separate contributed-hosting and Solana obligations.
+**Next:** Await recovery contract review, then reassess scope and ownership before construction. Preserve current WIP and evidence.
 
 **Done when:** Accepted nexus operations and consequential design decisions; selected semantic and receiving-runtime paths; an explicit owned-node participation path and selected Solana/resource outcome; linked implementation obligations and evidence. Selecting a contract does not close implementation or deployment.
 
@@ -836,6 +900,10 @@ Specify the coherent Mini resource/program and hosting contracts for the New Wor
 **Enables:**
 
 - E-WORLD — Programmable social resource world
+
+**Waiting for:**
+
+- W-RECOVERY-REVIEW-0928 — Review recovery contracts for the programmable resource world
 
 **Evidence / provenance:**
 
@@ -853,6 +921,7 @@ Specify the coherent Mini resource/program and hosting contracts for the New Wor
 - [S-NEW-WORLD-0919 — Completed eleven-event native task/content/authority journey](../sprints/2026-09-19/cycle-1-evidence/final-new-world/README.md)
 - [S-CYCLE-1-RESULT-0919 — Mini cycle 1 completed core result and exact remaining construction](../sprints/2026-09-19/cycle-1-result.md)
 - [S-SPK-CYCLE-0927 — SPK application platform goal and grounded integration contract](../sprints/2026-09-26/spk-platform-cycle.md)
+- [S-RECOVERY-MINISWARM-0928 — Recovery brief miniswarm and current review scope](../research/recovery-miniswarm-2026-09-28.md)
 
 **Write scope:** minidregg/docs/CYCLE-2026-09-19.md; dregg-assortia/sprints/2026-09-19/cycle-1.md and graph work records
 
@@ -1099,11 +1168,11 @@ Report which claims/work items need reinspection when source bytes change, with 
 
 **Run shared SPK applications through Mini, browsers, agents and fn**
 
-Status: **active** · Owner: Astra: root; Sol: mini_app_contract, agent_api_host, runtime_review, fn_mini_review, shared_resource_tools, build_native · Updated: 2026-09-28T02:14:00Z
+Status: **blocked** · Owner: Unassigned · Updated: 2026-09-28T20:33:38Z
 
 Integrate real third-party packaged app execution and persistent state with Mini lifecycle/current grants, hosted Hermes, direct commands, and selected version publication over semi-untrusted fn.
 
-**Next:** Diagnose the precise INSTALL admission refusal without duplicate submission; repair and qualify the underlying contract, then complete volume custody, ticket issuance, START, enrollment and the real shared journey.
+**Next:** Await recovery contract review, then reassess scope and ownership before construction. Preserve current WIP and evidence.
 
 **Done when:** A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.
 
@@ -1115,6 +1184,10 @@ Integrate real third-party packaged app execution and persistent state with Mini
 
 - E-WORLD — Programmable social resource world
 - E-KERNEL — Canonical typed semantic kernel
+
+**Waiting for:**
+
+- W-RECOVERY-REVIEW-0928 — Review recovery contracts for the programmable resource world
 
 **Evidence / provenance:**
 
@@ -1181,6 +1254,7 @@ Integrate real third-party packaged app execution and persistent state with Mini
 - [S-SPK-CHECKPOINT76-0928 — Enrollment source gap, independent ticket roles and retained installation check](../sprints/2026-09-26/checkpoint-76.md)
 - [S-SPK-CHECKPOINT77-0928 — Real GitWeb image with refused INSTALL completion and absent original receipt](../sprints/2026-09-26/checkpoint-77.md)
 - [S-SPK-CHECKPOINT78-0928 — Committed enrollment source and corrected delegation prerequisites](../sprints/2026-09-26/checkpoint-78.md)
+- [S-RECOVERY-MINISWARM-0928 — Recovery brief miniswarm and current review scope](../research/recovery-miniswarm-2026-09-28.md)
 
 **Write scope:** minidregg/Kernel/ApplicationLifecycle* and ApplicationSpkLaunchDescriptor.lean (mini_app_contract); minidregg/native/spk-host resident/RPC and dedicated physical evidence (agent_api_host); minidregg/native/spk-host agent custody/server (agent_api_host); minidregg/native/grain-runtime and dedicated controller evidence (runtime_review); isolated source-matched native Host builds and explicit proof repairs (build_native); minidregg/Kernel/Fn* receiving and Host/FnConsumerFrontierPlan.lean (fn_mini_review); persistent agent-route authorization design (runtime_review); coordinated Host/Main.lean and NativeHostReplay.lean hooks; root owns integration order and Git; minidregg/scripts/spk-platform source-authored fixture enrollment/birth continuations (spk_compatibility); minidregg/Host/ApplicationLifecycleLaunchAuthoring*.lean and coordinated Main ops66–71 after lower API freeze (fn_mini_review); minidregg/Kernel/NativeHostContext.lean canonical image-boundary byte reuse and general equivalence proof (client_session); actual Replay consumers coordinated with mini_app_contract
 

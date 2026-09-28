@@ -1128,7 +1128,7 @@
       "@type": "WorkItem",
       "label": "Define the September 26 programmable nexus and its shared contracts",
       "description": "Specify the coherent Mini resource/program and hosting contracts for the New World and complete hosted Nous Hermes experience. The construction home is settled; exact shared activity and economic operation remain open.",
-      "status": "active",
+      "status": "blocked",
       "evidenceKind": "assistant-proposal",
       "localPath": "/Users/ember/dev/dregg-assortia/milestones/2026-09-26.md",
       "motivatedBy": [
@@ -1165,15 +1165,17 @@
         "urn:dregg:assortia:W-SPK-PLATFORM"
       ],
       "closure": "Accepted nexus operations and consequential design decisions; selected semantic and receiving-runtime paths; an explicit owned-node participation path and selected Solana/resource outcome; linked implementation obligations and evidence. Selecting a contract does not close implementation or deployment.",
-      "owner": "Astra: root; component implementation/review lanes completed",
-      "updatedAt": "2026-09-27T02:38:13.221Z",
+      "owner": null,
+      "updatedAt": "2026-09-28T20:33:38Z",
       "advances": [
         "urn:dregg:assortia:E-WORLD"
       ],
-      "nextAction": "Converge the SPK platform cycle: packaged apps provide shared human views and agent APIs under Mini authority; retain separate contributed-hosting and Solana obligations.",
+      "nextAction": "Await recovery contract review, then reassess scope and ownership before construction. Preserve current WIP and evidence.",
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "priority": 1,
-      "blockedBy": [],
+      "blockedBy": [
+        "urn:dregg:assortia:W-RECOVERY-REVIEW-0928"
+      ],
       "sources": [
         "urn:dregg:assortia:S-IMPLEMENTATION-0045",
         "urn:dregg:assortia:S-WIND-DOWN-0918",
@@ -1188,14 +1190,17 @@
         "urn:dregg:assortia:S-CYCLE-1-INTEGRATION-0919",
         "urn:dregg:assortia:S-NEW-WORLD-0919",
         "urn:dregg:assortia:S-CYCLE-1-RESULT-0919",
-        "urn:dregg:assortia:S-SPK-CYCLE-0927"
+        "urn:dregg:assortia:S-SPK-CYCLE-0927",
+        "urn:dregg:assortia:S-RECOVERY-MINISWARM-0928"
       ],
       "progress": "Mini cycle1 completed the native programmable resource core and Rust client, with eleven-event task/content/authority acceptance and complete legacy/client recipes. Interactive latency, hosted Hermes and actual interruption, contributed-node hosting and a selected Solana operation remain unfinished.",
       "writeScope": [
         "minidregg/docs/CYCLE-2026-09-19.md",
         "dregg-assortia/sprints/2026-09-19/cycle-1.md and graph work records"
       ],
-      "brief": "sprints/2026-09-19/cycle-1-integration-checkpoint.md"
+      "brief": "sprints/2026-09-19/cycle-1-integration-checkpoint.md",
+      "deferredNextAction": "Converge the SPK platform cycle: packaged apps provide shared human views and agent APIs under Mini authority; retain separate contributed-hosting and Solana obligations.",
+      "previousOwner": "Astra: root; component implementation/review lanes completed"
     },
     {
       "@id": "urn:dregg:assortia:S-NEXUS-INTERFACE",
@@ -2689,9 +2694,9 @@
       "@type": "WorkItem",
       "label": "Keep grants valid across policy source revisions",
       "description": "Separate immutable policy-source revision from grant revocation generation across the exact signed request, authority representation, compiled/source policies and every receiving consumer.",
-      "status": "active",
-      "owner": "Astra: root; component implementation/review lanes completed",
-      "updatedAt": "2026-09-20T00:00:01.955Z",
+      "status": "blocked",
+      "owner": null,
+      "updatedAt": "2026-09-28T20:33:38Z",
       "priority": 1,
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "sources": [
@@ -2702,7 +2707,8 @@
         "urn:dregg:assortia:S-CYCLE-1-0919",
         "urn:dregg:assortia:S-CYCLE-1-INTEGRATION-0919",
         "urn:dregg:assortia:S-NEW-WORLD-0919",
-        "urn:dregg:assortia:S-CYCLE-1-RESULT-0919"
+        "urn:dregg:assortia:S-CYCLE-1-RESULT-0919",
+        "urn:dregg:assortia:S-RECOVERY-MINISWARM-0928"
       ],
       "motivatedBy": [
         "urn:dregg:assortia:I-POLICY-GRANTS",
@@ -2713,13 +2719,15 @@
         "urn:dregg:assortia:E-KERNEL",
         "urn:dregg:assortia:E-WORLD"
       ],
-      "blockedBy": [],
+      "blockedBy": [
+        "urn:dregg:assortia:W-RECOVERY-REVIEW-0928"
+      ],
       "related": [
         "urn:dregg:assortia:W-POLICY-SOURCE",
         "urn:dregg:assortia:W-AUTHORIZED-DELEGATION",
         "urn:dregg:assortia:W-PROGRAMMABLE-PATH"
       ],
-      "nextAction": "Implement and exercise generation-wide native revocation and the delegated-grant two-replacement case against the same source-owned receiving path; preserve the completed per-capability/current-law regressions.",
+      "nextAction": "Await recovery contract review, then reassess scope and ownership before construction. Preserve current WIP and evidence.",
       "closure": "After two admitted rule replacements, previously issued owner/control and delegated grants remain usable exactly when their scope and new rules authorize the new request; stale revisions refuse, explicit generation revocation invalidates prior grants, and restart/retry preserves exact state and receipts. Resource policy can deliberately refuse further management, with no implicit owner bypass.",
       "progress": "Revision/generation separation and per-capability revocation passed full native integration. Original owner/control grants survive two policy replacements in the legacy scenario; delegated worker grants survive one replacement in the New World scenario, with current-law enforcement and deliberate owner management lockout. Explicit generation-wide native revocation and a delegated grant surviving two replacements remain uncompleted closure obligations.",
       "writeScope": [
@@ -2727,7 +2735,9 @@
         "minidregg/Kernel/PolicyInstallController.lean and coordinated authority/control source",
         "minidregg public native acceptance harness"
       ],
-      "brief": "sprints/2026-09-19/cycle-1-integration-checkpoint.md"
+      "brief": "sprints/2026-09-19/cycle-1-integration-checkpoint.md",
+      "deferredNextAction": "Implement and exercise generation-wide native revocation and the delegated-grant two-replacement case against the same source-owned receiving path; preserve the completed per-capability/current-law regressions.",
+      "previousOwner": "Astra: root; component implementation/review lanes completed"
     },
     {
       "@id": "urn:dregg:assortia:S-RESUMED-0250",
@@ -3040,9 +3050,9 @@
       "@type": "WorkItem",
       "label": "Durable hosted grain control and authenticated entrance",
       "description": "Execute authenticated provisioning, hard/soft attachment, retained operation lookup and recovery through actual kernel/runtime adapters.",
-      "status": "active",
-      "owner": "Sol: client_session, hermes_path, fn_reply_profile; Astra: root",
-      "updatedAt": "2026-09-27T02:10:00Z",
+      "status": "blocked",
+      "owner": null,
+      "updatedAt": "2026-09-28T20:33:38Z",
       "priority": 1,
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "sources": [
@@ -3062,7 +3072,8 @@
         "urn:dregg:assortia:S-CHECKPOINT14-0926",
         "urn:dregg:assortia:S-CHECKPOINT15-0926",
         "urn:dregg:assortia:S-CHECKPOINT16-0926",
-        "urn:dregg:assortia:S-CHECKPOINT17-0926"
+        "urn:dregg:assortia:S-CHECKPOINT17-0926",
+        "urn:dregg:assortia:S-RECOVERY-MINISWARM-0928"
       ],
       "advances": [
         "urn:dregg:assortia:E-WORLD"
@@ -3071,13 +3082,15 @@
         "urn:dregg:assortia:W-NATIVE-HOST",
         "urn:dregg:assortia:W-M26-DESIGN"
       ],
-      "blockedBy": [],
+      "blockedBy": [
+        "urn:dregg:assortia:W-RECOVERY-REVIEW-0928"
+      ],
       "brief": "sprints/2026-09-26/checkpoint-17.md",
       "acceptance": [
         "Execute authenticated provisioning, hard/soft attachment, retained operation lookup and recovery through actual kernel/runtime adapters."
       ],
       "closure": "Execute authenticated provisioning, hard/soft attachment, retained operation lookup and recovery through actual kernel/runtime adapters.",
-      "nextAction": "Complete short spawn/cancel critical section and custody ownership without blocking immediate worker stop; preserve uncertainty and exact-call recovery.",
+      "nextAction": "Await recovery contract review, then reassess scope and ownership before construction. Preserve current WIP and evidence.",
       "progress": "Dedicated operator stack installed and explicitly restarted with stable signed root; terminal source and actual worker controls exercised on fresh fixture.",
       "historicalWriteScope": [
         "breadstuffs/agent-platform/hosted/dregg_grain/{models,store,control,server,cli,service}.py"
@@ -3086,16 +3099,18 @@
         "minidregg/native/resource-client/",
         "minidregg/native/grain-runtime/",
         "minidregg/Host/Json.lean"
-      ]
+      ],
+      "deferredNextAction": "Complete short spawn/cancel critical section and custody ownership without blocking immediate worker stop; preserve uncertainty and exact-call recovery.",
+      "previousOwner": "Sol: client_session, hermes_path, fn_reply_profile; Astra: root"
     },
     {
       "@id": "urn:dregg:assortia:W-GRAIN-RUNTIME",
       "@type": "WorkItem",
       "label": "Host upstream Hermes with persistent confined execution",
       "description": "Run real upstream Hermes in a confined Linux scope, preserve conversation/output, kill descendants on hard disconnect and retain exact scope on soft reconnect.",
-      "status": "active",
-      "owner": "Sol: hermes_path, replay_session, linux_hosting; review runtime_review; Astra: root",
-      "updatedAt": "2026-09-27T02:10:00Z",
+      "status": "blocked",
+      "owner": null,
+      "updatedAt": "2026-09-28T20:33:38Z",
       "priority": 1,
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "sources": [
@@ -3118,7 +3133,8 @@
         "urn:dregg:assortia:S-CHECKPOINT14-0926",
         "urn:dregg:assortia:S-CHECKPOINT15-0926",
         "urn:dregg:assortia:S-CHECKPOINT16-0926",
-        "urn:dregg:assortia:S-CHECKPOINT17-0926"
+        "urn:dregg:assortia:S-CHECKPOINT17-0926",
+        "urn:dregg:assortia:S-RECOVERY-MINISWARM-0928"
       ],
       "advances": [
         "urn:dregg:assortia:E-WORLD"
@@ -3127,13 +3143,15 @@
         "urn:dregg:assortia:W-NATIVE-HOST",
         "urn:dregg:assortia:W-M26-DESIGN"
       ],
-      "blockedBy": [],
+      "blockedBy": [
+        "urn:dregg:assortia:W-RECOVERY-REVIEW-0928"
+      ],
       "brief": "sprints/2026-09-26/checkpoint-17.md",
       "acceptance": [
         "Run real upstream Hermes in a confined Linux scope, preserve conversation/output, kill descendants on hard disconnect and retain exact scope on soft reconnect."
       ],
       "closure": "Run real upstream Hermes in a confined Linux scope, preserve conversation/output, kill descendants on hard disconnect and retain exact scope on soft reconnect.",
-      "nextAction": "Finish birth charge crash recovery and dispatch cancellation; exercise soft EOF and usable hard-stop reconnect/recovery.",
+      "nextAction": "Await recovery contract review, then reassess scope and ownership before construction. Preserve current WIP and evidence.",
       "progress": "Installed runtime e213b4f passed 50 tests/clippy. Terminal publication and hard EOF physically exercised. Old same-UID B44 recovered through explicit audit and native zero settlement.",
       "historicalWriteScope": [
         "breadstuffs/agent-platform/hosted/dregg_grain/{runtime,hermes,confinement}.py"
@@ -3143,16 +3161,18 @@
         "minidregg/Kernel/AgentGrain.lean",
         "minidregg/Host/Json.lean",
         "minidregg/deploy/grain-host/"
-      ]
+      ],
+      "deferredNextAction": "Finish birth charge crash recovery and dispatch cancellation; exercise soft EOF and usable hard-stop reconnect/recovery.",
+      "previousOwner": "Sol: hermes_path, replay_session, linux_hosting; review runtime_review; Astra: root"
     },
     {
       "@id": "urn:dregg:assortia:W-GRAIN-BROKER",
       "@type": "WorkItem",
       "label": "Custody and meter scoped provider requests",
       "description": "Execute bounded streaming requests after canonical reservation, retain exact evidence, fence old epochs, reconcile uncertain work and demonstrate secret isolation.",
-      "status": "active",
-      "owner": "Sol: runtime_review, build_native; Astra: root",
-      "updatedAt": "2026-09-27T23:59:51.217Z",
+      "status": "blocked",
+      "owner": null,
+      "updatedAt": "2026-09-28T20:33:38Z",
       "priority": 1,
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "sources": [
@@ -3171,7 +3191,8 @@
         "urn:dregg:assortia:S-CHECKPOINT15-0926",
         "urn:dregg:assortia:S-CHECKPOINT16-0926",
         "urn:dregg:assortia:S-CHECKPOINT17-0926",
-        "urn:dregg:assortia:S-PAYMENT-INFERENCE-0927"
+        "urn:dregg:assortia:S-PAYMENT-INFERENCE-0927",
+        "urn:dregg:assortia:S-RECOVERY-MINISWARM-0928"
       ],
       "advances": [
         "urn:dregg:assortia:E-WORLD"
@@ -3180,13 +3201,15 @@
         "urn:dregg:assortia:W-NATIVE-HOST",
         "urn:dregg:assortia:W-M26-DESIGN"
       ],
-      "blockedBy": [],
+      "blockedBy": [
+        "urn:dregg:assortia:W-RECOVERY-REVIEW-0928"
+      ],
       "brief": "sprints/2026-09-26/checkpoint-17.md",
       "acceptance": [
         "Execute bounded streaming requests after canonical reservation, retain exact evidence, fence old epochs, reconcile uncertain work and demonstrate secret isolation."
       ],
       "closure": "Execute bounded streaming requests after canonical reservation, retain exact evidence, fence old epochs, reconcile uncertain work and demonstrate secret isolation.",
-      "nextAction": "Qualify local Ternary Bonsai 2 27B on hbox and run actual hosted Hermes through current Mini provider custody; integrate DREGG-paid provider access as an additional route after its API and accounting contract are established.",
+      "nextAction": "Await recovery contract review, then reassess scope and ownership before construction. Preserve current WIP and evidence.",
       "progress": "Three sequential Hermes requests separately quoted/settled at counts11/15/23; provider reserve zero. Missing usage and HTTP422 retain held uncertain responses.",
       "historicalWriteScope": [
         "breadstuffs/agent-platform/hosted/dregg_grain/{credentials,broker,broker_transport,broker_server,cost_policy}.py"
@@ -3195,16 +3218,18 @@
         "minidregg/native/grain-runtime/src/provider.rs",
         "minidregg/native/grain-runtime/src/main.rs",
         "minidregg/deploy/grain-host/"
-      ]
+      ],
+      "deferredNextAction": "Qualify local Ternary Bonsai 2 27B on hbox and run actual hosted Hermes through current Mini provider custody; integrate DREGG-paid provider access as an additional route after its API and accounting contract are established.",
+      "previousOwner": "Sol: runtime_review, build_native; Astra: root"
     },
     {
       "@id": "urn:dregg:assortia:W-GRAIN-TOOLS",
       "@type": "WorkItem",
       "label": "Expose canonical resource programming to Hermes",
       "description": "Drive real signed resource create/read/program/invoke/delegate/history operations through the source-owned host; reject stale generation authority without refreshing it.",
-      "status": "active",
-      "owner": "Sol: hermes_path, replay_session, codec_stack, shared_resource_tools; Astra: root",
-      "updatedAt": "2026-09-27T02:10:00Z",
+      "status": "blocked",
+      "owner": null,
+      "updatedAt": "2026-09-28T20:33:38Z",
       "priority": 1,
       "milestone": "urn:dregg:assortia:M-2026-09-26",
       "sources": [
@@ -3226,7 +3251,8 @@
         "urn:dregg:assortia:S-CHECKPOINT14-0926",
         "urn:dregg:assortia:S-CHECKPOINT15-0926",
         "urn:dregg:assortia:S-CHECKPOINT16-0926",
-        "urn:dregg:assortia:S-CHECKPOINT17-0926"
+        "urn:dregg:assortia:S-CHECKPOINT17-0926",
+        "urn:dregg:assortia:S-RECOVERY-MINISWARM-0928"
       ],
       "advances": [
         "urn:dregg:assortia:E-WORLD"
@@ -3235,13 +3261,15 @@
         "urn:dregg:assortia:W-NATIVE-HOST",
         "urn:dregg:assortia:W-M26-DESIGN"
       ],
-      "blockedBy": [],
+      "blockedBy": [
+        "urn:dregg:assortia:W-RECOVERY-REVIEW-0928"
+      ],
       "brief": "sprints/2026-09-26/checkpoint-17.md",
       "acceptance": [
         "Drive real signed resource create/read/program/invoke/delegate/history operations through the source-owned host; reject stale generation authority without refreshing it."
       ],
       "closure": "Drive real signed resource create/read/program/invoke/delegate/history operations through the source-owned host; reject stale generation authority without refreshing it.",
-      "nextAction": "Fix durable pre-reserve birth intent and refusal zero-phase recovery, final dispatch cancellation, then exercise created-resource tools through Hermes and exact restart.",
+      "nextAction": "Await recovery contract review, then reassess scope and ownership before construction. Preserve current WIP and evidence.",
       "progress": "Native composite created8301/count11 and owner bare8303/count12. Worker bare refused uniformly; runner expected wrong private reason. Controller birth lifecycle review found crash/charge windows.",
       "historicalWriteScope": [
         "breadstuffs/agent-platform/hosted/dregg_grain/{kernelclient,mcp}.py; minidregg/Host/Json.lean and Kernel/AgentGrain*.lean"
@@ -3252,7 +3280,9 @@
         "minidregg/Host/Json.lean",
         "minidregg/scripts/workroom/",
         "minidregg/Compiler/GrainResourceBirthController.lean"
-      ]
+      ],
+      "deferredNextAction": "Fix durable pre-reserve birth intent and refusal zero-phase recovery, final dispatch cancellation, then exercise created-resource tools through Hermes and exact restart.",
+      "previousOwner": "Sol: hermes_path, replay_session, codec_stack, shared_resource_tools; Astra: root"
     },
     {
       "@id": "urn:dregg:assortia:S-CORE-ORIENTATION-0919",
@@ -3481,11 +3511,11 @@
       "@type": "WorkItem",
       "label": "Retain verified history across native host requests",
       "description": "Replace repeated whole-history semantic replay with a source-owned verified session, preserving exact history identity, current authorization and durable CAS/recovery behavior.",
-      "status": "active",
-      "owner": "Astra: root; Sol: fn_mini_review",
+      "status": "blocked",
+      "owner": null,
       "priority": 1,
       "milestone": "urn:dregg:assortia:M-2026-09-26",
-      "updatedAt": "2026-09-28T00:05:41.042Z",
+      "updatedAt": "2026-09-28T20:33:38Z",
       "sources": [
         "urn:dregg:assortia:S-HOST-SESSION-PROPOSAL-0919",
         "urn:dregg:assortia:S-NATIVE-COMPUTATION-0919",
@@ -3511,11 +3541,10 @@
         "urn:dregg:assortia:S-SPK-CHECKPOINT66-0927",
         "urn:dregg:assortia:S-DEMO-CONVERGENCE-RESUME",
         "urn:dregg:assortia:S-SPK-CHECKPOINT67-0927",
-        "urn:dregg:assortia:S-SPK-CHECKPOINT67-0927",
-        "urn:dregg:assortia:S-SPK-CHECKPOINT68-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT68-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT69-0927",
-        "urn:dregg:assortia:S-SPK-CHECKPOINT70-0927"
+        "urn:dregg:assortia:S-SPK-CHECKPOINT70-0927",
+        "urn:dregg:assortia:S-RECOVERY-MINISWARM-0928"
       ],
       "motivatedBy": [
         "urn:dregg:assortia:I-CORE-SPRINT",
@@ -3531,7 +3560,9 @@
         "urn:dregg:assortia:W-GRAIN-RUNTIME",
         "urn:dregg:assortia:W-CHARGE-MATERIALIZATION"
       ],
-      "blockedBy": [],
+      "blockedBy": [
+        "urn:dregg:assortia:W-RECOVERY-REVIEW-0928"
+      ],
       "brief": "sprints/2026-09-26/checkpoint-17.md",
       "writeScope": [
         "minidregg/Kernel/NativeHost*.lean",
@@ -3542,8 +3573,10 @@
         "minidregg/scripts/build-native-host.sh"
       ],
       "progress": "Retained workroom recovery passed eight signed views and six parent delegations; next app reserve explicitly refused with tool7902 detached, Store unchanged. Mixed-route config committed/tested; accepted-grant inspector passed narrow Lean; real local model qualification and source integration ongoing.",
-      "nextAction": "Recover app bootstrap with separately authorized tool attach, fresh read/reserve and retained refused attempt; finish actual app admission then INSTALL/START, shared human/agent use and fn receiving.",
-      "closure": "Prove verified-prefix plus suffix replay agrees with full semantic replay under explicit verifier assumptions; run unchanged-image, external append/revocation, rewritten/rolled-back history, stale challenge, exact CAS, lost reply, restart and verifier-change cases through the real host. Preserve fresh authorization, exact original receipt boundaries and uncertainty. Measure physical reads, replay counts and latency; do not substitute height/hash/mtime for exact image identity."
+      "nextAction": "Await recovery contract review, then reassess scope and ownership before construction. Preserve current WIP and evidence.",
+      "closure": "Prove verified-prefix plus suffix replay agrees with full semantic replay under explicit verifier assumptions; run unchanged-image, external append/revocation, rewritten/rolled-back history, stale challenge, exact CAS, lost reply, restart and verifier-change cases through the real host. Preserve fresh authorization, exact original receipt boundaries and uncertainty. Measure physical reads, replay counts and latency; do not substitute height/hash/mtime for exact image identity.",
+      "deferredNextAction": "Recover app bootstrap with separately authorized tool attach, fresh read/reserve and retained refused attempt; finish actual app admission then INSTALL/START, shared human/agent use and fn receiving.",
+      "previousOwner": "Astra: root; Sol: fn_mini_review"
     },
     {
       "@id": "urn:dregg:assortia:S-NATIVE-COMPUTATION-0919",
@@ -3716,9 +3749,9 @@
       "@type": "WorkItem",
       "label": "Operate actual Mini resources through fn correspondence and separate gateways",
       "description": "Converge existing fn consumer lineage and improve its authority, fresh setup, general reply profiles and distributed hosted receiving path.",
-      "status": "active",
-      "owner": "Sol: fn_contracts; Astra: root",
-      "updatedAt": "2026-09-27T05:18:14.567Z",
+      "status": "blocked",
+      "owner": null,
+      "updatedAt": "2026-09-28T20:33:38Z",
       "priority": 1,
       "sources": [
         "urn:dregg:assortia:S-OVERNIGHT-0926",
@@ -3742,7 +3775,8 @@
         "urn:dregg:assortia:S-CHECKPOINT17-0926",
         "urn:dregg:assortia:S-PARALLEL-JOURNEYS-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT20-0927",
-        "urn:dregg:assortia:S-SPK-CHECKPOINT21-0927"
+        "urn:dregg:assortia:S-SPK-CHECKPOINT21-0927",
+        "urn:dregg:assortia:S-RECOVERY-MINISWARM-0928"
       ],
       "advances": [
         "urn:dregg:assortia:E-WORLD",
@@ -3752,7 +3786,9 @@
         "urn:dregg:assortia:W-HOST-SESSION",
         "urn:dregg:assortia:W-GRAIN-RUNTIME"
       ],
-      "blockedBy": [],
+      "blockedBy": [
+        "urn:dregg:assortia:W-RECOVERY-REVIEW-0928"
+      ],
       "brief": "sprints/2026-09-26/checkpoint-17.md",
       "writeScope": [
         "minidregg/Kernel/Fn*.lean",
@@ -3766,8 +3802,10 @@
         "minidregg/docs/FN-PUBLICATION-DISCLOSURE.md"
       ],
       "progress": "Native own-R accept/restart/repeat/ACK and equal-position no-op passed on fresh private Store. Exact owner-release codec and current-key signature component narrowly checked; receiving/replay remains construction. Selected-release Signature/Ingress/Admission have narrow source checks; new durable receiver is under construction. No native route or selected-release transport run is claimed. Mini b6373d7 now commits narrow-checked selected-release admission/receiver; dedicated native routing and replay are being integrated. Mini9a128b4 article framing, b9b9869 exact-attempt CLI, and e1bbf2d native submit/lookup/replay source are checked and committed. Separate source publication authority is being built; no end-to-end selected release run yet.",
-      "nextAction": "Finish selected-release durable receiver and exact historical retry checks, integrate native Host/Replay/CLI route, then exercise authorized selected public bytes through actual fn without private-prefix disclosure. Receiver import/install remains separate authority.",
-      "closure": "Real Mini-resource operation and reply travel through independently configured fn nodes with separately pinned application authorities; durable Mini processing precedes fn ACK, direct forged consumer input is refused, exact retries and uncertain outcomes reconcile, and a documented user entrance uses this path."
+      "nextAction": "Await recovery contract review, then reassess scope and ownership before construction. Preserve current WIP and evidence.",
+      "closure": "Real Mini-resource operation and reply travel through independently configured fn nodes with separately pinned application authorities; durable Mini processing precedes fn ACK, direct forged consumer input is refused, exact retries and uncertain outcomes reconcile, and a documented user entrance uses this path.",
+      "deferredNextAction": "Finish selected-release durable receiver and exact historical retry checks, integrate native Host/Replay/CLI route, then exercise authorized selected public bytes through actual fn without private-prefix disclosure. Receiver import/install remains separate authority.",
+      "previousOwner": "Sol: fn_contracts; Astra: root"
     },
     {
       "@id": "urn:dregg:assortia:S-CHECKPOINT1-0926",
@@ -3983,10 +4021,10 @@
       "@type": "WorkItem",
       "label": "Run shared SPK applications through Mini, browsers, agents and fn",
       "description": "Integrate real third-party packaged app execution and persistent state with Mini lifecycle/current grants, hosted Hermes, direct commands, and selected version publication over semi-untrusted fn.",
-      "status": "active",
-      "owner": "Astra: root; Sol: mini_app_contract, agent_api_host, runtime_review, fn_mini_review, shared_resource_tools, build_native",
+      "status": "blocked",
+      "owner": null,
       "reviewer": "Astra: root",
-      "updatedAt": "2026-09-28T02:14:00Z",
+      "updatedAt": "2026-09-28T20:33:38Z",
       "priority": 1,
       "sources": [
         "urn:dregg:assortia:S-SPK-CYCLE-0927",
@@ -4051,7 +4089,8 @@
         "urn:dregg:assortia:S-SPK-CHECKPOINT72-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT76-0928",
         "urn:dregg:assortia:S-SPK-CHECKPOINT77-0928",
-        "urn:dregg:assortia:S-SPK-CHECKPOINT78-0928"
+        "urn:dregg:assortia:S-SPK-CHECKPOINT78-0928",
+        "urn:dregg:assortia:S-RECOVERY-MINISWARM-0928"
       ],
       "advances": [
         "urn:dregg:assortia:E-WORLD",
@@ -4064,7 +4103,9 @@
         "urn:dregg:assortia:W-GRAIN-BROKER",
         "urn:dregg:assortia:W-M26-DESIGN"
       ],
-      "blockedBy": [],
+      "blockedBy": [
+        "urn:dregg:assortia:W-RECOVERY-REVIEW-0928"
+      ],
       "brief": "sprints/2026-09-26/spk-platform-cycle.md",
       "writeScope": [
         "minidregg/Kernel/ApplicationLifecycle* and ApplicationSpkLaunchDescriptor.lean (mini_app_contract)",
@@ -4086,8 +4127,10 @@
         "Selected app or data versions travel through fn with explicit publication and separate receiver install/import authority, without private-prefix disclosure."
       ],
       "closure": "A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.",
-      "nextAction": "Diagnose the precise INSTALL admission refusal without duplicate submission; repair and qualify the underlying contract, then complete volume custody, ticket issuance, START, enrollment and the real shared journey.",
-      "progress": "Real signed GitWeb image materialized; native INSTALL BEGIN and claim admitted at counts28/29. Completion definitively refused and original receipt lookup absent; exact attempt retained for source-level diagnosis. Typed warm ticket preview and real Git lost-reply component qualified. App START, five enrollments, shared human/Hermes use and selected fn journey remain open."
+      "nextAction": "Await recovery contract review, then reassess scope and ownership before construction. Preserve current WIP and evidence.",
+      "progress": "Real signed GitWeb image materialized; native INSTALL BEGIN and claim admitted at counts28/29. Completion definitively refused and original receipt lookup absent; exact attempt retained for source-level diagnosis. Typed warm ticket preview and real Git lost-reply component qualified. App START, five enrollments, shared human/Hermes use and selected fn journey remain open.",
+      "deferredNextAction": "Diagnose the precise INSTALL admission refusal without duplicate submission; repair and qualify the underlying contract, then complete volume custody, ticket issuance, START, enrollment and the real shared journey.",
+      "previousOwner": "Astra: root; Sol: mini_app_contract, agent_api_host, runtime_review, fn_mini_review, shared_resource_tools, build_native"
     },
     {
       "@id": "urn:dregg:assortia:S-SPK-GROUNDING1-0927",
@@ -4764,15 +4807,16 @@
       "@id": "urn:dregg:assortia:W-APP-ENROLLMENT",
       "@type": "WorkItem",
       "label": "Enroll human and agent app sessions through native authority",
-      "status": "active",
-      "owner": "Sol: fn_mini_review; client integration: runtime_review and agent_api_host",
+      "status": "blocked",
+      "owner": null,
       "reviewer": "Astra: root",
-      "updatedAt": "2026-09-28T02:14:00Z",
+      "updatedAt": "2026-09-28T20:33:38Z",
       "priority": 1,
       "sources": [
         "urn:dregg:assortia:S-SPK-CHECKPOINT76-0928",
         "urn:dregg:assortia:S-SPK-CHECKPOINT77-0928",
-        "urn:dregg:assortia:S-SPK-CHECKPOINT78-0928"
+        "urn:dregg:assortia:S-SPK-CHECKPOINT78-0928",
+        "urn:dregg:assortia:S-RECOVERY-MINISWARM-0928"
       ],
       "related": [
         "urn:dregg:assortia:W-SPK-PLATFORM"
@@ -4781,7 +4825,9 @@
         "urn:dregg:assortia:E-KERNEL",
         "urn:dregg:assortia:E-WORLD"
       ],
-      "blockedBy": [],
+      "blockedBy": [
+        "urn:dregg:assortia:W-RECOVERY-REVIEW-0928"
+      ],
       "brief": "sprints/2026-09-26/checkpoint-76.md",
       "writeScope": [
         "minidregg/Kernel and Host session enrollment modules, coordinated NativeHostReplay and Host/Main/Json wiring (fn_mini_review)",
@@ -4796,8 +4842,10 @@
         "All five r3 sessions become usable through actual native enrollment after START; restart/renewal preserves the intended authority rules."
       ],
       "closure": "The source-owned authoring, custody, native admission, replay and five-session deployed consumer path are qualified with scoped positive and refusal/recovery evidence.",
-      "nextAction": "Finish native receiving and client qualification; issue tickets and explicitly delegate narrow app/manifest/ticket read rights under sole-writer coordination, then enroll against actual post-START generation.",
-      "progress": "Mini e06b2fa commits source construction, signed joint admission, three physical read guards, same-walk event22 replay and inspector ABI; seven direct Lean checks pass. Receiving/routes/client remain in progress. Allocated app/ticket capabilities are not admitted grants; Bob/Hermes also need participant-owned manifest observe grants. No live enrollment."
+      "nextAction": "Await recovery contract review, then reassess scope and ownership before construction. Preserve current WIP and evidence.",
+      "progress": "Mini e06b2fa commits source construction, signed joint admission, three physical read guards, same-walk event22 replay and inspector ABI; seven direct Lean checks pass. Receiving/routes/client remain in progress. Allocated app/ticket capabilities are not admitted grants; Bob/Hermes also need participant-owned manifest observe grants. No live enrollment.",
+      "deferredNextAction": "Finish native receiving and client qualification; issue tickets and explicitly delegate narrow app/manifest/ticket read rights under sole-writer coordination, then enroll against actual post-START generation.",
+      "previousOwner": "Sol: fn_mini_review; client integration: runtime_review and agent_api_host"
     },
     {
       "@id": "urn:dregg:assortia:S-SPK-CHECKPOINT77-0928",
@@ -4820,6 +4868,41 @@
       "recordedDate": "2026-09-28",
       "evidenceKind": "reviewed-source-direct-Lean-checks-authority-audit-and-live-diagnostic-observation",
       "limitations": "No native enrollment acceptance; observe delegations not admitted; INSTALL diagnostic ongoing."
+    },
+    {
+      "@id": "urn:dregg:assortia:S-RECOVERY-MINISWARM-0928",
+      "@type": "Source",
+      "label": "Recovery brief miniswarm and current review scope",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "research/recovery-miniswarm-2026-09-28.md",
+      "sha256": "c3b2fd6686b76e4bfe92b3a7635874ed32afa8416106f3bf69865e7d8af14031",
+      "recordedDate": "2026-09-28",
+      "evidenceKind": "user-requested-source-review-and-assistant-proposals",
+      "limitations": "Read-only technical review; hub navigation corrected. No fresh builds, acceptance runs, deployments, or adopted implementation architecture."
+    },
+    {
+      "@id": "urn:dregg:assortia:W-RECOVERY-REVIEW-0928",
+      "@type": "WorkItem",
+      "label": "Review recovery contracts for the programmable resource world",
+      "status": "active",
+      "owner": "Astra: root; Sol/Luna source review completed",
+      "reviewer": "Ember",
+      "priority": 0,
+      "updatedAt": "2026-09-28T20:33:38Z",
+      "advances": [
+        "urn:dregg:assortia:E-WORLD"
+      ],
+      "sources": [
+        "urn:dregg:assortia:S-RECOVERY-MINISWARM-0928"
+      ],
+      "brief": "research/recovery-miniswarm-2026-09-28.md",
+      "nextAction": "Discuss the miniswarm recommendations with Ember; settle the common operation/reference/namespace boundary and the next coherent construction batch. No live retry or deployment follows from the brief.",
+      "closure": "Recovery contracts and construction scope are explicitly accepted or revised with Ember; affected implementation records are reassessed and reassigned. This closes review only, not Gates A-C.",
+      "progress": "Five source-review lanes completed. Existing native client, operation custody, hosting journals and selected fn publication are the proposed receiving paths.",
+      "writeScope": [
+        "dregg-assortia current records, review synthesis and navigation"
+      ],
+      "blockedBy": []
     }
   ]
 }
