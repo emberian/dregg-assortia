@@ -3986,7 +3986,7 @@
       "status": "active",
       "owner": "Astra: root; Sol: client_session, agent_api_host, runtime_review, fn_mini_review, fn_contracts",
       "reviewer": "Astra: root",
-      "updatedAt": "2026-09-28T00:05:41.041Z",
+      "updatedAt": "2026-09-28T00:25:37.116Z",
       "priority": 1,
       "sources": [
         "urn:dregg:assortia:S-SPK-CYCLE-0927",
@@ -4046,7 +4046,8 @@
         "urn:dregg:assortia:S-SPK-CHECKPOINT67-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT68-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT69-0927",
-        "urn:dregg:assortia:S-SPK-CHECKPOINT70-0927"
+        "urn:dregg:assortia:S-SPK-CHECKPOINT70-0927",
+        "urn:dregg:assortia:S-SPK-CHECKPOINT71-0927"
       ],
       "advances": [
         "urn:dregg:assortia:E-WORLD",
@@ -4081,8 +4082,8 @@
         "Selected app or data versions travel through fn with explicit publication and separate receiver install/import authority, without private-prefix disclosure."
       ],
       "closure": "A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.",
-      "nextAction": "Recover app bootstrap with separately authorized tool attach, fresh read/reserve and retained refused attempt; finish actual app admission then INSTALL/START, shared human/agent use and fn receiving.",
-      "progress": "Retained workroom recovery passed eight signed views and six parent delegations; next app reserve explicitly refused with tool7902 detached, Store unchanged. Mixed-route config committed/tested; accepted-grant inspector passed narrow Lean; real local model qualification and source integration ongoing."
+      "nextAction": "Collect exact live app/session outcome, complete INSTALL/START and event22/27 route issuance, resolve isolated Hermes launch, then run shared use and selected fn publication/readback.",
+      "progress": "Signed parent/tool prerequisite recovery reviewed, committed and running once on retained r3. Real local model and isolated fn node qualified separately; GitWeb tools, explicit content import and fn join committed with scoped tests. Full shared app/Hermes/fn journey remains unproven."
     },
     {
       "@id": "urn:dregg:assortia:S-SPK-GROUNDING1-0927",
@@ -4721,6 +4722,17 @@
       "recordedDate": "2026-09-27",
       "evidenceKind": "live-workroom-recovery-and-source-integration-checkpoint",
       "limitations": "No app birth, INSTALL/START or combined model/app/fn journey. Current app reserve refused due detached tool; explicit recovery pending."
+    },
+    {
+      "@id": "urn:dregg:assortia:S-SPK-CHECKPOINT71-0927",
+      "@type": "Source",
+      "label": "App recovery running; qualified model and fn components with committed integration",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-26/checkpoint-71.md",
+      "sha256": "92010d15024ebca413c2e274e42c82e2f1cfa3c7577500ca060438c809083251",
+      "recordedDate": "2026-09-27",
+      "evidenceKind": "live-process-observation-component-qualification-and-reviewed-source",
+      "limitations": "No combined hosted preview or actual selected app publication; running recovery is not accepted app birth."
     }
   ]
 }
