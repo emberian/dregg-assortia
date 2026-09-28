@@ -3986,7 +3986,7 @@
       "status": "active",
       "owner": "Astra: root; Sol: mini_app_contract, agent_api_host, runtime_review, fn_mini_review, shared_resource_tools, build_native",
       "reviewer": "Astra: root",
-      "updatedAt": "2026-09-28T01:48:01Z",
+      "updatedAt": "2026-09-28T02:04:00Z",
       "priority": 1,
       "sources": [
         "urn:dregg:assortia:S-SPK-CYCLE-0927",
@@ -4049,7 +4049,8 @@
         "urn:dregg:assortia:S-SPK-CHECKPOINT70-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT71-0927",
         "urn:dregg:assortia:S-SPK-CHECKPOINT72-0927",
-        "urn:dregg:assortia:S-SPK-CHECKPOINT76-0928"
+        "urn:dregg:assortia:S-SPK-CHECKPOINT76-0928",
+        "urn:dregg:assortia:S-SPK-CHECKPOINT77-0928"
       ],
       "advances": [
         "urn:dregg:assortia:E-WORLD",
@@ -4084,8 +4085,8 @@
         "Selected app or data versions travel through fn with explicit publication and separate receiver install/import authority, without private-prefix disclosure."
       ],
       "closure": "A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.",
-      "nextAction": "Finish the retained second INSTALL preparation and physical package/volume installation; issue tickets and prepare entrances, then START and source-author session enrollment at the actual serving app generation. Complete shared human/Hermes use, recovery and selected fn publication.",
-      "progress": "App and five session births accepted through count27; descriptors remain unenrolled. Same-Store installation comparison is active under the sole installation owner. Real local 65536-context Bonsai and distinct unforked Hermes roots are qualified separately. Event28 enrollment with app-observe read guard is assigned; ticket issuer/recipient confusion corrected. Ordinary-birth paired runtime and recovery gates pass on private Stores. No combined preview yet."
+      "nextAction": "Diagnose the precise INSTALL admission refusal without duplicate submission; repair and qualify the underlying contract, then complete volume custody, ticket issuance, START, enrollment and the real shared journey.",
+      "progress": "Real signed GitWeb image materialized; native INSTALL BEGIN and claim admitted at counts28/29. Completion definitively refused and original receipt lookup absent; exact attempt retained for source-level diagnosis. Typed warm ticket preview and real Git lost-reply component qualified. App START, five enrollments, shared human/Hermes use and selected fn journey remain open."
     },
     {
       "@id": "urn:dregg:assortia:S-SPK-GROUNDING1-0927",
@@ -4765,11 +4766,19 @@
       "status": "active",
       "owner": "Sol: fn_mini_review; client integration: runtime_review and agent_api_host",
       "reviewer": "Astra: root",
-      "updatedAt": "2026-09-28T01:48:01Z",
+      "updatedAt": "2026-09-28T02:04:00Z",
       "priority": 1,
-      "sources": ["urn:dregg:assortia:S-SPK-CHECKPOINT76-0928"],
-      "related": ["urn:dregg:assortia:W-SPK-PLATFORM"],
-      "advances": ["urn:dregg:assortia:E-KERNEL", "urn:dregg:assortia:E-WORLD"],
+      "sources": [
+        "urn:dregg:assortia:S-SPK-CHECKPOINT76-0928",
+        "urn:dregg:assortia:S-SPK-CHECKPOINT77-0928"
+      ],
+      "related": [
+        "urn:dregg:assortia:W-SPK-PLATFORM"
+      ],
+      "advances": [
+        "urn:dregg:assortia:E-KERNEL",
+        "urn:dregg:assortia:E-WORLD"
+      ],
       "blockedBy": [],
       "brief": "sprints/2026-09-26/checkpoint-76.md",
       "writeScope": [
@@ -4786,7 +4795,18 @@
       ],
       "closure": "The source-owned authoring, custody, native admission, replay and five-session deployed consumer path are qualified with scoped positive and refusal/recovery evidence.",
       "nextAction": "Implement and qualify event28 admission and authoring with private plan/assembly and submit/lookup operations; join the actual post-START serving app and tickets.",
-      "progress": "Existing kernel enrollment codec/actions/laws are present, but operator receiving path is missing. Protocol allocation approved; current app-observe grants rule out an app-mutate shortcut."
+      "progress": "Cycle-safe source construction and native admission modules pass direct Lean checks in a private overlay; signed app/manifest/ticket observations and physical read guards preserve least authority. Same-walk replay, native receiving, JSON routes and Rust custody integration remain unfinished; no deployed enrollment."
+    },
+    {
+      "@id": "urn:dregg:assortia:S-SPK-CHECKPOINT77-0928",
+      "@type": "Source",
+      "label": "Real GitWeb image with refused INSTALL completion and absent original receipt",
+      "repository": "urn:dregg:assortia:R-assortia",
+      "path": "sprints/2026-09-26/checkpoint-77.md",
+      "sha256": "16600f8d814bafbac653911088a683dc6b07d4c35d9b12e0e7097b9b1574b619",
+      "recordedDate": "2026-09-28",
+      "evidenceKind": "retained-native-receipts-physical-ingestion-owner-observations-and-qualified-component-artifacts",
+      "limitations": "INSTALL completion refused; source diagnosis active. No app START, session enrollment, combined Hermes or selected fn publication."
     }
   ]
 }

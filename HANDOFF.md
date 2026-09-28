@@ -1,6 +1,6 @@
 # Start here: DREGG handoff
 
-**Current live boundary:** [checkpoint 76](sprints/2026-09-26/checkpoint-76.md): the second INSTALL preparation is checking exact receipts after both Host identity checks passed. App and five session births are admitted through count27, but their descriptors still need authorized enrollment. That missing native path is now assigned. Real local Bonsai is qualified separately; actual START/shared use and selected fn publication remain open.
+**Current live boundary:** [checkpoint 77](sprints/2026-09-26/checkpoint-77.md): real signed GitWeb package materialization passed; Mini admitted INSTALL BEGIN/claim through count29 but refused completion, and original receipt lookup is absent. The retained attempt is under source-level diagnosis. Five born sessions still need native enrollment; that path is being implemented. Real local Bonsai and private Git recovery are qualified separately; actual START/shared use and selected fn publication remain open.
 
 **Latest native result:** [checkpoint 68](sprints/2026-09-26/checkpoint-68.md) records the repaired exact birth and cold reopen passing on a private copy, ready Linux artifacts, and the reviewed Host transition. Live deployment and practical latency remain open.
 
