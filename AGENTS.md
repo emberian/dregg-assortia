@@ -1,6 +1,6 @@
 # Working in dregg-assortia
 
-**Current authorization (September 28):** [Recovery construction](sprints/2026-09-28/recovery-construction.md), authorized by Ember for 22:40–00:10 UTC. Common Mini resource operations, participant enrollment, Hermes, checked application routing and selected fn exchange share one integration candidate. Earlier fixture assignments remain deferred.
+**Latest construction:** [September 28 recovery result](sprints/2026-09-28/recovery-result.md): qualified native artifacts, same-Store participant sharing/recovery/current-law refusal, real fn receiving, and non-Git package qualification. The bounded batch is closed; [current work](CURRENT.md) names the next shared-agent/provisioning journey. Older fixture assignments remain deferred.
 
 Prior authorization: September 26 autonomous overnight construction, mostly Sol agents, actual Mini/Bread integration with fn; see sprints/2026-09-26/overnight.md. Claude owns fn's active development. Do not revive the rejected Python platform or substitute a disconnected demo. Ember will decide release compromises on returning.
 

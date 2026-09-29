@@ -1,6 +1,6 @@
 # dregg-assortia
 
-**Current step:** [Recovery construction](sprints/2026-09-28/recovery-construction.md), authorized by Ember for 22:40–00:10 UTC. Common Mini resource operations, participant enrollment, Hermes, checked application routing and selected fn exchange share one integration candidate. Earlier fixture assignments remain deferred.
+**Latest construction:** [September 28 recovery result](sprints/2026-09-28/recovery-result.md): qualified native artifacts, same-Store participant sharing/recovery/current-law refusal, real fn receiving, and non-Git package qualification. The bounded batch is closed; [current work](CURRENT.md) names the next shared-agent/provisioning journey. Older fixture assignments remain deferred.
 
 The living knowledge index and project hub for DREGG: what we are building, how the pieces connect, who owns current work, and what evidence supports each claim.
 

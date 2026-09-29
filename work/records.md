@@ -107,13 +107,15 @@ Graph-backed work ownership, concrete briefs, generated current views and an exp
 
 **Connect common Mini participant operations and actual receiving consumers**
 
-Status: **active** · Owner: Astra integration; Sol implementation lanes; Luna contributor handoff · Updated: 2026-09-28T22:40:00Z
+Status: **done** · Owner: Astra integration; Sol implementation lanes; Luna contributor handoff · Updated: 2026-09-29T00:06:17Z
 
 
 
-**Next:** Converge workspace/create/enroll, delegated Hermes, checked non-Git routing and actual selected fn exchange into a pinned candidate; qualify actual journeys and publish remaining gaps by 00:10 UTC.
+**Next:** Continue with the prepared recovery continuation record; do not resume preserved fixture instructions merely because this batch closed.
 
 **Done when:** Common mechanisms have actual receiving consumers and exact candidate evidence; bounded batch handoff lists integrated runs and remaining failures. This task does not itself close full Gates A-C.
+
+**Evidence so far:** Bounded batch delivered qualified Host/client and real participant sharing, current-law refusal, cold recovery, selected fn receiving and non-Git pre-Store qualification. Full platform and deployment remain unfinished.
 
 [Task brief](../sprints/2026-09-28/recovery-construction.md)
 
@@ -125,8 +127,44 @@ Status: **active** · Owner: Astra integration; Sol implementation lanes; Luna c
 
 - [S-RECOVERY-CONSTRUCTION-0928 — Ember-authorized bounded recovery construction](../sprints/2026-09-28/recovery-construction.md)
 - [S-RECOVERY-MINISWARM-0928 — Recovery brief miniswarm and current review scope](../research/recovery-miniswarm-2026-09-28.md)
+- [S-RECOVERY-RESULT-0928 — Recovery native candidate, same-Store participant journey and actual fn receiving](../sprints/2026-09-28/recovery-result.md)
 
 **Write scope:** Named Mini source/client/host files by coordinated lane ownership; Assortia mandate, contributor handoff and evidence; Isolated qualification Stores and bounded build roots; no preserved live fixture writes
+
+## W-RECOVERY-CONTINUATION-0929
+
+**Complete participant provisioning and the shared hosted-agent journey**
+
+Status: **ready** · Owner: Root integration; implementation lanes assigned on continuation · Updated: 2026-09-29T00:06:17Z
+
+
+
+**Next:** In the next construction window, finish source-authorized factory/payer provisioning, retained pre-submit birth recovery and managed-worker restart; run ordinary newcomer creation plus human/controller use of the same resources. Preserve existing native positives and qualify the actual hosted entrance.
+
+**Done when:** An independently provisioned newcomer creates resources through ordinary client contracts; human and hosted-agent consumers share narrow authority on the same candidate and recover interruption without private fixture orchestration. Record current-law refusals, timings and exact source/binary pins; no implicit public deployment.
+
+**Evidence so far:** Ready from concrete counterexamples and runtime evidence. September 28 construction is closed; no implementation lane is currently assigned by this record. Fn wrapper rerun/independent receiving and hosted lifecycle remain explicitly separate acceptance obligations.
+
+[Task brief](../sprints/2026-09-28/recovery-result.md)
+
+**Enables:**
+
+- E-WORLD — Programmable social resource world
+
+**Evidence / provenance:**
+
+- [S-RECOVERY-RESULT-0928 — Recovery native candidate, same-Store participant journey and actual fn receiving](../sprints/2026-09-28/recovery-result.md)
+- [S-RECOVERY-CONSTRUCTION-0928 — Ember-authorized bounded recovery construction](../sprints/2026-09-28/recovery-construction.md)
+
+**Write scope:** Mini source-owned provisioning, resource client recovery and grain controller contracts, with coordinated file ownership; Isolated same-journey acceptance and bounded build roots; Assortia technical evidence and work records; team communications remain outside Git
+
+**Acceptance:**
+
+- Fresh newcomer receives source-authorized factory and payer rights through an ordinary protocol, then creates two independently allocated resources without editing genesis or assigning fixture IDs.
+- Human client and hosted-agent controller discover and operate those same resources with narrower delegated rights; resource sharing does not require a Git-specific instance.
+- Current-law refusal, verified pre-submit refusal, interrupted birth authoring and exact historical recovery remain distinct; deliberately locked management acquires no bypass.
+- Managed worker restart/attachment recovers through its specified authority without an unrecorded operator repair. Qualify a real Nous Hermes session separately from a deterministic MCP fixture.
+- Retain exact source/binary/configuration pins, cold restart and warm operation timings, stopped private services, and explicit remaining Gate B/C boundaries.
 
 ## W-RECOVERY-REVIEW-0928
 
@@ -158,11 +196,11 @@ Status: **done** · Owner: Astra: root · Updated: 2026-09-28T22:40:00Z
 
 **Enroll human and agent app sessions through native authority**
 
-Status: **blocked** · Owner: Unassigned · Updated: 2026-09-28T22:40:00Z
+Status: **blocked** · Owner: Unassigned · Updated: 2026-09-29T00:06:17Z
 
 
 
-**Next:** Reassess this historical assignment against the current recovery candidate before resuming its old next action; receiving work is owned by W-RECOVERY-CONSTRUCTION-0928.
+**Next:** Reassess this historical assignment against the recovery result before reviving fixture-specific work; the next shared consumer is W-RECOVERY-CONTINUATION-0929.
 
 **Done when:** The source-owned authoring, custody, native admission, replay and five-session deployed consumer path are qualified with scoped positive and refusal/recovery evidence.
 
@@ -177,7 +215,7 @@ Status: **blocked** · Owner: Unassigned · Updated: 2026-09-28T22:40:00Z
 
 **Waiting for:**
 
-- W-RECOVERY-CONSTRUCTION-0928 — Connect common Mini participant operations and actual receiving consumers
+- W-RECOVERY-CONTINUATION-0929 — Complete participant provisioning and the shared hosted-agent journey
 
 **Evidence / provenance:**
 
@@ -492,11 +530,11 @@ World deployment currently mutates volatile registries; historical paths either 
 
 **Operate actual Mini resources through fn correspondence and separate gateways**
 
-Status: **blocked** · Owner: Unassigned · Updated: 2026-09-28T22:40:00Z
+Status: **blocked** · Owner: Unassigned · Updated: 2026-09-29T00:06:17Z
 
 Converge existing fn consumer lineage and improve its authority, fresh setup, general reply profiles and distributed hosted receiving path.
 
-**Next:** Reassess this historical assignment against the current recovery candidate before resuming its old next action; receiving work is owned by W-RECOVERY-CONSTRUCTION-0928.
+**Next:** Reassess this historical assignment against the recovery result before reviving fixture-specific work; the next shared consumer is W-RECOVERY-CONTINUATION-0929.
 
 **Done when:** Real Mini-resource operation and reply travel through independently configured fn nodes with separately pinned application authorities; durable Mini processing precedes fn ACK, direct forged consumer input is refused, exact retries and uncertain outcomes reconcile, and a documented user entrance uses this path.
 
@@ -511,7 +549,7 @@ Converge existing fn consumer lineage and improve its authority, fresh setup, ge
 
 **Waiting for:**
 
-- W-RECOVERY-CONSTRUCTION-0928 — Connect common Mini participant operations and actual receiving consumers
+- W-RECOVERY-CONTINUATION-0929 — Complete participant provisioning and the shared hosted-agent journey
 
 **Evidence / provenance:**
 
@@ -545,11 +583,11 @@ Converge existing fn consumer lineage and improve its authority, fresh setup, ge
 
 **Custody and meter scoped provider requests**
 
-Status: **blocked** · Owner: Unassigned · Updated: 2026-09-28T22:40:00Z
+Status: **blocked** · Owner: Unassigned · Updated: 2026-09-29T00:06:17Z
 
 Execute bounded streaming requests after canonical reservation, retain exact evidence, fence old epochs, reconcile uncertain work and demonstrate secret isolation.
 
-**Next:** Reassess this historical assignment against the current recovery candidate before resuming its old next action; receiving work is owned by W-RECOVERY-CONSTRUCTION-0928.
+**Next:** Reassess this historical assignment against the recovery result before reviving fixture-specific work; the next shared consumer is W-RECOVERY-CONTINUATION-0929.
 
 **Done when:** Execute bounded streaming requests after canonical reservation, retain exact evidence, fence old epochs, reconcile uncertain work and demonstrate secret isolation.
 
@@ -563,7 +601,7 @@ Execute bounded streaming requests after canonical reservation, retain exact evi
 
 **Waiting for:**
 
-- W-RECOVERY-CONSTRUCTION-0928 — Connect common Mini participant operations and actual receiving consumers
+- W-RECOVERY-CONTINUATION-0929 — Complete participant provisioning and the shared hosted-agent journey
 
 **Evidence / provenance:**
 
@@ -595,11 +633,11 @@ Execute bounded streaming requests after canonical reservation, retain exact evi
 
 **Durable hosted grain control and authenticated entrance**
 
-Status: **blocked** · Owner: Unassigned · Updated: 2026-09-28T22:40:00Z
+Status: **blocked** · Owner: Unassigned · Updated: 2026-09-29T00:06:17Z
 
 Execute authenticated provisioning, hard/soft attachment, retained operation lookup and recovery through actual kernel/runtime adapters.
 
-**Next:** Reassess this historical assignment against the current recovery candidate before resuming its old next action; receiving work is owned by W-RECOVERY-CONSTRUCTION-0928.
+**Next:** Reassess this historical assignment against the recovery result before reviving fixture-specific work; the next shared consumer is W-RECOVERY-CONTINUATION-0929.
 
 **Done when:** Execute authenticated provisioning, hard/soft attachment, retained operation lookup and recovery through actual kernel/runtime adapters.
 
@@ -613,7 +651,7 @@ Execute authenticated provisioning, hard/soft attachment, retained operation loo
 
 **Waiting for:**
 
-- W-RECOVERY-CONSTRUCTION-0928 — Connect common Mini participant operations and actual receiving consumers
+- W-RECOVERY-CONTINUATION-0929 — Complete participant provisioning and the shared hosted-agent journey
 
 **Evidence / provenance:**
 
@@ -646,11 +684,11 @@ Execute authenticated provisioning, hard/soft attachment, retained operation loo
 
 **Host upstream Hermes with persistent confined execution**
 
-Status: **blocked** · Owner: Unassigned · Updated: 2026-09-28T22:40:00Z
+Status: **blocked** · Owner: Unassigned · Updated: 2026-09-29T00:06:17Z
 
 Run real upstream Hermes in a confined Linux scope, preserve conversation/output, kill descendants on hard disconnect and retain exact scope on soft reconnect.
 
-**Next:** Reassess this historical assignment against the current recovery candidate before resuming its old next action; receiving work is owned by W-RECOVERY-CONSTRUCTION-0928.
+**Next:** Reassess this historical assignment against the recovery result before reviving fixture-specific work; the next shared consumer is W-RECOVERY-CONTINUATION-0929.
 
 **Done when:** Run real upstream Hermes in a confined Linux scope, preserve conversation/output, kill descendants on hard disconnect and retain exact scope on soft reconnect.
 
@@ -664,7 +702,7 @@ Run real upstream Hermes in a confined Linux scope, preserve conversation/output
 
 **Waiting for:**
 
-- W-RECOVERY-CONSTRUCTION-0928 — Connect common Mini participant operations and actual receiving consumers
+- W-RECOVERY-CONTINUATION-0929 — Complete participant provisioning and the shared hosted-agent journey
 
 **Evidence / provenance:**
 
@@ -700,11 +738,11 @@ Run real upstream Hermes in a confined Linux scope, preserve conversation/output
 
 **Expose canonical resource programming to Hermes**
 
-Status: **blocked** · Owner: Unassigned · Updated: 2026-09-28T22:40:00Z
+Status: **blocked** · Owner: Unassigned · Updated: 2026-09-29T00:06:17Z
 
 Drive real signed resource create/read/program/invoke/delegate/history operations through the source-owned host; reject stale generation authority without refreshing it.
 
-**Next:** Reassess this historical assignment against the current recovery candidate before resuming its old next action; receiving work is owned by W-RECOVERY-CONSTRUCTION-0928.
+**Next:** Reassess this historical assignment against the recovery result before reviving fixture-specific work; the next shared consumer is W-RECOVERY-CONTINUATION-0929.
 
 **Done when:** Drive real signed resource create/read/program/invoke/delegate/history operations through the source-owned host; reject stale generation authority without refreshing it.
 
@@ -718,7 +756,7 @@ Drive real signed resource create/read/program/invoke/delegate/history operation
 
 **Waiting for:**
 
-- W-RECOVERY-CONSTRUCTION-0928 — Connect common Mini participant operations and actual receiving consumers
+- W-RECOVERY-CONTINUATION-0929 — Complete participant provisioning and the shared hosted-agent journey
 
 **Evidence / provenance:**
 
@@ -753,11 +791,11 @@ Drive real signed resource create/read/program/invoke/delegate/history operation
 
 **Keep grants valid across policy source revisions**
 
-Status: **blocked** · Owner: Unassigned · Updated: 2026-09-28T22:40:00Z
+Status: **blocked** · Owner: Unassigned · Updated: 2026-09-29T00:06:17Z
 
 Separate immutable policy-source revision from grant revocation generation across the exact signed request, authority representation, compiled/source policies and every receiving consumer.
 
-**Next:** Reassess this historical assignment against the current recovery candidate before resuming its old next action; receiving work is owned by W-RECOVERY-CONSTRUCTION-0928.
+**Next:** Reassess this historical assignment against the recovery result before reviving fixture-specific work; the next shared consumer is W-RECOVERY-CONTINUATION-0929.
 
 **Done when:** After two admitted rule replacements, previously issued owner/control and delegated grants remain usable exactly when their scope and new rules authorize the new request; stale revisions refuse, explicit generation revocation invalidates prior grants, and restart/retry preserves exact state and receipts. Resource policy can deliberately refuse further management, with no implicit owner bypass.
 
@@ -772,7 +810,7 @@ Separate immutable policy-source revision from grant revocation generation acros
 
 **Waiting for:**
 
-- W-RECOVERY-CONSTRUCTION-0928 — Connect common Mini participant operations and actual receiving consumers
+- W-RECOVERY-CONTINUATION-0929 — Complete participant provisioning and the shared hosted-agent journey
 
 **Evidence / provenance:**
 
@@ -819,11 +857,11 @@ SDK route discovery is lazy while actual cryptographic calls retain real Lean in
 
 **Retain verified history across native host requests**
 
-Status: **blocked** · Owner: Unassigned · Updated: 2026-09-28T22:40:00Z
+Status: **blocked** · Owner: Unassigned · Updated: 2026-09-29T00:06:17Z
 
 Replace repeated whole-history semantic replay with a source-owned verified session, preserving exact history identity, current authorization and durable CAS/recovery behavior.
 
-**Next:** Reassess this historical assignment against the current recovery candidate before resuming its old next action; receiving work is owned by W-RECOVERY-CONSTRUCTION-0928.
+**Next:** Reassess this historical assignment against the recovery result before reviving fixture-specific work; the next shared consumer is W-RECOVERY-CONTINUATION-0929.
 
 **Done when:** Prove verified-prefix plus suffix replay agrees with full semantic replay under explicit verifier assumptions; run unchanged-image, external append/revocation, rewritten/rolled-back history, stale challenge, exact CAS, lost reply, restart and verifier-change cases through the real host. Preserve fresh authorization, exact original receipt boundaries and uncertainty. Measure physical reads, replay counts and latency; do not substitute height/hash/mtime for exact image identity.
 
@@ -838,7 +876,7 @@ Replace repeated whole-history semantic replay with a source-owned verified sess
 
 **Waiting for:**
 
-- W-RECOVERY-CONSTRUCTION-0928 — Connect common Mini participant operations and actual receiving consumers
+- W-RECOVERY-CONTINUATION-0929 — Complete participant provisioning and the shared hosted-agent journey
 
 **Evidence / provenance:**
 
@@ -910,11 +948,11 @@ Implement the general Mini transaction receiver over scalar and typed-content re
 
 **Define the September 26 programmable nexus and its shared contracts**
 
-Status: **blocked** · Owner: Unassigned · Updated: 2026-09-28T22:40:00Z
+Status: **blocked** · Owner: Unassigned · Updated: 2026-09-29T00:06:17Z
 
 Specify the coherent Mini resource/program and hosting contracts for the New World and complete hosted Nous Hermes experience. The construction home is settled; exact shared activity and economic operation remain open.
 
-**Next:** Reassess this historical assignment against the current recovery candidate before resuming its old next action; receiving work is owned by W-RECOVERY-CONSTRUCTION-0928.
+**Next:** Reassess this historical assignment against the recovery result before reviving fixture-specific work; the next shared consumer is W-RECOVERY-CONTINUATION-0929.
 
 **Done when:** Accepted nexus operations and consequential design decisions; selected semantic and receiving-runtime paths; an explicit owned-node participation path and selected Solana/resource outcome; linked implementation obligations and evidence. Selecting a contract does not close implementation or deployment.
 
@@ -928,7 +966,7 @@ Specify the coherent Mini resource/program and hosting contracts for the New Wor
 
 **Waiting for:**
 
-- W-RECOVERY-CONSTRUCTION-0928 — Connect common Mini participant operations and actual receiving consumers
+- W-RECOVERY-CONTINUATION-0929 — Complete participant provisioning and the shared hosted-agent journey
 
 **Evidence / provenance:**
 
@@ -1193,11 +1231,11 @@ Report which claims/work items need reinspection when source bytes change, with 
 
 **Run shared SPK applications through Mini, browsers, agents and fn**
 
-Status: **blocked** · Owner: Unassigned · Updated: 2026-09-28T22:40:00Z
+Status: **blocked** · Owner: Unassigned · Updated: 2026-09-29T00:06:17Z
 
 Integrate real third-party packaged app execution and persistent state with Mini lifecycle/current grants, hosted Hermes, direct commands, and selected version publication over semi-untrusted fn.
 
-**Next:** Reassess this historical assignment against the current recovery candidate before resuming its old next action; receiving work is owned by W-RECOVERY-CONSTRUCTION-0928.
+**Next:** Reassess this historical assignment against the recovery result before reviving fixture-specific work; the next shared consumer is W-RECOVERY-CONTINUATION-0929.
 
 **Done when:** A coherent deployed and tinkerable platform satisfies all listed acceptance journeys at pinned source, with core latency measured/addressed, persistent hosting, scoped adversarial/recovery evidence, and portable operator/contributor handoff. A substitute notes body, parser-only compatibility, or independent fixture greens do not close this item.
 
@@ -1212,7 +1250,7 @@ Integrate real third-party packaged app execution and persistent state with Mini
 
 **Waiting for:**
 
-- W-RECOVERY-CONSTRUCTION-0928 — Connect common Mini participant operations and actual receiving consumers
+- W-RECOVERY-CONTINUATION-0929 — Complete participant provisioning and the shared hosted-agent journey
 
 **Evidence / provenance:**
 

@@ -1,12 +1,12 @@
 # Start here: DREGG handoff
 
-**Current step:** [Recovery construction](sprints/2026-09-28/recovery-construction.md), authorized by Ember for 22:40–00:10 UTC. Common Mini resource operations, participant enrollment, Hermes, checked application routing and selected fn exchange share one integration candidate. Earlier fixture assignments remain deferred.
+**Latest construction:** [September 28 recovery result](sprints/2026-09-28/recovery-result.md): qualified native artifacts, same-Store participant sharing/recovery/current-law refusal, real fn receiving, and non-Git package qualification. The bounded batch is closed; [current work](CURRENT.md) names the next shared-agent/provisioning journey. Older fixture assignments remain deferred.
 
 **Build storage, September 28:** [Persvati cleanup](research/persvati-cleanup-2026-09-28.md) reclaimed approximately 370 GiB of duplicate Lean compilation caches. Sources, evidence and service binaries remain; two warm build trees are named in the record. Old source snapshots will otherwise need recompilation.
 
 **Direction reset after checkpoint 78:** Ember requested a new goal for the programmable infrastructure itself, then code-tree exploration before another implementation swarm. Start with the [September 27 platform reorientation](research/platform-reorientation-2026-09-27.md). Application grains are instances of the platform; fixture completion is not the organizing objective. The current step is the bounded recovery construction batch linked above. The construction instructions below retain historical context and do not override this reset; existing WIP and live state are preserved.
 
-**Current construction evidence:** [September 28 recovery result](sprints/2026-09-28/recovery-result.md) records the common participant/client/Hermes changes, candidate pins and pending native qualification. The key-enrollment receiving path is implemented; independent participant creation still requires factory and payer provisioning. Allocated capability IDs are not admitted grants.
+**Current construction evidence:** [September 28 recovery result](sprints/2026-09-28/recovery-result.md) records qualified native artifacts, actual participant enrollment/sharing/restart/current-law refusal, real fn receiving, and the partial controller recovery. Independent participant creation still requires factory and payer provisioning; the full hosted Hermes entrance remains unqualified. Allocated capability IDs are not admitted grants.
 
 **Preserved live boundary:** [checkpoint 78](sprints/2026-09-26/checkpoint-78.md): real signed GitWeb package materialization passed; INSTALL completion remains refused at claimed count29. No retry or live repair was performed in the recovery batch. Real local Bonsai and private Git recovery were qualified separately; they do not establish a combined preview.
 
